@@ -1,0 +1,19 @@
+{
+  "name": "imperial-map-ingest",
+  "version": "1.0.0",
+  "description": "Lambda function for ingesting game data and applying territory transfers",
+  "main": "handler.js",
+  "scripts": {
+    "build": "tsc && cp package.json dist/",
+    "package": "zip -r ../../../dist/ingest.zip dist/",
+    "deploy": "npm run build && npm run package"
+  },
+  "dependencies": {
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/pg": "^8.10.0",
+    "typescript": "^5.0.0"
+  }
+}
