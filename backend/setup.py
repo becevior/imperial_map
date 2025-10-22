@@ -5,6 +5,7 @@ Generates teams, territory ownership, and county metadata files.
 """
 import csv
 import json
+from math import atan2, cos, radians, sin, sqrt, degrees
 from pathlib import Path
 from typing import Dict
 from lib.territory import calculate_centroid, calculate_distance
@@ -42,17 +43,22 @@ def main():
     # Step 3: Calculate ownership from GeoJSON
     print("\n🗺️  Step 3: Processing county GeoJSON data...")
     print("📍 Step 4: Assigning counties to nearest teams...")
-    county_stats = create_ownership_file(teams, team_locations)
+    county_stats, territory_centroids = create_ownership_file(teams, team_locations)
 
     # Step 5: Persist county metadata for frontend use
     print("\n📊 Step 5: Saving county metadata for hover details...")
     create_county_stats_file(county_stats)
+
+    # Step 6: Persist territory centroid data for logo placement
+    print("\n📌 Step 6: Saving territory centroids for map markers...")
+    create_territory_centroids_file(territory_centroids)
 
     print("\n✅ Initialization complete!")
     print("\nGenerated files:")
     print("  - frontend/public/data/teams.json")
     print("  - frontend/public/data/ownership.json")
     print("  - frontend/public/data/county-stats.json")
+    print("  - frontend/public/data/territory-centroids.json")
     print(f"\nCoverage: {len(teams)} teams assigned to 3,221 US counties")
     print("\nNext: Run `cd frontend && npm run dev` to view the map")
 
@@ -80,6 +86,7 @@ def create_teams_file(teams):
             'longitude': team['lon'],
             'primaryColor': team['primaryColor'],
             'secondaryColor': team['secondaryColor'],
+            'logoUrl': team.get('logoUrl'),
         }
 
         if team.get('conference'):
@@ -111,6 +118,8 @@ def create_ownership_file(teams, team_locations):
     ownership = {}
     team_stats = {}  # Track counties and area per team
     county_stats: Dict[str, Dict] = {}
+    territory_vectors: Dict[str, Dict[str, float]] = {}
+    territory_counties: Dict[str, list] = {}
     missing_population = 0
 
     for i, feature in enumerate(features, 1):
@@ -119,6 +128,12 @@ def create_ownership_file(teams, team_locations):
         properties = feature.get('properties', {})
 
         if not fips:
+            continue
+
+        state_raw = properties.get('STATE')
+        state_code = str(state_raw).zfill(2) if state_raw is not None else ''
+
+        if state_code == '72':  # Skip Puerto Rico counties
             continue
 
         try:
@@ -146,13 +161,11 @@ def create_ownership_file(teams, team_locations):
 
                 # Track stats
                 if nearest_team not in team_stats:
-                    team_stats[nearest_team] = {'counties': 0, 'area': 0}
+                    team_stats[nearest_team] = {'counties': 0, 'area': 0.0}
 
                 team_stats[nearest_team]['counties'] += 1
                 team_stats[nearest_team]['area'] += area_sq_mi
 
-                state_raw = properties.get('STATE')
-                state_code = str(state_raw).zfill(2) if state_raw is not None else ''
                 population_value = population_lookup.get(fips)
                 if population_lookup and population_value is None:
                     missing_population += 1
@@ -167,6 +180,31 @@ def create_ownership_file(teams, team_locations):
                         'lon': centroid_lon
                     }
                 }
+
+                # Accumulate spherical vectors for territory centroid
+                weight = area_sq_mi if area_sq_mi and area_sq_mi > 0 else 1.0
+                lat_rad = radians(centroid_lat)
+                lon_rad = radians(centroid_lon)
+
+                vector = territory_vectors.setdefault(nearest_team, {
+                    'x': 0.0,
+                    'y': 0.0,
+                    'z': 0.0,
+                    'weight': 0.0
+                })
+
+                vector['x'] += weight * cos(lat_rad) * cos(lon_rad)
+                vector['y'] += weight * cos(lat_rad) * sin(lon_rad)
+                vector['z'] += weight * sin(lat_rad)
+                vector['weight'] += weight
+
+                territory_counties.setdefault(nearest_team, []).append({
+                    'fips': fips,
+                    'lat': centroid_lat,
+                    'lon': centroid_lon,
+                    'area': area_sq_mi,
+                    'state': state_code
+                })
 
         except Exception as e:
             print(f"  ⚠️  Skipping {fips}: {e}")
@@ -202,7 +240,145 @@ def create_ownership_file(teams, team_locations):
     if population_lookup:
         print(f"  ℹ️  Missing population data for {missing_population} counties")
 
-    return county_stats
+    territory_centroids = build_territory_centroids(
+        teams,
+        team_stats,
+        territory_vectors,
+        territory_counties
+    )
+
+    return county_stats, territory_centroids
+
+
+def build_territory_centroids(teams, team_stats, territory_vectors, territory_counties):
+    """Compute territory centroid per team, handling Alaska/mainland splits."""
+
+    def summarize_cluster(counties):
+        if not counties:
+            return None
+
+        total_weight = 0.0
+        total_area = 0.0
+        sum_x = 0.0
+        sum_y = 0.0
+        sum_z = 0.0
+
+        for county in counties:
+            area = county.get('area') or 0.0
+            weight = area if area > 0 else 1.0
+            lat_rad = radians(county['lat'])
+            lon_rad = radians(county['lon'])
+
+            sum_x += weight * cos(lat_rad) * cos(lon_rad)
+            sum_y += weight * cos(lat_rad) * sin(lon_rad)
+            sum_z += weight * sin(lat_rad)
+            total_weight += weight
+            total_area += area
+
+        if total_weight == 0:
+            return None
+
+        avg_x = sum_x / total_weight
+        avg_y = sum_y / total_weight
+        avg_z = sum_z / total_weight
+
+        hyp = sqrt(avg_x * avg_x + avg_y * avg_y)
+        centroid_lat = degrees(atan2(avg_z, hyp))
+        centroid_lon = degrees(atan2(avg_y, avg_x))
+        centroid_lon = ((centroid_lon + 180) % 360) - 180
+
+        # Choose the county closest to the centroid as the anchor
+        best = None
+        for county in counties:
+            distance = calculate_distance(
+                centroid_lat,
+                centroid_lon,
+                county['lat'],
+                county['lon']
+            )
+
+            if best is None or distance < best['distance']:
+                best = {
+                    'lat': county['lat'],
+                    'lon': county['lon'],
+                    'fips': county['fips'],
+                    'distance': distance
+                }
+
+        return {
+            'centroid_lat': centroid_lat,
+            'centroid_lon': centroid_lon,
+            'anchor_lat': best['lat'] if best else centroid_lat,
+            'anchor_lon': best['lon'] if best else centroid_lon,
+            'anchor_fips': best['fips'] if best else None,
+            'area': total_area,
+            'county_count': len(counties)
+        }
+
+    centroids = []
+
+    for team in teams:
+        team_id = team['id']
+        stats = team_stats.get(team_id, {'counties': 0, 'area': 0.0})
+        counties_for_team = territory_counties.get(team_id, [])
+
+        alaska_counties = [c for c in counties_for_team if c.get('state') == '02']
+        mainland_counties = [c for c in counties_for_team if c.get('state') != '02']
+
+        alaska_summary = summarize_cluster(alaska_counties)
+        mainland_summary = summarize_cluster(mainland_counties)
+
+        def make_entry(summary, region_tag=None):
+            return {
+                'teamId': team_id,
+                'teamName': team['school'],
+                'shortName': team['shortName'],
+                'latitude': summary['anchor_lat'],
+                'longitude': summary['anchor_lon'],
+                'centroidLatitude': summary['centroid_lat'],
+                'centroidLongitude': summary['centroid_lon'],
+                'areaSqMi': summary['area'] if summary['area'] else stats.get('area', 0.0),
+                'countyCount': summary['county_count'] if summary['county_count'] else stats.get('counties', 0),
+                'logoUrl': team.get('logoUrl'),
+                'anchorFips': summary['anchor_fips'],
+                'region': region_tag,
+                'totalAreaSqMi': stats.get('area', 0.0),
+            }
+
+        if mainland_summary:
+            centroids.append(make_entry(mainland_summary, region_tag='mainland'))
+        elif alaska_summary:
+            centroids.append(make_entry(alaska_summary, region_tag='alaska'))
+        else:
+            # No counties assigned; fall back to campus
+            centroids.append({
+                'teamId': team_id,
+                'teamName': team['school'],
+                'shortName': team['shortName'],
+                'latitude': team['lat'],
+                'longitude': team['lon'],
+                'centroidLatitude': team['lat'],
+                'centroidLongitude': team['lon'],
+                'areaSqMi': stats.get('area', 0.0),
+                'countyCount': stats.get('counties', 0),
+                'logoUrl': team.get('logoUrl'),
+                'anchorFips': None,
+                'region': None,
+                'totalAreaSqMi': stats.get('area', 0.0),
+            })
+
+        if mainland_summary and alaska_summary:
+            centroids.append(make_entry(alaska_summary, region_tag='alaska'))
+
+    centroids.sort(key=lambda entry: (entry['teamName'], entry.get('region') or ''))
+    return centroids
+
+
+def create_territory_centroids_file(territory_centroids):
+    """Persist territory centroids for frontend map markers."""
+    save_json('territory-centroids.json', territory_centroids)
+    active = sum(1 for entry in territory_centroids if entry.get('countyCount', 0) > 0)
+    print(f"  ✓ Created territory-centroids.json with {active} active teams")
 
 
 def load_county_population() -> Dict[str, int]:

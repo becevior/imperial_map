@@ -46,12 +46,17 @@ def load_teams_from_csv() -> List[Dict]:
             short_name = row.get('ShortName', '').strip() or school
             primary_color = (row.get('Primary_Color_Hex') or row.get('PrimaryColorHex') or '').strip()
             secondary_color = (row.get('Secondary_Color_Hex') or row.get('SecondaryColorHex') or '').strip()
+            logo_url = (row.get('Logo_URL') or row.get('LogoUrl') or row.get('Logo'))
             primary_color = primary_color if primary_color else None
             secondary_color = secondary_color if secondary_color else None
             if primary_color and not primary_color.startswith('#'):
                 primary_color = f'#{primary_color}'
             if secondary_color and not secondary_color.startswith('#'):
                 secondary_color = f'#{secondary_color}'
+            if isinstance(logo_url, str):
+                logo_url = logo_url.strip() or None
+            else:
+                logo_url = None
 
             team_data = {
                 'id': team_id,
@@ -64,6 +69,7 @@ def load_teams_from_csv() -> List[Dict]:
                 'lon': float(row['Longitude']),
                 'primaryColor': primary_color or _fallback_color(team_id),
                 'secondaryColor': secondary_color,
+                'logoUrl': logo_url,
             }
 
             if conference:

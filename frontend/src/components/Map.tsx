@@ -79,9 +79,26 @@ type CountyStats = Record<string, CountyStatsEntry>
 
 type OwnershipMap = Record<string, string>
 
+interface TerritoryCentroid {
+  teamId: string
+  teamName: string
+  shortName?: string
+  latitude: number
+  longitude: number
+  areaSqMi?: number
+  countyCount?: number
+  logoUrl?: string | null
+  centroidLatitude?: number
+  centroidLongitude?: number
+  anchorFips?: string | null
+  region?: string | null
+  totalAreaSqMi?: number
+}
+
 export default function Map({ className = '' }: MapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
+  const markersRef = useRef<maplibregl.Marker[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [teamCount, setTeamCount] = useState<number | null>(null)
@@ -92,17 +109,19 @@ export default function Map({ className = '' }: MapProps) {
 
     const initMap = async () => {
       try {
-        const dataRequests = [
+        const [
+          teamsRes,
+          ownershipRes,
+          geoJsonRes,
+          countyStatsRes,
+          territoryCentroidsRes
+        ] = await Promise.all([
           fetch('/data/teams.json'),
           fetch('/data/ownership.json'),
           fetch('/data/us-counties.geojson'),
-          fetch('/data/county-stats.json').then((res) =>
-            res.ok ? res.json() : null
-          )
-        ]
-
-        const [teamsRes, ownershipRes, geoJsonRes, countyStats] =
-          await Promise.all(dataRequests)
+          fetch('/data/county-stats.json'),
+          fetch('/data/territory-centroids.json')
+        ])
 
         if (!teamsRes.ok || !ownershipRes.ok || !geoJsonRes.ok) {
           throw new Error('Failed to load required map datasets')
@@ -111,7 +130,22 @@ export default function Map({ className = '' }: MapProps) {
         const teams: Team[] = await teamsRes.json()
         const ownership: OwnershipMap = await ownershipRes.json()
         const geoJson = await geoJsonRes.json()
-        const countyStatsMap: CountyStats = countyStats ?? {}
+        const countyStatsMap: CountyStats = countyStatsRes.ok
+          ? await countyStatsRes.json()
+          : {}
+        const territoryCentroids: TerritoryCentroid[] = territoryCentroidsRes.ok
+          ? await territoryCentroidsRes.json()
+          : []
+
+        if (Array.isArray(geoJson?.features)) {
+          geoJson.features = geoJson.features.filter((feature: any) => {
+            const stateCode = String(feature?.properties?.STATE ?? '').padStart(
+              2,
+              '0'
+            )
+            return stateCode !== '72'
+          })
+        }
 
         const teamsById = teams.reduce<Record<string, Team>>((acc, team) => {
           acc[team.id] = team
@@ -149,6 +183,14 @@ export default function Map({ className = '' }: MapProps) {
             areaSqMi
           }
         })
+
+        const markerSourceData = territoryCentroids.filter(
+          (centroid) =>
+            centroid &&
+            typeof centroid.latitude === 'number' &&
+            typeof centroid.longitude === 'number' &&
+            centroid.logoUrl
+        )
 
         mapRef.current = new maplibregl.Map({
           container: mapContainer.current,
@@ -210,6 +252,69 @@ export default function Map({ className = '' }: MapProps) {
 
           setTeamCount(teams.length)
           setCountyCount(Object.keys(ownership).length)
+
+          const mapInstance = mapRef.current
+          if (!mapInstance) {
+            setLoading(false)
+            return
+          }
+
+          const markerData = markerSourceData.map((centroid) => ({
+            centroid,
+            element: document.createElement('div'),
+            marker: null as maplibregl.Marker | null
+          }))
+
+          const applyMarkerStyles = () => {
+            const zoom = mapInstance.getZoom()
+
+            markerData.forEach(({ centroid, element }) => {
+              const area = Math.max(
+                centroid.areaSqMi ?? centroid.totalAreaSqMi ?? 0,
+                1
+              )
+              const baseSize = Math.max(22, Math.min(62, Math.pow(area, 0.25) * 4.8))
+
+              const zoomScale = Math.min(1.2, Math.max(0.8, (zoom - 3.8) / 2.2 + 0.9))
+              const size = baseSize * zoomScale
+              const opacity = Math.min(1, Math.max(0.45, (zoom - 3.6) / 0.6))
+
+              element.style.width = `${size}px`
+              element.style.height = `${size}px`
+              element.style.opacity = `${opacity}`
+            })
+          }
+
+          markerData.forEach((entry) => {
+            const { centroid, element } = entry
+
+            element.className = 'territory-logo-marker'
+            element.style.backgroundImage = `url('${centroid.logoUrl}')`
+            element.style.backgroundSize = 'contain'
+            element.style.backgroundRepeat = 'no-repeat'
+            element.style.backgroundPosition = 'center'
+            element.style.backgroundColor = 'transparent'
+            element.style.borderRadius = '0'
+            element.style.border = 'none'
+            element.style.boxShadow = 'none'
+            element.style.pointerEvents = 'none'
+            element.style.filter = 'drop-shadow(0 1px 4px rgba(15, 23, 42, 0.45))'
+            element.title = centroid.teamName || centroid.teamId
+
+            const marker = new maplibregl.Marker({ element, anchor: 'center' })
+              .setLngLat([centroid.longitude, centroid.latitude])
+              .addTo(mapInstance)
+
+            entry.marker = marker
+            markersRef.current.push(marker)
+          })
+
+          const handleZoom = () => applyMarkerStyles()
+          mapInstance.on('zoom', handleZoom)
+          applyMarkerStyles()
+
+          // Store cleanup to detach zoom handler later
+          (mapInstance as any).__logoZoomHandler = handleZoom
           setLoading(false)
         })
 
@@ -302,7 +407,17 @@ export default function Map({ className = '' }: MapProps) {
     initMap()
 
     return () => {
-      mapRef.current?.remove()
+      markersRef.current.forEach((marker) => marker.remove())
+      markersRef.current = []
+
+      const mapInstance = mapRef.current
+      if (mapInstance) {
+        if ((mapInstance as any).__logoZoomHandler) {
+          mapInstance.off('zoom', (mapInstance as any).__logoZoomHandler)
+          delete (mapInstance as any).__logoZoomHandler
+        }
+        mapInstance.remove()
+      }
       mapRef.current = null
     }
   }, [])
