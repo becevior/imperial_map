@@ -2,7 +2,7 @@
 Territory assignment and geospatial utilities
 """
 from typing import Dict, Tuple, List
-from math import radians, sin, cos, sqrt, atan2
+from math import radians, sin, cos, sqrt, atan2, degrees
 
 # Stadium locations for initial territory assignment
 # TODO: Expand to all ~130 FBS teams
@@ -54,8 +54,9 @@ def calculate_centroid(coordinates) -> Tuple[float, float]:
     Calculate centroid of a polygon or multipolygon
     Returns (lat, lon) tuple
     """
-    total_lat = 0.0
-    total_lon = 0.0
+    total_x = 0.0
+    total_y = 0.0
+    total_z = 0.0
     point_count = 0
 
     # Handle both Polygon and MultiPolygon
@@ -70,14 +71,26 @@ def calculate_centroid(coordinates) -> Tuple[float, float]:
     for polygon in polygons:
         for ring in polygon:
             for lon, lat in ring:
-                total_lat += lat
-                total_lon += lon
+                lat_rad = radians(lat)
+                lon_rad = radians(lon)
+
+                total_x += cos(lat_rad) * cos(lon_rad)
+                total_y += cos(lat_rad) * sin(lon_rad)
+                total_z += sin(lat_rad)
                 point_count += 1
 
     if point_count == 0:
         raise ValueError("No points found in geometry")
 
-    return (total_lat / point_count, total_lon / point_count)
+    avg_x = total_x / point_count
+    avg_y = total_y / point_count
+    avg_z = total_z / point_count
+
+    lon = atan2(avg_y, avg_x)
+    hyp = sqrt(avg_x * avg_x + avg_y * avg_y)
+    lat = atan2(avg_z, hyp)
+
+    return (degrees(lat), degrees(lon))
 
 
 def assign_initial_ownership(
