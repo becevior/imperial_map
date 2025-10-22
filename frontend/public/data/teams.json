@@ -1,0 +1,947 @@
+[
+  {
+    "id": "boston-college",
+    "name": "Boston College",
+    "fullName": "Boston College Eagles",
+    "city": "Chestnut Hill",
+    "state": "Massachusetts"
+  },
+  {
+    "id": "clemson",
+    "name": "Clemson",
+    "fullName": "Clemson Tigers",
+    "city": "Clemson",
+    "state": "South Carolina"
+  },
+  {
+    "id": "duke",
+    "name": "Duke",
+    "fullName": "Duke Blue Devils",
+    "city": "Durham",
+    "state": "North Carolina"
+  },
+  {
+    "id": "florida-state",
+    "name": "Florida State",
+    "fullName": "Florida State Seminoles",
+    "city": "Tallahassee",
+    "state": "Florida"
+  },
+  {
+    "id": "georgia-tech",
+    "name": "Georgia Tech",
+    "fullName": "Georgia Tech Yellow Jackets",
+    "city": "Atlanta",
+    "state": "Georgia"
+  },
+  {
+    "id": "louisville",
+    "name": "Louisville",
+    "fullName": "Louisville Cardinals",
+    "city": "Louisville",
+    "state": "Kentucky"
+  },
+  {
+    "id": "miami",
+    "name": "Miami",
+    "fullName": "Miami Hurricanes",
+    "city": "Coral Gables",
+    "state": "Florida"
+  },
+  {
+    "id": "north-carolina",
+    "name": "North Carolina",
+    "fullName": "North Carolina Tar Heels",
+    "city": "Chapel Hill",
+    "state": "North Carolina"
+  },
+  {
+    "id": "nc-state",
+    "name": "NC State",
+    "fullName": "NC State Wolfpack",
+    "city": "Raleigh",
+    "state": "North Carolina"
+  },
+  {
+    "id": "pittsburgh",
+    "name": "Pittsburgh",
+    "fullName": "Pittsburgh Panthers",
+    "city": "Pittsburgh",
+    "state": "Pennsylvania"
+  },
+  {
+    "id": "smu",
+    "name": "SMU",
+    "fullName": "SMU Mustangs",
+    "city": "Dallas",
+    "state": "Texas"
+  },
+  {
+    "id": "stanford",
+    "name": "Stanford",
+    "fullName": "Stanford Cardinal",
+    "city": "Stanford",
+    "state": "California"
+  },
+  {
+    "id": "syracuse",
+    "name": "Syracuse",
+    "fullName": "Syracuse Orange",
+    "city": "Syracuse",
+    "state": "New York"
+  },
+  {
+    "id": "virginia",
+    "name": "Virginia",
+    "fullName": "Virginia Cavaliers",
+    "city": "Charlottesville",
+    "state": "Virginia"
+  },
+  {
+    "id": "virginia-tech",
+    "name": "Virginia Tech",
+    "fullName": "Virginia Tech Hokies",
+    "city": "Blacksburg",
+    "state": "Virginia"
+  },
+  {
+    "id": "wake-forest",
+    "name": "Wake Forest",
+    "fullName": "Wake Forest Demon Deacons",
+    "city": "Winston-Salem",
+    "state": "North Carolina"
+  },
+  {
+    "id": "army",
+    "name": "Army",
+    "fullName": "Army Black Knights",
+    "city": "West Point",
+    "state": "New York"
+  },
+  {
+    "id": "charlotte",
+    "name": "Charlotte",
+    "fullName": "Charlotte 49ers",
+    "city": "Charlotte",
+    "state": "North Carolina"
+  },
+  {
+    "id": "east-carolina",
+    "name": "East Carolina",
+    "fullName": "East Carolina Pirates",
+    "city": "Greenville",
+    "state": "North Carolina"
+  },
+  {
+    "id": "florida-atlantic",
+    "name": "Florida Atlantic",
+    "fullName": "Florida Atlantic Owls",
+    "city": "Boca Raton",
+    "state": "Florida"
+  },
+  {
+    "id": "memphis",
+    "name": "Memphis",
+    "fullName": "Memphis Tigers",
+    "city": "Memphis",
+    "state": "Tennessee"
+  },
+  {
+    "id": "navy",
+    "name": "Navy",
+    "fullName": "Navy Midshipmen",
+    "city": "Annapolis",
+    "state": "Maryland"
+  },
+  {
+    "id": "north-texas",
+    "name": "North Texas",
+    "fullName": "North Texas Mean Green",
+    "city": "Denton",
+    "state": "Texas"
+  },
+  {
+    "id": "rice",
+    "name": "Rice",
+    "fullName": "Rice Owls",
+    "city": "Houston",
+    "state": "Texas"
+  },
+  {
+    "id": "south-florida",
+    "name": "South Florida",
+    "fullName": "South Florida Bulls",
+    "city": "Tampa",
+    "state": "Florida"
+  },
+  {
+    "id": "temple",
+    "name": "Temple",
+    "fullName": "Temple Owls",
+    "city": "Philadelphia",
+    "state": "Pennsylvania"
+  },
+  {
+    "id": "tulane",
+    "name": "Tulane",
+    "fullName": "Tulane Green Wave",
+    "city": "New Orleans",
+    "state": "Louisiana"
+  },
+  {
+    "id": "tulsa",
+    "name": "Tulsa",
+    "fullName": "Tulsa Golden Hurricane",
+    "city": "Tulsa",
+    "state": "Oklahoma"
+  },
+  {
+    "id": "uab",
+    "name": "UAB",
+    "fullName": "UAB Blazers",
+    "city": "Birmingham",
+    "state": "Alabama"
+  },
+  {
+    "id": "utsa",
+    "name": "UTSA",
+    "fullName": "UTSA Roadrunners",
+    "city": "San Antonio",
+    "state": "Texas"
+  },
+  {
+    "id": "arizona",
+    "name": "Arizona",
+    "fullName": "Arizona Wildcats",
+    "city": "Tucson",
+    "state": "Arizona"
+  },
+  {
+    "id": "arizona-state",
+    "name": "Arizona State",
+    "fullName": "Arizona State Sun Devils",
+    "city": "Tempe",
+    "state": "Arizona"
+  },
+  {
+    "id": "baylor",
+    "name": "Baylor",
+    "fullName": "Baylor Bears",
+    "city": "Waco",
+    "state": "Texas"
+  },
+  {
+    "id": "byu",
+    "name": "BYU",
+    "fullName": "BYU Cougars",
+    "city": "Provo",
+    "state": "Utah"
+  },
+  {
+    "id": "cincinnati",
+    "name": "Cincinnati",
+    "fullName": "Cincinnati Bearcats",
+    "city": "Cincinnati",
+    "state": "Ohio"
+  },
+  {
+    "id": "colorado",
+    "name": "Colorado",
+    "fullName": "Colorado Buffaloes",
+    "city": "Boulder",
+    "state": "Colorado"
+  },
+  {
+    "id": "houston",
+    "name": "Houston",
+    "fullName": "Houston Cougars",
+    "city": "Houston",
+    "state": "Texas"
+  },
+  {
+    "id": "iowa-state",
+    "name": "Iowa State",
+    "fullName": "Iowa State Cyclones",
+    "city": "Ames",
+    "state": "Iowa"
+  },
+  {
+    "id": "kansas",
+    "name": "Kansas",
+    "fullName": "Kansas Jayhawks",
+    "city": "Lawrence",
+    "state": "Kansas"
+  },
+  {
+    "id": "kansas-state",
+    "name": "Kansas State",
+    "fullName": "Kansas State Wildcats",
+    "city": "Manhattan",
+    "state": "Kansas"
+  },
+  {
+    "id": "oklahoma-state",
+    "name": "Oklahoma State",
+    "fullName": "Oklahoma State Cowboys",
+    "city": "Stillwater",
+    "state": "Oklahoma"
+  },
+  {
+    "id": "tcu",
+    "name": "TCU",
+    "fullName": "TCU Horned Frogs",
+    "city": "Fort Worth",
+    "state": "Texas"
+  },
+  {
+    "id": "texas-tech",
+    "name": "Texas Tech",
+    "fullName": "Texas Tech Red Raiders",
+    "city": "Lubbock",
+    "state": "Texas"
+  },
+  {
+    "id": "ucf",
+    "name": "UCF",
+    "fullName": "UCF Knights",
+    "city": "Orlando",
+    "state": "Florida"
+  },
+  {
+    "id": "utah",
+    "name": "Utah",
+    "fullName": "Utah Utes",
+    "city": "Salt Lake City",
+    "state": "Utah"
+  },
+  {
+    "id": "west-virginia",
+    "name": "West Virginia",
+    "fullName": "West Virginia Mountaineers",
+    "city": "Morgantown",
+    "state": "West Virginia"
+  },
+  {
+    "id": "illinois",
+    "name": "Illinois",
+    "fullName": "Illinois Fighting Illini",
+    "city": "Champaign",
+    "state": "Illinois"
+  },
+  {
+    "id": "indiana",
+    "name": "Indiana",
+    "fullName": "Indiana Hoosiers",
+    "city": "Bloomington",
+    "state": "Indiana"
+  },
+  {
+    "id": "iowa",
+    "name": "Iowa",
+    "fullName": "Iowa Hawkeyes",
+    "city": "Iowa City",
+    "state": "Iowa"
+  },
+  {
+    "id": "maryland",
+    "name": "Maryland",
+    "fullName": "Maryland Terrapins",
+    "city": "College Park",
+    "state": "Maryland"
+  },
+  {
+    "id": "michigan",
+    "name": "Michigan",
+    "fullName": "Michigan Wolverines",
+    "city": "Ann Arbor",
+    "state": "Michigan"
+  },
+  {
+    "id": "michigan-state",
+    "name": "Michigan State",
+    "fullName": "Michigan State Spartans",
+    "city": "East Lansing",
+    "state": "Michigan"
+  },
+  {
+    "id": "minnesota",
+    "name": "Minnesota",
+    "fullName": "Minnesota Golden Gophers",
+    "city": "Minneapolis",
+    "state": "Minnesota"
+  },
+  {
+    "id": "nebraska",
+    "name": "Nebraska",
+    "fullName": "Nebraska Cornhuskers",
+    "city": "Lincoln",
+    "state": "Nebraska"
+  },
+  {
+    "id": "northwestern",
+    "name": "Northwestern",
+    "fullName": "Northwestern Wildcats",
+    "city": "Evanston",
+    "state": "Illinois"
+  },
+  {
+    "id": "ohio-state",
+    "name": "Ohio State",
+    "fullName": "Ohio State Buckeyes",
+    "city": "Columbus",
+    "state": "Ohio"
+  },
+  {
+    "id": "oregon",
+    "name": "Oregon",
+    "fullName": "Oregon Ducks",
+    "city": "Eugene",
+    "state": "Oregon"
+  },
+  {
+    "id": "penn-state",
+    "name": "Penn State",
+    "fullName": "Penn State Nittany Lions",
+    "city": "University Park",
+    "state": "Pennsylvania"
+  },
+  {
+    "id": "purdue",
+    "name": "Purdue",
+    "fullName": "Purdue Boilermakers",
+    "city": "West Lafayette",
+    "state": "Indiana"
+  },
+  {
+    "id": "rutgers",
+    "name": "Rutgers",
+    "fullName": "Rutgers Scarlet Knights",
+    "city": "New Brunswick",
+    "state": "New Jersey"
+  },
+  {
+    "id": "ucla",
+    "name": "UCLA",
+    "fullName": "UCLA Bruins",
+    "city": "Los Angeles",
+    "state": "California"
+  },
+  {
+    "id": "usc",
+    "name": "USC",
+    "fullName": "USC Trojans",
+    "city": "Los Angeles",
+    "state": "California"
+  },
+  {
+    "id": "washington",
+    "name": "Washington",
+    "fullName": "Washington Huskies",
+    "city": "Seattle",
+    "state": "Washington"
+  },
+  {
+    "id": "wisconsin",
+    "name": "Wisconsin",
+    "fullName": "Wisconsin Badgers",
+    "city": "Madison",
+    "state": "Wisconsin"
+  },
+  {
+    "id": "delaware",
+    "name": "Delaware",
+    "fullName": "Delaware Fightin' Blue Hens",
+    "city": "Newark",
+    "state": "Delaware"
+  },
+  {
+    "id": "fiu",
+    "name": "FIU",
+    "fullName": "FIU Panthers",
+    "city": "Miami",
+    "state": "Florida"
+  },
+  {
+    "id": "jacksonville-state",
+    "name": "Jacksonville State",
+    "fullName": "Jacksonville State Gamecocks",
+    "city": "Jacksonville",
+    "state": "Alabama"
+  },
+  {
+    "id": "kennesaw-state",
+    "name": "Kennesaw State",
+    "fullName": "Kennesaw State Owls",
+    "city": "Kennesaw",
+    "state": "Georgia"
+  },
+  {
+    "id": "liberty",
+    "name": "Liberty",
+    "fullName": "Liberty Flames",
+    "city": "Lynchburg",
+    "state": "Virginia"
+  },
+  {
+    "id": "louisiana-tech",
+    "name": "Louisiana Tech",
+    "fullName": "Louisiana Tech Bulldogs",
+    "city": "Ruston",
+    "state": "Louisiana"
+  },
+  {
+    "id": "middle-tennessee",
+    "name": "Middle Tennessee",
+    "fullName": "Middle Tennessee Blue Raiders",
+    "city": "Murfreesboro",
+    "state": "Tennessee"
+  },
+  {
+    "id": "missouri-state",
+    "name": "Missouri State",
+    "fullName": "Missouri State Bears",
+    "city": "Springfield",
+    "state": "Missouri"
+  },
+  {
+    "id": "new-mexico-state",
+    "name": "New Mexico State",
+    "fullName": "New Mexico State Aggies",
+    "city": "Las Cruces",
+    "state": "New Mexico"
+  },
+  {
+    "id": "sam-houston",
+    "name": "Sam Houston",
+    "fullName": "Sam Houston Bearkats",
+    "city": "Huntsville",
+    "state": "Texas"
+  },
+  {
+    "id": "utep",
+    "name": "UTEP",
+    "fullName": "UTEP Miners",
+    "city": "El Paso",
+    "state": "Texas"
+  },
+  {
+    "id": "western-kentucky",
+    "name": "Western Kentucky",
+    "fullName": "Western Kentucky Hilltoppers",
+    "city": "Bowling Green",
+    "state": "Kentucky"
+  },
+  {
+    "id": "connecticut",
+    "name": "Connecticut",
+    "fullName": "Connecticut Huskies",
+    "city": "Storrs",
+    "state": "Connecticut"
+  },
+  {
+    "id": "notre-dame",
+    "name": "Notre Dame",
+    "fullName": "Notre Dame Fighting Irish",
+    "city": "Notre Dame",
+    "state": "Indiana"
+  },
+  {
+    "id": "akron",
+    "name": "Akron",
+    "fullName": "Akron Zips",
+    "city": "Akron",
+    "state": "Ohio"
+  },
+  {
+    "id": "ball-state",
+    "name": "Ball State",
+    "fullName": "Ball State Cardinals",
+    "city": "Muncie",
+    "state": "Indiana"
+  },
+  {
+    "id": "bowling-green",
+    "name": "Bowling Green",
+    "fullName": "Bowling Green Falcons",
+    "city": "Bowling Green",
+    "state": "Ohio"
+  },
+  {
+    "id": "buffalo",
+    "name": "Buffalo",
+    "fullName": "Buffalo Bulls",
+    "city": "Buffalo",
+    "state": "New York"
+  },
+  {
+    "id": "central-michigan",
+    "name": "Central Michigan",
+    "fullName": "Central Michigan Chippewas",
+    "city": "Mount Pleasant",
+    "state": "Michigan"
+  },
+  {
+    "id": "eastern-michigan",
+    "name": "Eastern Michigan",
+    "fullName": "Eastern Michigan Eagles",
+    "city": "Ypsilanti",
+    "state": "Michigan"
+  },
+  {
+    "id": "kent-state",
+    "name": "Kent State",
+    "fullName": "Kent State Golden Flashes",
+    "city": "Kent",
+    "state": "Ohio"
+  },
+  {
+    "id": "miami-(oh)",
+    "name": "Miami (OH)",
+    "fullName": "Miami RedHawks",
+    "city": "Oxford",
+    "state": "Ohio"
+  },
+  {
+    "id": "northern-illinois",
+    "name": "Northern Illinois",
+    "fullName": "Northern Illinois Huskies",
+    "city": "DeKalb",
+    "state": "Illinois"
+  },
+  {
+    "id": "ohio",
+    "name": "Ohio",
+    "fullName": "Ohio Bobcats",
+    "city": "Athens",
+    "state": "Ohio"
+  },
+  {
+    "id": "toledo",
+    "name": "Toledo",
+    "fullName": "Toledo Rockets",
+    "city": "Toledo",
+    "state": "Ohio"
+  },
+  {
+    "id": "umass",
+    "name": "UMass",
+    "fullName": "UMass Minutemen",
+    "city": "Amherst",
+    "state": "Massachusetts"
+  },
+  {
+    "id": "western-michigan",
+    "name": "Western Michigan",
+    "fullName": "Western Michigan Broncos",
+    "city": "Kalamazoo",
+    "state": "Michigan"
+  },
+  {
+    "id": "air-force",
+    "name": "Air Force",
+    "fullName": "Air Force Falcons",
+    "city": "Colorado Springs",
+    "state": "Colorado"
+  },
+  {
+    "id": "boise-state",
+    "name": "Boise State",
+    "fullName": "Boise State Broncos",
+    "city": "Boise",
+    "state": "Idaho"
+  },
+  {
+    "id": "colorado-state",
+    "name": "Colorado State",
+    "fullName": "Colorado State Rams",
+    "city": "Fort Collins",
+    "state": "Colorado"
+  },
+  {
+    "id": "fresno-state",
+    "name": "Fresno State",
+    "fullName": "Fresno State Bulldogs",
+    "city": "Fresno",
+    "state": "California"
+  },
+  {
+    "id": "hawaii",
+    "name": "Hawaii",
+    "fullName": "Hawaii Rainbow Warriors",
+    "city": "Honolulu",
+    "state": "Hawaii"
+  },
+  {
+    "id": "nevada",
+    "name": "Nevada",
+    "fullName": "Nevada Wolf Pack",
+    "city": "Reno",
+    "state": "Nevada"
+  },
+  {
+    "id": "new-mexico",
+    "name": "New Mexico",
+    "fullName": "New Mexico Lobos",
+    "city": "Albuquerque",
+    "state": "New Mexico"
+  },
+  {
+    "id": "san-diego-state",
+    "name": "San Diego State",
+    "fullName": "San Diego State Aztecs",
+    "city": "San Diego",
+    "state": "California"
+  },
+  {
+    "id": "san-jose-state",
+    "name": "San Jose State",
+    "fullName": "San Jose State Spartans",
+    "city": "San Jose",
+    "state": "California"
+  },
+  {
+    "id": "unlv",
+    "name": "UNLV",
+    "fullName": "UNLV Rebels",
+    "city": "Las Vegas",
+    "state": "Nevada"
+  },
+  {
+    "id": "utah-state",
+    "name": "Utah State",
+    "fullName": "Utah State Aggies",
+    "city": "Logan",
+    "state": "Utah"
+  },
+  {
+    "id": "wyoming",
+    "name": "Wyoming",
+    "fullName": "Wyoming Cowboys",
+    "city": "Laramie",
+    "state": "Wyoming"
+  },
+  {
+    "id": "oregon-state",
+    "name": "Oregon State",
+    "fullName": "Oregon State Beavers",
+    "city": "Corvallis",
+    "state": "Oregon"
+  },
+  {
+    "id": "washington-state",
+    "name": "Washington State",
+    "fullName": "Washington State Cougars",
+    "city": "Pullman",
+    "state": "Washington"
+  },
+  {
+    "id": "alabama",
+    "name": "Alabama",
+    "fullName": "Alabama Crimson Tide",
+    "city": "Tuscaloosa",
+    "state": "Alabama"
+  },
+  {
+    "id": "arkansas",
+    "name": "Arkansas",
+    "fullName": "Arkansas Razorbacks",
+    "city": "Fayetteville",
+    "state": "Arkansas"
+  },
+  {
+    "id": "auburn",
+    "name": "Auburn",
+    "fullName": "Auburn Tigers",
+    "city": "Auburn",
+    "state": "Alabama"
+  },
+  {
+    "id": "florida",
+    "name": "Florida",
+    "fullName": "Florida Gators",
+    "city": "Gainesville",
+    "state": "Florida"
+  },
+  {
+    "id": "georgia",
+    "name": "Georgia",
+    "fullName": "Georgia Bulldogs",
+    "city": "Athens",
+    "state": "Georgia"
+  },
+  {
+    "id": "kentucky",
+    "name": "Kentucky",
+    "fullName": "Kentucky Wildcats",
+    "city": "Lexington",
+    "state": "Kentucky"
+  },
+  {
+    "id": "lsu",
+    "name": "LSU",
+    "fullName": "LSU Tigers",
+    "city": "Baton Rouge",
+    "state": "Louisiana"
+  },
+  {
+    "id": "mississippi-state",
+    "name": "Mississippi State",
+    "fullName": "Mississippi State Bulldogs",
+    "city": "Starkville",
+    "state": "Mississippi"
+  },
+  {
+    "id": "missouri",
+    "name": "Missouri",
+    "fullName": "Missouri Tigers",
+    "city": "Columbia",
+    "state": "Missouri"
+  },
+  {
+    "id": "oklahoma",
+    "name": "Oklahoma",
+    "fullName": "Oklahoma Sooners",
+    "city": "Norman",
+    "state": "Oklahoma"
+  },
+  {
+    "id": "ole-miss",
+    "name": "Ole Miss",
+    "fullName": "Ole Miss Rebels",
+    "city": "Oxford",
+    "state": "Mississippi"
+  },
+  {
+    "id": "south-carolina",
+    "name": "South Carolina",
+    "fullName": "South Carolina Gamecocks",
+    "city": "Columbia",
+    "state": "South Carolina"
+  },
+  {
+    "id": "tennessee",
+    "name": "Tennessee",
+    "fullName": "Tennessee Volunteers",
+    "city": "Knoxville",
+    "state": "Tennessee"
+  },
+  {
+    "id": "texas",
+    "name": "Texas",
+    "fullName": "Texas Longhorns",
+    "city": "Austin",
+    "state": "Texas"
+  },
+  {
+    "id": "texas-a&m",
+    "name": "Texas A&M",
+    "fullName": "Texas A&M Aggies",
+    "city": "College Station",
+    "state": "Texas"
+  },
+  {
+    "id": "vanderbilt",
+    "name": "Vanderbilt",
+    "fullName": "Vanderbilt Commodores",
+    "city": "Nashville",
+    "state": "Tennessee"
+  },
+  {
+    "id": "appalachian-state",
+    "name": "Appalachian State",
+    "fullName": "Appalachian State Mountaineers",
+    "city": "Boone",
+    "state": "North Carolina"
+  },
+  {
+    "id": "arkansas-state",
+    "name": "Arkansas State",
+    "fullName": "Arkansas State Red Wolves",
+    "city": "Jonesboro",
+    "state": "Arkansas"
+  },
+  {
+    "id": "coastal-carolina",
+    "name": "Coastal Carolina",
+    "fullName": "Coastal Carolina Chanticleers",
+    "city": "Conway",
+    "state": "South Carolina"
+  },
+  {
+    "id": "georgia-southern",
+    "name": "Georgia Southern",
+    "fullName": "Georgia Southern Eagles",
+    "city": "Statesboro",
+    "state": "Georgia"
+  },
+  {
+    "id": "georgia-state",
+    "name": "Georgia State",
+    "fullName": "Georgia State Panthers",
+    "city": "Atlanta",
+    "state": "Georgia"
+  },
+  {
+    "id": "james-madison",
+    "name": "James Madison",
+    "fullName": "James Madison Dukes",
+    "city": "Harrisonburg",
+    "state": "Virginia"
+  },
+  {
+    "id": "louisiana",
+    "name": "Louisiana",
+    "fullName": "Louisiana Ragin' Cajuns",
+    "city": "Lafayette",
+    "state": "Louisiana"
+  },
+  {
+    "id": "marshall",
+    "name": "Marshall",
+    "fullName": "Marshall Thundering Herd",
+    "city": "Huntington",
+    "state": "West Virginia"
+  },
+  {
+    "id": "old-dominion",
+    "name": "Old Dominion",
+    "fullName": "Old Dominion Monarchs",
+    "city": "Norfolk",
+    "state": "Virginia"
+  },
+  {
+    "id": "south-alabama",
+    "name": "South Alabama",
+    "fullName": "South Alabama Jaguars",
+    "city": "Mobile",
+    "state": "Alabama"
+  },
+  {
+    "id": "southern-miss",
+    "name": "Southern Miss",
+    "fullName": "Southern Miss Golden Eagles",
+    "city": "Hattiesburg",
+    "state": "Mississippi"
+  },
+  {
+    "id": "texas-state",
+    "name": "Texas State",
+    "fullName": "Texas State Bobcats",
+    "city": "San Marcos",
+    "state": "Texas"
+  },
+  {
+    "id": "troy",
+    "name": "Troy",
+    "fullName": "Troy Trojans",
+    "city": "Troy",
+    "state": "Alabama"
+  },
+  {
+    "id": "ulm",
+    "name": "ULM",
+    "fullName": "ULM Warhawks",
+    "city": "Monroe",
+    "state": "Louisiana"
+  }
+]

@@ -1,164 +1,63 @@
 #!/usr/bin/env python3
 """
-Initialize data files from GeoJSON
-Generates teams.json and ownership.json
+Initialize data files from GeoJSON and team CSV
+Generates teams.json and ownership.json for all 136 FBS teams
 """
 import json
 from pathlib import Path
-from lib.territory import calculate_centroid, assign_initial_ownership, TEAM_STADIUM_LOCATIONS
+from lib.territory import calculate_centroid, calculate_distance
+from lib.teams import load_teams_from_csv, get_team_locations
 from lib.db import save_teams, save_ownership
 
 
 def main():
-    print("🚀 Initializing data files...\n")
+    print("🚀 Initializing data files for 136 FBS teams...\n")
 
-    # Step 1: Generate teams.json from stadium locations
-    print("📋 Step 1: Creating teams.json...")
-    create_teams_file()
+    # Step 1: Load teams from CSV
+    print("📋 Step 1: Loading teams from CSV...")
+    teams = load_teams_from_csv()
+    print(f"  ✓ Loaded {len(teams)} FBS teams")
 
-    # Step 2: Calculate ownership from GeoJSON
-    print("\n🗺️  Step 2: Processing county data...")
-    print("📍 Step 3: Assigning initial ownership...")
-    create_ownership_file()
+    # Step 2: Save teams.json
+    print("\n💾 Step 2: Creating teams.json...")
+    create_teams_file(teams)
+
+    # Step 3: Calculate ownership from GeoJSON
+    print("\n🗺️  Step 3: Processing county GeoJSON data...")
+    print("📍 Step 4: Assigning counties to nearest teams...")
+    create_ownership_file(teams)
 
     print("\n✅ Initialization complete!")
     print("\nGenerated files:")
     print("  - frontend/public/data/teams.json")
     print("  - frontend/public/data/ownership.json")
+    print(f"\nCoverage: {len(teams)} teams assigned to 3,221 US counties")
     print("\nNext: Run `cd frontend && npm run dev` to view the map")
 
 
-def create_teams_file():
-    """Create teams.json from TEAM_STADIUM_LOCATIONS"""
-    teams = [
+def create_teams_file(teams):
+    """Create teams.json from CSV data"""
+    # Simplified team data for frontend (just what map needs)
+    teams_output = [
         {
-            'id': 'alabama',
-            'name': 'Alabama',
-            'conference': 'SEC',
-            'color': '#9E1B32'
-        },
-        {
-            'id': 'georgia',
-            'name': 'Georgia',
-            'conference': 'SEC',
-            'color': '#BA0C2F'
-        },
-        {
-            'id': 'michigan',
-            'name': 'Michigan',
-            'conference': 'Big Ten',
-            'color': '#00274C'
-        },
-        {
-            'id': 'ohio-state',
-            'name': 'Ohio State',
-            'conference': 'Big Ten',
-            'color': '#BB0000'
-        },
-        {
-            'id': 'texas',
-            'name': 'Texas',
-            'conference': 'SEC',
-            'color': '#BF5700'
-        },
-        {
-            'id': 'oklahoma',
-            'name': 'Oklahoma',
-            'conference': 'SEC',
-            'color': '#841617'
-        },
-        {
-            'id': 'clemson',
-            'name': 'Clemson',
-            'conference': 'ACC',
-            'color': '#F66733'
-        },
-        {
-            'id': 'notre-dame',
-            'name': 'Notre Dame',
-            'conference': 'Independent',
-            'color': '#0C2340'
-        },
-        {
-            'id': 'usc',
-            'name': 'USC',
-            'conference': 'Big Ten',
-            'color': '#990000'
-        },
-        {
-            'id': 'florida',
-            'name': 'Florida',
-            'conference': 'SEC',
-            'color': '#0021A5'
-        },
-        {
-            'id': 'lsu',
-            'name': 'LSU',
-            'conference': 'SEC',
-            'color': '#461D7C'
-        },
-        {
-            'id': 'wisconsin',
-            'name': 'Wisconsin',
-            'conference': 'Big Ten',
-            'color': '#C5050C'
-        },
-        {
-            'id': 'penn-state',
-            'name': 'Penn State',
-            'conference': 'Big Ten',
-            'color': '#041E42'
-        },
-        {
-            'id': 'auburn',
-            'name': 'Auburn',
-            'conference': 'SEC',
-            'color': '#0C385B'
-        },
-        {
-            'id': 'oregon',
-            'name': 'Oregon',
-            'conference': 'Big Ten',
-            'color': '#154733'
-        },
-        {
-            'id': 'washington',
-            'name': 'Washington',
-            'conference': 'Big Ten',
-            'color': '#4B2E83'
-        },
-        {
-            'id': 'miami',
-            'name': 'Miami',
-            'conference': 'ACC',
-            'color': '#F47321'
-        },
-        {
-            'id': 'stanford',
-            'name': 'Stanford',
-            'conference': 'ACC',
-            'color': '#8C1515'
-        },
-        {
-            'id': 'nebraska',
-            'name': 'Nebraska',
-            'conference': 'Big Ten',
-            'color': '#E41C38'
-        },
-        {
-            'id': 'tennessee',
-            'name': 'Tennessee',
-            'conference': 'SEC',
-            'color': '#FF8200'
+            'id': team['id'],
+            'name': team['school'],
+            'fullName': team['name'],
+            'city': team['city'],
+            'state': team['state']
         }
+        for team in teams
     ]
 
-    save_teams(teams)
-    print(f"  ✓ Created teams.json with {len(teams)} teams")
+    save_teams(teams_output)
+    print(f"  ✓ Created teams.json with {len(teams_output)} teams")
 
 
-def create_ownership_file():
-    """Generate ownership.json from county GeoJSON"""
+def create_ownership_file(teams):
+    """
+    Generate ownership.json from county GeoJSON
+    Assigns each county to nearest team based on campus location
+    """
     geojson_path = Path(__file__).parent.parent / 'frontend' / 'public' / 'data' / 'us-counties.geojson'
 
     with open(geojson_path, 'r') as f:
@@ -167,45 +66,79 @@ def create_ownership_file():
     features = geojson.get('features', [])
     print(f"  📊 Processing {len(features)} counties...")
 
-    # Calculate centroids
-    counties = []
+    # Get team locations
+    team_locations = get_team_locations()
+
+    # Calculate centroids and assign to nearest team
+    ownership = {}
+    team_stats = {}  # Track counties and area per team
+
     for i, feature in enumerate(features, 1):
         fips = feature.get('id')
         geometry = feature.get('geometry', {})
+        properties = feature.get('properties', {})
 
         if not fips:
             continue
 
         try:
+            # Calculate county centroid
             centroid_lat, centroid_lon = calculate_centroid(geometry['coordinates'])
+
+            # Find nearest team
+            nearest_team = None
+            shortest_distance = float('inf')
+
+            for team_id, location in team_locations.items():
+                distance = calculate_distance(
+                    centroid_lat, centroid_lon,
+                    location['lat'], location['lon']
+                )
+
+                if distance < shortest_distance:
+                    shortest_distance = distance
+                    nearest_team = team_id
+
+            if nearest_team:
+                ownership[fips] = nearest_team
+
+                # Track stats
+                if nearest_team not in team_stats:
+                    team_stats[nearest_team] = {'counties': 0, 'area': 0}
+
+                team_stats[nearest_team]['counties'] += 1
+                team_stats[nearest_team]['area'] += properties.get('CENSUSAREA', 0)
+
         except Exception as e:
             print(f"  ⚠️  Skipping {fips}: {e}")
             continue
 
-        counties.append({
-            'fips': fips,
-            'centroid_lat': centroid_lat,
-            'centroid_lon': centroid_lon
-        })
-
         if i % 500 == 0:
-            print(f"  ⏳ Processed {i} / {len(features)}...")
-
-    # Assign ownership
-    print(f"  🎯 Assigning {len(counties)} counties to nearest teams...")
-    ownership = assign_initial_ownership(counties)
-
-    # Show distribution
-    distribution = {}
-    for team_id in ownership.values():
-        distribution[team_id] = distribution.get(team_id, 0) + 1
+            print(f"  ⏳ Processed {i} / {len(features)} counties...")
 
     save_ownership(ownership)
 
-    print(f"  ✓ Created ownership.json")
-    print(f"\n  📊 Territory distribution:")
-    for team_id, count in sorted(distribution.items(), key=lambda x: x[1], reverse=True):
-        print(f"     {team_id.ljust(15)} {count} counties")
+    print(f"\n  ✓ Assigned {len(ownership)} counties to {len(team_stats)} teams")
+    print(f"\n  📊 Top 10 teams by land area (square miles):")
+
+    for team_id, stats in sorted(team_stats.items(), key=lambda x: x[1]['area'], reverse=True)[:10]:
+        # Find team name
+        team = next((t for t in teams if t['id'] == team_id), None)
+        team_name = team['school'] if team else team_id
+        area_formatted = f"{stats['area']:,.0f}"
+        print(f"     {team_name.ljust(25)} {area_formatted.rjust(10)} sq mi ({stats['counties']} counties)")
+
+    print(f"\n  📊 Top 10 teams by county count:")
+
+    for team_id, stats in sorted(team_stats.items(), key=lambda x: x[1]['counties'], reverse=True)[:10]:
+        team = next((t for t in teams if t['id'] == team_id), None)
+        team_name = team['school'] if team else team_id
+        area_formatted = f"{stats['area']:,.0f}"
+        print(f"     {team_name.ljust(25)} {str(stats['counties']).rjust(3)} counties ({area_formatted} sq mi)")
+
+    total_area = sum(s['area'] for s in team_stats.values())
+    print(f"\n  📈 Total US land area: {total_area:,.0f} square miles")
+    print(f"  📈 Average per team: {total_area / len(team_stats):,.0f} square miles")
 
 
 if __name__ == '__main__':
