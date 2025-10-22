@@ -23,9 +23,9 @@ def main():
 
     print("\n✅ Initialization complete!")
     print("\nGenerated files:")
-    print("  - public/data/teams.json")
-    print("  - public/data/ownership.json")
-    print("\nNext: Run `npm run dev` to view the map")
+    print("  - frontend/public/data/teams.json")
+    print("  - frontend/public/data/ownership.json")
+    print("\nNext: Run `cd frontend && npm run dev` to view the map")
 
 
 def create_teams_file():
@@ -159,7 +159,7 @@ def create_teams_file():
 
 def create_ownership_file():
     """Generate ownership.json from county GeoJSON"""
-    geojson_path = Path(__file__).parent.parent / 'public' / 'data' / 'us-counties.geojson'
+    geojson_path = Path(__file__).parent.parent / 'frontend' / 'public' / 'data' / 'us-counties.geojson'
 
     with open(geojson_path, 'r') as f:
         geojson = json.load(f)

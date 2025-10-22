@@ -14,11 +14,12 @@ pip install -r requirements.txt
 python setup.py
 ```
 
-This creates `public/data/teams.json` and `public/data/ownership.json`.
+This creates `frontend/public/data/teams.json` and `frontend/public/data/ownership.json`.
 
 ### 2. Run the Map
 
 ```bash
+cd frontend
 npm install
 npm run dev
 ```
@@ -42,40 +43,47 @@ Visit http://localhost:3000
 └────────┬────────┘
          │ Read files
          ▼
-┌─────────────────────┐
-│  public/data/       │
-│  ├── teams.json     │ ◄── Python generates
-│  └── ownership.json │ ◄── Python updates
-└─────────────────────┘
+┌────────────────────────┐
+│  frontend/public/data/ │
+│  ├── teams.json        │ ◄── Python generates
+│  └── ownership.json    │ ◄── Python updates
+└────────────────────────┘
 ```
 
 ## Project Structure
 
 ```
-.
-├── backend/              # Python scripts (run locally)
+imperial-map/
+├── backend/                    # Python scripts (run locally)
 │   ├── lib/
-│   │   ├── territory.py # Geospatial calculations
-│   │   ├── game_engine.py # Transfer logic
-│   │   └── db.py        # JSON file I/O
-│   └── setup.py         # Generate initial data
+│   │   ├── territory.py       # Geospatial calculations
+│   │   ├── game_engine.py     # Transfer logic
+│   │   └── db.py              # JSON file I/O
+│   ├── requirements.txt
+│   ├── setup.py               # ⭐ Initialize data files
+│   └── README.md
 │
-├── src/                  # Next.js frontend
-│   ├── app/             # Pages + API routes
-│   ├── components/      # React components
-│   ├── lib/             # Client utilities
-│   └── types/           # TypeScript types
+├── frontend/                   # Next.js app
+│   ├── src/
+│   │   ├── app/               # Pages + API routes
+│   │   ├── components/        # React components
+│   │   ├── lib/               # Client utilities
+│   │   └── types/             # TypeScript types
+│   ├── public/
+│   │   └── data/              # Data files
+│   │       ├── us-counties.geojson
+│   │       ├── teams.json     # Generated
+│   │       └── ownership.json # Generated
+│   ├── package.json           # Frontend dependencies
+│   ├── tsconfig.json
+│   ├── next.config.mjs
+│   ├── tailwind.config.ts
+│   └── ...config files
 │
-├── public/data/         # Data files
-│   ├── us-counties.geojson
-│   ├── teams.json       # Generated
-│   └── ownership.json   # Generated
-│
-└── Root config files (Next.js requires these here)
-    ├── package.json
-    ├── tsconfig.json
-    ├── tailwind.config.ts
-    └── next.config.mjs
+└── Root documentation
+    ├── README.md
+    ├── GETTING_STARTED.md
+    └── .env.local.example
 ```
 
 ## How It Works
@@ -88,17 +96,35 @@ Visit http://localhost:3000
 ## Development
 
 ```bash
-# Frontend
-npm run dev          # Start dev server
-npm run build        # Build for production
-npm run type-check   # Check TypeScript
-
 # Backend
 cd backend
 python setup.py      # Initialize data
+
+# Frontend
+cd frontend
+npm run dev          # Start dev server
+npm run build        # Build for production
+npm run type-check   # Check TypeScript
 ```
 
 ## Deployment
+
+### Option 1: Deploy from `frontend/` directory
+
+In Vercel dashboard:
+- Root Directory: `frontend`
+- Build Command: `npm run build`
+- Output Directory: `.next`
+
+### Option 2: Deploy from root with custom config
+
+Create `vercel.json`:
+```json
+{
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/.next"
+}
+```
 
 Push to GitHub → Vercel automatically deploys
 

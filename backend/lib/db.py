@@ -8,8 +8,8 @@ from typing import List, Dict, Any
 
 
 def get_data_dir() -> Path:
-    """Get the public data directory"""
-    return Path(__file__).parent.parent.parent / 'public' / 'data'
+    """Get the frontend public data directory"""
+    return Path(__file__).parent.parent.parent / 'frontend' / 'public' / 'data'
 
 
 def load_json(filename: str) -> Any:
