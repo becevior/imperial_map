@@ -193,7 +193,7 @@ export default function Map({ className = '' }: MapProps) {
         )
 
         mapRef.current = new maplibregl.Map({
-          container: mapContainer.current,
+          container: mapContainer.current!,
           style: {
             version: 8,
             sources: {
@@ -265,7 +265,11 @@ export default function Map({ className = '' }: MapProps) {
             marker: null as maplibregl.Marker | null
           }))
 
-          const applyMarkerStyles = () => {
+          const applyMarkerStyles: () => void = () => {
+            if (!mapInstance) {
+              return
+            }
+
             const zoom = mapInstance.getZoom()
 
             markerData.forEach(({ centroid, element }) => {
@@ -309,12 +313,15 @@ export default function Map({ className = '' }: MapProps) {
             markersRef.current.push(marker)
           })
 
-          const handleZoom = () => applyMarkerStyles()
+          const handleZoom: () => void = () => {
+            applyMarkerStyles()
+          }
+
           mapInstance.on('zoom', handleZoom)
           applyMarkerStyles()
 
           // Store cleanup to detach zoom handler later
-          (mapInstance as any).__logoZoomHandler = handleZoom
+          ;(mapInstance as any).__logoZoomHandler = handleZoom
           setLoading(false)
         })
 
