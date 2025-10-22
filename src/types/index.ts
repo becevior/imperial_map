@@ -93,6 +93,16 @@ export type MapViewState = {
   pitch?: number
 }
 
+export type MapFeatureCollection = {
+  type: 'FeatureCollection'
+  features: Array<{
+    type: 'Feature'
+    id: string | number
+    properties: Record<string, any>
+    geometry: GeoJSON.MultiPolygon
+  }>
+}
+
 // Job tracking types
 export type JobRun = {
   jobName: string
