@@ -7,83 +7,151 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 interface Team {
   id: string
   name: string
+  shortName?: string
   fullName: string
+  nickname?: string | null
   city: string
   state: string
+  latitude?: number
+  longitude?: number
+  primaryColor?: string | null
+  secondaryColor?: string | null
 }
 
 interface MapProps {
   className?: string
 }
 
-// Generate a color for each team based on its ID (deterministic)
-function getTeamColor(teamId: string): string {
-  // Simple hash function to generate consistent colors
+const DEFAULT_FILL_COLOR = '#2d2d2d'
+const populationFormatter = new Intl.NumberFormat('en-US')
+const areaFormatter = new Intl.NumberFormat('en-US', {
+  maximumFractionDigits: 0
+})
+
+function fallbackColor(teamId: string): string {
   let hash = 0
   for (let i = 0; i < teamId.length; i++) {
     hash = teamId.charCodeAt(i) + ((hash << 5) - hash)
   }
 
-  // Generate RGB values
-  const r = (hash & 0xFF0000) >> 16
-  const g = (hash & 0x00FF00) >> 8
-  const b = hash & 0x0000FF
+  const r = hash & 0xff
+  const g = (hash >> 8) & 0xff
+  const b = (hash >> 16) & 0xff
 
-  // Ensure colors are vibrant (not too dark or light)
-  const adjust = (val: number) => Math.max(50, Math.min(200, val))
+  const adjust = (value: number) => Math.max(70, Math.min(200, value))
 
-  return `rgb(${adjust(r)}, ${adjust(g)}, ${adjust(b)})`
+  return `#${adjust(r).toString(16).padStart(2, '0')}${adjust(g)
+    .toString(16)
+    .padStart(2, '0')}${adjust(b).toString(16).padStart(2, '0')}`
 }
+
+const parseNumericProperty = (value: unknown): number | null => {
+  if (value === null || value === undefined) {
+    return null
+  }
+
+  if (typeof value === 'number') {
+    return Number.isFinite(value) ? value : null
+  }
+
+  if (typeof value === 'string') {
+    const cleaned = value.replace(/,/g, '').trim()
+    if (!cleaned) {
+      return null
+    }
+
+    const parsed = Number(cleaned)
+    return Number.isFinite(parsed) ? parsed : null
+  }
+
+  return null
+}
+
+interface CountyStatsEntry {
+  name?: string
+  state?: string | null
+  population?: number | null
+  areaSqMi?: number | null
+  centroid?: { lat: number; lon: number }
+}
+
+type CountyStats = Record<string, CountyStatsEntry>
+
+type OwnershipMap = Record<string, string>
 
 export default function Map({ className = '' }: MapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)
-  const map = useRef<maplibregl.Map | null>(null)
+  const mapRef = useRef<maplibregl.Map | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [teamCount, setTeamCount] = useState<number | null>(null)
+  const [countyCount, setCountyCount] = useState<number | null>(null)
 
   useEffect(() => {
-    if (!mapContainer.current || map.current) return
+    if (!mapContainer.current || mapRef.current) return
 
     const initMap = async () => {
       try {
-        // Load data
-        console.log('Loading teams and ownership data...')
-        const [teamsRes, ownershipRes, geoJsonRes] = await Promise.all([
+        const dataRequests = [
           fetch('/data/teams.json'),
           fetch('/data/ownership.json'),
-          fetch('/data/us-counties.geojson')
-        ])
+          fetch('/data/us-counties.geojson'),
+          fetch('/data/county-stats.json').then((res) =>
+            res.ok ? res.json() : null
+          )
+        ]
+
+        const [teamsRes, ownershipRes, geoJsonRes, countyStats] =
+          await Promise.all(dataRequests)
 
         if (!teamsRes.ok || !ownershipRes.ok || !geoJsonRes.ok) {
-          throw new Error('Failed to load data files')
+          throw new Error('Failed to load required map datasets')
         }
 
         const teams: Team[] = await teamsRes.json()
-        const ownership: Record<string, string> = await ownershipRes.json()
+        const ownership: OwnershipMap = await ownershipRes.json()
         const geoJson = await geoJsonRes.json()
+        const countyStatsMap: CountyStats = countyStats ?? {}
 
-        console.log(`Loaded ${teams.length} teams, ${Object.keys(ownership).length} counties`)
+        const teamsById = teams.reduce<Record<string, Team>>((acc, team) => {
+          acc[team.id] = team
+          return acc
+        }, {})
 
-        // Create team color map
-        const teamColors: Record<string, string> = {}
-        teams.forEach(team => {
-          teamColors[team.id] = getTeamColor(team.id)
-        })
+        const teamColors = teams.reduce<Record<string, string>>((acc, team) => {
+          acc[team.id] = team.primaryColor ?? fallbackColor(team.id)
+          return acc
+        }, {})
 
-        // Add ownership data to GeoJSON features
         geoJson.features.forEach((feature: any) => {
-          const fips = feature.id
-          const owner = ownership[fips]
+          const fips = String(feature.id)
+          const ownerId = ownership[fips]
+          const stats = countyStatsMap[fips] ?? {}
+          const owner = teamsById[ownerId]
+
+          const areaSqMi =
+            stats.areaSqMi ?? feature.properties?.CENSUSAREA ?? null
+          const population = stats.population ?? null
+          const countyName =
+            stats.name ?? feature.properties?.NAME ?? 'Unknown'
+          const countyState = stats.state ?? null
+
           feature.properties = {
             ...feature.properties,
-            owner: owner,
-            ownerName: teams.find(t => t.id === owner)?.name || 'Unknown'
+            fips,
+            countyName,
+            countyState,
+            owner: ownerId,
+            ownerName: owner?.name ?? 'Unknown',
+            ownerFullName: owner?.fullName ?? owner?.name ?? 'Unknown',
+            ownerColor: ownerId ? teamColors[ownerId] : DEFAULT_FILL_COLOR,
+            population,
+            areaSqMi
           }
         })
 
-        // Initialize map
-        map.current = new maplibregl.Map({
-          container: mapContainer.current!,
+        mapRef.current = new maplibregl.Map({
+          container: mapContainer.current,
           style: {
             version: 8,
             sources: {
@@ -105,13 +173,8 @@ export default function Map({ className = '' }: MapProps) {
                 type: 'fill',
                 source: 'counties',
                 paint: {
-                  'fill-color': [
-                    'case',
-                    ['has', 'owner'],
-                    ['get', 'owner'],
-                    '#333333'
-                  ],
-                  'fill-opacity': 0.8
+                  'fill-color': DEFAULT_FILL_COLOR,
+                  'fill-opacity': 0.82
                 }
               },
               {
@@ -121,7 +184,7 @@ export default function Map({ className = '' }: MapProps) {
                 paint: {
                   'line-color': '#ffffff',
                   'line-width': 0.5,
-                  'line-opacity': 0.3
+                  'line-opacity': 0.25
                 }
               }
             ]
@@ -130,59 +193,108 @@ export default function Map({ className = '' }: MapProps) {
           zoom: 4
         })
 
-        // Apply team colors to map
-        map.current.on('load', () => {
-          // Build color expression for MapLibre
-          const colorExpression: any = ['match', ['get', 'owner']]
+        mapRef.current.on('load', () => {
+          const colorExpression: any[] = ['match', ['get', 'owner']]
 
-          teams.forEach(team => {
+          teams.forEach((team) => {
             colorExpression.push(team.id, teamColors[team.id])
           })
 
-          // Default color for unowned counties
-          colorExpression.push('#333333')
+          colorExpression.push(DEFAULT_FILL_COLOR)
 
-          map.current!.setPaintProperty('counties-fill', 'fill-color', colorExpression)
+          mapRef.current!.setPaintProperty(
+            'counties-fill',
+            'fill-color',
+            colorExpression
+          )
 
-          console.log('Map loaded with team colors')
+          setTeamCount(teams.length)
+          setCountyCount(Object.keys(ownership).length)
           setLoading(false)
         })
 
-        // Add navigation controls
-        map.current.addControl(new maplibregl.NavigationControl(), 'top-right')
+        mapRef.current.addControl(new maplibregl.NavigationControl(), 'top-right')
 
-        // Add hover effect
-        map.current.on('mousemove', 'counties-fill', (e) => {
-          if (e.features && e.features[0]) {
-            map.current!.getCanvas().style.cursor = 'pointer'
+        mapRef.current.on('mousemove', 'counties-fill', (event) => {
+          if (event.features && event.features[0]) {
+            mapRef.current!.getCanvas().style.cursor = 'pointer'
           }
         })
 
-        map.current.on('mouseleave', 'counties-fill', () => {
-          map.current!.getCanvas().style.cursor = ''
+        mapRef.current.on('mouseleave', 'counties-fill', () => {
+          mapRef.current!.getCanvas().style.cursor = ''
         })
 
-        // Add click handler to show county info
-        map.current.on('click', 'counties-fill', (e) => {
-          if (e.features && e.features[0]) {
-            const props = e.features[0].properties
-            new maplibregl.Popup()
-              .setLngLat(e.lngLat)
-              .setHTML(`
-                <div style="padding: 8px;">
-                  <strong>${props.NAME || 'Unknown'} County</strong><br/>
-                  <span style="color: ${teamColors[props.owner] || '#999'}">
-                    ${props.ownerName || 'No owner'}
-                  </span>
-                </div>
-              `)
-              .addTo(map.current!)
+        mapRef.current.on('click', 'counties-fill', (event) => {
+          if (!event.features || !event.features[0]) {
+            return
           }
-        })
 
+          const props = event.features[0].properties as Record<string, any>
+          const countyPieces: Array<string | undefined | null> = [
+            props.countyName,
+            props.countyState
+          ]
+          const countyLabel = countyPieces.filter(Boolean).join(', ')
+
+          const populationNumber = parseNumericProperty(props.population)
+          const populationValue =
+            populationNumber != null
+              ? populationFormatter.format(populationNumber)
+              : 'Unavailable'
+
+          const areaNumber = parseNumericProperty(props.areaSqMi)
+          const areaValue =
+            areaNumber != null
+              ? `${areaFormatter.format(areaNumber)} sq mi`
+              : 'Unavailable'
+
+          const ownerName = props.ownerFullName || props.ownerName || 'Unclaimed'
+          const ownerColor = props.ownerColor || DEFAULT_FILL_COLOR
+
+          const wrapper = document.createElement('div')
+          wrapper.style.padding = '10px'
+          wrapper.style.minWidth = '220px'
+          wrapper.style.color = '#1f2937'
+
+          const title = document.createElement('strong')
+          title.textContent = countyLabel || 'Unknown County'
+          title.style.display = 'block'
+          title.style.marginBottom = '4px'
+          title.style.color = '#111827'
+          wrapper.appendChild(title)
+
+          const ownerSpan = document.createElement('span')
+          ownerSpan.textContent = ownerName
+          ownerSpan.style.color = ownerColor
+          ownerSpan.style.fontWeight = '600'
+          ownerSpan.style.display = 'block'
+          wrapper.appendChild(ownerSpan)
+
+          const details = document.createElement('div')
+          details.style.marginTop = '6px'
+          details.style.fontSize = '12px'
+          details.style.lineHeight = '1.4'
+          details.style.color = '#374151'
+
+          const populationLine = document.createElement('div')
+          populationLine.textContent = `Population: ${populationValue}`
+          details.appendChild(populationLine)
+
+          const areaLine = document.createElement('div')
+          areaLine.textContent = `Area: ${areaValue}`
+          details.appendChild(areaLine)
+
+          wrapper.appendChild(details)
+
+          new maplibregl.Popup()
+            .setLngLat(event.lngLat)
+            .setDOMContent(wrapper)
+            .addTo(mapRef.current!)
+        })
       } catch (err) {
         console.error('Map initialization error:', err)
-        setError(err instanceof Error ? err.message : 'Failed to load map')
+        setError(err instanceof Error ? err.message : 'Failed to load map data')
         setLoading(false)
       }
     }
@@ -190,8 +302,8 @@ export default function Map({ className = '' }: MapProps) {
     initMap()
 
     return () => {
-      map.current?.remove()
-      map.current = null
+      mapRef.current?.remove()
+      mapRef.current = null
     }
   }, [])
 
@@ -204,21 +316,28 @@ export default function Map({ className = '' }: MapProps) {
       />
 
       {loading && (
-        <div className="absolute top-4 left-4 bg-white bg-opacity-90 px-3 py-2 rounded-lg shadow-lg">
-          <p className="text-sm text-gray-800">Loading map data...</p>
+        <div className="absolute top-4 left-4 bg-white/90 px-3 py-2 rounded-lg shadow">
+          <p className="text-sm text-gray-800">Loading map data…</p>
         </div>
       )}
 
       {error && (
-        <div className="absolute top-4 left-4 bg-red-100 px-3 py-2 rounded-lg shadow-lg">
+        <div className="absolute top-4 left-4 bg-red-100 px-3 py-2 rounded-lg shadow">
           <p className="text-sm text-red-800">Error: {error}</p>
         </div>
       )}
 
       {!loading && !error && (
-        <div className="absolute top-4 left-4 bg-white bg-opacity-90 px-3 py-2 rounded-lg shadow-lg">
-          <h3 className="text-sm font-semibold text-gray-800">College Football Imperial Map</h3>
-          <p className="text-xs text-green-600">135 teams competing for 3,221 counties</p>
+        <div className="absolute top-4 left-4 bg-white/90 px-3 py-2 rounded-lg shadow">
+          <h3 className="text-sm font-semibold text-gray-800">
+            College Football Imperial Map
+          </h3>
+          <p className="text-xs text-gray-600">
+            {teamCount ?? '–'} teams · {countyCount ?? '–'} counties
+          </p>
+          <p className="text-[11px] text-gray-500 mt-1">
+            Colors reflect the owning team’s primary hue
+          </p>
         </div>
       )}
     </div>

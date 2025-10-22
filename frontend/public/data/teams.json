@@ -2,946 +2,1756 @@
   {
     "id": "boston-college",
     "name": "Boston College",
+    "shortName": "Boston College",
     "fullName": "Boston College Eagles",
+    "nickname": "Eagles",
     "city": "Chestnut Hill",
-    "state": "Massachusetts"
+    "state": "Massachusetts",
+    "latitude": 42.3355,
+    "longitude": -71.1685,
+    "primaryColor": "#800000",
+    "secondaryColor": "#FFC200"
   },
   {
     "id": "clemson",
     "name": "Clemson",
+    "shortName": "Clemson",
     "fullName": "Clemson Tigers",
+    "nickname": "Tigers",
     "city": "Clemson",
-    "state": "South Carolina"
+    "state": "South Carolina",
+    "latitude": 34.6767,
+    "longitude": -82.836,
+    "primaryColor": "#F56600",
+    "secondaryColor": "#522D80"
   },
   {
     "id": "duke",
     "name": "Duke",
+    "shortName": "Duke",
     "fullName": "Duke Blue Devils",
+    "nickname": "Blue Devils",
     "city": "Durham",
-    "state": "North Carolina"
+    "state": "North Carolina",
+    "latitude": 36.0014,
+    "longitude": -78.9382,
+    "primaryColor": "#001A57",
+    "secondaryColor": "#C8C8C8"
   },
   {
     "id": "florida-state",
     "name": "Florida State",
+    "shortName": "Florida State",
     "fullName": "Florida State Seminoles",
+    "nickname": "Seminoles",
     "city": "Tallahassee",
-    "state": "Florida"
+    "state": "Florida",
+    "latitude": 30.4427,
+    "longitude": -84.2963,
+    "primaryColor": "#782F40",
+    "secondaryColor": "#CEB888"
   },
   {
     "id": "georgia-tech",
     "name": "Georgia Tech",
+    "shortName": "Georgia Tech",
     "fullName": "Georgia Tech Yellow Jackets",
+    "nickname": "Yellow Jackets",
     "city": "Atlanta",
-    "state": "Georgia"
+    "state": "Georgia",
+    "latitude": 33.7756,
+    "longitude": -84.3963,
+    "primaryColor": "#B3A369",
+    "secondaryColor": "#041E42"
   },
   {
     "id": "louisville",
     "name": "Louisville",
+    "shortName": "Louisville",
     "fullName": "Louisville Cardinals",
+    "nickname": "Cardinals",
     "city": "Louisville",
-    "state": "Kentucky"
+    "state": "Kentucky",
+    "latitude": 38.2106,
+    "longitude": -85.7593,
+    "primaryColor": "#AD0000",
+    "secondaryColor": "#000000"
   },
   {
     "id": "miami",
     "name": "Miami",
+    "shortName": "Miami",
     "fullName": "Miami Hurricanes",
+    "nickname": "Hurricanes",
     "city": "Coral Gables",
-    "state": "Florida"
+    "state": "Florida",
+    "latitude": 25.7197,
+    "longitude": -80.2794,
+    "primaryColor": "#005030",
+    "secondaryColor": "#F08C00"
   },
   {
     "id": "north-carolina",
     "name": "North Carolina",
+    "shortName": "North Carolina",
     "fullName": "North Carolina Tar Heels",
+    "nickname": "Tar Heels",
     "city": "Chapel Hill",
-    "state": "North Carolina"
+    "state": "North Carolina",
+    "latitude": 35.9049,
+    "longitude": -79.0469,
+    "primaryColor": "#7BAFD4",
+    "secondaryColor": "#FFFFFF"
   },
   {
     "id": "nc-state",
     "name": "NC State",
+    "shortName": "NC State",
     "fullName": "NC State Wolfpack",
+    "nickname": "Wolfpack",
     "city": "Raleigh",
-    "state": "North Carolina"
+    "state": "North Carolina",
+    "latitude": 35.7866,
+    "longitude": -78.682,
+    "primaryColor": "#CC0000",
+    "secondaryColor": "#000000"
   },
   {
     "id": "pittsburgh",
     "name": "Pittsburgh",
+    "shortName": "Pittsburgh",
     "fullName": "Pittsburgh Panthers",
+    "nickname": "Panthers",
     "city": "Pittsburgh",
-    "state": "Pennsylvania"
+    "state": "Pennsylvania",
+    "latitude": 40.4445,
+    "longitude": -79.9608,
+    "primaryColor": "#0032A8",
+    "secondaryColor": "#FFB81C"
   },
   {
     "id": "smu",
     "name": "SMU",
+    "shortName": "SMU",
     "fullName": "SMU Mustangs",
+    "nickname": "Mustangs",
     "city": "Dallas",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 32.8403,
+    "longitude": -96.7848,
+    "primaryColor": "#C40D36",
+    "secondaryColor": "#0033A0"
   },
   {
     "id": "stanford",
     "name": "Stanford",
+    "shortName": "Stanford",
     "fullName": "Stanford Cardinal",
+    "nickname": "Cardinal",
     "city": "Stanford",
-    "state": "California"
+    "state": "California",
+    "latitude": 37.4275,
+    "longitude": -122.1697,
+    "primaryColor": "#8C1523",
+    "secondaryColor": "#FFFFFF"
   },
   {
     "id": "syracuse",
     "name": "Syracuse",
+    "shortName": "Syracuse",
     "fullName": "Syracuse Orange",
+    "nickname": "Orange",
     "city": "Syracuse",
-    "state": "New York"
+    "state": "New York",
+    "latitude": 43.0391,
+    "longitude": -76.1352,
+    "primaryColor": "#F76900",
+    "secondaryColor": "#000000"
   },
   {
     "id": "virginia",
     "name": "Virginia",
+    "shortName": "Virginia",
     "fullName": "Virginia Cavaliers",
+    "nickname": "Cavaliers",
     "city": "Charlottesville",
-    "state": "Virginia"
+    "state": "Virginia",
+    "latitude": 38.0336,
+    "longitude": -78.508,
+    "primaryColor": "#232D4B",
+    "secondaryColor": "#F84C1E"
   },
   {
     "id": "virginia-tech",
     "name": "Virginia Tech",
+    "shortName": "Virginia Tech",
     "fullName": "Virginia Tech Hokies",
+    "nickname": "Hokies",
     "city": "Blacksburg",
-    "state": "Virginia"
+    "state": "Virginia",
+    "latitude": 37.2284,
+    "longitude": -80.4234,
+    "primaryColor": "#63002C",
+    "secondaryColor": "#C5C6C8"
   },
   {
     "id": "wake-forest",
     "name": "Wake Forest",
+    "shortName": "Wake Forest",
     "fullName": "Wake Forest Demon Deacons",
+    "nickname": "Demon Deacons",
     "city": "Winston-Salem",
-    "state": "North Carolina"
+    "state": "North Carolina",
+    "latitude": 36.1349,
+    "longitude": -80.2742,
+    "primaryColor": "#2E2E2E",
+    "secondaryColor": "#A3885F"
   },
   {
     "id": "army",
     "name": "Army",
+    "shortName": "Army",
     "fullName": "Army Black Knights",
+    "nickname": "Black Knights",
     "city": "West Point",
-    "state": "New York"
+    "state": "New York",
+    "latitude": 41.3915,
+    "longitude": -73.9626,
+    "primaryColor": "#000000",
+    "secondaryColor": "#D4C7A3"
   },
   {
     "id": "charlotte",
     "name": "Charlotte",
+    "shortName": "Charlotte",
     "fullName": "Charlotte 49ers",
+    "nickname": "49ers",
     "city": "Charlotte",
-    "state": "North Carolina"
+    "state": "North Carolina",
+    "latitude": 35.3073,
+    "longitude": -80.7342,
+    "primaryColor": "#00703C",
+    "secondaryColor": "#B5B5B5"
   },
   {
     "id": "east-carolina",
     "name": "East Carolina",
+    "shortName": "East Carolina",
     "fullName": "East Carolina Pirates",
+    "nickname": "Pirates",
     "city": "Greenville",
-    "state": "North Carolina"
+    "state": "North Carolina",
+    "latitude": 35.6087,
+    "longitude": -77.3663,
+    "primaryColor": "#592A8C",
+    "secondaryColor": "#FFFFFF"
   },
   {
     "id": "florida-atlantic",
     "name": "Florida Atlantic",
+    "shortName": "Florida Atlantic",
     "fullName": "Florida Atlantic Owls",
+    "nickname": "Owls",
     "city": "Boca Raton",
-    "state": "Florida"
+    "state": "Florida",
+    "latitude": 26.372,
+    "longitude": -80.1009,
+    "primaryColor": "#002B5C",
+    "secondaryColor": "#C6C6C6"
   },
   {
     "id": "memphis",
     "name": "Memphis",
+    "shortName": "Memphis",
     "fullName": "Memphis Tigers",
+    "nickname": "Tigers",
     "city": "Memphis",
-    "state": "Tennessee"
+    "state": "Tennessee",
+    "latitude": 35.1184,
+    "longitude": -89.9375,
+    "primaryColor": "#003087",
+    "secondaryColor": "#8693AB"
   },
   {
     "id": "navy",
     "name": "Navy",
+    "shortName": "Navy",
     "fullName": "Navy Midshipmen",
+    "nickname": "Midshipmen",
     "city": "Annapolis",
-    "state": "Maryland"
+    "state": "Maryland",
+    "latitude": 38.9826,
+    "longitude": -76.4951,
+    "primaryColor": "#002060",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "north-texas",
     "name": "North Texas",
+    "shortName": "North Texas",
     "fullName": "North Texas Mean Green",
+    "nickname": "Mean Green",
     "city": "Denton",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 33.2148,
+    "longitude": -97.1331,
+    "primaryColor": "#00853E",
+    "secondaryColor": "#FFFFFF"
   },
   {
     "id": "rice",
     "name": "Rice",
+    "shortName": "Rice",
     "fullName": "Rice Owls",
+    "nickname": "Owls",
     "city": "Houston",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 29.7174,
+    "longitude": -95.4018,
+    "primaryColor": "#002450",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "south-florida",
     "name": "South Florida",
+    "shortName": "South Florida",
     "fullName": "South Florida Bulls",
+    "nickname": "Bulls",
     "city": "Tampa",
-    "state": "Florida"
+    "state": "Florida",
+    "latitude": 28.0587,
+    "longitude": -82.4139,
+    "primaryColor": "#006747",
+    "secondaryColor": "#C3C3C3"
   },
   {
     "id": "temple",
     "name": "Temple",
+    "shortName": "Temple",
     "fullName": "Temple Owls",
+    "nickname": "Owls",
     "city": "Philadelphia",
-    "state": "Pennsylvania"
+    "state": "Pennsylvania",
+    "latitude": 39.9811,
+    "longitude": -75.1556,
+    "primaryColor": "#9D2235",
+    "secondaryColor": "#C6C6C6"
   },
   {
     "id": "tulane",
     "name": "Tulane",
+    "shortName": "Tulane",
     "fullName": "Tulane Green Wave",
+    "nickname": "Green Wave",
     "city": "New Orleans",
-    "state": "Louisiana"
+    "state": "Louisiana",
+    "latitude": 29.939,
+    "longitude": -90.1216,
+    "primaryColor": "#00674D",
+    "secondaryColor": "#8D8D8D"
   },
   {
     "id": "tulsa",
     "name": "Tulsa",
+    "shortName": "Tulsa",
     "fullName": "Tulsa Golden Hurricane",
+    "nickname": "Golden Hurricane",
     "city": "Tulsa",
-    "state": "Oklahoma"
+    "state": "Oklahoma",
+    "latitude": 36.152,
+    "longitude": -95.9379,
+    "primaryColor": "#002D62",
+    "secondaryColor": "#C4B49F"
   },
   {
     "id": "uab",
     "name": "UAB",
+    "shortName": "UAB",
     "fullName": "UAB Blazers",
+    "nickname": "Blazers",
     "city": "Birmingham",
-    "state": "Alabama"
+    "state": "Alabama",
+    "latitude": 33.5022,
+    "longitude": -86.8094,
+    "primaryColor": "#003629",
+    "secondaryColor": "#C8C8C8"
   },
   {
     "id": "utsa",
     "name": "UTSA",
+    "shortName": "UTSA",
     "fullName": "UTSA Roadrunners",
+    "nickname": "Roadrunners",
     "city": "San Antonio",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 29.5847,
+    "longitude": -98.6205,
+    "primaryColor": "#0C2340",
+    "secondaryColor": "#E18A00"
   },
   {
     "id": "arizona",
     "name": "Arizona",
+    "shortName": "Arizona",
     "fullName": "Arizona Wildcats",
+    "nickname": "Wildcats",
     "city": "Tucson",
-    "state": "Arizona"
+    "state": "Arizona",
+    "latitude": 32.2319,
+    "longitude": -110.9501,
+    "primaryColor": "#003366",
+    "secondaryColor": "#CC0033"
   },
   {
     "id": "arizona-state",
     "name": "Arizona State",
+    "shortName": "Arizona State",
     "fullName": "Arizona State Sun Devils",
+    "nickname": "Sun Devils",
     "city": "Tempe",
-    "state": "Arizona"
+    "state": "Arizona",
+    "latitude": 33.4255,
+    "longitude": -111.94,
+    "primaryColor": "#8C1D40",
+    "secondaryColor": "#FFC627"
   },
   {
     "id": "baylor",
     "name": "Baylor",
+    "shortName": "Baylor",
     "fullName": "Baylor Bears",
+    "nickname": "Bears",
     "city": "Waco",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 31.5479,
+    "longitude": -97.1131,
+    "primaryColor": "#154734",
+    "secondaryColor": "#FFB81C"
   },
   {
     "id": "byu",
     "name": "BYU",
+    "shortName": "BYU",
     "fullName": "BYU Cougars",
+    "nickname": "Cougars",
     "city": "Provo",
-    "state": "Utah"
+    "state": "Utah",
+    "latitude": 40.2518,
+    "longitude": -111.6493,
+    "primaryColor": "#001E4D",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "cincinnati",
     "name": "Cincinnati",
+    "shortName": "Cincinnati",
     "fullName": "Cincinnati Bearcats",
+    "nickname": "Bearcats",
     "city": "Cincinnati",
-    "state": "Ohio"
+    "state": "Ohio",
+    "latitude": 39.1329,
+    "longitude": -84.515,
+    "primaryColor": "#E00122",
+    "secondaryColor": "#000000"
   },
   {
     "id": "colorado",
     "name": "Colorado",
+    "shortName": "Colorado",
     "fullName": "Colorado Buffaloes",
+    "nickname": "Buffaloes",
     "city": "Boulder",
-    "state": "Colorado"
+    "state": "Colorado",
+    "latitude": 40.015,
+    "longitude": -105.2705,
+    "primaryColor": "#CFB87C",
+    "secondaryColor": "#000000"
   },
   {
     "id": "houston",
     "name": "Houston",
+    "shortName": "Houston",
     "fullName": "Houston Cougars",
+    "nickname": "Cougars",
     "city": "Houston",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 29.7195,
+    "longitude": -95.3422,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "iowa-state",
     "name": "Iowa State",
+    "shortName": "Iowa State",
     "fullName": "Iowa State Cyclones",
+    "nickname": "Cyclones",
     "city": "Ames",
-    "state": "Iowa"
+    "state": "Iowa",
+    "latitude": 42.0266,
+    "longitude": -93.6465,
+    "primaryColor": "#C8102E",
+    "secondaryColor": "#F1BE48"
   },
   {
     "id": "kansas",
     "name": "Kansas",
+    "shortName": "Kansas",
     "fullName": "Kansas Jayhawks",
+    "nickname": "Jayhawks",
     "city": "Lawrence",
-    "state": "Kansas"
+    "state": "Kansas",
+    "latitude": 38.9543,
+    "longitude": -95.2558,
+    "primaryColor": "#0051BA",
+    "secondaryColor": "#E8000D"
   },
   {
     "id": "kansas-state",
     "name": "Kansas State",
+    "shortName": "Kansas State",
     "fullName": "Kansas State Wildcats",
+    "nickname": "Wildcats",
     "city": "Manhattan",
-    "state": "Kansas"
+    "state": "Kansas",
+    "latitude": 39.1956,
+    "longitude": -96.5847,
+    "primaryColor": "#512888",
+    "secondaryColor": "#C8C8C8"
   },
   {
     "id": "oklahoma-state",
     "name": "Oklahoma State",
+    "shortName": "Oklahoma State",
     "fullName": "Oklahoma State Cowboys",
+    "nickname": "Cowboys",
     "city": "Stillwater",
-    "state": "Oklahoma"
+    "state": "Oklahoma",
+    "latitude": 36.1156,
+    "longitude": -97.0683,
+    "primaryColor": "#FF6500",
+    "secondaryColor": "#000000"
   },
   {
     "id": "tcu",
     "name": "TCU",
+    "shortName": "TCU",
     "fullName": "TCU Horned Frogs",
+    "nickname": "Horned Frogs",
     "city": "Fort Worth",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 32.7073,
+    "longitude": -97.3656,
+    "primaryColor": "#4D1979",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "texas-tech",
     "name": "Texas Tech",
+    "shortName": "Texas Tech",
     "fullName": "Texas Tech Red Raiders",
+    "nickname": "Red Raiders",
     "city": "Lubbock",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 33.5779,
+    "longitude": -101.8552,
+    "primaryColor": "#CC0000",
+    "secondaryColor": "#000000"
   },
   {
     "id": "ucf",
     "name": "UCF",
+    "shortName": "UCF",
     "fullName": "UCF Knights",
+    "nickname": "Knights",
     "city": "Orlando",
-    "state": "Florida"
+    "state": "Florida",
+    "latitude": 28.6024,
+    "longitude": -81.2001,
+    "primaryColor": "#BA9B37",
+    "secondaryColor": "#000000"
   },
   {
     "id": "utah",
     "name": "Utah",
+    "shortName": "Utah",
     "fullName": "Utah Utes",
+    "nickname": "Utes",
     "city": "Salt Lake City",
-    "state": "Utah"
+    "state": "Utah",
+    "latitude": 40.7649,
+    "longitude": -111.8421,
+    "primaryColor": "#CC0000",
+    "secondaryColor": "#000000"
   },
   {
     "id": "west-virginia",
     "name": "West Virginia",
+    "shortName": "West Virginia",
     "fullName": "West Virginia Mountaineers",
+    "nickname": "Mountaineers",
     "city": "Morgantown",
-    "state": "West Virginia"
+    "state": "West Virginia",
+    "latitude": 39.6348,
+    "longitude": -79.9514,
+    "primaryColor": "#EAAA00",
+    "secondaryColor": "#002855"
   },
   {
     "id": "illinois",
     "name": "Illinois",
+    "shortName": "Illinois",
     "fullName": "Illinois Fighting Illini",
+    "nickname": "Fighting Illini",
     "city": "Champaign",
-    "state": "Illinois"
+    "state": "Illinois",
+    "latitude": 40.102,
+    "longitude": -88.2272,
+    "primaryColor": "#E84A27",
+    "secondaryColor": "#13294B"
   },
   {
     "id": "indiana",
     "name": "Indiana",
+    "shortName": "Indiana",
     "fullName": "Indiana Hoosiers",
+    "nickname": "Hoosiers",
     "city": "Bloomington",
-    "state": "Indiana"
+    "state": "Indiana",
+    "latitude": 39.167,
+    "longitude": -86.5197,
+    "primaryColor": "#990000",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "iowa",
     "name": "Iowa",
+    "shortName": "Iowa",
     "fullName": "Iowa Hawkeyes",
+    "nickname": "Hawkeyes",
     "city": "Iowa City",
-    "state": "Iowa"
+    "state": "Iowa",
+    "latitude": 41.6611,
+    "longitude": -91.5302,
+    "primaryColor": "#FFCD00",
+    "secondaryColor": "#000000"
   },
   {
     "id": "maryland",
     "name": "Maryland",
+    "shortName": "Maryland",
     "fullName": "Maryland Terrapins",
+    "nickname": "Terrapins",
     "city": "College Park",
-    "state": "Maryland"
+    "state": "Maryland",
+    "latitude": 38.9869,
+    "longitude": -76.9426,
+    "primaryColor": "#E03A3E",
+    "secondaryColor": "#000000"
   },
   {
     "id": "michigan",
     "name": "Michigan",
+    "shortName": "Michigan",
     "fullName": "Michigan Wolverines",
+    "nickname": "Wolverines",
     "city": "Ann Arbor",
-    "state": "Michigan"
+    "state": "Michigan",
+    "latitude": 42.2681,
+    "longitude": -83.7312,
+    "primaryColor": "#00274C",
+    "secondaryColor": "#FFCB05"
   },
   {
     "id": "michigan-state",
     "name": "Michigan State",
+    "shortName": "Michigan State",
     "fullName": "Michigan State Spartans",
+    "nickname": "Spartans",
     "city": "East Lansing",
-    "state": "Michigan"
+    "state": "Michigan",
+    "latitude": 42.7335,
+    "longitude": -84.4824,
+    "primaryColor": "#18453B",
+    "secondaryColor": "#FFFFFF"
   },
   {
     "id": "minnesota",
     "name": "Minnesota",
+    "shortName": "Minnesota",
     "fullName": "Minnesota Golden Gophers",
+    "nickname": "Golden Gophers",
     "city": "Minneapolis",
-    "state": "Minnesota"
+    "state": "Minnesota",
+    "latitude": 44.9741,
+    "longitude": -93.2277,
+    "primaryColor": "#7A0019",
+    "secondaryColor": "#FFCC33"
   },
   {
     "id": "nebraska",
     "name": "Nebraska",
+    "shortName": "Nebraska",
     "fullName": "Nebraska Cornhuskers",
+    "nickname": "Cornhuskers",
     "city": "Lincoln",
-    "state": "Nebraska"
+    "state": "Nebraska",
+    "latitude": 40.8202,
+    "longitude": -96.7005,
+    "primaryColor": "#E41C38",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "northwestern",
     "name": "Northwestern",
+    "shortName": "Northwestern",
     "fullName": "Northwestern Wildcats",
+    "nickname": "Wildcats",
     "city": "Evanston",
-    "state": "Illinois"
+    "state": "Illinois",
+    "latitude": 42.0564,
+    "longitude": -87.6755,
+    "primaryColor": "#4E2A84",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "ohio-state",
     "name": "Ohio State",
+    "shortName": "Ohio State",
     "fullName": "Ohio State Buckeyes",
+    "nickname": "Buckeyes",
     "city": "Columbus",
-    "state": "Ohio"
+    "state": "Ohio",
+    "latitude": 40.0067,
+    "longitude": -83.0305,
+    "primaryColor": "#FF0000",
+    "secondaryColor": "#666666"
   },
   {
     "id": "oregon",
     "name": "Oregon",
+    "shortName": "Oregon",
     "fullName": "Oregon Ducks",
+    "nickname": "Ducks",
     "city": "Eugene",
-    "state": "Oregon"
+    "state": "Oregon",
+    "latitude": 44.0446,
+    "longitude": -123.0759,
+    "primaryColor": "#FAE100",
+    "secondaryColor": "#154734"
   },
   {
     "id": "penn-state",
     "name": "Penn State",
+    "shortName": "Penn State",
     "fullName": "Penn State Nittany Lions",
+    "nickname": "Nittany Lions",
     "city": "University Park",
-    "state": "Pennsylvania"
+    "state": "Pennsylvania",
+    "latitude": 40.7982,
+    "longitude": -77.8599,
+    "primaryColor": "#041E42",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "purdue",
     "name": "Purdue",
+    "shortName": "Purdue",
     "fullName": "Purdue Boilermakers",
+    "nickname": "Boilermakers",
     "city": "West Lafayette",
-    "state": "Indiana"
+    "state": "Indiana",
+    "latitude": 40.4237,
+    "longitude": -87.0078,
+    "primaryColor": "#B88D04",
+    "secondaryColor": "#000000"
   },
   {
     "id": "rutgers",
     "name": "Rutgers",
+    "shortName": "Rutgers",
     "fullName": "Rutgers Scarlet Knights",
+    "nickname": "Scarlet Knights",
     "city": "New Brunswick",
-    "state": "New Jersey"
+    "state": "New Jersey",
+    "latitude": 40.5008,
+    "longitude": -74.4474,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "ucla",
     "name": "UCLA",
+    "shortName": "UCLA",
     "fullName": "UCLA Bruins",
+    "nickname": "Bruins",
     "city": "Los Angeles",
-    "state": "California"
+    "state": "California",
+    "latitude": 34.0689,
+    "longitude": -118.4452,
+    "primaryColor": "#2D68C4",
+    "secondaryColor": "#F2A900"
   },
   {
     "id": "usc",
     "name": "USC",
+    "shortName": "USC",
     "fullName": "USC Trojans",
+    "nickname": "Trojans",
     "city": "Los Angeles",
-    "state": "California"
+    "state": "California",
+    "latitude": 34.0224,
+    "longitude": -118.2851,
+    "primaryColor": "#990000",
+    "secondaryColor": "#FFCC00"
   },
   {
     "id": "washington",
     "name": "Washington",
+    "shortName": "Washington",
     "fullName": "Washington Huskies",
+    "nickname": "Huskies",
     "city": "Seattle",
-    "state": "Washington"
+    "state": "Washington",
+    "latitude": 47.6553,
+    "longitude": -122.3035,
+    "primaryColor": "#4B2E83",
+    "secondaryColor": "#B7A57A"
   },
   {
     "id": "wisconsin",
     "name": "Wisconsin",
+    "shortName": "Wisconsin",
     "fullName": "Wisconsin Badgers",
+    "nickname": "Badgers",
     "city": "Madison",
-    "state": "Wisconsin"
+    "state": "Wisconsin",
+    "latitude": 43.0731,
+    "longitude": -89.4012,
+    "primaryColor": "#C5050C",
+    "secondaryColor": "#FFFFFF"
   },
   {
     "id": "delaware",
     "name": "Delaware",
+    "shortName": "Delaware",
     "fullName": "Delaware Fightin' Blue Hens",
+    "nickname": "Fightin' Blue Hens",
     "city": "Newark",
-    "state": "Delaware"
+    "state": "Delaware",
+    "latitude": 39.6837,
+    "longitude": -75.7497,
+    "primaryColor": "#005696",
+    "secondaryColor": "#FFD200"
   },
   {
     "id": "fiu",
     "name": "FIU",
+    "shortName": "FIU",
     "fullName": "FIU Panthers",
+    "nickname": "Panthers",
     "city": "Miami",
-    "state": "Florida"
+    "state": "Florida",
+    "latitude": 25.7563,
+    "longitude": -80.3756,
+    "primaryColor": "#002B5C",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "jacksonville-state",
     "name": "Jacksonville State",
+    "shortName": "Jacksonville State",
     "fullName": "Jacksonville State Gamecocks",
+    "nickname": "Gamecocks",
     "city": "Jacksonville",
-    "state": "Alabama"
+    "state": "Alabama",
+    "latitude": 33.8204,
+    "longitude": -85.7702,
+    "primaryColor": "#85002F",
+    "secondaryColor": "#000000"
   },
   {
     "id": "kennesaw-state",
     "name": "Kennesaw State",
+    "shortName": "Kennesaw State",
     "fullName": "Kennesaw State Owls",
+    "nickname": "Owls",
     "city": "Kennesaw",
-    "state": "Georgia"
+    "state": "Georgia",
+    "latitude": 34.0234,
+    "longitude": -84.5816,
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFC200"
   },
   {
     "id": "liberty",
     "name": "Liberty",
+    "shortName": "Liberty",
     "fullName": "Liberty Flames",
+    "nickname": "Flames",
     "city": "Lynchburg",
-    "state": "Virginia"
+    "state": "Virginia",
+    "latitude": 37.3518,
+    "longitude": -79.1817,
+    "primaryColor": "#00205B",
+    "secondaryColor": "#B82136"
   },
   {
     "id": "louisiana-tech",
     "name": "Louisiana Tech",
+    "shortName": "Louisiana Tech",
     "fullName": "Louisiana Tech Bulldogs",
+    "nickname": "Bulldogs",
     "city": "Ruston",
-    "state": "Louisiana"
+    "state": "Louisiana",
+    "latitude": 32.5251,
+    "longitude": -92.6379,
+    "primaryColor": "#002B5C",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "middle-tennessee",
     "name": "Middle Tennessee",
+    "shortName": "Middle Tennessee",
     "fullName": "Middle Tennessee Blue Raiders",
+    "nickname": "Blue Raiders",
     "city": "Murfreesboro",
-    "state": "Tennessee"
+    "state": "Tennessee",
+    "latitude": 35.8517,
+    "longitude": -86.3694,
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "missouri-state",
     "name": "Missouri State",
+    "shortName": "Missouri State",
     "fullName": "Missouri State Bears",
+    "nickname": "Bears",
     "city": "Springfield",
-    "state": "Missouri"
+    "state": "Missouri",
+    "latitude": 37.194,
+    "longitude": -93.2923,
+    "primaryColor": "#9A0000",
+    "secondaryColor": "#000000"
   },
   {
     "id": "new-mexico-state",
     "name": "New Mexico State",
+    "shortName": "New Mexico State",
     "fullName": "New Mexico State Aggies",
+    "nickname": "Aggies",
     "city": "Las Cruces",
-    "state": "New Mexico"
+    "state": "New Mexico",
+    "latitude": 32.2844,
+    "longitude": -106.7517,
+    "primaryColor": "#8C1D40",
+    "secondaryColor": "#000000"
   },
   {
     "id": "sam-houston",
     "name": "Sam Houston",
+    "shortName": "Sam Houston",
     "fullName": "Sam Houston Bearkats",
+    "nickname": "Bearkats",
     "city": "Huntsville",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 30.7146,
+    "longitude": -95.5521,
+    "primaryColor": "#C5002F",
+    "secondaryColor": "#000000"
   },
   {
     "id": "utep",
     "name": "UTEP",
+    "shortName": "UTEP",
     "fullName": "UTEP Miners",
+    "nickname": "Miners",
     "city": "El Paso",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 31.7619,
+    "longitude": -106.5057,
+    "primaryColor": "#FF8200",
+    "secondaryColor": "#000000"
   },
   {
     "id": "western-kentucky",
     "name": "Western Kentucky",
+    "shortName": "Western Kentucky",
     "fullName": "Western Kentucky Hilltoppers",
+    "nickname": "Hilltoppers",
     "city": "Bowling Green",
-    "state": "Kentucky"
+    "state": "Kentucky",
+    "latitude": 36.982,
+    "longitude": -86.4472,
+    "primaryColor": "#C7002D",
+    "secondaryColor": "#000000"
   },
   {
     "id": "connecticut",
     "name": "Connecticut",
+    "shortName": "Connecticut",
     "fullName": "Connecticut Huskies",
+    "nickname": "Huskies",
     "city": "Storrs",
-    "state": "Connecticut"
+    "state": "Connecticut",
+    "latitude": 41.8077,
+    "longitude": -72.254,
+    "primaryColor": "#000E2F",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "notre-dame",
     "name": "Notre Dame",
+    "shortName": "Notre Dame",
     "fullName": "Notre Dame Fighting Irish",
+    "nickname": "Fighting Irish",
     "city": "Notre Dame",
-    "state": "Indiana"
+    "state": "Indiana",
+    "latitude": 41.7001,
+    "longitude": -86.2379,
+    "primaryColor": "#0C2340",
+    "secondaryColor": "#A77E2F"
   },
   {
     "id": "akron",
     "name": "Akron",
+    "shortName": "Akron",
     "fullName": "Akron Zips",
+    "nickname": "Zips",
     "city": "Akron",
-    "state": "Ohio"
+    "state": "Ohio",
+    "latitude": 41.0732,
+    "longitude": -81.5179,
+    "primaryColor": "#002D62",
+    "secondaryColor": "#FDB913"
   },
   {
     "id": "ball-state",
     "name": "Ball State",
+    "shortName": "Ball State",
     "fullName": "Ball State Cardinals",
+    "nickname": "Cardinals",
     "city": "Muncie",
-    "state": "Indiana"
+    "state": "Indiana",
+    "latitude": 40.2006,
+    "longitude": -85.4106,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "bowling-green",
     "name": "Bowling Green",
+    "shortName": "Bowling Green",
     "fullName": "Bowling Green Falcons",
+    "nickname": "Falcons",
     "city": "Bowling Green",
-    "state": "Ohio"
+    "state": "Ohio",
+    "latitude": 41.3748,
+    "longitude": -83.6571,
+    "primaryColor": "#4F2C1D",
+    "secondaryColor": "#FF9E00"
   },
   {
     "id": "buffalo",
     "name": "Buffalo",
+    "shortName": "Buffalo",
     "fullName": "Buffalo Bulls",
+    "nickname": "Bulls",
     "city": "Buffalo",
-    "state": "New York"
+    "state": "New York",
+    "latitude": 43.0002,
+    "longitude": -78.789,
+    "primaryColor": "#0032A0",
+    "secondaryColor": "#C6C6C6"
   },
   {
     "id": "central-michigan",
     "name": "Central Michigan",
+    "shortName": "Central Michigan",
     "fullName": "Central Michigan Chippewas",
+    "nickname": "Chippewas",
     "city": "Mount Pleasant",
-    "state": "Michigan"
+    "state": "Michigan",
+    "latitude": 43.5776,
+    "longitude": -84.7732,
+    "primaryColor": "#8C002B",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "eastern-michigan",
     "name": "Eastern Michigan",
+    "shortName": "Eastern Michigan",
     "fullName": "Eastern Michigan Eagles",
+    "nickname": "Eagles",
     "city": "Ypsilanti",
-    "state": "Michigan"
+    "state": "Michigan",
+    "latitude": 42.2459,
+    "longitude": -83.6235,
+    "primaryColor": "#006633",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "kent-state",
     "name": "Kent State",
+    "shortName": "Kent State",
     "fullName": "Kent State Golden Flashes",
+    "nickname": "Golden Flashes",
     "city": "Kent",
-    "state": "Ohio"
+    "state": "Ohio",
+    "latitude": 41.1498,
+    "longitude": -81.3436,
+    "primaryColor": "#002D62",
+    "secondaryColor": "#FDB913"
   },
   {
-    "id": "miami-(oh)",
+    "id": "miami-oh",
     "name": "Miami (OH)",
+    "shortName": "Miami (OH)",
     "fullName": "Miami RedHawks",
+    "nickname": null,
     "city": "Oxford",
-    "state": "Ohio"
+    "state": "Ohio",
+    "latitude": 39.5109,
+    "longitude": -84.7328,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "northern-illinois",
     "name": "Northern Illinois",
+    "shortName": "Northern Illinois",
     "fullName": "Northern Illinois Huskies",
+    "nickname": "Huskies",
     "city": "DeKalb",
-    "state": "Illinois"
+    "state": "Illinois",
+    "latitude": 41.9306,
+    "longitude": -88.754,
+    "primaryColor": "#C40D36",
+    "secondaryColor": "#000000"
   },
   {
     "id": "ohio",
     "name": "Ohio",
+    "shortName": "Ohio",
     "fullName": "Ohio Bobcats",
+    "nickname": "Bobcats",
     "city": "Athens",
-    "state": "Ohio"
+    "state": "Ohio",
+    "latitude": 39.3292,
+    "longitude": -82.1013,
+    "primaryColor": "#004A36",
+    "secondaryColor": "#FFC72C"
   },
   {
     "id": "toledo",
     "name": "Toledo",
+    "shortName": "Toledo",
     "fullName": "Toledo Rockets",
+    "nickname": "Rockets",
     "city": "Toledo",
-    "state": "Ohio"
+    "state": "Ohio",
+    "latitude": 41.6565,
+    "longitude": -83.6152,
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FFC200"
   },
   {
     "id": "umass",
     "name": "UMass",
+    "shortName": "UMass",
     "fullName": "UMass Minutemen",
+    "nickname": "Minutemen",
     "city": "Amherst",
-    "state": "Massachusetts"
+    "state": "Massachusetts",
+    "latitude": 42.3868,
+    "longitude": -72.5301,
+    "primaryColor": "#800000",
+    "secondaryColor": "#000000"
   },
   {
     "id": "western-michigan",
     "name": "Western Michigan",
+    "shortName": "Western Michigan",
     "fullName": "Western Michigan Broncos",
+    "nickname": "Broncos",
     "city": "Kalamazoo",
-    "state": "Michigan"
+    "state": "Michigan",
+    "latitude": 42.2834,
+    "longitude": -85.6051,
+    "primaryColor": "#654321",
+    "secondaryColor": "#FFFFFF"
   },
   {
     "id": "air-force",
     "name": "Air Force",
+    "shortName": "Air Force",
     "fullName": "Air Force Falcons",
+    "nickname": "Falcons",
     "city": "Colorado Springs",
-    "state": "Colorado"
+    "state": "Colorado",
+    "latitude": 38.9967,
+    "longitude": -104.8618,
+    "primaryColor": "#00205B",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "boise-state",
     "name": "Boise State",
+    "shortName": "Boise State",
     "fullName": "Boise State Broncos",
+    "nickname": "Broncos",
     "city": "Boise",
-    "state": "Idaho"
+    "state": "Idaho",
+    "latitude": 43.6028,
+    "longitude": -116.2146,
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FF6600"
   },
   {
     "id": "colorado-state",
     "name": "Colorado State",
+    "shortName": "Colorado State",
     "fullName": "Colorado State Rams",
+    "nickname": "Rams",
     "city": "Fort Collins",
-    "state": "Colorado"
+    "state": "Colorado",
+    "latitude": 40.5508,
+    "longitude": -105.0178,
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#C8C8C8"
   },
   {
     "id": "fresno-state",
     "name": "Fresno State",
+    "shortName": "Fresno State",
     "fullName": "Fresno State Bulldogs",
+    "nickname": "Bulldogs",
     "city": "Fresno",
-    "state": "California"
+    "state": "California",
+    "latitude": 36.8122,
+    "longitude": -119.7462,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "hawaii",
     "name": "Hawaii",
+    "shortName": "Hawaii",
     "fullName": "Hawaii Rainbow Warriors",
+    "nickname": "Rainbow Warriors",
     "city": "Honolulu",
-    "state": "Hawaii"
+    "state": "Hawaii",
+    "latitude": 21.2969,
+    "longitude": -157.815,
+    "primaryColor": "#00643B",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "nevada",
     "name": "Nevada",
+    "shortName": "Nevada",
     "fullName": "Nevada Wolf Pack",
+    "nickname": "Wolf Pack",
     "city": "Reno",
-    "state": "Nevada"
+    "state": "Nevada",
+    "latitude": 39.5447,
+    "longitude": -119.8138,
+    "primaryColor": "#002D62",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "new-mexico",
     "name": "New Mexico",
+    "shortName": "New Mexico",
     "fullName": "New Mexico Lobos",
+    "nickname": "Lobos",
     "city": "Albuquerque",
-    "state": "New Mexico"
+    "state": "New Mexico",
+    "latitude": 35.0834,
+    "longitude": -106.6195,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "san-diego-state",
     "name": "San Diego State",
+    "shortName": "San Diego State",
     "fullName": "San Diego State Aztecs",
+    "nickname": "Aztecs",
     "city": "San Diego",
-    "state": "California"
+    "state": "California",
+    "latitude": 32.7753,
+    "longitude": -117.0709,
+    "primaryColor": "#9D2235",
+    "secondaryColor": "#000000"
   },
   {
     "id": "san-jose-state",
     "name": "San Jose State",
+    "shortName": "San Jose State",
     "fullName": "San Jose State Spartans",
+    "nickname": "Spartans",
     "city": "San Jose",
-    "state": "California"
+    "state": "California",
+    "latitude": 37.3361,
+    "longitude": -121.8811,
+    "primaryColor": "#0055A2",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "unlv",
     "name": "UNLV",
+    "shortName": "UNLV",
     "fullName": "UNLV Rebels",
+    "nickname": "Rebels",
     "city": "Las Vegas",
-    "state": "Nevada"
+    "state": "Nevada",
+    "latitude": 36.1098,
+    "longitude": -115.1398,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "utah-state",
     "name": "Utah State",
+    "shortName": "Utah State",
     "fullName": "Utah State Aggies",
+    "nickname": "Aggies",
     "city": "Logan",
-    "state": "Utah"
+    "state": "Utah",
+    "latitude": 41.745,
+    "longitude": -111.8101,
+    "primaryColor": "#002D62",
+    "secondaryColor": "#8C8C8C"
   },
   {
     "id": "wyoming",
     "name": "Wyoming",
+    "shortName": "Wyoming",
     "fullName": "Wyoming Cowboys",
+    "nickname": "Cowboys",
     "city": "Laramie",
-    "state": "Wyoming"
+    "state": "Wyoming",
+    "latitude": 41.3114,
+    "longitude": -105.5911,
+    "primaryColor": "#4F2C1D",
+    "secondaryColor": "#FFC200"
   },
   {
     "id": "oregon-state",
     "name": "Oregon State",
+    "shortName": "Oregon State",
     "fullName": "Oregon State Beavers",
+    "nickname": "Beavers",
     "city": "Corvallis",
-    "state": "Oregon"
+    "state": "Oregon",
+    "latitude": 44.5637,
+    "longitude": -123.2794,
+    "primaryColor": "#D73F09",
+    "secondaryColor": "#000000"
   },
   {
     "id": "washington-state",
     "name": "Washington State",
+    "shortName": "Washington State",
     "fullName": "Washington State Cougars",
+    "nickname": "Cougars",
     "city": "Pullman",
-    "state": "Washington"
+    "state": "Washington",
+    "latitude": 46.7298,
+    "longitude": -117.1817,
+    "primaryColor": "#981E32",
+    "secondaryColor": "#000000"
   },
   {
     "id": "alabama",
     "name": "Alabama",
+    "shortName": "Alabama",
     "fullName": "Alabama Crimson Tide",
+    "nickname": "Crimson Tide",
     "city": "Tuscaloosa",
-    "state": "Alabama"
+    "state": "Alabama",
+    "latitude": 33.2098,
+    "longitude": -87.5692,
+    "primaryColor": "#900000",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "arkansas",
     "name": "Arkansas",
+    "shortName": "Arkansas",
     "fullName": "Arkansas Razorbacks",
+    "nickname": "Razorbacks",
     "city": "Fayetteville",
-    "state": "Arkansas"
+    "state": "Arkansas",
+    "latitude": 36.0625,
+    "longitude": -94.1574,
+    "primaryColor": "#9D2235",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "auburn",
     "name": "Auburn",
+    "shortName": "Auburn",
     "fullName": "Auburn Tigers",
+    "nickname": "Tigers",
     "city": "Auburn",
-    "state": "Alabama"
+    "state": "Alabama",
+    "latitude": 32.599,
+    "longitude": -85.4886,
+    "primaryColor": "#0C2340",
+    "secondaryColor": "#E87F00"
   },
   {
     "id": "florida",
     "name": "Florida",
+    "shortName": "Florida",
     "fullName": "Florida Gators",
+    "nickname": "Gators",
     "city": "Gainesville",
-    "state": "Florida"
+    "state": "Florida",
+    "latitude": 29.6436,
+    "longitude": -82.3549,
+    "primaryColor": "#0021A5",
+    "secondaryColor": "#FA4616"
   },
   {
     "id": "georgia",
     "name": "Georgia",
+    "shortName": "Georgia",
     "fullName": "Georgia Bulldogs",
+    "nickname": "Bulldogs",
     "city": "Athens",
-    "state": "Georgia"
+    "state": "Georgia",
+    "latitude": 33.948,
+    "longitude": -83.3773,
+    "primaryColor": "#BA0C00",
+    "secondaryColor": "#000000"
   },
   {
     "id": "kentucky",
     "name": "Kentucky",
+    "shortName": "Kentucky",
     "fullName": "Kentucky Wildcats",
+    "nickname": "Wildcats",
     "city": "Lexington",
-    "state": "Kentucky"
+    "state": "Kentucky",
+    "latitude": 38.0307,
+    "longitude": -84.5041,
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "lsu",
     "name": "LSU",
+    "shortName": "LSU",
     "fullName": "LSU Tigers",
+    "nickname": "Tigers",
     "city": "Baton Rouge",
-    "state": "Louisiana"
+    "state": "Louisiana",
+    "latitude": 30.4118,
+    "longitude": -91.18,
+    "primaryColor": "#461D7C",
+    "secondaryColor": "#FDD023"
   },
   {
     "id": "mississippi-state",
     "name": "Mississippi State",
+    "shortName": "Mississippi State",
     "fullName": "Mississippi State Bulldogs",
+    "nickname": "Bulldogs",
     "city": "Starkville",
-    "state": "Mississippi"
+    "state": "Mississippi",
+    "latitude": 33.4735,
+    "longitude": -88.799,
+    "primaryColor": "#660000",
+    "secondaryColor": "#000000"
   },
   {
     "id": "missouri",
     "name": "Missouri",
+    "shortName": "Missouri",
     "fullName": "Missouri Tigers",
+    "nickname": "Tigers",
     "city": "Columbia",
-    "state": "Missouri"
+    "state": "Missouri",
+    "latitude": 38.9358,
+    "longitude": -92.3288,
+    "primaryColor": "#000000",
+    "secondaryColor": "#F1B82D"
   },
   {
     "id": "oklahoma",
     "name": "Oklahoma",
+    "shortName": "Oklahoma",
     "fullName": "Oklahoma Sooners",
+    "nickname": "Sooners",
     "city": "Norman",
-    "state": "Oklahoma"
+    "state": "Oklahoma",
+    "latitude": 35.2059,
+    "longitude": -97.4426,
+    "primaryColor": "#841617",
+    "secondaryColor": "#F0CB41"
   },
   {
     "id": "ole-miss",
     "name": "Ole Miss",
+    "shortName": "Ole Miss",
     "fullName": "Ole Miss Rebels",
+    "nickname": "Rebels",
     "city": "Oxford",
-    "state": "Mississippi"
+    "state": "Mississippi",
+    "latitude": 34.3665,
+    "longitude": -89.5348,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "south-carolina",
     "name": "South Carolina",
+    "shortName": "South Carolina",
     "fullName": "South Carolina Gamecocks",
+    "nickname": "Gamecocks",
     "city": "Columbia",
-    "state": "South Carolina"
+    "state": "South Carolina",
+    "latitude": 34.0195,
+    "longitude": -81.0348,
+    "primaryColor": "#73000A",
+    "secondaryColor": "#000000"
   },
   {
     "id": "tennessee",
     "name": "Tennessee",
+    "shortName": "Tennessee",
     "fullName": "Tennessee Volunteers",
+    "nickname": "Volunteers",
     "city": "Knoxville",
-    "state": "Tennessee"
+    "state": "Tennessee",
+    "latitude": 35.9544,
+    "longitude": -83.9295,
+    "primaryColor": "#FF8200",
+    "secondaryColor": "#000000"
   },
   {
     "id": "texas",
     "name": "Texas",
+    "shortName": "Texas",
     "fullName": "Texas Longhorns",
+    "nickname": "Longhorns",
     "city": "Austin",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 30.2849,
+    "longitude": -97.7341,
+    "primaryColor": "#BF5700",
+    "secondaryColor": "#000000"
   },
   {
-    "id": "texas-a&m",
+    "id": "texas-a-m",
     "name": "Texas A&M",
+    "shortName": "Texas A&M",
     "fullName": "Texas A&M Aggies",
+    "nickname": "Aggies",
     "city": "College Station",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 30.628,
+    "longitude": -96.3344,
+    "primaryColor": "#500000",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "vanderbilt",
     "name": "Vanderbilt",
+    "shortName": "Vanderbilt",
     "fullName": "Vanderbilt Commodores",
+    "nickname": "Commodores",
     "city": "Nashville",
-    "state": "Tennessee"
+    "state": "Tennessee",
+    "latitude": 36.1447,
+    "longitude": -86.8027,
+    "primaryColor": "#000000",
+    "secondaryColor": "#8D7359"
   },
   {
     "id": "appalachian-state",
     "name": "Appalachian State",
+    "shortName": "Appalachian State",
     "fullName": "Appalachian State Mountaineers",
+    "nickname": "Mountaineers",
     "city": "Boone",
-    "state": "North Carolina"
+    "state": "North Carolina",
+    "latitude": 36.2168,
+    "longitude": -81.6746,
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFCD00"
   },
   {
     "id": "arkansas-state",
     "name": "Arkansas State",
+    "shortName": "Arkansas State",
     "fullName": "Arkansas State Red Wolves",
+    "nickname": "Red Wolves",
     "city": "Jonesboro",
-    "state": "Arkansas"
+    "state": "Arkansas",
+    "latitude": 35.8423,
+    "longitude": -90.6843,
+    "primaryColor": "#E1002A",
+    "secondaryColor": "#000000"
   },
   {
     "id": "coastal-carolina",
     "name": "Coastal Carolina",
+    "shortName": "Coastal Carolina",
     "fullName": "Coastal Carolina Chanticleers",
+    "nickname": "Chanticleers",
     "city": "Conway",
-    "state": "South Carolina"
+    "state": "South Carolina",
+    "latitude": 33.7948,
+    "longitude": -79.0391,
+    "primaryColor": "#006F6F",
+    "secondaryColor": "#FFCC33"
   },
   {
     "id": "georgia-southern",
     "name": "Georgia Southern",
+    "shortName": "Georgia Southern",
     "fullName": "Georgia Southern Eagles",
+    "nickname": "Eagles",
     "city": "Statesboro",
-    "state": "Georgia"
+    "state": "Georgia",
+    "latitude": 32.4279,
+    "longitude": -81.7831,
+    "primaryColor": "#002D62",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "georgia-state",
     "name": "Georgia State",
+    "shortName": "Georgia State",
     "fullName": "Georgia State Panthers",
+    "nickname": "Panthers",
     "city": "Atlanta",
-    "state": "Georgia"
+    "state": "Georgia",
+    "latitude": 33.753,
+    "longitude": -84.3849,
+    "primaryColor": "#003057",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "james-madison",
     "name": "James Madison",
+    "shortName": "James Madison",
     "fullName": "James Madison Dukes",
+    "nickname": "Dukes",
     "city": "Harrisonburg",
-    "state": "Virginia"
+    "state": "Virginia",
+    "latitude": 38.4354,
+    "longitude": -78.8698,
+    "primaryColor": "#450084",
+    "secondaryColor": "#FFCC00"
   },
   {
     "id": "louisiana",
     "name": "Louisiana",
+    "shortName": "Louisiana",
     "fullName": "Louisiana Ragin' Cajuns",
+    "nickname": "Ragin' Cajuns",
     "city": "Lafayette",
-    "state": "Louisiana"
+    "state": "Louisiana",
+    "latitude": 30.2141,
+    "longitude": -92.0198,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "marshall",
     "name": "Marshall",
+    "shortName": "Marshall",
     "fullName": "Marshall Thundering Herd",
+    "nickname": "Thundering Herd",
     "city": "Huntington",
-    "state": "West Virginia"
+    "state": "West Virginia",
+    "latitude": 38.4226,
+    "longitude": -82.4215,
+    "primaryColor": "#0032A0",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "old-dominion",
     "name": "Old Dominion",
+    "shortName": "Old Dominion",
     "fullName": "Old Dominion Monarchs",
+    "nickname": "Monarchs",
     "city": "Norfolk",
-    "state": "Virginia"
+    "state": "Virginia",
+    "latitude": 36.8851,
+    "longitude": -76.3058,
+    "primaryColor": "#004B8D",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "south-alabama",
     "name": "South Alabama",
+    "shortName": "South Alabama",
     "fullName": "South Alabama Jaguars",
+    "nickname": "Jaguars",
     "city": "Mobile",
-    "state": "Alabama"
+    "state": "Alabama",
+    "latitude": 30.6944,
+    "longitude": -88.1867,
+    "primaryColor": "#0032A0",
+    "secondaryColor": "#C1C6C8"
   },
   {
     "id": "southern-miss",
     "name": "Southern Miss",
+    "shortName": "Southern Miss",
     "fullName": "Southern Miss Golden Eagles",
+    "nickname": "Golden Eagles",
     "city": "Hattiesburg",
-    "state": "Mississippi"
+    "state": "Mississippi",
+    "latitude": 31.3271,
+    "longitude": -89.3462,
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFC200"
   },
   {
     "id": "texas-state",
     "name": "Texas State",
+    "shortName": "Texas State",
     "fullName": "Texas State Bobcats",
+    "nickname": "Bobcats",
     "city": "San Marcos",
-    "state": "Texas"
+    "state": "Texas",
+    "latitude": 29.8833,
+    "longitude": -97.9414,
+    "primaryColor": "#500000",
+    "secondaryColor": "#000000"
   },
   {
     "id": "troy",
     "name": "Troy",
+    "shortName": "Troy",
     "fullName": "Troy Trojans",
+    "nickname": "Trojans",
     "city": "Troy",
-    "state": "Alabama"
+    "state": "Alabama",
+    "latitude": 31.8018,
+    "longitude": -85.9699,
+    "primaryColor": "#CC0033",
+    "secondaryColor": "#000000"
   },
   {
     "id": "ulm",
     "name": "ULM",
+    "shortName": "ULM",
     "fullName": "ULM Warhawks",
+    "nickname": "Warhawks",
     "city": "Monroe",
-    "state": "Louisiana"
+    "state": "Louisiana",
+    "latitude": 32.5252,
+    "longitude": -92.0891,
+    "primaryColor": "#8B0000",
+    "secondaryColor": "#000000"
   }
 ]
