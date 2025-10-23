@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { ChangeEvent, useEffect, useRef, useState } from 'react'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
@@ -95,6 +95,23 @@ interface TerritoryCentroid {
   totalAreaSqMi?: number
 }
 
+interface OwnershipIndexWeek {
+  weekIndex: number
+  week?: number | null
+  seasonType?: string | null
+  label?: string
+  path?: string
+}
+
+interface OwnershipIndexSeason {
+  season: number
+  weeks: OwnershipIndexWeek[]
+}
+
+interface OwnershipIndexPayload {
+  seasons: OwnershipIndexSeason[]
+}
+
 export default function Map({ className = '' }: MapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
@@ -103,6 +120,50 @@ export default function Map({ className = '' }: MapProps) {
   const [error, setError] = useState<string | null>(null)
   const [teamCount, setTeamCount] = useState<number | null>(null)
   const [countyCount, setCountyCount] = useState<number | null>(null)
+  const [seasonOptions, setSeasonOptions] = useState<OwnershipIndexSeason[]>([])
+  const [selectedSeason, setSelectedSeason] = useState<number | null>(null)
+  const [selectedWeekIndex, setSelectedWeekIndex] = useState<number | null>(null)
+  const [currentWeekLabel, setCurrentWeekLabel] = useState<string>('Baseline')
+  const [ownershipLoading, setOwnershipLoading] = useState(false)
+  const [ownershipError, setOwnershipError] = useState<string | null>(null)
+
+  const baseGeoJsonRef = useRef<any | null>(null)
+  const decorateGeoJsonRef = useRef<((ownership: OwnershipMap) => any) | null>(null)
+  const currentOwnershipRef = useRef<OwnershipMap>({})
+  const pendingGeoJsonRef = useRef<any | null>(null)
+  const lastOwnershipPathRef = useRef<string | null>(null)
+  const baselineOwnershipRef = useRef<OwnershipMap>({})
+
+  const applyOwnershipToMap = (ownershipMap: OwnershipMap, label?: string) => {
+    const decorator = decorateGeoJsonRef.current
+
+    if (!decorator) {
+      return
+    }
+
+    const decorated = decorator(ownershipMap)
+    if (!decorated) {
+      return
+    }
+
+    currentOwnershipRef.current = ownershipMap
+    if (label) {
+      setCurrentWeekLabel(label)
+    }
+    setCountyCount(Object.keys(ownershipMap).length)
+
+    const mapInstance = mapRef.current
+    if (mapInstance) {
+      const source = mapInstance.getSource('counties') as maplibregl.GeoJSONSource | undefined
+      if (source) {
+        source.setData(decorated)
+      } else {
+        pendingGeoJsonRef.current = decorated
+      }
+    } else {
+      pendingGeoJsonRef.current = decorated
+    }
+  }
 
   useEffect(() => {
     if (!mapContainer.current || mapRef.current) return
@@ -114,13 +175,15 @@ export default function Map({ className = '' }: MapProps) {
           ownershipRes,
           geoJsonRes,
           countyStatsRes,
-          territoryCentroidsRes
+          territoryCentroidsRes,
+          ownershipIndexRes
         ] = await Promise.all([
           fetch('/data/teams.json'),
           fetch('/data/ownership.json'),
           fetch('/data/us-counties.geojson'),
           fetch('/data/county-stats.json'),
-          fetch('/data/territory-centroids.json')
+          fetch('/data/territory-centroids.json'),
+          fetch('/data/ownership/index.json')
         ])
 
         if (!teamsRes.ok || !ownershipRes.ok || !geoJsonRes.ok) {
@@ -128,8 +191,9 @@ export default function Map({ className = '' }: MapProps) {
         }
 
         const teams: Team[] = await teamsRes.json()
-        const ownership: OwnershipMap = await ownershipRes.json()
-        const geoJson = await geoJsonRes.json()
+        const baselineOwnership: OwnershipMap = await ownershipRes.json()
+        baselineOwnershipRef.current = baselineOwnership
+        const rawGeoJson = await geoJsonRes.json()
         const countyStatsMap: CountyStats = countyStatsRes.ok
           ? await countyStatsRes.json()
           : {}
@@ -137,14 +201,13 @@ export default function Map({ className = '' }: MapProps) {
           ? await territoryCentroidsRes.json()
           : []
 
-        if (Array.isArray(geoJson?.features)) {
-          geoJson.features = geoJson.features.filter((feature: any) => {
-            const stateCode = String(feature?.properties?.STATE ?? '').padStart(
-              2,
-              '0'
-            )
-            return stateCode !== '72'
-          })
+        let ownershipIndex: OwnershipIndexPayload | null = null
+        if (ownershipIndexRes.ok) {
+          try {
+            ownershipIndex = await ownershipIndexRes.json()
+          } catch (indexErr) {
+            console.warn('Failed to parse ownership index', indexErr)
+          }
         }
 
         const teamsById = teams.reduce<Record<string, Team>>((acc, team) => {
@@ -157,32 +220,140 @@ export default function Map({ className = '' }: MapProps) {
           return acc
         }, {})
 
-        geoJson.features.forEach((feature: any) => {
-          const fips = String(feature.id)
-          const ownerId = ownership[fips]
-          const stats = countyStatsMap[fips] ?? {}
-          const owner = teamsById[ownerId]
+        const baseCollection =
+          rawGeoJson && typeof rawGeoJson === 'object'
+            ? rawGeoJson
+            : { type: 'FeatureCollection', features: [] }
 
-          const areaSqMi =
-            stats.areaSqMi ?? feature.properties?.CENSUSAREA ?? null
-          const population = stats.population ?? null
-          const countyName =
-            stats.name ?? feature.properties?.NAME ?? 'Unknown'
-          const countyState = stats.state ?? null
+        const filteredFeatures = Array.isArray(baseCollection?.features)
+          ? baseCollection.features
+              .filter((feature: any) => {
+                const stateCode = String(feature?.properties?.STATE ?? '').padStart(
+                  2,
+                  '0'
+                )
+                return stateCode !== '72'
+              })
+              .map((feature: any) => ({
+                ...feature,
+                properties: { ...(feature?.properties ?? {}) }
+              }))
+          : []
 
-          feature.properties = {
-            ...feature.properties,
-            fips,
-            countyName,
-            countyState,
-            owner: ownerId,
-            ownerName: owner?.name ?? 'Unknown',
-            ownerFullName: owner?.fullName ?? owner?.name ?? 'Unknown',
-            ownerColor: ownerId ? teamColors[ownerId] : DEFAULT_FILL_COLOR,
-            population,
-            areaSqMi
+        const baseGeoJson = {
+          ...baseCollection,
+          features: filteredFeatures
+        }
+
+        baseGeoJsonRef.current = baseGeoJson
+
+        decorateGeoJsonRef.current = (ownershipMap: OwnershipMap) => {
+          if (!baseGeoJsonRef.current) {
+            return null
           }
-        })
+
+          const decoratedFeatures = baseGeoJsonRef.current.features.map(
+            (feature: any) => {
+              const fips = String(
+                feature?.id ?? feature?.properties?.GEO_ID ?? ''
+              )
+              const stats = countyStatsMap[fips] ?? {}
+              const ownerId = ownershipMap[fips]
+              const owner = ownerId ? teamsById[ownerId] : undefined
+              const baseProps = feature?.properties ?? {}
+
+              return {
+                ...feature,
+                properties: {
+                  ...baseProps,
+                  fips,
+                  countyName:
+                    stats.name ?? baseProps.NAME ?? baseProps.countyName ?? 'Unknown',
+                  countyState: stats.state ?? baseProps.countyState ?? null,
+                  owner: ownerId,
+                  ownerName: owner?.name ?? 'Unknown',
+                  ownerFullName: owner?.fullName ?? owner?.name ?? 'Unknown',
+                  ownerColor: ownerId
+                    ? teamColors[ownerId]
+                    : DEFAULT_FILL_COLOR,
+                  population: stats.population ?? baseProps.population ?? null,
+                  areaSqMi: stats.areaSqMi ?? baseProps.CENSUSAREA ?? baseProps.areaSqMi ?? null
+                }
+              }
+            }
+          )
+
+          return {
+            ...baseGeoJsonRef.current,
+            features: decoratedFeatures
+          }
+        }
+
+        const seasonEntries = Array.isArray(ownershipIndex?.seasons)
+          ? ownershipIndex!.seasons.filter((entry) =>
+              typeof entry?.season === 'number'
+            )
+          : []
+
+        const normalizedSeasonOptions = seasonEntries.map((season) => ({
+          season: season.season,
+          weeks: Array.isArray(season.weeks)
+            ? season.weeks
+                .filter((week) => typeof week?.weekIndex === 'number')
+                .map((week) => ({
+                  ...week,
+                  path:
+                    week.path ||
+                    `/data/ownership/${season.season}/week-${String(
+                      week.weekIndex ?? ''
+                    ).padStart(2, '0')}.json`
+                }))
+            : []
+        }))
+
+        let initialOwnershipMap: OwnershipMap = baselineOwnership
+        let initialLabel = 'Baseline'
+        let initialSeason: number | null = null
+        let initialWeekIndex: number | null = null
+        let initialPath: string | null = null
+
+        if (normalizedSeasonOptions.length > 0) {
+          const latestSeason =
+            normalizedSeasonOptions[normalizedSeasonOptions.length - 1]
+          const latestWeek =
+            latestSeason.weeks.length > 0
+              ? latestSeason.weeks[latestSeason.weeks.length - 1]
+              : null
+
+          if (latestWeek?.path) {
+            try {
+              const latestRes = await fetch(latestWeek.path)
+              if (latestRes.ok) {
+                initialOwnershipMap = await latestRes.json()
+                initialLabel = latestWeek.label ?? `Week ${latestWeek.weekIndex}`
+                initialPath = latestWeek.path
+                initialSeason = latestSeason.season
+                initialWeekIndex = latestWeek.weekIndex ?? null
+              } else {
+                console.warn('Failed to fetch latest ownership snapshot', latestWeek.path)
+              }
+            } catch (latestErr) {
+              console.warn('Error fetching latest ownership snapshot', latestErr)
+            }
+          }
+
+          if (!initialPath && latestSeason.weeks.length > 0) {
+            const fallbackWeek = latestSeason.weeks[latestSeason.weeks.length - 1]
+            initialLabel = fallbackWeek.label ?? `Week ${fallbackWeek.weekIndex}`
+            initialSeason = latestSeason.season
+            initialWeekIndex = fallbackWeek.weekIndex ?? null
+          }
+        }
+
+        setSeasonOptions(normalizedSeasonOptions)
+        setSelectedSeason(initialSeason)
+        setSelectedWeekIndex(initialWeekIndex)
+        setCurrentWeekLabel(initialLabel)
 
         const markerSourceData = territoryCentroids.filter(
           (centroid) =>
@@ -192,6 +363,14 @@ export default function Map({ className = '' }: MapProps) {
             centroid.logoUrl
         )
 
+        setTeamCount(teams.length)
+
+        applyOwnershipToMap(initialOwnershipMap, initialLabel)
+        lastOwnershipPathRef.current = initialPath
+
+        const initialGeoJson =
+          decorateGeoJsonRef.current?.(initialOwnershipMap) ?? baseGeoJson
+
         mapRef.current = new maplibregl.Map({
           container: mapContainer.current!,
           style: {
@@ -199,7 +378,7 @@ export default function Map({ className = '' }: MapProps) {
             sources: {
               counties: {
                 type: 'geojson',
-                data: geoJson
+                data: initialGeoJson
               }
             },
             layers: [
@@ -250,13 +429,19 @@ export default function Map({ className = '' }: MapProps) {
             colorExpression
           )
 
-          setTeamCount(teams.length)
-          setCountyCount(Object.keys(ownership).length)
-
           const mapInstance = mapRef.current
           if (!mapInstance) {
             setLoading(false)
             return
+          }
+
+          const pendingData = pendingGeoJsonRef.current
+          if (pendingData) {
+            const source = mapInstance.getSource('counties') as maplibregl.GeoJSONSource
+            if (source) {
+              source.setData(pendingData)
+              pendingGeoJsonRef.current = null
+            }
           }
 
           const markerData = markerSourceData.map((centroid) => ({
@@ -429,6 +614,117 @@ export default function Map({ className = '' }: MapProps) {
     }
   }, [])
 
+  useEffect(() => {
+    if (!seasonOptions.length || selectedSeason === null || selectedWeekIndex === null) {
+      return
+    }
+
+    const season = seasonOptions.find((entry) => entry.season === selectedSeason)
+    if (!season) {
+      return
+    }
+
+    const week = season.weeks.find((entry) => entry.weekIndex === selectedWeekIndex)
+    if (!week || !week.path) {
+      return
+    }
+
+    if (lastOwnershipPathRef.current === week.path) {
+      setCurrentWeekLabel(week.label ?? `Week ${week.weekIndex}`)
+      setOwnershipError(null)
+      return
+    }
+
+    let cancelled = false
+    const controller = new AbortController()
+
+    const loadOwnership = async () => {
+      setOwnershipLoading(true)
+      setOwnershipError(null)
+
+      try {
+        const response = await fetch(week.path, { signal: controller.signal })
+        if (!response.ok) {
+          throw new Error(`Failed to load ownership snapshot: ${week.path}`)
+        }
+
+        const data: OwnershipMap = await response.json()
+        if (cancelled) {
+          return
+        }
+
+        applyOwnershipToMap(data, week.label ?? `Week ${week.weekIndex}`)
+        lastOwnershipPathRef.current = week.path
+        setOwnershipError(null)
+      } catch (ownershipErr) {
+        if (cancelled) {
+          return
+        }
+
+        console.error('Ownership fetch error:', ownershipErr)
+        setOwnershipError('Ownership snapshot unavailable for the selected week.')
+      } finally {
+        if (!cancelled) {
+          setOwnershipLoading(false)
+        }
+      }
+    }
+
+    loadOwnership()
+
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
+  }, [seasonOptions, selectedSeason, selectedWeekIndex])
+
+  const currentSeasonOption = seasonOptions.find(
+    (entry) => entry.season === selectedSeason
+  )
+  const weekOptions = currentSeasonOption?.weeks ?? []
+  const showSeasonSelect = seasonOptions.length > 1
+  const showWeekSelect = weekOptions.length > 0
+
+  const handleSeasonChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const rawValue = event.target.value
+    const value = Number(rawValue)
+
+    if (!rawValue || Number.isNaN(value)) {
+      setSelectedSeason(null)
+      setSelectedWeekIndex(null)
+      setOwnershipError(null)
+      lastOwnershipPathRef.current = null
+      applyOwnershipToMap(baselineOwnershipRef.current, 'Baseline')
+      return
+    }
+
+    setSelectedSeason(value)
+    setOwnershipError(null)
+
+    const season = seasonOptions.find((entry) => entry.season === value)
+    if (season && season.weeks.length > 0) {
+      const latestWeek = season.weeks[season.weeks.length - 1]
+      setSelectedWeekIndex(latestWeek.weekIndex ?? null)
+    } else {
+      setSelectedWeekIndex(null)
+      lastOwnershipPathRef.current = null
+      applyOwnershipToMap(baselineOwnershipRef.current, 'Baseline')
+      setCurrentWeekLabel('Baseline')
+    }
+  }
+
+  const handleWeekChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const rawValue = event.target.value
+    const value = Number(rawValue)
+
+    if (Number.isNaN(value)) {
+      return
+    }
+
+    setOwnershipError(null)
+    setSelectedWeekIndex(value)
+  }
+
   return (
     <div className={`relative ${className}`}>
       <div
@@ -457,9 +753,61 @@ export default function Map({ className = '' }: MapProps) {
           <p className="text-xs text-gray-600">
             {teamCount ?? '–'} teams · {countyCount ?? '–'} counties
           </p>
+          <p className="text-[11px] text-gray-500 mt-1">{currentWeekLabel}</p>
           <p className="text-[11px] text-gray-500 mt-1">
             Colors reflect the owning team’s primary hue
           </p>
+
+          {(showSeasonSelect || showWeekSelect) && (
+            <div className="mt-2 flex flex-col gap-1 text-xs text-gray-700">
+              {showSeasonSelect && (
+                <label className="flex items-center gap-2">
+                  <span className="font-medium text-gray-600">Season</span>
+                  <select
+                    className="border border-gray-300 rounded px-2 py-1 bg-white"
+                    value={selectedSeason !== null ? String(selectedSeason) : ''}
+                    onChange={handleSeasonChange}
+                    disabled={ownershipLoading}
+                  >
+                    {seasonOptions.map((season) => (
+                      <option key={season.season} value={String(season.season)}>
+                        {season.season}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+
+              {showWeekSelect && (
+                <label className="flex items-center gap-2">
+                  <span className="font-medium text-gray-600">Week</span>
+                  <select
+                    className="border border-gray-300 rounded px-2 py-1 bg-white"
+                    value={selectedWeekIndex !== null ? String(selectedWeekIndex) : ''}
+                    onChange={handleWeekChange}
+                    disabled={ownershipLoading}
+                  >
+                    {weekOptions.map((week) => (
+                      <option
+                        key={`${week.weekIndex}-${week.seasonType ?? 'unknown'}`}
+                        value={String(week.weekIndex)}
+                      >
+                        {week.label ?? `Week ${week.weekIndex}`}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+            </div>
+          )}
+
+          {ownershipLoading && (
+            <p className="text-[11px] text-gray-500 mt-1">Updating ownership…</p>
+          )}
+
+          {ownershipError && (
+            <p className="text-[11px] text-red-600 mt-1">{ownershipError}</p>
+          )}
         </div>
       )}
     </div>
