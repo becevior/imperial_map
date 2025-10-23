@@ -1,13 +1,14 @@
 """
 Game processing and territory transfer logic
 """
-from typing import Dict, List, Optional
+from typing import Dict, Iterable, List, Optional
 from datetime import datetime
 
 
 def process_game_result(
     game: Dict,
-    current_ownership: List[Dict]
+    current_ownership: Dict[str, str],
+    team_counties: Optional[Dict[str, Iterable[str]]] = None,
 ) -> Optional[Dict]:
     """
     Process a completed game and determine territory transfers
@@ -15,48 +16,80 @@ def process_game_result(
     MVP Rule: Winner takes ALL counties owned by loser
 
     Args:
-        game: Game dict with id, status, home_team_id, away_team_id, scores
-        current_ownership: List of ownership dicts with fips, owner_team_id
+        game: Game dict (snake_case or camelCase keys are supported)
+        current_ownership: Mapping of FIPS -> owning team ID
+        team_counties: Optional reverse index team ID -> iterable of FIPS
 
     Returns:
         Dict with winner, loser, transfer_count, transfers list
         Or None if game cannot be processed
     """
-    # Only process final games
-    if game.get('status') != 'final':
+    status = (game.get('status') or '').lower()
+    completed = bool(game.get('completed'))
+
+    if status and status not in {'final', 'completed'} and not completed:
         return None
 
-    home_score = game.get('home_score')
-    away_score = game.get('away_score')
+    winner = (
+        game.get('winner_id')
+        or game.get('winnerId')
+        or game.get('winner')
+    )
+    loser = (
+        game.get('loser_id')
+        or game.get('loserId')
+        or game.get('loser')
+    )
 
-    # No clear winner
-    if home_score is None or away_score is None or home_score == away_score:
+    if not winner or not loser:
+        # Attempt to derive winner/loser from scores if provided
+        home_score = game.get('home_score') or game.get('homeScore')
+        away_score = game.get('away_score') or game.get('awayScore')
+        home_team = game.get('home_team_id') or game.get('homeTeamId')
+        away_team = game.get('away_team_id') or game.get('awayTeamId')
+
+        if (
+            home_score is None
+            or away_score is None
+            or home_team is None
+            or away_team is None
+            or home_score == away_score
+        ):
+            return None
+
+        home_wins = home_score > away_score
+        winner = home_team if home_wins else away_team
+        loser = away_team if home_wins else home_team
+
+    if winner == loser:
         return None
 
-    home_wins = home_score > away_score
-    winner = game['home_team_id'] if home_wins else game['away_team_id']
-    loser = game['away_team_id'] if home_wins else game['home_team_id']
-
-    # Find all territories owned by loser
-    transfers = []
     now = datetime.utcnow().isoformat()
 
-    for ownership in current_ownership:
-        if ownership['owner_team_id'] == loser:
-            transfers.append({
-                'fips': ownership['fips'],
-                'from_team_id': loser,
-                'to_team_id': winner,
-                'game_id': game['id'],
-                'at': now,
-                'reason': f"{winner} defeated {loser} (all-of-loser rule)"
-            })
+    if team_counties is not None:
+        loser_counties = list(team_counties.get(loser, []))
+    else:
+        loser_counties = [
+            fips for fips, owner in current_ownership.items() if owner == loser
+        ]
+
+    transfers = [
+        {
+            'fips': fips,
+            'from_team_id': loser,
+            'to_team_id': winner,
+            'game_id': game.get('id'),
+            'at': now,
+            'reason': f"{winner} defeated {loser} (all-of-loser rule)",
+        }
+        for fips in loser_counties
+    ]
 
     return {
         'winner': winner,
         'loser': loser,
         'transfer_count': len(transfers),
-        'transfers': transfers
+        'transfers': transfers,
     }
 
 

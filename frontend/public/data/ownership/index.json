@@ -1,0 +1,79 @@
+{
+  "seasons": [
+    {
+      "season": 2025,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2025 Baseline (Preseason)",
+          "path": "/data/ownership/2025/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Regular Week 1",
+          "path": "/data/ownership/2025/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Regular Week 2",
+          "path": "/data/ownership/2025/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Regular Week 3",
+          "path": "/data/ownership/2025/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Regular Week 4",
+          "path": "/data/ownership/2025/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Regular Week 5",
+          "path": "/data/ownership/2025/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Regular Week 6",
+          "path": "/data/ownership/2025/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Regular Week 7",
+          "path": "/data/ownership/2025/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Regular Week 8",
+          "path": "/data/ownership/2025/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Regular Week 9",
+          "path": "/data/ownership/2025/week-09.json"
+        }
+      ]
+    }
+  ]
+}

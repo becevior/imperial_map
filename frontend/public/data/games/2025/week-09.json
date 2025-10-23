@@ -1,0 +1,36 @@
+[
+  {
+    "id": 401757286,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 9,
+    "completed": true,
+    "startDate": "2025-10-21T23:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Joe Aillet Stadium",
+    "homeTeamId": "louisiana-tech",
+    "awayTeamId": "western-kentucky",
+    "homeScore": 27,
+    "awayScore": 28,
+    "winnerId": "western-kentucky",
+    "loserId": "louisiana-tech"
+  },
+  {
+    "id": 401757287,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 9,
+    "completed": true,
+    "startDate": "2025-10-22T23:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Delaware Stadium",
+    "homeTeamId": "delaware",
+    "awayTeamId": "middle-tennessee",
+    "homeScore": 31,
+    "awayScore": 28,
+    "winnerId": "delaware",
+    "loserId": "middle-tennessee"
+  }
+]

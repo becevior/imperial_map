@@ -4,7 +4,7 @@ Team data loading and management utilities.
 import csv
 from hashlib import md5
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, Iterable, List, Optional, Set
 
 DATA_DIR = Path(__file__).parent.parent / 'data'
 
@@ -89,3 +89,97 @@ def get_team_locations(teams: Optional[List[Dict]] = None) -> Dict[str, Dict[str
         team['id']: {'lat': team['lat'], 'lon': team['lon']}
         for team in teams
     }
+
+
+def _normalize_team_key(raw: str) -> str:
+    """Normalize a team name into a consistent lookup key."""
+    if not raw:
+        return ''
+
+    cleaned = raw.replace('&', 'and')
+    cleaned = cleaned.replace('@', 'at')
+    cleaned = cleaned.strip()
+    # Handle NCAA naming quirks
+    cleaned = cleaned.replace('St.', 'State')
+    cleaned = cleaned.replace('Mt.', 'Mount')
+
+    return _slugify(cleaned)
+
+
+def _team_name_candidates(team: Dict) -> Set[str]:
+    """Return a set of possible names used to identify the team."""
+    candidates: Set[str] = set()
+
+    for key in ('school', 'fullName', 'shortName', 'nickname'):
+        value = team.get(key)
+        if isinstance(value, str) and value.strip():
+            candidates.add(value.strip())
+
+    # Include a few additional variations that commonly appear in APIs
+    if team.get('school') and team.get('state'):
+        candidates.add(f"{team['school']} ({team['state']})")
+
+    return candidates
+
+
+def build_team_name_lookup(teams: Optional[List[Dict]] = None) -> Dict[str, str]:
+    """Build a lookup table mapping normalized names to internal team IDs."""
+    teams = teams or load_teams_from_csv()
+    lookup: Dict[str, str] = {}
+
+    for team in teams:
+        team_id = team['id']
+        for candidate in _team_name_candidates(team):
+            key = _normalize_team_key(candidate)
+            if not key:
+                continue
+
+            # Prefer the first mapping we encounter to avoid accidental overrides
+            lookup.setdefault(key, team_id)
+
+    # Common aliases that differ from CSV naming
+    manual_overrides = {
+        'utsa-roadrunners': 'utsa',
+        'utsa': 'utsa',
+        'texas-san-antonio': 'utsa',
+        'smu-mustangs': 'smu',
+        'tcu-horned-frogs': 'tcu',
+        'ole-miss-rebels': 'ole-miss',
+        'pitt-panthers': 'pittsburgh',
+        'louisiana-lafayette': 'louisiana',
+        'louisiana-ragin-cajuns': 'louisiana',
+        'southern-cal': 'usc',
+        'usc-trojans': 'usc',
+        'utsa-texas-san-antonio': 'utsa',
+        'miami-fl': 'miami',
+        'miami-florida': 'miami',
+        'miami-fl-hurricanes': 'miami',
+        'uab-blazers': 'uab',
+        'uab': 'uab',
+    }
+
+    for key, team_id in manual_overrides.items():
+        lookup.setdefault(key, team_id)
+
+    return lookup
+
+
+def resolve_team_id(name: str, lookup: Optional[Dict[str, str]] = None) -> Optional[str]:
+    """Resolve an arbitrary team name to the internal slug identifier."""
+    if not name:
+        return None
+
+    key = _normalize_team_key(name)
+    if not key:
+        return None
+
+    lookup = lookup or build_team_name_lookup()
+    return lookup.get(key)
+
+
+__all__ = [
+    'build_team_name_lookup',
+    'get_team_locations',
+    'load_teams_from_csv',
+    'resolve_team_id',
+]

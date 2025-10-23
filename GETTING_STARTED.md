@@ -50,7 +50,27 @@ This creates:
 - `public/data/teams.json` (20 teams)
 - `public/data/ownership.json` (3,221 FIPS → team_id mappings)
 
-### 2. Frontend - Run Dev Server
+### 2. (Optional) Pull Game Results
+
+To layer weekly territory changes, fetch completed FBS games from CollegeFootballData. Set `CFBD_API_KEY` in your environment (or `.env`) for higher rate limits.
+
+```bash
+python ingest_games.py --season 2025 --season-type both
+```
+
+Weekly summaries are stored under `frontend/public/data/games/2025/`.
+
+### 3. (Optional) Apply Territory Transfers
+
+Walk the ingested results and emit per-week ownership snapshots:
+
+```bash
+python apply_transfers.py --season 2025
+```
+
+Outputs land in `frontend/public/data/ownership/2025/` and updates the frontend index for the map dropdown.
+
+### 4. Frontend - Run Dev Server
 
 ```bash
 # In project root
@@ -124,10 +144,10 @@ imperial-map/
 3. Open http://localhost:3000
 
 ### To Update After Games:
-1. Write `ingest_games.py` (fetch from CFBD API)
-2. Process game results → update `ownership.json`
-3. `git commit && git push`
-4. Vercel auto-deploys updated map
+1. Run `python ingest_games.py --season 2025`
+2. Run `python apply_transfers.py --season 2025`
+3. `git add frontend/public/data && git commit && git push`
+4. Vercel auto-deploys the refreshed map
 
 ### To Deploy to Production:
 ```bash
