@@ -1,142 +1,551 @@
 {
-  "generatedAt": "2025-10-25T05:50:18.424352Z",
+  "generatedAt": "2025-10-25T05:56:11.031672Z",
   "source": "compute_logo_colors.py",
   "teams": {
-    "air-force": "#003090",
-    "akron": "#001040",
-    "alabama": "#a02030",
-    "appalachian-state": "#201020",
-    "arizona": "#002040",
-    "arizona-state": "#f0c020",
-    "arkansas": "#a01030",
-    "arkansas-state": "#000000",
-    "army": "#101010",
-    "auburn": "#002050",
-    "ball-state": "#000000",
-    "baylor": "#104030",
-    "boise-state": "#0030a0",
-    "boston-college": "#802030",
-    "bowling-green": "#502000",
-    "buffalo": "#0050a0",
-    "byu": "#0030a0",
-    "california": "#002060",
-    "central-michigan": "#600030",
-    "charlotte": "#005030",
-    "cincinnati": "#000000",
-    "clemson": "#f06030",
-    "coastal-carolina": "#007070",
-    "colorado": "#000000",
-    "colorado-state": "#104020",
-    "connecticut": "#002040",
-    "delaware": "#004090",
-    "duke": "#002080",
-    "east-carolina": "#502080",
-    "eastern-michigan": "#006040",
-    "fiu": "#001040",
-    "florida": "#108040",
-    "florida-atlantic": "#004070",
-    "florida-state": "#101010",
-    "fresno-state": "#c01030",
-    "georgia": "#000000",
-    "georgia-southern": "#003070",
-    "georgia-state": "#0030a0",
-    "georgia-tech": "#101010",
-    "hawaii": "#005030",
-    "houston": "#c02030",
-    "illinois": "#e04030",
-    "indiana": "#900000",
-    "iowa": "#000000",
-    "iowa-state": "#800020",
-    "jacksonville-state": "#000000",
-    "james-madison": "#b0a060",
-    "kansas": "#0050b0",
-    "kansas-state": "#300050",
-    "kennesaw-state": "#f0b030",
-    "kent-state": "#003070",
-    "kentucky": "#0030a0",
-    "liberty": "#f0c030",
-    "louisiana": "#000000",
-    "louisiana-tech": "#a09060",
-    "louisville": "#c00010",
-    "lsu": "#401070",
-    "marshall": "#00a040",
-    "maryland": "#e01030",
-    "memphis": "#004080",
-    "miami": "#f07020",
-    "miami-oh": "#c01020",
-    "michigan": "#002040",
-    "michigan-state": "#104030",
-    "middle-tennessee": "#0060b0",
-    "minnesota": "#500020",
-    "mississippi-state": "#501020",
-    "missouri": "#202020",
-    "missouri-state": "#500010",
-    "navy": "#002050",
-    "nc-state": "#201020",
-    "nebraska": "#d00000",
-    "nevada": "#002060",
-    "new-mexico": "#000000",
-    "new-mexico-state": "#101010",
-    "north-carolina": "#70a0d0",
-    "north-texas": "#008030",
-    "northern-illinois": "#000000",
-    "northwestern": "#502080",
-    "notre-dame": "#001040",
-    "ohio": "#104030",
-    "ohio-state": "#000000",
-    "oklahoma": "#a02030",
-    "oklahoma-state": "#f05000",
-    "old-dominion": "#004070",
-    "ole-miss": "#c00020",
-    "oregon": "#007030",
-    "oregon-state": "#101010",
-    "penn-state": "#002060",
-    "pittsburgh": "#103090",
-    "purdue": "#d0b080",
-    "rice": "#d01040",
-    "rutgers": "#c01020",
-    "sam-houston": "#f05020",
-    "san-diego-state": "#c03030",
-    "san-jose-state": "#0030a0",
-    "smu": "#c00030",
-    "south-alabama": "#001050",
-    "south-carolina": "#201020",
-    "south-florida": "#005040",
-    "southern-miss": "#101010",
-    "stanford": "#801010",
-    "syracuse": "#e04000",
-    "tcu": "#401070",
-    "temple": "#902030",
-    "tennessee": "#f08000",
-    "texas": "#c05020",
-    "texas-a-m": "#500000",
-    "texas-state": "#501010",
-    "texas-tech": "#201020",
-    "toledo": "#f0c000",
-    "troy": "#b0b0b0",
-    "tulane": "#006040",
-    "tulsa": "#003090",
-    "uab": "#000000",
-    "ucf": "#000000",
-    "ucla": "#1070a0",
-    "ulm": "#802030",
-    "umass": "#801010",
-    "unlv": "#101010",
-    "usc": "#902030",
-    "utah": "#e00020",
-    "utah-state": "#002030",
-    "utep": "#001040",
-    "utsa": "#002030",
-    "vanderbilt": "#101010",
-    "virginia": "#202040",
-    "virginia-tech": "#600030",
-    "wake-forest": "#101010",
-    "washington": "#300060",
-    "washington-state": "#901030",
-    "west-virginia": "#002050",
-    "western-kentucky": "#e03030",
-    "western-michigan": "#501000",
-    "wisconsin": "#c00030",
-    "wyoming": "#402020"
-  }
+    "air-force": {
+      "fill": "#00205b",
+      "logo": "#003090"
+    },
+    "akron": {
+      "fill": "#fdb913",
+      "logo": "#001040"
+    },
+    "alabama": {
+      "fill": "#900000",
+      "logo": "#a02030"
+    },
+    "appalachian-state": {
+      "fill": "#ffcd00",
+      "logo": "#201020"
+    },
+    "arizona": {
+      "fill": "#cc0033",
+      "logo": "#002040"
+    },
+    "arizona-state": {
+      "fill": "#8c1d40",
+      "logo": "#f0c020"
+    },
+    "arkansas": {
+      "fill": "#c1c6c8",
+      "logo": "#a01030"
+    },
+    "arkansas-state": {
+      "fill": "#e1002a",
+      "logo": "#000000"
+    },
+    "army": {
+      "fill": "#d4c7a3",
+      "logo": "#101010"
+    },
+    "auburn": {
+      "fill": "#e87f00",
+      "logo": "#002050"
+    },
+    "ball-state": {
+      "fill": "#cc0033",
+      "logo": "#000000"
+    },
+    "baylor": {
+      "fill": "#ffb81c",
+      "logo": "#104030"
+    },
+    "boise-state": {
+      "fill": "#d64309",
+      "logo": "#0030a0"
+    },
+    "boston-college": {
+      "fill": "#bc9b6a",
+      "logo": "#802030"
+    },
+    "bowling-green": {
+      "fill": "#ff9e00",
+      "logo": "#502000"
+    },
+    "buffalo": {
+      "fill": "#0032a0",
+      "logo": "#0050a0"
+    },
+    "byu": {
+      "fill": "#001e4d",
+      "logo": "#0030a0"
+    },
+    "california": {
+      "fill": "#fdb515",
+      "logo": "#002060"
+    },
+    "central-michigan": {
+      "fill": "#8c002b",
+      "logo": "#600030"
+    },
+    "charlotte": {
+      "fill": "#b5b5b5",
+      "logo": "#005030"
+    },
+    "cincinnati": {
+      "fill": "#e00122",
+      "logo": "#000000"
+    },
+    "clemson": {
+      "fill": "#522d80",
+      "logo": "#f06030"
+    },
+    "coastal-carolina": {
+      "fill": "#ffcc33",
+      "logo": "#007070"
+    },
+    "colorado": {
+      "fill": "#cfb87c",
+      "logo": "#000000"
+    },
+    "colorado-state": {
+      "fill": "#c8c372",
+      "logo": "#104020"
+    },
+    "connecticut": {
+      "fill": "#c1c6c8",
+      "logo": "#002040"
+    },
+    "delaware": {
+      "fill": "#ffd200",
+      "logo": "#004090"
+    },
+    "duke": {
+      "fill": "#001a57",
+      "logo": "#002080"
+    },
+    "east-carolina": {
+      "fill": "#ffffff",
+      "logo": "#502080"
+    },
+    "eastern-michigan": {
+      "fill": "#c1c6c8",
+      "logo": "#006040"
+    },
+    "fiu": {
+      "fill": "#c1c6c8",
+      "logo": "#001040"
+    },
+    "florida": {
+      "fill": "#0021a5",
+      "logo": "#108040"
+    },
+    "florida-atlantic": {
+      "fill": "#c6c6c6",
+      "logo": "#004070"
+    },
+    "florida-state": {
+      "fill": "#782f40",
+      "logo": "#101010"
+    },
+    "fresno-state": {
+      "fill": "#000000",
+      "logo": "#c01030"
+    },
+    "georgia": {
+      "fill": "#ba0c00",
+      "logo": "#000000"
+    },
+    "georgia-southern": {
+      "fill": "#c1c6c8",
+      "logo": "#003070"
+    },
+    "georgia-state": {
+      "fill": "#003057",
+      "logo": "#0030a0"
+    },
+    "georgia-tech": {
+      "fill": "#b3a369",
+      "logo": "#101010"
+    },
+    "hawaii": {
+      "fill": "#c1c6c8",
+      "logo": "#005030"
+    },
+    "houston": {
+      "fill": "#000000",
+      "logo": "#c02030"
+    },
+    "illinois": {
+      "fill": "#13294b",
+      "logo": "#e04030"
+    },
+    "indiana": {
+      "fill": "#c1c6c8",
+      "logo": "#900000"
+    },
+    "iowa": {
+      "fill": "#ffcd00",
+      "logo": "#000000"
+    },
+    "iowa-state": {
+      "fill": "#c8102e",
+      "logo": "#800020"
+    },
+    "jacksonville-state": {
+      "fill": "#85002f",
+      "logo": "#000000"
+    },
+    "james-madison": {
+      "fill": "#450084",
+      "logo": "#b0a060"
+    },
+    "kansas": {
+      "fill": "#e8000d",
+      "logo": "#0050b0"
+    },
+    "kansas-state": {
+      "fill": "#512888",
+      "logo": "#300050"
+    },
+    "kennesaw-state": {
+      "fill": "#000000",
+      "logo": "#f0b030"
+    },
+    "kent-state": {
+      "fill": "#fdb913",
+      "logo": "#003070"
+    },
+    "kentucky": {
+      "fill": "#c1c6c8",
+      "logo": "#0030a0"
+    },
+    "liberty": {
+      "fill": "#00205b",
+      "logo": "#f0c030"
+    },
+    "louisiana": {
+      "fill": "#cc0033",
+      "logo": "#000000"
+    },
+    "louisiana-tech": {
+      "fill": "#002b5c",
+      "logo": "#a09060"
+    },
+    "louisville": {
+      "fill": "#000000",
+      "logo": "#c00010"
+    },
+    "lsu": {
+      "fill": "#fdd023",
+      "logo": "#401070"
+    },
+    "marshall": {
+      "fill": "#0032a0",
+      "logo": "#00a040"
+    },
+    "maryland": {
+      "fill": "#000000",
+      "logo": "#e01030"
+    },
+    "memphis": {
+      "fill": "#003087",
+      "logo": "#004080"
+    },
+    "miami": {
+      "fill": "#005030",
+      "logo": "#f07020"
+    },
+    "miami-oh": {
+      "fill": "#000000",
+      "logo": "#c01020"
+    },
+    "michigan": {
+      "fill": "#ffcb05",
+      "logo": "#002040"
+    },
+    "michigan-state": {
+      "fill": "#ffffff",
+      "logo": "#104030"
+    },
+    "middle-tennessee": {
+      "fill": "#0033a0",
+      "logo": "#0060b0"
+    },
+    "minnesota": {
+      "fill": "#7a0019",
+      "logo": "#500020"
+    },
+    "mississippi-state": {
+      "fill": "#660000",
+      "logo": "#501020"
+    },
+    "missouri": {
+      "fill": "#f1b82d",
+      "logo": "#202020"
+    },
+    "missouri-state": {
+      "fill": "#9a0000",
+      "logo": "#500010"
+    },
+    "navy": {
+      "fill": "#c1c6c8",
+      "logo": "#002050"
+    },
+    "nc-state": {
+      "fill": "#cc0000",
+      "logo": "#201020"
+    },
+    "nebraska": {
+      "fill": "#e41c38",
+      "logo": "#d00000"
+    },
+    "nevada": {
+      "fill": "#c1c6c8",
+      "logo": "#002060"
+    },
+    "new-mexico": {
+      "fill": "#cc0033",
+      "logo": "#000000"
+    },
+    "new-mexico-state": {
+      "fill": "#8c1d40",
+      "logo": "#101010"
+    },
+    "north-carolina": {
+      "fill": "#ffffff",
+      "logo": "#70a0d0"
+    },
+    "north-texas": {
+      "fill": "#ffffff",
+      "logo": "#008030"
+    },
+    "northern-illinois": {
+      "fill": "#c40d36",
+      "logo": "#000000"
+    },
+    "northwestern": {
+      "fill": "#c1c6c8",
+      "logo": "#502080"
+    },
+    "notre-dame": {
+      "fill": "#0c2340",
+      "logo": "#001040"
+    },
+    "ohio": {
+      "fill": "#ffc72c",
+      "logo": "#104030"
+    },
+    "ohio-state": {
+      "fill": "#ff0000",
+      "logo": "#000000"
+    },
+    "oklahoma": {
+      "fill": "#f0cb41",
+      "logo": "#a02030"
+    },
+    "oklahoma-state": {
+      "fill": "#000000",
+      "logo": "#f05000"
+    },
+    "old-dominion": {
+      "fill": "#c1c6c8",
+      "logo": "#004070"
+    },
+    "ole-miss": {
+      "fill": "#000000",
+      "logo": "#c00020"
+    },
+    "oregon": {
+      "fill": "#fee11a",
+      "logo": "#007030"
+    },
+    "oregon-state": {
+      "fill": "#dc4405",
+      "logo": "#101010"
+    },
+    "penn-state": {
+      "fill": "#041e42",
+      "logo": "#002060"
+    },
+    "pittsburgh": {
+      "fill": "#ffb81c",
+      "logo": "#103090"
+    },
+    "purdue": {
+      "fill": "#b88d04",
+      "logo": "#d0b080"
+    },
+    "rice": {
+      "fill": "#002450",
+      "logo": "#d01040"
+    },
+    "rutgers": {
+      "fill": "#000000",
+      "logo": "#c01020"
+    },
+    "sam-houston": {
+      "fill": "#c5002f",
+      "logo": "#f05020"
+    },
+    "san-diego-state": {
+      "fill": "#000000",
+      "logo": "#c03030"
+    },
+    "san-jose-state": {
+      "fill": "#0055a2",
+      "logo": "#0030a0"
+    },
+    "smu": {
+      "fill": "#0033a0",
+      "logo": "#c00030"
+    },
+    "south-alabama": {
+      "fill": "#0032a0",
+      "logo": "#001050"
+    },
+    "south-carolina": {
+      "fill": "#73000a",
+      "logo": "#201020"
+    },
+    "south-florida": {
+      "fill": "#c3c3c3",
+      "logo": "#005040"
+    },
+    "southern-miss": {
+      "fill": "#ffc200",
+      "logo": "#101010"
+    },
+    "stanford": {
+      "fill": "#ffffff",
+      "logo": "#801010"
+    },
+    "syracuse": {
+      "fill": "#000000",
+      "logo": "#e04000"
+    },
+    "tcu": {
+      "fill": "#c1c6c8",
+      "logo": "#401070"
+    },
+    "temple": {
+      "fill": "#c6c6c8",
+      "logo": "#902030"
+    },
+    "tennessee": {
+      "fill": "#000000",
+      "logo": "#f08000"
+    },
+    "texas": {
+      "fill": "#000000",
+      "logo": "#c05020"
+    },
+    "texas-a-m": {
+      "fill": "#c1c6c8",
+      "logo": "#500000"
+    },
+    "texas-state": {
+      "fill": "#000000",
+      "logo": "#501010"
+    },
+    "texas-tech": {
+      "fill": "#cc0000",
+      "logo": "#201020"
+    },
+    "toledo": {
+      "fill": "#0033a0",
+      "logo": "#f0c000"
+    },
+    "troy": {
+      "fill": "#cc0033",
+      "logo": "#b0b0b0"
+    },
+    "tulane": {
+      "fill": "#8d8d8d",
+      "logo": "#006040"
+    },
+    "tulsa": {
+      "fill": "#002d62",
+      "logo": "#003090"
+    },
+    "uab": {
+      "fill": "#003629",
+      "logo": "#000000"
+    },
+    "ucf": {
+      "fill": "#ba9b37",
+      "logo": "#000000"
+    },
+    "ucla": {
+      "fill": "#2d68c4",
+      "logo": "#1070a0"
+    },
+    "ulm": {
+      "fill": "#8b0000",
+      "logo": "#802030"
+    },
+    "umass": {
+      "fill": "#000000",
+      "logo": "#801010"
+    },
+    "unlv": {
+      "fill": "#cc0033",
+      "logo": "#101010"
+    },
+    "usc": {
+      "fill": "#990000",
+      "logo": "#902030"
+    },
+    "utah": {
+      "fill": "#000000",
+      "logo": "#e00020"
+    },
+    "utah-state": {
+      "fill": "#002d62",
+      "logo": "#002030"
+    },
+    "utep": {
+      "fill": "#ff8200",
+      "logo": "#001040"
+    },
+    "utsa": {
+      "fill": "#e18a00",
+      "logo": "#002030"
+    },
+    "vanderbilt": {
+      "fill": "#8d7359",
+      "logo": "#101010"
+    },
+    "virginia": {
+      "fill": "#f84c1e",
+      "logo": "#202040"
+    },
+    "virginia-tech": {
+      "fill": "#cf4420",
+      "logo": "#600030"
+    },
+    "wake-forest": {
+      "fill": "#a3885f",
+      "logo": "#101010"
+    },
+    "washington": {
+      "fill": "#b7a57a",
+      "logo": "#300060"
+    },
+    "washington-state": {
+      "fill": "#000000",
+      "logo": "#901030"
+    },
+    "west-virginia": {
+      "fill": "#eaaa00",
+      "logo": "#002050"
+    },
+    "western-kentucky": {
+      "fill": "#000000",
+      "logo": "#e03030"
+    },
+    "western-michigan": {
+      "fill": "#6c4023",
+      "logo": "#501000"
+    },
+    "wisconsin": {
+      "fill": "#c5050c",
+      "logo": "#c00030"
+    },
+    "wyoming": {
+      "fill": "#ffc200",
+      "logo": "#402020"
+    }
+  },
+  "threshold": 18
 }
