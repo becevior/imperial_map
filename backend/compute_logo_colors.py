@@ -52,7 +52,6 @@ def _load_teams(path: Path) -> Iterable[Dict]:
     return payload
 
 
-LOGO_COLOR_SIMILARITY_THRESHOLD = 18
 DEFAULT_FILL_COLOR = '#2d2d2d'
 
 
@@ -165,20 +164,6 @@ def _delta_e(lab_a: Tuple[float, float, float], lab_b: Tuple[float, float, float
     return ((lab_a[0] - lab_b[0]) ** 2 + (lab_a[1] - lab_b[1]) ** 2 + (lab_a[2] - lab_b[2]) ** 2) ** 0.5
 
 
-def _lighten_hex(hex_value: str, ratio: float = 0.35) -> str:
-    rgb = _hex_to_rgb(hex_value)
-    if not rgb:
-        return hex_value
-
-    def mix(component: float) -> int:
-        return int(round(component * 255 + (255 - component * 255) * ratio))
-
-    r = mix(rgb[0])
-    g = mix(rgb[1])
-    b = mix(rgb[2])
-    return '#{0:02x}{1:02x}{2:02x}'.format(r, g, b)
-
-
 def _fallback_color(team_id: str) -> str:
     hash_value = 0
     for ch in team_id:
@@ -244,30 +229,43 @@ def main() -> int:
 
         primary_hex = _sanitize_hex(team.get('primaryColor'))
         secondary_hex = _sanitize_hex(team.get('secondaryColor'))
-        base_hex = primary_hex or _sanitize_hex(_fallback_color(team_id)) or DEFAULT_FILL_COLOR
+        primary_hex = primary_hex or _sanitize_hex(_fallback_color(team_id)) or DEFAULT_FILL_COLOR
 
         logo_lab = _rgb_to_lab(_hex_to_rgb(logo_hex)) if _hex_to_rgb(logo_hex) else None
-        base_lab = _rgb_to_lab(_hex_to_rgb(base_hex)) if _hex_to_rgb(base_hex) else None
+        primary_lab = _rgb_to_lab(_hex_to_rgb(primary_hex)) if _hex_to_rgb(primary_hex) else None
+        secondary_lab = None
+        if secondary_hex:
+            secondary_lab = _rgb_to_lab(_hex_to_rgb(secondary_hex)) if _hex_to_rgb(secondary_hex) else None
 
-        fill_hex = base_hex
+        fill_hex = primary_hex
 
-        if logo_lab and base_lab:
-            difference = _delta_e(base_lab, logo_lab)
-            if difference < LOGO_COLOR_SIMILARITY_THRESHOLD:
-                fill_hex = secondary_hex or _lighten_hex(base_hex, 0.35)
+        if logo_lab and primary_lab:
+            primary_delta = _delta_e(primary_lab, logo_lab)
+            secondary_delta = None
 
-        fills[team_id] = _sanitize_hex(fill_hex) or base_hex
+            if secondary_hex and secondary_lab:
+                secondary_delta = _delta_e(secondary_lab, logo_lab)
+
+            if secondary_hex and secondary_delta is not None and secondary_delta > primary_delta:
+                fill_hex = secondary_hex
+
+        fills[team_id] = _sanitize_hex(fill_hex) or primary_hex
 
         if args.verbose:
-            delta_display = 'n/a'
-            if logo_lab and base_lab:
-                delta_display = f"{_delta_e(base_lab, logo_lab):.2f}"
-            print(f'{team_id:<20} logo={logo_hex} fill={fills[team_id]} ΔE={delta_display}')
+            delta_primary = 'n/a'
+            delta_secondary = 'n/a'
+            if logo_lab and primary_lab:
+                delta_primary = f"{_delta_e(primary_lab, logo_lab):.2f}"
+            if logo_lab and secondary_lab:
+                delta_secondary = f"{_delta_e(secondary_lab, logo_lab):.2f}"
+            print(
+                f"{team_id:<20} logo={logo_hex} fill={fills[team_id]} "
+                f"ΔE(primary)={delta_primary} ΔE(secondary)={delta_secondary}"
+            )
 
     metadata = {
         'generatedAt': datetime.utcnow().isoformat() + 'Z',
         'source': 'compute_logo_colors.py',
-        'threshold': LOGO_COLOR_SIMILARITY_THRESHOLD,
         'teams': {
             team_id: {
                 'logo': logo_colors.get(team_id),

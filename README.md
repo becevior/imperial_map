@@ -12,9 +12,11 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python setup.py
+# Optional: calculate logo color contrast fills
+python compute_logo_colors.py
 ```
 
-This creates `frontend/public/data/teams.json` and `frontend/public/data/ownership.json`.
+This creates `frontend/public/data/teams.json` and `frontend/public/data/ownership.json`. The optional logo color pass stores curated primary/secondary fill choices in `frontend/public/data/logo-colors.json` so the map renders with high-contrast colors.
 
 ### 2. Run the Map
 
@@ -46,7 +48,9 @@ Visit http://localhost:3000
 ┌────────────────────────┐
 │  frontend/public/data/ │
 │  ├── teams.json        │ ◄── Python generates
-│  └── ownership.json    │ ◄── Python updates
+│  ├── ownership.json    │ ◄── Python updates
+│  ├── games/            │ ◄── Optional weekly summaries
+│  └── logo-colors.json  │ ◄── Optional logo color analysis
 └────────────────────────┘
 ```
 
@@ -72,8 +76,11 @@ imperial-map/
 │   ├── public/
 │   │   └── data/              # Data files
 │   │       ├── us-counties.geojson
-│   │       ├── teams.json     # Generated
-│   │       └── ownership.json # Generated
+│   │       ├── teams.json           # Generated
+│   │       ├── ownership.json       # Generated
+│   │       ├── ownership/           # Weekly snapshots (optional)
+│   │       ├── games/               # CFBD results (optional)
+│   │       └── logo-colors.json     # Logo contrast palette (optional)
 │   ├── package.json           # Frontend dependencies
 │   ├── tsconfig.json
 │   ├── next.config.mjs
@@ -90,8 +97,15 @@ imperial-map/
 
 1. **Initial Setup**: Python calculates which team is nearest to each county
 2. **Game Results**: Python updates ownership when teams play
-3. **Deployment**: Commit updated JSON → Vercel auto-deploys
-4. **Frontend**: Map fetches JSON and renders territories
+3. **Color Tuning**: Optional logo analysis picks readable fills derived from team brand colors
+4. **Deployment**: Commit updated JSON → Vercel auto-deploys
+5. **Frontend**: Map fetches JSON and renders territories
+
+## Features
+
+- **Week-by-week county ownership history** – click any county to see who owned it each week up to the current selection.
+- **Campus logo takeovers** – weekly ownership snapshots include campus logos that swap to the conquering team.
+- **Automatic color-contrast selection** – optional `compute_logo_colors.py` run balances primary and secondary colors so logos stay legible atop their territories.
 
 ## Development
 
@@ -99,6 +113,7 @@ imperial-map/
 # Backend
 cd backend
 python setup.py      # Initialize data
+python compute_logo_colors.py  # Optional: refresh logo fill colors
 
 # Frontend
 cd frontend

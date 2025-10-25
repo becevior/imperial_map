@@ -102,85 +102,84 @@ Updated Map component to load and update logos dynamically based on week selecti
 ```
 frontend/public/data/ownership/2025/
 ├── week-00.json              # Baseline ownership
-├── week-00-centroids.json    # Baseline logo positions (64KB)
-├── week-01.json              # After Week 1 games
-├── week-01-centroids.json    # Updated logo positions (62KB)
+├── week-00-logos.json        # Campus logos at preseason baseline
+├── week-01.json
+├── week-01-logos.json        # Campus logos after week 1 transfers
 ├── week-02.json
-├── week-02-centroids.json    # (60KB - fewer teams have territory)
+├── week-02-logos.json
 └── ...
 ```
 
-**File Size Trend:**
-- Week 0: 64KB (all teams have territory)
-- Week 1: 62KB (some teams eliminated)
-- Week 9: 57KB (many teams eliminated)
+Each weekly logo file is ~44KB because it enumerates all FBS campuses regardless of who currently controls them.
 
 ### Data Structure
 
-**Centroid File Format:**
+**Logo File Format:**
 ```json
 [
   {
-    "teamId": "ohio-state",
-    "teamName": "Ohio State",
-    "shortName": "Ohio State",
-    "latitude": 40.5,        // Logo position (anchor county)
-    "longitude": -83.0,
-    "centroidLatitude": 40.4, // Calculated centroid
-    "centroidLongitude": -83.1,
-    "areaSqMi": 12500.0,
-    "countyCount": 45,
-    "logoUrl": "https://...",
-    "anchorFips": "39049",   // County closest to centroid
-    "region": "mainland",
-    "totalAreaSqMi": 12500.0
+    "campusTeamId": "ohio-state",
+    "campusName": "Ohio State",
+    "latitude": 40.0036,
+    "longitude": -83.0219,
+    "currentOwnerId": "ohio-state",
+    "currentOwnerName": "Ohio State",
+    "logoUrl": "https://a.espncdn.com/.../194.png",
+    "countiesOwned": 45,
+    "totalCounties": 45
   },
   {
-    "teamId": "michigan",
-    "teamName": "Michigan",
-    "latitude": 42.28,       // Campus location (fallback)
-    "longitude": -83.74,
-    "areaSqMi": 0.0,        // Lost all territory
-    "countyCount": 0,        // No counties
-    "logoUrl": "https://...",
-    "anchorFips": null,
-    "region": null
+    "campusTeamId": "michigan",
+    "campusName": "Michigan",
+    "latitude": 42.278,
+    "longitude": -83.738,
+    "currentOwnerId": "ohio-state",
+    "currentOwnerName": "Ohio State",
+    "logoUrl": "https://a.espncdn.com/.../194.png",
+    "countiesOwned": 0,
+    "totalCounties": 12
   }
 ]
 ```
 
 ## Benefits
 
-1. **Accurate Representation**: Logos always appear at the geographic center of a team's current territory
-2. **Visual Feedback**: Users can see territory changes through logo movement
-3. **Eliminated Teams**: Logos disappear when teams lose all territory
-4. **Performance**: Pre-calculated centroids (no client-side geometry processing)
-5. **Caching**: Browser caches centroid files, only fetches when week changes
+1. **Stable Geography**: Logos stay anchored to recognizable campus locations.
+2. **Clear Conquests**: Occupying a rival campus instantly swaps the logo image.
+3. **Multiple Appearances**: Dominant teams can appear on many campuses at once.
+4. **Predictable File Size**: Fixed-size JSON keeps fetch costs steady week to week.
+5. **Fast Rendering**: The frontend simply swaps cached markers—no geometry recomputation required.
 
 ## Testing
 
 Tested with 2025 season data (weeks 0-9):
-- ✅ Backend generates centroids successfully for all weeks
-- ✅ File sizes decrease as teams are eliminated (64KB → 57KB)
+- ✅ Backend generates campus logo snapshots for every week
+- ✅ Weekly logo files remain ~44KB and cache efficiently
 - ✅ Frontend TypeScript compilation passes
 - ✅ Production build succeeds
 - ✅ Logos update when week selector changes
 
+## Logo Color Palette
+
+- Run `python compute_logo_colors.py` to compare each team's logo image against its primary/secondary colors.
+- The script overwrites `frontend/public/data/logo-colors.json` with `{ teamId: { logo, fill } }` pairs.
+- The frontend prefers the stored `fill` to keep campus markers readable while still honoring team brand colors.
+- Re-run the script whenever logos or school colors change.
+
 ## Performance Impact
 
 ### Backend
-- Adds ~2-3 seconds per week to `apply_transfers.py`
-- Calculates centroids for 136 teams × 9 weeks = 1,224 centroids
-- Total processing time: ~25 seconds for full season
+- `apply_transfers.py` now emits `week-XX-logos.json` alongside ownership snapshots (negligible overhead).
+- `compute_logo_colors.py` is optional and only needed when brand assets change.
 
 ### Frontend
-- Additional HTTP request per week change (~60KB)
-- Marker removal/creation: <100ms for 136 markers
-- Total week change time: <500ms (network + rendering)
+- Additional HTTP request per week change (~44KB).
+- Marker removal/creation: <100ms for 136 markers.
+- Total week change time: <500ms (network + rendering).
 
 ### Storage
-- ~600KB per season (10 weeks × 60KB)
-- Negligible compared to GeoJSON (3.2MB) and ownership data (800KB)
+- ~450KB per season (10 weeks × 45KB) for logo snapshots.
+- Negligible compared to GeoJSON (3.2MB) and ownership data (800KB).
 
 ## Future Enhancements
 
@@ -192,7 +191,7 @@ Tested with 2025 season data (weeks 0-9):
 
 ## Documentation Updates
 
-- ✅ Updated `backend/README.md` with centroid calculator module
-- ✅ Added weekly centroid generation to `apply_transfers.py` docs
-- ✅ Updated data file structure documentation
-- ✅ Added notes about logo positioning in workflow section
+- ✅ `backend/README.md` covers campus logo generation and the optional color analysis script.
+- ✅ `apply_transfers.py` docs now mention `week-XX-logos.json` outputs.
+- ✅ Frontend docs describe the week selector fetching ownership + logo data in tandem.
+- ✅ This file documents the color palette workflow (`compute_logo_colors.py`).
