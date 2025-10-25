@@ -28,6 +28,30 @@ const areaFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0
 })
 
+// Transform Hawaii coordinates to appear near Mexico
+function transformHawaiiCoordinates(geometry: any, stateCode: string): any {
+  if (stateCode !== '15') return geometry // Only transform Hawaii (state code 15)
+
+  const HAWAII_OFFSET_LAT = 27 // Move Hawaii up
+  const HAWAII_OFFSET_LNG = 53 // Move Hawaii east
+
+  const transformCoord = (coord: number[]): number[] => {
+    return [coord[0] + HAWAII_OFFSET_LNG, coord[1] + HAWAII_OFFSET_LAT]
+  }
+
+  const transformCoords = (coords: any): any => {
+    if (typeof coords[0] === 'number') {
+      return transformCoord(coords)
+    }
+    return coords.map(transformCoords)
+  }
+
+  return {
+    ...geometry,
+    coordinates: transformCoords(geometry.coordinates)
+  }
+}
+
 function fallbackColor(teamId: string): string {
   let hash = 0
   for (let i = 0; i < teamId.length; i++) {
@@ -80,13 +104,20 @@ type CountyStats = Record<string, CountyStatsEntry>
 type OwnershipMap = Record<string, string>
 
 interface TerritoryCentroid {
-  teamId: string
-  teamName: string
+  teamId?: string // Old format
+  teamName?: string
   shortName?: string
+  baselineTeamId?: string // New format
+  baselineTeamName?: string
+  currentOwnerId?: string
+  currentOwnerName?: string
+  territoryId?: string
   latitude: number
   longitude: number
   areaSqMi?: number
   countyCount?: number
+  countiesOwned?: number
+  totalCounties?: number
   logoUrl?: string | null
   centroidLatitude?: number
   centroidLongitude?: number
@@ -177,14 +208,27 @@ export default function Map({ className = '' }: MapProps) {
     markersRef.current.forEach((marker) => marker.remove())
     markersRef.current = []
 
-    // Filter valid centroids
-    const validCentroids = centroids.filter(
-      (centroid) =>
-        centroid &&
-        typeof centroid.latitude === 'number' &&
-        typeof centroid.longitude === 'number' &&
-        centroid.logoUrl
-    )
+    // Filter valid centroids and transform Hawaii positions
+    const validCentroids = centroids
+      .filter(
+        (centroid) =>
+          centroid &&
+          typeof centroid.latitude === 'number' &&
+          typeof centroid.longitude === 'number' &&
+          centroid.logoUrl &&
+          centroid.region !== 'alaska' // Skip Alaska logos
+      )
+      .map((centroid) => {
+        // Transform Hawaii logo positions to match moved Hawaii counties
+        if (centroid.baselineTeamId === 'hawaii') {
+          return {
+            ...centroid,
+            latitude: centroid.latitude + 27,
+            longitude: centroid.longitude + 53
+          }
+        }
+        return centroid
+      })
 
     const markerData = validCentroids.map((centroid) => ({
       centroid,
@@ -230,7 +274,7 @@ export default function Map({ className = '' }: MapProps) {
       element.style.boxShadow = 'none'
       element.style.pointerEvents = 'none'
       element.style.filter = 'drop-shadow(0 1px 4px rgba(15, 23, 42, 0.45))'
-      element.title = centroid.teamName || centroid.teamId
+      element.title = centroid.currentOwnerName || centroid.teamName || centroid.baselineTeamName || ''
 
       const marker = new maplibregl.Marker({ element, anchor: 'center' })
         .setLngLat([centroid.longitude, centroid.latitude])
@@ -322,12 +366,22 @@ export default function Map({ className = '' }: MapProps) {
                   2,
                   '0'
                 )
-                return stateCode !== '72'
+                return stateCode !== '72' && stateCode !== '02' // Skip Puerto Rico and Alaska
               })
-              .map((feature: any) => ({
-                ...feature,
-                properties: { ...(feature?.properties ?? {}) }
-              }))
+              .map((feature: any) => {
+                const stateCode = String(feature?.properties?.STATE ?? '').padStart(
+                  2,
+                  '0'
+                )
+                const geometry = feature?.geometry ?? {}
+                const transformedGeometry = transformHawaiiCoordinates(geometry, stateCode)
+
+                return {
+                  ...feature,
+                  geometry: transformedGeometry,
+                  properties: { ...(feature?.properties ?? {}) }
+                }
+              })
           : []
 
         const baseGeoJson = {

@@ -129,86 +129,6 @@
       "lon": -86.10677398193953
     }
   },
-  "02050": {
-    "name": "Bethel",
-    "state": "AK",
-    "population": 17746,
-    "areaSqMi": 40570.004,
-    "centroid": {
-      "lat": 60.35599572530976,
-      "lon": -164.23716993625112
-    }
-  },
-  "02105": {
-    "name": "Hoonah-Angoon",
-    "state": "AK",
-    "population": 2129,
-    "areaSqMi": 7524.915,
-    "centroid": {
-      "lat": 58.09326377012717,
-      "lon": -135.20972662640892
-    }
-  },
-  "02122": {
-    "name": "Kenai Peninsula",
-    "state": "AK",
-    "population": 56900,
-    "areaSqMi": 16075.331,
-    "centroid": {
-      "lat": 59.87472494123745,
-      "lon": -151.70394084621668
-    }
-  },
-  "02150": {
-    "name": "Kodiak Island",
-    "state": "AK",
-    "population": 14239,
-    "areaSqMi": 6549.579,
-    "centroid": {
-      "lat": 57.63949921892649,
-      "lon": -153.741281214829
-    }
-  },
-  "02164": {
-    "name": "Lake and Peninsula",
-    "state": "AK",
-    "population": 1654,
-    "areaSqMi": 23652.009,
-    "centroid": {
-      "lat": 57.11814874473551,
-      "lon": -157.54769342718814
-    }
-  },
-  "02180": {
-    "name": "Nome",
-    "state": "AK",
-    "population": 9915,
-    "areaSqMi": 22961.761,
-    "centroid": {
-      "lat": 64.53497973239615,
-      "lon": -165.84201206995195
-    }
-  },
-  "02188": {
-    "name": "Northwest Arctic",
-    "state": "AK",
-    "population": 7810,
-    "areaSqMi": 35572.584,
-    "centroid": {
-      "lat": 66.74262167046807,
-      "lon": -161.775661988356
-    }
-  },
-  "02198": {
-    "name": "Prince of Wales-Hyder",
-    "state": "AK",
-    "population": 5751,
-    "areaSqMi": 3922.873,
-    "centroid": {
-      "lat": 55.36911015573503,
-      "lon": -132.77735822906752
-    }
-  },
   "05141": {
     "name": "Van Buren",
     "state": "AR",
@@ -727,26 +647,6 @@
     "centroid": {
       "lat": 30.509246341767764,
       "lon": -84.16696245561477
-    }
-  },
-  "02261": {
-    "name": "Valdez-Cordova",
-    "state": "AK",
-    "population": 9717,
-    "areaSqMi": 34239.88,
-    "centroid": {
-      "lat": 60.57553397719083,
-      "lon": -146.91278226808146
-    }
-  },
-  "02270": {
-    "name": "Wade Hampton",
-    "state": "AK",
-    "population": 7809,
-    "areaSqMi": 17081.433,
-    "centroid": {
-      "lat": 62.00290695408074,
-      "lon": -164.6026964248267
     }
   },
   "04003": {
@@ -6739,76 +6639,6 @@
       "lon": -86.55192419260564
     }
   },
-  "02070": {
-    "name": "Dillingham",
-    "state": "AK",
-    "population": 5034,
-    "areaSqMi": 18568.778,
-    "centroid": {
-      "lat": 59.15579209162959,
-      "lon": -158.8156803665744
-    }
-  },
-  "02110": {
-    "name": "Juneau",
-    "state": "AK",
-    "population": 32556,
-    "areaSqMi": 2701.931,
-    "centroid": {
-      "lat": 58.19351212664544,
-      "lon": -134.18146171337722
-    }
-  },
-  "02130": {
-    "name": "Ketchikan Gateway",
-    "state": "AK",
-    "population": 13779,
-    "areaSqMi": 4858.414,
-    "centroid": {
-      "lat": 55.42940519803089,
-      "lon": -131.23529811135674
-    }
-  },
-  "02185": {
-    "name": "North Slope",
-    "state": "AK",
-    "population": 9643,
-    "areaSqMi": 88695.413,
-    "centroid": {
-      "lat": 70.30597111569031,
-      "lon": -154.29611331302888
-    }
-  },
-  "02195": {
-    "name": "Petersburg",
-    "state": "AK",
-    "population": 3844,
-    "areaSqMi": 3281.982,
-    "centroid": {
-      "lat": 56.61877718480006,
-      "lon": -133.5598207581995
-    }
-  },
-  "02220": {
-    "name": "Sitka",
-    "state": "AK",
-    "population": 9046,
-    "areaSqMi": 2870.339,
-    "centroid": {
-      "lat": 57.22482530797211,
-      "lon": -135.3893172281945
-    }
-  },
-  "02230": {
-    "name": "Skagway",
-    "state": "AK",
-    "population": 959,
-    "areaSqMi": 452.325,
-    "centroid": {
-      "lat": 59.53040434466803,
-      "lon": -135.17523920169006
-    }
-  },
   "05143": {
     "name": "Washington",
     "state": "AR",
@@ -6927,26 +6757,6 @@
     "centroid": {
       "lat": 32.01632976650181,
       "lon": -87.32933147518823
-    }
-  },
-  "02020": {
-    "name": "Anchorage",
-    "state": "AK",
-    "population": 298610,
-    "areaSqMi": 1704.683,
-    "centroid": {
-      "lat": 61.10348591104458,
-      "lon": -149.53551358744306
-    }
-  },
-  "02068": {
-    "name": "Denali",
-    "state": "AK",
-    "population": 1875,
-    "areaSqMi": 12751.411,
-    "centroid": {
-      "lat": 63.717503617519746,
-      "lon": -150.6729936191214
     }
   },
   "01007": {
@@ -7277,16 +7087,6 @@
     "centroid": {
       "lat": 41.722843895469225,
       "lon": -124.04169550094534
-    }
-  },
-  "02013": {
-    "name": "Aleutians East",
-    "state": "AK",
-    "population": 3161,
-    "areaSqMi": 6981.943,
-    "centroid": {
-      "lat": 55.17504292703728,
-      "lon": -161.95693166628004
     }
   },
   "13149": {
@@ -7847,16 +7647,6 @@
     "centroid": {
       "lat": 27.515503124011776,
       "lon": -82.58559166314906
-    }
-  },
-  "02275": {
-    "name": "Wrangell",
-    "state": "AK",
-    "population": 2403,
-    "areaSqMi": 2541.483,
-    "centroid": {
-      "lat": 56.24397900998047,
-      "lon": -132.32607347545235
     }
   },
   "08085": {
@@ -19139,16 +18929,6 @@
       "lon": -85.03771942991216
     }
   },
-  "02240": {
-    "name": "Southeast Fairbanks",
-    "state": "AK",
-    "population": 7144,
-    "areaSqMi": 24768.808,
-    "centroid": {
-      "lat": 63.833190443338275,
-      "lon": -143.54367783944122
-    }
-  },
   "05149": {
     "name": "Yell",
     "state": "AR",
@@ -19617,16 +19397,6 @@
     "centroid": {
       "lat": 39.05657277974041,
       "lon": -120.62691551044291
-    }
-  },
-  "02090": {
-    "name": "Fairbanks North Star",
-    "state": "AK",
-    "population": 100272,
-    "areaSqMi": 7338.209,
-    "centroid": {
-      "lat": 64.94409074216573,
-      "lon": -146.2640061414804
     }
   },
   "08041": {
@@ -22029,26 +21799,6 @@
       "lon": -96.5392454550495
     }
   },
-  "02100": {
-    "name": "Haines",
-    "state": "AK",
-    "population": 2552,
-    "areaSqMi": 2318.6,
-    "centroid": {
-      "lat": 58.85774323339181,
-      "lon": -135.35423731820242
-    }
-  },
-  "02170": {
-    "name": "Matanuska-Susitna",
-    "state": "AK",
-    "population": 93925,
-    "areaSqMi": 24607.898,
-    "centroid": {
-      "lat": 61.632524011051615,
-      "lon": -150.05476109362104
-    }
-  },
   "06001": {
     "name": "Alameda",
     "state": "CA",
@@ -23729,26 +23479,6 @@
       "lon": -87.40100692482035
     }
   },
-  "02016": {
-    "name": "Aleutians West",
-    "state": "AK",
-    "population": 5547,
-    "areaSqMi": 4390.276,
-    "centroid": {
-      "lat": 52.7178272559866,
-      "lon": -175.50625277031799
-    }
-  },
-  "02060": {
-    "name": "Bristol Bay",
-    "state": "AK",
-    "population": 991,
-    "areaSqMi": 503.843,
-    "centroid": {
-      "lat": 58.77949106484279,
-      "lon": -156.9668000885546
-    }
-  },
   "20179": {
     "name": "Sheridan",
     "state": "KS",
@@ -24967,16 +24697,6 @@
     "centroid": {
       "lat": 33.076851141157086,
       "lon": -92.58775485206165
-    }
-  },
-  "02290": {
-    "name": "Yukon-Koyukuk",
-    "state": "AK",
-    "population": 5770,
-    "areaSqMi": 145504.789,
-    "centroid": {
-      "lat": 65.08408948669684,
-      "lon": -152.0228667406043
     }
   },
   "18171": {
@@ -29227,16 +28947,6 @@
     "centroid": {
       "lat": 40.26909522340401,
       "lon": -86.42570315461177
-    }
-  },
-  "02282": {
-    "name": "Yakutat",
-    "state": "AK",
-    "population": 668,
-    "areaSqMi": 7649.457,
-    "centroid": {
-      "lat": 59.73289284966929,
-      "lon": -140.02542684974802
     }
   },
   "12021": {

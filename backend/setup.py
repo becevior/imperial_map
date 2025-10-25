@@ -136,6 +136,9 @@ def create_ownership_file(teams, team_locations):
         if state_code == '72':  # Skip Puerto Rico counties
             continue
 
+        if state_code == '02':  # Skip Alaska counties
+            continue
+
         try:
             # Calculate county centroid
             centroid_lat, centroid_lon = calculate_centroid(geometry['coordinates'])
