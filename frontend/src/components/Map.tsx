@@ -167,6 +167,11 @@ export default function Map({ className = '' }: MapProps) {
   const baselineOwnershipRef = useRef<OwnershipMap>({})
   const centroidsDataRef = useRef<TerritoryCentroid[]>([])
   const lastCentroidsPathRef = useRef<string | null>(null)
+  const ownershipSnapshotsRef = useRef<Record<number, OwnershipMap>>({})
+  const seasonOptionsRef = useRef<OwnershipIndexSeason[]>([])
+  const selectedSeasonRef = useRef<number | null>(null)
+  const selectedWeekIndexRef = useRef<number | null>(null)
+  const teamsByIdRef = useRef<Record<string, Team>>({})
 
   const applyOwnershipToMap = (ownershipMap: OwnershipMap, label?: string) => {
     const decorator = decorateGeoJsonRef.current
@@ -196,6 +201,45 @@ export default function Map({ className = '' }: MapProps) {
       }
     } else {
       pendingGeoJsonRef.current = decorated
+    }
+  }
+
+  const ensureOwnershipSnapshots = async (
+    seasonValue: number,
+    targetWeekIndex: number
+  ) => {
+    const seasonEntry = seasonOptionsRef.current.find((entry) => entry.season === seasonValue)
+    if (!seasonEntry) {
+      return
+    }
+
+    const relevantWeeks = seasonEntry.weeks
+      .filter((week) => typeof week.weekIndex === 'number' && week.weekIndex <= targetWeekIndex)
+      .sort((a, b) => (a.weekIndex ?? 0) - (b.weekIndex ?? 0))
+
+    for (const week of relevantWeeks) {
+      const weekIdx = week.weekIndex ?? 0
+      if (ownershipSnapshotsRef.current[weekIdx]) {
+        continue
+      }
+
+      const path = week.path
+      if (!path) {
+        continue
+      }
+
+      try {
+        const response = await fetch(path)
+        if (!response.ok) {
+          console.warn(`Failed to load ownership snapshot for week ${weekIdx}: ${path}`)
+          continue
+        }
+
+        const data: OwnershipMap = await response.json()
+        ownershipSnapshotsRef.current[weekIdx] = data
+      } catch (err) {
+        console.warn(`Error fetching ownership snapshot for week ${weekIdx}`, err)
+      }
     }
   }
 
@@ -329,6 +373,7 @@ export default function Map({ className = '' }: MapProps) {
         const teams: Team[] = await teamsRes.json()
         const baselineOwnership: OwnershipMap = await ownershipRes.json()
         baselineOwnershipRef.current = baselineOwnership
+        ownershipSnapshotsRef.current[0] = baselineOwnership
         const rawGeoJson = await geoJsonRes.json()
         const countyStatsMap: CountyStats = countyStatsRes.ok
           ? await countyStatsRes.json()
@@ -350,6 +395,7 @@ export default function Map({ className = '' }: MapProps) {
           acc[team.id] = team
           return acc
         }, {})
+        teamsByIdRef.current = teamsById
 
         const teamColors = teams.reduce<Record<string, string>>((acc, team) => {
           acc[team.id] = team.primaryColor ?? fallbackColor(team.id)
@@ -480,6 +526,9 @@ export default function Map({ className = '' }: MapProps) {
                 initialPath = latestWeek.path
                 initialSeason = latestSeason.season
                 initialWeekIndex = latestWeek.weekIndex ?? null
+                if (typeof latestWeek.weekIndex === 'number') {
+                  ownershipSnapshotsRef.current[latestWeek.weekIndex] = initialOwnershipMap
+                }
 
                 const logosPath = latestWeek.path.replace('.json', '-logos.json')
                 try {
@@ -509,6 +558,7 @@ export default function Map({ className = '' }: MapProps) {
         }
 
         setSeasonOptions(normalizedSeasonOptions)
+        seasonOptionsRef.current = normalizedSeasonOptions
         setSelectedSeason(initialSeason)
         setSelectedWeekIndex(initialWeekIndex)
         setCurrentWeekLabel(initialLabel)
@@ -642,11 +692,17 @@ export default function Map({ className = '' }: MapProps) {
 
           const ownerName = props.ownerFullName || props.ownerName || 'Unclaimed'
           const ownerColor = props.ownerColor || DEFAULT_FILL_COLOR
+          const fips = String(props.fips || props.FIPS || '')
 
           const wrapper = document.createElement('div')
           wrapper.style.padding = '10px'
           wrapper.style.minWidth = '220px'
+          wrapper.style.maxWidth = '320px'
+          wrapper.style.maxHeight = '360px'
           wrapper.style.color = '#1f2937'
+          wrapper.style.display = 'flex'
+          wrapper.style.flexDirection = 'column'
+          wrapper.style.overflow = 'hidden'
 
           const title = document.createElement('strong')
           title.textContent = countyLabel || 'Unknown County'
@@ -678,10 +734,96 @@ export default function Map({ className = '' }: MapProps) {
 
           wrapper.appendChild(details)
 
+          const historyContainer = document.createElement('div')
+          historyContainer.style.marginTop = '8px'
+          historyContainer.style.paddingTop = '6px'
+          historyContainer.style.fontSize = '11px'
+          historyContainer.style.lineHeight = '1.4'
+          historyContainer.style.color = '#475569'
+          historyContainer.style.borderTop = '1px solid rgba(148, 163, 184, 0.4)'
+          historyContainer.style.maxHeight = '180px'
+          historyContainer.style.overflowY = 'auto'
+          historyContainer.textContent = 'Loading weekly history…'
+          wrapper.appendChild(historyContainer)
+
           new maplibregl.Popup()
             .setLngLat(event.lngLat)
             .setDOMContent(wrapper)
             .addTo(mapRef.current!)
+
+          const loadHistory = async () => {
+            const seasonValue = selectedSeasonRef.current
+            const weekIndexValue = selectedWeekIndexRef.current
+
+            if (seasonValue === null || weekIndexValue === null) {
+              historyContainer.textContent = 'Weekly history is unavailable in baseline view.'
+              return
+            }
+
+            await ensureOwnershipSnapshots(seasonValue, weekIndexValue)
+
+            const seasonEntry = seasonOptionsRef.current.find(
+              (entry) => entry.season === seasonValue
+            )
+
+            if (!seasonEntry) {
+              historyContainer.textContent = 'Unable to load history.'
+              return
+            }
+
+            const historyWeeks = seasonEntry.weeks
+              .filter((week) => typeof week.weekIndex === 'number' && week.weekIndex <= weekIndexValue)
+              .sort((a, b) => (a.weekIndex ?? 0) - (b.weekIndex ?? 0))
+
+            if (!historyWeeks.length) {
+              historyContainer.textContent = 'No history available yet.'
+              return
+            }
+
+            historyContainer.textContent = ''
+
+            const list = document.createElement('ul')
+            list.style.margin = '6px 0 0'
+            list.style.padding = '0'
+            list.style.listStyle = 'none'
+
+            historyWeeks.forEach((week, index) => {
+              const weekIdx = week.weekIndex ?? 0
+              const snapshot = ownershipSnapshotsRef.current[weekIdx]
+              const ownerId = snapshot ? snapshot[fips] : undefined
+              const ownerTeam = ownerId ? teamsByIdRef.current[ownerId] : undefined
+
+              const item = document.createElement('li')
+              item.style.display = 'flex'
+              item.style.justifyContent = 'space-between'
+              item.style.alignItems = 'baseline'
+              item.style.gap = '12px'
+              item.style.padding = '4px 0'
+              item.style.borderTop = index === 0 ? 'none' : '1px solid rgba(148, 163, 184, 0.2)'
+
+              const weekLabel = document.createElement('span')
+              weekLabel.textContent = week.label ?? `Week ${week.weekIndex ?? ''}`
+              weekLabel.style.fontWeight = weekIdx === weekIndexValue ? '600' : '500'
+              weekLabel.style.color = weekIdx === weekIndexValue ? '#111827' : '#1f2937'
+
+              const ownerValue = document.createElement('span')
+              ownerValue.textContent =
+                ownerTeam?.fullName || ownerTeam?.name || ownerId || 'Unclaimed'
+              ownerValue.style.whiteSpace = 'nowrap'
+              ownerValue.style.color = ownerId
+                ? teamColors[ownerId] ?? '#0f172a'
+                : '#475569'
+              ownerValue.style.fontWeight = weekIdx === weekIndexValue ? '600' : '500'
+
+              item.appendChild(weekLabel)
+              item.appendChild(ownerValue)
+              list.appendChild(item)
+            })
+
+            historyContainer.appendChild(list)
+          }
+
+          void loadHistory()
         })
       } catch (err) {
         console.error('Map initialization error:', err)
@@ -707,6 +849,14 @@ export default function Map({ className = '' }: MapProps) {
       mapRef.current = null
     }
   }, [])
+
+  useEffect(() => {
+    selectedSeasonRef.current = selectedSeason
+  }, [selectedSeason])
+
+  useEffect(() => {
+    selectedWeekIndexRef.current = selectedWeekIndex
+  }, [selectedWeekIndex])
 
   useEffect(() => {
     if (!seasonOptions.length || selectedSeason === null || selectedWeekIndex === null) {
@@ -755,6 +905,9 @@ export default function Map({ className = '' }: MapProps) {
         }
 
         const ownershipData: OwnershipMap = await ownershipResponse.json()
+        if (typeof week.weekIndex === 'number') {
+          ownershipSnapshotsRef.current[week.weekIndex] = ownershipData
+        }
 
         // Logos are optional - fallback to existing if not available
         let logosData: TerritoryCentroid[] = centroidsDataRef.current
