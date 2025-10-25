@@ -70,6 +70,136 @@ function fallbackColor(teamId: string): string {
     .padStart(2, '0')}${adjust(b).toString(16).padStart(2, '0')}`
 }
 
+type RgbColor = { r: number; g: number; b: number }
+type LabColor = { l: number; a: number; b: number }
+type LogoColorMap = Record<string, string>
+
+const LOGO_COLOR_SIMILARITY_THRESHOLD = 18
+
+const sanitizeHex = (value?: string | null): string | null => {
+  if (!value) {
+    return null
+  }
+
+  let hex = value.trim()
+  if (!hex) {
+    return null
+  }
+
+  if (!hex.startsWith('#')) {
+    hex = `#${hex}`
+  }
+
+  if (/^#[0-9a-fA-F]{6}$/.test(hex)) {
+    return hex.toLowerCase()
+  }
+
+  if (/^#[0-9a-fA-F]{3}$/.test(hex)) {
+    const shorthand = hex.slice(1)
+    const r = shorthand[0]
+    const g = shorthand[1]
+    const b = shorthand[2]
+    return `#${r}${r}${g}${g}${b}${b}`.toLowerCase()
+  }
+
+  return null
+}
+
+const hexToRgb = (hex: string): RgbColor | null => {
+  const normalized = sanitizeHex(hex)
+  if (!normalized) {
+    return null
+  }
+
+  const value = normalized.slice(1)
+  const r = parseInt(value.slice(0, 2), 16)
+  const g = parseInt(value.slice(2, 4), 16)
+  const b = parseInt(value.slice(4, 6), 16)
+  return { r, g, b }
+}
+
+const rgbToLab = ({ r, g, b }: RgbColor): LabColor => {
+  const sr = r / 255
+  const sg = g / 255
+  const sb = b / 255
+
+  const linearize = (channel: number) =>
+    channel <= 0.04045 ? channel / 12.92 : Math.pow((channel + 0.055) / 1.055, 2.4)
+
+  const lr = linearize(sr)
+  const lg = linearize(sg)
+  const lb = linearize(sb)
+
+  const x = lr * 0.4124 + lg * 0.3576 + lb * 0.1805
+  const y = lr * 0.2126 + lg * 0.7152 + lb * 0.0722
+  const z = lr * 0.0193 + lg * 0.1192 + lb * 0.9505
+
+  const refX = 0.95047
+  const refY = 1.0
+  const refZ = 1.08883
+
+  const transform = (value: number) =>
+    value > 0.008856 ? Math.cbrt(value) : (7.787 * value) + (16 / 116)
+
+  const fx = transform(x / refX)
+  const fy = transform(y / refY)
+  const fz = transform(z / refZ)
+
+  return {
+    l: (116 * fy) - 16,
+    a: 500 * (fx - fy),
+    b: 200 * (fy - fz)
+  }
+}
+
+const hexToLab = (hex: string): LabColor | null => {
+  const rgb = hexToRgb(hex)
+  return rgb ? rgbToLab(rgb) : null
+}
+
+const deltaE = (a: LabColor, b: LabColor): number => {
+  return Math.sqrt((a.l - b.l) ** 2 + (a.a - b.a) ** 2 + (a.b - b.b) ** 2)
+}
+
+const lightenHex = (hex: string, ratio = 0.3): string => {
+  const rgb = hexToRgb(hex)
+  if (!rgb) {
+    return hex
+  }
+
+  const mix = (component: number) => Math.round(component + (255 - component) * ratio)
+  const r = mix(rgb.r)
+  const g = mix(rgb.g)
+  const b = mix(rgb.b)
+  return `#${r.toString(16).padStart(2, '0')}${g
+    .toString(16)
+    .padStart(2, '0')}${b.toString(16).padStart(2, '0')}`
+}
+
+const chooseFillColor = (team: Team, fallbackHex: string, logoColors: LogoColorMap): string => {
+  const primaryHex = sanitizeHex(team.primaryColor) ?? sanitizeHex(fallbackHex) ?? DEFAULT_FILL_COLOR
+  const logoHex = sanitizeHex(logoColors[team.id])
+
+  if (logoHex) {
+    const primaryLab = hexToLab(primaryHex)
+    const logoLab = hexToLab(logoHex)
+
+    if (primaryLab && logoLab) {
+      const difference = deltaE(primaryLab, logoLab)
+      if (difference < LOGO_COLOR_SIMILARITY_THRESHOLD) {
+        const secondaryHex = sanitizeHex(team.secondaryColor)
+        if (secondaryHex) {
+          return secondaryHex
+        }
+
+        return lightenHex(primaryHex, 0.35)
+      }
+    }
+  }
+
+  return primaryHex
+}
+
 const parseNumericProperty = (value: unknown): number | null => {
   if (value === null || value === undefined) {
     return null
@@ -356,14 +486,16 @@ export default function Map({ className = '' }: MapProps) {
           geoJsonRes,
           countyStatsRes,
           territoryCentroidsRes,
-          ownershipIndexRes
+          ownershipIndexRes,
+          logoColorsRes
         ] = await Promise.all([
           fetch('/data/teams.json'),
           fetch('/data/ownership.json'),
           fetch('/data/us-counties.geojson'),
           fetch('/data/county-stats.json'),
           fetch('/data/territory-centroids.json'),
-          fetch('/data/ownership/index.json')
+          fetch('/data/ownership/index.json'),
+          fetch('/data/logo-colors.json')
         ])
 
         if (!teamsRes.ok || !ownershipRes.ok || !geoJsonRes.ok) {
@@ -382,6 +514,24 @@ export default function Map({ className = '' }: MapProps) {
           ? await territoryCentroidsRes.json()
           : []
 
+        let logoColors: LogoColorMap = {}
+        if (logoColorsRes.ok) {
+          try {
+            const payload = await logoColorsRes.json()
+            if (payload && typeof payload === 'object') {
+              if (payload.teams && typeof payload.teams === 'object') {
+                logoColors = payload.teams as LogoColorMap
+              } else {
+                logoColors = payload as LogoColorMap
+              }
+            }
+          } catch (logoErr) {
+            console.warn('Failed to parse logo-colors dataset', logoErr)
+          }
+        } else {
+          console.warn('Logo color dataset not found; falling back to primary colors')
+        }
+
         let ownershipIndex: OwnershipIndexPayload | null = null
         if (ownershipIndexRes.ok) {
           try {
@@ -398,7 +548,8 @@ export default function Map({ className = '' }: MapProps) {
         teamsByIdRef.current = teamsById
 
         const teamColors = teams.reduce<Record<string, string>>((acc, team) => {
-          acc[team.id] = team.primaryColor ?? fallbackColor(team.id)
+          const defaultColor = sanitizeHex(team.primaryColor) ?? sanitizeHex(fallbackColor(team.id)) ?? DEFAULT_FILL_COLOR
+          acc[team.id] = chooseFillColor(team, defaultColor, logoColors)
           return acc
         }, {})
 
