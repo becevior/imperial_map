@@ -408,6 +408,23 @@
     "loserId": "nevada"
   },
   {
+    "id": 401757233,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 3,
+    "completed": true,
+    "startDate": "2025-09-13T22:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Pitbull Stadium",
+    "homeTeamId": "fiu",
+    "awayTeamId": "florida-atlantic",
+    "homeScore": 38,
+    "awayScore": 28,
+    "winnerId": "fiu",
+    "loserId": "florida-atlantic"
+  },
+  {
     "id": 401752700,
     "season": 2025,
     "seasonType": "regular",
@@ -491,6 +508,23 @@
     "awayScore": 34,
     "winnerId": "georgia-southern",
     "loserId": "jacksonville-state"
+  },
+  {
+    "id": 401761607,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 3,
+    "completed": true,
+    "startDate": "2025-09-13T23:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "M. M. Roberts Stadium",
+    "homeTeamId": "southern-miss",
+    "awayTeamId": "appalachian-state",
+    "homeScore": 38,
+    "awayScore": 22,
+    "winnerId": "southern-miss",
+    "loserId": "appalachian-state"
   },
   {
     "id": 401752698,
@@ -678,6 +712,23 @@
     "awayScore": 30,
     "winnerId": "utah-state",
     "loserId": "air-force"
+  },
+  {
+    "id": 401752840,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 3,
+    "completed": true,
+    "startDate": "2025-09-14T02:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "California Memorial Stadium",
+    "homeTeamId": "california",
+    "awayTeamId": "minnesota",
+    "homeScore": 27,
+    "awayScore": 14,
+    "winnerId": "california",
+    "loserId": "minnesota"
   },
   {
     "id": 401754533,

@@ -28,12 +28,13 @@ const areaFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0
 })
 
+// Hawaii position adjustment - change these to reposition Hawaii on the map
+const HAWAII_OFFSET_LAT = 8 // Move Hawaii up/down (north/south)
+const HAWAII_OFFSET_LNG = 45 // Move Hawaii left/right (east/west)
+
 // Transform Hawaii coordinates to appear near Mexico
 function transformHawaiiCoordinates(geometry: any, stateCode: string): any {
   if (stateCode !== '15') return geometry // Only transform Hawaii (state code 15)
-
-  const HAWAII_OFFSET_LAT = 27 // Move Hawaii up
-  const HAWAII_OFFSET_LNG = 53 // Move Hawaii east
 
   const transformCoord = (coord: number[]): number[] => {
     return [coord[0] + HAWAII_OFFSET_LNG, coord[1] + HAWAII_OFFSET_LAT]
@@ -221,11 +222,12 @@ export default function Map({ className = '' }: MapProps) {
       .map((centroid) => {
         // Transform Hawaii logo positions to match moved Hawaii counties
         if (centroid.baselineTeamId === 'hawaii') {
-          return {
+          const transformed = {
             ...centroid,
-            latitude: centroid.latitude + 27,
-            longitude: centroid.longitude + 53
+            latitude: centroid.latitude + HAWAII_OFFSET_LAT,
+            longitude: centroid.longitude + HAWAII_OFFSET_LNG
           }
+          return transformed
         }
         return centroid
       })
@@ -478,6 +480,18 @@ export default function Map({ className = '' }: MapProps) {
                 initialPath = latestWeek.path
                 initialSeason = latestSeason.season
                 initialWeekIndex = latestWeek.weekIndex ?? null
+
+                const logosPath = latestWeek.path.replace('.json', '-logos.json')
+                try {
+                  const logosRes = await fetch(logosPath)
+                  if (logosRes.ok) {
+                    const logosData: TerritoryCentroid[] = await logosRes.json()
+                    centroidsDataRef.current = logosData
+                    lastCentroidsPathRef.current = logosPath
+                  }
+                } catch (logosErr) {
+                  console.warn('Failed to load initial logos', logosErr)
+                }
               } else {
                 console.warn('Failed to fetch latest ownership snapshot', latestWeek.path)
               }
@@ -499,8 +513,10 @@ export default function Map({ className = '' }: MapProps) {
         setSelectedWeekIndex(initialWeekIndex)
         setCurrentWeekLabel(initialLabel)
 
-        // Store baseline centroids
-        centroidsDataRef.current = territoryCentroids
+        // Store baseline centroids only if we don't already have a week-specific set
+        if (!lastCentroidsPathRef.current) {
+          centroidsDataRef.current = territoryCentroids
+        }
 
         setTeamCount(teams.length)
 
@@ -707,7 +723,11 @@ export default function Map({ className = '' }: MapProps) {
       return
     }
 
-    if (lastOwnershipPathRef.current === week.path) {
+    const logosPath = week.path.replace('.json', '-logos.json')
+    const ownershipMatches = lastOwnershipPathRef.current === week.path
+    const logosMatch = lastCentroidsPathRef.current === logosPath
+
+    if (ownershipMatches && logosMatch) {
       setCurrentWeekLabel(week.label ?? `Week ${week.weekIndex}`)
       setOwnershipError(null)
       return
@@ -723,10 +743,6 @@ export default function Map({ className = '' }: MapProps) {
       try {
         // week.path is guaranteed to exist from the check above, but TypeScript doesn't know
         const ownershipPath = week.path!
-
-        // Construct logos path from ownership path
-        // e.g., /data/ownership/2025/week-01.json -> /data/ownership/2025/week-01-logos.json
-        const logosPath = ownershipPath.replace('.json', '-logos.json')
 
         // Load both ownership and logos in parallel
         const [ownershipResponse, logosResponse] = await Promise.all([

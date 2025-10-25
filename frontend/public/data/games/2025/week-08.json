@@ -34,6 +34,23 @@
     "loserId": "south-alabama"
   },
   {
+    "id": 401757281,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 8,
+    "completed": true,
+    "startDate": "2025-10-15T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Houchens Industries-L.T. Smith Stadium",
+    "homeTeamId": "western-kentucky",
+    "awayTeamId": "fiu",
+    "homeScore": 6,
+    "awayScore": 25,
+    "winnerId": "fiu",
+    "loserId": "western-kentucky"
+  },
+  {
     "id": 401757283,
     "season": 2025,
     "seasonType": "regular",
@@ -117,6 +134,40 @@
     "awayScore": 6,
     "winnerId": "minnesota",
     "loserId": "nebraska"
+  },
+  {
+    "id": 401760396,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 8,
+    "completed": true,
+    "startDate": "2025-10-18T01:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Maverik Stadium",
+    "homeTeamId": "utah-state",
+    "awayTeamId": "san-jose-state",
+    "homeScore": 30,
+    "awayScore": 25,
+    "winnerId": "utah-state",
+    "loserId": "san-jose-state"
+  },
+  {
+    "id": 401754371,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 8,
+    "completed": true,
+    "startDate": "2025-10-18T02:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "California Memorial Stadium",
+    "homeTeamId": "california",
+    "awayTeamId": "north-carolina",
+    "homeScore": 21,
+    "awayScore": 18,
+    "winnerId": "california",
+    "loserId": "north-carolina"
   },
   {
     "id": 401752745,
@@ -323,6 +374,23 @@
     "loserId": "purdue"
   },
   {
+    "id": 401761633,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 8,
+    "completed": true,
+    "startDate": "2025-10-18T19:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Malone Stadium",
+    "homeTeamId": "ulm",
+    "awayTeamId": "troy",
+    "homeScore": 14,
+    "awayScore": 37,
+    "winnerId": "troy",
+    "loserId": "ulm"
+  },
+  {
     "id": 401752739,
     "season": 2025,
     "seasonType": "regular",
@@ -440,6 +508,23 @@
     "awayScore": 31,
     "winnerId": "boise-state",
     "loserId": "unlv"
+  },
+  {
+    "id": 401761629,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 8,
+    "completed": true,
+    "startDate": "2025-10-18T19:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Kidd Brewer Stadium",
+    "homeTeamId": "appalachian-state",
+    "awayTeamId": "coastal-carolina",
+    "homeScore": 37,
+    "awayScore": 45,
+    "winnerId": "coastal-carolina",
+    "loserId": "appalachian-state"
   },
   {
     "id": 401761631,
@@ -695,6 +780,23 @@
     "awayScore": 17,
     "winnerId": "ucla",
     "loserId": "maryland"
+  },
+  {
+    "id": 401760394,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 8,
+    "completed": true,
+    "startDate": "2025-10-18T23:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Canvas Stadium",
+    "homeTeamId": "colorado-state",
+    "awayTeamId": "hawaii",
+    "homeScore": 19,
+    "awayScore": 31,
+    "winnerId": "hawaii",
+    "loserId": "colorado-state"
   },
   {
     "id": 401761630,

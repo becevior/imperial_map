@@ -255,6 +255,21 @@
     "totalAreaSqMi": 9412.134
   },
   {
+    "teamId": "california",
+    "teamName": "California",
+    "shortName": "California",
+    "latitude": 39.13932137235943,
+    "longitude": -122.7823438347802,
+    "centroidLatitude": 39.172113391259195,
+    "centroidLongitude": -122.88119703599921,
+    "areaSqMi": 18545.323999999997,
+    "countyCount": 15,
+    "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/25.png",
+    "anchorFips": "06033",
+    "region": "mainland",
+    "totalAreaSqMi": 18545.323999999997
+  },
+  {
     "teamId": "central-michigan",
     "teamName": "Central Michigan",
     "shortName": "Central Michigan",
@@ -1070,14 +1085,14 @@
     "shortName": "Nevada",
     "latitude": 40.20851373114165,
     "longitude": -119.70301256416866,
-    "centroidLatitude": 40.160067007394254,
-    "centroidLongitude": -119.569682840732,
-    "areaSqMi": 74907.08,
-    "countyCount": 27,
+    "centroidLatitude": 40.179644085910965,
+    "centroidLongitude": -119.5008934764467,
+    "areaSqMi": 72990.723,
+    "countyCount": 25,
     "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2440.png",
     "anchorFips": "32031",
     "region": "mainland",
-    "totalAreaSqMi": 74907.08
+    "totalAreaSqMi": 72990.723
   },
   {
     "teamId": "new-mexico",
@@ -1280,14 +1295,14 @@
     "shortName": "Oregon",
     "latitude": 42.4603584501226,
     "longitude": -121.74733747894517,
-    "centroidLatitude": 42.844334116589316,
-    "centroidLongitude": -122.2470366574616,
-    "areaSqMi": 51661.13199999999,
-    "countyCount": 15,
+    "centroidLatitude": 43.00420181821368,
+    "centroidLongitude": -122.10192622792275,
+    "areaSqMi": 48093.145,
+    "countyCount": 14,
     "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2483.png",
     "anchorFips": "41035",
     "region": "mainland",
-    "totalAreaSqMi": 51661.13199999999
+    "totalAreaSqMi": 48093.145
   },
   {
     "teamId": "oregon-state",
@@ -1503,16 +1518,16 @@
     "teamId": "stanford",
     "teamName": "Stanford",
     "shortName": "Stanford",
-    "latitude": 38.51565103464146,
-    "longitude": -122.27549674290147,
-    "centroidLatitude": 38.68657462734243,
-    "centroidLongitude": -122.64387866492376,
-    "areaSqMi": 13509.388,
-    "countyCount": 13,
+    "latitude": 37.457091597869656,
+    "longitude": -122.36361971776155,
+    "centroidLatitude": 37.45709159786966,
+    "centroidLongitude": -122.36361971776155,
+    "areaSqMi": 448.408,
+    "countyCount": 1,
     "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/24.png",
-    "anchorFips": "06055",
+    "anchorFips": "06081",
     "region": "mainland",
-    "totalAreaSqMi": 13509.388
+    "totalAreaSqMi": 448.408
   },
   {
     "teamId": "syracuse",

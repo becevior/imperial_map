@@ -544,6 +544,23 @@
     "loserId": "air-force"
   },
   {
+    "id": 401761624,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 7,
+    "completed": true,
+    "startDate": "2025-10-11T19:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Center Parc Stadium",
+    "homeTeamId": "georgia-state",
+    "awayTeamId": "appalachian-state",
+    "homeScore": 20,
+    "awayScore": 41,
+    "winnerId": "appalachian-state",
+    "loserId": "georgia-state"
+  },
+  {
     "id": 401761626,
     "season": 2025,
     "seasonType": "regular",
@@ -661,6 +678,40 @@
     "awayScore": 37,
     "winnerId": "iowa",
     "loserId": "wisconsin"
+  },
+  {
+    "id": 401760391,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 7,
+    "completed": true,
+    "startDate": "2025-10-11T23:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "War Memorial Stadium",
+    "homeTeamId": "wyoming",
+    "awayTeamId": "san-jose-state",
+    "homeScore": 35,
+    "awayScore": 28,
+    "winnerId": "wyoming",
+    "loserId": "san-jose-state"
+  },
+  {
+    "id": 401761623,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 7,
+    "completed": true,
+    "startDate": "2025-10-11T23:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Brooks Stadium (SC)",
+    "homeTeamId": "coastal-carolina",
+    "awayTeamId": "ulm",
+    "homeScore": 23,
+    "awayScore": 8,
+    "winnerId": "coastal-carolina",
+    "loserId": "ulm"
   },
   {
     "id": 401752731,
@@ -865,5 +916,22 @@
     "awayScore": 44,
     "winnerId": "san-diego-state",
     "loserId": "nevada"
+  },
+  {
+    "id": 401760389,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 7,
+    "completed": true,
+    "startDate": "2025-10-12T03:59:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Clarence T.C. Ching Athletics Complex",
+    "homeTeamId": "hawaii",
+    "awayTeamId": "utah-state",
+    "homeScore": 44,
+    "awayScore": 26,
+    "winnerId": "hawaii",
+    "loserId": "utah-state"
   }
 ]

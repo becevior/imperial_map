@@ -459,6 +459,23 @@
     "loserId": "west-virginia"
   },
   {
+    "id": 401757259,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 4,
+    "completed": true,
+    "startDate": "2025-09-20T22:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Pitbull Stadium",
+    "homeTeamId": "fiu",
+    "awayTeamId": "delaware",
+    "homeScore": 16,
+    "awayScore": 38,
+    "winnerId": "delaware",
+    "loserId": "fiu"
+  },
+  {
     "id": 401757261,
     "season": 2025,
     "seasonType": "regular",
@@ -714,6 +731,23 @@
     "loserId": "sam-houston"
   },
   {
+    "id": 401757267,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 4,
+    "completed": true,
+    "startDate": "2025-09-21T01:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Sun Bowl",
+    "homeTeamId": "utep",
+    "awayTeamId": "ulm",
+    "homeScore": 25,
+    "awayScore": 31,
+    "winnerId": "ulm",
+    "loserId": "utep"
+  },
+  {
     "id": 401760373,
     "season": 2025,
     "seasonType": "regular",
@@ -748,6 +782,23 @@
     "loserId": "wyoming"
   },
   {
+    "id": 401754540,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 4,
+    "completed": true,
+    "startDate": "2025-09-21T02:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Snapdragon Stadium",
+    "homeTeamId": "san-diego-state",
+    "awayTeamId": "california",
+    "homeScore": 34,
+    "awayScore": 0,
+    "winnerId": "san-diego-state",
+    "loserId": "california"
+  },
+  {
     "id": 401752847,
     "season": 2025,
     "seasonType": "regular",
@@ -763,5 +814,22 @@
     "awayScore": 31,
     "winnerId": "usc",
     "loserId": "michigan-state"
+  },
+  {
+    "id": 401760374,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 4,
+    "completed": true,
+    "startDate": "2025-09-21T03:59:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Clarence T.C. Ching Athletics Complex",
+    "homeTeamId": "hawaii",
+    "awayTeamId": "fresno-state",
+    "homeScore": 21,
+    "awayScore": 23,
+    "winnerId": "fresno-state",
+    "loserId": "hawaii"
   }
 ]

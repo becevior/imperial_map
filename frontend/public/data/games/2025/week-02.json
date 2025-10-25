@@ -34,6 +34,40 @@
     "loserId": "northern-illinois"
   },
   {
+    "id": 401752693,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 2,
+    "completed": true,
+    "startDate": "2025-09-06T16:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "DKR-Texas Memorial Stadium",
+    "homeTeamId": "texas",
+    "awayTeamId": "san-jose-state",
+    "homeScore": 38,
+    "awayScore": 7,
+    "winnerId": "texas",
+    "loserId": "san-jose-state"
+  },
+  {
+    "id": 401752811,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 2,
+    "completed": true,
+    "startDate": "2025-09-06T16:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Beaver Stadium",
+    "homeTeamId": "penn-state",
+    "awayTeamId": "fiu",
+    "homeScore": 34,
+    "awayScore": 0,
+    "winnerId": "penn-state",
+    "loserId": "fiu"
+  },
+  {
     "id": 401752812,
     "season": 2025,
     "seasonType": "regular",
@@ -697,6 +731,23 @@
     "loserId": "boston-college"
   },
   {
+    "id": 401752681,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 2,
+    "completed": true,
+    "startDate": "2025-09-06T23:45:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Bryant-Denny Stadium",
+    "homeTeamId": "alabama",
+    "awayTeamId": "ulm",
+    "homeScore": 73,
+    "awayScore": 0,
+    "winnerId": "alabama",
+    "loserId": "ulm"
+  },
+  {
     "id": 401752823,
     "season": 2025,
     "seasonType": "regular",
@@ -763,5 +814,22 @@
     "awayScore": 3,
     "winnerId": "byu",
     "loserId": "stanford"
+  },
+  {
+    "id": 401757230,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 2,
+    "completed": true,
+    "startDate": "2025-09-07T03:59:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Clarence T.C. Ching Athletics Complex",
+    "homeTeamId": "hawaii",
+    "awayTeamId": "sam-houston",
+    "homeScore": 37,
+    "awayScore": 20,
+    "winnerId": "hawaii",
+    "loserId": "sam-houston"
   }
 ]

@@ -2,6 +2,7 @@
 Team data loading and management utilities.
 """
 import csv
+import unicodedata
 from hashlib import md5
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Set
@@ -99,6 +100,11 @@ def _normalize_team_key(raw: str) -> str:
     cleaned = raw.replace('&', 'and')
     cleaned = cleaned.replace('@', 'at')
     cleaned = cleaned.strip()
+    cleaned = cleaned.replace("'", '')
+    cleaned = cleaned.replace('\u2019', '')
+    cleaned = cleaned.replace('\u2018', '')
+    cleaned = unicodedata.normalize('NFKD', cleaned)
+    cleaned = ''.join(ch for ch in cleaned if not unicodedata.combining(ch))
     # Handle NCAA naming quirks
     cleaned = cleaned.replace('St.', 'State')
     cleaned = cleaned.replace('Mt.', 'Mount')
@@ -156,6 +162,10 @@ def build_team_name_lookup(teams: Optional[List[Dict]] = None) -> Dict[str, str]
         'miami-fl-hurricanes': 'miami',
         'uab-blazers': 'uab',
         'uab': 'uab',
+        'app-state': 'appalachian-state',
+        'florida-international': 'fiu',
+        'ul-monroe': 'ulm',
+        'cal': 'california',
     }
 
     for key, team_id in manual_overrides.items():

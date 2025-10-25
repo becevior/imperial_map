@@ -238,6 +238,20 @@
     "areaSqMi": 9412.134
   },
   {
+    "territoryId": "california-mainland",
+    "baselineTeamId": "california",
+    "baselineTeamName": "California",
+    "latitude": 39.13932137235943,
+    "longitude": -122.7823438347802,
+    "region": "mainland",
+    "currentOwnerId": "california",
+    "currentOwnerName": "California",
+    "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/25.png",
+    "countiesOwned": 15,
+    "totalCounties": 15,
+    "areaSqMi": 18545.323999999997
+  },
+  {
     "territoryId": "central-michigan-mainland",
     "baselineTeamId": "central-michigan",
     "baselineTeamName": "Central Michigan",
@@ -1003,9 +1017,9 @@
     "currentOwnerId": "nevada",
     "currentOwnerName": "Nevada",
     "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2440.png",
-    "countiesOwned": 27,
-    "totalCounties": 27,
-    "areaSqMi": 74907.08
+    "countiesOwned": 25,
+    "totalCounties": 25,
+    "areaSqMi": 72990.723
   },
   {
     "territoryId": "new-mexico-mainland",
@@ -1199,9 +1213,9 @@
     "currentOwnerId": "oregon",
     "currentOwnerName": "Oregon",
     "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2483.png",
-    "countiesOwned": 15,
-    "totalCounties": 15,
-    "areaSqMi": 51661.13199999999
+    "countiesOwned": 14,
+    "totalCounties": 14,
+    "areaSqMi": 48093.145
   },
   {
     "territoryId": "oregon-state-mainland",
@@ -1403,15 +1417,15 @@
     "territoryId": "stanford-mainland",
     "baselineTeamId": "stanford",
     "baselineTeamName": "Stanford",
-    "latitude": 38.51565103464146,
-    "longitude": -122.27549674290147,
+    "latitude": 37.457091597869656,
+    "longitude": -122.36361971776155,
     "region": "mainland",
     "currentOwnerId": "stanford",
     "currentOwnerName": "Stanford",
     "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/24.png",
-    "countiesOwned": 13,
-    "totalCounties": 13,
-    "areaSqMi": 13509.388
+    "countiesOwned": 1,
+    "totalCounties": 1,
+    "areaSqMi": 448.408
   },
   {
     "territoryId": "syracuse-mainland",

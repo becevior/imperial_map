@@ -289,6 +289,23 @@
     "loserId": "georgia-southern"
   },
   {
+    "id": 401761616,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 5,
+    "completed": true,
+    "startDate": "2025-09-27T19:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Malone Stadium",
+    "homeTeamId": "ulm",
+    "awayTeamId": "arkansas-state",
+    "homeScore": 28,
+    "awayScore": 16,
+    "winnerId": "ulm",
+    "loserId": "arkansas-state"
+  },
+  {
     "id": 401752719,
     "season": 2025,
     "seasonType": "regular",
@@ -372,6 +389,23 @@
     "awayScore": 20,
     "winnerId": "indiana",
     "loserId": "iowa"
+  },
+  {
+    "id": 401754544,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 5,
+    "completed": true,
+    "startDate": "2025-09-27T19:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Alumni Stadium (Chestnut Hill, MA)",
+    "homeTeamId": "boston-college",
+    "awayTeamId": "california",
+    "homeScore": 24,
+    "awayScore": 28,
+    "winnerId": "california",
+    "loserId": "boston-college"
   },
   {
     "id": 401756907,
@@ -474,6 +508,23 @@
     "awayScore": 20,
     "winnerId": "new-mexico",
     "loserId": "new-mexico-state"
+  },
+  {
+    "id": 401760378,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 5,
+    "completed": true,
+    "startDate": "2025-09-27T20:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Falcon Stadium",
+    "homeTeamId": "air-force",
+    "awayTeamId": "hawaii",
+    "homeScore": 35,
+    "awayScore": 44,
+    "winnerId": "hawaii",
+    "loserId": "air-force"
   },
   {
     "id": 401762474,
@@ -678,6 +729,40 @@
     "awayScore": 20,
     "winnerId": "washington-state",
     "loserId": "colorado-state"
+  },
+  {
+    "id": 401754549,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 5,
+    "completed": true,
+    "startDate": "2025-09-27T23:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Stanford Stadium",
+    "homeTeamId": "stanford",
+    "awayTeamId": "san-jose-state",
+    "homeScore": 30,
+    "awayScore": 29,
+    "winnerId": "stanford",
+    "loserId": "san-jose-state"
+  },
+  {
+    "id": 401760379,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 5,
+    "completed": true,
+    "startDate": "2025-09-27T23:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Albertsons Stadium",
+    "homeTeamId": "boise-state",
+    "awayTeamId": "appalachian-state",
+    "homeScore": 47,
+    "awayScore": 14,
+    "winnerId": "boise-state",
+    "loserId": "appalachian-state"
   },
   {
     "id": 401752722,

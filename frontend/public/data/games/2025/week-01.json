@@ -51,6 +51,23 @@
     "loserId": "sam-houston"
   },
   {
+    "id": 401754516,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-08-23T23:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Clarence T.C. Ching Athletics Complex",
+    "homeTeamId": "hawaii",
+    "awayTeamId": "stanford",
+    "homeScore": 23,
+    "awayScore": 20,
+    "winnerId": "hawaii",
+    "loserId": "stanford"
+  },
+  {
     "id": 401762522,
     "season": 2025,
     "seasonType": "regular",
@@ -221,6 +238,23 @@
     "loserId": "kennesaw-state"
   },
   {
+    "id": 401761589,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-08-29T23:00:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Bank of America Stadium",
+    "homeTeamId": "charlotte",
+    "awayTeamId": "appalachian-state",
+    "homeScore": 11,
+    "awayScore": 34,
+    "winnerId": "appalachian-state",
+    "loserId": "charlotte"
+  },
+  {
     "id": 401752667,
     "season": 2025,
     "seasonType": "regular",
@@ -270,6 +304,23 @@
     "awayScore": 38,
     "winnerId": "unlv",
     "loserId": "sam-houston"
+  },
+  {
+    "id": 401760358,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-08-30T02:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "CEFCU Stadium",
+    "homeTeamId": "san-jose-state",
+    "awayTeamId": "central-michigan",
+    "homeScore": 14,
+    "awayScore": 16,
+    "winnerId": "central-michigan",
+    "loserId": "san-jose-state"
   },
   {
     "id": 401752673,
@@ -627,6 +678,40 @@
     "awayScore": 14,
     "winnerId": "fresno-state",
     "loserId": "georgia-southern"
+  },
+  {
+    "id": 401752936,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-08-31T02:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Reser Stadium",
+    "homeTeamId": "oregon-state",
+    "awayTeamId": "california",
+    "homeScore": 15,
+    "awayScore": 34,
+    "winnerId": "california",
+    "loserId": "oregon-state"
+  },
+  {
+    "id": 401756849,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-08-31T02:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Arizona Stadium",
+    "homeTeamId": "arizona",
+    "awayTeamId": "hawaii",
+    "homeScore": 40,
+    "awayScore": 6,
+    "winnerId": "arizona",
+    "loserId": "hawaii"
   },
   {
     "id": 401752800,
