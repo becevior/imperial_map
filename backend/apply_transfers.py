@@ -9,6 +9,7 @@ from typing import Dict, Iterable, List, Optional
 
 from lib import db
 from lib.game_engine import process_game_result
+from lib.region_calculator import calculate_territory_logos
 
 
 def load_games_timeline(season: int) -> List[Dict]:
@@ -148,6 +149,11 @@ def save_weekly_ownership(season: int, week_index: int, ownership: Dict[str, str
     db.save_json(f'ownership/{season}/week-{week_index:02d}.json', ownership)
 
 
+def save_weekly_logos(season: int, week_index: int, logos: List[Dict]) -> None:
+    """Save campus logo markers for a specific week."""
+    db.save_json(f'ownership/{season}/week-{week_index:02d}-logos.json', logos)
+
+
 def update_ownership_index(season: int, weeks: List[Dict]) -> None:
     data_dir = db.get_data_dir()
     index_path = data_dir / 'ownership' / 'index.json'
@@ -174,7 +180,12 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
     args = parse_args(argv)
 
     ownership = db.load_ownership()
+    baseline_ownership = dict(ownership)  # Keep baseline for territory calculations
     team_to_fips = build_team_reverse_index(ownership)
+
+    # Load teams and baseline centroids for territory logo calculation
+    teams = db.load_teams()
+    baseline_centroids = db.load_json('territory-centroids.json')
 
     timeline = load_games_timeline(args.season)
     if args.max_week_index is not None:
@@ -198,6 +209,11 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
 
     if not args.dry_run:
         save_weekly_ownership(args.season, 0, ownership)
+        # Generate territory logos for baseline ownership
+        print(f"📍 Calculating territory logos for week 0 (baseline)...")
+        logos = calculate_territory_logos(baseline_ownership, ownership, teams, baseline_centroids)
+        save_weekly_logos(args.season, 0, logos)
+        print(f"  ✓ Saved {len(logos)} territory logo markers")
 
     existing_transfers = load_existing_transfers()
     new_transfers: List[Dict] = []
@@ -225,11 +241,14 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
         )
 
         if not args.dry_run:
-            save_weekly_ownership(
-                args.season,
-                int(week_entry.get('weekIndex')),
-                ownership,
-            )
+            week_idx = int(week_entry.get('weekIndex'))
+            save_weekly_ownership(args.season, week_idx, ownership)
+
+            # Generate territory logos for this week's ownership
+            print(f"📍 Calculating territory logos for {week_entry.get('label')}...")
+            logos = calculate_territory_logos(baseline_ownership, ownership, teams, baseline_centroids)
+            save_weekly_logos(args.season, week_idx, logos)
+            print(f"  ✓ Saved {len(logos)} territory logo markers")
 
         transfers = summary.get('transfers') or []
         new_transfers.extend(transfers)

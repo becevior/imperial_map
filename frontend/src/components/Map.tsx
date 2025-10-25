@@ -133,6 +133,8 @@ export default function Map({ className = '' }: MapProps) {
   const pendingGeoJsonRef = useRef<any | null>(null)
   const lastOwnershipPathRef = useRef<string | null>(null)
   const baselineOwnershipRef = useRef<OwnershipMap>({})
+  const centroidsDataRef = useRef<TerritoryCentroid[]>([])
+  const lastCentroidsPathRef = useRef<string | null>(null)
 
   const applyOwnershipToMap = (ownershipMap: OwnershipMap, label?: string) => {
     const decorator = decorateGeoJsonRef.current
@@ -163,6 +165,94 @@ export default function Map({ className = '' }: MapProps) {
     } else {
       pendingGeoJsonRef.current = decorated
     }
+  }
+
+  const updateMarkersWithCentroids = (centroids: TerritoryCentroid[]) => {
+    const mapInstance = mapRef.current
+    if (!mapInstance) {
+      return
+    }
+
+    // Remove existing markers
+    markersRef.current.forEach((marker) => marker.remove())
+    markersRef.current = []
+
+    // Filter valid centroids
+    const validCentroids = centroids.filter(
+      (centroid) =>
+        centroid &&
+        typeof centroid.latitude === 'number' &&
+        typeof centroid.longitude === 'number' &&
+        centroid.logoUrl
+    )
+
+    const markerData = validCentroids.map((centroid) => ({
+      centroid,
+      element: document.createElement('div'),
+      marker: null as maplibregl.Marker | null
+    }))
+
+    const applyMarkerStyles: () => void = () => {
+      if (!mapInstance) {
+        return
+      }
+
+      const zoom = mapInstance.getZoom()
+
+      markerData.forEach(({ centroid, element }) => {
+        const area = Math.max(
+          centroid.areaSqMi ?? centroid.totalAreaSqMi ?? 0,
+          1
+        )
+        const baseSize = Math.max(22, Math.min(62, Math.pow(area, 0.25) * 4.8))
+
+        const zoomScale = Math.min(1.2, Math.max(0.8, (zoom - 3.8) / 2.2 + 0.9))
+        const size = baseSize * zoomScale
+        const opacity = Math.min(1, Math.max(0.45, (zoom - 3.6) / 0.6))
+
+        element.style.width = `${size}px`
+        element.style.height = `${size}px`
+        element.style.opacity = `${opacity}`
+      })
+    }
+
+    markerData.forEach((entry) => {
+      const { centroid, element } = entry
+
+      element.className = 'territory-logo-marker'
+      element.style.backgroundImage = `url('${centroid.logoUrl}')`
+      element.style.backgroundSize = 'contain'
+      element.style.backgroundRepeat = 'no-repeat'
+      element.style.backgroundPosition = 'center'
+      element.style.backgroundColor = 'transparent'
+      element.style.borderRadius = '0'
+      element.style.border = 'none'
+      element.style.boxShadow = 'none'
+      element.style.pointerEvents = 'none'
+      element.style.filter = 'drop-shadow(0 1px 4px rgba(15, 23, 42, 0.45))'
+      element.title = centroid.teamName || centroid.teamId
+
+      const marker = new maplibregl.Marker({ element, anchor: 'center' })
+        .setLngLat([centroid.longitude, centroid.latitude])
+        .addTo(mapInstance)
+
+      entry.marker = marker
+      markersRef.current.push(marker)
+    })
+
+    applyMarkerStyles()
+
+    // Update zoom handler
+    if ((mapInstance as any).__logoZoomHandler) {
+      mapInstance.off('zoom', (mapInstance as any).__logoZoomHandler)
+    }
+
+    const handleZoom = () => {
+      applyMarkerStyles()
+    }
+
+    mapInstance.on('zoom', handleZoom)
+    ;(mapInstance as any).__logoZoomHandler = handleZoom
   }
 
   useEffect(() => {
@@ -355,13 +445,8 @@ export default function Map({ className = '' }: MapProps) {
         setSelectedWeekIndex(initialWeekIndex)
         setCurrentWeekLabel(initialLabel)
 
-        const markerSourceData = territoryCentroids.filter(
-          (centroid) =>
-            centroid &&
-            typeof centroid.latitude === 'number' &&
-            typeof centroid.longitude === 'number' &&
-            centroid.logoUrl
-        )
+        // Store baseline centroids
+        centroidsDataRef.current = territoryCentroids
 
         setTeamCount(teams.length)
 
@@ -444,69 +529,8 @@ export default function Map({ className = '' }: MapProps) {
             }
           }
 
-          const markerData = markerSourceData.map((centroid) => ({
-            centroid,
-            element: document.createElement('div'),
-            marker: null as maplibregl.Marker | null
-          }))
-
-          const applyMarkerStyles: () => void = () => {
-            if (!mapInstance) {
-              return
-            }
-
-            const zoom = mapInstance.getZoom()
-
-            markerData.forEach(({ centroid, element }) => {
-              const area = Math.max(
-                centroid.areaSqMi ?? centroid.totalAreaSqMi ?? 0,
-                1
-              )
-              const baseSize = Math.max(22, Math.min(62, Math.pow(area, 0.25) * 4.8))
-
-              const zoomScale = Math.min(1.2, Math.max(0.8, (zoom - 3.8) / 2.2 + 0.9))
-              const size = baseSize * zoomScale
-              const opacity = Math.min(1, Math.max(0.45, (zoom - 3.6) / 0.6))
-
-              element.style.width = `${size}px`
-              element.style.height = `${size}px`
-              element.style.opacity = `${opacity}`
-            })
-          }
-
-          markerData.forEach((entry) => {
-            const { centroid, element } = entry
-
-            element.className = 'territory-logo-marker'
-            element.style.backgroundImage = `url('${centroid.logoUrl}')`
-            element.style.backgroundSize = 'contain'
-            element.style.backgroundRepeat = 'no-repeat'
-            element.style.backgroundPosition = 'center'
-            element.style.backgroundColor = 'transparent'
-            element.style.borderRadius = '0'
-            element.style.border = 'none'
-            element.style.boxShadow = 'none'
-            element.style.pointerEvents = 'none'
-            element.style.filter = 'drop-shadow(0 1px 4px rgba(15, 23, 42, 0.45))'
-            element.title = centroid.teamName || centroid.teamId
-
-            const marker = new maplibregl.Marker({ element, anchor: 'center' })
-              .setLngLat([centroid.longitude, centroid.latitude])
-              .addTo(mapInstance)
-
-            entry.marker = marker
-            markersRef.current.push(marker)
-          })
-
-          const handleZoom: () => void = () => {
-            applyMarkerStyles()
-          }
-
-          mapInstance.on('zoom', handleZoom)
-          applyMarkerStyles()
-
-          // Store cleanup to detach zoom handler later
-          ;(mapInstance as any).__logoZoomHandler = handleZoom
+          // Use the updateMarkersWithCentroids function for initial markers
+          updateMarkersWithCentroids(centroidsDataRef.current)
           setLoading(false)
         })
 
@@ -643,18 +667,49 @@ export default function Map({ className = '' }: MapProps) {
       setOwnershipError(null)
 
       try {
-        const response = await fetch(week.path, { signal: controller.signal })
-        if (!response.ok) {
-          throw new Error(`Failed to load ownership snapshot: ${week.path}`)
+        // week.path is guaranteed to exist from the check above, but TypeScript doesn't know
+        const ownershipPath = week.path!
+
+        // Construct logos path from ownership path
+        // e.g., /data/ownership/2025/week-01.json -> /data/ownership/2025/week-01-logos.json
+        const logosPath = ownershipPath.replace('.json', '-logos.json')
+
+        // Load both ownership and logos in parallel
+        const [ownershipResponse, logosResponse] = await Promise.all([
+          fetch(ownershipPath, { signal: controller.signal }),
+          fetch(logosPath, { signal: controller.signal })
+        ])
+
+        if (!ownershipResponse.ok) {
+          throw new Error(`Failed to load ownership snapshot: ${ownershipPath}`)
         }
 
-        const data: OwnershipMap = await response.json()
+        const ownershipData: OwnershipMap = await ownershipResponse.json()
+
+        // Logos are optional - fallback to existing if not available
+        let logosData: TerritoryCentroid[] = centroidsDataRef.current
+        if (logosResponse.ok) {
+          try {
+            logosData = await logosResponse.json()
+            centroidsDataRef.current = logosData
+            lastCentroidsPathRef.current = logosPath
+          } catch (logosErr) {
+            console.warn('Failed to parse logos, using previous:', logosErr)
+          }
+        } else {
+          console.warn(`Logos not found at ${logosPath}, using baseline`)
+        }
+
         if (cancelled) {
           return
         }
 
-        applyOwnershipToMap(data, week.label ?? `Week ${week.weekIndex}`)
-        lastOwnershipPathRef.current = week.path
+        applyOwnershipToMap(ownershipData, week.label ?? `Week ${week.weekIndex}`)
+        lastOwnershipPathRef.current = ownershipPath
+
+        // Update markers with new logos
+        updateMarkersWithCentroids(logosData)
+
         setOwnershipError(null)
       } catch (ownershipErr) {
         if (cancelled) {
