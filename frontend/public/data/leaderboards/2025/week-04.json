@@ -1,0 +1,2004 @@
+{
+  "season": 2025,
+  "weekIndex": 4,
+  "week": 4,
+  "seasonType": "regular",
+  "weekLabel": "Regular Week 4",
+  "generatedAt": "2025-10-28T04:48:09.543086+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "texas-tech",
+        "teamName": "Texas Tech",
+        "shortName": "Texas Tech",
+        "fullName": "Texas Tech Red Raiders",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 176,
+          "population": 10509676,
+          "areaSqMi": 300076.6
+        }
+      },
+      {
+        "teamId": "san-diego-state",
+        "teamName": "San Diego State",
+        "shortName": "San Diego State",
+        "fullName": "San Diego State Aztecs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
+        }
+      },
+      {
+        "teamId": "texas-a-m",
+        "teamName": "Texas A&M",
+        "shortName": "Texas A&M",
+        "fullName": "Texas A&M Aggies",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 98,
+          "population": 7358445,
+          "areaSqMi": 190484.39
+        }
+      },
+      {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 91,
+          "population": 16834547,
+          "areaSqMi": 161352.3
+        }
+      },
+      {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 111,
+          "population": 12007941,
+          "areaSqMi": 149545.94
+        }
+      },
+      {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
+        }
+      },
+      {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 196,
+          "population": 19692476,
+          "areaSqMi": 104841.39
+        }
+      },
+      {
+        "teamId": "penn-state",
+        "teamName": "Penn State",
+        "shortName": "Penn State",
+        "fullName": "Penn State Nittany Lions",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 56,
+          "population": 4528353,
+          "areaSqMi": 95491.37
+        }
+      },
+      {
+        "teamId": "mississippi-state",
+        "teamName": "Mississippi State",
+        "shortName": "Mississippi State",
+        "fullName": "Mississippi State Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 54,
+          "population": 6730001,
+          "areaSqMi": 94134.25
+        }
+      },
+      {
+        "teamId": "iowa-state",
+        "teamName": "Iowa State",
+        "shortName": "Iowa State",
+        "fullName": "Iowa State Cyclones",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 148,
+          "population": 4036543,
+          "areaSqMi": 94072.99
+        }
+      },
+      {
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
+        }
+      },
+      {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 116,
+          "population": 28100881,
+          "areaSqMi": 89146.65
+        }
+      },
+      {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 134,
+          "population": 4242471,
+          "areaSqMi": 88974.48
+        }
+      },
+      {
+        "teamId": "missouri",
+        "teamName": "Missouri",
+        "shortName": "Missouri",
+        "fullName": "Missouri Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 104,
+          "population": 8611450,
+          "areaSqMi": 82976.38
+        }
+      },
+      {
+        "teamId": "oregon",
+        "teamName": "Oregon",
+        "shortName": "Oregon",
+        "fullName": "Oregon Ducks",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 44,
+          "population": 2222708,
+          "areaSqMi": 76341.82
+        }
+      },
+      {
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 119,
+          "population": 7343793,
+          "areaSqMi": 71531.45
+        }
+      },
+      {
+        "teamId": "utah-state",
+        "teamName": "Utah State",
+        "shortName": "Utah State",
+        "fullName": "Utah State Aggies",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 47,
+          "population": 1490879,
+          "areaSqMi": 68951.8
+        }
+      },
+      {
+        "teamId": "washington",
+        "teamName": "Washington",
+        "shortName": "Washington",
+        "fullName": "Washington Huskies",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 46,
+          "population": 5889712,
+          "areaSqMi": 68511.07
+        }
+      },
+      {
+        "teamId": "byu",
+        "teamName": "BYU",
+        "shortName": "BYU",
+        "fullName": "BYU Cougars",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 18,
+          "population": 774606,
+          "areaSqMi": 62353.46
+        }
+      },
+      {
+        "teamId": "georgia",
+        "teamName": "Georgia",
+        "shortName": "Georgia",
+        "fullName": "Georgia Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 119,
+          "population": 6302743,
+          "areaSqMi": 61453.9
+        }
+      },
+      {
+        "teamId": "louisiana-tech",
+        "teamName": "Louisiana Tech",
+        "shortName": "Louisiana Tech",
+        "fullName": "Louisiana Tech Bulldogs",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
+        }
+      },
+      {
+        "teamId": "kansas",
+        "teamName": "Kansas",
+        "shortName": "Kansas",
+        "fullName": "Kansas Jayhawks",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 70,
+          "population": 8329441,
+          "areaSqMi": 50349.86
+        }
+      },
+      {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 122,
+          "population": 7623354,
+          "areaSqMi": 48665.81
+        }
+      },
+      {
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 94,
+          "population": 9651387,
+          "areaSqMi": 46685.82
+        }
+      },
+      {
+        "teamId": "lsu",
+        "teamName": "LSU",
+        "shortName": "LSU",
+        "fullName": "LSU Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 77,
+          "population": 4083081,
+          "areaSqMi": 44820.57
+        }
+      },
+      {
+        "teamId": "georgia-tech",
+        "teamName": "Georgia Tech",
+        "shortName": "Georgia Tech",
+        "fullName": "Georgia Tech Yellow Jackets",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 46,
+          "population": 6927526,
+          "areaSqMi": 41427.81
+        }
+      },
+      {
+        "teamId": "houston",
+        "teamName": "Houston",
+        "shortName": "Houston",
+        "fullName": "Houston Cougars",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 44,
+          "population": 10312630,
+          "areaSqMi": 34530.29
+        }
+      },
+      {
+        "teamId": "vanderbilt",
+        "teamName": "Vanderbilt",
+        "shortName": "Vanderbilt",
+        "fullName": "Vanderbilt Commodores",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 71,
+          "population": 4442237,
+          "areaSqMi": 34400.94
+        }
+      },
+      {
+        "teamId": "arizona",
+        "teamName": "Arizona",
+        "shortName": "Arizona",
+        "fullName": "Arizona Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 11,
+          "population": 3349627,
+          "areaSqMi": 29926.4
+        }
+      },
+      {
+        "teamId": "western-michigan",
+        "teamName": "Western Michigan",
+        "shortName": "Western Michigan",
+        "fullName": "Western Michigan Broncos",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 59,
+          "population": 2377378,
+          "areaSqMi": 29792.86
+        }
+      },
+      {
+        "teamId": "arizona-state",
+        "teamName": "Arizona State",
+        "shortName": "Arizona State",
+        "fullName": "Arizona State Sun Devils",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 39,
+          "population": 9188224,
+          "areaSqMi": 27413.42
+        }
+      },
+      {
+        "teamId": "ohio-state",
+        "teamName": "Ohio State",
+        "shortName": "Ohio State",
+        "fullName": "Ohio State Buckeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 49,
+          "population": 4934562,
+          "areaSqMi": 27053.3
+        }
+      },
+      {
+        "teamId": "florida-state",
+        "teamName": "Florida State",
+        "shortName": "Florida State",
+        "fullName": "Florida State Seminoles",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 43,
+          "population": 1652741,
+          "areaSqMi": 24700.69
+        }
+      },
+      {
+        "teamId": "maryland",
+        "teamName": "Maryland",
+        "shortName": "Maryland",
+        "fullName": "Maryland Terrapins",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 52,
+          "population": 12110296,
+          "areaSqMi": 24041.86
+        }
+      },
+      {
+        "teamId": "umass",
+        "teamName": "UMass",
+        "shortName": "UMass",
+        "fullName": "UMass Minutemen",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 29,
+          "population": 2754025,
+          "areaSqMi": 21659.87
+        }
+      },
+      {
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 44,
+          "population": 1614154,
+          "areaSqMi": 20132.22
+        }
+      },
+      {
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 46,
+          "population": 2290292,
+          "areaSqMi": 17908.67
+        }
+      },
+      {
+        "teamId": "ucf",
+        "teamName": "UCF",
+        "shortName": "UCF",
+        "fullName": "UCF Knights",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 25,
+          "population": 5001368,
+          "areaSqMi": 17174.59
+        }
+      },
+      {
+        "teamId": "iowa",
+        "teamName": "Iowa",
+        "shortName": "Iowa",
+        "fullName": "Iowa Hawkeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 37,
+          "population": 13955436,
+          "areaSqMi": 13677.86
+        }
+      },
+      {
+        "teamId": "tcu",
+        "teamName": "TCU",
+        "shortName": "TCU",
+        "fullName": "TCU Horned Frogs",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 18,
+          "population": 2849209,
+          "areaSqMi": 13572.11
+        }
+      },
+      {
+        "teamId": "navy",
+        "teamName": "Navy",
+        "shortName": "Navy",
+        "fullName": "Navy Midshipmen",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
+        }
+      },
+      {
+        "teamId": "memphis",
+        "teamName": "Memphis",
+        "shortName": "Memphis",
+        "fullName": "Memphis Tigers",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 20,
+          "population": 1667912,
+          "areaSqMi": 11171.88
+        }
+      },
+      {
+        "teamId": "cincinnati",
+        "teamName": "Cincinnati",
+        "shortName": "Cincinnati",
+        "fullName": "Cincinnati Bearcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 16,
+          "population": 827783,
+          "areaSqMi": 7192.69
+        }
+      },
+      {
+        "teamId": "georgia-southern",
+        "teamName": "Georgia Southern",
+        "shortName": "Georgia Southern",
+        "fullName": "Georgia Southern Eagles",
+        "conference": "Sun Belt",
+        "metrics": {
+          "counties": 15,
+          "population": 451462,
+          "areaSqMi": 5808.53
+        }
+      },
+      {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 10,
+          "population": 4341080,
+          "areaSqMi": 4809.11
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 116,
+          "population": 28100881,
+          "areaSqMi": 89146.65
+        }
+      },
+      {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 196,
+          "population": 19692476,
+          "areaSqMi": 104841.39
+        }
+      },
+      {
+        "teamId": "san-diego-state",
+        "teamName": "San Diego State",
+        "shortName": "San Diego State",
+        "fullName": "San Diego State Aztecs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
+        }
+      },
+      {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 91,
+          "population": 16834547,
+          "areaSqMi": 161352.3
+        }
+      },
+      {
+        "teamId": "iowa",
+        "teamName": "Iowa",
+        "shortName": "Iowa",
+        "fullName": "Iowa Hawkeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 37,
+          "population": 13955436,
+          "areaSqMi": 13677.86
+        }
+      },
+      {
+        "teamId": "maryland",
+        "teamName": "Maryland",
+        "shortName": "Maryland",
+        "fullName": "Maryland Terrapins",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 52,
+          "population": 12110296,
+          "areaSqMi": 24041.86
+        }
+      },
+      {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 111,
+          "population": 12007941,
+          "areaSqMi": 149545.94
+        }
+      },
+      {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
+        }
+      },
+      {
+        "teamId": "texas-tech",
+        "teamName": "Texas Tech",
+        "shortName": "Texas Tech",
+        "fullName": "Texas Tech Red Raiders",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 176,
+          "population": 10509676,
+          "areaSqMi": 300076.6
+        }
+      },
+      {
+        "teamId": "houston",
+        "teamName": "Houston",
+        "shortName": "Houston",
+        "fullName": "Houston Cougars",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 44,
+          "population": 10312630,
+          "areaSqMi": 34530.29
+        }
+      },
+      {
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 94,
+          "population": 9651387,
+          "areaSqMi": 46685.82
+        }
+      },
+      {
+        "teamId": "arizona-state",
+        "teamName": "Arizona State",
+        "shortName": "Arizona State",
+        "fullName": "Arizona State Sun Devils",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 39,
+          "population": 9188224,
+          "areaSqMi": 27413.42
+        }
+      },
+      {
+        "teamId": "missouri",
+        "teamName": "Missouri",
+        "shortName": "Missouri",
+        "fullName": "Missouri Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 104,
+          "population": 8611450,
+          "areaSqMi": 82976.38
+        }
+      },
+      {
+        "teamId": "kansas",
+        "teamName": "Kansas",
+        "shortName": "Kansas",
+        "fullName": "Kansas Jayhawks",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 70,
+          "population": 8329441,
+          "areaSqMi": 50349.86
+        }
+      },
+      {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 122,
+          "population": 7623354,
+          "areaSqMi": 48665.81
+        }
+      },
+      {
+        "teamId": "texas-a-m",
+        "teamName": "Texas A&M",
+        "shortName": "Texas A&M",
+        "fullName": "Texas A&M Aggies",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 98,
+          "population": 7358445,
+          "areaSqMi": 190484.39
+        }
+      },
+      {
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 119,
+          "population": 7343793,
+          "areaSqMi": 71531.45
+        }
+      },
+      {
+        "teamId": "georgia-tech",
+        "teamName": "Georgia Tech",
+        "shortName": "Georgia Tech",
+        "fullName": "Georgia Tech Yellow Jackets",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 46,
+          "population": 6927526,
+          "areaSqMi": 41427.81
+        }
+      },
+      {
+        "teamId": "mississippi-state",
+        "teamName": "Mississippi State",
+        "shortName": "Mississippi State",
+        "fullName": "Mississippi State Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 54,
+          "population": 6730001,
+          "areaSqMi": 94134.25
+        }
+      },
+      {
+        "teamId": "georgia",
+        "teamName": "Georgia",
+        "shortName": "Georgia",
+        "fullName": "Georgia Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 119,
+          "population": 6302743,
+          "areaSqMi": 61453.9
+        }
+      },
+      {
+        "teamId": "washington",
+        "teamName": "Washington",
+        "shortName": "Washington",
+        "fullName": "Washington Huskies",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 46,
+          "population": 5889712,
+          "areaSqMi": 68511.07
+        }
+      },
+      {
+        "teamId": "louisiana-tech",
+        "teamName": "Louisiana Tech",
+        "shortName": "Louisiana Tech",
+        "fullName": "Louisiana Tech Bulldogs",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
+        }
+      },
+      {
+        "teamId": "ucf",
+        "teamName": "UCF",
+        "shortName": "UCF",
+        "fullName": "UCF Knights",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 25,
+          "population": 5001368,
+          "areaSqMi": 17174.59
+        }
+      },
+      {
+        "teamId": "ohio-state",
+        "teamName": "Ohio State",
+        "shortName": "Ohio State",
+        "fullName": "Ohio State Buckeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 49,
+          "population": 4934562,
+          "areaSqMi": 27053.3
+        }
+      },
+      {
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
+        }
+      },
+      {
+        "teamId": "penn-state",
+        "teamName": "Penn State",
+        "shortName": "Penn State",
+        "fullName": "Penn State Nittany Lions",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 56,
+          "population": 4528353,
+          "areaSqMi": 95491.37
+        }
+      },
+      {
+        "teamId": "vanderbilt",
+        "teamName": "Vanderbilt",
+        "shortName": "Vanderbilt",
+        "fullName": "Vanderbilt Commodores",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 71,
+          "population": 4442237,
+          "areaSqMi": 34400.94
+        }
+      },
+      {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 10,
+          "population": 4341080,
+          "areaSqMi": 4809.11
+        }
+      },
+      {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 134,
+          "population": 4242471,
+          "areaSqMi": 88974.48
+        }
+      },
+      {
+        "teamId": "lsu",
+        "teamName": "LSU",
+        "shortName": "LSU",
+        "fullName": "LSU Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 77,
+          "population": 4083081,
+          "areaSqMi": 44820.57
+        }
+      },
+      {
+        "teamId": "iowa-state",
+        "teamName": "Iowa State",
+        "shortName": "Iowa State",
+        "fullName": "Iowa State Cyclones",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 148,
+          "population": 4036543,
+          "areaSqMi": 94072.99
+        }
+      },
+      {
+        "teamId": "navy",
+        "teamName": "Navy",
+        "shortName": "Navy",
+        "fullName": "Navy Midshipmen",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
+        }
+      },
+      {
+        "teamId": "arizona",
+        "teamName": "Arizona",
+        "shortName": "Arizona",
+        "fullName": "Arizona Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 11,
+          "population": 3349627,
+          "areaSqMi": 29926.4
+        }
+      },
+      {
+        "teamId": "tcu",
+        "teamName": "TCU",
+        "shortName": "TCU",
+        "fullName": "TCU Horned Frogs",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 18,
+          "population": 2849209,
+          "areaSqMi": 13572.11
+        }
+      },
+      {
+        "teamId": "umass",
+        "teamName": "UMass",
+        "shortName": "UMass",
+        "fullName": "UMass Minutemen",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 29,
+          "population": 2754025,
+          "areaSqMi": 21659.87
+        }
+      },
+      {
+        "teamId": "western-michigan",
+        "teamName": "Western Michigan",
+        "shortName": "Western Michigan",
+        "fullName": "Western Michigan Broncos",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 59,
+          "population": 2377378,
+          "areaSqMi": 29792.86
+        }
+      },
+      {
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 46,
+          "population": 2290292,
+          "areaSqMi": 17908.67
+        }
+      },
+      {
+        "teamId": "oregon",
+        "teamName": "Oregon",
+        "shortName": "Oregon",
+        "fullName": "Oregon Ducks",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 44,
+          "population": 2222708,
+          "areaSqMi": 76341.82
+        }
+      },
+      {
+        "teamId": "memphis",
+        "teamName": "Memphis",
+        "shortName": "Memphis",
+        "fullName": "Memphis Tigers",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 20,
+          "population": 1667912,
+          "areaSqMi": 11171.88
+        }
+      },
+      {
+        "teamId": "florida-state",
+        "teamName": "Florida State",
+        "shortName": "Florida State",
+        "fullName": "Florida State Seminoles",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 43,
+          "population": 1652741,
+          "areaSqMi": 24700.69
+        }
+      },
+      {
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 44,
+          "population": 1614154,
+          "areaSqMi": 20132.22
+        }
+      },
+      {
+        "teamId": "utah-state",
+        "teamName": "Utah State",
+        "shortName": "Utah State",
+        "fullName": "Utah State Aggies",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 47,
+          "population": 1490879,
+          "areaSqMi": 68951.8
+        }
+      },
+      {
+        "teamId": "cincinnati",
+        "teamName": "Cincinnati",
+        "shortName": "Cincinnati",
+        "fullName": "Cincinnati Bearcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 16,
+          "population": 827783,
+          "areaSqMi": 7192.69
+        }
+      },
+      {
+        "teamId": "byu",
+        "teamName": "BYU",
+        "shortName": "BYU",
+        "fullName": "BYU Cougars",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 18,
+          "population": 774606,
+          "areaSqMi": 62353.46
+        }
+      },
+      {
+        "teamId": "georgia-southern",
+        "teamName": "Georgia Southern",
+        "shortName": "Georgia Southern",
+        "fullName": "Georgia Southern Eagles",
+        "conference": "Sun Belt",
+        "metrics": {
+          "counties": 15,
+          "population": 451462,
+          "areaSqMi": 5808.53
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "san-diego-state",
+        "teamName": "San Diego State",
+        "shortName": "San Diego State",
+        "fullName": "San Diego State Aztecs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
+        }
+      },
+      {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 196,
+          "population": 19692476,
+          "areaSqMi": 104841.39
+        }
+      },
+      {
+        "teamId": "texas-tech",
+        "teamName": "Texas Tech",
+        "shortName": "Texas Tech",
+        "fullName": "Texas Tech Red Raiders",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 176,
+          "population": 10509676,
+          "areaSqMi": 300076.6
+        }
+      },
+      {
+        "teamId": "iowa-state",
+        "teamName": "Iowa State",
+        "shortName": "Iowa State",
+        "fullName": "Iowa State Cyclones",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 148,
+          "population": 4036543,
+          "areaSqMi": 94072.99
+        }
+      },
+      {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 134,
+          "population": 4242471,
+          "areaSqMi": 88974.48
+        }
+      },
+      {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 122,
+          "population": 7623354,
+          "areaSqMi": 48665.81
+        }
+      },
+      {
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 119,
+          "population": 7343793,
+          "areaSqMi": 71531.45
+        }
+      },
+      {
+        "teamId": "georgia",
+        "teamName": "Georgia",
+        "shortName": "Georgia",
+        "fullName": "Georgia Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 119,
+          "population": 6302743,
+          "areaSqMi": 61453.9
+        }
+      },
+      {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 116,
+          "population": 28100881,
+          "areaSqMi": 89146.65
+        }
+      },
+      {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 111,
+          "population": 12007941,
+          "areaSqMi": 149545.94
+        }
+      },
+      {
+        "teamId": "missouri",
+        "teamName": "Missouri",
+        "shortName": "Missouri",
+        "fullName": "Missouri Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 104,
+          "population": 8611450,
+          "areaSqMi": 82976.38
+        }
+      },
+      {
+        "teamId": "texas-a-m",
+        "teamName": "Texas A&M",
+        "shortName": "Texas A&M",
+        "fullName": "Texas A&M Aggies",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 98,
+          "population": 7358445,
+          "areaSqMi": 190484.39
+        }
+      },
+      {
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 94,
+          "population": 9651387,
+          "areaSqMi": 46685.82
+        }
+      },
+      {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 91,
+          "population": 16834547,
+          "areaSqMi": 161352.3
+        }
+      },
+      {
+        "teamId": "lsu",
+        "teamName": "LSU",
+        "shortName": "LSU",
+        "fullName": "LSU Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 77,
+          "population": 4083081,
+          "areaSqMi": 44820.57
+        }
+      },
+      {
+        "teamId": "louisiana-tech",
+        "teamName": "Louisiana Tech",
+        "shortName": "Louisiana Tech",
+        "fullName": "Louisiana Tech Bulldogs",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
+        }
+      },
+      {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
+        }
+      },
+      {
+        "teamId": "vanderbilt",
+        "teamName": "Vanderbilt",
+        "shortName": "Vanderbilt",
+        "fullName": "Vanderbilt Commodores",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 71,
+          "population": 4442237,
+          "areaSqMi": 34400.94
+        }
+      },
+      {
+        "teamId": "kansas",
+        "teamName": "Kansas",
+        "shortName": "Kansas",
+        "fullName": "Kansas Jayhawks",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 70,
+          "population": 8329441,
+          "areaSqMi": 50349.86
+        }
+      },
+      {
+        "teamId": "western-michigan",
+        "teamName": "Western Michigan",
+        "shortName": "Western Michigan",
+        "fullName": "Western Michigan Broncos",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 59,
+          "population": 2377378,
+          "areaSqMi": 29792.86
+        }
+      },
+      {
+        "teamId": "penn-state",
+        "teamName": "Penn State",
+        "shortName": "Penn State",
+        "fullName": "Penn State Nittany Lions",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 56,
+          "population": 4528353,
+          "areaSqMi": 95491.37
+        }
+      },
+      {
+        "teamId": "mississippi-state",
+        "teamName": "Mississippi State",
+        "shortName": "Mississippi State",
+        "fullName": "Mississippi State Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 54,
+          "population": 6730001,
+          "areaSqMi": 94134.25
+        }
+      },
+      {
+        "teamId": "maryland",
+        "teamName": "Maryland",
+        "shortName": "Maryland",
+        "fullName": "Maryland Terrapins",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 52,
+          "population": 12110296,
+          "areaSqMi": 24041.86
+        }
+      },
+      {
+        "teamId": "ohio-state",
+        "teamName": "Ohio State",
+        "shortName": "Ohio State",
+        "fullName": "Ohio State Buckeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 49,
+          "population": 4934562,
+          "areaSqMi": 27053.3
+        }
+      },
+      {
+        "teamId": "utah-state",
+        "teamName": "Utah State",
+        "shortName": "Utah State",
+        "fullName": "Utah State Aggies",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 47,
+          "population": 1490879,
+          "areaSqMi": 68951.8
+        }
+      },
+      {
+        "teamId": "georgia-tech",
+        "teamName": "Georgia Tech",
+        "shortName": "Georgia Tech",
+        "fullName": "Georgia Tech Yellow Jackets",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 46,
+          "population": 6927526,
+          "areaSqMi": 41427.81
+        }
+      },
+      {
+        "teamId": "washington",
+        "teamName": "Washington",
+        "shortName": "Washington",
+        "fullName": "Washington Huskies",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 46,
+          "population": 5889712,
+          "areaSqMi": 68511.07
+        }
+      },
+      {
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 46,
+          "population": 2290292,
+          "areaSqMi": 17908.67
+        }
+      },
+      {
+        "teamId": "houston",
+        "teamName": "Houston",
+        "shortName": "Houston",
+        "fullName": "Houston Cougars",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 44,
+          "population": 10312630,
+          "areaSqMi": 34530.29
+        }
+      },
+      {
+        "teamId": "oregon",
+        "teamName": "Oregon",
+        "shortName": "Oregon",
+        "fullName": "Oregon Ducks",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 44,
+          "population": 2222708,
+          "areaSqMi": 76341.82
+        }
+      },
+      {
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 44,
+          "population": 1614154,
+          "areaSqMi": 20132.22
+        }
+      },
+      {
+        "teamId": "florida-state",
+        "teamName": "Florida State",
+        "shortName": "Florida State",
+        "fullName": "Florida State Seminoles",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 43,
+          "population": 1652741,
+          "areaSqMi": 24700.69
+        }
+      },
+      {
+        "teamId": "arizona-state",
+        "teamName": "Arizona State",
+        "shortName": "Arizona State",
+        "fullName": "Arizona State Sun Devils",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 39,
+          "population": 9188224,
+          "areaSqMi": 27413.42
+        }
+      },
+      {
+        "teamId": "iowa",
+        "teamName": "Iowa",
+        "shortName": "Iowa",
+        "fullName": "Iowa Hawkeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 37,
+          "population": 13955436,
+          "areaSqMi": 13677.86
+        }
+      },
+      {
+        "teamId": "umass",
+        "teamName": "UMass",
+        "shortName": "UMass",
+        "fullName": "UMass Minutemen",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 29,
+          "population": 2754025,
+          "areaSqMi": 21659.87
+        }
+      },
+      {
+        "teamId": "ucf",
+        "teamName": "UCF",
+        "shortName": "UCF",
+        "fullName": "UCF Knights",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 25,
+          "population": 5001368,
+          "areaSqMi": 17174.59
+        }
+      },
+      {
+        "teamId": "navy",
+        "teamName": "Navy",
+        "shortName": "Navy",
+        "fullName": "Navy Midshipmen",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
+        }
+      },
+      {
+        "teamId": "memphis",
+        "teamName": "Memphis",
+        "shortName": "Memphis",
+        "fullName": "Memphis Tigers",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 20,
+          "population": 1667912,
+          "areaSqMi": 11171.88
+        }
+      },
+      {
+        "teamId": "tcu",
+        "teamName": "TCU",
+        "shortName": "TCU",
+        "fullName": "TCU Horned Frogs",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 18,
+          "population": 2849209,
+          "areaSqMi": 13572.11
+        }
+      },
+      {
+        "teamId": "byu",
+        "teamName": "BYU",
+        "shortName": "BYU",
+        "fullName": "BYU Cougars",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 18,
+          "population": 774606,
+          "areaSqMi": 62353.46
+        }
+      },
+      {
+        "teamId": "cincinnati",
+        "teamName": "Cincinnati",
+        "shortName": "Cincinnati",
+        "fullName": "Cincinnati Bearcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 16,
+          "population": 827783,
+          "areaSqMi": 7192.69
+        }
+      },
+      {
+        "teamId": "georgia-southern",
+        "teamName": "Georgia Southern",
+        "shortName": "Georgia Southern",
+        "fullName": "Georgia Southern Eagles",
+        "conference": "Sun Belt",
+        "metrics": {
+          "counties": 15,
+          "population": 451462,
+          "areaSqMi": 5808.53
+        }
+      },
+      {
+        "teamId": "arizona",
+        "teamName": "Arizona",
+        "shortName": "Arizona",
+        "fullName": "Arizona Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 11,
+          "population": 3349627,
+          "areaSqMi": 29926.4
+        }
+      },
+      {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 10,
+          "population": 4341080,
+          "areaSqMi": 4809.11
+        }
+      },
+      {
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 938,
+          "population": 29697297,
+          "areaSqMi": 622821.39
+        }
+      },
+      {
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 658,
+          "population": 67559709,
+          "areaSqMi": 326800.74
+        }
+      },
+      {
+        "teamId": "texas-tech",
+        "teamName": "Texas Tech",
+        "shortName": "Texas Tech",
+        "fullName": "Texas Tech Red Raiders",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 623,
+          "population": 44126082,
+          "areaSqMi": 1409291.89
+        }
+      },
+      {
+        "teamId": "kansas",
+        "teamName": "Kansas",
+        "shortName": "Kansas",
+        "fullName": "Kansas Jayhawks",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 448,
+          "population": 35164051,
+          "areaSqMi": 290584.64
+        }
+      },
+      {
+        "teamId": "western-michigan",
+        "teamName": "Western Michigan",
+        "shortName": "Western Michigan",
+        "fullName": "Western Michigan Broncos",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 413,
+          "population": 16641646,
+          "areaSqMi": 208549.99
+        }
+      },
+      {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 371,
+          "population": 82744676,
+          "areaSqMi": 368210.91
+        }
+      },
+      {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 350,
+          "population": 18783730,
+          "areaSqMi": 195066.77
+        }
+      },
+      {
+        "teamId": "iowa",
+        "teamName": "Iowa",
+        "shortName": "Iowa",
+        "fullName": "Iowa Hawkeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 259,
+          "population": 97688052,
+          "areaSqMi": 95745.03
+        }
+      },
+      {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 238,
+          "population": 11724286,
+          "areaSqMi": 154560.69
+        }
+      },
+      {
+        "teamId": "san-diego-state",
+        "teamName": "San Diego State",
+        "shortName": "San Diego State",
+        "fullName": "San Diego State Aztecs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
+        }
+      },
+      {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 210,
+          "population": 86488290,
+          "areaSqMi": 146280.02
+        }
+      },
+      {
+        "teamId": "arizona-state",
+        "teamName": "Arizona State",
+        "shortName": "Arizona State",
+        "fullName": "Arizona State Sun Devils",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 161,
+          "population": 31510458,
+          "areaSqMi": 108437.87
+        }
+      },
+      {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 133,
+          "population": 56069041,
+          "areaSqMi": 73620.19
+        }
+      },
+      {
+        "teamId": "ucf",
+        "teamName": "UCF",
+        "shortName": "UCF",
+        "fullName": "UCF Knights",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 102,
+          "population": 16672938,
+          "areaSqMi": 50597.18
+        }
+      },
+      {
+        "teamId": "louisiana-tech",
+        "teamName": "Louisiana Tech",
+        "shortName": "Louisiana Tech",
+        "fullName": "Louisiana Tech Bulldogs",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 48,
+          "population": 4299348,
+          "areaSqMi": 20537.82
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "nebraska",
+        "teamName": "Nebraska",
+        "shortName": "Nebraska",
+        "fullName": "Nebraska Cornhuskers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 938,
+          "population": 29697297,
+          "areaSqMi": 622821.39
+        }
+      },
+      {
+        "teamId": "nc-state",
+        "teamName": "NC State",
+        "shortName": "NC State",
+        "fullName": "NC State Wolfpack",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 658,
+          "population": 67559709,
+          "areaSqMi": 326800.74
+        }
+      },
+      {
+        "teamId": "utah",
+        "teamName": "Utah",
+        "shortName": "Utah",
+        "fullName": "Utah Utes",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 623,
+          "population": 44126082,
+          "areaSqMi": 1409291.89
+        }
+      },
+      {
+        "teamId": "west-virginia",
+        "teamName": "West Virginia",
+        "shortName": "West Virginia",
+        "fullName": "West Virginia Mountaineers",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 448,
+          "population": 35164051,
+          "areaSqMi": 290584.64
+        }
+      },
+      {
+        "teamId": "toledo",
+        "teamName": "Toledo",
+        "shortName": "Toledo",
+        "fullName": "Toledo Rockets",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 413,
+          "population": 16641646,
+          "areaSqMi": 208549.99
+        }
+      },
+      {
+        "teamId": "michigan-state",
+        "teamName": "Michigan State",
+        "shortName": "Michigan State",
+        "fullName": "Michigan State Spartans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 371,
+          "population": 82744676,
+          "areaSqMi": 368210.91
+        }
+      },
+      {
+        "teamId": "illinois",
+        "teamName": "Illinois",
+        "shortName": "Illinois",
+        "fullName": "Illinois Fighting Illini",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 350,
+          "population": 18783730,
+          "areaSqMi": 195066.77
+        }
+      },
+      {
+        "teamId": "rutgers",
+        "teamName": "Rutgers",
+        "shortName": "Rutgers",
+        "fullName": "Rutgers Scarlet Knights",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 259,
+          "population": 97688052,
+          "areaSqMi": 95745.03
+        }
+      },
+      {
+        "teamId": "auburn",
+        "teamName": "Auburn",
+        "shortName": "Auburn",
+        "fullName": "Auburn Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 238,
+          "population": 11724286,
+          "areaSqMi": 154560.69
+        }
+      },
+      {
+        "teamId": "california",
+        "teamName": "California",
+        "shortName": "California",
+        "fullName": "California Golden Bears",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
+        }
+      },
+      {
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 210,
+          "population": 86488290,
+          "areaSqMi": 146280.02
+        }
+      },
+      {
+        "teamId": "baylor",
+        "teamName": "Baylor",
+        "shortName": "Baylor",
+        "fullName": "Baylor Bears",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 161,
+          "population": 31510458,
+          "areaSqMi": 108437.87
+        }
+      },
+      {
+        "teamId": "army",
+        "teamName": "Army",
+        "shortName": "Army",
+        "fullName": "Army Black Knights",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 133,
+          "population": 56069041,
+          "areaSqMi": 73620.19
+        }
+      },
+      {
+        "teamId": "north-carolina",
+        "teamName": "North Carolina",
+        "shortName": "North Carolina",
+        "fullName": "North Carolina Tar Heels",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 102,
+          "population": 16672938,
+          "areaSqMi": 50597.18
+        }
+      },
+      {
+        "teamId": "southern-miss",
+        "teamName": "Southern Miss",
+        "shortName": "Southern Miss",
+        "fullName": "Southern Miss Golden Eagles",
+        "conference": "Sun Belt",
+        "metrics": {
+          "counties": 48,
+          "population": 4299348,
+          "areaSqMi": 20537.82
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 45,
+    "countyCount": 3114
+  }
+}

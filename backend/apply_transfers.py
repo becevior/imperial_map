@@ -10,6 +10,7 @@ from typing import Dict, Iterable, List, Optional
 from lib import db
 from lib.game_engine import process_game_result
 from lib.region_calculator import calculate_territory_logos
+from lib.leaderboard_calculator import generate_leaderboard, load_county_stats
 
 
 def load_games_timeline(season: int) -> List[Dict]:
@@ -186,6 +187,7 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
     # Load teams and baseline centroids for territory logo calculation
     teams = db.load_teams()
     baseline_centroids = db.load_json('territory-centroids.json')
+    county_stats = load_county_stats()
 
     timeline = load_games_timeline(args.season)
     if args.max_week_index is not None:
@@ -197,15 +199,15 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
 
     baseline_label = f'{args.season} Baseline (Preseason)'
 
-    season_weeks: List[Dict] = [
-        {
-            'weekIndex': 0,
-            'week': 0,
-            'seasonType': 'baseline',
-            'label': baseline_label,
-            'path': f'/data/ownership/{args.season}/week-00.json',
-        }
-    ]
+    baseline_week_entry = {
+        'weekIndex': 0,
+        'week': 0,
+        'seasonType': 'baseline',
+        'label': baseline_label,
+        'path': f'/data/ownership/{args.season}/week-00.json',
+    }
+
+    season_weeks: List[Dict] = [baseline_week_entry]
 
     if not args.dry_run:
         save_weekly_ownership(args.season, 0, ownership)
@@ -214,6 +216,16 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
         logos = calculate_territory_logos(baseline_ownership, ownership, teams, baseline_centroids)
         save_weekly_logos(args.season, 0, logos)
         print(f"  ✓ Saved {len(logos)} territory logo markers")
+
+        # Generate baseline leaderboards
+        generate_leaderboard(
+            args.season,
+            baseline_week_entry,
+            ownership,
+            teams,
+            county_stats,
+            [],
+        )
 
     existing_transfers = load_existing_transfers()
     new_transfers: List[Dict] = []
@@ -230,12 +242,15 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
             args.verbose,
         )
         weekly_summaries.append(summary)
+        summary_week_entry = {
+            'weekIndex': week_entry.get('weekIndex'),
+            'week': week_entry.get('week'),
+            'seasonType': week_entry.get('seasonType'),
+            'label': week_entry.get('label'),
+        }
         season_weeks.append(
             {
-                'weekIndex': week_entry.get('weekIndex'),
-                'week': week_entry.get('week'),
-                'seasonType': week_entry.get('seasonType'),
-                'label': week_entry.get('label'),
+                **summary_week_entry,
                 'path': f"/data/ownership/{args.season}/week-{int(week_entry.get('weekIndex')):02d}.json",
             }
         )
@@ -249,6 +264,16 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
             logos = calculate_territory_logos(baseline_ownership, ownership, teams, baseline_centroids)
             save_weekly_logos(args.season, week_idx, logos)
             print(f"  ✓ Saved {len(logos)} territory logo markers")
+
+            transfers_for_week = summary.get('transfers') or []
+            generate_leaderboard(
+                args.season,
+                {**summary_week_entry, 'weekIndex': week_idx},
+                ownership,
+                teams,
+                county_stats,
+                transfers_for_week,
+            )
 
         transfers = summary.get('transfers') or []
         new_transfers.extend(transfers)

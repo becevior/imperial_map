@@ -3,6 +3,7 @@
 import { ChangeEvent, useEffect, useRef, useState } from 'react'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
+import type { LeaderboardWeekInfo } from '@/types/leaderboards'
 
 interface Team {
   id: string
@@ -20,6 +21,7 @@ interface Team {
 
 interface MapProps {
   className?: string
+  onWeekChange?: (info: LeaderboardWeekInfo) => void
 }
 
 const DEFAULT_FILL_COLOR = '#2d2d2d'
@@ -198,7 +200,7 @@ interface OwnershipIndexPayload {
   seasons: OwnershipIndexSeason[]
 }
 
-export default function Map({ className = '' }: MapProps) {
+export default function Map({ className = '', onWeekChange }: MapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const markersRef = useRef<maplibregl.Marker[]>([])
@@ -902,9 +904,8 @@ export default function Map({ className = '' }: MapProps) {
               ownerValue.textContent =
                 ownerTeam?.fullName || ownerTeam?.name || ownerId || 'Unclaimed'
               ownerValue.style.whiteSpace = 'nowrap'
-              ownerValue.style.color = ownerId
-                ? teamColors[ownerId] ?? '#0f172a'
-                : '#475569'
+              // Keep popup text legible even when the fill color is very light
+              ownerValue.style.color = '#111827'
               ownerValue.style.fontWeight = weekIdx === weekIndexValue ? '600' : '500'
 
               item.appendChild(weekLabel)
@@ -949,6 +950,28 @@ export default function Map({ className = '' }: MapProps) {
   useEffect(() => {
     selectedWeekIndexRef.current = selectedWeekIndex
   }, [selectedWeekIndex])
+
+  useEffect(() => {
+    if (!onWeekChange) {
+      return
+    }
+
+    const info: LeaderboardWeekInfo = {
+      season: selectedSeason,
+      weekIndex: selectedWeekIndex,
+      weekLabel: currentWeekLabel,
+      seasonType: null
+    }
+
+    if (selectedSeason !== null && selectedWeekIndex !== null) {
+      const season = seasonOptions.find((entry) => entry.season === selectedSeason)
+      const week = season?.weeks.find((entry) => entry.weekIndex === selectedWeekIndex)
+      info.weekLabel = week?.label ?? currentWeekLabel ?? `Week ${selectedWeekIndex}`
+      info.seasonType = week?.seasonType ?? null
+    }
+
+    onWeekChange(info)
+  }, [onWeekChange, seasonOptions, selectedSeason, selectedWeekIndex, currentWeekLabel])
 
   useEffect(() => {
     if (!seasonOptions.length || selectedSeason === null || selectedWeekIndex === null) {

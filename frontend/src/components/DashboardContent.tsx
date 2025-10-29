@@ -1,0 +1,257 @@
+'use client'
+
+import { Fragment, useCallback, useMemo, useRef, useState } from 'react'
+
+import Map from '@/components/Map'
+import type {
+  LeaderboardEntry,
+  LeaderboardMetrics,
+  LeaderboardsPayload,
+  LeaderboardWeekInfo
+} from '@/types/leaderboards'
+
+const numberFormatter = new Intl.NumberFormat('en-US')
+const shortNumberFormatter = new Intl.NumberFormat('en-US', {
+  maximumFractionDigits: 0
+})
+
+function formatMetric(metric: keyof LeaderboardMetrics, value: number): string {
+  if (metric === 'areaSqMi') {
+    return `${shortNumberFormatter.format(value)} sq mi`
+  }
+
+  return numberFormatter.format(value)
+}
+
+function describeMetrics(
+  metrics: LeaderboardMetrics,
+  omit: keyof LeaderboardMetrics
+): string {
+  const pieces: string[] = []
+
+  if (omit !== 'counties') {
+    pieces.push(`Counties: ${numberFormatter.format(metrics.counties)}`)
+  }
+
+  if (omit !== 'population') {
+    pieces.push(`Population: ${numberFormatter.format(metrics.population)}`)
+  }
+
+  if (omit !== 'areaSqMi') {
+    pieces.push(`Area: ${shortNumberFormatter.format(metrics.areaSqMi)} sq mi`)
+  }
+
+  return pieces.join(' · ')
+}
+
+function renderLeaderboard(
+  title: string,
+  entries: LeaderboardEntry[] | undefined,
+  primaryMetric: keyof LeaderboardMetrics,
+  primaryLabel: string,
+  omit: keyof LeaderboardMetrics
+) {
+  const safeEntries = Array.isArray(entries) ? entries : []
+
+  return (
+    <div className="bg-white rounded-lg shadow-lg p-4">
+      <h3 className="text-lg font-semibold text-gray-900 mb-3">{title}</h3>
+      {safeEntries.length === 0 ? (
+        <p className="text-sm text-gray-500">No data recorded for this selection.</p>
+      ) : (
+        <div className="max-h-80 overflow-y-auto pr-1">
+          <ol className="divide-y divide-gray-100">
+            {safeEntries.map((entry, index) => (
+              <li key={entry.teamId} className="py-3 first:pt-0 last:pb-0">
+                <div className="flex items-baseline justify-between gap-4 text-sm sm:text-base">
+                  <span className="font-medium text-gray-900">
+                    {index + 1}. {entry.teamName}
+                    {entry.conference ? (
+                      <span className="ml-2 text-xs text-gray-400">{entry.conference}</span>
+                    ) : null}
+                  </span>
+                  <span className="font-semibold text-gray-800">
+                    {formatMetric(primaryMetric, entry.metrics[primaryMetric])}{' '}
+                    <span className="text-xs text-gray-500">{primaryLabel}</span>
+                  </span>
+                </div>
+                <p className="text-xs text-gray-500 mt-1">
+                  {describeMetrics(entry.metrics, omit)}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function buildLeaderboardPath(season: number, weekIndex: number): string {
+  const paddedWeek = String(weekIndex).padStart(2, '0')
+  return `/data/leaderboards/${season}/week-${paddedWeek}.json`
+}
+
+interface DashboardContentProps {
+  initialLeaderboards: LeaderboardsPayload | null
+}
+
+export default function DashboardContent({
+  initialLeaderboards
+}: DashboardContentProps) {
+  const [leaderboards, setLeaderboards] = useState<LeaderboardsPayload | null>(
+    initialLeaderboards
+  )
+  const [activeWeekLabel, setActiveWeekLabel] = useState<string>(
+    initialLeaderboards?.weekLabel ??
+      (typeof initialLeaderboards?.weekIndex === 'number'
+        ? `Week ${initialLeaderboards.weekIndex}`
+        : 'Baseline')
+  )
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  const lastLoadedKeyRef = useRef<string | null>(
+    initialLeaderboards && typeof initialLeaderboards.weekIndex === 'number'
+      ? `${initialLeaderboards.season}-${initialLeaderboards.weekIndex}`
+      : null
+  )
+
+  const handleWeekChange = useCallback(
+    async ({ season, weekIndex, weekLabel }: LeaderboardWeekInfo) => {
+      const resolvedLabel =
+        weekLabel ?? (typeof weekIndex === 'number' ? `Week ${weekIndex}` : 'Baseline')
+      setActiveWeekLabel(resolvedLabel)
+
+      if (typeof season !== 'number' || typeof weekIndex !== 'number') {
+        setLeaderboards(null)
+        setError('Select a completed week to view leaderboards.')
+        return
+      }
+
+      const key = `${season}-${weekIndex}`
+      if (lastLoadedKeyRef.current === key && leaderboards) {
+        setError(null)
+        return
+      }
+
+      setLoading(true)
+      setError(null)
+
+      try {
+        const path = buildLeaderboardPath(season, weekIndex)
+        const response = await fetch(path, { cache: 'no-store' })
+
+        if (!response.ok) {
+          if (response.status === 404) {
+            setLeaderboards(null)
+            setError('Leaderboard data has not been generated for this week yet.')
+            return
+          }
+
+          throw new Error(`Failed to fetch leaderboard: ${response.status}`)
+        }
+
+        const payload: LeaderboardsPayload = await response.json()
+        setLeaderboards(payload)
+        lastLoadedKeyRef.current = key
+      } catch (fetchError) {
+        console.error(fetchError)
+        setLeaderboards(null)
+        setError('Could not load leaderboard data for this week.')
+      } finally {
+        setLoading(false)
+      }
+    },
+    [leaderboards]
+  )
+
+  const cards = useMemo(
+    () => [
+      {
+        title: 'Most Territory Gained (Counties)',
+        data: leaderboards?.leaderboards?.territoryGained,
+        metric: 'counties' as const,
+        label: 'counties',
+        omit: 'counties' as const
+      },
+      {
+        title: 'Most Territory Lost (Counties)',
+        data: leaderboards?.leaderboards?.territoryLost,
+        metric: 'counties' as const,
+        label: 'counties',
+        omit: 'counties' as const
+      },
+      {
+        title: 'Most Territory Owned (Area)',
+        data: leaderboards?.leaderboards?.territoryOwned,
+        metric: 'areaSqMi' as const,
+        label: 'sq mi',
+        omit: 'areaSqMi' as const
+      },
+      {
+        title: 'Most Population Controlled',
+        data: leaderboards?.leaderboards?.populationControlled,
+        metric: 'population' as const,
+        label: 'people',
+        omit: 'population' as const
+      },
+      {
+        title: 'Most Counties Owned',
+        data: leaderboards?.leaderboards?.countiesOwned,
+        metric: 'counties' as const,
+        label: 'counties',
+        omit: 'counties' as const
+      }
+    ],
+    [leaderboards]
+  )
+
+  return (
+    <>
+      <div className="bg-white rounded-lg shadow-lg p-6">
+        <Map className="min-h-[600px]" onWeekChange={handleWeekChange} />
+      </div>
+
+      <section className="mt-10">
+        <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-4">
+          <h2 className="text-2xl font-semibold text-gray-900">
+            Weekly Leaderboards
+          </h2>
+          <p className="text-sm text-gray-500">
+            {activeWeekLabel}
+            {leaderboards?.season ? ` · Season ${leaderboards.season}` : ''}
+          </p>
+        </div>
+
+        {loading ? (
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center text-sm text-gray-500">
+            Loading leaderboard data…
+          </div>
+        ) : error ? (
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center text-sm text-gray-500">
+            {error}
+          </div>
+        ) : leaderboards?.leaderboards ? (
+          <div className="grid gap-6 md:grid-cols-2">
+            {cards.map((card) => (
+              <Fragment key={card.title}>
+                {renderLeaderboard(
+                  card.title,
+                  card.data,
+                  card.metric,
+                  card.label,
+                  card.omit
+                )}
+              </Fragment>
+            ))}
+          </div>
+        ) : (
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center text-sm text-gray-500">
+            Leaderboard data is not available for this selection yet.
+          </div>
+        )}
+      </section>
+    </>
+  )
+}

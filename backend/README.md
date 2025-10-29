@@ -75,6 +75,16 @@ python apply_transfers.py --season 2025
 
 **Use `--dry-run`** to preview changes without modifying files.
 
+### `sync_teams.py` - Regenerate Team Metadata
+
+Keeps `frontend/public/data/teams.json` in sync with the canonical CSV (`backend/data/team_locs.csv`). Run this after editing the CSV.
+
+```bash
+python sync_teams.py
+```
+
+This script only rewrites `teams.json`; downstream artifacts (logo colors, ownership snapshots, etc.) remain untouched until you explicitly regenerate them.
+
 ## Library Modules
 
 ### `lib/territory.py`
@@ -122,6 +132,8 @@ frontend/public/data/
 ├── territory-centroids/         # (optional) Individual centroid files
 └── transfers.json               # Complete transfer history log
 ```
+
+> **Note:** Edit team details in `backend/data/team_locs.csv` only. After changes, run `python sync_teams.py` (or `python setup.py`) to regenerate `teams.json`. Avoid hand-editing the JSON file; it will be overwritten by the next regeneration.
 
 ## Workflow
 

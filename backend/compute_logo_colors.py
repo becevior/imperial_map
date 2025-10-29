@@ -246,7 +246,13 @@ def main() -> int:
             if secondary_hex and secondary_lab:
                 secondary_delta = _delta_e(secondary_lab, logo_lab)
 
-            if secondary_hex and secondary_delta is not None and secondary_delta > primary_delta:
+        # Prefer whichever palette option is farther from the logo color so
+        # markers stay legible against the logo graphic.
+        # However, avoid very light colors (L > 90) as they appear washed out on the map.
+        if secondary_hex and secondary_delta is not None and secondary_delta > primary_delta:
+            secondary_lightness = secondary_lab[0] if secondary_lab else 0
+            # Only use secondary if it's not too light (avoid white/near-white fills)
+            if secondary_lightness <= 90:
                 fill_hex = secondary_hex
 
         fills[team_id] = _sanitize_hex(fill_hex) or primary_hex

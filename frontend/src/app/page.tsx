@@ -1,6 +1,29 @@
-import Map from '@/components/Map'
+import fs from 'fs/promises'
+import path from 'path'
 
-export default function Home() {
+import DashboardContent from '@/components/DashboardContent'
+import type { LeaderboardsPayload } from '@/types/leaderboards'
+
+async function loadLeaderboards(): Promise<LeaderboardsPayload | null> {
+  const filePath = path.join(
+    process.cwd(),
+    'public',
+    'data',
+    'leaderboards',
+    'latest.json'
+  )
+  try {
+    const fileContents = await fs.readFile(filePath, 'utf-8')
+    return JSON.parse(fileContents)
+  } catch (error) {
+    console.warn('Leaderboards data unavailable:', error)
+    return null
+  }
+}
+
+export default async function Home() {
+  const leaderboards = await loadLeaderboards()
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-100 to-white">
       <div className="container mx-auto px-4 py-8">
@@ -12,12 +35,10 @@ export default function Home() {
             Interactive territory map showing college football imperial conquests
           </p>
         </header>
-        
-        <div className="bg-white rounded-lg shadow-lg p-6">
-          <Map className="h-96" />
-        </div>
-        
-        <footer className="mt-8 text-center text-sm text-gray-500">
+
+        <DashboardContent initialLeaderboards={leaderboards} />
+
+        <footer className="mt-10 text-center text-sm text-gray-500">
           <p>Built with Next.js, MapLibre GL JS, and real-time college football data</p>
         </footer>
       </div>
