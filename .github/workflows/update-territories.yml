@@ -27,6 +27,9 @@ env:
 jobs:
   update-territories:
     runs-on: ubuntu-latest
+    env:
+      EFFECTIVE_SEASON: ${{ inputs.season || env.SEASON }}
+      FORCE_UPDATE_INPUT: ${{ inputs.force_update || 'false' }}
     permissions:
       contents: write  # Allow pushing commits
 
@@ -71,22 +74,22 @@ jobs:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: |
           cd backend
-          echo "🏈 Fetching game results for season ${{ github.event.inputs.season || env.SEASON }}..."
-          python ingest_games.py --season ${{ github.event.inputs.season || env.SEASON }} --season-type both
+          echo "🏈 Fetching game results for season $EFFECTIVE_SEASON..."
+          python ingest_games.py --season $EFFECTIVE_SEASON --season-type both
           echo "✓ Game results ingested"
 
       - name: Apply territory transfers
         run: |
           cd backend
           echo "🗺️  Applying territory transfers..."
-          python apply_transfers.py --season ${{ github.event.inputs.season || env.SEASON }}
+          python apply_transfers.py --season $EFFECTIVE_SEASON
           echo "✓ Territory transfers applied"
 
       - name: Compute leaderboards
         run: |
           cd backend
           echo "🏆 Computing leaderboards..."
-          python compute_leaderboards.py --season ${{ github.event.inputs.season || env.SEASON }} || true
+          python compute_leaderboards.py --season $EFFECTIVE_SEASON || true
           echo "✓ Leaderboards computed"
 
       - name: Check for changes
@@ -101,10 +104,12 @@ jobs:
           fi
 
       - name: Commit and push changes
-        if: steps.check-changes.outputs.has_changes == 'true' || github.event.inputs.force_update == 'true'
+        if: >
+          steps.check-changes.outputs.has_changes == 'true' ||
+          (github.event_name == 'workflow_dispatch' && env.FORCE_UPDATE_INPUT == 'true')
         run: |
           # Get the current week number from the latest ownership file
-          LATEST_WEEK=$(ls -1 frontend/public/data/ownership/${{ github.event.inputs.season || env.SEASON }}/ 2>/dev/null | grep -E 'week-[0-9]+\.json$' | sort -V | tail -1 | grep -oP 'week-\K[0-9]+' || echo "unknown")
+          LATEST_WEEK=$(ls -1 frontend/public/data/ownership/${EFFECTIVE_SEASON}/ 2>/dev/null | grep -E 'week-[0-9]+\.json$' | sort -V | tail -1 | grep -oP 'week-\K[0-9]+' || echo "unknown")
 
           # Determine update frequency for commit message
           if [ "${{ steps.check-day.outputs.is_saturday }}" == "true" ]; then
@@ -115,16 +120,14 @@ jobs:
 
           git add frontend/public/data/
 
-          git commit -m "$(cat <<EOF
-Update territories for week ${LATEST_WEEK} (${FREQUENCY} update)
-
-- Ingested latest game results
-- Applied territory transfers
-- Updated leaderboards
-
-🤖 Automated update via GitHub Actions
-EOF
-)" || echo "No changes to commit"
+          git commit \
+            -m "Update territories for week ${LATEST_WEEK} (${FREQUENCY} update)" \
+            -m "- Ingested latest game results" \
+            -m "- Applied territory transfers" \
+            -m "- Updated leaderboards" \
+            -m "" \
+            -m "🤖 Automated update via GitHub Actions" 
+          || echo "No changes to commit"
 
           git push
 
@@ -134,7 +137,7 @@ EOF
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
           echo "Update Summary"
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          echo "Season: ${{ github.event.inputs.season || env.SEASON }}"
+          echo "Season: $EFFECTIVE_SEASON"
           echo "Day: $(date -u +%A)"
           echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
           echo "Saturday mode: ${{ steps.check-day.outputs.is_saturday }}"
