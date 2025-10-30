@@ -28,8 +28,8 @@ jobs:
   update-territories:
     runs-on: ubuntu-latest
     env:
-      EFFECTIVE_SEASON: ${{ inputs.season || env.SEASON }}
-      FORCE_UPDATE_INPUT: ${{ inputs.force_update || 'false' }}
+      EFFECTIVE_SEASON: ${{ github.event.inputs.season || env.SEASON }}
+      FORCE_UPDATE_INPUT: ${{ github.event.inputs.force_update || 'false' }}
     permissions:
       contents: write  # Allow pushing commits
 
