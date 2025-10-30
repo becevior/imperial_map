@@ -115,13 +115,16 @@ jobs:
 
           git add frontend/public/data/
 
-          git commit -m "Update territories for week ${LATEST_WEEK} (${FREQUENCY} update)
+          git commit -m "$(cat <<EOF
+Update territories for week ${LATEST_WEEK} (${FREQUENCY} update)
 
 - Ingested latest game results
 - Applied territory transfers
 - Updated leaderboards
 
-🤖 Automated update via GitHub Actions" || echo "No changes to commit"
+🤖 Automated update via GitHub Actions
+EOF
+)" || echo "No changes to commit"
 
           git push
 
