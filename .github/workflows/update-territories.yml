@@ -147,8 +147,8 @@ jobs:
             -m "- Applied territory transfers" \
             -m "- Updated leaderboards" \
             -m "" \
-            -m "🤖 Automated update via GitHub Actions" 
-          || echo "No changes to commit"
+            -m "🤖 Automated update via GitHub Actions" \
+            || echo "No changes to commit"
 
           git push
 
