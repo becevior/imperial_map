@@ -1,0 +1,144 @@
+name: Update Territories
+
+on:
+  # Scheduled updates
+  schedule:
+    # Hourly on Saturdays (UTC) - College football game days
+    - cron: '0 * * * 6'  # Every hour on Saturday
+    # Daily at 6 AM UTC (2 AM ET) on other days
+    - cron: '0 6 * * 0-5'  # Sunday-Friday at 6 AM UTC
+
+  # Allow manual trigger with season parameter
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'Season year (e.g., 2025)'
+        required: false
+        default: '2025'
+      force_update:
+        description: 'Force update even if no changes'
+        required: false
+        default: 'false'
+
+env:
+  SEASON: 2025
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  update-territories:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Allow pushing commits
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          cache-dependency-path: 'backend/requirements.txt'
+
+      - name: Install dependencies
+        run: |
+          cd backend
+          pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Check if it's Saturday (high activity day)
+        id: check-day
+        run: |
+          DAY=$(date -u +%u)  # 1-7, where 6 is Saturday
+          if [ "$DAY" -eq 6 ]; then
+            echo "is_saturday=true" >> $GITHUB_OUTPUT
+            echo "📅 Saturday detected - running hourly update"
+          else
+            echo "is_saturday=false" >> $GITHUB_OUTPUT
+            echo "📅 Weekday detected - running daily update"
+          fi
+
+      - name: Ingest game results
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: |
+          cd backend
+          echo "🏈 Fetching game results for season ${{ github.event.inputs.season || env.SEASON }}..."
+          python ingest_games.py --season ${{ github.event.inputs.season || env.SEASON }} --season-type both
+          echo "✓ Game results ingested"
+
+      - name: Apply territory transfers
+        run: |
+          cd backend
+          echo "🗺️  Applying territory transfers..."
+          python apply_transfers.py --season ${{ github.event.inputs.season || env.SEASON }}
+          echo "✓ Territory transfers applied"
+
+      - name: Compute leaderboards
+        run: |
+          cd backend
+          echo "🏆 Computing leaderboards..."
+          python compute_leaderboards.py --season ${{ github.event.inputs.season || env.SEASON }} || true
+          echo "✓ Leaderboards computed"
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if [ -n "$(git status --porcelain frontend/public/data/)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "📊 Changes detected in data files"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️  No changes to commit"
+          fi
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.has_changes == 'true' || github.event.inputs.force_update == 'true'
+        run: |
+          # Get the current week number from the latest ownership file
+          LATEST_WEEK=$(ls -1 frontend/public/data/ownership/${{ github.event.inputs.season || env.SEASON }}/ 2>/dev/null | grep -E 'week-[0-9]+\.json$' | sort -V | tail -1 | grep -oP 'week-\K[0-9]+' || echo "unknown")
+
+          # Determine update frequency for commit message
+          if [ "${{ steps.check-day.outputs.is_saturday }}" == "true" ]; then
+            FREQUENCY="hourly"
+          else
+            FREQUENCY="daily"
+          fi
+
+          git add frontend/public/data/
+
+          git commit -m "Update territories for week ${LATEST_WEEK} (${FREQUENCY} update)
+
+- Ingested latest game results
+- Applied territory transfers
+- Updated leaderboards
+
+🤖 Automated update via GitHub Actions" || echo "No changes to commit"
+
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Update Summary"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Season: ${{ github.event.inputs.season || env.SEASON }}"
+          echo "Day: $(date -u +%A)"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "Saturday mode: ${{ steps.check-day.outputs.is_saturday }}"
+          echo "Changes detected: ${{ steps.check-changes.outputs.has_changes }}"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::Territory update failed. Check workflow logs for details."

@@ -37,10 +37,6 @@ export default async function Home() {
         </header>
 
         <DashboardContent initialLeaderboards={leaderboards} />
-
-        <footer className="mt-10 text-center text-sm text-gray-500">
-          <p>Built with Next.js, MapLibre GL JS, and real-time college football data</p>
-        </footer>
       </div>
     </main>
   )
