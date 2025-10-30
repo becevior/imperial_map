@@ -4,7 +4,7 @@
   "week": 8,
   "seasonType": "regular",
   "weekLabel": "Regular Week 8",
-  "generatedAt": "2025-10-28T04:48:09.678618+00:00",
+  "generatedAt": "2025-10-30T04:12:51.230431+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -956,9 +956,9 @@
         "fullName": "Georgia Bulldogs",
         "conference": "SEC",
         "metrics": {
-          "counties": 1911,
-          "population": 166428899,
-          "areaSqMi": 1047633.69
+          "counties": 273,
+          "population": 23775557,
+          "areaSqMi": 149661.96
         }
       },
       {
@@ -968,9 +968,9 @@
         "fullName": "Arizona State Sun Devils",
         "conference": "Big 12",
         "metrics": {
-          "counties": 1540,
-          "population": 145756142,
-          "areaSqMi": 2342248.22
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
         }
       },
       {
@@ -980,9 +980,9 @@
         "fullName": "Notre Dame Fighting Irish",
         "conference": "Independent",
         "metrics": {
-          "counties": 938,
-          "population": 29697297,
-          "areaSqMi": 622821.39
+          "counties": 134,
+          "population": 4242471,
+          "areaSqMi": 88974.48
         }
       },
       {
@@ -992,9 +992,9 @@
         "fullName": "Georgia Tech Yellow Jackets",
         "conference": "ACC",
         "metrics": {
-          "counties": 658,
-          "population": 67559709,
-          "areaSqMi": 326800.74
+          "counties": 94,
+          "population": 9651387,
+          "areaSqMi": 46685.82
         }
       },
       {
@@ -1004,9 +1004,9 @@
         "fullName": "Louisville Cardinals",
         "conference": "ACC",
         "metrics": {
-          "counties": 518,
-          "population": 83729604,
-          "areaSqMi": 886566.96
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
         }
       },
       {
@@ -1016,9 +1016,9 @@
         "fullName": "BYU Cougars",
         "conference": "Big 12",
         "metrics": {
-          "counties": 399,
-          "population": 84262031,
-          "areaSqMi": 286898.74
+          "counties": 57,
+          "population": 12037433,
+          "areaSqMi": 40985.54
         }
       },
       {
@@ -1028,9 +1028,9 @@
         "fullName": "Alabama Crimson Tide",
         "conference": "SEC",
         "metrics": {
-          "counties": 378,
-          "population": 47110007,
-          "areaSqMi": 658939.72
+          "counties": 54,
+          "population": 6730001,
+          "areaSqMi": 94134.24
         }
       },
       {
@@ -1040,45 +1040,9 @@
         "fullName": "Michigan Wolverines",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 364,
-          "population": 84772072,
-          "areaSqMi": 168293.01
-        }
-      },
-      {
-        "teamId": "tcu",
-        "teamName": "TCU",
-        "shortName": "TCU",
-        "fullName": "TCU Horned Frogs",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 277,
-          "population": 51682514,
-          "areaSqMi": 170819.31
-        }
-      },
-      {
-        "teamId": "uab",
-        "teamName": "UAB",
-        "shortName": "UAB",
-        "fullName": "UAB Blazers",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 140,
-          "population": 11675384,
-          "areaSqMi": 78203.14
-        }
-      },
-      {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 63,
-          "population": 31857343,
-          "areaSqMi": 629781.08
+          "counties": 52,
+          "population": 12110296,
+          "areaSqMi": 24041.86
         }
       },
       {
@@ -1090,7 +1054,43 @@
         "metrics": {
           "counties": 44,
           "population": 1614154,
-          "areaSqMi": 20132.22
+          "areaSqMi": 20132.23
+        }
+      },
+      {
+        "teamId": "tcu",
+        "teamName": "TCU",
+        "shortName": "TCU",
+        "fullName": "TCU Horned Frogs",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 25,
+          "population": 5001368,
+          "areaSqMi": 17174.59
+        }
+      },
+      {
+        "teamId": "uab",
+        "teamName": "UAB",
+        "shortName": "UAB",
+        "fullName": "UAB Blazers",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 20,
+          "population": 1667912,
+          "areaSqMi": 11171.88
+        }
+      },
+      {
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
         }
       }
     ],
@@ -1102,9 +1102,9 @@
         "fullName": "Ole Miss Rebels",
         "conference": "SEC",
         "metrics": {
-          "counties": 1911,
-          "population": 166428899,
-          "areaSqMi": 1047633.69
+          "counties": 273,
+          "population": 23775557,
+          "areaSqMi": 149661.96
         }
       },
       {
@@ -1114,9 +1114,9 @@
         "fullName": "Texas Tech Red Raiders",
         "conference": "Big 12",
         "metrics": {
-          "counties": 1540,
-          "population": 145756142,
-          "areaSqMi": 2342248.22
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
         }
       },
       {
@@ -1126,9 +1126,9 @@
         "fullName": "USC Trojans",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 938,
-          "population": 29697297,
-          "areaSqMi": 622821.39
+          "counties": 134,
+          "population": 4242471,
+          "areaSqMi": 88974.48
         }
       },
       {
@@ -1138,9 +1138,9 @@
         "fullName": "Duke Blue Devils",
         "conference": "ACC",
         "metrics": {
-          "counties": 658,
-          "population": 67559709,
-          "areaSqMi": 326800.74
+          "counties": 94,
+          "population": 9651387,
+          "areaSqMi": 46685.82
         }
       },
       {
@@ -1150,9 +1150,9 @@
         "fullName": "Miami Hurricanes",
         "conference": "ACC",
         "metrics": {
-          "counties": 518,
-          "population": 83729604,
-          "areaSqMi": 886566.96
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
         }
       },
       {
@@ -1162,9 +1162,9 @@
         "fullName": "Utah Utes",
         "conference": "Big 12",
         "metrics": {
-          "counties": 399,
-          "population": 84262031,
-          "areaSqMi": 286898.74
+          "counties": 57,
+          "population": 12037433,
+          "areaSqMi": 40985.54
         }
       },
       {
@@ -1174,9 +1174,9 @@
         "fullName": "Tennessee Volunteers",
         "conference": "SEC",
         "metrics": {
-          "counties": 378,
-          "population": 47110007,
-          "areaSqMi": 658939.72
+          "counties": 54,
+          "population": 6730001,
+          "areaSqMi": 94134.24
         }
       },
       {
@@ -1186,45 +1186,9 @@
         "fullName": "Washington Huskies",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 364,
-          "population": 84772072,
-          "areaSqMi": 168293.01
-        }
-      },
-      {
-        "teamId": "baylor",
-        "teamName": "Baylor",
-        "shortName": "Baylor",
-        "fullName": "Baylor Bears",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 277,
-          "population": 51682514,
-          "areaSqMi": 170819.31
-        }
-      },
-      {
-        "teamId": "memphis",
-        "teamName": "Memphis",
-        "shortName": "Memphis",
-        "fullName": "Memphis Tigers",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 140,
-          "population": 11675384,
-          "areaSqMi": 78203.14
-        }
-      },
-      {
-        "teamId": "unlv",
-        "teamName": "UNLV",
-        "shortName": "UNLV",
-        "fullName": "UNLV Rebels",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 63,
-          "population": 31857343,
-          "areaSqMi": 629781.08
+          "counties": 52,
+          "population": 12110296,
+          "areaSqMi": 24041.86
         }
       },
       {
@@ -1236,7 +1200,43 @@
         "metrics": {
           "counties": 44,
           "population": 1614154,
-          "areaSqMi": 20132.22
+          "areaSqMi": 20132.23
+        }
+      },
+      {
+        "teamId": "baylor",
+        "teamName": "Baylor",
+        "shortName": "Baylor",
+        "fullName": "Baylor Bears",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 25,
+          "population": 5001368,
+          "areaSqMi": 17174.59
+        }
+      },
+      {
+        "teamId": "memphis",
+        "teamName": "Memphis",
+        "shortName": "Memphis",
+        "fullName": "Memphis Tigers",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 20,
+          "population": 1667912,
+          "areaSqMi": 11171.88
+        }
+      },
+      {
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
         }
       }
     ]

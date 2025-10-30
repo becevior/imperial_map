@@ -4,7 +4,7 @@
   "week": 5,
   "seasonType": "regular",
   "weekLabel": "Regular Week 5",
-  "generatedAt": "2025-10-28T04:48:09.577249+00:00",
+  "generatedAt": "2025-10-30T04:12:51.198780+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -1316,9 +1316,9 @@
         "fullName": "Alabama Crimson Tide",
         "conference": "SEC",
         "metrics": {
-          "counties": 833,
-          "population": 44119201,
-          "areaSqMi": 430177.31
+          "counties": 119,
+          "population": 6302743,
+          "areaSqMi": 61453.9
         }
       },
       {
@@ -1328,9 +1328,9 @@
         "fullName": "Illinois Fighting Illini",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 812,
-          "population": 196706167,
-          "areaSqMi": 624026.56
+          "counties": 116,
+          "population": 28100881,
+          "areaSqMi": 89146.65
         }
       },
       {
@@ -1340,21 +1340,9 @@
         "fullName": "Ole Miss Rebels",
         "conference": "SEC",
         "metrics": {
-          "counties": 539,
-          "population": 28581567,
-          "areaSqMi": 313744.0
-        }
-      },
-      {
-        "teamId": "ohio-state",
-        "teamName": "Ohio State",
-        "shortName": "Ohio State",
-        "fullName": "Ohio State Buckeyes",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 467,
-          "population": 41227984,
-          "areaSqMi": 479577.51
+          "counties": 77,
+          "population": 4083081,
+          "areaSqMi": 44820.57
         }
       },
       {
@@ -1364,9 +1352,9 @@
         "fullName": "Cincinnati Bearcats",
         "conference": "Big 12",
         "metrics": {
-          "counties": 448,
-          "population": 35164051,
-          "areaSqMi": 290584.64
+          "counties": 70,
+          "population": 8329441,
+          "areaSqMi": 50349.86
         }
       },
       {
@@ -1376,9 +1364,9 @@
         "fullName": "Oregon Ducks",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 392,
-          "population": 29993139,
-          "areaSqMi": 662048.11
+          "counties": 56,
+          "population": 4528353,
+          "areaSqMi": 95491.37
         }
       },
       {
@@ -1388,9 +1376,9 @@
         "fullName": "Tennessee Volunteers",
         "conference": "SEC",
         "metrics": {
-          "counties": 378,
-          "population": 47110007,
-          "areaSqMi": 658939.72
+          "counties": 54,
+          "population": 6730001,
+          "areaSqMi": 94134.24
         }
       },
       {
@@ -1400,9 +1388,21 @@
         "fullName": "Vanderbilt Commodores",
         "conference": "SEC",
         "metrics": {
-          "counties": 329,
-          "population": 10436153,
-          "areaSqMi": 482662.59
+          "counties": 47,
+          "population": 1490879,
+          "areaSqMi": 68951.8
+        }
+      },
+      {
+        "teamId": "ohio-state",
+        "teamName": "Ohio State",
+        "shortName": "Ohio State",
+        "fullName": "Ohio State Buckeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 46,
+          "population": 5889712,
+          "areaSqMi": 68511.07
         }
       },
       {
@@ -1412,21 +1412,9 @@
         "fullName": "Virginia Cavaliers",
         "conference": "ACC",
         "metrics": {
-          "counties": 301,
-          "population": 11569187,
-          "areaSqMi": 172904.82
-        }
-      },
-      {
-        "teamId": "kansas-state",
-        "teamName": "Kansas State",
-        "shortName": "Kansas State",
-        "fullName": "Kansas State Wildcats",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 277,
-          "population": 51682514,
-          "areaSqMi": 170819.31
+          "counties": 43,
+          "population": 1652741,
+          "areaSqMi": 24700.69
         }
       },
       {
@@ -1436,9 +1424,21 @@
         "fullName": "Indiana Hoosiers",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 259,
-          "population": 97688052,
-          "areaSqMi": 95745.03
+          "counties": 37,
+          "population": 13955436,
+          "areaSqMi": 13677.86
+        }
+      },
+      {
+        "teamId": "kansas-state",
+        "teamName": "Kansas State",
+        "shortName": "Kansas State",
+        "fullName": "Kansas State Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 25,
+          "population": 5001368,
+          "areaSqMi": 17174.59
         }
       },
       {
@@ -1448,9 +1448,9 @@
         "fullName": "Arizona State Sun Devils",
         "conference": "Big 12",
         "metrics": {
-          "counties": 126,
-          "population": 19944463,
-          "areaSqMi": 95004.8
+          "counties": 18,
+          "population": 2849209,
+          "areaSqMi": 13572.11
         }
       },
       {
@@ -1460,9 +1460,9 @@
         "fullName": "James Madison Dukes",
         "conference": "Sun Belt",
         "metrics": {
-          "counties": 105,
-          "population": 3160234,
-          "areaSqMi": 40659.71
+          "counties": 15,
+          "population": 451462,
+          "areaSqMi": 5808.53
         }
       },
       {
@@ -1472,9 +1472,9 @@
         "fullName": "Iowa State Cyclones",
         "conference": "Big 12",
         "metrics": {
-          "counties": 41,
-          "population": 10657645,
-          "areaSqMi": 168258.59
+          "counties": 11,
+          "population": 3349627,
+          "areaSqMi": 29926.4
         }
       }
     ],
@@ -1486,9 +1486,9 @@
         "fullName": "Georgia Bulldogs",
         "conference": "SEC",
         "metrics": {
-          "counties": 833,
-          "population": 44119201,
-          "areaSqMi": 430177.31
+          "counties": 119,
+          "population": 6302743,
+          "areaSqMi": 61453.9
         }
       },
       {
@@ -1498,9 +1498,9 @@
         "fullName": "USC Trojans",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 812,
-          "population": 196706167,
-          "areaSqMi": 624026.56
+          "counties": 116,
+          "population": 28100881,
+          "areaSqMi": 89146.65
         }
       },
       {
@@ -1510,21 +1510,9 @@
         "fullName": "LSU Tigers",
         "conference": "SEC",
         "metrics": {
-          "counties": 539,
-          "population": 28581567,
-          "areaSqMi": 313744.0
-        }
-      },
-      {
-        "teamId": "washington",
-        "teamName": "Washington",
-        "shortName": "Washington",
-        "fullName": "Washington Huskies",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 467,
-          "population": 41227984,
-          "areaSqMi": 479577.51
+          "counties": 77,
+          "population": 4083081,
+          "areaSqMi": 44820.57
         }
       },
       {
@@ -1534,9 +1522,9 @@
         "fullName": "Kansas Jayhawks",
         "conference": "Big 12",
         "metrics": {
-          "counties": 448,
-          "population": 35164051,
-          "areaSqMi": 290584.64
+          "counties": 70,
+          "population": 8329441,
+          "areaSqMi": 50349.86
         }
       },
       {
@@ -1546,9 +1534,9 @@
         "fullName": "Penn State Nittany Lions",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 392,
-          "population": 29993139,
-          "areaSqMi": 662048.11
+          "counties": 56,
+          "population": 4528353,
+          "areaSqMi": 95491.37
         }
       },
       {
@@ -1558,9 +1546,9 @@
         "fullName": "Mississippi State Bulldogs",
         "conference": "SEC",
         "metrics": {
-          "counties": 378,
-          "population": 47110007,
-          "areaSqMi": 658939.72
+          "counties": 54,
+          "population": 6730001,
+          "areaSqMi": 94134.24
         }
       },
       {
@@ -1570,9 +1558,21 @@
         "fullName": "Utah State Aggies",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 329,
-          "population": 10436153,
-          "areaSqMi": 482662.59
+          "counties": 47,
+          "population": 1490879,
+          "areaSqMi": 68951.8
+        }
+      },
+      {
+        "teamId": "washington",
+        "teamName": "Washington",
+        "shortName": "Washington",
+        "fullName": "Washington Huskies",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 46,
+          "population": 5889712,
+          "areaSqMi": 68511.07
         }
       },
       {
@@ -1582,21 +1582,9 @@
         "fullName": "Florida State Seminoles",
         "conference": "ACC",
         "metrics": {
-          "counties": 301,
-          "population": 11569187,
-          "areaSqMi": 172904.82
-        }
-      },
-      {
-        "teamId": "ucf",
-        "teamName": "UCF",
-        "shortName": "UCF",
-        "fullName": "UCF Knights",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 277,
-          "population": 51682514,
-          "areaSqMi": 170819.31
+          "counties": 43,
+          "population": 1652741,
+          "areaSqMi": 24700.69
         }
       },
       {
@@ -1606,9 +1594,21 @@
         "fullName": "Iowa Hawkeyes",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 259,
-          "population": 97688052,
-          "areaSqMi": 95745.03
+          "counties": 37,
+          "population": 13955436,
+          "areaSqMi": 13677.86
+        }
+      },
+      {
+        "teamId": "ucf",
+        "teamName": "UCF",
+        "shortName": "UCF",
+        "fullName": "UCF Knights",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 25,
+          "population": 5001368,
+          "areaSqMi": 17174.59
         }
       },
       {
@@ -1618,9 +1618,9 @@
         "fullName": "TCU Horned Frogs",
         "conference": "Big 12",
         "metrics": {
-          "counties": 126,
-          "population": 19944463,
-          "areaSqMi": 95004.8
+          "counties": 18,
+          "population": 2849209,
+          "areaSqMi": 13572.11
         }
       },
       {
@@ -1630,9 +1630,9 @@
         "fullName": "Georgia Southern Eagles",
         "conference": "Sun Belt",
         "metrics": {
-          "counties": 105,
-          "population": 3160234,
-          "areaSqMi": 40659.71
+          "counties": 15,
+          "population": 451462,
+          "areaSqMi": 5808.53
         }
       },
       {
@@ -1642,9 +1642,9 @@
         "fullName": "Arizona Wildcats",
         "conference": "Big 12",
         "metrics": {
-          "counties": 41,
-          "population": 10657645,
-          "areaSqMi": 168258.59
+          "counties": 11,
+          "population": 3349627,
+          "areaSqMi": 29926.4
         }
       }
     ]
