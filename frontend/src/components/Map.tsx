@@ -964,6 +964,7 @@ export default function Map({
       }
       mapRef.current = null
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
@@ -1189,7 +1190,7 @@ export default function Map({
           </p>
           <p className="text-[11px] text-gray-500 mt-1">{currentWeekLabel}</p>
           <p className="text-[11px] text-gray-500 mt-1">
-            Colors reflect the owning team's primary hue
+            Colors reflect the owning team&apos;s primary hue
           </p>
         </div>
       )}

@@ -57,6 +57,27 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
+      - name: Resolve run parameters
+        id: resolve-params
+        run: |
+          if [ -n "$INPUT_SEASON" ]; then
+            season="$INPUT_SEASON"
+          else
+            season="$SEASON"
+          fi
+
+          echo "EFFECTIVE_SEASON=$season" >> "$GITHUB_ENV"
+          echo "effective_season=$season" >> "$GITHUB_OUTPUT"
+
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] && [ "$INPUT_FORCE_UPDATE" = "true" ]; then
+            force="true"
+          else
+            force="false"
+          fi
+
+          echo "FORCE_UPDATE=$force" >> "$GITHUB_ENV"
+          echo "force_update=$force" >> "$GITHUB_OUTPUT"
+
       - name: Check if it's Saturday (high activity day)
         id: check-day
         run: |
@@ -106,7 +127,7 @@ jobs:
       - name: Commit and push changes
         if: >
           steps.check-changes.outputs.has_changes == 'true' ||
-          (github.event_name == 'workflow_dispatch' && env.FORCE_UPDATE_INPUT == 'true')
+          steps.resolve-params.outputs.force_update == 'true'
         run: |
           # Get the current week number from the latest ownership file
           LATEST_WEEK=$(ls -1 frontend/public/data/ownership/${EFFECTIVE_SEASON}/ 2>/dev/null | grep -E 'week-[0-9]+\.json$' | sort -V | tail -1 | grep -oP 'week-\K[0-9]+' || echo "unknown")
