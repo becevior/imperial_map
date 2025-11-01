@@ -4,7 +4,7 @@
   "week": 10,
   "seasonType": "regular",
   "weekLabel": "Regular Week 10",
-  "generatedAt": "2025-11-01T19:09:29.140782+00:00",
+  "generatedAt": "2025-11-01T20:13:02.624551+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -20,10 +20,10 @@
         }
       },
       {
-        "teamId": "houston",
-        "teamName": "Houston",
-        "shortName": "Houston",
-        "fullName": "Houston Cougars",
+        "teamId": "west-virginia",
+        "teamName": "West Virginia",
+        "shortName": "West Virginia",
+        "fullName": "West Virginia Mountaineers",
         "conference": "Big 12",
         "metrics": {
           "counties": 220,
@@ -272,10 +272,10 @@
         }
       },
       {
-        "teamId": "navy",
-        "teamName": "Navy",
-        "shortName": "Navy",
-        "fullName": "Navy Midshipmen",
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
           "counties": 23,
@@ -370,10 +370,10 @@
         }
       },
       {
-        "teamId": "houston",
-        "teamName": "Houston",
-        "shortName": "Houston",
-        "fullName": "Houston Cougars",
+        "teamId": "west-virginia",
+        "teamName": "West Virginia",
+        "shortName": "West Virginia",
+        "fullName": "West Virginia Mountaineers",
         "conference": "Big 12",
         "metrics": {
           "counties": 220,
@@ -550,10 +550,10 @@
         }
       },
       {
-        "teamId": "navy",
-        "teamName": "Navy",
-        "shortName": "Navy",
-        "fullName": "Navy Midshipmen",
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
           "counties": 23,
@@ -684,10 +684,10 @@
         }
       },
       {
-        "teamId": "houston",
-        "teamName": "Houston",
-        "shortName": "Houston",
-        "fullName": "Houston Cougars",
+        "teamId": "west-virginia",
+        "teamName": "West Virginia",
+        "shortName": "West Virginia",
+        "fullName": "West Virginia Mountaineers",
         "conference": "Big 12",
         "metrics": {
           "counties": 220,
@@ -888,10 +888,10 @@
         }
       },
       {
-        "teamId": "navy",
-        "teamName": "Navy",
-        "shortName": "Navy",
-        "fullName": "Navy Midshipmen",
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
           "counties": 23,
@@ -948,8 +948,58 @@
         }
       }
     ],
-    "territoryGained": [],
-    "territoryLost": []
+    "territoryGained": [
+      {
+        "teamId": "west-virginia",
+        "teamName": "West Virginia",
+        "shortName": "West Virginia",
+        "fullName": "West Virginia Mountaineers",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
+        }
+      },
+      {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "houston",
+        "teamName": "Houston",
+        "shortName": "Houston",
+        "fullName": "Houston Cougars",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
+        }
+      },
+      {
+        "teamId": "navy",
+        "teamName": "Navy",
+        "shortName": "Navy",
+        "fullName": "Navy Midshipmen",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
+        }
+      }
+    ]
   },
   "totals": {
     "trackedTeams": 26,
