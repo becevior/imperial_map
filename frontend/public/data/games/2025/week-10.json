@@ -151,5 +151,22 @@
     "awayScore": 14,
     "winnerId": "louisiana-tech",
     "loserId": "sam-houston"
+  },
+  {
+    "id": 401760401,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 10,
+    "completed": true,
+    "startDate": "2025-11-01T16:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Falcon Stadium",
+    "homeTeamId": "air-force",
+    "awayTeamId": "army",
+    "homeScore": 17,
+    "awayScore": 20,
+    "winnerId": "army",
+    "loserId": "air-force"
   }
 ]
