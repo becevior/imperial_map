@@ -355,5 +355,22 @@
     "awayScore": 45,
     "winnerId": "east-carolina",
     "loserId": "temple"
+  },
+  {
+    "id": 401760404,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 10,
+    "completed": true,
+    "startDate": "2025-11-01T19:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Allegiant Stadium",
+    "homeTeamId": "unlv",
+    "awayTeamId": "new-mexico",
+    "homeScore": 35,
+    "awayScore": 40,
+    "winnerId": "new-mexico",
+    "loserId": "unlv"
   }
 ]
