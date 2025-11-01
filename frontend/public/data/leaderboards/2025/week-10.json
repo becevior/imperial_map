@@ -4,7 +4,7 @@
   "week": 10,
   "seasonType": "regular",
   "weekLabel": "Regular Week 10",
-  "generatedAt": "2025-11-01T22:11:57.976720+00:00",
+  "generatedAt": "2025-11-01T23:12:43.418603+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -152,10 +152,10 @@
         }
       },
       {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
         "conference": "Mountain West",
         "metrics": {
           "counties": 9,
@@ -514,10 +514,10 @@
         }
       },
       {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
         "conference": "Mountain West",
         "metrics": {
           "counties": 9,
@@ -936,10 +936,10 @@
         }
       },
       {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
         "conference": "Mountain West",
         "metrics": {
           "counties": 9,
@@ -956,9 +956,9 @@
         "fullName": "West Virginia Mountaineers",
         "conference": "Big 12",
         "metrics": {
-          "counties": 660,
-          "population": 62466918,
-          "areaSqMi": 1003820.66
+          "counties": 880,
+          "population": 83289224,
+          "areaSqMi": 1338427.55
         }
       },
       {
@@ -968,9 +968,21 @@
         "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
-          "counties": 69,
-          "population": 12060879,
-          "areaSqMi": 37672.28
+          "counties": 92,
+          "population": 16081172,
+          "areaSqMi": 50229.7
+        }
+      },
+      {
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
         }
       }
     ],
@@ -982,9 +994,9 @@
         "fullName": "Houston Cougars",
         "conference": "Big 12",
         "metrics": {
-          "counties": 660,
-          "population": 62466918,
-          "areaSqMi": 1003820.66
+          "counties": 880,
+          "population": 83289224,
+          "areaSqMi": 1338427.55
         }
       },
       {
@@ -994,9 +1006,21 @@
         "fullName": "Navy Midshipmen",
         "conference": "AAC",
         "metrics": {
-          "counties": 69,
-          "population": 12060879,
-          "areaSqMi": 37672.28
+          "counties": 92,
+          "population": 16081172,
+          "areaSqMi": 50229.7
+        }
+      },
+      {
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
         }
       }
     ]
