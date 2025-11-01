@@ -321,5 +321,39 @@
     "awayScore": 28,
     "winnerId": "buffalo",
     "loserId": "bowling-green"
+  },
+  {
+    "id": 401756939,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 10,
+    "completed": true,
+    "startDate": "2025-11-01T17:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Jack Trice Stadium",
+    "homeTeamId": "iowa-state",
+    "awayTeamId": "arizona-state",
+    "homeScore": 19,
+    "awayScore": 24,
+    "winnerId": "arizona-state",
+    "loserId": "iowa-state"
+  },
+  {
+    "id": 401762498,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 10,
+    "completed": true,
+    "startDate": "2025-11-01T18:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Lincoln Financial Field",
+    "homeTeamId": "temple",
+    "awayTeamId": "east-carolina",
+    "homeScore": 14,
+    "awayScore": 45,
+    "winnerId": "east-carolina",
+    "loserId": "temple"
   }
 ]
