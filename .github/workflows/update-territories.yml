@@ -3,10 +3,12 @@ name: Update Territories
 on:
   # Scheduled updates
   schedule:
-    # Hourly on Saturdays (UTC) - College football game days
-    - cron: '0 * * * 6'  # Every hour on Saturday
-    # Daily at 6 AM UTC (2 AM ET) on other days
-    - cron: '0 6 * * 0-5'  # Sunday-Friday at 6 AM UTC
+    # Hourly on Saturdays 10am-11pm PST (6pm-11pm UTC Saturday)
+    - cron: '0 18-23 * * 6'  # Saturday 6pm-11pm UTC (10am-3pm PST)
+    # Continue hourly through 2am PST (12am-10am UTC Sunday)
+    - cron: '0 0-10 * * 0'  # Sunday 12am-10am UTC (4pm Sat - 2am Sun PST)
+    # Daily at 6 AM UTC (10 PM PST) on other weekdays
+    - cron: '0 6 * * 1-5'  # Monday-Friday at 6 AM UTC
 
   # Allow manual trigger with season parameter
   workflow_dispatch:
@@ -78,16 +80,23 @@ jobs:
           echo "FORCE_UPDATE=$force" >> "$GITHUB_ENV"
           echo "force_update=$force" >> "$GITHUB_OUTPUT"
 
-      - name: Check if it's Saturday (high activity day)
+      - name: Check if it's Saturday game day window
         id: check-day
         run: |
-          DAY=$(date -u +%u)  # 1-7, where 6 is Saturday
-          if [ "$DAY" -eq 6 ]; then
+          DAY=$(date -u +%u)  # 1-7, where 6 is Saturday, 0/7 is Sunday
+          HOUR=$(date -u +%H)
+
+          # Saturday game day: Saturday 6pm UTC onwards OR Sunday before 10am UTC
+          # This covers 10am PST Saturday through 2am PST Sunday
+          if [ "$DAY" -eq 6 ] && [ "$HOUR" -ge 18 ]; then
             echo "is_saturday=true" >> $GITHUB_OUTPUT
-            echo "📅 Saturday detected - running hourly update"
+            echo "📅 Saturday game day window (late Saturday UTC) - running hourly update"
+          elif [ "$DAY" -eq 0 ] && [ "$HOUR" -le 10 ]; then
+            echo "is_saturday=true" >> $GITHUB_OUTPUT
+            echo "📅 Saturday game day window (early Sunday UTC) - running hourly update"
           else
             echo "is_saturday=false" >> $GITHUB_OUTPUT
-            echo "📅 Weekday detected - running daily update"
+            echo "📅 Regular day - running daily update"
           fi
 
       - name: Ingest game results
@@ -159,9 +168,9 @@ jobs:
           echo "Update Summary"
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
           echo "Season: $EFFECTIVE_SEASON"
-          echo "Day: $(date -u +%A)"
-          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-          echo "Saturday mode: ${{ steps.check-day.outputs.is_saturday }}"
+          echo "Time (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
+          echo "Time (PST): $(TZ='America/Los_Angeles' date '+%Y-%m-%d %H:%M:%S %Z')"
+          echo "Game day mode: ${{ steps.check-day.outputs.is_saturday }}"
           echo "Changes detected: ${{ steps.check-changes.outputs.has_changes }}"
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
