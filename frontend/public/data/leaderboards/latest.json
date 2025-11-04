@@ -4,7 +4,7 @@
   "week": 10,
   "seasonType": "regular",
   "weekLabel": "Regular Week 10",
-  "generatedAt": "2025-11-03T06:38:56.562924+00:00",
+  "generatedAt": "2025-11-04T06:39:21.255117+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -92,6 +92,18 @@
         }
       },
       {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "memphis",
         "teamName": "Memphis",
         "shortName": "Memphis",
@@ -113,18 +125,6 @@
           "counties": 273,
           "population": 23775557,
           "areaSqMi": 149661.96
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -233,18 +233,6 @@
           "counties": 52,
           "population": 12110296,
           "areaSqMi": 24041.86
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -430,6 +418,18 @@
         }
       },
       {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "byu",
         "teamName": "BYU",
         "shortName": "BYU",
@@ -451,18 +451,6 @@
           "counties": 52,
           "population": 12110296,
           "areaSqMi": 24041.86
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -571,18 +559,6 @@
           "counties": 89,
           "population": 3943033,
           "areaSqMi": 42609.35
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -732,6 +708,18 @@
         }
       },
       {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "notre-dame",
         "teamName": "Notre Dame",
         "shortName": "Notre Dame",
@@ -741,18 +729,6 @@
           "counties": 134,
           "population": 4242471,
           "areaSqMi": 88974.48
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -864,18 +840,6 @@
         }
       },
       {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
-        }
-      },
-      {
         "teamId": "tcu",
         "teamName": "TCU",
         "shortName": "TCU",
@@ -956,9 +920,9 @@
         "fullName": "West Virginia Mountaineers",
         "conference": "Big 12",
         "metrics": {
-          "counties": 1320,
-          "population": 124933836,
-          "areaSqMi": 2007641.33
+          "counties": 1540,
+          "population": 145756142,
+          "areaSqMi": 2342248.22
         }
       },
       {
@@ -968,9 +932,9 @@
         "fullName": "Utah Utes",
         "conference": "Big 12",
         "metrics": {
-          "counties": 490,
-          "population": 33086788,
-          "areaSqMi": 363083.87
+          "counties": 735,
+          "population": 49630182,
+          "areaSqMi": 544625.81
         }
       },
       {
@@ -980,9 +944,9 @@
         "fullName": "NC State Wolfpack",
         "conference": "ACC",
         "metrics": {
-          "counties": 280,
-          "population": 33157826,
-          "areaSqMi": 176227.26
+          "counties": 420,
+          "population": 49736739,
+          "areaSqMi": 264340.89
         }
       },
       {
@@ -992,9 +956,9 @@
         "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
-          "counties": 138,
-          "population": 24121758,
-          "areaSqMi": 75344.56
+          "counties": 161,
+          "population": 28142051,
+          "areaSqMi": 87901.98
         }
       },
       {
@@ -1004,9 +968,9 @@
         "fullName": "San Jose State Spartans",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 88,
-          "population": 3228308,
-          "areaSqMi": 40264.45
+          "counties": 132,
+          "population": 4842462,
+          "areaSqMi": 60396.67
         }
       },
       {
@@ -1016,9 +980,9 @@
         "fullName": "Fresno State Bulldogs",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 27,
-          "population": 13653147,
-          "areaSqMi": 269906.18
+          "counties": 36,
+          "population": 18204196,
+          "areaSqMi": 359874.9
         }
       }
     ],
@@ -1030,9 +994,9 @@
         "fullName": "Houston Cougars",
         "conference": "Big 12",
         "metrics": {
-          "counties": 1320,
-          "population": 124933836,
-          "areaSqMi": 2007641.33
+          "counties": 1540,
+          "population": 145756142,
+          "areaSqMi": 2342248.22
         }
       },
       {
@@ -1042,9 +1006,9 @@
         "fullName": "Cincinnati Bearcats",
         "conference": "Big 12",
         "metrics": {
-          "counties": 490,
-          "population": 33086788,
-          "areaSqMi": 363083.87
+          "counties": 735,
+          "population": 49630182,
+          "areaSqMi": 544625.81
         }
       },
       {
@@ -1054,9 +1018,9 @@
         "fullName": "Georgia Tech Yellow Jackets",
         "conference": "ACC",
         "metrics": {
-          "counties": 280,
-          "population": 33157826,
-          "areaSqMi": 176227.26
+          "counties": 420,
+          "population": 49736739,
+          "areaSqMi": 264340.89
         }
       },
       {
@@ -1066,9 +1030,9 @@
         "fullName": "Navy Midshipmen",
         "conference": "AAC",
         "metrics": {
-          "counties": 138,
-          "population": 24121758,
-          "areaSqMi": 75344.56
+          "counties": 161,
+          "population": 28142051,
+          "areaSqMi": 87901.98
         }
       },
       {
@@ -1078,9 +1042,9 @@
         "fullName": "Hawaii Rainbow Warriors",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 88,
-          "population": 3228308,
-          "areaSqMi": 40264.45
+          "counties": 132,
+          "population": 4842462,
+          "areaSqMi": 60396.67
         }
       },
       {
@@ -1090,15 +1054,15 @@
         "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 27,
-          "population": 13653147,
-          "areaSqMi": 269906.18
+          "counties": 36,
+          "population": 18204196,
+          "areaSqMi": 359874.9
         }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 26,
+    "trackedTeams": 25,
     "countyCount": 3114
   }
 }

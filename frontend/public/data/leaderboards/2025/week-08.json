@@ -4,7 +4,7 @@
   "week": 8,
   "seasonType": "regular",
   "weekLabel": "Regular Week 8",
-  "generatedAt": "2025-11-03T06:38:56.323398+00:00",
+  "generatedAt": "2025-11-04T06:39:21.015542+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -92,6 +92,18 @@
         }
       },
       {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "south-florida",
         "teamName": "South Florida",
         "shortName": "South Florida",
@@ -113,18 +125,6 @@
           "counties": 273,
           "population": 23775557,
           "areaSqMi": 149661.96
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -233,18 +233,6 @@
           "counties": 52,
           "population": 12110296,
           "areaSqMi": 24041.86
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -430,6 +418,18 @@
         }
       },
       {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "byu",
         "teamName": "BYU",
         "shortName": "BYU",
@@ -451,18 +451,6 @@
           "counties": 52,
           "population": 12110296,
           "areaSqMi": 24041.86
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -571,18 +559,6 @@
           "counties": 89,
           "population": 3943033,
           "areaSqMi": 42609.35
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -732,6 +708,18 @@
         }
       },
       {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "notre-dame",
         "teamName": "Notre Dame",
         "shortName": "Notre Dame",
@@ -741,18 +729,6 @@
           "counties": 134,
           "population": 4242471,
           "areaSqMi": 88974.48
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -861,18 +837,6 @@
           "counties": 44,
           "population": 1614154,
           "areaSqMi": 20132.22
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -1018,7 +982,7 @@
         "metrics": {
           "counties": 57,
           "population": 12037433,
-          "areaSqMi": 40985.53
+          "areaSqMi": 40985.54
         }
       },
       {
@@ -1030,7 +994,7 @@
         "metrics": {
           "counties": 54,
           "population": 6730001,
-          "areaSqMi": 94134.25
+          "areaSqMi": 94134.24
         }
       },
       {
@@ -1164,7 +1128,7 @@
         "metrics": {
           "counties": 57,
           "population": 12037433,
-          "areaSqMi": 40985.53
+          "areaSqMi": 40985.54
         }
       },
       {
@@ -1176,7 +1140,7 @@
         "metrics": {
           "counties": 54,
           "population": 6730001,
-          "areaSqMi": 94134.25
+          "areaSqMi": 94134.24
         }
       },
       {
@@ -1242,7 +1206,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 26,
+    "trackedTeams": 25,
     "countyCount": 3114
   }
 }

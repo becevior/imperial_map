@@ -4,7 +4,7 @@
   "week": 3,
   "seasonType": "regular",
   "weekLabel": "Regular Week 3",
-  "generatedAt": "2025-11-03T06:38:56.266167+00:00",
+  "generatedAt": "2025-11-04T06:39:20.959134+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -62,9 +62,9 @@
         "fullName": "Oklahoma Sooners",
         "conference": "SEC",
         "metrics": {
-          "counties": 77,
-          "population": 10333043,
-          "areaSqMi": 127465.85
+          "counties": 106,
+          "population": 13087068,
+          "areaSqMi": 149125.71
         }
       },
       {
@@ -437,18 +437,6 @@
           "counties": 34,
           "population": 1674898,
           "areaSqMi": 22080.1
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -682,6 +670,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 106,
+          "population": 13087068,
+          "areaSqMi": 149125.71
+        }
+      },
+      {
         "teamId": "tulane",
         "teamName": "Tulane",
         "shortName": "Tulane",
@@ -727,18 +727,6 @@
           "counties": 53,
           "population": 11820668,
           "areaSqMi": 52601.56
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 77,
-          "population": 10333043,
-          "areaSqMi": 127465.85
         }
       },
       {
@@ -1114,18 +1102,6 @@
         }
       },
       {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
-        }
-      },
-      {
         "teamId": "illinois",
         "teamName": "Illinois",
         "shortName": "Illinois",
@@ -1356,6 +1332,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 106,
+          "population": 13087068,
+          "areaSqMi": 149125.71
+        }
+      },
+      {
         "teamId": "missouri",
         "teamName": "Missouri",
         "shortName": "Missouri",
@@ -1413,18 +1401,6 @@
           "counties": 87,
           "population": 4205950,
           "areaSqMi": 98749.19
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 77,
-          "population": 10333043,
-          "areaSqMi": 127465.85
         }
       },
       {
@@ -1740,18 +1716,6 @@
         }
       },
       {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
-        }
-      },
-      {
         "teamId": "louisiana-tech",
         "teamName": "Louisiana Tech",
         "shortName": "Louisiana Tech",
@@ -1978,7 +1942,7 @@
         "metrics": {
           "counties": 70,
           "population": 8329441,
-          "areaSqMi": 50349.87
+          "areaSqMi": 50349.86
         }
       },
       {
@@ -2051,6 +2015,18 @@
           "counties": 45,
           "population": 2599017,
           "areaSqMi": 21876.27
+        }
+      },
+      {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 41,
+          "population": 8758172,
+          "areaSqMi": 26797.26
         }
       },
       {
@@ -2138,18 +2114,6 @@
         }
       },
       {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 12,
-          "population": 6004147,
-          "areaSqMi": 5137.4
-        }
-      },
-      {
         "teamId": "houston",
         "teamName": "Houston",
         "shortName": "Houston",
@@ -2220,7 +2184,7 @@
         "metrics": {
           "counties": 70,
           "population": 8329441,
-          "areaSqMi": 50349.87
+          "areaSqMi": 50349.86
         }
       },
       {
@@ -2293,6 +2257,18 @@
           "counties": 45,
           "population": 2599017,
           "areaSqMi": 21876.27
+        }
+      },
+      {
+        "teamId": "temple",
+        "teamName": "Temple",
+        "shortName": "Temple",
+        "fullName": "Temple Owls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 41,
+          "population": 8758172,
+          "areaSqMi": 26797.26
         }
       },
       {
@@ -2380,18 +2356,6 @@
         }
       },
       {
-        "teamId": "temple",
-        "teamName": "Temple",
-        "shortName": "Temple",
-        "fullName": "Temple Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 6004147,
-          "areaSqMi": 5137.4
-        }
-      },
-      {
         "teamId": "colorado",
         "teamName": "Colorado",
         "shortName": "Colorado",
@@ -2406,7 +2370,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 53,
+    "trackedTeams": 52,
     "countyCount": 3114
   }
 }

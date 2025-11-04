@@ -4,7 +4,7 @@
   "week": 5,
   "seasonType": "regular",
   "weekLabel": "Regular Week 5",
-  "generatedAt": "2025-11-03T06:38:56.290263+00:00",
+  "generatedAt": "2025-11-04T06:39:20.983364+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -56,6 +56,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "north-texas",
         "teamName": "North Texas",
         "shortName": "North Texas",
@@ -77,18 +89,6 @@
           "counties": 273,
           "population": 23775557,
           "areaSqMi": 149661.96
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -344,18 +344,6 @@
         }
       },
       {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
-        }
-      },
-      {
         "teamId": "fresno-state",
         "teamName": "Fresno State",
         "shortName": "Fresno State",
@@ -502,6 +490,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "alabama",
         "teamName": "Alabama",
         "shortName": "Alabama",
@@ -535,18 +535,6 @@
           "counties": 57,
           "population": 12037433,
           "areaSqMi": 40985.53
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -775,18 +763,6 @@
           "counties": 23,
           "population": 4020293,
           "areaSqMi": 12557.43
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -948,6 +924,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "michigan",
         "teamName": "Michigan",
         "shortName": "Michigan",
@@ -981,18 +969,6 @@
           "counties": 116,
           "population": 28100881,
           "areaSqMi": 89146.65
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -1212,18 +1188,6 @@
         }
       },
       {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
-        }
-      },
-      {
         "teamId": "kansas-state",
         "teamName": "Kansas State",
         "shortName": "Kansas State",
@@ -1354,7 +1318,7 @@
         "metrics": {
           "counties": 70,
           "population": 8329441,
-          "areaSqMi": 50349.86
+          "areaSqMi": 50349.87
         }
       },
       {
@@ -1378,7 +1342,7 @@
         "metrics": {
           "counties": 54,
           "population": 6730001,
-          "areaSqMi": 94134.25
+          "areaSqMi": 94134.24
         }
       },
       {
@@ -1524,7 +1488,7 @@
         "metrics": {
           "counties": 70,
           "population": 8329441,
-          "areaSqMi": 50349.86
+          "areaSqMi": 50349.87
         }
       },
       {
@@ -1548,7 +1512,7 @@
         "metrics": {
           "counties": 54,
           "population": 6730001,
-          "areaSqMi": 94134.25
+          "areaSqMi": 94134.24
         }
       },
       {
@@ -1650,7 +1614,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 36,
+    "trackedTeams": 35,
     "countyCount": 3114
   }
 }

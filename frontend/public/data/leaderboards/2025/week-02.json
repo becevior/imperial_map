@@ -4,7 +4,7 @@
   "week": 2,
   "seasonType": "regular",
   "weekLabel": "Regular Week 2",
-  "generatedAt": "2025-11-03T06:38:56.252876+00:00",
+  "generatedAt": "2025-11-04T06:39:20.945714+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -380,6 +380,18 @@
         }
       },
       {
+        "teamId": "temple",
+        "teamName": "Temple",
+        "shortName": "Temple",
+        "fullName": "Temple Owls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 41,
+          "population": 8758172,
+          "areaSqMi": 26797.26
+        }
+      },
+      {
         "teamId": "georgia-tech",
         "teamName": "Georgia Tech",
         "shortName": "Georgia Tech",
@@ -449,18 +461,6 @@
           "counties": 45,
           "population": 2599017,
           "areaSqMi": 21876.27
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -788,18 +788,6 @@
         }
       },
       {
-        "teamId": "temple",
-        "teamName": "Temple",
-        "shortName": "Temple",
-        "fullName": "Temple Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 6004147,
-          "areaSqMi": 5137.4
-        }
-      },
-      {
         "teamId": "connecticut",
         "teamName": "Connecticut",
         "shortName": "Connecticut",
@@ -895,6 +883,18 @@
           "counties": 185,
           "population": 9585474,
           "areaSqMi": 181976.66
+        }
+      },
+      {
+        "teamId": "temple",
+        "teamName": "Temple",
+        "shortName": "Temple",
+        "fullName": "Temple Owls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 41,
+          "population": 8758172,
+          "areaSqMi": 26797.26
         }
       },
       {
@@ -1003,18 +1003,6 @@
           "counties": 54,
           "population": 6730001,
           "areaSqMi": 94134.25
-        }
-      },
-      {
-        "teamId": "temple",
-        "teamName": "Temple",
-        "shortName": "Temple",
-        "fullName": "Temple Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 6004147,
-          "areaSqMi": 5137.4
         }
       },
       {
@@ -1339,18 +1327,6 @@
           "counties": 18,
           "population": 2849209,
           "areaSqMi": 13572.11
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -2016,6 +1992,18 @@
         }
       },
       {
+        "teamId": "temple",
+        "teamName": "Temple",
+        "shortName": "Temple",
+        "fullName": "Temple Owls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 41,
+          "population": 8758172,
+          "areaSqMi": 26797.26
+        }
+      },
+      {
         "teamId": "rutgers",
         "teamName": "Rutgers",
         "shortName": "Rutgers",
@@ -2097,18 +2085,6 @@
           "counties": 30,
           "population": 12355470,
           "areaSqMi": 20897.14
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -2352,18 +2328,6 @@
         }
       },
       {
-        "teamId": "temple",
-        "teamName": "Temple",
-        "shortName": "Temple",
-        "fullName": "Temple Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 6004147,
-          "areaSqMi": 5137.4
-        }
-      },
-      {
         "teamId": "arizona",
         "teamName": "Arizona",
         "shortName": "Arizona",
@@ -2530,7 +2494,7 @@
         "metrics": {
           "counties": 35,
           "population": 8937141,
-          "areaSqMi": 42306.04
+          "areaSqMi": 42306.03
         }
       },
       {
@@ -2686,7 +2650,7 @@
         "metrics": {
           "counties": 17,
           "population": 1969182,
-          "areaSqMi": 9357.91
+          "areaSqMi": 9357.92
         }
       },
       {
@@ -2698,7 +2662,7 @@
         "metrics": {
           "counties": 16,
           "population": 827783,
-          "areaSqMi": 7192.69
+          "areaSqMi": 7192.68
         }
       },
       {
@@ -2916,7 +2880,7 @@
         "metrics": {
           "counties": 35,
           "population": 8937141,
-          "areaSqMi": 42306.04
+          "areaSqMi": 42306.03
         }
       },
       {
@@ -3072,7 +3036,7 @@
         "metrics": {
           "counties": 17,
           "population": 1969182,
-          "areaSqMi": 9357.91
+          "areaSqMi": 9357.92
         }
       },
       {
@@ -3084,7 +3048,7 @@
         "metrics": {
           "counties": 16,
           "population": 827783,
-          "areaSqMi": 7192.69
+          "areaSqMi": 7192.68
         }
       },
       {
@@ -3198,7 +3162,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 67,
+    "trackedTeams": 66,
     "countyCount": 3114
   }
 }

@@ -4,7 +4,7 @@
   "week": 6,
   "seasonType": "regular",
   "weekLabel": "Regular Week 6",
-  "generatedAt": "2025-11-03T06:38:56.300891+00:00",
+  "generatedAt": "2025-11-04T06:39:20.993826+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -80,6 +80,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "north-texas",
         "teamName": "North Texas",
         "shortName": "North Texas",
@@ -101,18 +113,6 @@
           "counties": 273,
           "population": 23775557,
           "areaSqMi": 149661.96
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -305,18 +305,6 @@
           "counties": 52,
           "population": 12110296,
           "areaSqMi": 24041.86
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -490,6 +478,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "washington",
         "teamName": "Washington",
         "shortName": "Washington",
@@ -511,18 +511,6 @@
           "counties": 57,
           "population": 12037433,
           "areaSqMi": 40985.53
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -706,18 +694,6 @@
         }
       },
       {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
-        }
-      },
-      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -852,6 +828,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
         "teamId": "michigan",
         "teamName": "Michigan",
         "shortName": "Michigan",
@@ -873,18 +861,6 @@
           "counties": 116,
           "population": 28100881,
           "areaSqMi": 89146.65
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 111,
-          "population": 12007941,
-          "areaSqMi": 149545.94
         }
       },
       {
@@ -1065,18 +1041,6 @@
           "counties": 44,
           "population": 1614154,
           "areaSqMi": 20132.22
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -1314,7 +1278,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 32,
+    "trackedTeams": 31,
     "countyCount": 3114
   }
 }
