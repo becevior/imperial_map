@@ -2,7 +2,9 @@ import fs from 'fs/promises'
 import path from 'path'
 
 import DashboardContent from '@/components/DashboardContent'
+import TecmoThrowBanner from '@/components/TecmoThrowBanner'
 import type { LeaderboardsPayload } from '@/types/leaderboards'
+import { loadPreviousWeekScores } from '@/lib/scoreTicker'
 
 async function loadLeaderboards(): Promise<LeaderboardsPayload | null> {
   const filePath = path.join(
@@ -23,20 +25,20 @@ async function loadLeaderboards(): Promise<LeaderboardsPayload | null> {
 
 export default async function Home() {
   const leaderboards = await loadLeaderboards()
+  const previousWeekScores = await loadPreviousWeekScores()
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-100 to-white">
       <div className="container mx-auto px-4 py-8">
-        <header className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            College Football Imperial Map
-          </h1>
-          <p className="text-lg text-gray-600">
-            Interactive territory map showing college football imperial conquests
-          </p>
-        </header>
+        {previousWeekScores ? (
+          <section className="mb-8">
+            <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
+              <TecmoThrowBanner />
+            </div>
+          </section>
+        ) : null}
 
-        <DashboardContent initialLeaderboards={leaderboards} />
+        <DashboardContent initialLeaderboards={leaderboards} ticker={previousWeekScores} />
       </div>
     </main>
   )

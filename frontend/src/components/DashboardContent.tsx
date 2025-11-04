@@ -3,6 +3,8 @@
 import { ChangeEvent, Fragment, useCallback, useMemo, useRef, useState } from 'react'
 
 import Map from '@/components/Map'
+import RetroTickerMarquee from '@/components/RetroTickerMarquee'
+import type { PreviousWeekScores } from '@/lib/scoreTicker'
 import type {
   LeaderboardEntry,
   LeaderboardMetrics,
@@ -94,10 +96,12 @@ function buildLeaderboardPath(season: number, weekIndex: number): string {
 
 interface DashboardContentProps {
   initialLeaderboards: LeaderboardsPayload | null
+  ticker?: PreviousWeekScores | null
 }
 
 export default function DashboardContent({
-  initialLeaderboards
+  initialLeaderboards,
+  ticker
 }: DashboardContentProps) {
   const [leaderboards, setLeaderboards] = useState<LeaderboardsPayload | null>(
     initialLeaderboards
@@ -212,6 +216,15 @@ export default function DashboardContent({
       <div className="bg-white rounded-lg shadow-lg p-6">
         <Map className="min-h-[600px]" onWeekChange={handleWeekChange} />
       </div>
+
+      {ticker ? (
+        <section className="mt-8 space-y-3">
+          <RetroTickerMarquee
+            games={ticker.games}
+            label={`${ticker.label} - Season ${ticker.season}`}
+          />
+        </section>
+      ) : null}
 
       <section className="mt-10">
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-4">

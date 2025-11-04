@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>8-Bit Football Banner</title>
+<style>
+  :root{
+    --banner-w: 728px;
+    --banner-h: 120px;
+    --sky-1: #002b59;
+    --sky-2: #0a5fa6;
+    --turf-1:#0e6b2e;
+    --turf-2:#0a4d22;
+    --ui-border:#fff;
+    --scanline:#0e2147;
+  }
+  html,body{height:100%;}
+  body{display:grid;place-items:center;background:#0b1020;margin:0;font-family:system-ui, Segoe UI, Tahoma, Geneva, Verdana, sans-serif}
+  .banner{position:relative;width:var(--banner-w);height:var(--banner-h);border:3px solid var(--ui-border);box-shadow:0 0 0 2px #00d,0 0 0 4px #fff;image-rendering:pixelated;overflow:hidden}
+
+  .bezel{position:absolute;inset:0;
+    background:
+      repeating-linear-gradient(to right, rgba(255,255,255,.75) 0 2px, transparent 2px 58px),
+      repeating-linear-gradient(to right, rgba(255,255,255,.35) 0 1px, transparent 1px 29px),
+      repeating-linear-gradient(to bottom, rgba(255,255,255,.03) 0 8px, rgba(0,0,0,.06) 8px 16px),
+      linear-gradient(180deg, var(--turf-1), var(--turf-2));
+  }
+  .bezel::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      linear-gradient(to right, rgba(0,0,128,.55), rgba(0,0,128,.55)) left/64px 100% no-repeat,
+      linear-gradient(to left, rgba(128,0,0,.55), rgba(128,0,0,.55)) right/64px 100% no-repeat;
+  }
+  .bezel::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(transparent 0 2px, var(--scanline) 2px 3px);opacity:.18;mix-blend-mode:overlay;pointer-events:none}
+
+  svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+  @keyframes throw-left{0%,10%{transform:rotate(10deg)}20%{transform:rotate(-30deg)}30%,100%{transform:rotate(10deg)}}
+  @keyframes throw-right{0%,50%,60%{transform:rotate(-10deg)}70%{transform:rotate(35deg)}80%,100%{transform:rotate(-10deg)}}
+  .arm-left{transform-origin:46px 76px;animation:throw-left 3.2s steps(4,end) infinite}
+  .arm-right{transform-origin:678px 76px;animation:throw-right 3.2s steps(4,end) infinite}
+  @keyframes wobble{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(12deg)}}
+  #ballSprite{transform-box:fill-box;transform-origin:center;animation:wobble .35s steps(2,end) infinite}
+</style>
+</head>
+<body>
+  <div class="banner" role="img" aria-label="8-bit football banner: two players throw a ball back and forth">
+    <div class="bezel"></div>
+
+    <svg viewBox="0 0 728 120" preserveAspectRatio="none" aria-hidden="true">
+      <!-- Field text -->
+      <text x="50%" y="68" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="28" font-weight="900" fill="#ffffff" style="letter-spacing:4px; paint-order: stroke; stroke: #000; stroke-width: 2px;">IMPERIAL MAPS</text>
+
+      <!-- LEFT PLAYER -->
+      <g id="playerL">
+        <ellipse cx="60" cy="100" rx="22" ry="6" fill="#083b17" opacity="0.55"/>
+        <rect x="46" y="80" width="10" height="18" fill="#1d47ff"/>
+        <rect x="58" y="80" width="10" height="18" fill="#1d47ff"/>
+        <rect x="46" y="96" width="10" height="4" fill="#0e256e"/>
+        <rect x="58" y="96" width="10" height="4" fill="#0e256e"/>
+        <rect x="42" y="62" width="40" height="22" fill="#2b66ff" stroke="#0c1e7a" stroke-width="2"/>
+        <rect x="58" y="68" width="8" height="10" fill="#fff"/>
+        <rect x="60" y="70" width="4" height="6" fill="#2b66ff"/>
+        <rect x="52" y="48" width="22" height="14" fill="#f8c090" stroke="#7a3b13" stroke-width="2"/>
+        <rect x="50" y="44" width="26" height="8" fill="#0038ff"/>
+        <rect x="38" y="66" width="10" height="6" fill="#2b66ff"/>
+        <rect x="34" y="66" width="6" height="6" fill="#f8c090"/>
+        <g class="arm-left">
+          <rect x="82" y="66" width="10" height="6" fill="#2b66ff"/>
+          <rect x="92" y="66" width="6" height="6" fill="#f8c090"/>
+        </g>
+      </g>
+
+      <!-- RIGHT PLAYER -->
+      <g id="playerR">
+        <ellipse cx="668" cy="100" rx="22" ry="6" fill="#083b17" opacity="0.55"/>
+        <rect x="654" y="80" width="10" height="18" fill="#d11a1a"/>
+        <rect x="666" y="80" width="10" height="18" fill="#d11a1a"/>
+        <rect x="654" y="96" width="10" height="4" fill="#7a0a0a"/>
+        <rect x="666" y="96" width="10" height="4" fill="#7a0a0a"/>
+        <rect x="650" y="62" width="40" height="22" fill="#ff3030" stroke="#7a0a0a" stroke-width="2"/>
+        <rect x="666" y="68" width="8" height="10" fill="#fff"/>
+        <rect x="668" y="70" width="4" height="6" fill="#ff3030"/>
+        <rect x="660" y="48" width="22" height="14" fill="#f8c090" stroke="#7a3b13" stroke-width="2"/>
+        <rect x="658" y="44" width="26" height="8" fill="#cc0000"/>
+        <rect x="690" y="66" width="10" height="6" fill="#ff3030"/>
+        <rect x="700" y="66" width="6" height="6" fill="#f8c090"/>
+        <g class="arm-right">
+          <rect x="644" y="66" width="10" height="6" fill="#ff3030"/>
+          <rect x="638" y="66" width="6" height="6" fill="#f8c090"/>
+        </g>
+      </g>
+
+      <!-- FOOTBALL -->
+      <g id="ball">
+        <g id="ballSprite">
+          <ellipse cx="0" cy="0" rx="8" ry="5" fill="#6b2c00" stroke="#3a1600" stroke-width="2"/>
+          <rect x="-2" y="-1" width="4" height="2" fill="#fff"/>
+          <rect x="-4" y="-1" width="1" height="2" fill="#fff"/>
+          <rect x="3" y="-1" width="1" height="2" fill="#fff"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+<script>
+(function(){
+  const ball = document.getElementById('ball');
+  const L = { x: 96, y: 66 };
+  const R = { x: 672, y: 66 };
+  const peakY = 28;
+  let dir = 1; let t = 0; const DURATION = 1600; let last = performance.now();
+  function easeInOutQuad(u){return u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2}
+  function lerp(a,b,u){return a+(b-a)*u}
+  function posAlongArc(u){const A=dir===1?L:R,B=dir===1?R:L;const x=lerp(A.x,B.x,u);const base=lerp(A.y,B.y,u);const hump=1-4*Math.pow(u-0.5,2);const y=lerp(base,peakY,hump);return{x,y}}
+  function step(now){const dt=Math.min(64,now-last);last=now;t+=dt/DURATION;if(t>=1){t=0;dir*=-1;}const u=easeInOutQuad(t);const {x,y}=posAlongArc(u);ball.setAttribute('transform',`translate(${x},${y})`);requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+})();
+</script>
+</body>
+</html>
