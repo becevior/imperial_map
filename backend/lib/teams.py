@@ -166,6 +166,7 @@ def build_team_name_lookup(teams: Optional[List[Dict]] = None) -> Dict[str, str]
         'florida-international': 'fiu',
         'ul-monroe': 'ulm',
         'cal': 'california',
+        'massachusetts': 'umass',
     }
 
     for key, team_id in manual_overrides.items():
