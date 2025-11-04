@@ -35,12 +35,6 @@ export interface OwnershipIndexSeason {
 interface MapProps {
   className?: string
   onWeekChange?: (info: LeaderboardWeekInfo) => void
-  selectedSeason?: number | null
-  selectedWeekIndex?: number | null
-  seasonOptions?: OwnershipIndexSeason[]
-  onSeasonChange?: (season: number | null) => void
-  onWeekIndexChange?: (weekIndex: number | null) => void
-  onSeasonOptionsLoaded?: (options: OwnershipIndexSeason[]) => void
 }
 
 const DEFAULT_FILL_COLOR = '#2d2d2d'
@@ -206,16 +200,7 @@ interface OwnershipIndexPayload {
   seasons: OwnershipIndexSeason[]
 }
 
-export default function Map({
-  className = '',
-  onWeekChange,
-  selectedSeason: controlledSelectedSeason,
-  selectedWeekIndex: controlledSelectedWeekIndex,
-  seasonOptions: controlledSeasonOptions,
-  onSeasonChange,
-  onWeekIndexChange,
-  onSeasonOptionsLoaded
-}: MapProps) {
+export default function Map({ className = '', onWeekChange }: MapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const markersRef = useRef<maplibregl.Marker[]>([])
@@ -223,17 +208,12 @@ export default function Map({
   const [error, setError] = useState<string | null>(null)
   const [teamCount, setTeamCount] = useState<number | null>(null)
   const [countyCount, setCountyCount] = useState<number | null>(null)
-  const [internalSeasonOptions, setInternalSeasonOptions] = useState<OwnershipIndexSeason[]>([])
-  const [internalSelectedSeason, setInternalSelectedSeason] = useState<number | null>(null)
-  const [internalSelectedWeekIndex, setInternalSelectedWeekIndex] = useState<number | null>(null)
+  const [seasonOptions, setSeasonOptions] = useState<OwnershipIndexSeason[]>([])
+  const [selectedSeason, setSelectedSeason] = useState<number | null>(null)
+  const [selectedWeekIndex, setSelectedWeekIndex] = useState<number | null>(null)
   const [currentWeekLabel, setCurrentWeekLabel] = useState<string>('Baseline')
   const [ownershipLoading, setOwnershipLoading] = useState(false)
   const [ownershipError, setOwnershipError] = useState<string | null>(null)
-
-  // Use controlled values if provided, otherwise use internal state
-  const seasonOptions = controlledSeasonOptions ?? internalSeasonOptions
-  const selectedSeason = controlledSelectedSeason ?? internalSelectedSeason
-  const selectedWeekIndex = controlledSelectedWeekIndex ?? internalSelectedWeekIndex
 
   const baseGeoJsonRef = useRef<any | null>(null)
   const decorateGeoJsonRef = useRef<((ownership: OwnershipMap) => any) | null>(null)
@@ -671,14 +651,11 @@ export default function Map({
           }
         }
 
-        setInternalSeasonOptions(normalizedSeasonOptions)
+        setSeasonOptions(normalizedSeasonOptions)
         seasonOptionsRef.current = normalizedSeasonOptions
-        setInternalSelectedSeason(initialSeason)
-        setInternalSelectedWeekIndex(initialWeekIndex)
+        setSelectedSeason(initialSeason)
+        setSelectedWeekIndex(initialWeekIndex)
         setCurrentWeekLabel(initialLabel)
-
-        // Notify parent if callback provided
-        onSeasonOptionsLoaded?.(normalizedSeasonOptions)
 
         // Store baseline centroids only if we don't already have a week-specific set
         if (!lastCentroidsPathRef.current) {
@@ -1107,40 +1084,27 @@ export default function Map({
     const value = Number(rawValue)
 
     if (!rawValue || Number.isNaN(value)) {
-      if (onSeasonChange) {
-        onSeasonChange(null)
-      } else {
-        setInternalSelectedSeason(null)
-        setInternalSelectedWeekIndex(null)
-      }
+      setSelectedSeason(null)
+      setSelectedWeekIndex(null)
       setOwnershipError(null)
       lastOwnershipPathRef.current = null
       applyOwnershipToMap(baselineOwnershipRef.current, 'Baseline')
       return
     }
 
-    const season = seasonOptions.find((entry) => entry.season === value)
-    const latestWeek = season && season.weeks.length > 0 ? season.weeks[season.weeks.length - 1] : null
-    const newWeekIndex = latestWeek?.weekIndex ?? null
-
-    if (onSeasonChange) {
-      onSeasonChange(value)
-      if (onWeekIndexChange && newWeekIndex !== null) {
-        onWeekIndexChange(newWeekIndex)
-      }
-    } else {
-      setInternalSelectedSeason(value)
-      if (newWeekIndex !== null) {
-        setInternalSelectedWeekIndex(newWeekIndex)
-      } else {
-        setInternalSelectedWeekIndex(null)
-        lastOwnershipPathRef.current = null
-        applyOwnershipToMap(baselineOwnershipRef.current, 'Baseline')
-        setCurrentWeekLabel('Baseline')
-      }
-    }
-
+    setSelectedSeason(value)
     setOwnershipError(null)
+
+    const season = seasonOptions.find((entry) => entry.season === value)
+    if (season && season.weeks.length > 0) {
+      const latestWeek = season.weeks[season.weeks.length - 1]
+      setSelectedWeekIndex(latestWeek.weekIndex ?? null)
+    } else {
+      setSelectedWeekIndex(null)
+      lastOwnershipPathRef.current = null
+      applyOwnershipToMap(baselineOwnershipRef.current, 'Baseline')
+      setCurrentWeekLabel('Baseline')
+    }
   }
 
   const handleWeekChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -1152,12 +1116,7 @@ export default function Map({
     }
 
     setOwnershipError(null)
-
-    if (onWeekIndexChange) {
-      onWeekIndexChange(value)
-    } else {
-      setInternalSelectedWeekIndex(value)
-    }
+    setSelectedWeekIndex(value)
   }
 
   return (
@@ -1192,6 +1151,57 @@ export default function Map({
           <p className="text-[11px] text-gray-500 mt-1">
             Colors reflect the owning team&apos;s primary hue
           </p>
+
+          {(showSeasonSelect || showWeekSelect) && (
+            <div className="mt-2 flex flex-col gap-1 text-xs text-gray-700">
+              {showSeasonSelect && (
+                <label className="flex items-center gap-2">
+                  <span className="font-medium text-gray-600">Season</span>
+                  <select
+                    className="border border-gray-300 rounded px-2 py-1 bg-white"
+                    value={selectedSeason !== null ? String(selectedSeason) : ''}
+                    onChange={handleSeasonChange}
+                    disabled={ownershipLoading}
+                  >
+                    {seasonOptions.map((season) => (
+                      <option key={season.season} value={String(season.season)}>
+                        {season.season}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+
+              {showWeekSelect && (
+                <label className="flex items-center gap-2">
+                  <span className="font-medium text-gray-600">Week</span>
+                  <select
+                    className="border border-gray-300 rounded px-2 py-1 bg-white"
+                    value={selectedWeekIndex !== null ? String(selectedWeekIndex) : ''}
+                    onChange={handleWeekChange}
+                    disabled={ownershipLoading}
+                  >
+                    {weekOptions.map((week) => (
+                      <option
+                        key={`${week.weekIndex}-${week.seasonType ?? 'unknown'}`}
+                        value={String(week.weekIndex)}
+                      >
+                        {week.label ?? `Week ${week.weekIndex}`}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+            </div>
+          )}
+
+          {ownershipLoading && (
+            <p className="text-[11px] text-gray-500 mt-1">Updating ownership…</p>
+          )}
+
+          {ownershipError && (
+            <p className="text-[11px] text-red-600 mt-1">{ownershipError}</p>
+          )}
         </div>
       )}
     </div>

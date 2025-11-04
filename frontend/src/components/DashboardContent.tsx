@@ -2,7 +2,7 @@
 
 import { ChangeEvent, Fragment, useCallback, useMemo, useRef, useState } from 'react'
 
-import Map, { OwnershipIndexSeason, OwnershipIndexWeek } from '@/components/Map'
+import Map from '@/components/Map'
 import type {
   LeaderboardEntry,
   LeaderboardMetrics,
@@ -110,50 +110,12 @@ export default function DashboardContent({
   )
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [seasonOptions, setSeasonOptions] = useState<OwnershipIndexSeason[]>([])
-  const [selectedSeason, setSelectedSeason] = useState<number | null>(null)
-  const [selectedWeekIndex, setSelectedWeekIndex] = useState<number | null>(null)
 
   const lastLoadedKeyRef = useRef<string | null>(
     initialLeaderboards && typeof initialLeaderboards.weekIndex === 'number'
       ? `${initialLeaderboards.season}-${initialLeaderboards.weekIndex}`
       : null
   )
-
-  const handleSeasonOptionsLoaded = useCallback((options: OwnershipIndexSeason[]) => {
-    setSeasonOptions(options)
-
-    // Auto-select the first season and latest week if available
-    if (options.length > 0 && selectedSeason === null) {
-      const firstSeason = options[0]
-      setSelectedSeason(firstSeason.season)
-
-      if (firstSeason.weeks.length > 0) {
-        const latestWeek = firstSeason.weeks[firstSeason.weeks.length - 1]
-        setSelectedWeekIndex(latestWeek.weekIndex)
-      }
-    }
-  }, [selectedSeason])
-
-  const handleSeasonChange = useCallback((season: number | null) => {
-    setSelectedSeason(season)
-
-    if (season !== null) {
-      const seasonData = seasonOptions.find(s => s.season === season)
-      if (seasonData && seasonData.weeks.length > 0) {
-        const latestWeek = seasonData.weeks[seasonData.weeks.length - 1]
-        setSelectedWeekIndex(latestWeek.weekIndex)
-      } else {
-        setSelectedWeekIndex(null)
-      }
-    } else {
-      setSelectedWeekIndex(null)
-    }
-  }, [seasonOptions])
-
-  const handleWeekIndexChange = useCallback((weekIndex: number | null) => {
-    setSelectedWeekIndex(weekIndex)
-  }, [])
 
   const handleWeekChange = useCallback(
     async ({ season, weekIndex, weekLabel }: LeaderboardWeekInfo) => {
@@ -245,76 +207,11 @@ export default function DashboardContent({
     [leaderboards]
   )
 
-  const currentSeasonOption = seasonOptions.find(s => s.season === selectedSeason)
-  const weekOptions = currentSeasonOption?.weeks ?? []
-  const showSeasonSelect = seasonOptions.length > 1
-  const showWeekSelect = weekOptions.length > 0
-
   return (
     <>
       <div className="bg-white rounded-lg shadow-lg p-6">
-        <Map
-          className="min-h-[600px]"
-          onWeekChange={handleWeekChange}
-          selectedSeason={selectedSeason}
-          selectedWeekIndex={selectedWeekIndex}
-          seasonOptions={seasonOptions}
-          onSeasonChange={handleSeasonChange}
-          onWeekIndexChange={handleWeekIndexChange}
-          onSeasonOptionsLoaded={handleSeasonOptionsLoaded}
-        />
+        <Map className="min-h-[600px]" onWeekChange={handleWeekChange} />
       </div>
-
-      {(showSeasonSelect || showWeekSelect) && (
-        <div className="bg-white rounded-lg shadow-lg p-4 mt-6">
-          <div className="flex flex-wrap items-center gap-4">
-            <h3 className="text-lg font-semibold text-gray-900">Select Week</h3>
-
-            {showSeasonSelect && (
-              <label className="flex items-center gap-2 text-sm">
-                <span className="font-medium text-gray-700">Season:</span>
-                <select
-                  className="border border-gray-300 rounded px-3 py-1.5 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  value={selectedSeason !== null ? String(selectedSeason) : ''}
-                  onChange={(e) => {
-                    const val = e.target.value
-                    handleSeasonChange(val ? Number(val) : null)
-                  }}
-                >
-                  {seasonOptions.map((season) => (
-                    <option key={season.season} value={String(season.season)}>
-                      {season.season}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            )}
-
-            {showWeekSelect && (
-              <label className="flex items-center gap-2 text-sm">
-                <span className="font-medium text-gray-700">Week:</span>
-                <select
-                  className="border border-gray-300 rounded px-3 py-1.5 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  value={selectedWeekIndex !== null ? String(selectedWeekIndex) : ''}
-                  onChange={(e) => {
-                    const val = e.target.value
-                    handleWeekIndexChange(val ? Number(val) : null)
-                  }}
-                >
-                  {weekOptions.map((week) => (
-                    <option
-                      key={`${week.weekIndex}-${week.seasonType ?? 'unknown'}`}
-                      value={String(week.weekIndex)}
-                    >
-                      {week.label ?? `Week ${week.weekIndex}`}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            )}
-          </div>
-        </div>
-      )}
 
       <section className="mt-10">
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-4">
