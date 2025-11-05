@@ -1,10 +1,10 @@
 {
   "season": 2025,
-  "weekIndex": 10,
-  "week": 10,
+  "weekIndex": 11,
+  "week": 11,
   "seasonType": "regular",
-  "weekLabel": "Regular Week 10",
-  "generatedAt": "2025-11-04T06:39:21.255117+00:00",
+  "weekLabel": "Regular Week 11",
+  "generatedAt": "2025-11-05T06:38:48.131988+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -212,10 +212,10 @@
         }
       },
       {
-        "teamId": "miami-oh",
-        "teamName": "Miami (OH)",
-        "shortName": "Miami (OH)",
-        "fullName": "Miami RedHawks",
+        "teamId": "ohio",
+        "teamName": "Ohio",
+        "shortName": "Ohio",
+        "fullName": "Ohio Bobcats",
         "conference": "MAC",
         "metrics": {
           "counties": 59,
@@ -562,10 +562,10 @@
         }
       },
       {
-        "teamId": "miami-oh",
-        "teamName": "Miami (OH)",
-        "shortName": "Miami (OH)",
-        "fullName": "Miami RedHawks",
+        "teamId": "ohio",
+        "teamName": "Ohio",
+        "shortName": "Ohio",
+        "fullName": "Ohio Bobcats",
         "conference": "MAC",
         "metrics": {
           "counties": 59,
@@ -804,10 +804,10 @@
         }
       },
       {
-        "teamId": "miami-oh",
-        "teamName": "Miami (OH)",
-        "shortName": "Miami (OH)",
-        "fullName": "Miami RedHawks",
+        "teamId": "ohio",
+        "teamName": "Ohio",
+        "shortName": "Ohio",
+        "fullName": "Ohio Bobcats",
         "conference": "MAC",
         "metrics": {
           "counties": 59,
@@ -914,149 +914,29 @@
     ],
     "territoryGained": [
       {
-        "teamId": "west-virginia",
-        "teamName": "West Virginia",
-        "shortName": "West Virginia",
-        "fullName": "West Virginia Mountaineers",
-        "conference": "Big 12",
+        "teamId": "ohio",
+        "teamName": "Ohio",
+        "shortName": "Ohio",
+        "fullName": "Ohio Bobcats",
+        "conference": "MAC",
         "metrics": {
-          "counties": 1540,
-          "population": 145756142,
-          "areaSqMi": 2342248.22
-        }
-      },
-      {
-        "teamId": "utah",
-        "teamName": "Utah",
-        "shortName": "Utah",
-        "fullName": "Utah Utes",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 735,
-          "population": 49630182,
-          "areaSqMi": 544625.81
-        }
-      },
-      {
-        "teamId": "nc-state",
-        "teamName": "NC State",
-        "shortName": "NC State",
-        "fullName": "NC State Wolfpack",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 420,
-          "population": 49736739,
-          "areaSqMi": 264340.89
-        }
-      },
-      {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 161,
-          "population": 28142051,
-          "areaSqMi": 87901.98
-        }
-      },
-      {
-        "teamId": "san-jose-state",
-        "teamName": "San Jose State",
-        "shortName": "San Jose State",
-        "fullName": "San Jose State Spartans",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 132,
-          "population": 4842462,
-          "areaSqMi": 60396.67
-        }
-      },
-      {
-        "teamId": "fresno-state",
-        "teamName": "Fresno State",
-        "shortName": "Fresno State",
-        "fullName": "Fresno State Bulldogs",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 36,
-          "population": 18204196,
-          "areaSqMi": 359874.9
+          "counties": 59,
+          "population": 2377378,
+          "areaSqMi": 29792.86
         }
       }
     ],
     "territoryLost": [
       {
-        "teamId": "houston",
-        "teamName": "Houston",
-        "shortName": "Houston",
-        "fullName": "Houston Cougars",
-        "conference": "Big 12",
+        "teamId": "miami-oh",
+        "teamName": "Miami (OH)",
+        "shortName": "Miami (OH)",
+        "fullName": "Miami RedHawks",
+        "conference": "MAC",
         "metrics": {
-          "counties": 1540,
-          "population": 145756142,
-          "areaSqMi": 2342248.22
-        }
-      },
-      {
-        "teamId": "cincinnati",
-        "teamName": "Cincinnati",
-        "shortName": "Cincinnati",
-        "fullName": "Cincinnati Bearcats",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 735,
-          "population": 49630182,
-          "areaSqMi": 544625.81
-        }
-      },
-      {
-        "teamId": "georgia-tech",
-        "teamName": "Georgia Tech",
-        "shortName": "Georgia Tech",
-        "fullName": "Georgia Tech Yellow Jackets",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 420,
-          "population": 49736739,
-          "areaSqMi": 264340.89
-        }
-      },
-      {
-        "teamId": "navy",
-        "teamName": "Navy",
-        "shortName": "Navy",
-        "fullName": "Navy Midshipmen",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 161,
-          "population": 28142051,
-          "areaSqMi": 87901.98
-        }
-      },
-      {
-        "teamId": "hawaii",
-        "teamName": "Hawaii",
-        "shortName": "Hawaii",
-        "fullName": "Hawaii Rainbow Warriors",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 132,
-          "population": 4842462,
-          "areaSqMi": 60396.67
-        }
-      },
-      {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 36,
-          "population": 18204196,
-          "areaSqMi": 359874.9
+          "counties": 59,
+          "population": 2377378,
+          "areaSqMi": 29792.86
         }
       }
     ]

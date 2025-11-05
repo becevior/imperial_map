@@ -79,16 +79,23 @@
           "seasonType": "regular",
           "label": "Regular Week 10",
           "path": "/data/leaderboards/2025/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Regular Week 11",
+          "path": "/data/leaderboards/2025/week-11.json"
         }
       ]
     }
   ],
   "latest": {
     "season": 2025,
-    "weekIndex": 10,
-    "path": "/data/leaderboards/2025/week-10.json",
-    "label": "Regular Week 10",
-    "week": 10,
+    "weekIndex": 11,
+    "path": "/data/leaderboards/2025/week-11.json",
+    "label": "Regular Week 11",
+    "week": 11,
     "seasonType": "regular"
   }
 }

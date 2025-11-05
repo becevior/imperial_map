@@ -1,0 +1,36 @@
+[
+  {
+    "id": 401762851,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-05T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "InfoCision Stadium",
+    "homeTeamId": "akron",
+    "awayTeamId": "umass",
+    "homeScore": 44,
+    "awayScore": 10,
+    "winnerId": "akron",
+    "loserId": "umass"
+  },
+  {
+    "id": 401762852,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-05T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Peden Stadium",
+    "homeTeamId": "ohio",
+    "awayTeamId": "miami-oh",
+    "homeScore": 24,
+    "awayScore": 20,
+    "winnerId": "ohio",
+    "loserId": "miami-oh"
+  }
+]
