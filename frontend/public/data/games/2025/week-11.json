@@ -32,5 +32,39 @@
     "awayScore": 20,
     "winnerId": "ohio",
     "loserId": "miami-oh"
+  },
+  {
+    "id": 401762853,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-06T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Scheumann Stadium",
+    "homeTeamId": "ball-state",
+    "awayTeamId": "kent-state",
+    "homeScore": 17,
+    "awayScore": 13,
+    "winnerId": "ball-state",
+    "loserId": "kent-state"
+  },
+  {
+    "id": 401762854,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-06T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Glass Bowl",
+    "homeTeamId": "toledo",
+    "awayTeamId": "northern-illinois",
+    "homeScore": 42,
+    "awayScore": 3,
+    "winnerId": "toledo",
+    "loserId": "northern-illinois"
   }
 ]
