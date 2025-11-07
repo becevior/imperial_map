@@ -66,5 +66,39 @@
     "awayScore": 3,
     "winnerId": "toledo",
     "loserId": "northern-illinois"
+  },
+  {
+    "id": 401761644,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-07T00:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Kidd Brewer Stadium",
+    "homeTeamId": "appalachian-state",
+    "awayTeamId": "georgia-southern",
+    "homeScore": 23,
+    "awayScore": 25,
+    "winnerId": "georgia-southern",
+    "loserId": "appalachian-state"
+  },
+  {
+    "id": 401762500,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-07T00:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Raymond James Stadium",
+    "homeTeamId": "south-florida",
+    "awayTeamId": "utsa",
+    "homeScore": 55,
+    "awayScore": 23,
+    "winnerId": "south-florida",
+    "loserId": "utsa"
   }
 ]
