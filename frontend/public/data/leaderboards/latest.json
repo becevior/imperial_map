@@ -4,7 +4,7 @@
   "week": 11,
   "seasonType": "regular",
   "weekLabel": "Regular Week 11",
-  "generatedAt": "2025-11-07T06:39:21.073118+00:00",
+  "generatedAt": "2025-11-08T18:14:27.139774+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -104,10 +104,10 @@
         }
       },
       {
-        "teamId": "memphis",
-        "teamName": "Memphis",
-        "shortName": "Memphis",
-        "fullName": "Memphis Tigers",
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
           "counties": 91,
@@ -382,10 +382,10 @@
         }
       },
       {
-        "teamId": "memphis",
-        "teamName": "Memphis",
-        "shortName": "Memphis",
-        "fullName": "Memphis Tigers",
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
           "counties": 91,
@@ -744,10 +744,10 @@
         }
       },
       {
-        "teamId": "memphis",
-        "teamName": "Memphis",
-        "shortName": "Memphis",
-        "fullName": "Memphis Tigers",
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
           "counties": 91,
@@ -920,9 +920,21 @@
         "fullName": "Ohio Bobcats",
         "conference": "MAC",
         "metrics": {
-          "counties": 177,
-          "population": 7132134,
-          "areaSqMi": 89378.57
+          "counties": 236,
+          "population": 9509512,
+          "areaSqMi": 119171.42
+        }
+      },
+      {
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 91,
+          "population": 16834547,
+          "areaSqMi": 161352.3
         }
       }
     ],
@@ -934,9 +946,21 @@
         "fullName": "Miami RedHawks",
         "conference": "MAC",
         "metrics": {
-          "counties": 177,
-          "population": 7132134,
-          "areaSqMi": 89378.57
+          "counties": 236,
+          "population": 9509512,
+          "areaSqMi": 119171.42
+        }
+      },
+      {
+        "teamId": "memphis",
+        "teamName": "Memphis",
+        "shortName": "Memphis",
+        "fullName": "Memphis Tigers",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 91,
+          "population": 16834547,
+          "areaSqMi": 161352.3
         }
       }
     ]
