@@ -4,7 +4,7 @@
   "week": 11,
   "seasonType": "regular",
   "weekLabel": "Regular Week 11",
-  "generatedAt": "2025-11-08T22:09:18.606544+00:00",
+  "generatedAt": "2025-11-08T23:09:58.831701+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -272,10 +272,10 @@
         }
       },
       {
-        "teamId": "uab",
-        "teamName": "UAB",
-        "shortName": "UAB",
-        "fullName": "UAB Blazers",
+        "teamId": "rice",
+        "teamName": "Rice",
+        "shortName": "Rice",
+        "fullName": "Rice Owls",
         "conference": "AAC",
         "metrics": {
           "counties": 20,
@@ -574,10 +574,10 @@
         }
       },
       {
-        "teamId": "uab",
-        "teamName": "UAB",
-        "shortName": "UAB",
-        "fullName": "UAB Blazers",
+        "teamId": "rice",
+        "teamName": "Rice",
+        "shortName": "Rice",
+        "fullName": "Rice Owls",
         "conference": "AAC",
         "metrics": {
           "counties": 20,
@@ -864,10 +864,10 @@
         }
       },
       {
-        "teamId": "uab",
-        "teamName": "UAB",
-        "shortName": "UAB",
-        "fullName": "UAB Blazers",
+        "teamId": "rice",
+        "teamName": "Rice",
+        "shortName": "Rice",
+        "fullName": "Rice Owls",
         "conference": "AAC",
         "metrics": {
           "counties": 20,
@@ -914,27 +914,27 @@
     ],
     "territoryGained": [
       {
-        "teamId": "ohio",
-        "teamName": "Ohio",
-        "shortName": "Ohio",
-        "fullName": "Ohio Bobcats",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 472,
-          "population": 19019024,
-          "areaSqMi": 238342.85
-        }
-      },
-      {
         "teamId": "tulane",
         "teamName": "Tulane",
         "shortName": "Tulane",
         "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
-          "counties": 455,
-          "population": 84172735,
-          "areaSqMi": 806761.51
+          "counties": 546,
+          "population": 101007282,
+          "areaSqMi": 968113.81
+        }
+      },
+      {
+        "teamId": "ohio",
+        "teamName": "Ohio",
+        "shortName": "Ohio",
+        "fullName": "Ohio Bobcats",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 531,
+          "population": 21396402,
+          "areaSqMi": 268135.7
         }
       },
       {
@@ -944,25 +944,25 @@
         "fullName": "Texas Tech Red Raiders",
         "conference": "Big 12",
         "metrics": {
-          "counties": 150,
-          "population": 25624078,
-          "areaSqMi": 206677.99
+          "counties": 225,
+          "population": 38436117,
+          "areaSqMi": 310016.98
+        }
+      },
+      {
+        "teamId": "rice",
+        "teamName": "Rice",
+        "shortName": "Rice",
+        "fullName": "Rice Owls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 20,
+          "population": 1667912,
+          "areaSqMi": 11171.88
         }
       }
     ],
     "territoryLost": [
-      {
-        "teamId": "miami-oh",
-        "teamName": "Miami (OH)",
-        "shortName": "Miami (OH)",
-        "fullName": "Miami RedHawks",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 472,
-          "population": 19019024,
-          "areaSqMi": 238342.85
-        }
-      },
       {
         "teamId": "memphis",
         "teamName": "Memphis",
@@ -970,9 +970,21 @@
         "fullName": "Memphis Tigers",
         "conference": "AAC",
         "metrics": {
-          "counties": 455,
-          "population": 84172735,
-          "areaSqMi": 806761.51
+          "counties": 546,
+          "population": 101007282,
+          "areaSqMi": 968113.81
+        }
+      },
+      {
+        "teamId": "miami-oh",
+        "teamName": "Miami (OH)",
+        "shortName": "Miami (OH)",
+        "fullName": "Miami RedHawks",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 531,
+          "population": 21396402,
+          "areaSqMi": 268135.7
         }
       },
       {
@@ -982,9 +994,21 @@
         "fullName": "BYU Cougars",
         "conference": "Big 12",
         "metrics": {
-          "counties": 150,
-          "population": 25624078,
-          "areaSqMi": 206677.99
+          "counties": 225,
+          "population": 38436117,
+          "areaSqMi": 310016.98
+        }
+      },
+      {
+        "teamId": "uab",
+        "teamName": "UAB",
+        "shortName": "UAB",
+        "fullName": "UAB Blazers",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 20,
+          "population": 1667912,
+          "areaSqMi": 11171.88
         }
       }
     ]

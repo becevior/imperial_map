@@ -338,5 +338,39 @@
     "awayScore": 21,
     "winnerId": "eastern-michigan",
     "loserId": "bowling-green"
+  },
+  {
+    "id": 401762502,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-08T19:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Rice Stadium",
+    "homeTeamId": "rice",
+    "awayTeamId": "uab",
+    "homeScore": 24,
+    "awayScore": 17,
+    "winnerId": "rice",
+    "loserId": "uab"
+  },
+  {
+    "id": 401752894,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-08T19:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "SHI Stadium",
+    "homeTeamId": "rutgers",
+    "awayTeamId": "maryland",
+    "homeScore": 35,
+    "awayScore": 20,
+    "winnerId": "rutgers",
+    "loserId": "maryland"
   }
 ]
