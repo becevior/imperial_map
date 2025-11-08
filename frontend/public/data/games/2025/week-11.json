@@ -151,5 +151,22 @@
     "awayScore": 38,
     "winnerId": "tulane",
     "loserId": "memphis"
+  },
+  {
+    "id": 401762503,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-08T17:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Michie Stadium",
+    "homeTeamId": "army",
+    "awayTeamId": "temple",
+    "homeScore": 14,
+    "awayScore": 13,
+    "winnerId": "army",
+    "loserId": "temple"
   }
 ]
