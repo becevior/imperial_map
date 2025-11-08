@@ -304,5 +304,39 @@
     "awayScore": 34,
     "winnerId": "ohio-state",
     "loserId": "purdue"
+  },
+  {
+    "id": 401757299,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-08T18:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Williams Stadium (VA)",
+    "homeTeamId": "liberty",
+    "awayTeamId": "missouri-state",
+    "homeScore": 17,
+    "awayScore": 21,
+    "winnerId": "missouri-state",
+    "loserId": "liberty"
+  },
+  {
+    "id": 401762855,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-08T18:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Rynearson Stadium",
+    "homeTeamId": "eastern-michigan",
+    "awayTeamId": "bowling-green",
+    "homeScore": 27,
+    "awayScore": 21,
+    "winnerId": "eastern-michigan",
+    "loserId": "bowling-green"
   }
 ]
