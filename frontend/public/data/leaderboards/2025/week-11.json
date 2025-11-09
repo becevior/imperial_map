@@ -4,7 +4,7 @@
   "week": 11,
   "seasonType": "regular",
   "weekLabel": "Regular Week 11",
-  "generatedAt": "2025-11-09T03:16:38.733983+00:00",
+  "generatedAt": "2025-11-09T04:26:40.637496+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -128,10 +128,10 @@
         }
       },
       {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
+        "teamId": "california",
+        "teamName": "California",
+        "shortName": "California",
+        "fullName": "California Golden Bears",
         "conference": "ACC",
         "metrics": {
           "counties": 74,
@@ -200,10 +200,10 @@
         }
       },
       {
-        "teamId": "virginia",
-        "teamName": "Virginia",
-        "shortName": "Virginia",
-        "fullName": "Virginia Cavaliers",
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
           "counties": 89,
@@ -454,10 +454,10 @@
         }
       },
       {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
+        "teamId": "california",
+        "teamName": "California",
+        "shortName": "California",
+        "fullName": "California Golden Bears",
         "conference": "ACC",
         "metrics": {
           "counties": 74,
@@ -550,10 +550,10 @@
         }
       },
       {
-        "teamId": "virginia",
-        "teamName": "Virginia",
-        "shortName": "Virginia",
-        "fullName": "Virginia Cavaliers",
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
           "counties": 89,
@@ -756,10 +756,10 @@
         }
       },
       {
-        "teamId": "virginia",
-        "teamName": "Virginia",
-        "shortName": "Virginia",
-        "fullName": "Virginia Cavaliers",
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
           "counties": 89,
@@ -792,10 +792,10 @@
         }
       },
       {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
+        "teamId": "california",
+        "teamName": "California",
+        "shortName": "California",
+        "fullName": "California Golden Bears",
         "conference": "ACC",
         "metrics": {
           "counties": 74,
@@ -920,9 +920,9 @@
         "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
-          "counties": 728,
-          "population": 134676376,
-          "areaSqMi": 1290818.42
+          "counties": 819,
+          "population": 151510923,
+          "areaSqMi": 1452170.72
         }
       },
       {
@@ -932,9 +932,9 @@
         "fullName": "Ohio Bobcats",
         "conference": "MAC",
         "metrics": {
-          "counties": 649,
-          "population": 26151158,
-          "areaSqMi": 327721.42
+          "counties": 708,
+          "population": 28528536,
+          "areaSqMi": 357514.27
         }
       },
       {
@@ -944,33 +944,21 @@
         "fullName": "Texas Tech Red Raiders",
         "conference": "Big 12",
         "metrics": {
-          "counties": 375,
-          "population": 64060195,
-          "areaSqMi": 516694.97
+          "counties": 450,
+          "population": 76872234,
+          "areaSqMi": 620033.96
         }
       },
       {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
         "metrics": {
-          "counties": 60,
-          "population": 5003736,
-          "areaSqMi": 33515.63
-        }
-      },
-      {
-        "teamId": "iowa-state",
-        "teamName": "Iowa State",
-        "shortName": "Iowa State",
-        "fullName": "Iowa State Cyclones",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 50,
-          "population": 10002736,
-          "areaSqMi": 34349.18
+          "counties": 89,
+          "population": 3943033,
+          "areaSqMi": 42609.35
         }
       },
       {
@@ -980,9 +968,45 @@
         "fullName": "Air Force Falcons",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
+          "counties": 88,
+          "population": 3228308,
+          "areaSqMi": 40264.45
+        }
+      },
+      {
+        "teamId": "rice",
+        "teamName": "Rice",
+        "shortName": "Rice",
+        "fullName": "Rice Owls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 80,
+          "population": 6671648,
+          "areaSqMi": 44687.51
+        }
+      },
+      {
+        "teamId": "iowa-state",
+        "teamName": "Iowa State",
+        "shortName": "Iowa State",
+        "fullName": "Iowa State Cyclones",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 75,
+          "population": 15004104,
+          "areaSqMi": 51523.77
+        }
+      },
+      {
+        "teamId": "california",
+        "teamName": "California",
+        "shortName": "California",
+        "fullName": "California Golden Bears",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
         }
       }
     ],
@@ -994,9 +1018,9 @@
         "fullName": "Memphis Tigers",
         "conference": "AAC",
         "metrics": {
-          "counties": 728,
-          "population": 134676376,
-          "areaSqMi": 1290818.42
+          "counties": 819,
+          "population": 151510923,
+          "areaSqMi": 1452170.72
         }
       },
       {
@@ -1006,9 +1030,9 @@
         "fullName": "Miami RedHawks",
         "conference": "MAC",
         "metrics": {
-          "counties": 649,
-          "population": 26151158,
-          "areaSqMi": 327721.42
+          "counties": 708,
+          "population": 28528536,
+          "areaSqMi": 357514.27
         }
       },
       {
@@ -1018,33 +1042,21 @@
         "fullName": "BYU Cougars",
         "conference": "Big 12",
         "metrics": {
-          "counties": 375,
-          "population": 64060195,
-          "areaSqMi": 516694.97
+          "counties": 450,
+          "population": 76872234,
+          "areaSqMi": 620033.96
         }
       },
       {
-        "teamId": "uab",
-        "teamName": "UAB",
-        "shortName": "UAB",
-        "fullName": "UAB Blazers",
-        "conference": "AAC",
+        "teamId": "virginia",
+        "teamName": "Virginia",
+        "shortName": "Virginia",
+        "fullName": "Virginia Cavaliers",
+        "conference": "ACC",
         "metrics": {
-          "counties": 60,
-          "population": 5003736,
-          "areaSqMi": 33515.63
-        }
-      },
-      {
-        "teamId": "tcu",
-        "teamName": "TCU",
-        "shortName": "TCU",
-        "fullName": "TCU Horned Frogs",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 50,
-          "population": 10002736,
-          "areaSqMi": 34349.18
+          "counties": 89,
+          "population": 3943033,
+          "areaSqMi": 42609.35
         }
       },
       {
@@ -1054,9 +1066,45 @@
         "fullName": "San Jose State Spartans",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
+          "counties": 88,
+          "population": 3228308,
+          "areaSqMi": 40264.45
+        }
+      },
+      {
+        "teamId": "uab",
+        "teamName": "UAB",
+        "shortName": "UAB",
+        "fullName": "UAB Blazers",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 80,
+          "population": 6671648,
+          "areaSqMi": 44687.51
+        }
+      },
+      {
+        "teamId": "tcu",
+        "teamName": "TCU",
+        "shortName": "TCU",
+        "fullName": "TCU Horned Frogs",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 75,
+          "population": 15004104,
+          "areaSqMi": 51523.77
+        }
+      },
+      {
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
         }
       }
     ]
