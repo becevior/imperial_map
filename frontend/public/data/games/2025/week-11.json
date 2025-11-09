@@ -797,5 +797,22 @@
     "awayScore": 42,
     "winnerId": "unlv",
     "loserId": "colorado-state"
+  },
+  {
+    "id": 401752944,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-09T03:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Reser Stadium",
+    "homeTeamId": "oregon-state",
+    "awayTeamId": "sam-houston",
+    "homeScore": 17,
+    "awayScore": 21,
+    "winnerId": "sam-houston",
+    "loserId": "oregon-state"
   }
 ]
