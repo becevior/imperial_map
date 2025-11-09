@@ -627,5 +627,22 @@
     "awayScore": 39,
     "winnerId": "louisiana",
     "loserId": "texas-state"
+  },
+  {
+    "id": 401760406,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 11,
+    "completed": true,
+    "startDate": "2025-11-08T23:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "CEFCU Stadium",
+    "homeTeamId": "san-jose-state",
+    "awayTeamId": "air-force",
+    "homeScore": 16,
+    "awayScore": 26,
+    "winnerId": "air-force",
+    "loserId": "san-jose-state"
   }
 ]
