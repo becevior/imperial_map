@@ -4,7 +4,7 @@
   "week": 11,
   "seasonType": "regular",
   "weekLabel": "Regular Week 11",
-  "generatedAt": "2025-11-09T07:20:38.861404+00:00",
+  "generatedAt": "2025-11-09T08:26:43.110733+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -44,10 +44,10 @@
         }
       },
       {
-        "teamId": "san-diego-state",
-        "teamName": "San Diego State",
-        "shortName": "San Diego State",
-        "fullName": "San Diego State Aztecs",
+        "teamId": "hawaii",
+        "teamName": "Hawaii",
+        "shortName": "Hawaii",
+        "fullName": "Hawaii Rainbow Warriors",
         "conference": "Mountain West",
         "metrics": {
           "counties": 219,
@@ -370,10 +370,10 @@
         }
       },
       {
-        "teamId": "san-diego-state",
-        "teamName": "San Diego State",
-        "shortName": "San Diego State",
-        "fullName": "San Diego State Aztecs",
+        "teamId": "hawaii",
+        "teamName": "Hawaii",
+        "shortName": "Hawaii",
+        "fullName": "Hawaii Rainbow Warriors",
         "conference": "Mountain West",
         "metrics": {
           "counties": 219,
@@ -672,10 +672,10 @@
         }
       },
       {
-        "teamId": "san-diego-state",
-        "teamName": "San Diego State",
-        "shortName": "San Diego State",
-        "fullName": "San Diego State Aztecs",
+        "teamId": "hawaii",
+        "teamName": "Hawaii",
+        "shortName": "Hawaii",
+        "fullName": "Hawaii Rainbow Warriors",
         "conference": "Mountain West",
         "metrics": {
           "counties": 219,
@@ -920,9 +920,9 @@
         "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
-          "counties": 1092,
-          "population": 202014564,
-          "areaSqMi": 1936227.62
+          "counties": 1183,
+          "population": 218849111,
+          "areaSqMi": 2097579.93
         }
       },
       {
@@ -932,9 +932,9 @@
         "fullName": "Ohio Bobcats",
         "conference": "MAC",
         "metrics": {
-          "counties": 885,
-          "population": 35660670,
-          "areaSqMi": 446892.84
+          "counties": 944,
+          "population": 38038048,
+          "areaSqMi": 476685.7
         }
       },
       {
@@ -944,9 +944,9 @@
         "fullName": "Texas Tech Red Raiders",
         "conference": "Big 12",
         "metrics": {
-          "counties": 675,
-          "population": 115308351,
-          "areaSqMi": 930050.94
+          "counties": 750,
+          "population": 128120390,
+          "areaSqMi": 1033389.93
         }
       },
       {
@@ -956,9 +956,9 @@
         "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
-          "counties": 356,
-          "population": 15772132,
-          "areaSqMi": 170437.42
+          "counties": 445,
+          "population": 19715165,
+          "areaSqMi": 213046.77
         }
       },
       {
@@ -968,9 +968,9 @@
         "fullName": "California Golden Bears",
         "conference": "ACC",
         "metrics": {
-          "counties": 296,
-          "population": 47845488,
-          "areaSqMi": 506609.69
+          "counties": 370,
+          "population": 59806860,
+          "areaSqMi": 633262.12
         }
       },
       {
@@ -980,9 +980,21 @@
         "fullName": "Air Force Falcons",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 220,
-          "population": 8070770,
-          "areaSqMi": 100661.12
+          "counties": 264,
+          "population": 9684924,
+          "areaSqMi": 120793.35
+        }
+      },
+      {
+        "teamId": "hawaii",
+        "teamName": "Hawaii",
+        "shortName": "Hawaii",
+        "fullName": "Hawaii Rainbow Warriors",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
         }
       },
       {
@@ -992,9 +1004,9 @@
         "fullName": "Iowa State Cyclones",
         "conference": "Big 12",
         "metrics": {
-          "counties": 150,
-          "population": 30008208,
-          "areaSqMi": 103047.54
+          "counties": 175,
+          "population": 35009576,
+          "areaSqMi": 120222.13
         }
       },
       {
@@ -1004,9 +1016,9 @@
         "fullName": "Rice Owls",
         "conference": "AAC",
         "metrics": {
-          "counties": 140,
-          "population": 11675384,
-          "areaSqMi": 78203.14
+          "counties": 160,
+          "population": 13343296,
+          "areaSqMi": 89375.02
         }
       }
     ],
@@ -1018,9 +1030,9 @@
         "fullName": "Memphis Tigers",
         "conference": "AAC",
         "metrics": {
-          "counties": 1092,
-          "population": 202014564,
-          "areaSqMi": 1936227.62
+          "counties": 1183,
+          "population": 218849111,
+          "areaSqMi": 2097579.93
         }
       },
       {
@@ -1030,9 +1042,9 @@
         "fullName": "Miami RedHawks",
         "conference": "MAC",
         "metrics": {
-          "counties": 885,
-          "population": 35660670,
-          "areaSqMi": 446892.84
+          "counties": 944,
+          "population": 38038048,
+          "areaSqMi": 476685.7
         }
       },
       {
@@ -1042,9 +1054,9 @@
         "fullName": "BYU Cougars",
         "conference": "Big 12",
         "metrics": {
-          "counties": 675,
-          "population": 115308351,
-          "areaSqMi": 930050.94
+          "counties": 750,
+          "population": 128120390,
+          "areaSqMi": 1033389.93
         }
       },
       {
@@ -1054,9 +1066,9 @@
         "fullName": "Virginia Cavaliers",
         "conference": "ACC",
         "metrics": {
-          "counties": 356,
-          "population": 15772132,
-          "areaSqMi": 170437.42
+          "counties": 445,
+          "population": 19715165,
+          "areaSqMi": 213046.77
         }
       },
       {
@@ -1066,9 +1078,9 @@
         "fullName": "Louisville Cardinals",
         "conference": "ACC",
         "metrics": {
-          "counties": 296,
-          "population": 47845488,
-          "areaSqMi": 506609.69
+          "counties": 370,
+          "population": 59806860,
+          "areaSqMi": 633262.12
         }
       },
       {
@@ -1078,9 +1090,21 @@
         "fullName": "San Jose State Spartans",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 220,
-          "population": 8070770,
-          "areaSqMi": 100661.12
+          "counties": 264,
+          "population": 9684924,
+          "areaSqMi": 120793.35
+        }
+      },
+      {
+        "teamId": "san-diego-state",
+        "teamName": "San Diego State",
+        "shortName": "San Diego State",
+        "fullName": "San Diego State Aztecs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
         }
       },
       {
@@ -1090,9 +1114,9 @@
         "fullName": "TCU Horned Frogs",
         "conference": "Big 12",
         "metrics": {
-          "counties": 150,
-          "population": 30008208,
-          "areaSqMi": 103047.54
+          "counties": 175,
+          "population": 35009576,
+          "areaSqMi": 120222.13
         }
       },
       {
@@ -1102,9 +1126,9 @@
         "fullName": "UAB Blazers",
         "conference": "AAC",
         "metrics": {
-          "counties": 140,
-          "population": 11675384,
-          "areaSqMi": 78203.14
+          "counties": 160,
+          "population": 13343296,
+          "areaSqMi": 89375.02
         }
       }
     ]
