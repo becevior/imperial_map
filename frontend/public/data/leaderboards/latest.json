@@ -1,10 +1,10 @@
 {
   "season": 2025,
-  "weekIndex": 11,
-  "week": 11,
+  "weekIndex": 12,
+  "week": 12,
   "seasonType": "regular",
-  "weekLabel": "Regular Week 11",
-  "generatedAt": "2025-11-11T06:39:56.508361+00:00",
+  "weekLabel": "Regular Week 12",
+  "generatedAt": "2025-11-12T06:39:41.255537+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -212,10 +212,10 @@
         }
       },
       {
-        "teamId": "ohio",
-        "teamName": "Ohio",
-        "shortName": "Ohio",
-        "fullName": "Ohio Bobcats",
+        "teamId": "western-michigan",
+        "teamName": "Western Michigan",
+        "shortName": "Western Michigan",
+        "fullName": "Western Michigan Broncos",
         "conference": "MAC",
         "metrics": {
           "counties": 59,
@@ -562,10 +562,10 @@
         }
       },
       {
-        "teamId": "ohio",
-        "teamName": "Ohio",
-        "shortName": "Ohio",
-        "fullName": "Ohio Bobcats",
+        "teamId": "western-michigan",
+        "teamName": "Western Michigan",
+        "shortName": "Western Michigan",
+        "fullName": "Western Michigan Broncos",
         "conference": "MAC",
         "metrics": {
           "counties": 59,
@@ -804,10 +804,10 @@
         }
       },
       {
-        "teamId": "ohio",
-        "teamName": "Ohio",
-        "shortName": "Ohio",
-        "fullName": "Ohio Bobcats",
+        "teamId": "western-michigan",
+        "teamName": "Western Michigan",
+        "shortName": "Western Michigan",
+        "fullName": "Western Michigan Broncos",
         "conference": "MAC",
         "metrics": {
           "counties": 59,
@@ -914,17 +914,19 @@
     ],
     "territoryGained": [
       {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
+        "teamId": "western-michigan",
+        "teamName": "Western Michigan",
+        "shortName": "Western Michigan",
+        "fullName": "Western Michigan Broncos",
+        "conference": "MAC",
         "metrics": {
-          "counties": 1547,
-          "population": 286187299,
-          "areaSqMi": 2742989.13
+          "counties": 59,
+          "population": 2377378,
+          "areaSqMi": 29792.86
         }
-      },
+      }
+    ],
+    "territoryLost": [
       {
         "teamId": "ohio",
         "teamName": "Ohio",
@@ -932,203 +934,9 @@
         "fullName": "Ohio Bobcats",
         "conference": "MAC",
         "metrics": {
-          "counties": 1180,
-          "population": 47547560,
-          "areaSqMi": 595857.12
-        }
-      },
-      {
-        "teamId": "hawaii",
-        "teamName": "Hawaii",
-        "shortName": "Hawaii",
-        "fullName": "Hawaii Rainbow Warriors",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 1095,
-          "population": 97551890,
-          "areaSqMi": 1109047.97
-        }
-      },
-      {
-        "teamId": "texas-tech",
-        "teamName": "Texas Tech",
-        "shortName": "Texas Tech",
-        "fullName": "Texas Tech Red Raiders",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 1050,
-          "population": 179368546,
-          "areaSqMi": 1446745.9
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 801,
-          "population": 35487297,
-          "areaSqMi": 383484.19
-        }
-      },
-      {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 666,
-          "population": 107652348,
-          "areaSqMi": 1139871.81
-        }
-      },
-      {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 440,
-          "population": 16141540,
-          "areaSqMi": 201322.25
-        }
-      },
-      {
-        "teamId": "iowa-state",
-        "teamName": "Iowa State",
-        "shortName": "Iowa State",
-        "fullName": "Iowa State Cyclones",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 275,
-          "population": 55015048,
-          "areaSqMi": 188920.49
-        }
-      },
-      {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 240,
-          "population": 20014944,
-          "areaSqMi": 134062.52
-        }
-      }
-    ],
-    "territoryLost": [
-      {
-        "teamId": "memphis",
-        "teamName": "Memphis",
-        "shortName": "Memphis",
-        "fullName": "Memphis Tigers",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 1547,
-          "population": 286187299,
-          "areaSqMi": 2742989.13
-        }
-      },
-      {
-        "teamId": "miami-oh",
-        "teamName": "Miami (OH)",
-        "shortName": "Miami (OH)",
-        "fullName": "Miami RedHawks",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 1180,
-          "population": 47547560,
-          "areaSqMi": 595857.12
-        }
-      },
-      {
-        "teamId": "san-diego-state",
-        "teamName": "San Diego State",
-        "shortName": "San Diego State",
-        "fullName": "San Diego State Aztecs",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 1095,
-          "population": 97551890,
-          "areaSqMi": 1109047.97
-        }
-      },
-      {
-        "teamId": "byu",
-        "teamName": "BYU",
-        "shortName": "BYU",
-        "fullName": "BYU Cougars",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 1050,
-          "population": 179368546,
-          "areaSqMi": 1446745.9
-        }
-      },
-      {
-        "teamId": "virginia",
-        "teamName": "Virginia",
-        "shortName": "Virginia",
-        "fullName": "Virginia Cavaliers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 801,
-          "population": 35487297,
-          "areaSqMi": 383484.19
-        }
-      },
-      {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 666,
-          "population": 107652348,
-          "areaSqMi": 1139871.81
-        }
-      },
-      {
-        "teamId": "san-jose-state",
-        "teamName": "San Jose State",
-        "shortName": "San Jose State",
-        "fullName": "San Jose State Spartans",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 440,
-          "population": 16141540,
-          "areaSqMi": 201322.25
-        }
-      },
-      {
-        "teamId": "tcu",
-        "teamName": "TCU",
-        "shortName": "TCU",
-        "fullName": "TCU Horned Frogs",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 275,
-          "population": 55015048,
-          "areaSqMi": 188920.49
-        }
-      },
-      {
-        "teamId": "uab",
-        "teamName": "UAB",
-        "shortName": "UAB",
-        "fullName": "UAB Blazers",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 240,
-          "population": 20014944,
-          "areaSqMi": 134062.52
+          "counties": 59,
+          "population": 2377378,
+          "areaSqMi": 29792.86
         }
       }
     ]

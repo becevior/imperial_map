@@ -1,0 +1,36 @@
+[
+  {
+    "id": 401762856,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 12,
+    "completed": true,
+    "startDate": "2025-11-12T00:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "InfoCision Stadium",
+    "homeTeamId": "akron",
+    "awayTeamId": "kent-state",
+    "homeScore": 35,
+    "awayScore": 42,
+    "winnerId": "kent-state",
+    "loserId": "akron"
+  },
+  {
+    "id": 401762857,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 12,
+    "completed": true,
+    "startDate": "2025-11-12T01:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Waldo Stadium",
+    "homeTeamId": "western-michigan",
+    "awayTeamId": "ohio",
+    "homeScore": 17,
+    "awayScore": 13,
+    "winnerId": "western-michigan",
+    "loserId": "ohio"
+  }
+]
