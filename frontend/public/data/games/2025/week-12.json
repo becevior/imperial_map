@@ -83,5 +83,22 @@
     "awayScore": 24,
     "winnerId": "toledo",
     "loserId": "miami-oh"
+  },
+  {
+    "id": 401761649,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 12,
+    "completed": true,
+    "startDate": "2025-11-14T00:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "S.B. Ballard Stadium",
+    "homeTeamId": "old-dominion",
+    "awayTeamId": "troy",
+    "homeScore": 33,
+    "awayScore": 0,
+    "winnerId": "old-dominion",
+    "loserId": "troy"
   }
 ]
