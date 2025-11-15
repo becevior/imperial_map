@@ -4,7 +4,7 @@
   "week": 12,
   "seasonType": "regular",
   "weekLabel": "Regular Week 12",
-  "generatedAt": "2025-11-15T20:11:34.507150+00:00",
+  "generatedAt": "2025-11-15T21:08:54.102514+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -224,10 +224,10 @@
         }
       },
       {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
+        "teamId": "northwestern",
+        "teamName": "Northwestern",
+        "shortName": "Northwestern",
+        "fullName": "Northwestern Wildcats",
         "conference": "Big Ten",
         "metrics": {
           "counties": 52,
@@ -442,10 +442,10 @@
         }
       },
       {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
+        "teamId": "northwestern",
+        "teamName": "Northwestern",
+        "shortName": "Northwestern",
+        "fullName": "Northwestern Wildcats",
         "conference": "Big Ten",
         "metrics": {
           "counties": 52,
@@ -816,10 +816,10 @@
         }
       },
       {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
+        "teamId": "northwestern",
+        "teamName": "Northwestern",
+        "shortName": "Northwestern",
+        "fullName": "Northwestern Wildcats",
         "conference": "Big Ten",
         "metrics": {
           "counties": 52,
@@ -920,9 +920,21 @@
         "fullName": "Western Michigan Broncos",
         "conference": "MAC",
         "metrics": {
-          "counties": 354,
-          "population": 14264268,
-          "areaSqMi": 178757.14
+          "counties": 413,
+          "population": 16641646,
+          "areaSqMi": 208549.99
+        }
+      },
+      {
+        "teamId": "northwestern",
+        "teamName": "Northwestern",
+        "shortName": "Northwestern",
+        "fullName": "Northwestern Wildcats",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 52,
+          "population": 12110296,
+          "areaSqMi": 24041.86
         }
       }
     ],
@@ -934,9 +946,21 @@
         "fullName": "Ohio Bobcats",
         "conference": "MAC",
         "metrics": {
-          "counties": 354,
-          "population": 14264268,
-          "areaSqMi": 178757.14
+          "counties": 413,
+          "population": 16641646,
+          "areaSqMi": 208549.99
+        }
+      },
+      {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 52,
+          "population": 12110296,
+          "areaSqMi": 24041.86
         }
       }
     ]
