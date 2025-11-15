@@ -182,9 +182,9 @@
     "homeTeamId": "northwestern",
     "awayTeamId": "michigan",
     "homeScore": 22,
-    "awayScore": 21,
-    "winnerId": "northwestern",
-    "loserId": "michigan"
+    "awayScore": 24,
+    "winnerId": "michigan",
+    "loserId": "northwestern"
   },
   {
     "id": 401754597,
@@ -304,5 +304,39 @@
     "awayScore": 22,
     "winnerId": "lsu",
     "loserId": "arkansas"
+  },
+  {
+    "id": 401752945,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 12,
+    "completed": true,
+    "startDate": "2025-11-15T18:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Chapman Stadium",
+    "homeTeamId": "tulsa",
+    "awayTeamId": "oregon-state",
+    "homeScore": 31,
+    "awayScore": 14,
+    "winnerId": "tulsa",
+    "loserId": "oregon-state"
+  },
+  {
+    "id": 401756948,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 12,
+    "completed": true,
+    "startDate": "2025-11-15T18:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Mountain America Stadium",
+    "homeTeamId": "arizona-state",
+    "awayTeamId": "west-virginia",
+    "homeScore": 25,
+    "awayScore": 23,
+    "winnerId": "arizona-state",
+    "loserId": "west-virginia"
   }
 ]
