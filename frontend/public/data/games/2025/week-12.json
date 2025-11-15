@@ -338,5 +338,39 @@
     "awayScore": 23,
     "winnerId": "arizona-state",
     "loserId": "west-virginia"
+  },
+  {
+    "id": 401761651,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 12,
+    "completed": true,
+    "startDate": "2025-11-15T19:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Center Parc Stadium",
+    "homeTeamId": "georgia-state",
+    "awayTeamId": "marshall",
+    "homeScore": 18,
+    "awayScore": 30,
+    "winnerId": "marshall",
+    "loserId": "georgia-state"
+  },
+  {
+    "id": 401762506,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 12,
+    "completed": true,
+    "startDate": "2025-11-15T19:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Protective Stadium",
+    "homeTeamId": "uab",
+    "awayTeamId": "north-texas",
+    "homeScore": 24,
+    "awayScore": 53,
+    "winnerId": "north-texas",
+    "loserId": "uab"
   }
 ]
