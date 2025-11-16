@@ -4,7 +4,7 @@
   "week": 12,
   "seasonType": "regular",
   "weekLabel": "Regular Week 12",
-  "generatedAt": "2025-11-16T03:23:07.375754+00:00",
+  "generatedAt": "2025-11-16T04:28:38.607084+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -29,6 +29,18 @@
           "counties": 220,
           "population": 20822306,
           "areaSqMi": 334606.89
+        }
+      },
+      {
+        "teamId": "georgia",
+        "teamName": "Georgia",
+        "shortName": "Georgia",
+        "fullName": "Georgia Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 413,
+          "population": 38537523,
+          "areaSqMi": 320867.77
         }
       },
       {
@@ -92,18 +104,6 @@
         }
       },
       {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 140,
-          "population": 14761966,
-          "areaSqMi": 171205.81
-        }
-      },
-      {
         "teamId": "tulane",
         "teamName": "Tulane",
         "shortName": "Tulane",
@@ -113,18 +113,6 @@
           "counties": 91,
           "population": 16834547,
           "areaSqMi": 161352.3
-        }
-      },
-      {
-        "teamId": "georgia",
-        "teamName": "Georgia",
-        "shortName": "Georgia",
-        "fullName": "Georgia Bulldogs",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 273,
-          "population": 23775557,
-          "areaSqMi": 149661.96
         }
       },
       {
@@ -188,10 +176,10 @@
         }
       },
       {
-        "teamId": "kennesaw-state",
-        "teamName": "Kennesaw State",
-        "shortName": "Kennesaw State",
-        "fullName": "Kennesaw State Owls",
+        "teamId": "jacksonville-state",
+        "teamName": "Jacksonville State",
+        "shortName": "Jacksonville State",
+        "fullName": "Jacksonville State Gamecocks",
         "conference": "CUSA",
         "metrics": {
           "counties": 75,
@@ -322,6 +310,18 @@
         }
       },
       {
+        "teamId": "georgia",
+        "teamName": "Georgia",
+        "shortName": "Georgia",
+        "fullName": "Georgia Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 413,
+          "population": 38537523,
+          "areaSqMi": 320867.77
+        }
+      },
+      {
         "teamId": "oklahoma",
         "teamName": "Oklahoma",
         "shortName": "Oklahoma",
@@ -343,18 +343,6 @@
           "counties": 259,
           "population": 28329851,
           "areaSqMi": 234176.87
-        }
-      },
-      {
-        "teamId": "georgia",
-        "teamName": "Georgia",
-        "shortName": "Georgia",
-        "fullName": "Georgia Bulldogs",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 273,
-          "population": 23775557,
-          "areaSqMi": 149661.96
         }
       },
       {
@@ -418,18 +406,6 @@
         }
       },
       {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 140,
-          "population": 14761966,
-          "areaSqMi": 171205.81
-        }
-      },
-      {
         "teamId": "texas-tech",
         "teamName": "Texas Tech",
         "shortName": "Texas Tech",
@@ -478,10 +454,10 @@
         }
       },
       {
-        "teamId": "kennesaw-state",
-        "teamName": "Kennesaw State",
-        "shortName": "Kennesaw State",
-        "fullName": "Kennesaw State Owls",
+        "teamId": "jacksonville-state",
+        "teamName": "Jacksonville State",
+        "shortName": "Jacksonville State",
+        "fullName": "Jacksonville State Gamecocks",
         "conference": "CUSA",
         "metrics": {
           "counties": 75,
@@ -630,9 +606,9 @@
         "fullName": "Georgia Bulldogs",
         "conference": "SEC",
         "metrics": {
-          "counties": 273,
-          "population": 23775557,
-          "areaSqMi": 149661.96
+          "counties": 413,
+          "population": 38537523,
+          "areaSqMi": 320867.77
         }
       },
       {
@@ -708,18 +684,6 @@
         }
       },
       {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 140,
-          "population": 14761966,
-          "areaSqMi": 171205.81
-        }
-      },
-      {
         "teamId": "notre-dame",
         "teamName": "Notre Dame",
         "shortName": "Notre Dame",
@@ -780,10 +744,10 @@
         }
       },
       {
-        "teamId": "kennesaw-state",
-        "teamName": "Kennesaw State",
-        "shortName": "Kennesaw State",
-        "fullName": "Kennesaw State Owls",
+        "teamId": "jacksonville-state",
+        "teamName": "Jacksonville State",
+        "shortName": "Jacksonville State",
+        "fullName": "Jacksonville State Gamecocks",
         "conference": "CUSA",
         "metrics": {
           "counties": 75,
@@ -920,9 +884,9 @@
         "fullName": "Oklahoma Sooners",
         "conference": "SEC",
         "metrics": {
-          "counties": 1028,
-          "population": 69842206,
-          "areaSqMi": 826897.43
+          "counties": 1542,
+          "population": 104763309,
+          "areaSqMi": 1240346.15
         }
       },
       {
@@ -932,9 +896,9 @@
         "fullName": "Arizona State Sun Devils",
         "conference": "Big 12",
         "metrics": {
-          "counties": 880,
-          "population": 83289224,
-          "areaSqMi": 1338427.55
+          "counties": 1100,
+          "population": 104111530,
+          "areaSqMi": 1673034.44
         }
       },
       {
@@ -944,9 +908,9 @@
         "fullName": "Western Michigan Broncos",
         "conference": "MAC",
         "metrics": {
-          "counties": 649,
-          "population": 26151158,
-          "areaSqMi": 327721.42
+          "counties": 708,
+          "population": 28528536,
+          "areaSqMi": 357514.27
         }
       },
       {
@@ -956,9 +920,33 @@
         "fullName": "Miami Hurricanes",
         "conference": "ACC",
         "metrics": {
-          "counties": 280,
-          "population": 33157826,
-          "areaSqMi": 176227.26
+          "counties": 420,
+          "population": 49736739,
+          "areaSqMi": 264340.89
+        }
+      },
+      {
+        "teamId": "georgia",
+        "teamName": "Georgia",
+        "shortName": "Georgia",
+        "fullName": "Georgia Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
+        "teamId": "jacksonville-state",
+        "teamName": "Jacksonville State",
+        "shortName": "Jacksonville State",
+        "fullName": "Jacksonville State Gamecocks",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
         }
       },
       {
@@ -982,9 +970,9 @@
         "fullName": "Alabama Crimson Tide",
         "conference": "SEC",
         "metrics": {
-          "counties": 1028,
-          "population": 69842206,
-          "areaSqMi": 826897.43
+          "counties": 1542,
+          "population": 104763309,
+          "areaSqMi": 1240346.15
         }
       },
       {
@@ -994,9 +982,9 @@
         "fullName": "West Virginia Mountaineers",
         "conference": "Big 12",
         "metrics": {
-          "counties": 880,
-          "population": 83289224,
-          "areaSqMi": 1338427.55
+          "counties": 1100,
+          "population": 104111530,
+          "areaSqMi": 1673034.44
         }
       },
       {
@@ -1006,9 +994,9 @@
         "fullName": "Ohio Bobcats",
         "conference": "MAC",
         "metrics": {
-          "counties": 649,
-          "population": 26151158,
-          "areaSqMi": 327721.42
+          "counties": 708,
+          "population": 28528536,
+          "areaSqMi": 357514.27
         }
       },
       {
@@ -1018,9 +1006,33 @@
         "fullName": "NC State Wolfpack",
         "conference": "ACC",
         "metrics": {
-          "counties": 280,
-          "population": 33157826,
-          "areaSqMi": 176227.26
+          "counties": 420,
+          "population": 49736739,
+          "areaSqMi": 264340.89
+        }
+      },
+      {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
+        }
+      },
+      {
+        "teamId": "kennesaw-state",
+        "teamName": "Kennesaw State",
+        "shortName": "Kennesaw State",
+        "fullName": "Kennesaw State Owls",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
         }
       },
       {
@@ -1038,7 +1050,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 25,
+    "trackedTeams": 24,
     "countyCount": 3114
   }
 }
