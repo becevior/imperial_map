@@ -712,5 +712,22 @@
     "awayScore": 27,
     "winnerId": "fiu",
     "loserId": "liberty"
+  },
+  {
+    "id": 401761650,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 12,
+    "completed": true,
+    "startDate": "2025-11-15T23:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Allen E. Paulson Stadium",
+    "homeTeamId": "georgia-southern",
+    "awayTeamId": "coastal-carolina",
+    "homeScore": 45,
+    "awayScore": 40,
+    "winnerId": "georgia-southern",
+    "loserId": "coastal-carolina"
   }
 ]
