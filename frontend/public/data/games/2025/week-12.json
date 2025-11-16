@@ -899,5 +899,22 @@
     "awayScore": 26,
     "winnerId": "jacksonville-state",
     "loserId": "kennesaw-state"
+  },
+  {
+    "id": 401752953,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 12,
+    "completed": true,
+    "startDate": "2025-11-16T03:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Gesa Field",
+    "homeTeamId": "washington-state",
+    "awayTeamId": "louisiana-tech",
+    "homeScore": 28,
+    "awayScore": 3,
+    "winnerId": "washington-state",
+    "loserId": "louisiana-tech"
   }
 ]
