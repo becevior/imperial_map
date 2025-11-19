@@ -1,0 +1,53 @@
+[
+  {
+    "id": 401762862,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-19T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Doyt L. Perry Stadium",
+    "homeTeamId": "bowling-green",
+    "awayTeamId": "akron",
+    "homeScore": 16,
+    "awayScore": 19,
+    "winnerId": "akron",
+    "loserId": "bowling-green"
+  },
+  {
+    "id": 401762863,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-19T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Peden Stadium",
+    "homeTeamId": "ohio",
+    "awayTeamId": "umass",
+    "homeScore": 42,
+    "awayScore": 14,
+    "winnerId": "ohio",
+    "loserId": "umass"
+  },
+  {
+    "id": 401762864,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-19T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Huskie Stadium",
+    "homeTeamId": "northern-illinois",
+    "awayTeamId": "western-michigan",
+    "homeScore": 19,
+    "awayScore": 35,
+    "winnerId": "western-michigan",
+    "loserId": "northern-illinois"
+  }
+]

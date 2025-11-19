@@ -4,7 +4,7 @@
   "week": 12,
   "seasonType": "regular",
   "weekLabel": "Regular Week 12",
-  "generatedAt": "2025-11-18T06:38:47.053542+00:00",
+  "generatedAt": "2025-11-19T06:39:02.272697+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -884,9 +884,9 @@
         "fullName": "Oklahoma Sooners",
         "conference": "SEC",
         "metrics": {
-          "counties": 5654,
-          "population": 384132133,
-          "areaSqMi": 4547935.86
+          "counties": 514,
+          "population": 34921103,
+          "areaSqMi": 413448.71
         }
       },
       {
@@ -896,9 +896,9 @@
         "fullName": "Arizona State Sun Devils",
         "conference": "Big 12",
         "metrics": {
-          "counties": 2860,
-          "population": 270689978,
-          "areaSqMi": 4349889.54
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
         }
       },
       {
@@ -908,9 +908,9 @@
         "fullName": "Miami Hurricanes",
         "conference": "ACC",
         "metrics": {
-          "counties": 1540,
-          "population": 182368043,
-          "areaSqMi": 969249.94
+          "counties": 140,
+          "population": 16578913,
+          "areaSqMi": 88113.63
         }
       },
       {
@@ -920,21 +920,9 @@
         "fullName": "Georgia Bulldogs",
         "conference": "SEC",
         "metrics": {
-          "counties": 1260,
-          "population": 132857694,
-          "areaSqMi": 1540852.3
-        }
-      },
-      {
-        "teamId": "western-michigan",
-        "teamName": "Western Michigan",
-        "shortName": "Western Michigan",
-        "fullName": "Western Michigan Broncos",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 1180,
-          "population": 47547560,
-          "areaSqMi": 595857.12
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
         }
       },
       {
@@ -944,21 +932,21 @@
         "fullName": "Jacksonville State Gamecocks",
         "conference": "CUSA",
         "metrics": {
-          "counties": 675,
-          "population": 51543621,
-          "areaSqMi": 478070.16
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
         }
       },
       {
-        "teamId": "northwestern",
-        "teamName": "Northwestern",
-        "shortName": "Northwestern",
-        "fullName": "Northwestern Wildcats",
-        "conference": "Big Ten",
+        "teamId": "western-michigan",
+        "teamName": "Western Michigan",
+        "shortName": "Western Michigan",
+        "fullName": "Western Michigan Broncos",
+        "conference": "MAC",
         "metrics": {
-          "counties": 52,
-          "population": 12110296,
-          "areaSqMi": 24041.86
+          "counties": 59,
+          "population": 2377378,
+          "areaSqMi": 29792.86
         }
       }
     ],
@@ -970,9 +958,9 @@
         "fullName": "Alabama Crimson Tide",
         "conference": "SEC",
         "metrics": {
-          "counties": 5654,
-          "population": 384132133,
-          "areaSqMi": 4547935.86
+          "counties": 514,
+          "population": 34921103,
+          "areaSqMi": 413448.71
         }
       },
       {
@@ -982,9 +970,9 @@
         "fullName": "West Virginia Mountaineers",
         "conference": "Big 12",
         "metrics": {
-          "counties": 2860,
-          "population": 270689978,
-          "areaSqMi": 4349889.54
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
         }
       },
       {
@@ -994,9 +982,9 @@
         "fullName": "NC State Wolfpack",
         "conference": "ACC",
         "metrics": {
-          "counties": 1540,
-          "population": 182368043,
-          "areaSqMi": 969249.94
+          "counties": 140,
+          "population": 16578913,
+          "areaSqMi": 88113.63
         }
       },
       {
@@ -1006,21 +994,9 @@
         "fullName": "Texas Longhorns",
         "conference": "SEC",
         "metrics": {
-          "counties": 1260,
-          "population": 132857694,
-          "areaSqMi": 1540852.3
-        }
-      },
-      {
-        "teamId": "ohio",
-        "teamName": "Ohio",
-        "shortName": "Ohio",
-        "fullName": "Ohio Bobcats",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 1180,
-          "population": 47547560,
-          "areaSqMi": 595857.12
+          "counties": 140,
+          "population": 14761966,
+          "areaSqMi": 171205.81
         }
       },
       {
@@ -1030,21 +1006,21 @@
         "fullName": "Kennesaw State Owls",
         "conference": "CUSA",
         "metrics": {
-          "counties": 675,
-          "population": 51543621,
-          "areaSqMi": 478070.16
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
         }
       },
       {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
-        "conference": "Big Ten",
+        "teamId": "ohio",
+        "teamName": "Ohio",
+        "shortName": "Ohio",
+        "fullName": "Ohio Bobcats",
+        "conference": "MAC",
         "metrics": {
-          "counties": 52,
-          "population": 12110296,
-          "areaSqMi": 24041.86
+          "counties": 59,
+          "population": 2377378,
+          "areaSqMi": 29792.86
         }
       }
     ]
