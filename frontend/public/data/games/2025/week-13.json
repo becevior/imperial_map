@@ -49,5 +49,39 @@
     "awayScore": 35,
     "winnerId": "western-michigan",
     "loserId": "northern-illinois"
+  },
+  {
+    "id": 401762865,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-20T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "UB Stadium",
+    "homeTeamId": "buffalo",
+    "awayTeamId": "miami-oh",
+    "homeScore": 20,
+    "awayScore": 37,
+    "winnerId": "miami-oh",
+    "loserId": "buffalo"
+  },
+  {
+    "id": 401762866,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-20T00:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Dix Stadium",
+    "homeTeamId": "kent-state",
+    "awayTeamId": "central-michigan",
+    "homeScore": 16,
+    "awayScore": 28,
+    "winnerId": "central-michigan",
+    "loserId": "kent-state"
   }
 ]
