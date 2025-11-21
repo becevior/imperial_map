@@ -83,5 +83,22 @@
     "awayScore": 28,
     "winnerId": "central-michigan",
     "loserId": "kent-state"
+  },
+  {
+    "id": 401761655,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-21T00:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Centennial Bank Stadium",
+    "homeTeamId": "arkansas-state",
+    "awayTeamId": "louisiana",
+    "homeScore": 30,
+    "awayScore": 34,
+    "winnerId": "louisiana",
+    "loserId": "arkansas-state"
   }
 ]
