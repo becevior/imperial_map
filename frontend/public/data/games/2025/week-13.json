@@ -134,5 +134,39 @@
     "awayScore": 10,
     "winnerId": "unlv",
     "loserId": "hawaii"
+  },
+  {
+    "id": 401754606,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-22T17:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Allegacy Federal Credit Union Stadium",
+    "homeTeamId": "wake-forest",
+    "awayTeamId": "delaware",
+    "homeScore": 52,
+    "awayScore": 14,
+    "winnerId": "wake-forest",
+    "loserId": "delaware"
+  },
+  {
+    "id": 401756958,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-22T17:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Jack Trice Stadium",
+    "homeTeamId": "iowa-state",
+    "awayTeamId": "kansas",
+    "homeScore": 38,
+    "awayScore": 14,
+    "winnerId": "iowa-state",
+    "loserId": "kansas"
   }
 ]
