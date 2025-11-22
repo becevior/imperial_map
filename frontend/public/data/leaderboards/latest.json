@@ -4,7 +4,7 @@
   "week": 13,
   "seasonType": "regular",
   "weekLabel": "Regular Week 13",
-  "generatedAt": "2025-11-21T06:40:12.241951+00:00",
+  "generatedAt": "2025-11-22T18:14:49.152717+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -56,10 +56,10 @@
         }
       },
       {
-        "teamId": "hawaii",
-        "teamName": "Hawaii",
-        "shortName": "Hawaii",
-        "fullName": "Hawaii Rainbow Warriors",
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
           "counties": 219,
@@ -358,10 +358,10 @@
         }
       },
       {
-        "teamId": "hawaii",
-        "teamName": "Hawaii",
-        "shortName": "Hawaii",
-        "fullName": "Hawaii Rainbow Warriors",
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
           "counties": 219,
@@ -648,10 +648,10 @@
         }
       },
       {
-        "teamId": "hawaii",
-        "teamName": "Hawaii",
-        "shortName": "Hawaii",
-        "fullName": "Hawaii Rainbow Warriors",
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
           "counties": 219,
@@ -876,8 +876,34 @@
         }
       }
     ],
-    "territoryGained": [],
-    "territoryLost": []
+    "territoryGained": [
+      {
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "hawaii",
+        "teamName": "Hawaii",
+        "shortName": "Hawaii",
+        "fullName": "Hawaii Rainbow Warriors",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
+        }
+      }
+    ]
   },
   "totals": {
     "trackedTeams": 24,

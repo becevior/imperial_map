@@ -100,5 +100,39 @@
     "awayScore": 34,
     "winnerId": "louisiana",
     "loserId": "arkansas-state"
+  },
+  {
+    "id": 401754598,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-22T01:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Carter-Finley Stadium",
+    "homeTeamId": "nc-state",
+    "awayTeamId": "florida-state",
+    "homeScore": 21,
+    "awayScore": 11,
+    "winnerId": "nc-state",
+    "loserId": "florida-state"
+  },
+  {
+    "id": 401760418,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-22T03:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Allegiant Stadium",
+    "homeTeamId": "unlv",
+    "awayTeamId": "hawaii",
+    "homeScore": 38,
+    "awayScore": 10,
+    "winnerId": "unlv",
+    "loserId": "hawaii"
   }
 ]
