@@ -4,7 +4,7 @@
   "week": 13,
   "seasonType": "regular",
   "weekLabel": "Regular Week 13",
-  "generatedAt": "2025-11-23T02:05:16.919474+00:00",
+  "generatedAt": "2025-11-23T03:58:03.167905+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -224,10 +224,22 @@
         }
       },
       {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 43,
+          "population": 5688205,
+          "areaSqMi": 23729.3
+        }
+      },
+      {
+        "teamId": "new-mexico",
+        "teamName": "New Mexico",
+        "shortName": "New Mexico",
+        "fullName": "New Mexico Lobos",
         "conference": "Mountain West",
         "metrics": {
           "counties": 44,
@@ -245,30 +257,6 @@
           "counties": 25,
           "population": 5001368,
           "areaSqMi": 17174.59
-        }
-      },
-      {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 23,
-          "population": 4020293,
-          "areaSqMi": 12557.43
-        }
-      },
-      {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 20,
-          "population": 1667912,
-          "areaSqMi": 11171.88
         }
       },
       {
@@ -466,6 +454,18 @@
         }
       },
       {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 43,
+          "population": 5688205,
+          "areaSqMi": 23729.3
+        }
+      },
+      {
         "teamId": "iowa-state",
         "teamName": "Iowa State",
         "shortName": "Iowa State",
@@ -514,18 +514,6 @@
         }
       },
       {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 23,
-          "population": 4020293,
-          "areaSqMi": 12557.43
-        }
-      },
-      {
         "teamId": "wake-forest",
         "teamName": "Wake Forest",
         "shortName": "Wake Forest",
@@ -550,22 +538,10 @@
         }
       },
       {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 20,
-          "population": 1667912,
-          "areaSqMi": 11171.88
-        }
-      },
-      {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
+        "teamId": "new-mexico",
+        "teamName": "New Mexico",
+        "shortName": "New Mexico",
+        "fullName": "New Mexico Lobos",
         "conference": "Mountain West",
         "metrics": {
           "counties": 44,
@@ -792,15 +768,27 @@
         }
       },
       {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
+        "teamId": "new-mexico",
+        "teamName": "New Mexico",
+        "shortName": "New Mexico",
+        "fullName": "New Mexico Lobos",
         "conference": "Mountain West",
         "metrics": {
           "counties": 44,
           "population": 1614154,
           "areaSqMi": 20132.22
+        }
+      },
+      {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 43,
+          "population": 5688205,
+          "areaSqMi": 23729.3
         }
       },
       {
@@ -813,30 +801,6 @@
           "counties": 25,
           "population": 5001368,
           "areaSqMi": 17174.59
-        }
-      },
-      {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 23,
-          "population": 4020293,
-          "areaSqMi": 12557.43
-        }
-      },
-      {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 20,
-          "population": 1667912,
-          "areaSqMi": 11171.88
         }
       },
       {
@@ -884,9 +848,9 @@
         "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1533,
-          "population": 136572646,
-          "areaSqMi": 1552667.16
+          "counties": 1752,
+          "population": 156083024,
+          "areaSqMi": 1774476.75
         }
       },
       {
@@ -896,9 +860,33 @@
         "fullName": "FIU Panthers",
         "conference": "CUSA",
         "metrics": {
-          "counties": 75,
-          "population": 5727069,
-          "areaSqMi": 53118.91
+          "counties": 150,
+          "population": 11454138,
+          "areaSqMi": 106237.81
+        }
+      },
+      {
+        "teamId": "new-mexico",
+        "teamName": "New Mexico",
+        "shortName": "New Mexico",
+        "fullName": "New Mexico Lobos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 44,
+          "population": 1614154,
+          "areaSqMi": 20132.23
+        }
+      },
+      {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 20,
+          "population": 1667912,
+          "areaSqMi": 11171.88
         }
       }
     ],
@@ -910,9 +898,9 @@
         "fullName": "Hawaii Rainbow Warriors",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1533,
-          "population": 136572646,
-          "areaSqMi": 1552667.16
+          "counties": 1752,
+          "population": 156083024,
+          "areaSqMi": 1774476.75
         }
       },
       {
@@ -922,15 +910,39 @@
         "fullName": "Jacksonville State Gamecocks",
         "conference": "CUSA",
         "metrics": {
-          "counties": 75,
-          "population": 5727069,
-          "areaSqMi": 53118.91
+          "counties": 150,
+          "population": 11454138,
+          "areaSqMi": 106237.81
+        }
+      },
+      {
+        "teamId": "air-force",
+        "teamName": "Air Force",
+        "shortName": "Air Force",
+        "fullName": "Air Force Falcons",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 44,
+          "population": 1614154,
+          "areaSqMi": 20132.23
+        }
+      },
+      {
+        "teamId": "rice",
+        "teamName": "Rice",
+        "shortName": "Rice",
+        "fullName": "Rice Owls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 20,
+          "population": 1667912,
+          "areaSqMi": 11171.88
         }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 24,
+    "trackedTeams": 23,
     "countyCount": 3114
   }
 }
