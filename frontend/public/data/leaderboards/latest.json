@@ -4,7 +4,7 @@
   "week": 13,
   "seasonType": "regular",
   "weekLabel": "Regular Week 13",
-  "generatedAt": "2025-11-23T03:58:03.167905+00:00",
+  "generatedAt": "2025-11-23T04:38:21.180552+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -116,10 +116,10 @@
         }
       },
       {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
+        "teamId": "stanford",
+        "teamName": "Stanford",
+        "shortName": "Stanford",
+        "fullName": "Stanford Cardinal",
         "conference": "ACC",
         "metrics": {
           "counties": 74,
@@ -418,10 +418,10 @@
         }
       },
       {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
+        "teamId": "stanford",
+        "teamName": "Stanford",
+        "shortName": "Stanford",
+        "fullName": "Stanford Cardinal",
         "conference": "ACC",
         "metrics": {
           "counties": 74,
@@ -732,10 +732,10 @@
         }
       },
       {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
+        "teamId": "stanford",
+        "teamName": "Stanford",
+        "shortName": "Stanford",
+        "fullName": "Stanford Cardinal",
         "conference": "ACC",
         "metrics": {
           "counties": 74,
@@ -848,9 +848,9 @@
         "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1752,
-          "population": 156083024,
-          "areaSqMi": 1774476.75
+          "counties": 1971,
+          "population": 175593402,
+          "areaSqMi": 1996286.35
         }
       },
       {
@@ -860,9 +860,9 @@
         "fullName": "FIU Panthers",
         "conference": "CUSA",
         "metrics": {
-          "counties": 150,
-          "population": 11454138,
-          "areaSqMi": 106237.81
+          "counties": 225,
+          "population": 17181207,
+          "areaSqMi": 159356.72
         }
       },
       {
@@ -872,9 +872,21 @@
         "fullName": "New Mexico Lobos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.23
+          "counties": 88,
+          "population": 3228308,
+          "areaSqMi": 40264.45
+        }
+      },
+      {
+        "teamId": "stanford",
+        "teamName": "Stanford",
+        "shortName": "Stanford",
+        "fullName": "Stanford Cardinal",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
         }
       },
       {
@@ -884,9 +896,9 @@
         "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
-          "counties": 20,
-          "population": 1667912,
-          "areaSqMi": 11171.88
+          "counties": 40,
+          "population": 3335824,
+          "areaSqMi": 22343.75
         }
       }
     ],
@@ -898,9 +910,9 @@
         "fullName": "Hawaii Rainbow Warriors",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1752,
-          "population": 156083024,
-          "areaSqMi": 1774476.75
+          "counties": 1971,
+          "population": 175593402,
+          "areaSqMi": 1996286.35
         }
       },
       {
@@ -910,9 +922,9 @@
         "fullName": "Jacksonville State Gamecocks",
         "conference": "CUSA",
         "metrics": {
-          "counties": 150,
-          "population": 11454138,
-          "areaSqMi": 106237.81
+          "counties": 225,
+          "population": 17181207,
+          "areaSqMi": 159356.72
         }
       },
       {
@@ -922,9 +934,21 @@
         "fullName": "Air Force Falcons",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.23
+          "counties": 88,
+          "population": 3228308,
+          "areaSqMi": 40264.45
+        }
+      },
+      {
+        "teamId": "california",
+        "teamName": "California",
+        "shortName": "California",
+        "fullName": "California Golden Bears",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
         }
       },
       {
@@ -934,9 +958,9 @@
         "fullName": "Rice Owls",
         "conference": "AAC",
         "metrics": {
-          "counties": 20,
-          "population": 1667912,
-          "areaSqMi": 11171.88
+          "counties": 40,
+          "population": 3335824,
+          "areaSqMi": 22343.75
         }
       }
     ]
