@@ -4,7 +4,7 @@
   "week": 13,
   "seasonType": "regular",
   "weekLabel": "Regular Week 13",
-  "generatedAt": "2025-11-22T23:10:27.955000+00:00",
+  "generatedAt": "2025-11-23T02:05:16.919474+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -176,10 +176,10 @@
         }
       },
       {
-        "teamId": "jacksonville-state",
-        "teamName": "Jacksonville State",
-        "shortName": "Jacksonville State",
-        "fullName": "Jacksonville State Gamecocks",
+        "teamId": "fiu",
+        "teamName": "FIU",
+        "shortName": "FIU",
+        "fullName": "FIU Panthers",
         "conference": "CUSA",
         "metrics": {
           "counties": 75,
@@ -454,10 +454,10 @@
         }
       },
       {
-        "teamId": "jacksonville-state",
-        "teamName": "Jacksonville State",
-        "shortName": "Jacksonville State",
-        "fullName": "Jacksonville State Gamecocks",
+        "teamId": "fiu",
+        "teamName": "FIU",
+        "shortName": "FIU",
+        "fullName": "FIU Panthers",
         "conference": "CUSA",
         "metrics": {
           "counties": 75,
@@ -744,10 +744,10 @@
         }
       },
       {
-        "teamId": "jacksonville-state",
-        "teamName": "Jacksonville State",
-        "shortName": "Jacksonville State",
-        "fullName": "Jacksonville State Gamecocks",
+        "teamId": "fiu",
+        "teamName": "FIU",
+        "shortName": "FIU",
+        "fullName": "FIU Panthers",
         "conference": "CUSA",
         "metrics": {
           "counties": 75,
@@ -884,9 +884,21 @@
         "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1314,
-          "population": 117062268,
-          "areaSqMi": 1330857.56
+          "counties": 1533,
+          "population": 136572646,
+          "areaSqMi": 1552667.16
+        }
+      },
+      {
+        "teamId": "fiu",
+        "teamName": "FIU",
+        "shortName": "FIU",
+        "fullName": "FIU Panthers",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
         }
       }
     ],
@@ -898,9 +910,21 @@
         "fullName": "Hawaii Rainbow Warriors",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1314,
-          "population": 117062268,
-          "areaSqMi": 1330857.56
+          "counties": 1533,
+          "population": 136572646,
+          "areaSqMi": 1552667.16
+        }
+      },
+      {
+        "teamId": "jacksonville-state",
+        "teamName": "Jacksonville State",
+        "shortName": "Jacksonville State",
+        "fullName": "Jacksonville State Gamecocks",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
         }
       }
     ]
