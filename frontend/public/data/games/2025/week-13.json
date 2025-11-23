@@ -933,5 +933,22 @@
     "awayScore": 26,
     "winnerId": "byu",
     "loserId": "cincinnati"
+  },
+  {
+    "id": 401756956,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 13,
+    "completed": true,
+    "startDate": "2025-11-23T01:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Folsom Field",
+    "homeTeamId": "colorado",
+    "awayTeamId": "arizona-state",
+    "homeScore": 17,
+    "awayScore": 42,
+    "winnerId": "arizona-state",
+    "loserId": "colorado"
   }
 ]
