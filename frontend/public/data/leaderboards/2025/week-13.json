@@ -4,7 +4,7 @@
   "week": 13,
   "seasonType": "regular",
   "weekLabel": "Regular Week 13",
-  "generatedAt": "2025-11-23T06:33:35.997653+00:00",
+  "generatedAt": "2025-11-23T07:21:35.130540+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -140,10 +140,10 @@
         }
       },
       {
-        "teamId": "fresno-state",
-        "teamName": "Fresno State",
-        "shortName": "Fresno State",
-        "fullName": "Fresno State Bulldogs",
+        "teamId": "utah-state",
+        "teamName": "Utah State",
+        "shortName": "Utah State",
+        "fullName": "Utah State Aggies",
         "conference": "Mountain West",
         "metrics": {
           "counties": 9,
@@ -478,10 +478,10 @@
         }
       },
       {
-        "teamId": "fresno-state",
-        "teamName": "Fresno State",
-        "shortName": "Fresno State",
-        "fullName": "Fresno State Bulldogs",
+        "teamId": "utah-state",
+        "teamName": "Utah State",
+        "shortName": "Utah State",
+        "fullName": "Utah State Aggies",
         "conference": "Mountain West",
         "metrics": {
           "counties": 9,
@@ -828,10 +828,10 @@
         }
       },
       {
-        "teamId": "fresno-state",
-        "teamName": "Fresno State",
-        "shortName": "Fresno State",
-        "fullName": "Fresno State Bulldogs",
+        "teamId": "utah-state",
+        "teamName": "Utah State",
+        "shortName": "Utah State",
+        "fullName": "Utah State Aggies",
         "conference": "Mountain West",
         "metrics": {
           "counties": 9,
@@ -848,9 +848,9 @@
         "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 2409,
-          "population": 214614158,
-          "areaSqMi": 2439905.53
+          "counties": 2628,
+          "population": 234124536,
+          "areaSqMi": 2661715.13
         }
       },
       {
@@ -860,9 +860,9 @@
         "fullName": "FIU Panthers",
         "conference": "CUSA",
         "metrics": {
-          "counties": 375,
-          "population": 28635345,
-          "areaSqMi": 265594.54
+          "counties": 450,
+          "population": 34362414,
+          "areaSqMi": 318713.44
         }
       },
       {
@@ -872,9 +872,9 @@
         "fullName": "Stanford Cardinal",
         "conference": "ACC",
         "metrics": {
-          "counties": 222,
-          "population": 35884116,
-          "areaSqMi": 379957.27
+          "counties": 296,
+          "population": 47845488,
+          "areaSqMi": 506609.69
         }
       },
       {
@@ -884,9 +884,9 @@
         "fullName": "New Mexico Lobos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 176,
-          "population": 6456616,
-          "areaSqMi": 80528.9
+          "counties": 220,
+          "population": 8070770,
+          "areaSqMi": 100661.12
         }
       },
       {
@@ -896,9 +896,21 @@
         "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
-          "counties": 80,
-          "population": 6671648,
-          "areaSqMi": 44687.51
+          "counties": 100,
+          "population": 8339560,
+          "areaSqMi": 55859.38
+        }
+      },
+      {
+        "teamId": "utah-state",
+        "teamName": "Utah State",
+        "shortName": "Utah State",
+        "fullName": "Utah State Aggies",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
         }
       }
     ],
@@ -910,9 +922,9 @@
         "fullName": "Hawaii Rainbow Warriors",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 2409,
-          "population": 214614158,
-          "areaSqMi": 2439905.53
+          "counties": 2628,
+          "population": 234124536,
+          "areaSqMi": 2661715.13
         }
       },
       {
@@ -922,9 +934,9 @@
         "fullName": "Jacksonville State Gamecocks",
         "conference": "CUSA",
         "metrics": {
-          "counties": 375,
-          "population": 28635345,
-          "areaSqMi": 265594.54
+          "counties": 450,
+          "population": 34362414,
+          "areaSqMi": 318713.44
         }
       },
       {
@@ -934,9 +946,9 @@
         "fullName": "California Golden Bears",
         "conference": "ACC",
         "metrics": {
-          "counties": 222,
-          "population": 35884116,
-          "areaSqMi": 379957.27
+          "counties": 296,
+          "population": 47845488,
+          "areaSqMi": 506609.69
         }
       },
       {
@@ -946,9 +958,9 @@
         "fullName": "Air Force Falcons",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 176,
-          "population": 6456616,
-          "areaSqMi": 80528.9
+          "counties": 220,
+          "population": 8070770,
+          "areaSqMi": 100661.12
         }
       },
       {
@@ -958,9 +970,21 @@
         "fullName": "Rice Owls",
         "conference": "AAC",
         "metrics": {
-          "counties": 80,
-          "population": 6671648,
-          "areaSqMi": 44687.51
+          "counties": 100,
+          "population": 8339560,
+          "areaSqMi": 55859.38
+        }
+      },
+      {
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
         }
       }
     ]
