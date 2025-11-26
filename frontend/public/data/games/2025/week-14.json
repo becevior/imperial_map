@@ -1,0 +1,36 @@
+[
+  {
+    "id": 401762868,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 14,
+    "completed": true,
+    "startDate": "2025-11-25T21:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Warren McGuirk Alumni Stadium",
+    "homeTeamId": "umass",
+    "awayTeamId": "bowling-green",
+    "homeScore": 14,
+    "awayScore": 45,
+    "winnerId": "bowling-green",
+    "loserId": "umass"
+  },
+  {
+    "id": 401762869,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 14,
+    "completed": true,
+    "startDate": "2025-11-26T00:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Rynearson Stadium",
+    "homeTeamId": "eastern-michigan",
+    "awayTeamId": "western-michigan",
+    "homeScore": 21,
+    "awayScore": 31,
+    "winnerId": "western-michigan",
+    "loserId": "eastern-michigan"
+  }
+]

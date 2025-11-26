@@ -100,16 +100,23 @@
           "seasonType": "regular",
           "label": "Regular Week 13",
           "path": "/data/leaderboards/2025/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Regular Week 14",
+          "path": "/data/leaderboards/2025/week-14.json"
         }
       ]
     }
   ],
   "latest": {
     "season": 2025,
-    "weekIndex": 13,
-    "path": "/data/leaderboards/2025/week-13.json",
-    "label": "Regular Week 13",
-    "week": 13,
+    "weekIndex": 14,
+    "path": "/data/leaderboards/2025/week-14.json",
+    "label": "Regular Week 14",
+    "week": 14,
     "seasonType": "regular"
   }
 }
