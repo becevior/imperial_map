@@ -4,7 +4,7 @@
   "week": 14,
   "seasonType": "regular",
   "weekLabel": "Regular Week 14",
-  "generatedAt": "2025-11-29T20:12:22.045435+00:00",
+  "generatedAt": "2025-11-29T21:09:46.263759+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -68,6 +68,18 @@
         }
       },
       {
+        "teamId": "ohio-state",
+        "teamName": "Ohio State",
+        "shortName": "Ohio State",
+        "fullName": "Ohio State Buckeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 263,
+          "population": 51035451,
+          "areaSqMi": 208752.88
+        }
+      },
+      {
         "teamId": "texas",
         "teamName": "Texas",
         "shortName": "Texas",
@@ -77,18 +89,6 @@
           "counties": 98,
           "population": 7358445,
           "areaSqMi": 190484.39
-        }
-      },
-      {
-        "teamId": "ohio-state",
-        "teamName": "Ohio State",
-        "shortName": "Ohio State",
-        "fullName": "Ohio State Buckeyes",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 211,
-          "population": 38925155,
-          "areaSqMi": 184711.02
         }
       },
       {
@@ -212,18 +212,6 @@
         }
       },
       {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 52,
-          "population": 12110296,
-          "areaSqMi": 24041.86
-        }
-      },
-      {
         "teamId": "north-texas",
         "teamName": "North Texas",
         "shortName": "North Texas",
@@ -292,9 +280,9 @@
         "fullName": "Ohio State Buckeyes",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 211,
-          "population": 38925155,
-          "areaSqMi": 184711.02
+          "counties": 263,
+          "population": 51035451,
+          "areaSqMi": 208752.88
         }
       },
       {
@@ -403,18 +391,6 @@
           "counties": 75,
           "population": 12812039,
           "areaSqMi": 103338.99
-        }
-      },
-      {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 52,
-          "population": 12110296,
-          "areaSqMi": 24041.86
         }
       },
       {
@@ -588,6 +564,18 @@
         }
       },
       {
+        "teamId": "ohio-state",
+        "teamName": "Ohio State",
+        "shortName": "Ohio State",
+        "fullName": "Ohio State Buckeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 263,
+          "population": 51035451,
+          "areaSqMi": 208752.88
+        }
+      },
+      {
         "teamId": "indiana",
         "teamName": "Indiana",
         "shortName": "Indiana",
@@ -633,18 +621,6 @@
           "counties": 219,
           "population": 19510378,
           "areaSqMi": 221809.59
-        }
-      },
-      {
-        "teamId": "ohio-state",
-        "teamName": "Ohio State",
-        "shortName": "Ohio State",
-        "fullName": "Ohio State Buckeyes",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 211,
-          "population": 38925155,
-          "areaSqMi": 184711.02
         }
       },
       {
@@ -756,18 +732,6 @@
         }
       },
       {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 52,
-          "population": 12110296,
-          "areaSqMi": 24041.86
-        }
-      },
-      {
         "teamId": "new-mexico",
         "teamName": "New Mexico",
         "shortName": "New Mexico",
@@ -848,9 +812,9 @@
         "fullName": "Arizona Wildcats",
         "conference": "Big 12",
         "metrics": {
-          "counties": 660,
-          "population": 62466918,
-          "areaSqMi": 1003820.66
+          "counties": 880,
+          "population": 83289224,
+          "areaSqMi": 1338427.55
         }
       },
       {
@@ -860,9 +824,21 @@
         "fullName": "Texas Longhorns",
         "conference": "SEC",
         "metrics": {
-          "counties": 294,
-          "population": 22075335,
-          "areaSqMi": 571453.16
+          "counties": 392,
+          "population": 29433780,
+          "areaSqMi": 761937.55
+        }
+      },
+      {
+        "teamId": "ohio-state",
+        "teamName": "Ohio State",
+        "shortName": "Ohio State",
+        "fullName": "Ohio State Buckeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 52,
+          "population": 12110296,
+          "areaSqMi": 24041.86
         }
       },
       {
@@ -872,9 +848,9 @@
         "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 27,
-          "population": 13653147,
-          "areaSqMi": 269906.18
+          "counties": 36,
+          "population": 18204196,
+          "areaSqMi": 359874.9
         }
       }
     ],
@@ -886,9 +862,9 @@
         "fullName": "Arizona State Sun Devils",
         "conference": "Big 12",
         "metrics": {
-          "counties": 660,
-          "population": 62466918,
-          "areaSqMi": 1003820.66
+          "counties": 880,
+          "population": 83289224,
+          "areaSqMi": 1338427.55
         }
       },
       {
@@ -898,9 +874,21 @@
         "fullName": "Texas A&M Aggies",
         "conference": "SEC",
         "metrics": {
-          "counties": 294,
-          "population": 22075335,
-          "areaSqMi": 571453.16
+          "counties": 392,
+          "population": 29433780,
+          "areaSqMi": 761937.55
+        }
+      },
+      {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 52,
+          "population": 12110296,
+          "areaSqMi": 24041.86
         }
       },
       {
@@ -910,15 +898,15 @@
         "fullName": "Utah State Aggies",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 27,
-          "population": 13653147,
-          "areaSqMi": 269906.18
+          "counties": 36,
+          "population": 18204196,
+          "areaSqMi": 359874.9
         }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 23,
+    "trackedTeams": 22,
     "countyCount": 3114
   }
 }
