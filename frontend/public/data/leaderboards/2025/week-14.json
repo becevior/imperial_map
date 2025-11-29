@@ -4,7 +4,7 @@
   "week": 14,
   "seasonType": "regular",
   "weekLabel": "Regular Week 14",
-  "generatedAt": "2025-11-28T06:40:59.864407+00:00",
+  "generatedAt": "2025-11-29T18:15:16.202831+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -20,10 +20,10 @@
         }
       },
       {
-        "teamId": "arizona-state",
-        "teamName": "Arizona State",
-        "shortName": "Arizona State",
-        "fullName": "Arizona State Sun Devils",
+        "teamId": "arizona",
+        "teamName": "Arizona",
+        "shortName": "Arizona",
+        "fullName": "Arizona Wildcats",
         "conference": "Big 12",
         "metrics": {
           "counties": 220,
@@ -68,10 +68,10 @@
         }
       },
       {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
         "conference": "SEC",
         "metrics": {
           "counties": 98,
@@ -140,10 +140,10 @@
         }
       },
       {
-        "teamId": "utah-state",
-        "teamName": "Utah State",
-        "shortName": "Utah State",
-        "fullName": "Utah State Aggies",
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
           "counties": 9,
@@ -334,10 +334,10 @@
         }
       },
       {
-        "teamId": "arizona-state",
-        "teamName": "Arizona State",
-        "shortName": "Arizona State",
-        "fullName": "Arizona State Sun Devils",
+        "teamId": "arizona",
+        "teamName": "Arizona",
+        "shortName": "Arizona",
+        "fullName": "Arizona Wildcats",
         "conference": "Big 12",
         "metrics": {
           "counties": 220,
@@ -430,10 +430,10 @@
         }
       },
       {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
         "conference": "SEC",
         "metrics": {
           "counties": 98,
@@ -478,10 +478,10 @@
         }
       },
       {
-        "teamId": "utah-state",
-        "teamName": "Utah State",
-        "shortName": "Utah State",
-        "fullName": "Utah State Aggies",
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
           "counties": 9,
@@ -612,10 +612,10 @@
         }
       },
       {
-        "teamId": "arizona-state",
-        "teamName": "Arizona State",
-        "shortName": "Arizona State",
-        "fullName": "Arizona State Sun Devils",
+        "teamId": "arizona",
+        "teamName": "Arizona",
+        "shortName": "Arizona",
+        "fullName": "Arizona Wildcats",
         "conference": "Big 12",
         "metrics": {
           "counties": 220,
@@ -672,10 +672,10 @@
         }
       },
       {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
         "conference": "SEC",
         "metrics": {
           "counties": 98,
@@ -828,6 +828,82 @@
         }
       },
       {
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "arizona",
+        "teamName": "Arizona",
+        "shortName": "Arizona",
+        "fullName": "Arizona Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
+        }
+      },
+      {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 98,
+          "population": 7358445,
+          "areaSqMi": 190484.39
+        }
+      },
+      {
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 9,
+          "population": 4551049,
+          "areaSqMi": 89968.73
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "arizona-state",
+        "teamName": "Arizona State",
+        "shortName": "Arizona State",
+        "fullName": "Arizona State Sun Devils",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
+        }
+      },
+      {
+        "teamId": "texas-a-m",
+        "teamName": "Texas A&M",
+        "shortName": "Texas A&M",
+        "fullName": "Texas A&M Aggies",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 98,
+          "population": 7358445,
+          "areaSqMi": 190484.39
+        }
+      },
+      {
         "teamId": "utah-state",
         "teamName": "Utah State",
         "shortName": "Utah State",
@@ -839,9 +915,7 @@
           "areaSqMi": 89968.73
         }
       }
-    ],
-    "territoryGained": [],
-    "territoryLost": []
+    ]
   },
   "totals": {
     "trackedTeams": 23,
