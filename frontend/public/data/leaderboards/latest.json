@@ -4,7 +4,7 @@
   "week": 14,
   "seasonType": "regular",
   "weekLabel": "Regular Week 14",
-  "generatedAt": "2025-11-29T23:10:23.081325+00:00",
+  "generatedAt": "2025-11-30T02:04:05.459877+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -188,10 +188,10 @@
         }
       },
       {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
         "conference": "ACC",
         "metrics": {
           "counties": 89,
@@ -490,10 +490,10 @@
         }
       },
       {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
         "conference": "ACC",
         "metrics": {
           "counties": 89,
@@ -672,10 +672,10 @@
         }
       },
       {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
         "conference": "ACC",
         "metrics": {
           "counties": 89,
@@ -812,9 +812,9 @@
         "fullName": "Arizona Wildcats",
         "conference": "Big 12",
         "metrics": {
-          "counties": 1320,
-          "population": 124933836,
-          "areaSqMi": 2007641.33
+          "counties": 1540,
+          "population": 145756142,
+          "areaSqMi": 2342248.22
         }
       },
       {
@@ -824,9 +824,9 @@
         "fullName": "Texas Longhorns",
         "conference": "SEC",
         "metrics": {
-          "counties": 588,
-          "population": 44150670,
-          "areaSqMi": 1142906.33
+          "counties": 686,
+          "population": 51509115,
+          "areaSqMi": 1333390.72
         }
       },
       {
@@ -836,9 +836,21 @@
         "fullName": "Ohio State Buckeyes",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 156,
-          "population": 36330888,
-          "areaSqMi": 72125.58
+          "counties": 208,
+          "population": 48441184,
+          "areaSqMi": 96167.44
+        }
+      },
+      {
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 89,
+          "population": 3943033,
+          "areaSqMi": 42609.35
         }
       },
       {
@@ -848,9 +860,9 @@
         "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 54,
-          "population": 27306294,
-          "areaSqMi": 539812.36
+          "counties": 63,
+          "population": 31857343,
+          "areaSqMi": 629781.08
         }
       }
     ],
@@ -862,9 +874,9 @@
         "fullName": "Arizona State Sun Devils",
         "conference": "Big 12",
         "metrics": {
-          "counties": 1320,
-          "population": 124933836,
-          "areaSqMi": 2007641.33
+          "counties": 1540,
+          "population": 145756142,
+          "areaSqMi": 2342248.22
         }
       },
       {
@@ -874,9 +886,9 @@
         "fullName": "Texas A&M Aggies",
         "conference": "SEC",
         "metrics": {
-          "counties": 588,
-          "population": 44150670,
-          "areaSqMi": 1142906.33
+          "counties": 686,
+          "population": 51509115,
+          "areaSqMi": 1333390.72
         }
       },
       {
@@ -886,9 +898,21 @@
         "fullName": "Michigan Wolverines",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 156,
-          "population": 36330888,
-          "areaSqMi": 72125.58
+          "counties": 208,
+          "population": 48441184,
+          "areaSqMi": 96167.44
+        }
+      },
+      {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 89,
+          "population": 3943033,
+          "areaSqMi": 42609.35
         }
       },
       {
@@ -898,9 +922,9 @@
         "fullName": "Utah State Aggies",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 54,
-          "population": 27306294,
-          "areaSqMi": 539812.36
+          "counties": 63,
+          "population": 31857343,
+          "areaSqMi": 629781.08
         }
       }
     ]
