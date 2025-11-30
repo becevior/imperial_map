@@ -969,6 +969,23 @@
     "loserId": "rice"
   },
   {
+    "id": 401752784,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 14,
+    "completed": true,
+    "startDate": "2025-11-30T00:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Jordan-Hare Stadium",
+    "homeTeamId": "auburn",
+    "awayTeamId": "alabama",
+    "homeScore": 20,
+    "awayScore": 27,
+    "winnerId": "alabama",
+    "loserId": "auburn"
+  },
+  {
     "id": 401752919,
     "season": 2025,
     "seasonType": "regular",
@@ -1003,6 +1020,23 @@
     "loserId": "northwestern"
   },
   {
+    "id": 401754612,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 14,
+    "completed": true,
+    "startDate": "2025-11-30T00:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Carter-Finley Stadium",
+    "homeTeamId": "nc-state",
+    "awayTeamId": "north-carolina",
+    "homeScore": 42,
+    "awayScore": 19,
+    "winnerId": "nc-state",
+    "loserId": "north-carolina"
+  },
+  {
     "id": 401762518,
     "season": 2025,
     "seasonType": "regular",
@@ -1018,5 +1052,22 @@
     "awayScore": 0,
     "winnerId": "tulane",
     "loserId": "charlotte"
+  },
+  {
+    "id": 401754609,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 14,
+    "completed": true,
+    "startDate": "2025-11-30T01:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "California Memorial Stadium",
+    "homeTeamId": "california",
+    "awayTeamId": "smu",
+    "homeScore": 38,
+    "awayScore": 35,
+    "winnerId": "california",
+    "loserId": "smu"
   }
 ]
