@@ -4,7 +4,7 @@
   "week": 14,
   "seasonType": "regular",
   "weekLabel": "Regular Week 14",
-  "generatedAt": "2025-11-30T07:20:57.912365+00:00",
+  "generatedAt": "2025-11-30T08:28:28.329233+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -776,9 +776,9 @@
         "fullName": "Arizona Wildcats",
         "conference": "Big 12",
         "metrics": {
-          "counties": 2640,
-          "population": 249867672,
-          "areaSqMi": 4015282.66
+          "counties": 2860,
+          "population": 270689978,
+          "areaSqMi": 4349889.54
         }
       },
       {
@@ -788,9 +788,9 @@
         "fullName": "Texas Longhorns",
         "conference": "SEC",
         "metrics": {
-          "counties": 1176,
-          "population": 88301340,
-          "areaSqMi": 2285812.66
+          "counties": 1274,
+          "population": 95659785,
+          "areaSqMi": 2476297.04
         }
       },
       {
@@ -800,9 +800,9 @@
         "fullName": "Duke Blue Devils",
         "conference": "ACC",
         "metrics": {
-          "counties": 534,
-          "population": 23658198,
-          "areaSqMi": 255656.12
+          "counties": 623,
+          "population": 27601231,
+          "areaSqMi": 298265.48
         }
       },
       {
@@ -812,21 +812,9 @@
         "fullName": "Ohio State Buckeyes",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 468,
-          "population": 108992664,
-          "areaSqMi": 216376.73
-        }
-      },
-      {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 108,
-          "population": 54612588,
-          "areaSqMi": 1079624.71
+          "counties": 520,
+          "population": 121102960,
+          "areaSqMi": 240418.59
         }
       },
       {
@@ -836,9 +824,21 @@
         "fullName": "Notre Dame Fighting Irish",
         "conference": "Independent",
         "metrics": {
-          "counties": 74,
-          "population": 11961372,
-          "areaSqMi": 126652.42
+          "counties": 148,
+          "population": 23922744,
+          "areaSqMi": 253304.85
+        }
+      },
+      {
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 117,
+          "population": 59163637,
+          "areaSqMi": 1169593.44
         }
       }
     ],
@@ -850,9 +850,9 @@
         "fullName": "Arizona State Sun Devils",
         "conference": "Big 12",
         "metrics": {
-          "counties": 2640,
-          "population": 249867672,
-          "areaSqMi": 4015282.66
+          "counties": 2860,
+          "population": 270689978,
+          "areaSqMi": 4349889.54
         }
       },
       {
@@ -862,9 +862,9 @@
         "fullName": "Texas A&M Aggies",
         "conference": "SEC",
         "metrics": {
-          "counties": 1176,
-          "population": 88301340,
-          "areaSqMi": 2285812.66
+          "counties": 1274,
+          "population": 95659785,
+          "areaSqMi": 2476297.04
         }
       },
       {
@@ -874,9 +874,9 @@
         "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
-          "counties": 534,
-          "population": 23658198,
-          "areaSqMi": 255656.12
+          "counties": 623,
+          "population": 27601231,
+          "areaSqMi": 298265.48
         }
       },
       {
@@ -886,21 +886,9 @@
         "fullName": "Michigan Wolverines",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 468,
-          "population": 108992664,
-          "areaSqMi": 216376.73
-        }
-      },
-      {
-        "teamId": "utah-state",
-        "teamName": "Utah State",
-        "shortName": "Utah State",
-        "fullName": "Utah State Aggies",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 108,
-          "population": 54612588,
-          "areaSqMi": 1079624.71
+          "counties": 520,
+          "population": 121102960,
+          "areaSqMi": 240418.59
         }
       },
       {
@@ -910,9 +898,21 @@
         "fullName": "Stanford Cardinal",
         "conference": "ACC",
         "metrics": {
-          "counties": 74,
-          "population": 11961372,
-          "areaSqMi": 126652.42
+          "counties": 148,
+          "population": 23922744,
+          "areaSqMi": 253304.85
+        }
+      },
+      {
+        "teamId": "utah-state",
+        "teamName": "Utah State",
+        "shortName": "Utah State",
+        "fullName": "Utah State Aggies",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 117,
+          "population": 59163637,
+          "areaSqMi": 1169593.44
         }
       }
     ]
