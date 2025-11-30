@@ -4,7 +4,7 @@
   "week": 14,
   "seasonType": "regular",
   "weekLabel": "Regular Week 14",
-  "generatedAt": "2025-11-30T06:35:16.684412+00:00",
+  "generatedAt": "2025-11-30T07:20:57.912365+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -68,6 +68,18 @@
         }
       },
       {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 208,
+          "population": 16203843,
+          "areaSqMi": 215626.91
+        }
+      },
+      {
         "teamId": "ohio-state",
         "teamName": "Ohio State",
         "shortName": "Ohio State",
@@ -116,18 +128,6 @@
         }
       },
       {
-        "teamId": "stanford",
-        "teamName": "Stanford",
-        "shortName": "Stanford",
-        "fullName": "Stanford Cardinal",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 74,
-          "population": 11961372,
-          "areaSqMi": 126652.42
-        }
-      },
-      {
         "teamId": "texas-tech",
         "teamName": "Texas Tech",
         "shortName": "Texas Tech",
@@ -149,18 +149,6 @@
           "counties": 9,
           "population": 4551049,
           "areaSqMi": 89968.73
-        }
-      },
-      {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 134,
-          "population": 4242471,
-          "areaSqMi": 88974.48
         }
       },
       {
@@ -382,6 +370,18 @@
         }
       },
       {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 208,
+          "population": 16203843,
+          "areaSqMi": 215626.91
+        }
+      },
+      {
         "teamId": "texas-tech",
         "teamName": "Texas Tech",
         "shortName": "Texas Tech",
@@ -391,18 +391,6 @@
           "counties": 75,
           "population": 12812039,
           "areaSqMi": 103338.99
-        }
-      },
-      {
-        "teamId": "stanford",
-        "teamName": "Stanford",
-        "shortName": "Stanford",
-        "fullName": "Stanford Cardinal",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 74,
-          "population": 11961372,
-          "areaSqMi": 126652.42
         }
       },
       {
@@ -475,18 +463,6 @@
           "counties": 10,
           "population": 4341080,
           "areaSqMi": 4809.11
-        }
-      },
-      {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 134,
-          "population": 4242471,
-          "areaSqMi": 88974.48
         }
       },
       {
@@ -624,6 +600,18 @@
         }
       },
       {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 208,
+          "population": 16203843,
+          "areaSqMi": 215626.91
+        }
+      },
+      {
         "teamId": "miami",
         "teamName": "Miami",
         "shortName": "Miami",
@@ -633,18 +621,6 @@
           "counties": 140,
           "population": 16578913,
           "areaSqMi": 88113.63
-        }
-      },
-      {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 134,
-          "population": 4242471,
-          "areaSqMi": 88974.48
         }
       },
       {
@@ -705,18 +681,6 @@
           "counties": 75,
           "population": 5727069,
           "areaSqMi": 53118.91
-        }
-      },
-      {
-        "teamId": "stanford",
-        "teamName": "Stanford",
-        "shortName": "Stanford",
-        "fullName": "Stanford Cardinal",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 74,
-          "population": 11961372,
-          "areaSqMi": 126652.42
         }
       },
       {
@@ -812,9 +776,9 @@
         "fullName": "Arizona Wildcats",
         "conference": "Big 12",
         "metrics": {
-          "counties": 2420,
-          "population": 229045366,
-          "areaSqMi": 3680675.77
+          "counties": 2640,
+          "population": 249867672,
+          "areaSqMi": 4015282.66
         }
       },
       {
@@ -824,9 +788,9 @@
         "fullName": "Texas Longhorns",
         "conference": "SEC",
         "metrics": {
-          "counties": 1078,
-          "population": 80942895,
-          "areaSqMi": 2095328.27
+          "counties": 1176,
+          "population": 88301340,
+          "areaSqMi": 2285812.66
         }
       },
       {
@@ -836,9 +800,9 @@
         "fullName": "Duke Blue Devils",
         "conference": "ACC",
         "metrics": {
-          "counties": 445,
-          "population": 19715165,
-          "areaSqMi": 213046.77
+          "counties": 534,
+          "population": 23658198,
+          "areaSqMi": 255656.12
         }
       },
       {
@@ -848,9 +812,9 @@
         "fullName": "Ohio State Buckeyes",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 416,
-          "population": 96882368,
-          "areaSqMi": 192334.87
+          "counties": 468,
+          "population": 108992664,
+          "areaSqMi": 216376.73
         }
       },
       {
@@ -860,9 +824,21 @@
         "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 99,
-          "population": 50061539,
-          "areaSqMi": 989655.99
+          "counties": 108,
+          "population": 54612588,
+          "areaSqMi": 1079624.71
+        }
+      },
+      {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
         }
       }
     ],
@@ -874,9 +850,9 @@
         "fullName": "Arizona State Sun Devils",
         "conference": "Big 12",
         "metrics": {
-          "counties": 2420,
-          "population": 229045366,
-          "areaSqMi": 3680675.77
+          "counties": 2640,
+          "population": 249867672,
+          "areaSqMi": 4015282.66
         }
       },
       {
@@ -886,9 +862,9 @@
         "fullName": "Texas A&M Aggies",
         "conference": "SEC",
         "metrics": {
-          "counties": 1078,
-          "population": 80942895,
-          "areaSqMi": 2095328.27
+          "counties": 1176,
+          "population": 88301340,
+          "areaSqMi": 2285812.66
         }
       },
       {
@@ -898,9 +874,9 @@
         "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
-          "counties": 445,
-          "population": 19715165,
-          "areaSqMi": 213046.77
+          "counties": 534,
+          "population": 23658198,
+          "areaSqMi": 255656.12
         }
       },
       {
@@ -910,9 +886,9 @@
         "fullName": "Michigan Wolverines",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 416,
-          "population": 96882368,
-          "areaSqMi": 192334.87
+          "counties": 468,
+          "population": 108992664,
+          "areaSqMi": 216376.73
         }
       },
       {
@@ -922,15 +898,27 @@
         "fullName": "Utah State Aggies",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 99,
-          "population": 50061539,
-          "areaSqMi": 989655.99
+          "counties": 108,
+          "population": 54612588,
+          "areaSqMi": 1079624.71
+        }
+      },
+      {
+        "teamId": "stanford",
+        "teamName": "Stanford",
+        "shortName": "Stanford",
+        "fullName": "Stanford Cardinal",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 74,
+          "population": 11961372,
+          "areaSqMi": 126652.42
         }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 22,
+    "trackedTeams": 21,
     "countyCount": 3114
   }
 }
