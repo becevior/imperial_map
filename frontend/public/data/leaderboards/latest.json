@@ -4,7 +4,7 @@
   "week": 14,
   "seasonType": "regular",
   "weekLabel": "Regular Week 14",
-  "generatedAt": "2025-11-30T05:24:04.745065+00:00",
+  "generatedAt": "2025-11-30T06:35:16.684412+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -812,9 +812,9 @@
         "fullName": "Arizona Wildcats",
         "conference": "Big 12",
         "metrics": {
-          "counties": 2200,
-          "population": 208223060,
-          "areaSqMi": 3346068.88
+          "counties": 2420,
+          "population": 229045366,
+          "areaSqMi": 3680675.77
         }
       },
       {
@@ -824,21 +824,9 @@
         "fullName": "Texas Longhorns",
         "conference": "SEC",
         "metrics": {
-          "counties": 980,
-          "population": 73584450,
-          "areaSqMi": 1904843.88
-        }
-      },
-      {
-        "teamId": "ohio-state",
-        "teamName": "Ohio State",
-        "shortName": "Ohio State",
-        "fullName": "Ohio State Buckeyes",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 364,
-          "population": 84772072,
-          "areaSqMi": 168293.01
+          "counties": 1078,
+          "population": 80942895,
+          "areaSqMi": 2095328.27
         }
       },
       {
@@ -848,9 +836,21 @@
         "fullName": "Duke Blue Devils",
         "conference": "ACC",
         "metrics": {
-          "counties": 356,
-          "population": 15772132,
-          "areaSqMi": 170437.42
+          "counties": 445,
+          "population": 19715165,
+          "areaSqMi": 213046.77
+        }
+      },
+      {
+        "teamId": "ohio-state",
+        "teamName": "Ohio State",
+        "shortName": "Ohio State",
+        "fullName": "Ohio State Buckeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 416,
+          "population": 96882368,
+          "areaSqMi": 192334.87
         }
       },
       {
@@ -860,9 +860,9 @@
         "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 90,
-          "population": 45510490,
-          "areaSqMi": 899687.26
+          "counties": 99,
+          "population": 50061539,
+          "areaSqMi": 989655.99
         }
       }
     ],
@@ -874,9 +874,9 @@
         "fullName": "Arizona State Sun Devils",
         "conference": "Big 12",
         "metrics": {
-          "counties": 2200,
-          "population": 208223060,
-          "areaSqMi": 3346068.88
+          "counties": 2420,
+          "population": 229045366,
+          "areaSqMi": 3680675.77
         }
       },
       {
@@ -886,21 +886,9 @@
         "fullName": "Texas A&M Aggies",
         "conference": "SEC",
         "metrics": {
-          "counties": 980,
-          "population": 73584450,
-          "areaSqMi": 1904843.88
-        }
-      },
-      {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 364,
-          "population": 84772072,
-          "areaSqMi": 168293.01
+          "counties": 1078,
+          "population": 80942895,
+          "areaSqMi": 2095328.27
         }
       },
       {
@@ -910,9 +898,21 @@
         "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
-          "counties": 356,
-          "population": 15772132,
-          "areaSqMi": 170437.42
+          "counties": 445,
+          "population": 19715165,
+          "areaSqMi": 213046.77
+        }
+      },
+      {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 416,
+          "population": 96882368,
+          "areaSqMi": 192334.87
         }
       },
       {
@@ -922,9 +922,9 @@
         "fullName": "Utah State Aggies",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 90,
-          "population": 45510490,
-          "areaSqMi": 899687.26
+          "counties": 99,
+          "population": 50061539,
+          "areaSqMi": 989655.99
         }
       }
     ]
