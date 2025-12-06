@@ -66,5 +66,39 @@
     "awayScore": 21,
     "winnerId": "boise-state",
     "loserId": "unlv"
+  },
+  {
+    "id": 401777327,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 15,
+    "completed": true,
+    "startDate": "2025-12-06T17:00:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": true,
+    "venue": "AT&T Stadium",
+    "homeTeamId": "texas-tech",
+    "awayTeamId": "byu",
+    "homeScore": 34,
+    "awayScore": 7,
+    "winnerId": "texas-tech",
+    "loserId": "byu"
+  },
+  {
+    "id": 401777329,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 15,
+    "completed": true,
+    "startDate": "2025-12-06T17:00:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": true,
+    "venue": "Ford Field",
+    "homeTeamId": "western-michigan",
+    "awayTeamId": "miami-oh",
+    "homeScore": 23,
+    "awayScore": 13,
+    "winnerId": "western-michigan",
+    "loserId": "miami-oh"
   }
 ]
