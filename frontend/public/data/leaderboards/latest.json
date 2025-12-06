@@ -1,10 +1,10 @@
 {
   "season": 2025,
-  "weekIndex": 14,
-  "week": 14,
+  "weekIndex": 15,
+  "week": 15,
   "seasonType": "regular",
-  "weekLabel": "Regular Week 14",
-  "generatedAt": "2025-12-05T06:41:29.494481+00:00",
+  "weekLabel": "Regular Week 15",
+  "generatedAt": "2025-12-06T18:15:19.766493+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -44,6 +44,18 @@
         }
       },
       {
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 228,
+          "population": 24061427,
+          "areaSqMi": 311778.32
+        }
+      },
+      {
         "teamId": "indiana",
         "teamName": "Indiana",
         "shortName": "Indiana",
@@ -53,18 +65,6 @@
           "counties": 259,
           "population": 28329851,
           "areaSqMi": 234176.87
-        }
-      },
-      {
-        "teamId": "unlv",
-        "teamName": "UNLV",
-        "shortName": "UNLV",
-        "fullName": "UNLV Rebels",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 219,
-          "population": 19510378,
-          "areaSqMi": 221809.59
         }
       },
       {
@@ -104,6 +104,18 @@
         }
       },
       {
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 134,
+          "population": 22522752,
+          "areaSqMi": 185081.6
+        }
+      },
+      {
         "teamId": "utah",
         "teamName": "Utah",
         "shortName": "Utah",
@@ -116,18 +128,6 @@
         }
       },
       {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 91,
-          "population": 16834547,
-          "areaSqMi": 161352.3
-        }
-      },
-      {
         "teamId": "texas-tech",
         "teamName": "Texas Tech",
         "shortName": "Texas Tech",
@@ -137,18 +137,6 @@
           "counties": 75,
           "population": 12812039,
           "areaSqMi": 103338.99
-        }
-      },
-      {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 9,
-          "population": 4551049,
-          "areaSqMi": 89968.73
         }
       },
       {
@@ -197,18 +185,6 @@
           "counties": 59,
           "population": 2377378,
           "areaSqMi": 29792.86
-        }
-      },
-      {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 43,
-          "population": 5688205,
-          "areaSqMi": 23729.3
         }
       },
       {
@@ -310,27 +286,15 @@
         }
       },
       {
-        "teamId": "arizona",
-        "teamName": "Arizona",
-        "shortName": "Arizona",
-        "fullName": "Arizona Wildcats",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 220,
-          "population": 20822306,
-          "areaSqMi": 334606.89
-        }
-      },
-      {
-        "teamId": "unlv",
-        "teamName": "UNLV",
-        "shortName": "UNLV",
-        "fullName": "UNLV Rebels",
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 219,
-          "population": 19510378,
-          "areaSqMi": 221809.59
+          "counties": 228,
+          "population": 24061427,
+          "areaSqMi": 311778.32
         }
       },
       {
@@ -340,9 +304,21 @@
         "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
-          "counties": 91,
-          "population": 16834547,
-          "areaSqMi": 161352.3
+          "counties": 134,
+          "population": 22522752,
+          "areaSqMi": 185081.6
+        }
+      },
+      {
+        "teamId": "arizona",
+        "teamName": "Arizona",
+        "shortName": "Arizona",
+        "fullName": "Arizona Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
         }
       },
       {
@@ -418,18 +394,6 @@
         }
       },
       {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 43,
-          "population": 5688205,
-          "areaSqMi": 23729.3
-        }
-      },
-      {
         "teamId": "iowa-state",
         "teamName": "Iowa State",
         "shortName": "Iowa State",
@@ -439,18 +403,6 @@
           "counties": 25,
           "population": 5001368,
           "areaSqMi": 17174.59
-        }
-      },
-      {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 9,
-          "population": 4551049,
-          "areaSqMi": 89968.73
         }
       },
       {
@@ -576,6 +528,18 @@
         }
       },
       {
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 228,
+          "population": 24061427,
+          "areaSqMi": 311778.32
+        }
+      },
+      {
         "teamId": "arizona",
         "teamName": "Arizona",
         "shortName": "Arizona",
@@ -585,18 +549,6 @@
           "counties": 220,
           "population": 20822306,
           "areaSqMi": 334606.89
-        }
-      },
-      {
-        "teamId": "unlv",
-        "teamName": "UNLV",
-        "shortName": "UNLV",
-        "fullName": "UNLV Rebels",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 219,
-          "population": 19510378,
-          "areaSqMi": 221809.59
         }
       },
       {
@@ -624,6 +576,18 @@
         }
       },
       {
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 134,
+          "population": 22522752,
+          "areaSqMi": 185081.6
+        }
+      },
+      {
         "teamId": "texas",
         "teamName": "Texas",
         "shortName": "Texas",
@@ -633,18 +597,6 @@
           "counties": 98,
           "population": 7358445,
           "areaSqMi": 190484.39
-        }
-      },
-      {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 91,
-          "population": 16834547,
-          "areaSqMi": 161352.3
         }
       },
       {
@@ -708,18 +660,6 @@
         }
       },
       {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 43,
-          "population": 5688205,
-          "areaSqMi": 23729.3
-        }
-      },
-      {
         "teamId": "iowa-state",
         "teamName": "Iowa State",
         "shortName": "Iowa State",
@@ -754,171 +694,63 @@
           "population": 4341080,
           "areaSqMi": 4809.11
         }
-      },
-      {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 9,
-          "population": 4551049,
-          "areaSqMi": 89968.73
-        }
       }
     ],
     "territoryGained": [
       {
-        "teamId": "arizona",
-        "teamName": "Arizona",
-        "shortName": "Arizona",
-        "fullName": "Arizona Wildcats",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 4400,
-          "population": 416446120,
-          "areaSqMi": 6692137.76
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 1960,
-          "population": 147168900,
-          "areaSqMi": 3809687.76
-        }
-      },
-      {
-        "teamId": "duke",
-        "teamName": "Duke",
-        "shortName": "Duke",
-        "fullName": "Duke Blue Devils",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 1246,
-          "population": 55202462,
-          "areaSqMi": 596530.96
-        }
-      },
-      {
-        "teamId": "ohio-state",
-        "teamName": "Ohio State",
-        "shortName": "Ohio State",
-        "fullName": "Ohio State Buckeyes",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 884,
-          "population": 205875032,
-          "areaSqMi": 408711.6
-        }
-      },
-      {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 666,
-          "population": 107652348,
-          "areaSqMi": 1139871.81
-        }
-      },
-      {
         "teamId": "boise-state",
         "teamName": "Boise State",
         "shortName": "Boise State",
         "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 180,
-          "population": 91020980,
-          "areaSqMi": 1799374.52
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
+        }
+      },
+      {
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 43,
+          "population": 5688205,
+          "areaSqMi": 23729.3
         }
       }
     ],
     "territoryLost": [
       {
-        "teamId": "arizona-state",
-        "teamName": "Arizona State",
-        "shortName": "Arizona State",
-        "fullName": "Arizona State Sun Devils",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 4400,
-          "population": 416446120,
-          "areaSqMi": 6692137.76
-        }
-      },
-      {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 1960,
-          "population": 147168900,
-          "areaSqMi": 3809687.76
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 1246,
-          "population": 55202462,
-          "areaSqMi": 596530.96
-        }
-      },
-      {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 884,
-          "population": 205875032,
-          "areaSqMi": 408711.6
-        }
-      },
-      {
-        "teamId": "stanford",
-        "teamName": "Stanford",
-        "shortName": "Stanford",
-        "fullName": "Stanford Cardinal",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 666,
-          "population": 107652348,
-          "areaSqMi": 1139871.81
-        }
-      },
-      {
-        "teamId": "utah-state",
-        "teamName": "Utah State",
-        "shortName": "Utah State",
-        "fullName": "Utah State Aggies",
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 180,
-          "population": 91020980,
-          "areaSqMi": 1799374.52
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
+        }
+      },
+      {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 43,
+          "population": 5688205,
+          "areaSqMi": 23729.3
         }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 21,
+    "trackedTeams": 19,
     "countyCount": 3114
   }
 }
