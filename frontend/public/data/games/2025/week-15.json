@@ -100,5 +100,22 @@
     "awayScore": 13,
     "winnerId": "western-michigan",
     "loserId": "miami-oh"
+  },
+  {
+    "id": 401777351,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 15,
+    "completed": true,
+    "startDate": "2025-12-06T21:00:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": true,
+    "venue": "Mercedes-Benz Stadium",
+    "homeTeamId": "alabama",
+    "awayTeamId": "georgia",
+    "homeScore": 7,
+    "awayScore": 28,
+    "winnerId": "georgia",
+    "loserId": "alabama"
   }
 ]
