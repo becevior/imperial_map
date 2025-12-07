@@ -117,5 +117,22 @@
     "awayScore": 28,
     "winnerId": "georgia",
     "loserId": "alabama"
+  },
+  {
+    "id": 401777353,
+    "season": 2025,
+    "seasonType": "regular",
+    "week": 15,
+    "completed": true,
+    "startDate": "2025-12-07T01:00:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": true,
+    "venue": "Lucas Oil Stadium",
+    "homeTeamId": "ohio-state",
+    "awayTeamId": "indiana",
+    "homeScore": 10,
+    "awayScore": 13,
+    "winnerId": "indiana",
+    "loserId": "ohio-state"
   }
 ]

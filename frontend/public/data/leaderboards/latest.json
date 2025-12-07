@@ -4,9 +4,21 @@
   "week": 15,
   "seasonType": "regular",
   "weekLabel": "Regular Week 15",
-  "generatedAt": "2025-12-07T03:58:03.471013+00:00",
+  "generatedAt": "2025-12-07T04:37:52.421646+00:00",
   "leaderboards": {
     "territoryOwned": [
+      {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 522,
+          "population": 79365302,
+          "areaSqMi": 442929.75
+        }
+      },
       {
         "teamId": "oklahoma",
         "teamName": "Oklahoma",
@@ -56,18 +68,6 @@
         }
       },
       {
-        "teamId": "indiana",
-        "teamName": "Indiana",
-        "shortName": "Indiana",
-        "fullName": "Indiana Hoosiers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 259,
-          "population": 28329851,
-          "areaSqMi": 234176.87
-        }
-      },
-      {
         "teamId": "notre-dame",
         "teamName": "Notre Dame",
         "shortName": "Notre Dame",
@@ -77,18 +77,6 @@
           "counties": 208,
           "population": 16203843,
           "areaSqMi": 215626.91
-        }
-      },
-      {
-        "teamId": "ohio-state",
-        "teamName": "Ohio State",
-        "shortName": "Ohio State",
-        "fullName": "Ohio State Buckeyes",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 263,
-          "population": 51035451,
-          "areaSqMi": 208752.88
         }
       },
       {
@@ -238,15 +226,15 @@
     ],
     "populationControlled": [
       {
-        "teamId": "ohio-state",
-        "teamName": "Ohio State",
-        "shortName": "Ohio State",
-        "fullName": "Ohio State Buckeyes",
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 263,
-          "population": 51035451,
-          "areaSqMi": 208752.88
+          "counties": 522,
+          "population": 79365302,
+          "areaSqMi": 442929.75
         }
       },
       {
@@ -271,18 +259,6 @@
           "counties": 514,
           "population": 34921103,
           "areaSqMi": 413448.71
-        }
-      },
-      {
-        "teamId": "indiana",
-        "teamName": "Indiana",
-        "shortName": "Indiana",
-        "fullName": "Indiana Hoosiers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 259,
-          "population": 28329851,
-          "areaSqMi": 234176.87
         }
       },
       {
@@ -468,6 +444,18 @@
     ],
     "countiesOwned": [
       {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 522,
+          "population": 79365302,
+          "areaSqMi": 442929.75
+        }
+      },
+      {
         "teamId": "oklahoma",
         "teamName": "Oklahoma",
         "shortName": "Oklahoma",
@@ -489,30 +477,6 @@
           "counties": 413,
           "population": 38537523,
           "areaSqMi": 320867.77
-        }
-      },
-      {
-        "teamId": "ohio-state",
-        "teamName": "Ohio State",
-        "shortName": "Ohio State",
-        "fullName": "Ohio State Buckeyes",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 263,
-          "population": 51035451,
-          "areaSqMi": 208752.88
-        }
-      },
-      {
-        "teamId": "indiana",
-        "teamName": "Indiana",
-        "shortName": "Indiana",
-        "fullName": "Indiana Hoosiers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 259,
-          "population": 28329851,
-          "areaSqMi": 234176.87
         }
       },
       {
@@ -704,9 +668,9 @@
         "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1752,
-          "population": 156083024,
-          "areaSqMi": 1774476.75
+          "counties": 1971,
+          "population": 175593402,
+          "areaSqMi": 1996286.35
         }
       },
       {
@@ -716,9 +680,21 @@
         "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
-          "counties": 344,
-          "population": 45505640,
-          "areaSqMi": 189834.42
+          "counties": 387,
+          "population": 51193845,
+          "areaSqMi": 213563.73
+        }
+      },
+      {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 263,
+          "population": 51035451,
+          "areaSqMi": 208752.88
         }
       }
     ],
@@ -730,9 +706,9 @@
         "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1752,
-          "population": 156083024,
-          "areaSqMi": 1774476.75
+          "counties": 1971,
+          "population": 175593402,
+          "areaSqMi": 1996286.35
         }
       },
       {
@@ -742,15 +718,27 @@
         "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
-          "counties": 344,
-          "population": 45505640,
-          "areaSqMi": 189834.42
+          "counties": 387,
+          "population": 51193845,
+          "areaSqMi": 213563.73
+        }
+      },
+      {
+        "teamId": "ohio-state",
+        "teamName": "Ohio State",
+        "shortName": "Ohio State",
+        "fullName": "Ohio State Buckeyes",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 263,
+          "population": 51035451,
+          "areaSqMi": 208752.88
         }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 19,
+    "trackedTeams": 18,
     "countyCount": 3114
   }
 }
