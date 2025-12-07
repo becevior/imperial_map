@@ -4,7 +4,7 @@
   "week": 15,
   "seasonType": "regular",
   "weekLabel": "Regular Week 15",
-  "generatedAt": "2025-12-07T04:37:52.421646+00:00",
+  "generatedAt": "2025-12-07T05:22:22.112353+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -668,21 +668,9 @@
         "fullName": "Boise State Broncos",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1971,
-          "population": 175593402,
-          "areaSqMi": 1996286.35
-        }
-      },
-      {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 387,
-          "population": 51193845,
-          "areaSqMi": 213563.73
+          "counties": 2190,
+          "population": 195103780,
+          "areaSqMi": 2218095.94
         }
       },
       {
@@ -692,9 +680,21 @@
         "fullName": "Indiana Hoosiers",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 263,
-          "population": 51035451,
-          "areaSqMi": 208752.88
+          "counties": 526,
+          "population": 102070902,
+          "areaSqMi": 417505.76
+        }
+      },
+      {
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 430,
+          "population": 56882050,
+          "areaSqMi": 237293.03
         }
       }
     ],
@@ -706,21 +706,9 @@
         "fullName": "UNLV Rebels",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 1971,
-          "population": 175593402,
-          "areaSqMi": 1996286.35
-        }
-      },
-      {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 387,
-          "population": 51193845,
-          "areaSqMi": 213563.73
+          "counties": 2190,
+          "population": 195103780,
+          "areaSqMi": 2218095.94
         }
       },
       {
@@ -730,9 +718,21 @@
         "fullName": "Ohio State Buckeyes",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 263,
-          "population": 51035451,
-          "areaSqMi": 208752.88
+          "counties": 526,
+          "population": 102070902,
+          "areaSqMi": 417505.76
+        }
+      },
+      {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 430,
+          "population": 56882050,
+          "areaSqMi": 237293.03
         }
       }
     ]
