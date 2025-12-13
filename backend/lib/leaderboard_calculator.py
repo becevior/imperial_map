@@ -92,7 +92,16 @@ def _collect_transfer_deltas(
     gained: Dict[str, Dict[str, float]] = defaultdict(lambda: {'counties': 0, 'population': 0, 'areaSqMi': 0.0})
     lost: Dict[str, Dict[str, float]] = defaultdict(lambda: {'counties': 0, 'population': 0, 'areaSqMi': 0.0})
 
+    # Deduplicate transfers by gameId to prevent counting the same transfer multiple times
+    seen_game_ids = set()
+
     for transfer in transfers:
+        game_id = transfer.get('gameId')
+        if game_id in seen_game_ids:
+            continue
+        if game_id is not None:
+            seen_game_ids.add(game_id)
+
         fips_list = transfer.get('fips') or []
         winner_id = transfer.get('winnerId')
         loser_id = transfer.get('loserId')
