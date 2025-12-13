@@ -4,7 +4,7 @@
   "week": 15,
   "seasonType": "regular",
   "weekLabel": "Regular Week 15",
-  "generatedAt": "2025-12-12T06:43:31.888266+00:00",
+  "generatedAt": "2025-12-13T03:04:48.089128+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -662,27 +662,27 @@
     ],
     "territoryGained": [
       {
-        "teamId": "boise-state",
-        "teamName": "Boise State",
-        "shortName": "Boise State",
-        "fullName": "Boise State Broncos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 4380,
-          "population": 390207560,
-          "areaSqMi": 4436191.88
-        }
-      },
-      {
         "teamId": "indiana",
         "teamName": "Indiana",
         "shortName": "Indiana",
         "fullName": "Indiana Hoosiers",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 3156,
-          "population": 612425412,
-          "areaSqMi": 2505034.57
+          "counties": 263,
+          "population": 51035451,
+          "areaSqMi": 208752.88
+        }
+      },
+      {
+        "teamId": "boise-state",
+        "teamName": "Boise State",
+        "shortName": "Boise State",
+        "fullName": "Boise State Broncos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
         }
       },
       {
@@ -692,25 +692,13 @@
         "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
-          "counties": 860,
-          "population": 113764100,
-          "areaSqMi": 474586.06
+          "counties": 43,
+          "population": 5688205,
+          "areaSqMi": 23729.3
         }
       }
     ],
     "territoryLost": [
-      {
-        "teamId": "unlv",
-        "teamName": "UNLV",
-        "shortName": "UNLV",
-        "fullName": "UNLV Rebels",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 4380,
-          "population": 390207560,
-          "areaSqMi": 4436191.88
-        }
-      },
       {
         "teamId": "ohio-state",
         "teamName": "Ohio State",
@@ -718,9 +706,21 @@
         "fullName": "Ohio State Buckeyes",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 3156,
-          "population": 612425412,
-          "areaSqMi": 2505034.57
+          "counties": 263,
+          "population": 51035451,
+          "areaSqMi": 208752.88
+        }
+      },
+      {
+        "teamId": "unlv",
+        "teamName": "UNLV",
+        "shortName": "UNLV",
+        "fullName": "UNLV Rebels",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 219,
+          "population": 19510378,
+          "areaSqMi": 221809.59
         }
       },
       {
@@ -730,9 +730,9 @@
         "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
-          "counties": 860,
-          "population": 113764100,
-          "areaSqMi": 474586.06
+          "counties": 43,
+          "population": 5688205,
+          "areaSqMi": 23729.3
         }
       }
     ]
