@@ -36,6 +36,21 @@ def load_existing_transfers() -> List[Dict]:
         return json.load(handle)
 
 
+def deduplicate_transfers(transfers: List[Dict]) -> List[Dict]:
+    """Remove duplicate transfer records based on gameId."""
+    seen_game_ids = set()
+    deduplicated = []
+
+    for transfer in transfers:
+        game_id = transfer.get('gameId')
+        if game_id is None or game_id not in seen_game_ids:
+            deduplicated.append(transfer)
+            if game_id is not None:
+                seen_game_ids.add(game_id)
+
+    return deduplicated
+
+
 def save_transfers(transfers: List[Dict]) -> None:
     db.save_json('transfers.json', transfers)
 
@@ -281,7 +296,9 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
     if not args.dry_run:
         update_ownership_index(args.season, season_weeks)
         if new_transfers:
-            save_transfers(existing_transfers + new_transfers)
+            # Deduplicate transfers to prevent duplicate entries from multiple runs
+            all_transfers = deduplicate_transfers(existing_transfers + new_transfers)
+            save_transfers(all_transfers)
 
     total_games = sum(item.get('gamesProcessed', 0) for item in weekly_summaries)
     total_counties = sum(item.get('countiesTransferred', 0) for item in weekly_summaries)
