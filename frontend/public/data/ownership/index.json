@@ -121,6 +121,13 @@
           "seasonType": "regular",
           "label": "Regular Week 16",
           "path": "/data/ownership/2025/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Postseason Week 1",
+          "path": "/data/ownership/2025/week-17.json"
         }
       ]
     }

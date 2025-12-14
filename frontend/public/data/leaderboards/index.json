@@ -121,16 +121,23 @@
           "seasonType": "regular",
           "label": "Regular Week 16",
           "path": "/data/leaderboards/2025/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Postseason Week 1",
+          "path": "/data/leaderboards/2025/week-17.json"
         }
       ]
     }
   ],
   "latest": {
     "season": 2025,
-    "weekIndex": 16,
-    "path": "/data/leaderboards/2025/week-16.json",
-    "label": "Regular Week 16",
-    "week": 16,
-    "seasonType": "regular"
+    "weekIndex": 17,
+    "path": "/data/leaderboards/2025/week-17.json",
+    "label": "Postseason Week 1",
+    "week": 1,
+    "seasonType": "postseason"
   }
 }
