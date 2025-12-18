@@ -32,5 +32,39 @@
     "awayScore": 13,
     "winnerId": "jacksonville-state",
     "loserId": "troy"
+  },
+  {
+    "id": 401778304,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-17T22:00:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Camping World Stadium",
+    "homeTeamId": "south-florida",
+    "awayTeamId": "old-dominion",
+    "homeScore": 10,
+    "awayScore": 24,
+    "winnerId": "old-dominion",
+    "loserId": "south-florida"
+  },
+  {
+    "id": 401778305,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-18T01:30:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Hancock Whitney Stadium",
+    "homeTeamId": "delaware",
+    "awayTeamId": "louisiana",
+    "homeScore": 20,
+    "awayScore": 13,
+    "winnerId": "delaware",
+    "loserId": "louisiana"
   }
 ]
