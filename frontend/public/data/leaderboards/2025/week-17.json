@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "postseason",
   "weekLabel": "Postseason Week 1",
-  "generatedAt": "2025-12-19T06:41:28.022492+00:00",
+  "generatedAt": "2025-12-20T18:15:08.500701+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -20,10 +20,10 @@
         }
       },
       {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
         "conference": "SEC",
         "metrics": {
           "counties": 514,
@@ -250,10 +250,10 @@
         }
       },
       {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
         "conference": "SEC",
         "metrics": {
           "counties": 514,
@@ -456,10 +456,10 @@
         }
       },
       {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
         "conference": "SEC",
         "metrics": {
           "counties": 514,
@@ -662,6 +662,18 @@
     ],
     "territoryGained": [
       {
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 514,
+          "population": 34921103,
+          "areaSqMi": 413448.72
+        }
+      },
+      {
         "teamId": "washington",
         "teamName": "Washington",
         "shortName": "Washington",
@@ -675,6 +687,18 @@
       }
     ],
     "territoryLost": [
+      {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 514,
+          "population": 34921103,
+          "areaSqMi": 413448.72
+        }
+      },
       {
         "teamId": "boise-state",
         "teamName": "Boise State",
