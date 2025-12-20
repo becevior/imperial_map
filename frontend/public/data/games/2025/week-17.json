@@ -134,5 +134,22 @@
     "awayScore": 34,
     "winnerId": "alabama",
     "loserId": "oklahoma"
+  },
+  {
+    "id": 401779841,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-20T17:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Kyle Field",
+    "homeTeamId": "texas-a-m",
+    "awayTeamId": "miami",
+    "homeScore": 3,
+    "awayScore": 10,
+    "winnerId": "miami",
+    "loserId": "texas-a-m"
   }
 ]
