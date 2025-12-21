@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "postseason",
   "weekLabel": "Postseason Week 1",
-  "generatedAt": "2025-12-20T23:10:28.489993+00:00",
+  "generatedAt": "2025-12-21T02:05:10.968889+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -92,11 +92,11 @@
         }
       },
       {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
         "metrics": {
           "counties": 134,
           "population": 22522752,
@@ -274,11 +274,11 @@
         }
       },
       {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
         "metrics": {
           "counties": 134,
           "population": 22522752,
@@ -540,11 +540,11 @@
         }
       },
       {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
         "metrics": {
           "counties": 134,
           "population": 22522752,
@@ -684,6 +684,18 @@
           "population": 24061427,
           "areaSqMi": 311778.32
         }
+      },
+      {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 134,
+          "population": 22522752,
+          "areaSqMi": 185081.61
+        }
       }
     ],
     "territoryLost": [
@@ -709,6 +721,18 @@
           "counties": 228,
           "population": 24061427,
           "areaSqMi": 311778.32
+        }
+      },
+      {
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 134,
+          "population": 22522752,
+          "areaSqMi": 185081.61
         }
       }
     ]
