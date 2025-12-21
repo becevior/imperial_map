@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "postseason",
   "weekLabel": "Postseason Week 1",
-  "generatedAt": "2025-12-21T04:01:29.614544+00:00",
+  "generatedAt": "2025-12-21T05:25:07.844045+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -200,11 +200,11 @@
         }
       },
       {
-        "teamId": "james-madison",
-        "teamName": "James Madison",
-        "shortName": "James Madison",
-        "fullName": "James Madison Dukes",
-        "conference": "Sun Belt",
+        "teamId": "oregon",
+        "teamName": "Oregon",
+        "shortName": "Oregon",
+        "fullName": "Oregon Ducks",
+        "conference": "Big Ten",
         "metrics": {
           "counties": 15,
           "population": 451462,
@@ -430,11 +430,11 @@
         }
       },
       {
-        "teamId": "james-madison",
-        "teamName": "James Madison",
-        "shortName": "James Madison",
-        "fullName": "James Madison Dukes",
-        "conference": "Sun Belt",
+        "teamId": "oregon",
+        "teamName": "Oregon",
+        "shortName": "Oregon",
+        "fullName": "Oregon Ducks",
+        "conference": "Big Ten",
         "metrics": {
           "counties": 15,
           "population": 451462,
@@ -636,11 +636,11 @@
         }
       },
       {
-        "teamId": "james-madison",
-        "teamName": "James Madison",
-        "shortName": "James Madison",
-        "fullName": "James Madison Dukes",
-        "conference": "Sun Belt",
+        "teamId": "oregon",
+        "teamName": "Oregon",
+        "shortName": "Oregon",
+        "fullName": "Oregon Ducks",
+        "conference": "Big Ten",
         "metrics": {
           "counties": 15,
           "population": 451462,
@@ -696,6 +696,18 @@
           "population": 22522752,
           "areaSqMi": 185081.61
         }
+      },
+      {
+        "teamId": "oregon",
+        "teamName": "Oregon",
+        "shortName": "Oregon",
+        "fullName": "Oregon Ducks",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 15,
+          "population": 451462,
+          "areaSqMi": 5808.53
+        }
       }
     ],
     "territoryLost": [
@@ -733,6 +745,18 @@
           "counties": 134,
           "population": 22522752,
           "areaSqMi": 185081.61
+        }
+      },
+      {
+        "teamId": "james-madison",
+        "teamName": "James Madison",
+        "shortName": "James Madison",
+        "fullName": "James Madison Dukes",
+        "conference": "Sun Belt",
+        "metrics": {
+          "counties": 15,
+          "population": 451462,
+          "areaSqMi": 5808.53
         }
       }
     ]

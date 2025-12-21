@@ -168,5 +168,22 @@
     "awayScore": 10,
     "winnerId": "ole-miss",
     "loserId": "tulane"
+  },
+  {
+    "id": 401779843,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-21T00:30:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Autzen Stadium",
+    "homeTeamId": "oregon",
+    "awayTeamId": "james-madison",
+    "homeScore": 51,
+    "awayScore": 34,
+    "winnerId": "oregon",
+    "loserId": "james-madison"
   }
 ]
