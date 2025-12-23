@@ -185,5 +185,22 @@
     "awayScore": 34,
     "winnerId": "oregon",
     "loserId": "james-madison"
+  },
+  {
+    "id": 401778308,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-22T19:00:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Albertsons Stadium",
+    "homeTeamId": "utah-state",
+    "awayTeamId": "washington-state",
+    "homeScore": 21,
+    "awayScore": 34,
+    "winnerId": "washington-state",
+    "loserId": "utah-state"
   }
 ]
