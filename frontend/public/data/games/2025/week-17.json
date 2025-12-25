@@ -253,5 +253,22 @@
     "awayScore": 10,
     "winnerId": "ohio",
     "loserId": "unlv"
+  },
+  {
+    "id": 401778312,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-25T01:00:00.000Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Clarence T.C. Ching Athletics Complex",
+    "homeTeamId": "hawaii",
+    "awayTeamId": "california",
+    "homeScore": 35,
+    "awayScore": 31,
+    "winnerId": "hawaii",
+    "loserId": "california"
   }
 ]
