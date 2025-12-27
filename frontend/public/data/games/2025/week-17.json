@@ -338,5 +338,22 @@
     "awayScore": 17,
     "winnerId": "east-carolina",
     "loserId": "pittsburgh"
+  },
+  {
+    "id": 401778317,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-27T17:00:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Yankee Stadium",
+    "homeTeamId": "clemson",
+    "awayTeamId": "penn-state",
+    "homeScore": 10,
+    "awayScore": 22,
+    "winnerId": "penn-state",
+    "loserId": "clemson"
   }
 ]
