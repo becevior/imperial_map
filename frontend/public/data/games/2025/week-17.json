@@ -321,5 +321,22 @@
     "awayScore": 20,
     "winnerId": "utsa",
     "loserId": "fiu"
+  },
+  {
+    "id": 401778316,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-27T16:00:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Navy-Marine Corps Memorial Stadium",
+    "homeTeamId": "east-carolina",
+    "awayTeamId": "pittsburgh",
+    "homeScore": 23,
+    "awayScore": 17,
+    "winnerId": "east-carolina",
+    "loserId": "pittsburgh"
   }
 ]
