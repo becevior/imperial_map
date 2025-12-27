@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "postseason",
   "weekLabel": "Postseason Week 1",
-  "generatedAt": "2025-12-26T06:42:34.767535+00:00",
+  "generatedAt": "2025-12-27T18:16:09.383801+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -140,11 +140,11 @@
         }
       },
       {
-        "teamId": "fiu",
-        "teamName": "FIU",
-        "shortName": "FIU",
-        "fullName": "FIU Panthers",
-        "conference": "CUSA",
+        "teamId": "utsa",
+        "teamName": "UTSA",
+        "shortName": "UTSA",
+        "fullName": "UTSA Roadrunners",
+        "conference": "AAC",
         "metrics": {
           "counties": 75,
           "population": 5727069,
@@ -176,11 +176,11 @@
         }
       },
       {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
+        "teamId": "minnesota",
+        "teamName": "Minnesota",
+        "shortName": "Minnesota",
+        "fullName": "Minnesota Golden Gophers",
+        "conference": "Big Ten",
         "metrics": {
           "counties": 44,
           "population": 1614154,
@@ -358,11 +358,11 @@
         }
       },
       {
-        "teamId": "fiu",
-        "teamName": "FIU",
-        "shortName": "FIU",
-        "fullName": "FIU Panthers",
-        "conference": "CUSA",
+        "teamId": "utsa",
+        "teamName": "UTSA",
+        "shortName": "UTSA",
+        "fullName": "UTSA Roadrunners",
+        "conference": "AAC",
         "metrics": {
           "counties": 75,
           "population": 5727069,
@@ -418,11 +418,11 @@
         }
       },
       {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
+        "teamId": "minnesota",
+        "teamName": "Minnesota",
+        "shortName": "Minnesota",
+        "fullName": "Minnesota Golden Gophers",
+        "conference": "Big Ten",
         "metrics": {
           "counties": 44,
           "population": 1614154,
@@ -588,11 +588,11 @@
         }
       },
       {
-        "teamId": "fiu",
-        "teamName": "FIU",
-        "shortName": "FIU",
-        "fullName": "FIU Panthers",
-        "conference": "CUSA",
+        "teamId": "utsa",
+        "teamName": "UTSA",
+        "shortName": "UTSA",
+        "fullName": "UTSA Roadrunners",
+        "conference": "AAC",
         "metrics": {
           "counties": 75,
           "population": 5727069,
@@ -612,11 +612,11 @@
         }
       },
       {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
+        "teamId": "minnesota",
+        "teamName": "Minnesota",
+        "shortName": "Minnesota",
+        "fullName": "Minnesota Golden Gophers",
+        "conference": "Big Ten",
         "metrics": {
           "counties": 44,
           "population": 1614154,
@@ -698,6 +698,30 @@
         }
       },
       {
+        "teamId": "utsa",
+        "teamName": "UTSA",
+        "shortName": "UTSA",
+        "fullName": "UTSA Roadrunners",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
+        }
+      },
+      {
+        "teamId": "minnesota",
+        "teamName": "Minnesota",
+        "shortName": "Minnesota",
+        "fullName": "Minnesota Golden Gophers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 44,
+          "population": 1614154,
+          "areaSqMi": 20132.23
+        }
+      },
+      {
         "teamId": "oregon",
         "teamName": "Oregon",
         "shortName": "Oregon",
@@ -745,6 +769,30 @@
           "counties": 134,
           "population": 22522752,
           "areaSqMi": 185081.61
+        }
+      },
+      {
+        "teamId": "fiu",
+        "teamName": "FIU",
+        "shortName": "FIU",
+        "fullName": "FIU Panthers",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 75,
+          "population": 5727069,
+          "areaSqMi": 53118.91
+        }
+      },
+      {
+        "teamId": "new-mexico",
+        "teamName": "New Mexico",
+        "shortName": "New Mexico",
+        "fullName": "New Mexico Lobos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 44,
+          "population": 1614154,
+          "areaSqMi": 20132.23
         }
       },
       {
