@@ -389,5 +389,39 @@
     "awayScore": 3,
     "winnerId": "fresno-state",
     "loserId": "miami-oh"
+  },
+  {
+    "id": 401778321,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-27T22:45:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "University Stadium (NM)",
+    "homeTeamId": "san-diego-state",
+    "awayTeamId": "north-texas",
+    "homeScore": 47,
+    "awayScore": 49,
+    "winnerId": "north-texas",
+    "loserId": "san-diego-state"
+  },
+  {
+    "id": 401778322,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-28T00:30:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "EverBank Stadium",
+    "homeTeamId": "missouri",
+    "awayTeamId": "virginia",
+    "homeScore": 7,
+    "awayScore": 13,
+    "winnerId": "virginia",
+    "loserId": "missouri"
   }
 ]
