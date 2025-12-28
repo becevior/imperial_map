@@ -423,5 +423,22 @@
     "awayScore": 13,
     "winnerId": "virginia",
     "loserId": "missouri"
+  },
+  {
+    "id": 401778323,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-28T02:15:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "NRG Stadium",
+    "homeTeamId": "houston",
+    "awayTeamId": "lsu",
+    "homeScore": 38,
+    "awayScore": 35,
+    "winnerId": "houston",
+    "loserId": "lsu"
   }
 ]
