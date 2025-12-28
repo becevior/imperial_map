@@ -355,5 +355,39 @@
     "awayScore": 22,
     "winnerId": "penn-state",
     "loserId": "clemson"
+  },
+  {
+    "id": 401778319,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-27T20:30:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Camping World Stadium",
+    "homeTeamId": "byu",
+    "awayTeamId": "georgia-tech",
+    "homeScore": 25,
+    "awayScore": 21,
+    "winnerId": "byu",
+    "loserId": "georgia-tech"
+  },
+  {
+    "id": 401778320,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2025-12-27T21:30:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Arizona Stadium",
+    "homeTeamId": "fresno-state",
+    "awayTeamId": "miami-oh",
+    "homeScore": 18,
+    "awayScore": 3,
+    "winnerId": "fresno-state",
+    "loserId": "miami-oh"
   }
 ]
