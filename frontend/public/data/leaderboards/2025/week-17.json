@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "postseason",
   "weekLabel": "Postseason Week 1",
-  "generatedAt": "2026-01-02T06:44:45.272040+00:00",
+  "generatedAt": "2026-01-03T18:16:12.972667+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -32,11 +32,11 @@
         }
       },
       {
-        "teamId": "arizona",
-        "teamName": "Arizona",
-        "shortName": "Arizona",
-        "fullName": "Arizona Wildcats",
-        "conference": "Big 12",
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
         "metrics": {
           "counties": 220,
           "population": 20822306,
@@ -226,11 +226,11 @@
         }
       },
       {
-        "teamId": "arizona",
-        "teamName": "Arizona",
-        "shortName": "Arizona",
-        "fullName": "Arizona Wildcats",
-        "conference": "Big 12",
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
         "metrics": {
           "counties": 220,
           "population": 20822306,
@@ -420,11 +420,11 @@
         }
       },
       {
-        "teamId": "arizona",
-        "teamName": "Arizona",
-        "shortName": "Arizona",
-        "fullName": "Arizona Wildcats",
-        "conference": "Big 12",
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
         "metrics": {
           "counties": 220,
           "population": 20822306,
@@ -602,6 +602,18 @@
         }
       },
       {
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
+        }
+      },
+      {
         "teamId": "oregon",
         "teamName": "Oregon",
         "shortName": "Oregon",
@@ -685,6 +697,18 @@
           "counties": 228,
           "population": 24061427,
           "areaSqMi": 311778.32
+        }
+      },
+      {
+        "teamId": "arizona",
+        "teamName": "Arizona",
+        "shortName": "Arizona",
+        "fullName": "Arizona Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 220,
+          "population": 20822306,
+          "areaSqMi": 334606.89
         }
       },
       {
