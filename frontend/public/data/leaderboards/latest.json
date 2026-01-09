@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "postseason",
   "weekLabel": "Postseason Week 1",
-  "generatedAt": "2026-01-08T06:45:59.201186+00:00",
+  "generatedAt": "2026-01-09T06:46:15.197868+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -20,15 +20,15 @@
         }
       },
       {
-        "teamId": "ole-miss",
-        "teamName": "Ole Miss",
-        "shortName": "Ole Miss",
-        "fullName": "Ole Miss Rebels",
-        "conference": "SEC",
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
         "metrics": {
-          "counties": 547,
-          "population": 61060275,
-          "areaSqMi": 505949.37
+          "counties": 687,
+          "population": 77639188,
+          "areaSqMi": 594063.0
         }
       },
       {
@@ -101,18 +101,6 @@
           "counties": 90,
           "population": 13263501,
           "areaSqMi": 109147.52
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
         }
       },
       {
@@ -202,15 +190,15 @@
         }
       },
       {
-        "teamId": "ole-miss",
-        "teamName": "Ole Miss",
-        "shortName": "Ole Miss",
-        "fullName": "Ole Miss Rebels",
-        "conference": "SEC",
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
         "metrics": {
-          "counties": 547,
-          "population": 61060275,
-          "areaSqMi": 505949.37
+          "counties": 687,
+          "population": 77639188,
+          "areaSqMi": 594063.0
         }
       },
       {
@@ -235,18 +223,6 @@
           "counties": 220,
           "population": 20822306,
           "areaSqMi": 334606.89
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
         }
       },
       {
@@ -384,15 +360,15 @@
         }
       },
       {
-        "teamId": "ole-miss",
-        "teamName": "Ole Miss",
-        "shortName": "Ole Miss",
-        "fullName": "Ole Miss Rebels",
-        "conference": "SEC",
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
         "metrics": {
-          "counties": 547,
-          "population": 61060275,
-          "areaSqMi": 505949.37
+          "counties": 687,
+          "population": 77639188,
+          "areaSqMi": 594063.0
         }
       },
       {
@@ -441,18 +417,6 @@
           "counties": 208,
           "population": 16203843,
           "areaSqMi": 215626.91
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
         }
       },
       {
@@ -566,6 +530,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 547,
+          "population": 61060275,
+          "areaSqMi": 505949.37
+        }
+      },
+      {
         "teamId": "alabama",
         "teamName": "Alabama",
         "shortName": "Alabama",
@@ -651,6 +627,18 @@
       }
     ],
     "territoryLost": [
+      {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 547,
+          "population": 61060275,
+          "areaSqMi": 505949.37
+        }
+      },
       {
         "teamId": "oklahoma",
         "teamName": "Oklahoma",
@@ -774,7 +762,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 15,
+    "trackedTeams": 14,
     "countyCount": 3114
   }
 }

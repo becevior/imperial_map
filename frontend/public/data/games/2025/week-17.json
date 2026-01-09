@@ -712,5 +712,22 @@
     "awayScore": 19,
     "winnerId": "smu",
     "loserId": "arizona"
+  },
+  {
+    "id": 401769075,
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 1,
+    "completed": true,
+    "startDate": "2026-01-09T00:30:00.000Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "State Farm Stadium",
+    "homeTeamId": "ole-miss",
+    "awayTeamId": "miami",
+    "homeScore": 27,
+    "awayScore": 31,
+    "winnerId": "miami",
+    "loserId": "ole-miss"
   }
 ]
