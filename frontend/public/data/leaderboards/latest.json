@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "postseason",
   "weekLabel": "Postseason Week 1",
-  "generatedAt": "2026-01-19T06:51:51.659500+00:00",
+  "generatedAt": "2026-01-20T06:49:34.496979+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -14,21 +14,9 @@
         "fullName": "Indiana Hoosiers",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 1126,
-          "population": 127549906,
-          "areaSqMi": 965525.99
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 687,
-          "population": 77639188,
-          "areaSqMi": 594063.0
+          "counties": 1813,
+          "population": 205189094,
+          "areaSqMi": 1559588.99
         }
       },
       {
@@ -172,21 +160,9 @@
         "fullName": "Indiana Hoosiers",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 1126,
-          "population": 127549906,
-          "areaSqMi": 965525.99
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 687,
-          "population": 77639188,
-          "areaSqMi": 594063.0
+          "counties": 1813,
+          "population": 205189094,
+          "areaSqMi": 1559588.99
         }
       },
       {
@@ -330,21 +306,9 @@
         "fullName": "Indiana Hoosiers",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 1126,
-          "population": 127549906,
-          "areaSqMi": 965525.99
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 687,
-          "population": 77639188,
-          "areaSqMi": 594063.0
+          "counties": 1813,
+          "population": 205189094,
+          "areaSqMi": 1559588.99
         }
       },
       {
@@ -488,9 +452,9 @@
         "fullName": "Indiana Hoosiers",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 604,
-          "population": 48184604,
-          "areaSqMi": 522596.24
+          "counties": 1291,
+          "population": 125823792,
+          "areaSqMi": 1116659.24
         }
       },
       {
@@ -591,6 +555,18 @@
       }
     ],
     "territoryLost": [
+      {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 687,
+          "population": 77639188,
+          "areaSqMi": 594063.0
+        }
+      },
       {
         "teamId": "ole-miss",
         "teamName": "Ole Miss",
@@ -738,7 +714,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 13,
+    "trackedTeams": 12,
     "countyCount": 3114
   }
 }
