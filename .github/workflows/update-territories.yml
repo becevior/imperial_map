@@ -4,11 +4,11 @@ on:
   # Scheduled updates
   schedule:
     # Hourly on Saturdays 10am-11pm PST (6pm-11pm UTC Saturday)
-    - cron: '0 18-23 * * 6'  # Saturday 6pm-11pm UTC (10am-3pm PST)
+    # - cron: '0 18-23 * * 6'  # Saturday 6pm-11pm UTC (10am-3pm PST)
     # Continue hourly through 2am PST (12am-10am UTC Sunday)
-    - cron: '0 0-10 * * 0'  # Sunday 12am-10am UTC (4pm Sat - 2am Sun PST)
+    # - cron: '0 0-10 * * 0'  # Sunday 12am-10am UTC (4pm Sat - 2am Sun PST)
     # Daily at 6 AM UTC (10 PM PST) on other weekdays
-    - cron: '0 6 * * 1-5'  # Monday-Friday at 6 AM UTC
+    # - cron: '0 6 * * 1-5'  # Monday-Friday at 6 AM UTC
 
   # Allow manual trigger with season parameter
   workflow_dispatch:
