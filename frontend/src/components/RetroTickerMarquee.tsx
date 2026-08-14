@@ -34,7 +34,7 @@ export default function RetroTickerMarquee({ games, label }: RetroTickerMarqueeP
       <marquee
         behavior="scroll"
         direction="left"
-        scrollAmount={6}
+        scrollamount={6}
         className="retro-marquee__track"
       >
         {marqueeContent}

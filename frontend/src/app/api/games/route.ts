@@ -4,22 +4,39 @@ import path from 'path'
 
 export const dynamic = 'force-dynamic'
 
+function parsePositiveInteger(value: string | null): number | null {
+  if (!value || !/^\d+$/.test(value)) {
+    return null
+  }
+
+  const parsed = Number(value)
+  return Number.isSafeInteger(parsed) && parsed >= 0 ? parsed : null
+}
+
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)
-    const season = searchParams.get('season') || '2024'
-    const week = searchParams.get('week') || '1'
+    const season = parsePositiveInteger(searchParams.get('season'))
+    const week = parsePositiveInteger(searchParams.get('week'))
+
+    if (season === null || week === null) {
+      return NextResponse.json(
+        { error: 'season and week must be non-negative integers' },
+        { status: 400 }
+      )
+    }
 
     const filePath = path.join(
       process.cwd(),
       'public',
       'data',
       'games',
-      `${season}-week-${week}.json`
+      String(season),
+      `week-${String(week).padStart(2, '0')}.json`
     )
 
     if (!fs.existsSync(filePath)) {
-      return NextResponse.json({ games: [] })
+      return NextResponse.json({ error: 'Games not found' }, { status: 404 })
     }
 
     const games = JSON.parse(fs.readFileSync(filePath, 'utf-8'))

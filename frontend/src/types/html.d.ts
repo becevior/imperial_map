@@ -6,8 +6,8 @@ declare namespace JSX {
       React.HTMLAttributes<HTMLMarqueeElement> & {
         behavior?: 'scroll' | 'slide' | 'alternate'
         direction?: 'left' | 'right' | 'up' | 'down'
-        scrollAmount?: number
-        scrollDelay?: number
+        scrollamount?: number
+        scrolldelay?: number
         loop?: number
       },
       HTMLMarqueeElement

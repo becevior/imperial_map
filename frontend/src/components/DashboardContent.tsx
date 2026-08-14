@@ -1,6 +1,6 @@
 'use client'
 
-import { ChangeEvent, Fragment, useCallback, useMemo, useRef, useState } from 'react'
+import { Fragment, useCallback, useMemo, useRef, useState } from 'react'
 
 import Map from '@/components/Map'
 import RetroTickerMarquee from '@/components/RetroTickerMarquee'

@@ -22,7 +22,7 @@ This creates `frontend/public/data/teams.json` and `frontend/public/data/ownersh
 
 ```bash
 cd frontend
-npm install
+npm ci
 npm run dev
 ```
 
@@ -30,7 +30,9 @@ Visit http://localhost:3000
 
 ## Architecture
 
-**Simple file-based system - no database required!**
+**Simple file-based system - no database required.** The CSV and GeoJSON inputs are
+the source data; the JSON under `frontend/public/data/` is the generated, versioned
+deployment artifact served by Vercel.
 
 ```
 ┌─────────────────┐
@@ -41,14 +43,14 @@ Visit http://localhost:3000
          ▼
 ┌─────────────────┐
 │  Next.js        │
-│  (API Routes)   │
+│  (Static JSON)  │
 └────────┬────────┘
          │ Read files
          ▼
 ┌────────────────────────┐
 │  frontend/public/data/ │
 │  ├── teams.json        │ ◄── Python generates
-│  ├── ownership.json    │ ◄── Python updates
+│  ├── ownership.json    │ ◄── Python creates the preseason baseline
 │  ├── games/            │ ◄── Optional weekly summaries
 │  └── logo-colors.json  │ ◄── Optional logo color analysis
 └────────────────────────┘
@@ -118,6 +120,7 @@ python compute_logo_colors.py  # Optional: refresh logo fill colors
 # Frontend
 cd frontend
 npm run dev          # Start dev server
+npm run validate-data # Validate generated snapshots against the team roster
 npm run build        # Build for production
 npm run type-check   # Check TypeScript
 ```
