@@ -1,14 +1,19 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-const dataDirectory = path.join(process.cwd(), 'public', 'data')
+const dataDirectory = path.resolve(process.cwd(), 'public', 'data')
 
 function fail(message) {
   throw new Error(`Data validation failed: ${message}`)
 }
 
 function readJson(relativePath) {
-  const fullPath = path.join(dataDirectory, relativePath)
+  const fullPath = path.resolve(dataDirectory, relativePath)
+  const resolvedRelativePath = path.relative(dataDirectory, fullPath)
+  if (resolvedRelativePath.startsWith('..') || path.isAbsolute(resolvedRelativePath)) {
+    fail(`path escapes the data directory: ${relativePath}`)
+  }
+
   if (!fs.existsSync(fullPath)) {
     fail(`missing ${relativePath}`)
   }

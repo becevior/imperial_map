@@ -24,6 +24,13 @@ function parsePositiveInteger(value: string | null): number | null {
   return Number.isSafeInteger(parsed) && parsed >= 0 ? parsed : null
 }
 
+function resolveDataPath(dataDirectory: string, dataPath: string): string | null {
+  const filePath = path.resolve(dataDirectory, dataPath.slice('/data/'.length))
+  const relativePath = path.relative(dataDirectory, filePath)
+
+  return relativePath.startsWith('..') || path.isAbsolute(relativePath) ? null : filePath
+}
+
 export async function GET(request: Request) {
   try {
     const dataDirectory = path.join(process.cwd(), 'public', 'data')
@@ -60,7 +67,11 @@ export async function GET(request: Request) {
       return NextResponse.json({ error: 'Week not found' }, { status: 404 })
     }
 
-    const filePath = path.join(dataDirectory, week.path.slice('/data/'.length))
+    const filePath = resolveDataPath(dataDirectory, week.path)
+    if (!filePath) {
+      return NextResponse.json({ error: 'Week path is invalid' }, { status: 500 })
+    }
+
     const ownership = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 
     return NextResponse.json({
