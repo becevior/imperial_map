@@ -1,6 +1,13 @@
 'use client'
 
-import { ChangeEvent, useEffect, useRef, useState } from 'react'
+import {
+  ChangeEvent,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState
+} from 'react'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import type { LeaderboardWeekInfo } from '@/types/leaderboards'
@@ -29,6 +36,7 @@ export interface OwnershipIndexWeek {
 
 export interface OwnershipIndexSeason {
   season: number
+  teamCount?: number
   weeks: OwnershipIndexWeek[]
 }
 
@@ -38,6 +46,8 @@ interface MapProps {
 }
 
 const DEFAULT_FILL_COLOR = '#2d2d2d'
+const MAP_FILL_OPACITY = 0.82
+const OWNERSHIP_FADE_MS = 700
 const populationFormatter = new Intl.NumberFormat('en-US')
 const areaFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0
@@ -83,6 +93,10 @@ function fallbackColor(teamId: string): string {
   return `#${adjust(r).toString(16).padStart(2, '0')}${adjust(g)
     .toString(16)
     .padStart(2, '0')}${adjust(b).toString(16).padStart(2, '0')}`
+}
+
+function markerOpacityForZoom(zoom: number): number {
+  return Math.min(1, Math.max(0.45, (zoom - 3.6) / 0.6))
 }
 
 type LogoColorEntry = { fill?: string | null; logo?: string | null }
@@ -173,6 +187,9 @@ type CountyStats = Record<string, CountyStatsEntry>
 
 type OwnershipMap = Record<string, string>
 
+const ownershipSnapshotKey = (season: number, weekIndex: number) =>
+  `${season}-${weekIndex}`
+
 interface TerritoryCentroid {
   teamId?: string // Old format
   teamName?: string
@@ -200,10 +217,24 @@ interface OwnershipIndexPayload {
   seasons: OwnershipIndexSeason[]
 }
 
+interface TerritoryMarkerRecord {
+  marker: maplibregl.Marker
+  element: HTMLDivElement
+  centroid: TerritoryCentroid
+  logoFadeOutTimer: number | null
+  logoFadeInTimer: number | null
+  logoTransitioning: boolean
+}
+
 export default function Map({ className = '', onWeekChange }: MapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
-  const markersRef = useRef<maplibregl.Marker[]>([])
+  const markerRecordsRef = useRef<globalThis.Map<string, TerritoryMarkerRecord>>(
+    new globalThis.Map()
+  )
+  const activeOwnershipLayerRef = useRef<'counties-fill' | 'counties-fade'>(
+    'counties-fill'
+  )
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [teamCount, setTeamCount] = useState<number | null>(null)
@@ -211,6 +242,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   const [seasonOptions, setSeasonOptions] = useState<OwnershipIndexSeason[]>([])
   const [selectedSeason, setSelectedSeason] = useState<number | null>(null)
   const [selectedWeekIndex, setSelectedWeekIndex] = useState<number | null>(null)
+  const [isTimelapsePlaying, setIsTimelapsePlaying] = useState(false)
   const [currentWeekLabel, setCurrentWeekLabel] = useState<string>('Baseline')
   const [ownershipLoading, setOwnershipLoading] = useState(false)
   const [ownershipError, setOwnershipError] = useState<string | null>(null)
@@ -223,13 +255,40 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   const baselineOwnershipRef = useRef<OwnershipMap>({})
   const centroidsDataRef = useRef<TerritoryCentroid[]>([])
   const lastCentroidsPathRef = useRef<string | null>(null)
-  const ownershipSnapshotsRef = useRef<Record<number, OwnershipMap>>({})
+  const ownershipSnapshotsRef = useRef<Record<string, OwnershipMap>>({})
   const seasonOptionsRef = useRef<OwnershipIndexSeason[]>([])
   const selectedSeasonRef = useRef<number | null>(null)
   const selectedWeekIndexRef = useRef<number | null>(null)
   const teamsByIdRef = useRef<Record<string, Team>>({})
 
-  const applyOwnershipToMap = (ownershipMap: OwnershipMap, label?: string) => {
+  const fadeOwnershipOnMap = useCallback((mapInstance: maplibregl.Map, data: any) => {
+    const currentLayer = activeOwnershipLayerRef.current
+    const nextLayer =
+      currentLayer === 'counties-fill' ? 'counties-fade' : 'counties-fill'
+    const nextSourceId = nextLayer === 'counties-fill' ? 'counties' : 'counties-fade'
+    const nextSource = mapInstance.getSource(nextSourceId) as
+      | maplibregl.GeoJSONSource
+      | undefined
+    const hitSource = mapInstance.getSource('counties-hit') as
+      | maplibregl.GeoJSONSource
+      | undefined
+    if (!nextSource || !mapInstance.getLayer(nextLayer)) {
+      const baseSource = mapInstance.getSource('counties') as
+        | maplibregl.GeoJSONSource
+        | undefined
+      baseSource?.setData(data)
+      hitSource?.setData(data)
+      return
+    }
+
+    nextSource.setData(data)
+    hitSource?.setData(data)
+    mapInstance.setPaintProperty(currentLayer, 'fill-opacity', 0)
+    mapInstance.setPaintProperty(nextLayer, 'fill-opacity', MAP_FILL_OPACITY)
+    activeOwnershipLayerRef.current = nextLayer
+  }, [])
+
+  const applyOwnershipToMap = useCallback((ownershipMap: OwnershipMap, label?: string) => {
     const decorator = decorateGeoJsonRef.current
 
     if (!decorator) {
@@ -251,14 +310,14 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     if (mapInstance) {
       const source = mapInstance.getSource('counties') as maplibregl.GeoJSONSource | undefined
       if (source) {
-        source.setData(decorated)
+        fadeOwnershipOnMap(mapInstance, decorated)
       } else {
         pendingGeoJsonRef.current = decorated
       }
     } else {
       pendingGeoJsonRef.current = decorated
     }
-  }
+  }, [fadeOwnershipOnMap])
 
   const ensureOwnershipSnapshots = async (
     seasonValue: number,
@@ -275,7 +334,8 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
     for (const week of relevantWeeks) {
       const weekIdx = week.weekIndex ?? 0
-      if (ownershipSnapshotsRef.current[weekIdx]) {
+      const cacheKey = ownershipSnapshotKey(seasonValue, weekIdx)
+      if (ownershipSnapshotsRef.current[cacheKey]) {
         continue
       }
 
@@ -292,22 +352,18 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
         }
 
         const data: OwnershipMap = await response.json()
-        ownershipSnapshotsRef.current[weekIdx] = data
+        ownershipSnapshotsRef.current[cacheKey] = data
       } catch (err) {
         console.warn(`Error fetching ownership snapshot for week ${weekIdx}`, err)
       }
     }
   }
 
-  const updateMarkersWithCentroids = (centroids: TerritoryCentroid[]) => {
+  const updateMarkersWithCentroids = useCallback((centroids: TerritoryCentroid[]) => {
     const mapInstance = mapRef.current
     if (!mapInstance) {
       return
     }
-
-    // Remove existing markers
-    markersRef.current.forEach((marker) => marker.remove())
-    markersRef.current = []
 
     // Filter valid centroids and transform Hawaii positions
     const validCentroids = centroids
@@ -332,12 +388,6 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
         return centroid
       })
 
-    const markerData = validCentroids.map((centroid) => ({
-      centroid,
-      element: document.createElement('div'),
-      marker: null as maplibregl.Marker | null
-    }))
-
     const applyMarkerStyles: () => void = () => {
       if (!mapInstance) {
         return
@@ -345,7 +395,8 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
       const zoom = mapInstance.getZoom()
 
-      markerData.forEach(({ centroid, element }) => {
+      markerRecordsRef.current.forEach((record) => {
+        const { centroid, element } = record
         const area = Math.max(
           centroid.areaSqMi ?? centroid.totalAreaSqMi ?? 0,
           1
@@ -354,16 +405,64 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
         const zoomScale = Math.min(1.2, Math.max(0.8, (zoom - 3.8) / 2.2 + 0.9))
         const size = baseSize * zoomScale
-        const opacity = Math.min(1, Math.max(0.45, (zoom - 3.6) / 0.6))
+        const opacity = markerOpacityForZoom(zoom)
 
         element.style.width = `${size}px`
         element.style.height = `${size}px`
-        element.style.opacity = `${opacity}`
+        if (!record.logoTransitioning) {
+          element.style.opacity = `${opacity}`
+        }
       })
     }
 
-    markerData.forEach((entry) => {
-      const { centroid, element } = entry
+    const visibleMarkerIds = new Set<string>()
+    const newMarkerIds = new Set<string>()
+    validCentroids.forEach((centroid) => {
+      const markerId =
+        centroid.territoryId ||
+        `${centroid.baselineTeamId || centroid.teamId || 'team'}-${centroid.region || 'mainland'}`
+      visibleMarkerIds.add(markerId)
+
+      const existing = markerRecordsRef.current.get(markerId)
+      if (existing) {
+        const logoChanged = existing.centroid.logoUrl !== centroid.logoUrl
+        existing.centroid = centroid
+        existing.marker.setLngLat([centroid.longitude, centroid.latitude])
+        if (logoChanged && centroid.logoUrl) {
+          if (existing.logoFadeOutTimer !== null) {
+            window.clearTimeout(existing.logoFadeOutTimer)
+          }
+          if (existing.logoFadeInTimer !== null) {
+            window.clearTimeout(existing.logoFadeInTimer)
+          }
+
+          const nextLogoUrl = centroid.logoUrl
+          existing.logoTransitioning = true
+          existing.element.style.transition = `opacity ${OWNERSHIP_FADE_MS / 2}ms ease`
+          existing.element.style.opacity = '0'
+          existing.logoFadeOutTimer = window.setTimeout(() => {
+            existing.element.style.backgroundImage = `url('${nextLogoUrl}')`
+            existing.logoFadeOutTimer = null
+            window.requestAnimationFrame(() => {
+              existing.element.style.opacity = `${markerOpacityForZoom(
+                mapInstance.getZoom()
+              )}`
+            })
+            existing.logoFadeInTimer = window.setTimeout(() => {
+              existing.logoTransitioning = false
+              existing.logoFadeInTimer = null
+            }, OWNERSHIP_FADE_MS / 2)
+          }, OWNERSHIP_FADE_MS / 2)
+        }
+        existing.element.title =
+          centroid.currentOwnerName ||
+          centroid.teamName ||
+          centroid.baselineTeamName ||
+          ''
+        return
+      }
+
+      const element = document.createElement('div')
 
       element.className = 'territory-logo-marker'
       element.style.backgroundImage = `url('${centroid.logoUrl}')`
@@ -376,17 +475,60 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       element.style.boxShadow = 'none'
       element.style.pointerEvents = 'none'
       element.style.filter = 'drop-shadow(0 1px 4px rgba(15, 23, 42, 0.45))'
+      element.style.opacity = '0'
+      element.style.transition = 'opacity 250ms ease'
       element.title = centroid.currentOwnerName || centroid.teamName || centroid.baselineTeamName || ''
 
       const marker = new maplibregl.Marker({ element, anchor: 'center' })
         .setLngLat([centroid.longitude, centroid.latitude])
         .addTo(mapInstance)
 
-      entry.marker = marker
-      markersRef.current.push(marker)
+      markerRecordsRef.current.set(markerId, {
+        marker,
+        element,
+        centroid,
+        logoFadeOutTimer: null,
+        logoFadeInTimer: null,
+        logoTransitioning: false
+      })
+      newMarkerIds.add(markerId)
+    })
+
+    markerRecordsRef.current.forEach((record, markerId) => {
+      if (visibleMarkerIds.has(markerId)) {
+        return
+      }
+      record.element.style.transition = 'opacity 200ms ease'
+      record.element.style.opacity = '0'
+      if (record.logoFadeOutTimer !== null) {
+        window.clearTimeout(record.logoFadeOutTimer)
+      }
+      if (record.logoFadeInTimer !== null) {
+        window.clearTimeout(record.logoFadeInTimer)
+      }
+      markerRecordsRef.current.delete(markerId)
+      window.setTimeout(() => record.marker.remove(), 220)
     })
 
     applyMarkerStyles()
+    newMarkerIds.forEach((markerId) => {
+      const record = markerRecordsRef.current.get(markerId)
+      if (record) {
+        record.element.style.opacity = '0'
+      }
+    })
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        const zoom = mapInstance.getZoom()
+        newMarkerIds.forEach((markerId) => {
+          const record = markerRecordsRef.current.get(markerId)
+          if (!record) {
+            return
+          }
+          record.element.style.opacity = `${markerOpacityForZoom(zoom)}`
+        })
+      })
+    })
 
     // Update zoom handler
     if ((mapInstance as any).__logoZoomHandler) {
@@ -399,10 +541,11 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
     mapInstance.on('zoom', handleZoom)
     ;(mapInstance as any).__logoZoomHandler = handleZoom
-  }
+  }, [])
 
   useEffect(() => {
     if (!mapContainer.current || mapRef.current) return
+    const markerRecords = markerRecordsRef.current
 
     const initMap = async () => {
       try {
@@ -415,7 +558,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
           ownershipIndexRes,
           logoColorsRes
         ] = await Promise.all([
-          fetch('/data/teams.json'),
+          fetch('/data/teams-all.json'),
           fetch('/data/ownership.json'),
           fetch('/data/us-counties.geojson'),
           fetch('/data/county-stats.json'),
@@ -431,7 +574,6 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
         const teams: Team[] = await teamsRes.json()
         const baselineOwnership: OwnershipMap = await ownershipRes.json()
         baselineOwnershipRef.current = baselineOwnership
-        ownershipSnapshotsRef.current[0] = baselineOwnership
         const rawGeoJson = await geoJsonRes.json()
         const countyStatsMap: CountyStats = countyStatsRes.ok
           ? await countyStatsRes.json()
@@ -583,6 +725,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
         const normalizedSeasonOptions = seasonEntries.map((season) => ({
           season: season.season,
+          teamCount: season.teamCount,
           weeks: Array.isArray(season.weeks)
             ? season.weeks
                 .filter((week) => typeof week?.weekIndex === 'number')
@@ -621,7 +764,9 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                 initialSeason = latestSeason.season
                 initialWeekIndex = latestWeek.weekIndex ?? null
                 if (typeof latestWeek.weekIndex === 'number') {
-                  ownershipSnapshotsRef.current[latestWeek.weekIndex] = initialOwnershipMap
+                  ownershipSnapshotsRef.current[
+                    ownershipSnapshotKey(latestSeason.season, latestWeek.weekIndex)
+                  ] = initialOwnershipMap
                 }
 
                 const logosPath = latestWeek.path.replace('.json', '-logos.json')
@@ -662,9 +807,13 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
           centroidsDataRef.current = territoryCentroids
         }
 
-        setTeamCount(teams.length)
-
         applyOwnershipToMap(initialOwnershipMap, initialLabel)
+        const initialSeasonOption = normalizedSeasonOptions.find(
+          (entry) => entry.season === initialSeason
+        )
+        setTeamCount(
+          initialSeasonOption?.teamCount ?? new Set(Object.values(initialOwnershipMap)).size
+        )
         lastOwnershipPathRef.current = initialPath
 
         const initialGeoJson =
@@ -676,6 +825,14 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
             version: 8,
             sources: {
               counties: {
+                type: 'geojson',
+                data: initialGeoJson
+              },
+              'counties-fade': {
+                type: 'geojson',
+                data: initialGeoJson
+              },
+              'counties-hit': {
                 type: 'geojson',
                 data: initialGeoJson
               }
@@ -694,7 +851,16 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                 source: 'counties',
                 paint: {
                   'fill-color': DEFAULT_FILL_COLOR,
-                  'fill-opacity': 0.82
+                  'fill-opacity': MAP_FILL_OPACITY
+                }
+              },
+              {
+                id: 'counties-fade',
+                type: 'fill',
+                source: 'counties-fade',
+                paint: {
+                  'fill-color': DEFAULT_FILL_COLOR,
+                  'fill-opacity': 0
                 }
               },
               {
@@ -705,6 +871,15 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                   'line-color': '#ffffff',
                   'line-width': 0.5,
                   'line-opacity': 0.25
+                }
+              },
+              {
+                id: 'counties-hit',
+                type: 'fill',
+                source: 'counties-hit',
+                paint: {
+                  'fill-color': 'rgba(0, 0, 0, 0)',
+                  'fill-opacity': 1
                 }
               }
             ]
@@ -727,6 +902,21 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
             'fill-color',
             colorExpression
           )
+          mapRef.current!.setPaintProperty(
+            'counties-fade',
+            'fill-color',
+            colorExpression
+          )
+          mapRef.current!.setPaintProperty(
+            'counties-fill',
+            'fill-opacity-transition',
+            { duration: OWNERSHIP_FADE_MS, delay: 0 }
+          )
+          mapRef.current!.setPaintProperty(
+            'counties-fade',
+            'fill-opacity-transition',
+            { duration: OWNERSHIP_FADE_MS, delay: 0 }
+          )
 
           const mapInstance = mapRef.current
           if (!mapInstance) {
@@ -739,6 +929,14 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
             const source = mapInstance.getSource('counties') as maplibregl.GeoJSONSource
             if (source) {
               source.setData(pendingData)
+              const fadeSource = mapInstance.getSource(
+                'counties-fade'
+              ) as maplibregl.GeoJSONSource | undefined
+              fadeSource?.setData(pendingData)
+              const hitSource = mapInstance.getSource(
+                'counties-hit'
+              ) as maplibregl.GeoJSONSource | undefined
+              hitSource?.setData(pendingData)
               pendingGeoJsonRef.current = null
             }
           }
@@ -750,17 +948,17 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
         mapRef.current.addControl(new maplibregl.NavigationControl(), 'top-right')
 
-        mapRef.current.on('mousemove', 'counties-fill', (event) => {
+        mapRef.current.on('mousemove', 'counties-hit', (event) => {
           if (event.features && event.features[0]) {
             mapRef.current!.getCanvas().style.cursor = 'pointer'
           }
         })
 
-        mapRef.current.on('mouseleave', 'counties-fill', () => {
+        mapRef.current.on('mouseleave', 'counties-hit', () => {
           mapRef.current!.getCanvas().style.cursor = ''
         })
 
-        mapRef.current.on('click', 'counties-fill', (event) => {
+        mapRef.current.on('click', 'counties-hit', (event) => {
           if (!event.features || !event.features[0]) {
             return
           }
@@ -883,7 +1081,10 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
             historyWeeks.forEach((week, index) => {
               const weekIdx = week.weekIndex ?? 0
-              const snapshot = ownershipSnapshotsRef.current[weekIdx]
+              const snapshot =
+                ownershipSnapshotsRef.current[
+                  ownershipSnapshotKey(seasonValue, weekIdx)
+                ]
               const ownerId = snapshot ? snapshot[fips] : undefined
               const ownerTeam = ownerId ? teamsByIdRef.current[ownerId] : undefined
 
@@ -928,8 +1129,16 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     initMap()
 
     return () => {
-      markersRef.current.forEach((marker) => marker.remove())
-      markersRef.current = []
+      markerRecords.forEach((record) => {
+        if (record.logoFadeOutTimer !== null) {
+          window.clearTimeout(record.logoFadeOutTimer)
+        }
+        if (record.logoFadeInTimer !== null) {
+          window.clearTimeout(record.logoFadeInTimer)
+        }
+        record.marker.remove()
+      })
+      markerRecords.clear()
 
       const mapInstance = mapRef.current
       if (mapInstance) {
@@ -941,7 +1150,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       }
       mapRef.current = null
     }
-  }, [])
+  }, [applyOwnershipToMap, updateMarkersWithCentroids])
 
   useEffect(() => {
     selectedSeasonRef.current = selectedSeason
@@ -1021,7 +1230,9 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
         const ownershipData: OwnershipMap = await ownershipResponse.json()
         if (typeof week.weekIndex === 'number') {
-          ownershipSnapshotsRef.current[week.weekIndex] = ownershipData
+          ownershipSnapshotsRef.current[
+            ownershipSnapshotKey(selectedSeason, week.weekIndex)
+          ] = ownershipData
         }
 
         // Logos are optional - fallback to existing if not available
@@ -1069,14 +1280,105 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       cancelled = true
       controller.abort()
     }
-  }, [seasonOptions, selectedSeason, selectedWeekIndex])
+  }, [
+    applyOwnershipToMap,
+    seasonOptions,
+    selectedSeason,
+    selectedWeekIndex,
+    updateMarkersWithCentroids
+  ])
 
   const currentSeasonOption = seasonOptions.find(
     (entry) => entry.season === selectedSeason
   )
-  const weekOptions = currentSeasonOption?.weeks ?? []
+  const weekOptions = useMemo(
+    () => currentSeasonOption?.weeks ?? [],
+    [currentSeasonOption]
+  )
+  const selectedSeasonPosition = seasonOptions.findIndex(
+    (entry) => entry.season === selectedSeason
+  )
+  const selectedWeekPosition = weekOptions.findIndex(
+    (entry) => entry.weekIndex === selectedWeekIndex
+  )
   const showSeasonSelect = seasonOptions.length > 1
   const showWeekSelect = weekOptions.length > 0
+
+  useEffect(() => {
+    if (!isTimelapsePlaying || ownershipLoading || weekOptions.length < 2) {
+      return
+    }
+
+    if (
+      selectedWeekPosition < 0 ||
+      selectedWeekPosition >= weekOptions.length - 1
+    ) {
+      return
+    }
+
+    const timer = window.setTimeout(() => {
+      const nextWeekPosition = selectedWeekPosition + 1
+      setSelectedWeekIndex(weekOptions[nextWeekPosition].weekIndex)
+      if (nextWeekPosition >= weekOptions.length - 1) {
+        setIsTimelapsePlaying(false)
+      }
+    }, 1800)
+
+    return () => window.clearTimeout(timer)
+  }, [
+    isTimelapsePlaying,
+    ownershipLoading,
+    selectedWeekPosition,
+    weekOptions
+  ])
+
+  const moveSeason = (offset: number) => {
+    const targetSeason = seasonOptions[selectedSeasonPosition + offset]
+    if (!targetSeason) {
+      return
+    }
+
+    const matchingWeek = targetSeason.weeks.find(
+      (week) => week.weekIndex === selectedWeekIndex
+    )
+    const fallbackWeek = targetSeason.weeks[targetSeason.weeks.length - 1]
+    const targetWeek = matchingWeek ?? fallbackWeek
+
+    setIsTimelapsePlaying(false)
+    setSelectedSeason(targetSeason.season)
+    setSelectedWeekIndex(targetWeek?.weekIndex ?? null)
+    setTeamCount(targetSeason.teamCount ?? null)
+    setOwnershipError(null)
+  }
+
+  const moveWeek = (offset: number) => {
+    const targetWeek = weekOptions[selectedWeekPosition + offset]
+    if (!targetWeek) {
+      return
+    }
+    setIsTimelapsePlaying(false)
+    setSelectedWeekIndex(targetWeek.weekIndex)
+    setOwnershipError(null)
+  }
+
+  const toggleTimelapse = () => {
+    if (isTimelapsePlaying) {
+      setIsTimelapsePlaying(false)
+      return
+    }
+    if (weekOptions.length < 2) {
+      return
+    }
+
+    if (
+      selectedWeekPosition < 0 ||
+      selectedWeekPosition >= weekOptions.length - 1
+    ) {
+      setSelectedWeekIndex(weekOptions[0].weekIndex)
+    }
+    setOwnershipError(null)
+    setIsTimelapsePlaying(true)
+  }
 
   const handleSeasonChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const rawValue = event.target.value
@@ -1091,10 +1393,12 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       return
     }
 
+    setIsTimelapsePlaying(false)
     setSelectedSeason(value)
     setOwnershipError(null)
 
     const season = seasonOptions.find((entry) => entry.season === value)
+    setTeamCount(season?.teamCount ?? null)
     if (season && season.weeks.length > 0) {
       const latestWeek = season.weeks[season.weeks.length - 1]
       setSelectedWeekIndex(latestWeek.weekIndex ?? null)
@@ -1114,95 +1418,169 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       return
     }
 
+    setIsTimelapsePlaying(false)
     setOwnershipError(null)
     setSelectedWeekIndex(value)
   }
 
   return (
-    <div className={`relative ${className}`}>
-      <div
-        ref={mapContainer}
-        className="w-full h-full rounded-lg overflow-hidden"
-        style={{ minHeight: '600px' }}
-      />
-
-      {loading && (
-        <div className="absolute top-4 left-4 bg-white/90 px-3 py-2 rounded-lg shadow">
-          <p className="text-sm text-gray-800">Loading map data…</p>
-        </div>
-      )}
-
-      {error && (
-        <div className="absolute top-4 left-4 bg-red-100 px-3 py-2 rounded-lg shadow">
-          <p className="text-sm text-red-800">Error: {error}</p>
-        </div>
-      )}
-
+    <div className={className}>
       {!loading && !error && (
-        <div className="absolute top-4 left-4 bg-white/90 px-3 py-2 rounded-lg shadow">
-          <h3 className="text-sm font-semibold text-gray-800">
-            College Football Imperial Map
-          </h3>
-          <p className="text-xs text-gray-600">
-            {teamCount ?? '–'} teams · {countyCount ?? '–'} counties
-          </p>
-          <p className="text-[11px] text-gray-500 mt-1">{currentWeekLabel}</p>
-          <p className="text-[11px] text-gray-500 mt-1">
-            Colors reflect the owning team&apos;s primary hue
-          </p>
-
+        <div className="mb-4 flex flex-col gap-3 rounded-lg border border-gray-200 bg-gray-50 p-3 lg:flex-row lg:items-center lg:justify-between">
+          <div className="min-w-0">
+            <p className="truncate text-sm font-semibold text-gray-800">
+              {currentWeekLabel}
+            </p>
+            <p className="text-xs text-gray-500">
+              {teamCount ?? '–'} teams · {countyCount ?? '–'} counties
+            </p>
+          </div>
           {(showSeasonSelect || showWeekSelect) && (
-            <div className="mt-2 flex flex-col gap-1 text-xs text-gray-700">
+            <div className="flex flex-wrap items-center gap-3 text-xs text-gray-700">
               {showSeasonSelect && (
-                <label className="flex items-center gap-2">
+                <div className="flex items-center gap-2">
                   <span className="font-medium text-gray-600">Season</span>
-                  <select
-                    className="border border-gray-300 rounded px-2 py-1 bg-white"
-                    value={selectedSeason !== null ? String(selectedSeason) : ''}
-                    onChange={handleSeasonChange}
-                    disabled={ownershipLoading}
-                  >
-                    {seasonOptions.map((season) => (
-                      <option key={season.season} value={String(season.season)}>
-                        {season.season}
-                      </option>
-                    ))}
-                  </select>
-                </label>
+                  <span className="flex items-center gap-1">
+                    <button
+                      type="button"
+                      className="h-7 w-7 rounded border border-gray-300 bg-white text-base leading-none disabled:cursor-not-allowed disabled:opacity-35"
+                      onClick={() => moveSeason(-1)}
+                      disabled={ownershipLoading || selectedSeasonPosition <= 0}
+                      aria-label="Previous season"
+                      title="Previous season"
+                    >
+                      ‹
+                    </button>
+                    <select
+                      className="h-7 rounded border border-gray-300 bg-white px-2"
+                      value={selectedSeason !== null ? String(selectedSeason) : ''}
+                      onChange={handleSeasonChange}
+                      disabled={ownershipLoading}
+                      aria-label="Season"
+                    >
+                      {seasonOptions.map((season) => (
+                        <option key={season.season} value={String(season.season)}>
+                          {season.season}
+                        </option>
+                      ))}
+                    </select>
+                    <button
+                      type="button"
+                      className="h-7 w-7 rounded border border-gray-300 bg-white text-base leading-none disabled:cursor-not-allowed disabled:opacity-35"
+                      onClick={() => moveSeason(1)}
+                      disabled={
+                        ownershipLoading ||
+                        selectedSeasonPosition < 0 ||
+                        selectedSeasonPosition >= seasonOptions.length - 1
+                      }
+                      aria-label="Next season"
+                      title="Next season"
+                    >
+                      ›
+                    </button>
+                  </span>
+                </div>
               )}
 
               {showWeekSelect && (
-                <label className="flex items-center gap-2">
+                <div className="flex items-center gap-2">
                   <span className="font-medium text-gray-600">Week</span>
-                  <select
-                    className="border border-gray-300 rounded px-2 py-1 bg-white"
-                    value={selectedWeekIndex !== null ? String(selectedWeekIndex) : ''}
-                    onChange={handleWeekChange}
-                    disabled={ownershipLoading}
-                  >
-                    {weekOptions.map((week) => (
-                      <option
-                        key={`${week.weekIndex}-${week.seasonType ?? 'unknown'}`}
-                        value={String(week.weekIndex)}
-                      >
-                        {week.label ?? `Week ${week.weekIndex}`}
-                      </option>
-                    ))}
-                  </select>
-                </label>
+                  <span className="flex items-center gap-1">
+                    <button
+                      type="button"
+                      className="h-7 w-7 rounded border border-gray-300 bg-white text-base leading-none disabled:cursor-not-allowed disabled:opacity-35"
+                      onClick={() => moveWeek(-1)}
+                      disabled={ownershipLoading || selectedWeekPosition <= 0}
+                      aria-label="Previous week"
+                      title="Previous week"
+                    >
+                      ‹
+                    </button>
+                    <select
+                      className="h-7 max-w-48 rounded border border-gray-300 bg-white px-2"
+                      value={selectedWeekIndex !== null ? String(selectedWeekIndex) : ''}
+                      onChange={handleWeekChange}
+                      disabled={ownershipLoading}
+                      aria-label="Week"
+                    >
+                      {weekOptions.map((week) => (
+                        <option
+                          key={`${week.weekIndex}-${week.seasonType ?? 'unknown'}`}
+                          value={String(week.weekIndex)}
+                        >
+                          {week.label ?? `Week ${week.weekIndex}`}
+                        </option>
+                      ))}
+                    </select>
+                    <button
+                      type="button"
+                      className="h-7 w-7 rounded border border-gray-300 bg-white text-base leading-none disabled:cursor-not-allowed disabled:opacity-35"
+                      onClick={() => moveWeek(1)}
+                      disabled={
+                        ownershipLoading ||
+                        selectedWeekPosition < 0 ||
+                        selectedWeekPosition >= weekOptions.length - 1
+                      }
+                      aria-label="Next week"
+                      title="Next week"
+                    >
+                      ›
+                    </button>
+                  </span>
+                </div>
+              )}
+
+              {weekOptions.length > 1 && (
+                <button
+                  type="button"
+                  className="h-7 rounded border border-gray-300 bg-white px-3 text-xs font-medium text-gray-700 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
+                  onClick={toggleTimelapse}
+                  disabled={ownershipLoading && !isTimelapsePlaying}
+                  aria-pressed={isTimelapsePlaying}
+                >
+                  {isTimelapsePlaying
+                    ? 'Ⅱ Pause timelapse'
+                    : selectedWeekPosition >= weekOptions.length - 1
+                      ? '↻ Replay season'
+                      : '▶ Play season'}
+                </button>
               )}
             </div>
           )}
-
-          {ownershipLoading && (
-            <p className="text-[11px] text-gray-500 mt-1">Updating ownership…</p>
-          )}
-
-          {ownershipError && (
-            <p className="text-[11px] text-red-600 mt-1">{ownershipError}</p>
-          )}
         </div>
       )}
+
+      <div className="relative">
+        <div
+          ref={mapContainer}
+          className="h-full w-full overflow-hidden rounded-lg"
+          style={{ minHeight: '600px' }}
+        />
+
+        {loading && (
+          <div className="absolute left-4 top-4 rounded-lg bg-white/90 px-3 py-2 shadow">
+            <p className="text-sm text-gray-800">Loading map data…</p>
+          </div>
+        )}
+
+        {error && (
+          <div className="absolute left-4 top-4 rounded-lg bg-red-100 px-3 py-2 shadow">
+            <p className="text-sm text-red-800">Error: {error}</p>
+          </div>
+        )}
+
+        {ownershipLoading && !isTimelapsePlaying && (
+          <div className="absolute bottom-4 left-4 rounded bg-white/90 px-2 py-1 text-[11px] text-gray-600 shadow">
+            Updating ownership…
+          </div>
+        )}
+
+        {ownershipError && (
+          <div className="absolute bottom-4 left-4 rounded bg-red-100 px-2 py-1 text-[11px] text-red-700 shadow">
+            {ownershipError}
+          </div>
+        )}
+      </div>
     </div>
   )
 }

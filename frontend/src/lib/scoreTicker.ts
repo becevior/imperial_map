@@ -42,7 +42,7 @@ export type PreviousWeekScores = {
 }
 
 async function loadTeams(): Promise<Map<string, RawTeam>> {
-  const teamsPath = path.join(process.cwd(), 'public', 'data', 'teams.json')
+  const teamsPath = path.join(process.cwd(), 'public', 'data', 'teams-all.json')
   const contents = await fs.readFile(teamsPath, 'utf-8')
   const teams = JSON.parse(contents) as RawTeam[]
   return new Map(teams.map((team) => [team.id, team]))

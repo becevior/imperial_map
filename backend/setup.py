@@ -3,14 +3,22 @@
 Initialize data files from GeoJSON and team CSV.
 Generates teams, territory ownership, and county metadata files.
 """
+import argparse
 import csv
 import json
 from math import atan2, cos, radians, sin, sqrt, degrees
 from pathlib import Path
-from typing import Dict
+from typing import Dict, Optional, Sequence
 from lib.territory import calculate_centroid, calculate_distance
-from lib.teams import load_teams_from_csv, get_team_locations
-from lib.db import save_teams, save_ownership, save_json
+from lib.teams import (
+    get_team_locations,
+    load_all_teams,
+    load_teams_for_season,
+    load_teams_from_csv,
+)
+from lib.db import load_json, save_teams, save_ownership, save_json
+from lib.leaderboard_calculator import generate_leaderboard
+from lib.region_calculator import calculate_territory_logos
 
 # Mapping from state FIPS codes to USPS abbreviations (includes territories)
 STATE_FIPS_TO_ABBR: Dict[str, str] = {
@@ -25,25 +33,52 @@ STATE_FIPS_TO_ABBR: Dict[str, str] = {
     '54': 'WV', '55': 'WI', '56': 'WY', '60': 'AS', '66': 'GU', '69': 'MP',
     '72': 'PR', '78': 'VI'
 }
+CURRENT_SEASON = 2026
 
 
-def main():
-    print("🚀 Initializing data files for 136 FBS teams...\n")
+def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description='Initialize imperial map baseline data')
+    parser.add_argument(
+        '--season',
+        type=int,
+        default=None,
+        help='Also seed a preseason snapshot for this season (e.g. 2026)',
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: Optional[Sequence[str]] = None):
+    args = parse_args(argv)
+    persist_current_files = args.season is None or args.season == CURRENT_SEASON
 
     # Step 1: Load teams from CSV
     print("📋 Step 1: Loading teams from CSV...")
-    teams = load_teams_from_csv()
+    teams = (
+        load_teams_for_season(args.season)
+        if args.season is not None
+        else load_teams_from_csv()
+    )
     print(f"  ✓ Loaded {len(teams)} FBS teams")
     team_locations = get_team_locations(teams)
 
     # Step 2: Save teams.json
     print("\n💾 Step 2: Creating teams.json...")
-    create_teams_file(teams)
+    create_teams_file(
+        teams,
+        season=args.season,
+        persist_root=persist_current_files,
+    )
+    if persist_current_files:
+        create_teams_file(load_all_teams(), output_path='teams-all.json')
 
     # Step 3: Calculate ownership from GeoJSON
     print("\n🗺️  Step 3: Processing county GeoJSON data...")
     print("📍 Step 4: Assigning counties to nearest teams...")
-    county_stats, territory_centroids = create_ownership_file(teams, team_locations)
+    ownership, county_stats, territory_centroids = create_ownership_file(
+        teams,
+        team_locations,
+        persist_root=persist_current_files,
+    )
 
     # Step 5: Persist county metadata for frontend use
     print("\n📊 Step 5: Saving county metadata for hover details...")
@@ -51,19 +86,103 @@ def main():
 
     # Step 6: Persist territory centroid data for logo placement
     print("\n📌 Step 6: Saving territory centroids for map markers...")
-    create_territory_centroids_file(territory_centroids)
+    create_territory_centroids_file(
+        territory_centroids,
+        season=args.season,
+        persist_root=persist_current_files,
+    )
+
+    if args.season is not None:
+        print(f"\n🏈 Step 7: Seeding the {args.season} preseason snapshot...")
+        initialize_season_snapshot(
+            args.season,
+            teams,
+            ownership,
+            county_stats,
+            territory_centroids,
+        )
 
     print("\n✅ Initialization complete!")
     print("\nGenerated files:")
-    print("  - frontend/public/data/teams.json")
-    print("  - frontend/public/data/ownership.json")
     print("  - frontend/public/data/county-stats.json")
-    print("  - frontend/public/data/territory-centroids.json")
-    print(f"\nCoverage: {len(teams)} teams assigned to 3,221 US counties")
+    if args.season is not None:
+        print(f"  - frontend/public/data/teams/{args.season}.json")
+        print(f"  - frontend/public/data/territory-centroids/{args.season}.json")
+        print(f"  - frontend/public/data/ownership/{args.season}/week-00.json")
+        print(f"  - frontend/public/data/leaderboards/{args.season}/week-00.json")
+    if persist_current_files:
+        print("  - frontend/public/data/teams.json")
+        print("  - frontend/public/data/teams-all.json")
+        print("  - frontend/public/data/ownership.json")
+        print("  - frontend/public/data/territory-centroids.json")
+    print(
+        f"\nCoverage: {len(teams)} teams assigned to "
+        f"{len(ownership):,} mapped US counties"
+    )
     print("\nNext: Run `cd frontend && npm run dev` to view the map")
 
 
-def create_teams_file(teams):
+def initialize_season_snapshot(
+    season: int,
+    teams,
+    ownership: Dict[str, str],
+    county_stats: Dict[str, Dict],
+    territory_centroids,
+) -> None:
+    """Create a new season's baseline without deleting historical snapshots."""
+    baseline_entry = {
+        'weekIndex': 0,
+        'week': 0,
+        'seasonType': 'baseline',
+        'label': f'{season} Baseline (Preseason)',
+        'path': f'/data/ownership/{season}/week-00.json',
+    }
+
+    save_json(f'ownership/{season}/week-00.json', ownership)
+    logos = calculate_territory_logos(
+        ownership,
+        ownership,
+        teams,
+        territory_centroids,
+    )
+    save_json(f'ownership/{season}/week-00-logos.json', logos)
+
+    try:
+        ownership_index = load_json('ownership/index.json')
+    except FileNotFoundError:
+        ownership_index = {'seasons': []}
+
+    seasons = [
+        entry
+        for entry in ownership_index.get('seasons', [])
+        if int(entry.get('season', 0)) != season
+    ]
+    seasons.append({'season': season, 'teamCount': len(teams), 'weeks': [baseline_entry]})
+    seasons.sort(key=lambda entry: int(entry.get('season', 0)))
+    save_json('ownership/index.json', {'seasons': seasons})
+
+    try:
+        load_json(f'games/{season}/index.json')
+    except FileNotFoundError:
+        save_json(f'games/{season}/index.json', {'season': season, 'weeks': []})
+
+    generate_leaderboard(
+        season,
+        baseline_entry,
+        ownership,
+        teams,
+        county_stats,
+        [],
+    )
+    print(f"  ✓ Seeded {season} baseline ownership, logos, and leaderboards")
+
+
+def create_teams_file(
+    teams,
+    season: Optional[int] = None,
+    persist_root: bool = False,
+    output_path: Optional[str] = None,
+):
     """Create teams.json from CSV data."""
     teams_output = []
 
@@ -94,11 +213,21 @@ def create_teams_file(teams):
 
         teams_output.append(entry)
 
-    save_teams(teams_output)
-    print(f"  ✓ Created teams.json with {len(teams_output)} teams")
+    if output_path:
+        save_json(output_path, teams_output)
+        print(f"  ✓ Created {output_path} with {len(teams_output)} teams")
+        return teams_output
+
+    if season is not None:
+        save_json(f'teams/{season}.json', teams_output)
+    if persist_root or season is None:
+        save_teams(teams_output)
+    destination = f'teams/{season}.json' if season is not None else 'teams.json'
+    print(f"  ✓ Created {destination} with {len(teams_output)} teams")
+    return teams_output
 
 
-def create_ownership_file(teams, team_locations):
+def create_ownership_file(teams, team_locations, persist_root: bool = True):
     """
     Generate ownership.json from county GeoJSON
     Assigns each county to nearest team based on campus location
@@ -216,7 +345,8 @@ def create_ownership_file(teams, team_locations):
         if i % 500 == 0:
             print(f"  ⏳ Processed {i} / {len(features)} counties...")
 
-    save_ownership(ownership)
+    if persist_root:
+        save_ownership(ownership)
 
     print(f"\n  ✓ Assigned {len(ownership)} counties to {len(team_stats)} teams")
     print(f"\n  📊 Top 10 teams by land area (square miles):")
@@ -250,7 +380,7 @@ def create_ownership_file(teams, team_locations):
         territory_counties
     )
 
-    return county_stats, territory_centroids
+    return ownership, county_stats, territory_centroids
 
 
 def build_territory_centroids(teams, team_stats, territory_vectors, territory_counties):
@@ -377,9 +507,16 @@ def build_territory_centroids(teams, team_stats, territory_vectors, territory_co
     return centroids
 
 
-def create_territory_centroids_file(territory_centroids):
+def create_territory_centroids_file(
+    territory_centroids,
+    season: Optional[int] = None,
+    persist_root: bool = True,
+):
     """Persist territory centroids for frontend map markers."""
-    save_json('territory-centroids.json', territory_centroids)
+    if season is not None:
+        save_json(f'territory-centroids/{season}.json', territory_centroids)
+    if persist_root:
+        save_json('territory-centroids.json', territory_centroids)
     active = sum(1 for entry in territory_centroids if entry.get('countyCount', 0) > 0)
     print(f"  ✓ Created territory-centroids.json with {active} active teams")
 

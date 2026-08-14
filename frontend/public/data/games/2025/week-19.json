@@ -1,0 +1,36 @@
+[
+  {
+    "id": "401769075",
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 4,
+    "completed": true,
+    "startDate": "2026-01-09T00:30Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "State Farm Stadium",
+    "homeTeamId": "ole-miss",
+    "awayTeamId": "miami",
+    "homeScore": 27,
+    "awayScore": 31,
+    "winnerId": "miami",
+    "loserId": "ole-miss"
+  },
+  {
+    "id": "401769074",
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 4,
+    "completed": true,
+    "startDate": "2026-01-10T00:30Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Mercedes-Benz Stadium",
+    "homeTeamId": "indiana",
+    "awayTeamId": "oregon",
+    "homeScore": 56,
+    "awayScore": 22,
+    "winnerId": "indiana",
+    "loserId": "oregon"
+  }
+]
