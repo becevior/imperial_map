@@ -1,7 +1,7 @@
 name: Update Territories
 
 on:
-  # Scheduled updates
+  # Off-season: schedules are intentionally disabled. Re-enable and test these before Week 0.
   schedule:
     # Hourly on Saturdays 10am-11pm PST (6pm-11pm UTC Saturday)
     # - cron: '0 18-23 * * 6'  # Saturday 6pm-11pm UTC (10am-3pm PST)
@@ -14,21 +14,26 @@ on:
   workflow_dispatch:
     inputs:
       season:
-        description: 'Season year (e.g., 2025)'
+        description: 'Season year (e.g., 2026)'
         required: false
-        default: '2025'
+        default: '2026'
       force_update:
         description: 'Force update even if no changes'
         required: false
         default: 'false'
 
 env:
-  SEASON: 2025
+  SEASON: 2026
   PYTHON_VERSION: '3.11'
+
+concurrency:
+  group: territory-data-update
+  cancel-in-progress: false
 
 jobs:
   update-territories:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     env:
       INPUT_SEASON: ${{ github.event.inputs.season || '' }}
       INPUT_FORCE_UPDATE: ${{ github.event.inputs.force_update || '' }}
@@ -48,6 +53,11 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
           cache-dependency-path: 'backend/requirements.txt'
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
 
       - name: Install dependencies
         run: |
@@ -83,7 +93,7 @@ jobs:
       - name: Check if it's Saturday game day window
         id: check-day
         run: |
-          DAY=$(date -u +%u)  # 1-7, where 6 is Saturday, 0/7 is Sunday
+          DAY=$(date -u +%u)  # 1-7, where 6 is Saturday and 7 is Sunday
           HOUR=$(date -u +%H)
 
           # Saturday game day: Saturday 6pm UTC onwards OR Sunday before 10am UTC
@@ -91,7 +101,7 @@ jobs:
           if [ "$DAY" -eq 6 ] && [ "$HOUR" -ge 18 ]; then
             echo "is_saturday=true" >> $GITHUB_OUTPUT
             echo "📅 Saturday game day window (late Saturday UTC) - running hourly update"
-          elif [ "$DAY" -eq 0 ] && [ "$HOUR" -le 10 ]; then
+          elif [ "$DAY" -eq 7 ] && [ "$HOUR" -le 10 ]; then
             echo "is_saturday=true" >> $GITHUB_OUTPUT
             echo "📅 Saturday game day window (early Sunday UTC) - running hourly update"
           else
@@ -103,6 +113,10 @@ jobs:
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: |
+          if [ -z "$CFBD_API_KEY" ]; then
+            echo "::error::CFBD_API_KEY is required for production updates."
+            exit 1
+          fi
           cd backend
           echo "🏈 Fetching game results for season $EFFECTIVE_SEASON..."
           python ingest_games.py --season $EFFECTIVE_SEASON --season-type both
@@ -119,8 +133,11 @@ jobs:
         run: |
           cd backend
           echo "🏆 Computing leaderboards..."
-          python compute_leaderboards.py --season $EFFECTIVE_SEASON || true
+          python compute_leaderboards.py --season $EFFECTIVE_SEASON
           echo "✓ Leaderboards computed"
+
+      - name: Validate generated data
+        run: node frontend/scripts/validate-data.mjs
 
       - name: Check for changes
         id: check-changes

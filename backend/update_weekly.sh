@@ -1,7 +1,7 @@
 #!/bin/bash
 # Manual update script for College Football Imperial Map
 # Usage: ./update_weekly.sh [season]
-# Example: ./update_weekly.sh 2025
+# Example: ./update_weekly.sh 2026
 
 set -e  # Exit on error
 
@@ -13,7 +13,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-SEASON=${1:-2025}
+SEASON=${1:-2026}
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"

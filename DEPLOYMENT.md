@@ -45,8 +45,11 @@
 **File:** `.github/workflows/update-territories.yml`
 
 **Schedule:**
-- **Saturdays:** Runs every hour (handles game day activity)
-- **Sunday-Friday:** Runs daily at 6 AM UTC (2 AM ET)
+- **Off-season:** Intentionally disabled. Use `workflow_dispatch` for an audited
+  manual run.
+- **In season:** Re-enable the commented schedule after validating a manual run
+  with the new season. The workflow serializes runs so overlapping game-day jobs
+  cannot write competing snapshots.
 
 **What it does:**
 1. Fetches latest game results from CollegeFootballData API
@@ -117,9 +120,9 @@ git push
 
 | Script | Purpose | Frequency |
 |--------|---------|-----------|
-| `ingest_games.py` | Fetch game results from CFBD API | Automated (hourly Sat, daily weekdays) |
-| `apply_transfers.py` | Apply territory transfers based on games | Automated (hourly Sat, daily weekdays) |
-| `compute_leaderboards.py` | Generate weekly rankings | Automated (hourly Sat, daily weekdays) |
+| `ingest_games.py` | Fetch game results from CFBD API | Manual off-season; scheduled in season |
+| `apply_transfers.py` | Apply territory transfers based on games | Manual off-season; scheduled in season |
+| `compute_leaderboards.py` | Generate weekly rankings | Manual off-season; scheduled in season |
 
 ### Maintenance Scripts
 

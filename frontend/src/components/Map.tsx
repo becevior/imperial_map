@@ -941,7 +941,6 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       }
       mapRef.current = null
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {

@@ -4,7 +4,7 @@
 
 set -e
 
-SEASON=${1:-2025}
+SEASON=${1:-2026}
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "🧪 Testing data pipeline for season ${SEASON}..."

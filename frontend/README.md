@@ -5,9 +5,11 @@ Next.js application that renders an interactive map showing college football ter
 ## Quick Start
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
+
+Node.js 20.9 or later is required; CI uses Node 22.
 
 Visit http://localhost:3000
 
@@ -110,23 +112,27 @@ Returns all FBS teams with locations and colors.
 ]
 ```
 
-#### `GET /api/territory?season=2025&week=1`
-Returns county ownership for a specific week.
+#### `GET /api/territory?season=2026&week=1`
+Returns county ownership for a specific snapshot. With no parameters it returns the
+latest indexed snapshot.
 
 **Query Parameters:**
-- `season` (optional) - Season year, defaults to current
-- `week` (optional) - Week number, defaults to 0 (baseline)
+- `season` (optional) - Season year
+- `week` (optional) - Chronological week index (0 is the preseason baseline)
 
 **Response:**
 ```json
 {
-  "01001": "team-auburn",
-  "01003": "team-alabama",
-  ...
+  "season": 2026,
+  "weekIndex": 1,
+  "label": "Regular Week 1",
+  "ownership": {
+    "01001": "team-auburn"
+  }
 }
 ```
 
-#### `GET /api/games?season=2025&week=1`
+#### `GET /api/games?season=2026&week=1`
 Returns game results for a specific week.
 
 **Query Parameters:**
@@ -135,18 +141,18 @@ Returns game results for a specific week.
 
 **Response:**
 ```json
-[
-  {
-    "id": 123456,
-    "season": 2025,
-    "week": 1,
-    "home_team": "Ohio State",
-    "away_team": "Michigan",
-    "home_points": 42,
-    "away_points": 27,
-    "winner": "Ohio State"
-  }
-]
+{
+  "games": [
+    {
+      "id": 123456,
+      "season": 2026,
+      "week": 1,
+      "homeTeamId": "ohio-state",
+      "awayTeamId": "michigan",
+      "winnerId": "ohio-state"
+    }
+  ]
+}
 ```
 
 ## Utilities
