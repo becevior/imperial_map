@@ -48,6 +48,7 @@ interface MapProps {
 const DEFAULT_FILL_COLOR = '#2d2d2d'
 const MAP_FILL_OPACITY = 0.82
 const OWNERSHIP_FADE_MS = 700
+const MARKER_RESTING_OPACITY = 1
 const populationFormatter = new Intl.NumberFormat('en-US')
 const areaFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0
@@ -93,10 +94,6 @@ function fallbackColor(teamId: string): string {
   return `#${adjust(r).toString(16).padStart(2, '0')}${adjust(g)
     .toString(16)
     .padStart(2, '0')}${adjust(b).toString(16).padStart(2, '0')}`
-}
-
-function markerOpacityForZoom(zoom: number): number {
-  return Math.min(1, Math.max(0.45, (zoom - 3.6) / 0.6))
 }
 
 type LogoColorEntry = { fill?: string | null; logo?: string | null }
@@ -405,12 +402,10 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
         const zoomScale = Math.min(1.2, Math.max(0.8, (zoom - 3.8) / 2.2 + 0.9))
         const size = baseSize * zoomScale
-        const opacity = markerOpacityForZoom(zoom)
-
         element.style.width = `${size}px`
         element.style.height = `${size}px`
         if (!record.logoTransitioning) {
-          element.style.opacity = `${opacity}`
+          element.style.opacity = `${MARKER_RESTING_OPACITY}`
         }
       })
     }
@@ -444,9 +439,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
             existing.element.style.backgroundImage = `url('${nextLogoUrl}')`
             existing.logoFadeOutTimer = null
             window.requestAnimationFrame(() => {
-              existing.element.style.opacity = `${markerOpacityForZoom(
-                mapInstance.getZoom()
-              )}`
+              existing.element.style.opacity = `${MARKER_RESTING_OPACITY}`
             })
             existing.logoFadeInTimer = window.setTimeout(() => {
               existing.logoTransitioning = false
@@ -519,13 +512,12 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     })
     window.requestAnimationFrame(() => {
       window.requestAnimationFrame(() => {
-        const zoom = mapInstance.getZoom()
         newMarkerIds.forEach((markerId) => {
           const record = markerRecordsRef.current.get(markerId)
           if (!record) {
             return
           }
-          record.element.style.opacity = `${markerOpacityForZoom(zoom)}`
+          record.element.style.opacity = `${MARKER_RESTING_OPACITY}`
         })
       })
     })
