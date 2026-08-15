@@ -19,6 +19,7 @@ export const THEMES = [
 export type ThemeId = (typeof THEMES)[number]['id']
 
 export const THEME_STORAGE_KEY = 'imperial-map-theme'
+export const RANDOM_THEME = 'random'
 export const DEFAULT_THEME: ThemeId = 'tecmo'
 
 function isThemeId(value: string | null | undefined): value is ThemeId {
@@ -27,38 +28,66 @@ function isThemeId(value: string | null | undefined): value is ThemeId {
 
 interface ThemeContextValue {
   theme: ThemeId
+  /** True when no explicit skin is stored — each page load rolls a random one. */
+  randomMode: boolean
   setTheme: (theme: ThemeId) => void
+  setRandomTheme: () => void
 }
 
 const ThemeContext = createContext<ThemeContextValue>({
   theme: DEFAULT_THEME,
-  setTheme: () => {}
+  randomMode: false,
+  setTheme: () => {},
+  setRandomTheme: () => {}
 })
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<ThemeId>(DEFAULT_THEME)
+  const [randomMode, setRandomMode] = useState(false)
 
   useEffect(() => {
-    // The pre-paint script in layout.tsx has already applied the stored theme
-    // to <html>; sync React state to it after hydration.
+    // The pre-paint script in layout.tsx has already applied a theme to <html>
+    // (the stored pick, or a random roll when there is none); sync state to it.
     const current = document.documentElement.dataset.theme
     if (isThemeId(current)) {
       setThemeState(current)
     }
+
+    try {
+      const stored = window.localStorage.getItem(THEME_STORAGE_KEY)
+      setRandomMode(!isThemeId(stored))
+    } catch {
+      setRandomMode(true)
+    }
   }, [])
 
-  const setTheme = useCallback((next: ThemeId) => {
+  const applyTheme = useCallback((next: ThemeId, stored: string) => {
     setThemeState(next)
     document.documentElement.dataset.theme = next
     try {
-      window.localStorage.setItem(THEME_STORAGE_KEY, next)
+      window.localStorage.setItem(THEME_STORAGE_KEY, stored)
     } catch {
       // Private browsing or blocked storage — theme still applies for the session.
     }
   }, [])
 
+  const setTheme = useCallback(
+    (next: ThemeId) => {
+      setRandomMode(false)
+      applyTheme(next, next)
+    },
+    [applyTheme]
+  )
+
+  const setRandomTheme = useCallback(() => {
+    const others = THEMES.filter((option) => option.id !== theme)
+    const next = others[Math.floor(Math.random() * others.length)].id
+    setRandomMode(true)
+    applyTheme(next, RANDOM_THEME)
+  }, [applyTheme, theme])
+
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, randomMode, setTheme, setRandomTheme }}>
       {children}
     </ThemeContext.Provider>
   )
