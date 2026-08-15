@@ -3,6 +3,7 @@
 import { ChangeEvent, useEffect, useRef, useState } from 'react'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
+import { trackEvent } from '@/lib/analytics'
 import type { LeaderboardWeekInfo } from '@/types/leaderboards'
 
 interface Team {
@@ -227,6 +228,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   const seasonOptionsRef = useRef<OwnershipIndexSeason[]>([])
   const selectedSeasonRef = useRef<number | null>(null)
   const selectedWeekIndexRef = useRef<number | null>(null)
+  const currentWeekLabelRef = useRef<string>('Baseline')
   const teamsByIdRef = useRef<Record<string, Team>>({})
 
   const applyOwnershipToMap = (ownershipMap: OwnershipMap, label?: string) => {
@@ -746,6 +748,14 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
           // Use the updateMarkersWithCentroids function for initial markers
           updateMarkersWithCentroids(centroidsDataRef.current)
           setLoading(false)
+
+          trackEvent('map_loaded', {
+            team_count: teams.length,
+            county_count: Object.keys(initialOwnershipMap).length,
+            season: initialSeason,
+            week_index: initialWeekIndex,
+            week_label: initialLabel
+          })
         })
 
         mapRef.current.addControl(new maplibregl.NavigationControl(), 'top-right')
@@ -787,6 +797,17 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
           const ownerName = props.ownerFullName || props.ownerName || 'Unclaimed'
           const ownerColor = props.ownerColor || DEFAULT_FILL_COLOR
           const fips = String(props.fips || props.FIPS || '')
+
+          trackEvent('county_popup_opened', {
+            fips,
+            county_name: props.countyName || null,
+            county_state: props.countyState || null,
+            owner_id: props.owner || null,
+            owner_name: ownerName,
+            season: selectedSeasonRef.current,
+            week_index: selectedWeekIndexRef.current,
+            week_label: currentWeekLabelRef.current
+          })
 
           const wrapper = document.createElement('div')
           wrapper.style.padding = '10px'
@@ -952,6 +973,10 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   }, [selectedWeekIndex])
 
   useEffect(() => {
+    currentWeekLabelRef.current = currentWeekLabel
+  }, [currentWeekLabel])
+
+  useEffect(() => {
     if (!onWeekChange) {
       return
     }
@@ -1049,6 +1074,14 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
         updateMarkersWithCentroids(logosData)
 
         setOwnershipError(null)
+
+        trackEvent('ownership_week_loaded', {
+          season: selectedSeason,
+          week_index: week.weekIndex,
+          week_label: week.label ?? `Week ${week.weekIndex}`,
+          season_type: week.seasonType ?? null,
+          county_count: Object.keys(ownershipData).length
+        })
       } catch (ownershipErr) {
         if (cancelled) {
           return
@@ -1083,6 +1116,11 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     const value = Number(rawValue)
 
     if (!rawValue || Number.isNaN(value)) {
+      trackEvent('baseline_selected', {
+        previous_season: selectedSeason,
+        previous_week_index: selectedWeekIndex,
+        source: 'season_control'
+      })
       setSelectedSeason(null)
       setSelectedWeekIndex(null)
       setOwnershipError(null)
@@ -1090,6 +1128,13 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       applyOwnershipToMap(baselineOwnershipRef.current, 'Baseline')
       return
     }
+
+    trackEvent('season_selected', {
+      season: value,
+      previous_season: selectedSeason,
+      previous_week_index: selectedWeekIndex,
+      source: 'season_control'
+    })
 
     setSelectedSeason(value)
     setOwnershipError(null)
@@ -1113,6 +1158,16 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     if (Number.isNaN(value)) {
       return
     }
+
+    const week = weekOptions.find((entry) => entry.weekIndex === value)
+    trackEvent('week_selected', {
+      season: selectedSeason,
+      week_index: value,
+      week_label: week?.label ?? `Week ${value}`,
+      season_type: week?.seasonType ?? null,
+      previous_week_index: selectedWeekIndex,
+      source: 'week_control'
+    })
 
     setOwnershipError(null)
     setSelectedWeekIndex(value)

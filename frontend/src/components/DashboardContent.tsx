@@ -4,6 +4,7 @@ import { Fragment, useCallback, useMemo, useRef, useState } from 'react'
 
 import Map from '@/components/Map'
 import RetroTickerMarquee from '@/components/RetroTickerMarquee'
+import { trackEvent } from '@/lib/analytics'
 import type { PreviousWeekScores } from '@/lib/scoreTicker'
 import type {
   LeaderboardEntry,
@@ -150,6 +151,13 @@ export default function DashboardContent({
           if (response.status === 404) {
             setLeaderboards(null)
             setError('Leaderboard data has not been generated for this week yet.')
+            trackEvent('leaderboard_load_failed', {
+              season,
+              week_index: weekIndex,
+              week_label: resolvedLabel,
+              status: response.status,
+              reason: 'not_found'
+            })
             return
           }
 
@@ -159,10 +167,25 @@ export default function DashboardContent({
         const payload: LeaderboardsPayload = await response.json()
         setLeaderboards(payload)
         lastLoadedKeyRef.current = key
+        trackEvent('leaderboard_loaded', {
+          season,
+          week_index: weekIndex,
+          week_label: payload.weekLabel ?? resolvedLabel,
+          territory_gained_count:
+            payload.leaderboards?.territoryGained?.length ?? 0,
+          territory_lost_count:
+            payload.leaderboards?.territoryLost?.length ?? 0
+        })
       } catch (fetchError) {
         console.error(fetchError)
         setLeaderboards(null)
         setError('Could not load leaderboard data for this week.')
+        trackEvent('leaderboard_load_failed', {
+          season,
+          week_index: weekIndex,
+          week_label: resolvedLabel,
+          reason: 'fetch_error'
+        })
       } finally {
         setLoading(false)
       }

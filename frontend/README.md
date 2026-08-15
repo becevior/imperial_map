@@ -9,7 +9,7 @@ npm ci
 npm run dev
 ```
 
-Node.js 20.9 or later is required; CI uses Node 22.
+Node.js 24 or later is required.
 
 Visit http://localhost:3000
 
@@ -241,9 +241,25 @@ npm run type-check   # Run TypeScript compiler check
 Create `.env.local` (optional):
 
 ```bash
-# None required for basic operation
-# All data is served from static JSON files
+NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN=<ph_project_token>
+NEXT_PUBLIC_POSTHOG_HOST=/ingest
 ```
+
+PostHog analytics only initializes when `NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN`
+is set. Add the same variables to the deployment environment. The `/ingest`
+host uses the Next.js rewrites in `next.config.mjs` as a first-party PostHog
+proxy for event capture, feature flags, and replay assets.
+
+Explicit PostHog events:
+
+- `map_loaded`
+- `baseline_selected`
+- `season_selected`
+- `week_selected`
+- `ownership_week_loaded`
+- `county_popup_opened`
+- `leaderboard_loaded`
+- `leaderboard_load_failed`
 
 ## Data Flow
 
