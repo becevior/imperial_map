@@ -45,9 +45,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<ThemeId>(DEFAULT_THEME)
   const [randomMode, setRandomMode] = useState(false)
 
+  /* eslint-disable react-hooks/set-state-in-effect --
+     One-time post-hydration sync: SSR must render the default theme, and the
+     pre-paint script in layout.tsx has already applied the real one to <html>,
+     so state can only be reconciled from the DOM after mount. */
   useEffect(() => {
-    // The pre-paint script in layout.tsx has already applied a theme to <html>
-    // (the stored pick, or a random roll when there is none); sync state to it.
     const current = document.documentElement.dataset.theme
     if (isThemeId(current)) {
       setThemeState(current)
@@ -60,6 +62,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       setRandomMode(true)
     }
   }, [])
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   const applyTheme = useCallback((next: ThemeId, stored: string) => {
     setThemeState(next)
