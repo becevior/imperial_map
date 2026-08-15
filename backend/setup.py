@@ -18,6 +18,7 @@ from lib.teams import (
 )
 from lib.db import load_json, save_teams, save_ownership, save_json
 from lib.leaderboard_calculator import generate_leaderboard
+from lib.live_manifest import publish_live_manifest
 from lib.region_calculator import calculate_territory_logos
 
 # Mapping from state FIPS codes to USPS abbreviations (includes territories)
@@ -174,6 +175,7 @@ def initialize_season_snapshot(
         county_stats,
         [],
     )
+    publish_live_manifest(season)
     print(f"  ✓ Seeded {season} baseline ownership, logos, and leaderboards")
 
 

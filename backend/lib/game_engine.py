@@ -67,11 +67,11 @@ def process_game_result(
     now = datetime.utcnow().isoformat()
 
     if team_counties is not None:
-        loser_counties = list(team_counties.get(loser, []))
+        loser_counties = sorted(team_counties.get(loser, []))
     else:
-        loser_counties = [
+        loser_counties = sorted(
             fips for fips, owner in current_ownership.items() if owner == loser
-        ]
+        )
 
     transfers = [
         {

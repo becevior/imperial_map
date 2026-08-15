@@ -71,7 +71,7 @@ def _collect_totals(
     county_stats: CountyStats,
 ) -> Dict[str, Dict[str, float]]:
     totals: Dict[str, Dict[str, float]] = defaultdict(lambda: {'counties': 0, 'population': 0, 'areaSqMi': 0.0})
-    for fips, team_id in ownership.items():
+    for fips, team_id in sorted(ownership.items()):
         if team_id is None:
             continue
         county = county_stats.get(fips, {})
@@ -95,7 +95,11 @@ def _collect_transfer_deltas(
     # Deduplicate transfers by gameId to prevent counting the same transfer multiple times
     seen_game_ids = set()
 
-    for transfer in transfers:
+    ordered_transfers = sorted(
+        transfers,
+        key=lambda transfer: str(transfer.get('gameId') or ''),
+    )
+    for transfer in ordered_transfers:
         game_id = transfer.get('gameId')
         if game_id in seen_game_ids:
             continue
@@ -108,7 +112,7 @@ def _collect_transfer_deltas(
         if not fips_list or not winner_id or not loser_id:
             continue
 
-        for fips in fips_list:
+        for fips in sorted(fips_list):
             county = county_stats.get(fips, {})
             population = _normalise_number(county.get('population'))
             area_sq_mi = _normalise_number(county.get('areaSqMi'))
@@ -334,6 +338,21 @@ def persist_leaderboard(
 ) -> Dict[str, Any]:
     week_index = int(week_meta.get('weekIndex', 0))
     json_path = f'leaderboards/{season}/week-{week_index:02d}.json'
+
+    try:
+        existing_payload = db.load_json(json_path)
+    except FileNotFoundError:
+        existing_payload = None
+
+    if existing_payload:
+        comparable_existing = {
+            key: value for key, value in existing_payload.items() if key != 'generatedAt'
+        }
+        comparable_payload = {
+            key: value for key, value in payload.items() if key != 'generatedAt'
+        }
+        if comparable_existing == comparable_payload:
+            payload = existing_payload
 
     db.save_json(json_path, payload)
 

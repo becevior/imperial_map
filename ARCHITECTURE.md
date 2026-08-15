@@ -14,6 +14,21 @@ This keeps the operating model small:
 - The map remains fast because the browser reads CDN-hosted static files.
 - GitHub Actions is the only scheduled compute layer.
 
+## Live Game-Day Refresh
+
+The game-day path remains file based. In season, GitHub Actions checks only
+ESPN's active week every five minutes during the Saturday window. If the
+normalized completed games are unchanged, the job exits without rebuilding,
+committing, or deploying. Scheduled triggers remain commented out during the
+off-season; manual dispatch stays available for rehearsals and corrections.
+
+When a new final or score correction appears, the pipeline deterministically
+replays the season, publishes the updated snapshots, and writes `data/live.json`.
+Visible browser tabs poll that small manifest once per minute and only download
+the current ownership and logo snapshots when its content version changes. Tabs
+pause polling while hidden and refresh on focus. Historical selections are never
+automatically moved to the live week.
+
 ## Data Boundaries
 
 | Data | Source of truth | Generated output |
@@ -33,9 +48,9 @@ or `GET /api/territory` rather than assuming the baseline is current.
 - `npm run validate-data` verifies snapshot paths and team references before a
   deploy or automated commit.
 - CI runs frontend install, validation, type check, lint, build, and backend tests.
-- The update workflow requires the CFBD key, has a time limit, and serializes runs.
-- The schedule stays disabled during the off-season; manual dispatch remains
-  available for a rehearsal or correction.
+- The update workflow has a time limit and serializes runs.
+- Scheduled runs use ESPN and require no score-provider key. Manual dispatch
+  performs a full-season correction pass.
 
 ## When To Add Infrastructure
 

@@ -60,6 +60,15 @@ Download completed FBS games from ESPN's public scoreboard and normalize them fo
 python ingest_games.py --season 2026 --season-type both --provider espn
 ```
 
+Scheduled game-day checks use the lightweight active-period merge instead:
+
+```bash
+python ingest_games.py --season 2026 --provider espn --active-only
+```
+
+This makes one small calendar request and one active-scoreboard request, preserves
+the existing timeline, and writes nothing before the first final of a new week.
+
 **Options:**
 - `--season YEAR` - Season year (e.g., 2026)
 - `--season-type TYPE` - Season type: `regular`, `postseason`, or `both` (default: `both`)
