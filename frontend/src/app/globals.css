@@ -3,6 +3,59 @@
 @tailwind utilities;
 
 /* ============================================================================
+   Self-hosted fonts (SIL OFL / Apache-2.0; see public/fonts/README.md).
+   Served from /public/fonts — no third-party font requests.
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/press-start-2p-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Silkscreen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/silkscreen-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Silkscreen';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/silkscreen-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/vt323-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Big Shoulders Stencil Text';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/big-shoulders-stencil-text-800.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/special-elite-400.woff2') format('woff2');
+}
+
+/* ============================================================================
    Imperial Map skin system.
 
    Five skins share one semantic component vocabulary (.im-*) and switch via

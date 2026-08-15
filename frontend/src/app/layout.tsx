@@ -22,12 +22,6 @@ export default function RootLayout({
     <html lang="en" data-theme="tecmo" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&family=Big+Shoulders+Stencil+Text:wght@600;800&family=Special+Elite&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body className="antialiased">
         <ThemeProvider>{children}</ThemeProvider>
