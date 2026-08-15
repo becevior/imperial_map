@@ -43,6 +43,18 @@ export function initPostHog() {
   }
 }
 
+export function registerEventProperties(properties: AnalyticsProperties) {
+  if (
+    typeof window === 'undefined' ||
+    !posthogProjectToken
+  ) {
+    return
+  }
+
+  initPostHog()
+  posthog.register(properties)
+}
+
 export function trackEvent(
   eventName: string,
   properties: AnalyticsProperties = {}
