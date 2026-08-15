@@ -82,4 +82,33 @@ for (const season of ownershipIndex.seasons) {
   }
 }
 
+const liveManifest = readJson('live.json')
+if (
+  typeof liveManifest?.version !== 'string' ||
+  !Number.isInteger(liveManifest?.season) ||
+  !Number.isInteger(liveManifest?.weekIndex) ||
+  typeof liveManifest?.generatedAt !== 'string' ||
+  !Array.isArray(liveManifest?.finalGameIds)
+) {
+  fail('live.json is malformed')
+}
+
+const liveSeason = ownershipIndex.seasons.find(
+  (season) => season.season === liveManifest.season
+)
+const liveWeek = liveSeason?.weeks.find(
+  (week) => week.weekIndex === liveManifest.weekIndex
+)
+if (!liveWeek || liveWeek.path !== liveManifest.ownershipPath) {
+  fail('live.json does not reference the indexed live ownership snapshot')
+}
+
+for (const key of ['ownershipPath', 'logosPath', 'leaderboardPath']) {
+  const dataPath = liveManifest[key]
+  if (typeof dataPath !== 'string' || !dataPath.startsWith('/data/')) {
+    fail(`live.json has an invalid ${key}`)
+  }
+  readJson(dataPath.slice('/data/'.length))
+}
+
 console.log(`Validated ${teams.length} teams and ${snapshotCount} ownership snapshots.`)

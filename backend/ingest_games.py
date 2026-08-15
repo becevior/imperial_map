@@ -181,6 +181,104 @@ def fetch_espn_games_for_season(
     return list(events.values())
 
 
+def fetch_espn_calendar(session: requests.Session, season: int) -> Dict:
+    """Fetch ESPN's season calendar without downloading the full scoreboard."""
+    return _fetch_espn_scoreboard(
+        session,
+        {
+            'dates': season,
+            'groups': ESPN_FBS_GROUP,
+            'limit': 1,
+        },
+    )
+
+
+def _parse_espn_datetime(value: Optional[str]) -> Optional[datetime]:
+    if not value:
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.replace('Z', '+00:00'))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def resolve_active_espn_period(
+    payload: Dict,
+    now: Optional[datetime] = None,
+) -> Tuple[str, int]:
+    """Resolve the regular/postseason ESPN period containing ``now``.
+
+    Before the season begins we select the first regular week; after it ends we
+    select the postseason bucket so late score corrections are still detected.
+    """
+    current_time = now or datetime.now(timezone.utc)
+    if current_time.tzinfo is None:
+        current_time = current_time.replace(tzinfo=timezone.utc)
+    current_time = current_time.astimezone(timezone.utc)
+
+    leagues = payload.get('leagues') or []
+    calendar = (leagues[0].get('calendar') or []) if leagues else []
+    periods: List[Tuple[datetime, datetime, str, int]] = []
+
+    for season_bucket in calendar:
+        season_type_id = int(season_bucket.get('value') or 0)
+        if season_type_id not in {2, 3}:
+            continue
+        season_type = 'postseason' if season_type_id == 3 else 'regular'
+        for entry in season_bucket.get('entries') or []:
+            start = _parse_espn_datetime(entry.get('startDate'))
+            end = _parse_espn_datetime(entry.get('endDate'))
+            try:
+                week = int(entry.get('value') or 0)
+            except (TypeError, ValueError):
+                continue
+            if start and end and week and week != 999:
+                periods.append((start, end, season_type, week))
+
+    if not periods:
+        raise RuntimeError('ESPN season calendar did not include regular or postseason weeks')
+
+    periods.sort(key=lambda item: item[0])
+    active = next(
+        (period for period in periods if period[0] <= current_time <= period[1]),
+        None,
+    )
+    if active is None:
+        active = periods[0] if current_time < periods[0][0] else periods[-1]
+
+    return active[2], active[3]
+
+
+def fetch_active_espn_games(
+    session: requests.Session,
+    season: int,
+    now: Optional[datetime] = None,
+) -> Tuple[str, int, List[Dict]]:
+    """Fetch only the ESPN scoreboard bucket that is currently active."""
+    calendar_payload = fetch_espn_calendar(session, season)
+    season_type, week = resolve_active_espn_period(calendar_payload, now)
+    season_type_id = 3 if season_type == 'postseason' else 2
+    payload = _fetch_espn_scoreboard(
+        session,
+        {
+            'dates': season,
+            'seasontype': season_type_id,
+            'week': week,
+            'groups': ESPN_FBS_GROUP,
+            'limit': ESPN_PAGE_LIMIT,
+        },
+    )
+    events = [
+        event
+        for event in payload.get('events') or []
+        if int((event.get('season') or {}).get('year') or 0) == season
+    ]
+    return season_type, week, events
+
+
 def fetch_games_for_season(
     session: requests.Session,
     season: int,
@@ -458,6 +556,90 @@ def update_games_index(season: int, timeline: List[Dict]) -> None:
     db.save_json(f'games/{season}/index.json', payload)
 
 
+def load_games_timeline(season: int) -> List[Dict]:
+    try:
+        payload = db.load_json(f'games/{season}/index.json')
+    except FileNotFoundError:
+        return []
+    return list(payload.get('weeks') or [])
+
+
+def save_active_games(
+    season: int,
+    season_type: str,
+    week: int,
+    games: List[Dict],
+) -> bool:
+    """Merge an active ESPN period into the existing chronological timeline.
+
+    Returns False when an empty, not-yet-started period has nothing to add.
+    """
+    timeline = load_games_timeline(season)
+
+    if season_type == 'postseason':
+        postseason_games = partition_postseason_games(games)
+        postseason_weeks = group_games_by_week(postseason_games)
+        existing_regular = [
+            entry for entry in timeline if entry.get('seasonType') != 'postseason'
+        ]
+        if not postseason_weeks and not any(
+            entry.get('seasonType') == 'postseason' for entry in timeline
+        ):
+            return False
+
+        next_index = max(
+            (int(entry.get('weekIndex', 0)) for entry in existing_regular),
+            default=0,
+        ) + 1
+        updated_timeline = list(existing_regular)
+        for postseason_week in sorted(postseason_weeks):
+            entries = postseason_weeks[postseason_week]
+            updated_timeline.append(
+                {
+                    'weekIndex': next_index,
+                    'seasonType': 'postseason',
+                    'week': postseason_week,
+                    'label': _format_postseason_label(postseason_week, entries),
+                    'path': f'/data/games/{season}/week-{next_index:02d}.json',
+                }
+            )
+            save_weekly_games(season, next_index, entries)
+            next_index += 1
+        update_games_index(season, updated_timeline)
+        return True
+
+    existing = next(
+        (
+            entry
+            for entry in timeline
+            if entry.get('seasonType') == 'regular'
+            and int(entry.get('week') or 0) == week
+        ),
+        None,
+    )
+    if existing is None and not games:
+        return False
+
+    if existing is None:
+        week_index = max(
+            (int(entry.get('weekIndex', 0)) for entry in timeline),
+            default=0,
+        ) + 1
+        existing = {
+            'weekIndex': week_index,
+            'seasonType': 'regular',
+            'week': week,
+            'label': f'Regular Week {week}',
+            'path': f'/data/games/{season}/week-{week_index:02d}.json',
+        }
+        timeline.append(existing)
+
+    save_weekly_games(season, int(existing['weekIndex']), games)
+    timeline.sort(key=lambda entry: int(entry.get('weekIndex', 0)))
+    update_games_index(season, timeline)
+    return True
+
+
 def parse_args(argv: List[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description='Fetch completed FBS game results')
     parser.add_argument('--season', type=int, required=True, help='Season year (e.g. 2026)')
@@ -479,6 +661,11 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         default=None,
         help='Optional limit for the number of regular-season weeks to ingest',
     )
+    parser.add_argument(
+        '--active-only',
+        action='store_true',
+        help='Fetch and merge only ESPN\'s currently active week/bucket',
+    )
     parser.add_argument('--verbose', action='store_true', help='Print extra logging')
     return parser.parse_args(argv)
 
@@ -489,6 +676,23 @@ def main(argv: List[str]) -> int:
     session = _get_session(api_key)
 
     name_lookup = build_team_name_lookup(load_teams_for_season(args.season))
+
+    if args.active_only:
+        if args.provider != 'espn':
+            raise ValueError('--active-only is only supported by the ESPN provider')
+        season_type, week, raw = fetch_active_espn_games(
+            session,
+            args.season,
+        )
+        games = normalize_games(raw, name_lookup)
+        games.sort(key=lambda game: (game.get('sortKey') or '', str(game.get('id') or '')))
+        saved = save_active_games(args.season, season_type, week, games)
+        action = 'updated' if saved else 'found no completed games to add for'
+        print(
+            f"✅ Active refresh {action} {season_type} week {week}: "
+            f"{len(games)} completed games"
+        )
+        return 0
 
     regular_games: List[Dict] = []
     postseason_games: List[Dict] = []

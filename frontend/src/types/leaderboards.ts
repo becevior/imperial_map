@@ -37,4 +37,5 @@ export interface LeaderboardWeekInfo {
   weekIndex: number | null
   weekLabel?: string | null
   seasonType?: string | null
+  refreshVersion?: string | null
 }

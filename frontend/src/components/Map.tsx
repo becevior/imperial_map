@@ -50,6 +50,7 @@ const DEFAULT_FILL_COLOR = '#2d2d2d'
 const MAP_FILL_OPACITY = 0.82
 const OWNERSHIP_FADE_MS = 700
 const MARKER_RESTING_OPACITY = 1
+const LIVE_POLL_INTERVAL_MS = 60_000
 const populationFormatter = new Intl.NumberFormat('en-US')
 const areaFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0
@@ -215,6 +216,85 @@ interface OwnershipIndexPayload {
   seasons: OwnershipIndexSeason[]
 }
 
+interface LiveManifest {
+  version: string
+  generatedAt: string
+  season: number
+  teamCount?: number | null
+  weekIndex: number
+  week?: number | null
+  seasonType?: string | null
+  label?: string
+  completedGameCount?: number
+  ownershipPath: string
+  logosPath: string
+  leaderboardPath: string
+}
+
+function isLiveManifest(value: unknown): value is LiveManifest {
+  if (!value || typeof value !== 'object') {
+    return false
+  }
+  const manifest = value as Partial<LiveManifest>
+  return (
+    typeof manifest.version === 'string' &&
+    typeof manifest.generatedAt === 'string' &&
+    typeof manifest.season === 'number' &&
+    typeof manifest.weekIndex === 'number' &&
+    typeof manifest.ownershipPath === 'string' &&
+    typeof manifest.logosPath === 'string' &&
+    typeof manifest.leaderboardPath === 'string'
+  )
+}
+
+function latestSelection(options: OwnershipIndexSeason[]) {
+  const season = [...options].sort((a, b) => b.season - a.season)[0]
+  const week = season
+    ? [...season.weeks].sort((a, b) => b.weekIndex - a.weekIndex)[0]
+    : undefined
+  return season && week ? { season: season.season, weekIndex: week.weekIndex } : null
+}
+
+function mergeLiveWeek(
+  options: OwnershipIndexSeason[],
+  manifest: LiveManifest
+): OwnershipIndexSeason[] {
+  const next = options.map((season) => ({
+    ...season,
+    weeks: season.weeks.map((week) => ({ ...week }))
+  }))
+  let season = next.find((entry) => entry.season === manifest.season)
+  if (!season) {
+    season = { season: manifest.season, teamCount: manifest.teamCount ?? undefined, weeks: [] }
+    next.push(season)
+  }
+
+  season.teamCount = manifest.teamCount ?? season.teamCount
+  const week: OwnershipIndexWeek = {
+    weekIndex: manifest.weekIndex,
+    week: manifest.week,
+    seasonType: manifest.seasonType,
+    label: manifest.label,
+    path: manifest.ownershipPath
+  }
+  const existingIndex = season.weeks.findIndex(
+    (entry) => entry.weekIndex === manifest.weekIndex
+  )
+  if (existingIndex >= 0) {
+    season.weeks[existingIndex] = week
+  } else {
+    season.weeks.push(week)
+  }
+  season.weeks.sort((a, b) => a.weekIndex - b.weekIndex)
+  next.sort((a, b) => a.season - b.season)
+  return next
+}
+
+function versionedPath(path: string, version: string): string {
+  const separator = path.includes('?') ? '&' : '?'
+  return `${path}${separator}v=${encodeURIComponent(version)}`
+}
+
 interface TerritoryMarkerRecord {
   marker: maplibregl.Marker
   element: HTMLDivElement
@@ -244,6 +324,13 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   const [currentWeekLabel, setCurrentWeekLabel] = useState<string>('Baseline')
   const [ownershipLoading, setOwnershipLoading] = useState(false)
   const [ownershipError, setOwnershipError] = useState<string | null>(null)
+  const [liveRefreshVersion, setLiveRefreshVersion] = useState<string | null>(null)
+  const [liveUpdatedAt, setLiveUpdatedAt] = useState<string | null>(null)
+  const [liveCompletedGameCount, setLiveCompletedGameCount] = useState<number | null>(null)
+  const [liveSelection, setLiveSelection] = useState<{
+    season: number
+    weekIndex: number
+  } | null>(null)
 
   const baseGeoJsonRef = useRef<any | null>(null)
   const decorateGeoJsonRef = useRef<((ownership: OwnershipMap) => any) | null>(null)
@@ -259,6 +346,8 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   const selectedWeekIndexRef = useRef<number | null>(null)
   const currentWeekLabelRef = useRef<string>('Baseline')
   const teamsByIdRef = useRef<Record<string, Team>>({})
+  const liveManifestRef = useRef<LiveManifest | null>(null)
+  const liveVersionRef = useRef<string | null>(null)
 
   const fadeOwnershipOnMap = useCallback((mapInstance: maplibregl.Map, data: any) => {
     const currentLayer = activeOwnershipLayerRef.current
@@ -537,6 +626,80 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     ;(mapInstance as any).__logoZoomHandler = handleZoom
   }, [])
 
+  const applyLiveManifest = useCallback(async (manifest: LiveManifest) => {
+    const previousLatest = latestSelection(seasonOptionsRef.current)
+    const wasFollowingLatest = Boolean(
+      previousLatest &&
+      selectedSeasonRef.current === previousLatest.season &&
+      selectedWeekIndexRef.current === previousLatest.weekIndex
+    )
+
+    const nextOptions = mergeLiveWeek(seasonOptionsRef.current, manifest)
+
+    if (!wasFollowingLatest) {
+      seasonOptionsRef.current = nextOptions
+      setSeasonOptions(nextOptions)
+      liveManifestRef.current = manifest
+      liveVersionRef.current = manifest.version
+      setLiveUpdatedAt(manifest.generatedAt)
+      setLiveCompletedGameCount(manifest.completedGameCount ?? null)
+      setLiveSelection({ season: manifest.season, weekIndex: manifest.weekIndex })
+      return
+    }
+
+    const [ownershipResponse, logosResponse] = await Promise.all([
+      fetch(versionedPath(manifest.ownershipPath, manifest.version), {
+        cache: 'no-store'
+      }),
+      fetch(versionedPath(manifest.logosPath, manifest.version), {
+        cache: 'no-store'
+      })
+    ])
+    if (!ownershipResponse.ok) {
+      throw new Error(`Failed to load live ownership: ${ownershipResponse.status}`)
+    }
+
+    const stillFollowingLatest = Boolean(
+      previousLatest &&
+      selectedSeasonRef.current === previousLatest.season &&
+      selectedWeekIndexRef.current === previousLatest.weekIndex
+    )
+    if (!stillFollowingLatest) {
+      return
+    }
+
+    const ownership: OwnershipMap = await ownershipResponse.json()
+    let logos: TerritoryCentroid[] | null = null
+    if (logosResponse.ok) {
+      logos = await logosResponse.json()
+    }
+
+    seasonOptionsRef.current = nextOptions
+    setSeasonOptions(nextOptions)
+    ownershipSnapshotsRef.current[
+      ownershipSnapshotKey(manifest.season, manifest.weekIndex)
+    ] = ownership
+    applyOwnershipToMap(ownership, manifest.label ?? `Week ${manifest.weekIndex}`)
+    lastOwnershipPathRef.current = manifest.ownershipPath
+
+    if (logos) {
+      centroidsDataRef.current = logos
+      lastCentroidsPathRef.current = manifest.logosPath
+      updateMarkersWithCentroids(logos)
+    }
+
+    liveManifestRef.current = manifest
+    liveVersionRef.current = manifest.version
+    setLiveUpdatedAt(manifest.generatedAt)
+    setLiveCompletedGameCount(manifest.completedGameCount ?? null)
+    setLiveSelection({ season: manifest.season, weekIndex: manifest.weekIndex })
+    setLiveRefreshVersion(manifest.version)
+    setSelectedSeason(manifest.season)
+    setSelectedWeekIndex(manifest.weekIndex)
+    setTeamCount(manifest.teamCount ?? null)
+    setOwnershipError(null)
+  }, [applyOwnershipToMap, updateMarkersWithCentroids])
+
   useEffect(() => {
     if (!mapContainer.current || mapRef.current) return
     const markerRecords = markerRecordsRef.current
@@ -550,7 +713,8 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
           countyStatsRes,
           territoryCentroidsRes,
           ownershipIndexRes,
-          logoColorsRes
+          logoColorsRes,
+          liveManifestRes
         ] = await Promise.all([
           fetch('/data/teams-all.json'),
           fetch('/data/ownership.json'),
@@ -558,7 +722,8 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
           fetch('/data/county-stats.json'),
           fetch('/data/territory-centroids.json'),
           fetch('/data/ownership/index.json'),
-          fetch('/data/logo-colors.json')
+          fetch('/data/logo-colors.json'),
+          fetch('/data/live.json', { cache: 'no-store' })
         ])
 
         if (!teamsRes.ok || !ownershipRes.ok || !geoJsonRes.ok) {
@@ -618,6 +783,21 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
             ownershipIndex = await ownershipIndexRes.json()
           } catch (indexErr) {
             console.warn('Failed to parse ownership index', indexErr)
+          }
+        }
+
+        if (liveManifestRes.ok) {
+          try {
+            const payload: unknown = await liveManifestRes.json()
+            if (isLiveManifest(payload)) {
+              liveManifestRef.current = payload
+              liveVersionRef.current = payload.version
+              setLiveUpdatedAt(payload.generatedAt)
+              setLiveCompletedGameCount(payload.completedGameCount ?? null)
+              setLiveSelection({ season: payload.season, weekIndex: payload.weekIndex })
+            }
+          } catch (manifestErr) {
+            console.warn('Failed to parse live update manifest', manifestErr)
           }
         }
 
@@ -1178,6 +1358,52 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   }, [currentWeekLabel])
 
   useEffect(() => {
+    let cancelled = false
+    let inFlight = false
+
+    const poll = async () => {
+      if (cancelled || inFlight || document.visibilityState !== 'visible') {
+        return
+      }
+
+      inFlight = true
+      try {
+        const response = await fetch(`/data/live.json?poll=${Date.now()}`, {
+          cache: 'no-store'
+        })
+        if (!response.ok) {
+          throw new Error(`Live manifest request failed: ${response.status}`)
+        }
+        const payload: unknown = await response.json()
+        if (!isLiveManifest(payload) || payload.version === liveVersionRef.current) {
+          return
+        }
+        await applyLiveManifest(payload)
+      } catch (pollError) {
+        console.warn('Live territory refresh failed', pollError)
+      } finally {
+        inFlight = false
+      }
+    }
+
+    const interval = window.setInterval(() => {
+      void poll()
+    }, LIVE_POLL_INTERVAL_MS)
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        void poll()
+      }
+    }
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+
+    return () => {
+      cancelled = true
+      window.clearInterval(interval)
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
+    }
+  }, [applyLiveManifest])
+
+  useEffect(() => {
     if (!onWeekChange) {
       return
     }
@@ -1186,7 +1412,8 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       season: selectedSeason,
       weekIndex: selectedWeekIndex,
       weekLabel: currentWeekLabel,
-      seasonType: null
+      seasonType: null,
+      refreshVersion: null
     }
 
     if (selectedSeason !== null && selectedWeekIndex !== null) {
@@ -1194,10 +1421,25 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       const week = season?.weeks.find((entry) => entry.weekIndex === selectedWeekIndex)
       info.weekLabel = week?.label ?? currentWeekLabel ?? `Week ${selectedWeekIndex}`
       info.seasonType = week?.seasonType ?? null
+      const liveManifest = liveManifestRef.current
+      if (
+        liveManifest &&
+        liveManifest.season === selectedSeason &&
+        liveManifest.weekIndex === selectedWeekIndex
+      ) {
+        info.refreshVersion = liveRefreshVersion
+      }
     }
 
     onWeekChange(info)
-  }, [onWeekChange, seasonOptions, selectedSeason, selectedWeekIndex, currentWeekLabel])
+  }, [
+    onWeekChange,
+    seasonOptions,
+    selectedSeason,
+    selectedWeekIndex,
+    currentWeekLabel,
+    liveRefreshVersion
+  ])
 
   useEffect(() => {
     if (!seasonOptions.length || selectedSeason === null || selectedWeekIndex === null) {
@@ -1234,11 +1476,24 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       try {
         // week.path is guaranteed to exist from the check above, but TypeScript doesn't know
         const ownershipPath = week.path!
+        const liveManifest = liveManifestRef.current
+        const liveVersion =
+          liveManifest &&
+          liveManifest.season === selectedSeason &&
+          liveManifest.weekIndex === week.weekIndex
+            ? liveManifest.version
+            : null
 
         // Load both ownership and logos in parallel
         const [ownershipResponse, logosResponse] = await Promise.all([
-          fetch(ownershipPath, { signal: controller.signal }),
-          fetch(logosPath, { signal: controller.signal })
+          fetch(liveVersion ? versionedPath(ownershipPath, liveVersion) : ownershipPath, {
+            signal: controller.signal,
+            cache: liveVersion ? 'no-store' : 'default'
+          }),
+          fetch(liveVersion ? versionedPath(logosPath, liveVersion) : logosPath, {
+            signal: controller.signal,
+            cache: liveVersion ? 'no-store' : 'default'
+          })
         ])
 
         if (!ownershipResponse.ok) {
@@ -1328,6 +1583,20 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   )
   const showSeasonSelect = seasonOptions.length > 1
   const showWeekSelect = weekOptions.length > 0
+  const liveStatusLabel = useMemo(() => {
+    if (!liveUpdatedAt) {
+      return null
+    }
+    const updated = new Date(liveUpdatedAt)
+    if (Number.isNaN(updated.getTime())) {
+      return null
+    }
+    const time = updated.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })
+    const finals = liveCompletedGameCount === null
+      ? ''
+      : ` · ${liveCompletedGameCount} ${liveCompletedGameCount === 1 ? 'final' : 'finals'}`
+    return `Live data ${time}${finals}`
+  }, [liveCompletedGameCount, liveUpdatedAt])
 
   useEffect(() => {
     if (!isTimelapsePlaying || ownershipLoading || weekOptions.length < 2) {
@@ -1481,6 +1750,13 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
             <p className="text-xs text-gray-500">
               {teamCount ?? '–'} teams · {countyCount ?? '–'} counties
             </p>
+            {liveStatusLabel &&
+              liveSelection?.season === selectedSeason &&
+              liveSelection?.weekIndex === selectedWeekIndex && (
+                <p className="mt-1 text-[11px] text-emerald-700">
+                  {liveStatusLabel}
+                </p>
+              )}
           </div>
           {(showSeasonSelect || showWeekSelect) && (
             <div className="flex flex-wrap items-center gap-3 text-xs text-gray-700">

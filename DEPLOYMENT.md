@@ -45,17 +45,21 @@
 **File:** `.github/workflows/update-territories.yml`
 
 **Schedule:**
-- **Saturdays:** Runs every hour (handles game day activity)
-- **Sunday-Friday:** Runs daily, with hourly updates through Sunday morning UTC
+- **Current state:** Scheduled triggers are disabled until Week 0; manual dispatch remains available
+- **Once enabled, Saturdays:** Runs every five minutes from 9am through 11:58pm Pacific
+- **Once enabled, early Sundays:** Runs every five minutes through 2:58am Pacific
+- **Once enabled, Monday-Friday:** Runs once daily for late finals and corrections
 - The workflow serializes runs so overlapping game-day jobs cannot write
   competing snapshots.
 
 **What it does:**
-1. Fetches latest game results from ESPN's public scoreboard
-2. Applies territory transfers based on game outcomes
-3. Computes weekly leaderboards
-4. Commits and pushes changes to `frontend/public/data/`
-5. Vercel auto-deploys the updated map
+1. Fetches only ESPN's active week during scheduled runs
+2. Exits without a commit or deploy when completed games are unchanged
+3. Applies territory transfers and computes weekly leaderboards after a new final
+4. Publishes `frontend/public/data/live.json` for visible tabs to poll
+5. Commits and pushes the changed data; Vercel deploys the refreshed map
+
+Manual workflow dispatches retain the full-season ingestion path for corrections.
 
 **Manual trigger:**
 ```bash
@@ -114,9 +118,9 @@ git push
 
 | Script | Purpose | Frequency |
 |--------|---------|-----------|
-| `ingest_games.py` | Fetch game results from ESPN | Automated (hourly Sat, daily weekdays) |
-| `apply_transfers.py` | Apply territory transfers based on games | Automated (hourly Sat, daily weekdays) |
-| `compute_leaderboards.py` | Generate weekly rankings | Automated (hourly Sat, daily weekdays) |
+| `ingest_games.py` | Fetch game results from ESPN | Automated (five-minute active-week checks) |
+| `apply_transfers.py` | Apply territory transfers and generate weekly rankings | Only after completed games change |
+| `publish_live_manifest.py` | Version the current browser-facing snapshots | Only after completed games change |
 
 ### Maintenance Scripts
 
@@ -143,6 +147,7 @@ git push
 ### Season Start
 
 - [ ] Update `SEASON` in `.github/workflows/update-territories.yml`
+- [ ] Uncomment the `schedule` block in `.github/workflows/update-territories.yml`
 - [ ] Run `python setup.py` to reset baseline
 - [ ] Verify team roster in `backend/data/team_locs.csv`
 - [ ] Run `python audit_team_colors.py` to sync latest colors

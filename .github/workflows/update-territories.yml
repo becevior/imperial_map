@@ -1,13 +1,16 @@
 name: Update Territories
 
 on:
-  # In-season cadence: hourly on game day and daily for late finals/corrections.
-  schedule:
-    # Hourly through the main Saturday game window (UTC).
-    - cron: '0 16-23 * * 6'
-    - cron: '0 0-10 * * 0'
-    # Daily refresh on weekdays for late finals and schedule corrections.
-    - cron: '0 10 * * 1-5'
+  # Off-season: scheduled triggers are intentionally disabled until Week 0.
+  # Re-enable the cadence below when live game-day refreshes should begin.
+  # schedule:
+  #   - cron: '3-58/5 9-23 * * 6'
+  #     timezone: 'America/Los_Angeles'
+  #   - cron: '3-58/5 0-2 * * 0'
+  #     timezone: 'America/Los_Angeles'
+  #   # Daily refresh for late finals and corrections.
+  #   - cron: '17 3 * * 1-5'
+  #     timezone: 'America/Los_Angeles'
 
   # Allow manual trigger with season parameter
   workflow_dispatch:
@@ -89,47 +92,52 @@ jobs:
           echo "FORCE_UPDATE=$force" >> "$GITHUB_ENV"
           echo "force_update=$force" >> "$GITHUB_OUTPUT"
 
-      - name: Check if it's Saturday game day window
-        id: check-day
-        run: |
-          DAY=$(date -u +%u)  # 1-7, where 6 is Saturday and 7 is Sunday
-          HOUR=$(date -u +%H)
-
-          # Saturday game day: Saturday 6pm UTC onwards OR Sunday before 10am UTC
-          # This covers 10am PST Saturday through 2am PST Sunday
-          if [ "$DAY" -eq 6 ] && [ "$HOUR" -ge 16 ]; then
-            echo "is_saturday=true" >> $GITHUB_OUTPUT
-            echo "📅 Saturday game day window (late Saturday UTC) - running hourly update"
-          elif [ "$DAY" -eq 7 ] && [ "$HOUR" -le 10 ]; then
-            echo "is_saturday=true" >> $GITHUB_OUTPUT
-            echo "📅 Saturday game day window (early Sunday UTC) - running hourly update"
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            echo "INGEST_SCOPE=--active-only" >> "$GITHUB_ENV"
           else
-            echo "is_saturday=false" >> $GITHUB_OUTPUT
-            echo "📅 Regular day - running daily update"
+            echo "INGEST_SCOPE=" >> "$GITHUB_ENV"
           fi
 
       - name: Ingest game results
         run: |
           cd backend
           echo "🏈 Fetching game results for season $EFFECTIVE_SEASON..."
-          python ingest_games.py --season $EFFECTIVE_SEASON --season-type both --provider espn
+          python ingest_games.py --season $EFFECTIVE_SEASON --season-type both --provider espn $INGEST_SCOPE
           echo "✓ Game results ingested"
 
+      - name: Check for completed-game changes
+        id: game-changes
+        run: |
+          if [ -n "$(git status --porcelain -- frontend/public/data/games/${EFFECTIVE_SEASON}/)" ]; then
+            echo "has_game_changes=true" >> "$GITHUB_OUTPUT"
+            echo "🏁 New or corrected completed-game data detected"
+          else
+            echo "has_game_changes=false" >> "$GITHUB_OUTPUT"
+            echo "ℹ️  Completed-game data is unchanged; skipping generation"
+          fi
+
       - name: Apply territory transfers
+        if: >
+          steps.game-changes.outputs.has_game_changes == 'true' ||
+          steps.resolve-params.outputs.force_update == 'true'
         run: |
           cd backend
           echo "🗺️  Applying territory transfers..."
           python apply_transfers.py --season $EFFECTIVE_SEASON
           echo "✓ Territory transfers applied"
 
-      - name: Compute leaderboards
+      - name: Publish live manifest
+        if: >
+          steps.game-changes.outputs.has_game_changes == 'true' ||
+          steps.resolve-params.outputs.force_update == 'true'
         run: |
           cd backend
-          echo "🏆 Computing leaderboards..."
-          python compute_leaderboards.py --season $EFFECTIVE_SEASON
-          echo "✓ Leaderboards computed"
+          python publish_live_manifest.py --season $EFFECTIVE_SEASON
 
       - name: Validate generated data
+        if: >
+          steps.game-changes.outputs.has_game_changes == 'true' ||
+          steps.resolve-params.outputs.force_update == 'true'
         run: node frontend/scripts/validate-data.mjs
 
       - name: Check for changes
@@ -151,11 +159,10 @@ jobs:
           # Get the current week number from the latest ownership file
           LATEST_WEEK=$(ls -1 frontend/public/data/ownership/${EFFECTIVE_SEASON}/ 2>/dev/null | grep -E 'week-[0-9]+\.json$' | sort -V | tail -1 | grep -oP 'week-\K[0-9]+' || echo "unknown")
 
-          # Determine update frequency for commit message
-          if [ "${{ steps.check-day.outputs.is_saturday }}" == "true" ]; then
-            FREQUENCY="hourly"
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            FREQUENCY="live"
           else
-            FREQUENCY="daily"
+            FREQUENCY="manual"
           fi
 
           git add frontend/public/data/
@@ -179,8 +186,8 @@ jobs:
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
           echo "Season: $EFFECTIVE_SEASON"
           echo "Time (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
-          echo "Time (PST): $(TZ='America/Los_Angeles' date '+%Y-%m-%d %H:%M:%S %Z')"
-          echo "Game day mode: ${{ steps.check-day.outputs.is_saturday }}"
+          echo "Time (local): $(TZ='America/Los_Angeles' date '+%Y-%m-%d %H:%M:%S %Z')"
+          echo "Completed games changed: ${{ steps.game-changes.outputs.has_game_changes }}"
           echo "Changes detected: ${{ steps.check-changes.outputs.has_changes }}"
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 

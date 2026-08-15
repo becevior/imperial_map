@@ -148,7 +148,7 @@ def apply_transfers_for_week(
                 'winnerId': result['winner'],
                 'loserId': result['loser'],
                 'transferCount': result['transfer_count'],
-                'fips': [t['fips'] for t in result['transfers']],
+                'fips': sorted(t['fips'] for t in result['transfers']),
                 'completedAt': result['transfers'][0]['at'] if result['transfers'] else datetime.utcnow().isoformat(),
             }
         )

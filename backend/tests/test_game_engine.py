@@ -36,6 +36,7 @@ def test_process_game_result_transfers_all_loser_counties():
     assert result['transfer_count'] == 2
     transferred_fips = {transfer['fips'] for transfer in result['transfers']}
     assert transferred_fips == {'01003', '01005'}
+    assert [transfer['fips'] for transfer in result['transfers']] == ['01003', '01005']
 
 
 def test_process_game_result_returns_none_for_tie():

@@ -118,12 +118,12 @@ export default function DashboardContent({
 
   const lastLoadedKeyRef = useRef<string | null>(
     initialLeaderboards && typeof initialLeaderboards.weekIndex === 'number'
-      ? `${initialLeaderboards.season}-${initialLeaderboards.weekIndex}`
+      ? `${initialLeaderboards.season}-${initialLeaderboards.weekIndex}-snapshot`
       : null
   )
 
   const handleWeekChange = useCallback(
-    async ({ season, weekIndex, weekLabel }: LeaderboardWeekInfo) => {
+    async ({ season, weekIndex, weekLabel, refreshVersion }: LeaderboardWeekInfo) => {
       const resolvedLabel =
         weekLabel ?? (typeof weekIndex === 'number' ? `Week ${weekIndex}` : 'Baseline')
       setActiveWeekLabel(resolvedLabel)
@@ -134,7 +134,7 @@ export default function DashboardContent({
         return
       }
 
-      const key = `${season}-${weekIndex}`
+      const key = `${season}-${weekIndex}-${refreshVersion ?? 'snapshot'}`
       if (lastLoadedKeyRef.current === key && leaderboards) {
         setError(null)
         return
