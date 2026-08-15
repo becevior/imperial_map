@@ -4,7 +4,7 @@
   "week": 2,
   "seasonType": "regular",
   "weekLabel": "Regular Week 2",
-  "generatedAt": "2026-01-29T06:59:42.990849+00:00",
+  "generatedAt": "2026-08-14T22:23:11.794612+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -720,7 +720,7 @@
         "teamName": "Army",
         "shortName": "Army",
         "fullName": "Army Black Knights",
-        "conference": "Independent",
+        "conference": "AAC",
         "metrics": {
           "counties": 19,
           "population": 8009863,
@@ -788,11 +788,11 @@
         }
       },
       {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
+        "teamId": "syracuse",
+        "teamName": "Syracuse",
+        "shortName": "Syracuse",
+        "fullName": "Syracuse Orange",
+        "conference": "ACC",
         "metrics": {
           "counties": 10,
           "population": 4341080,
@@ -938,7 +938,7 @@
         "teamName": "Army",
         "shortName": "Army",
         "fullName": "Army Black Knights",
-        "conference": "Independent",
+        "conference": "AAC",
         "metrics": {
           "counties": 19,
           "population": 8009863,
@@ -1126,11 +1126,11 @@
         }
       },
       {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
+        "teamId": "syracuse",
+        "teamName": "Syracuse",
+        "shortName": "Syracuse",
+        "fullName": "Syracuse Orange",
+        "conference": "ACC",
         "metrics": {
           "counties": 10,
           "population": 4341080,
@@ -2236,7 +2236,7 @@
         "teamName": "Army",
         "shortName": "Army",
         "fullName": "Army Black Knights",
-        "conference": "Independent",
+        "conference": "AAC",
         "metrics": {
           "counties": 19,
           "population": 8009863,
@@ -2352,11 +2352,11 @@
         }
       },
       {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
+        "teamId": "syracuse",
+        "teamName": "Syracuse",
+        "shortName": "Syracuse",
+        "fullName": "Syracuse Orange",
+        "conference": "ACC",
         "metrics": {
           "counties": 10,
           "population": 4341080,
@@ -2494,7 +2494,7 @@
         "metrics": {
           "counties": 35,
           "population": 8937141,
-          "areaSqMi": 42306.04
+          "areaSqMi": 42306.03
         }
       },
       {
@@ -2650,7 +2650,7 @@
         "metrics": {
           "counties": 17,
           "population": 1969182,
-          "areaSqMi": 9357.92
+          "areaSqMi": 9357.91
         }
       },
       {
@@ -2662,7 +2662,7 @@
         "metrics": {
           "counties": 16,
           "population": 827783,
-          "areaSqMi": 7192.69
+          "areaSqMi": 7192.68
         }
       },
       {
@@ -2714,6 +2714,18 @@
         }
       },
       {
+        "teamId": "syracuse",
+        "teamName": "Syracuse",
+        "shortName": "Syracuse",
+        "fullName": "Syracuse Orange",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 10,
+          "population": 4341080,
+          "areaSqMi": 4809.11
+        }
+      },
+      {
         "teamId": "navy",
         "teamName": "Navy",
         "shortName": "Navy",
@@ -2746,7 +2758,7 @@
         "metrics": {
           "counties": 8,
           "population": 5058723,
-          "areaSqMi": 66030.11
+          "areaSqMi": 66030.12
         }
       },
       {
@@ -2880,7 +2892,7 @@
         "metrics": {
           "counties": 35,
           "population": 8937141,
-          "areaSqMi": 42306.04
+          "areaSqMi": 42306.03
         }
       },
       {
@@ -3036,7 +3048,7 @@
         "metrics": {
           "counties": 17,
           "population": 1969182,
-          "areaSqMi": 9357.92
+          "areaSqMi": 9357.91
         }
       },
       {
@@ -3048,7 +3060,7 @@
         "metrics": {
           "counties": 16,
           "population": 827783,
-          "areaSqMi": 7192.69
+          "areaSqMi": 7192.68
         }
       },
       {
@@ -3080,7 +3092,7 @@
         "teamName": "Delaware",
         "shortName": "Delaware",
         "fullName": "Delaware Fightin' Blue Hens",
-        "conference": "CAA",
+        "conference": "CUSA",
         "metrics": {
           "counties": 11,
           "population": 2914265,
@@ -3097,6 +3109,18 @@
           "counties": 11,
           "population": 733815,
           "areaSqMi": 4767.15
+        }
+      },
+      {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 10,
+          "population": 4341080,
+          "areaSqMi": 4809.11
         }
       },
       {
@@ -3132,7 +3156,7 @@
         "metrics": {
           "counties": 8,
           "population": 5058723,
-          "areaSqMi": 66030.11
+          "areaSqMi": 66030.12
         }
       },
       {

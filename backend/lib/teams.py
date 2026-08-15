@@ -2,12 +2,15 @@
 Team data loading and management utilities.
 """
 import csv
+import json
 import unicodedata
 from hashlib import md5
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Set
 
 DATA_DIR = Path(__file__).parent.parent / 'data'
+HISTORICAL_TEAMS_PATH = DATA_DIR / 'historical_team_locs.csv'
+SEASONS_DIR = DATA_DIR / 'seasons'
 
 
 def _slugify(value: str) -> str:
@@ -32,10 +35,7 @@ def _fallback_color(team_id: str) -> str:
     return f"#{adjust(r):02x}{adjust(g):02x}{adjust(b):02x}"
 
 
-def load_teams_from_csv() -> List[Dict]:
-    """Load all FBS teams from team_locs.csv."""
-    csv_path = DATA_DIR / 'team_locs.csv'
-
+def _load_teams_csv(csv_path: Path) -> List[Dict]:
     teams: List[Dict] = []
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -78,6 +78,56 @@ def load_teams_from_csv() -> List[Dict]:
 
             teams.append(team_data)
 
+    return teams
+
+
+def load_teams_from_csv() -> List[Dict]:
+    """Load the current FBS teams from team_locs.csv."""
+    return _load_teams_csv(DATA_DIR / 'team_locs.csv')
+
+
+def load_all_teams() -> List[Dict]:
+    """Load current teams plus programs needed by historical seasons."""
+    teams = load_teams_from_csv()
+    if HISTORICAL_TEAMS_PATH.exists():
+        teams.extend(_load_teams_csv(HISTORICAL_TEAMS_PATH))
+
+    ids = [team['id'] for team in teams]
+    if len(ids) != len(set(ids)):
+        raise ValueError('Duplicate team IDs found across team location files')
+    return teams
+
+
+def load_teams_for_season(season: int) -> List[Dict]:
+    """Load only the FBS programs and conference labels active in a season."""
+    config_path = SEASONS_DIR / f'{season}.json'
+    if not config_path.exists():
+        raise FileNotFoundError(
+            f'No season membership config found for {season}: {config_path}'
+        )
+
+    with config_path.open('r', encoding='utf-8') as handle:
+        config = json.load(handle)
+
+    memberships = config.get('teams') or []
+    membership_by_id = {
+        entry['id']: entry.get('conference')
+        for entry in memberships
+        if entry.get('id')
+    }
+    all_teams = {team['id']: team for team in load_all_teams()}
+    missing = sorted(set(membership_by_id) - set(all_teams))
+    if missing:
+        raise ValueError(f'Season {season} references unknown teams: {missing}')
+
+    teams: List[Dict] = []
+    for team_id, conference in membership_by_id.items():
+        team = dict(all_teams[team_id])
+        if conference:
+            team['conference'] = conference
+        else:
+            team.pop('conference', None)
+        teams.append(team)
     return teams
 
 
@@ -167,6 +217,7 @@ def build_team_name_lookup(teams: Optional[List[Dict]] = None) -> Dict[str, str]
         'ul-monroe': 'ulm',
         'cal': 'california',
         'massachusetts': 'umass',
+        'uconn': 'connecticut',
     }
 
     for key, team_id in manual_overrides.items():
@@ -191,6 +242,8 @@ def resolve_team_id(name: str, lookup: Optional[Dict[str, str]] = None) -> Optio
 __all__ = [
     'build_team_name_lookup',
     'get_team_locations',
+    'load_all_teams',
     'load_teams_from_csv',
+    'load_teams_for_season',
     'resolve_team_id',
 ]

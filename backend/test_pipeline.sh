@@ -28,7 +28,7 @@ echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "Testing: ingest_games.py"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-python ingest_games.py --season ${SEASON} --season-type both
+python ingest_games.py --season ${SEASON} --season-type both --provider espn
 if [ $? -eq 0 ]; then
     echo "✓ ingest_games.py passed"
 else

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "401677108",
+    "season": 2024,
+    "seasonType": "postseason",
+    "week": 4,
+    "completed": true,
+    "startDate": "2025-01-04T16:00Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Thomas A. Robinson National Stadium",
+    "homeTeamId": "liberty",
+    "awayTeamId": "buffalo",
+    "homeScore": 7,
+    "awayScore": 26,
+    "winnerId": "buffalo",
+    "loserId": "liberty"
+  },
+  {
+    "id": "401677189",
+    "season": 2024,
+    "seasonType": "postseason",
+    "week": 4,
+    "completed": true,
+    "startDate": "2025-01-10T00:30Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Hard Rock Stadium",
+    "homeTeamId": "penn-state",
+    "awayTeamId": "notre-dame",
+    "homeScore": 24,
+    "awayScore": 27,
+    "winnerId": "notre-dame",
+    "loserId": "penn-state"
+  },
+  {
+    "id": "401677191",
+    "season": 2024,
+    "seasonType": "postseason",
+    "week": 4,
+    "completed": true,
+    "startDate": "2025-01-11T00:30Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "AT&T Stadium",
+    "homeTeamId": "texas",
+    "awayTeamId": "ohio-state",
+    "homeScore": 14,
+    "awayScore": 28,
+    "winnerId": "ohio-state",
+    "loserId": "texas"
+  }
+]

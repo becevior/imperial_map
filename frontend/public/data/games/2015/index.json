@@ -1,0 +1,138 @@
+{
+  "season": 2015,
+  "weeks": [
+    {
+      "weekIndex": 1,
+      "seasonType": "regular",
+      "week": 1,
+      "label": "Regular Week 1",
+      "path": "/data/games/2015/week-01.json"
+    },
+    {
+      "weekIndex": 2,
+      "seasonType": "regular",
+      "week": 2,
+      "label": "Regular Week 2",
+      "path": "/data/games/2015/week-02.json"
+    },
+    {
+      "weekIndex": 3,
+      "seasonType": "regular",
+      "week": 3,
+      "label": "Regular Week 3",
+      "path": "/data/games/2015/week-03.json"
+    },
+    {
+      "weekIndex": 4,
+      "seasonType": "regular",
+      "week": 4,
+      "label": "Regular Week 4",
+      "path": "/data/games/2015/week-04.json"
+    },
+    {
+      "weekIndex": 5,
+      "seasonType": "regular",
+      "week": 5,
+      "label": "Regular Week 5",
+      "path": "/data/games/2015/week-05.json"
+    },
+    {
+      "weekIndex": 6,
+      "seasonType": "regular",
+      "week": 6,
+      "label": "Regular Week 6",
+      "path": "/data/games/2015/week-06.json"
+    },
+    {
+      "weekIndex": 7,
+      "seasonType": "regular",
+      "week": 7,
+      "label": "Regular Week 7",
+      "path": "/data/games/2015/week-07.json"
+    },
+    {
+      "weekIndex": 8,
+      "seasonType": "regular",
+      "week": 8,
+      "label": "Regular Week 8",
+      "path": "/data/games/2015/week-08.json"
+    },
+    {
+      "weekIndex": 9,
+      "seasonType": "regular",
+      "week": 9,
+      "label": "Regular Week 9",
+      "path": "/data/games/2015/week-09.json"
+    },
+    {
+      "weekIndex": 10,
+      "seasonType": "regular",
+      "week": 10,
+      "label": "Regular Week 10",
+      "path": "/data/games/2015/week-10.json"
+    },
+    {
+      "weekIndex": 11,
+      "seasonType": "regular",
+      "week": 11,
+      "label": "Regular Week 11",
+      "path": "/data/games/2015/week-11.json"
+    },
+    {
+      "weekIndex": 12,
+      "seasonType": "regular",
+      "week": 12,
+      "label": "Regular Week 12",
+      "path": "/data/games/2015/week-12.json"
+    },
+    {
+      "weekIndex": 13,
+      "seasonType": "regular",
+      "week": 13,
+      "label": "Regular Week 13",
+      "path": "/data/games/2015/week-13.json"
+    },
+    {
+      "weekIndex": 14,
+      "seasonType": "regular",
+      "week": 14,
+      "label": "Regular Week 14",
+      "path": "/data/games/2015/week-14.json"
+    },
+    {
+      "weekIndex": 15,
+      "seasonType": "regular",
+      "week": 15,
+      "label": "Regular Week 15",
+      "path": "/data/games/2015/week-15.json"
+    },
+    {
+      "weekIndex": 16,
+      "seasonType": "postseason",
+      "week": 1,
+      "label": "Postseason \u00b7 Dec 19\u201324",
+      "path": "/data/games/2015/week-16.json"
+    },
+    {
+      "weekIndex": 17,
+      "seasonType": "postseason",
+      "week": 2,
+      "label": "Postseason \u00b7 Dec 26\u2013Jan 1",
+      "path": "/data/games/2015/week-17.json"
+    },
+    {
+      "weekIndex": 18,
+      "seasonType": "postseason",
+      "week": 3,
+      "label": "Postseason \u00b7 Jan 2",
+      "path": "/data/games/2015/week-18.json"
+    },
+    {
+      "weekIndex": 19,
+      "seasonType": "postseason",
+      "week": 4,
+      "label": "Postseason \u00b7 Jan 11",
+      "path": "/data/games/2015/week-19.json"
+    }
+  ]
+}

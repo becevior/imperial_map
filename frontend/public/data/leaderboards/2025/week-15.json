@@ -4,7 +4,7 @@
   "week": 15,
   "seasonType": "regular",
   "weekLabel": "Regular Week 15",
-  "generatedAt": "2026-01-29T06:59:43.130382+00:00",
+  "generatedAt": "2026-08-14T22:23:11.934882+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -92,18 +92,6 @@
         }
       },
       {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 134,
-          "population": 22522752,
-          "areaSqMi": 185081.6
-        }
-      },
-      {
         "teamId": "utah",
         "teamName": "Utah",
         "shortName": "Utah",
@@ -113,6 +101,18 @@
           "counties": 245,
           "population": 16543394,
           "areaSqMi": 181541.94
+        }
+      },
+      {
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 114,
+          "population": 20854840,
+          "areaSqMi": 173909.73
         }
       },
       {
@@ -134,9 +134,9 @@
         "fullName": "Miami Hurricanes",
         "conference": "ACC",
         "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
         }
       },
       {
@@ -164,6 +164,18 @@
         }
       },
       {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 64,
+          "population": 3282066,
+          "areaSqMi": 31304.1
+        }
+      },
+      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -173,18 +185,6 @@
           "counties": 59,
           "population": 2377378,
           "areaSqMi": 29792.86
-        }
-      },
-      {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -209,18 +209,6 @@
           "counties": 15,
           "population": 451462,
           "areaSqMi": 5808.53
-        }
-      },
-      {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
         }
       }
     ],
@@ -274,15 +262,27 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
+        }
+      },
+      {
         "teamId": "tulane",
         "teamName": "Tulane",
         "shortName": "Tulane",
         "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
-          "counties": 134,
-          "population": 22522752,
-          "areaSqMi": 185081.6
+          "counties": 114,
+          "population": 20854840,
+          "areaSqMi": 173909.73
         }
       },
       {
@@ -295,18 +295,6 @@
           "counties": 220,
           "population": 20822306,
           "areaSqMi": 334606.89
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
         }
       },
       {
@@ -382,18 +370,6 @@
         }
       },
       {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
-        }
-      },
-      {
         "teamId": "duke",
         "teamName": "Duke",
         "shortName": "Duke",
@@ -406,6 +382,18 @@
         }
       },
       {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 64,
+          "population": 3282066,
+          "areaSqMi": 31304.1
+        }
+      },
+      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -415,18 +403,6 @@
           "counties": 59,
           "population": 2377378,
           "areaSqMi": 29792.86
-        }
-      },
-      {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -534,9 +510,9 @@
         "fullName": "Miami Hurricanes",
         "conference": "ACC",
         "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
         }
       },
       {
@@ -546,9 +522,9 @@
         "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
-          "counties": 134,
-          "population": 22522752,
-          "areaSqMi": 185081.6
+          "counties": 114,
+          "population": 20854840,
+          "areaSqMi": 173909.73
         }
       },
       {
@@ -600,6 +576,18 @@
         }
       },
       {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 64,
+          "population": 3282066,
+          "areaSqMi": 31304.1
+        }
+      },
+      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -609,18 +597,6 @@
           "counties": 59,
           "population": 2377378,
           "areaSqMi": 29792.86
-        }
-      },
-      {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -645,18 +621,6 @@
           "counties": 15,
           "population": 451462,
           "areaSqMi": 5808.53
-        }
-      },
-      {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
         }
       }
     ],
@@ -692,9 +656,9 @@
         "fullName": "Tulane Green Wave",
         "conference": "AAC",
         "metrics": {
-          "counties": 43,
-          "population": 5688205,
-          "areaSqMi": 23729.3
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
         }
       }
     ],
@@ -730,15 +694,15 @@
         "fullName": "North Texas Mean Green",
         "conference": "AAC",
         "metrics": {
-          "counties": 43,
-          "population": 5688205,
-          "areaSqMi": 23729.3
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
         }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 18,
+    "trackedTeams": 17,
     "countyCount": 3114
   }
 }

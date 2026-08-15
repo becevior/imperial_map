@@ -1,0 +1,53 @@
+[
+  {
+    "id": "401135292",
+    "season": 2019,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "startDate": "2020-01-03T20:30Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Albertsons Stadium",
+    "homeTeamId": "nevada",
+    "awayTeamId": "ohio",
+    "homeScore": 21,
+    "awayScore": 30,
+    "winnerId": "ohio",
+    "loserId": "nevada"
+  },
+  {
+    "id": "401135293",
+    "season": 2019,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "startDate": "2020-01-04T16:30Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Amon G. Carter Stadium",
+    "homeTeamId": "tulane",
+    "awayTeamId": "southern-miss",
+    "homeScore": 30,
+    "awayScore": 13,
+    "winnerId": "tulane",
+    "loserId": "southern-miss"
+  },
+  {
+    "id": "401135294",
+    "season": 2019,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "startDate": "2020-01-07T00:30Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Ladd-Peebles Stadium",
+    "homeTeamId": "miami-oh",
+    "awayTeamId": "louisiana",
+    "homeScore": 17,
+    "awayScore": 27,
+    "winnerId": "louisiana",
+    "loserId": "miami-oh"
+  }
+]

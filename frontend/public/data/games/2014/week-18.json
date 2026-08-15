@@ -1,0 +1,36 @@
+[
+  {
+    "id": "400610228",
+    "season": 2014,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "startDate": "2015-01-03T17:00Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Legion Field (AL)",
+    "homeTeamId": "florida",
+    "awayTeamId": "east-carolina",
+    "homeScore": 28,
+    "awayScore": 20,
+    "winnerId": "florida",
+    "loserId": "east-carolina"
+  },
+  {
+    "id": "400610200",
+    "season": 2014,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "startDate": "2015-01-05T02:00Z",
+    "neutralSite": true,
+    "conferenceGame": false,
+    "venue": "Ladd-Peebles Stadium",
+    "homeTeamId": "arkansas-state",
+    "awayTeamId": "toledo",
+    "homeScore": 44,
+    "awayScore": 63,
+    "winnerId": "toledo",
+    "loserId": "arkansas-state"
+  }
+]

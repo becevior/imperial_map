@@ -4,7 +4,7 @@
   "week": 14,
   "seasonType": "regular",
   "weekLabel": "Regular Week 14",
-  "generatedAt": "2026-01-29T06:59:43.120434+00:00",
+  "generatedAt": "2026-08-14T22:23:11.924726+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -140,6 +140,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
+        }
+      },
+      {
         "teamId": "boise-state",
         "teamName": "Boise State",
         "shortName": "Boise State",
@@ -149,18 +161,6 @@
           "counties": 9,
           "population": 4551049,
           "areaSqMi": 89968.73
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
         }
       },
       {
@@ -188,6 +188,18 @@
         }
       },
       {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 64,
+          "population": 3282066,
+          "areaSqMi": 31304.1
+        }
+      },
+      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -197,30 +209,6 @@
           "counties": 59,
           "population": 2377378,
           "areaSqMi": 29792.86
-        }
-      },
-      {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 43,
-          "population": 5688205,
-          "areaSqMi": 23729.3
-        }
-      },
-      {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -236,6 +224,18 @@
         }
       },
       {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
+        }
+      },
+      {
         "teamId": "james-madison",
         "teamName": "James Madison",
         "shortName": "James Madison",
@@ -245,18 +245,6 @@
           "counties": 15,
           "population": 451462,
           "areaSqMi": 5808.53
-        }
-      },
-      {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
         }
       }
     ],
@@ -310,6 +298,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
+        }
+      },
+      {
         "teamId": "arizona",
         "teamName": "Arizona",
         "shortName": "Arizona",
@@ -343,18 +343,6 @@
           "counties": 91,
           "population": 16834547,
           "areaSqMi": 161352.3
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
         }
       },
       {
@@ -418,18 +406,6 @@
         }
       },
       {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 43,
-          "population": 5688205,
-          "areaSqMi": 23729.3
-        }
-      },
-      {
         "teamId": "iowa-state",
         "teamName": "Iowa State",
         "shortName": "Iowa State",
@@ -454,15 +430,15 @@
         }
       },
       {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
         "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
         }
       },
       {
@@ -478,6 +454,18 @@
         }
       },
       {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 64,
+          "population": 3282066,
+          "areaSqMi": 31304.1
+        }
+      },
+      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -487,18 +475,6 @@
           "counties": 59,
           "population": 2377378,
           "areaSqMi": 29792.86
-        }
-      },
-      {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -618,9 +594,9 @@
         "fullName": "Miami Hurricanes",
         "conference": "ACC",
         "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
         }
       },
       {
@@ -684,6 +660,18 @@
         }
       },
       {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 64,
+          "population": 3282066,
+          "areaSqMi": 31304.1
+        }
+      },
+      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -693,30 +681,6 @@
           "counties": 59,
           "population": 2377378,
           "areaSqMi": 29792.86
-        }
-      },
-      {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
-        }
-      },
-      {
-        "teamId": "north-texas",
-        "teamName": "North Texas",
-        "shortName": "North Texas",
-        "fullName": "North Texas Mean Green",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 43,
-          "population": 5688205,
-          "areaSqMi": 23729.3
         }
       },
       {
@@ -732,6 +696,18 @@
         }
       },
       {
+        "teamId": "north-texas",
+        "teamName": "North Texas",
+        "shortName": "North Texas",
+        "fullName": "North Texas Mean Green",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 23,
+          "population": 4020293,
+          "areaSqMi": 12557.43
+        }
+      },
+      {
         "teamId": "james-madison",
         "teamName": "James Madison",
         "shortName": "James Madison",
@@ -741,18 +717,6 @@
           "counties": 15,
           "population": 451462,
           "areaSqMi": 5808.53
-        }
-      },
-      {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
         }
       },
       {
@@ -918,7 +882,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 21,
+    "trackedTeams": 20,
     "countyCount": 3114
   }
 }

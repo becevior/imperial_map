@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Fetch completed FBS games from CollegeFootballData and normalize results."""
+"""Fetch completed FBS games from ESPN or CollegeFootballData."""
 
 import argparse
+import json
 import os
+import subprocess
 import sys
 import time
 from collections import defaultdict
-from datetime import datetime
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 
@@ -14,9 +16,17 @@ import requests
 from dotenv import load_dotenv
 
 from lib import db
-from lib.teams import build_team_name_lookup, resolve_team_id
+from lib.teams import build_team_name_lookup, load_teams_for_season, resolve_team_id
 
 CFBD_BASE_URL = 'https://api.collegefootballdata.com/games'
+ESPN_SCOREBOARD_URL = (
+    'https://site.api.espn.com/apis/site/v2/sports/football/'
+    'college-football/scoreboard'
+)
+ESPN_FBS_GROUP = '80'
+# ESPN currently falls back to its 25-event default when limit is greater than 200.
+ESPN_PAGE_LIMIT = 200
+ESPN_REGULAR_WEEKS = 15
 DEFAULT_TIMEOUT = 20
 MAX_RETRIES = 4
 
@@ -66,6 +76,109 @@ def _fetch_games(session: requests.Session, params: Dict) -> List[Dict]:
         return response.json()
 
     raise RuntimeError('Exceeded maximum retries calling CFBD API')
+
+
+def _fetch_espn_scoreboard(session: requests.Session, params: Dict) -> Dict:
+    """Fetch one ESPN scoreboard page with the same retry policy as CFBD."""
+    for attempt in range(1, MAX_RETRIES + 1):
+        response = session.get(ESPN_SCOREBOARD_URL, params=params, timeout=DEFAULT_TIMEOUT)
+
+        if response.status_code == 429 or response.status_code >= 500:
+            time.sleep(min(2 ** attempt, 15))
+            continue
+
+        if response.status_code == 403:
+            # Akamai intermittently rejects Python's TLS fingerprint even when the
+            # same public endpoint is available. curl is present on macOS and the
+            # GitHub Actions runner and provides a reliable transport fallback.
+            return _fetch_espn_scoreboard_with_curl(params)
+
+        if not response.ok:
+            raise RuntimeError(
+                f"ESPN request failed: {response.status_code} {response.text}"
+            )
+
+        payload = response.json()
+        if not isinstance(payload, dict):
+            raise RuntimeError('ESPN returned an unexpected scoreboard payload')
+        return payload
+
+    raise RuntimeError('Exceeded maximum retries calling ESPN')
+
+
+def _fetch_espn_scoreboard_with_curl(params: Dict) -> Dict:
+    command = [
+        'curl',
+        '--fail',
+        '--silent',
+        '--show-error',
+        '--location',
+        '--max-time',
+        str(DEFAULT_TIMEOUT),
+        '--get',
+    ]
+    for key, value in params.items():
+        command.extend(['--data-urlencode', f'{key}={value}'])
+    command.append(ESPN_SCOREBOARD_URL)
+
+    try:
+        result = subprocess.run(
+            command,
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=DEFAULT_TIMEOUT + 5,
+        )
+        payload = json.loads(result.stdout)
+    except FileNotFoundError as error:
+        raise RuntimeError('ESPN fallback requires curl to be installed') from error
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired, json.JSONDecodeError) as error:
+        raise RuntimeError(f'ESPN curl fallback failed: {error}') from error
+
+    if not isinstance(payload, dict):
+        raise RuntimeError('ESPN returned an unexpected scoreboard payload')
+    return payload
+
+
+def fetch_espn_games_for_season(
+    session: requests.Session,
+    season: int,
+    season_type: str,
+    max_regular_week: Optional[int] = None,
+) -> List[Dict]:
+    """Fetch ESPN a week at a time so its event cap cannot truncate the slate."""
+    if season_type == 'regular':
+        last_week = max_regular_week or ESPN_REGULAR_WEEKS
+        weeks = range(1, min(last_week, ESPN_REGULAR_WEEKS) + 1)
+        season_type_id = 2
+    else:
+        # ESPN exposes the complete bowl slate under postseason week 1. The CFP
+        # calendar entry (999) overlaps that slate, so fetching it would duplicate games.
+        weeks = [1]
+        season_type_id = 3
+
+    events: Dict[str, Dict] = {}
+    for week in weeks:
+        payload = _fetch_espn_scoreboard(
+            session,
+            {
+                'dates': season,
+                'seasontype': season_type_id,
+                'week': week,
+                'groups': ESPN_FBS_GROUP,
+                'limit': ESPN_PAGE_LIMIT,
+            },
+        )
+
+        for event in payload.get('events') or []:
+            event_season = event.get('season') or {}
+            if int(event_season.get('year') or 0) != season:
+                continue
+            event_id = str(event.get('id') or '')
+            if event_id:
+                events[event_id] = event
+
+    return list(events.values())
 
 
 def fetch_games_for_season(
@@ -143,10 +256,76 @@ def _normalize_game(
     }
 
 
+def _resolve_espn_competitor(competitor: Dict, name_lookup: Dict[str, str]) -> Optional[str]:
+    team = competitor.get('team') or {}
+    for key in ('location', 'shortDisplayName', 'displayName', 'name'):
+        team_id = resolve_team_id(team.get(key), name_lookup)
+        if team_id:
+            return team_id
+    return None
+
+
+def _normalize_espn_game(raw: Dict, name_lookup: Dict[str, str]) -> Optional[Dict]:
+    status = (raw.get('status') or {}).get('type') or {}
+    if not status.get('completed', False):
+        return None
+
+    competitions = raw.get('competitions') or []
+    if not competitions:
+        return None
+    competition = competitions[0]
+    competitors = competition.get('competitors') or []
+    home = next((item for item in competitors if item.get('homeAway') == 'home'), None)
+    away = next((item for item in competitors if item.get('homeAway') == 'away'), None)
+    if not home or not away:
+        return None
+
+    home_id = _resolve_espn_competitor(home, name_lookup)
+    away_id = _resolve_espn_competitor(away, name_lookup)
+    if not home_id or not away_id:
+        return None
+
+    try:
+        home_points = int(float(home.get('score')))
+        away_points = int(float(away.get('score')))
+    except (TypeError, ValueError):
+        return None
+    if home_points == away_points:
+        return None
+
+    home_wins = home_points > away_points
+    start_date = raw.get('date')
+    season = raw.get('season') or {}
+    season_type_id = int(season.get('type') or 0)
+
+    return {
+        'id': raw.get('id'),
+        'season': season.get('year'),
+        'seasonType': 'postseason' if season_type_id == 3 else 'regular',
+        'week': (raw.get('week') or {}).get('number'),
+        'completed': True,
+        'startDate': start_date,
+        'neutralSite': bool(competition.get('neutralSite', False)),
+        'conferenceGame': bool(competition.get('conferenceCompetition', False)),
+        'venue': (competition.get('venue') or {}).get('fullName'),
+        'homeTeamId': home_id,
+        'awayTeamId': away_id,
+        'homeScore': home_points,
+        'awayScore': away_points,
+        'winnerId': home_id if home_wins else away_id,
+        'loserId': away_id if home_wins else home_id,
+        'sortKey': start_date,
+    }
+
+
 def normalize_games(raw_games: Iterable[Dict], name_lookup: Dict[str, str]) -> List[Dict]:
     normalized: List[Dict] = []
     for raw in raw_games:
-        game = _normalize_game(raw, name_lookup)
+        game = (
+            _normalize_espn_game(raw, name_lookup)
+            if 'competitions' in raw
+            else _normalize_game(raw, name_lookup)
+        )
         if game:
             normalized.append(game)
 
@@ -163,6 +342,53 @@ def group_games_by_week(games: Iterable[Dict]) -> Dict[int, List[Dict]]:
         entries.sort(key=lambda g: (g.get('sortKey') or '', g.get('id') or ''))
 
     return buckets
+
+
+def _game_date(game: Dict) -> Optional[date]:
+    start_date = game.get('startDate')
+    if not isinstance(start_date, str) or not start_date:
+        return None
+    try:
+        parsed = datetime.fromisoformat(start_date.replace('Z', '+00:00'))
+        if parsed.tzinfo is not None:
+            # Bowl and CFP games occur in December/January, when Eastern time is
+            # consistently UTC-5. Use the U.S. broadcast date instead of UTC.
+            parsed = parsed.astimezone(timezone(timedelta(hours=-5)))
+        return parsed.date()
+    except ValueError:
+        return None
+
+
+def partition_postseason_games(games: Iterable[Dict]) -> List[Dict]:
+    """Split ESPN's single postseason bucket into seven-day calendar windows."""
+    entries = [dict(game) for game in games]
+    dated_entries = [(game, _game_date(game)) for game in entries]
+    dates = [game_date for _, game_date in dated_entries if game_date is not None]
+    if not dates:
+        return entries
+
+    first_date = min(dates)
+    for game, game_date in dated_entries:
+        if game_date is not None:
+            game['week'] = ((game_date - first_date).days // 7) + 1
+    return entries
+
+
+def _format_postseason_label(week: int, games: List[Dict]) -> str:
+    dates = sorted(game_date for game in games if (game_date := _game_date(game)))
+    if not dates:
+        return f'Postseason Week {week}'
+
+    first_date = dates[0]
+    last_date = dates[-1]
+    first_label = f'{first_date.strftime("%b")} {first_date.day}'
+    if first_date == last_date:
+        date_range = first_label
+    elif first_date.month == last_date.month:
+        date_range = f'{first_label}–{last_date.day}'
+    else:
+        date_range = f'{first_label}–{last_date.strftime("%b")} {last_date.day}'
+    return f'Postseason · {date_range}'
 
 
 def build_timeline(
@@ -195,7 +421,7 @@ def build_timeline(
         index += 1
 
     for week in sorted(postseason_weeks.keys()):
-        label = f'Postseason Week {week}'
+        label = _format_postseason_label(week, postseason_weeks[week])
         week_path = f'/data/games/{season}/week-{index:02d}.json'
         timeline.append(
             {
@@ -233,8 +459,14 @@ def update_games_index(season: int, timeline: List[Dict]) -> None:
 
 
 def parse_args(argv: List[str]) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description='Fetch FBS game results from CFBD')
-    parser.add_argument('--season', type=int, required=True, help='Season year (e.g. 2025)')
+    parser = argparse.ArgumentParser(description='Fetch completed FBS game results')
+    parser.add_argument('--season', type=int, required=True, help='Season year (e.g. 2026)')
+    parser.add_argument(
+        '--provider',
+        choices=['espn', 'cfbd'],
+        default='espn',
+        help='Score provider (default: espn; CFBD requires CFBD_API_KEY)',
+    )
     parser.add_argument(
         '--season-type',
         choices=['regular', 'postseason', 'both'],
@@ -256,13 +488,21 @@ def main(argv: List[str]) -> int:
     api_key = _load_api_key()
     session = _get_session(api_key)
 
-    name_lookup = build_team_name_lookup()
+    name_lookup = build_team_name_lookup(load_teams_for_season(args.season))
 
     regular_games: List[Dict] = []
     postseason_games: List[Dict] = []
 
     if args.season_type in {'regular', 'both'}:
-        raw = fetch_games_for_season(session, args.season, 'regular')
+        if args.provider == 'espn':
+            raw = fetch_espn_games_for_season(
+                session,
+                args.season,
+                'regular',
+                args.max_regular_week,
+            )
+        else:
+            raw = fetch_games_for_season(session, args.season, 'regular')
         regular_games = normalize_games(raw, name_lookup)
         if args.max_regular_week is not None:
             regular_games = [
@@ -270,10 +510,14 @@ def main(argv: List[str]) -> int:
             ]
 
     if args.season_type in {'postseason', 'both'}:
-        raw = fetch_games_for_season(session, args.season, 'postseason')
+        if args.provider == 'espn':
+            raw = fetch_espn_games_for_season(session, args.season, 'postseason')
+        else:
+            raw = fetch_games_for_season(session, args.season, 'postseason')
         postseason_games = normalize_games(raw, name_lookup)
 
     regular_weeks = group_games_by_week(regular_games)
+    postseason_games = partition_postseason_games(postseason_games)
     postseason_weeks = group_games_by_week(postseason_games)
 
     timeline, reverse_lookup = build_timeline(args.season, regular_weeks, postseason_weeks)
@@ -300,12 +544,12 @@ def main(argv: List[str]) -> int:
     )
 
     print(
-        f"✅ Ingested {total_games} completed games for {args.season} "
+        f"✅ Ingested {total_games} completed games from {args.provider.upper()} for {args.season} "
         f"({len(regular_weeks)} regular weeks, {len(postseason_weeks)} postseason weeks)"
     )
 
-    if not api_key:
-        print('⚠️  CFBD_API_KEY not set; requests were unauthenticated (lower rate limits apply).')
+    if args.provider == 'cfbd' and not api_key:
+        print('⚠️  CFBD_API_KEY not set; CFBD may reject or rate-limit requests.')
 
     return 0
 
