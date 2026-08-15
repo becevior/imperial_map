@@ -1742,12 +1742,12 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   return (
     <div className={className}>
       {!loading && !error && (
-        <div className="mb-4 flex flex-col gap-3 rounded-lg border border-gray-200 bg-gray-50 p-3 lg:flex-row lg:items-center lg:justify-between">
+        <div className="im-mapbar flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
           <div className="min-w-0">
-            <p className="truncate text-sm font-semibold text-gray-800">
+            <p className="im-mapbar__title truncate">
               {currentWeekLabel}
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="im-mapbar__meta">
               {teamCount ?? '–'} teams · {countyCount ?? '–'} counties
             </p>
             {liveStatusLabel &&
@@ -1759,14 +1759,14 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
               )}
           </div>
           {(showSeasonSelect || showWeekSelect) && (
-            <div className="flex flex-wrap items-center gap-3 text-xs text-gray-700">
+            <div className="flex flex-wrap items-center gap-3">
               {showSeasonSelect && (
                 <div className="flex items-center gap-2">
-                  <span className="font-medium text-gray-600">Season</span>
+                  <span className="im-mapbar__meta">Season</span>
                   <span className="flex items-center gap-1">
                     <button
                       type="button"
-                      className="h-7 w-7 rounded border border-gray-300 bg-white text-base leading-none disabled:cursor-not-allowed disabled:opacity-35"
+                      className="im-btn im-btn--step"
                       onClick={() => moveSeason(-1)}
                       disabled={ownershipLoading || selectedSeasonPosition <= 0}
                       aria-label="Previous season"
@@ -1775,7 +1775,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                       ‹
                     </button>
                     <select
-                      className="h-7 rounded border border-gray-300 bg-white px-2"
+                      className="im-select"
                       value={selectedSeason !== null ? String(selectedSeason) : ''}
                       onChange={handleSeasonChange}
                       disabled={ownershipLoading}
@@ -1789,7 +1789,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                     </select>
                     <button
                       type="button"
-                      className="h-7 w-7 rounded border border-gray-300 bg-white text-base leading-none disabled:cursor-not-allowed disabled:opacity-35"
+                      className="im-btn im-btn--step"
                       onClick={() => moveSeason(1)}
                       disabled={
                         ownershipLoading ||
@@ -1807,11 +1807,11 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
               {showWeekSelect && (
                 <div className="flex items-center gap-2">
-                  <span className="font-medium text-gray-600">Week</span>
+                  <span className="im-mapbar__meta">Week</span>
                   <span className="flex items-center gap-1">
                     <button
                       type="button"
-                      className="h-7 w-7 rounded border border-gray-300 bg-white text-base leading-none disabled:cursor-not-allowed disabled:opacity-35"
+                      className="im-btn im-btn--step"
                       onClick={() => moveWeek(-1)}
                       disabled={ownershipLoading || selectedWeekPosition <= 0}
                       aria-label="Previous week"
@@ -1820,7 +1820,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                       ‹
                     </button>
                     <select
-                      className="h-7 max-w-48 rounded border border-gray-300 bg-white px-2"
+                      className="im-select max-w-48"
                       value={selectedWeekIndex !== null ? String(selectedWeekIndex) : ''}
                       onChange={handleWeekChange}
                       disabled={ownershipLoading}
@@ -1837,7 +1837,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                     </select>
                     <button
                       type="button"
-                      className="h-7 w-7 rounded border border-gray-300 bg-white text-base leading-none disabled:cursor-not-allowed disabled:opacity-35"
+                      className="im-btn im-btn--step"
                       onClick={() => moveWeek(1)}
                       disabled={
                         ownershipLoading ||
@@ -1856,7 +1856,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
               {weekOptions.length > 1 && (
                 <button
                   type="button"
-                  className="h-7 rounded border border-gray-300 bg-white px-3 text-xs font-medium text-gray-700 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="im-btn"
                   onClick={toggleTimelapse}
                   disabled={ownershipLoading && !isTimelapsePlaying}
                   aria-pressed={isTimelapsePlaying}
@@ -1876,31 +1876,31 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       <div className="relative">
         <div
           ref={mapContainer}
-          className="h-full w-full overflow-hidden rounded-lg"
+          className="im-map-canvas"
           style={{ minHeight: '600px' }}
         />
 
         {loading && (
-          <div className="absolute left-4 top-4 rounded-lg bg-white/90 px-3 py-2 shadow">
-            <p className="text-sm text-gray-800">Loading map data…</p>
+          <div className="im-overlay absolute left-4 top-4 px-3 py-2">
+            <p className="im-overlay__meta">Loading map data…</p>
           </div>
         )}
 
         {error && (
-          <div className="absolute left-4 top-4 rounded-lg bg-red-100 px-3 py-2 shadow">
-            <p className="text-sm text-red-800">Error: {error}</p>
+          <div className="im-overlay absolute left-4 top-4 px-3 py-2">
+            <p className="im-status--error text-sm">Error: {error}</p>
           </div>
         )}
 
         {ownershipLoading && !isTimelapsePlaying && (
-          <div className="absolute bottom-4 left-4 rounded bg-white/90 px-2 py-1 text-[11px] text-gray-600 shadow">
-            Updating ownership…
+          <div className="im-overlay absolute bottom-4 left-4 px-2 py-1">
+            <p className="im-overlay__meta">Updating ownership…</p>
           </div>
         )}
 
         {ownershipError && (
-          <div className="absolute bottom-4 left-4 rounded bg-red-100 px-2 py-1 text-[11px] text-red-700 shadow">
-            {ownershipError}
+          <div className="im-overlay absolute bottom-4 left-4 px-2 py-1">
+            <p className="im-status--error text-xs">{ownershipError}</p>
           </div>
         )}
       </div>
