@@ -4,7 +4,7 @@
   "week": 5,
   "seasonType": "regular",
   "weekLabel": "Regular Week 5",
-  "generatedAt": "2026-01-29T06:59:43.026986+00:00",
+  "generatedAt": "2026-08-14T22:23:11.830227+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -266,9 +266,9 @@
         "fullName": "Duke Blue Devils",
         "conference": "ACC",
         "metrics": {
-          "counties": 94,
-          "population": 9651387,
-          "areaSqMi": 46685.82
+          "counties": 104,
+          "population": 13992467,
+          "areaSqMi": 51494.93
         }
       },
       {
@@ -414,18 +414,6 @@
           "population": 451462,
           "areaSqMi": 5808.53
         }
-      },
-      {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
-        }
       }
     ],
     "populationControlled": [
@@ -499,6 +487,18 @@
           "counties": 140,
           "population": 14761966,
           "areaSqMi": 171205.81
+        }
+      },
+      {
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 104,
+          "population": 13992467,
+          "areaSqMi": 51494.93
         }
       },
       {
@@ -583,18 +583,6 @@
           "counties": 44,
           "population": 10312630,
           "areaSqMi": 34530.29
-        }
-      },
-      {
-        "teamId": "duke",
-        "teamName": "Duke",
-        "shortName": "Duke",
-        "fullName": "Duke Blue Devils",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 94,
-          "population": 9651387,
-          "areaSqMi": 46685.82
         }
       },
       {
@@ -727,18 +715,6 @@
           "counties": 9,
           "population": 4551049,
           "areaSqMi": 89968.73
-        }
-      },
-      {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
         }
       },
       {
@@ -972,6 +948,18 @@
         }
       },
       {
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 104,
+          "population": 13992467,
+          "areaSqMi": 51494.93
+        }
+      },
+      {
         "teamId": "missouri",
         "teamName": "Missouri",
         "shortName": "Missouri",
@@ -1017,18 +1005,6 @@
           "counties": 95,
           "population": 10824274,
           "areaSqMi": 95564.37
-        }
-      },
-      {
-        "teamId": "duke",
-        "teamName": "Duke",
-        "shortName": "Duke",
-        "fullName": "Duke Blue Devils",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 94,
-          "population": 9651387,
-          "areaSqMi": 46685.82
         }
       },
       {
@@ -1248,18 +1224,6 @@
         }
       },
       {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
-        }
-      },
-      {
         "teamId": "unlv",
         "teamName": "UNLV",
         "shortName": "UNLV",
@@ -1440,6 +1404,18 @@
           "population": 3349627,
           "areaSqMi": 29926.4
         }
+      },
+      {
+        "teamId": "duke",
+        "teamName": "Duke",
+        "shortName": "Duke",
+        "fullName": "Duke Blue Devils",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 10,
+          "population": 4341080,
+          "areaSqMi": 4809.11
+        }
       }
     ],
     "territoryLost": [
@@ -1610,11 +1586,23 @@
           "population": 3349627,
           "areaSqMi": 29926.4
         }
+      },
+      {
+        "teamId": "syracuse",
+        "teamName": "Syracuse",
+        "shortName": "Syracuse",
+        "fullName": "Syracuse Orange",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 10,
+          "population": 4341080,
+          "areaSqMi": 4809.11
+        }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 35,
+    "trackedTeams": 34,
     "countyCount": 3114
   }
 }

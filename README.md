@@ -11,7 +11,7 @@ cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python setup.py
+python setup.py --season 2026
 # Optional: calculate logo color contrast fills
 python compute_logo_colors.py
 ```
@@ -81,7 +81,7 @@ imperial-map/
 │   │       ├── teams.json           # Generated
 │   │       ├── ownership.json       # Generated
 │   │       ├── ownership/           # Weekly snapshots (optional)
-│   │       ├── games/               # CFBD results (optional)
+│   │       ├── games/               # Normalized ESPN results (optional)
 │   │       └── logo-colors.json     # Logo contrast palette (optional)
 │   ├── package.json           # Frontend dependencies
 │   ├── tsconfig.json
@@ -105,6 +105,8 @@ imperial-map/
 
 ## Features
 
+- **Complete CFP-era history (2014–present)** – season-specific FBS membership,
+  conference alignment, preseason territory, game results, and weekly snapshots.
 - **Week-by-week county ownership history** – click any county to see who owned it each week up to the current selection.
 - **Campus logo takeovers** – weekly ownership snapshots include campus logos that swap to the conquering team.
 - **Automatic color-contrast selection** – optional `compute_logo_colors.py` run balances primary and secondary colors so logos stay legible atop their territories.
@@ -114,8 +116,11 @@ imperial-map/
 ```bash
 # Backend
 cd backend
-python setup.py      # Initialize data
+python setup.py --season 2026  # Initialize the 2026 preseason baseline
 python compute_logo_colors.py  # Optional: refresh logo fill colors
+
+# Rebuild all completed CFP-era seasons from ESPN
+python build_history.py --start-season 2014 --end-season 2025
 
 # Frontend
 cd frontend

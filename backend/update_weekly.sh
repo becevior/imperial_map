@@ -37,19 +37,6 @@ if [[ -z "${VIRTUAL_ENV}" ]]; then
     fi
 fi
 
-# Check for .env file with API key
-if [ ! -f "${SCRIPT_DIR}/.env" ]; then
-    echo -e "${YELLOW}⚠️  No .env file found${NC}"
-    echo -e "Create ${SCRIPT_DIR}/.env with your CollegeFootballData API key:"
-    echo -e "  CFBD_API_KEY=your_key_here"
-    echo ""
-    read -p "Continue without API key? (may hit rate limits) [y/N]: " -n 1 -r
-    echo
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        exit 1
-    fi
-fi
-
 cd "${SCRIPT_DIR}"
 
 # Step 1: Ingest latest games
@@ -57,7 +44,7 @@ echo ""
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BLUE}Step 1: Ingesting game results${NC}"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-python ingest_games.py --season ${SEASON} --season-type both
+python ingest_games.py --season ${SEASON} --season-type both --provider espn
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}✓ Game results ingested${NC}"
 else

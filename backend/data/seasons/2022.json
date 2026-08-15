@@ -1,0 +1,664 @@
+{
+  "season": 2022,
+  "teamCount": 131,
+  "source": "ESPN season-specific FBS conference groups",
+  "sourceUrl": "https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/2022/types/2/groups/80",
+  "generatedAt": "2026-08-14T21:39:15.419836+00:00",
+  "teams": [
+    {
+      "id": "air-force",
+      "conference": "Mountain West",
+      "espnId": 2005
+    },
+    {
+      "id": "akron",
+      "conference": "MAC",
+      "espnId": 2006
+    },
+    {
+      "id": "alabama",
+      "conference": "SEC",
+      "espnId": 333
+    },
+    {
+      "id": "appalachian-state",
+      "conference": "Sun Belt",
+      "espnId": 2026
+    },
+    {
+      "id": "arizona",
+      "conference": "Pac-12",
+      "espnId": 12
+    },
+    {
+      "id": "arizona-state",
+      "conference": "Pac-12",
+      "espnId": 9
+    },
+    {
+      "id": "arkansas",
+      "conference": "SEC",
+      "espnId": 8
+    },
+    {
+      "id": "arkansas-state",
+      "conference": "Sun Belt",
+      "espnId": 2032
+    },
+    {
+      "id": "army",
+      "conference": "Independent",
+      "espnId": 349
+    },
+    {
+      "id": "auburn",
+      "conference": "SEC",
+      "espnId": 2
+    },
+    {
+      "id": "ball-state",
+      "conference": "MAC",
+      "espnId": 2050
+    },
+    {
+      "id": "baylor",
+      "conference": "Big 12",
+      "espnId": 239
+    },
+    {
+      "id": "boise-state",
+      "conference": "Mountain West",
+      "espnId": 68
+    },
+    {
+      "id": "boston-college",
+      "conference": "ACC",
+      "espnId": 103
+    },
+    {
+      "id": "bowling-green",
+      "conference": "MAC",
+      "espnId": 189
+    },
+    {
+      "id": "buffalo",
+      "conference": "MAC",
+      "espnId": 2084
+    },
+    {
+      "id": "byu",
+      "conference": "Independent",
+      "espnId": 252
+    },
+    {
+      "id": "california",
+      "conference": "Pac-12",
+      "espnId": 25
+    },
+    {
+      "id": "central-michigan",
+      "conference": "MAC",
+      "espnId": 2117
+    },
+    {
+      "id": "charlotte",
+      "conference": "CUSA",
+      "espnId": 2429
+    },
+    {
+      "id": "cincinnati",
+      "conference": "AAC",
+      "espnId": 2132
+    },
+    {
+      "id": "clemson",
+      "conference": "ACC",
+      "espnId": 228
+    },
+    {
+      "id": "coastal-carolina",
+      "conference": "Sun Belt",
+      "espnId": 324
+    },
+    {
+      "id": "colorado",
+      "conference": "Pac-12",
+      "espnId": 38
+    },
+    {
+      "id": "colorado-state",
+      "conference": "Mountain West",
+      "espnId": 36
+    },
+    {
+      "id": "connecticut",
+      "conference": "Independent",
+      "espnId": 41
+    },
+    {
+      "id": "duke",
+      "conference": "ACC",
+      "espnId": 150
+    },
+    {
+      "id": "east-carolina",
+      "conference": "AAC",
+      "espnId": 151
+    },
+    {
+      "id": "eastern-michigan",
+      "conference": "MAC",
+      "espnId": 2199
+    },
+    {
+      "id": "fiu",
+      "conference": "CUSA",
+      "espnId": 2229
+    },
+    {
+      "id": "florida",
+      "conference": "SEC",
+      "espnId": 57
+    },
+    {
+      "id": "florida-atlantic",
+      "conference": "CUSA",
+      "espnId": 2226
+    },
+    {
+      "id": "florida-state",
+      "conference": "ACC",
+      "espnId": 52
+    },
+    {
+      "id": "fresno-state",
+      "conference": "Mountain West",
+      "espnId": 278
+    },
+    {
+      "id": "georgia",
+      "conference": "SEC",
+      "espnId": 61
+    },
+    {
+      "id": "georgia-southern",
+      "conference": "Sun Belt",
+      "espnId": 290
+    },
+    {
+      "id": "georgia-state",
+      "conference": "Sun Belt",
+      "espnId": 2247
+    },
+    {
+      "id": "georgia-tech",
+      "conference": "ACC",
+      "espnId": 59
+    },
+    {
+      "id": "hawaii",
+      "conference": "Mountain West",
+      "espnId": 62
+    },
+    {
+      "id": "houston",
+      "conference": "AAC",
+      "espnId": 248
+    },
+    {
+      "id": "illinois",
+      "conference": "Big Ten",
+      "espnId": 356
+    },
+    {
+      "id": "indiana",
+      "conference": "Big Ten",
+      "espnId": 84
+    },
+    {
+      "id": "iowa",
+      "conference": "Big Ten",
+      "espnId": 2294
+    },
+    {
+      "id": "iowa-state",
+      "conference": "Big 12",
+      "espnId": 66
+    },
+    {
+      "id": "james-madison",
+      "conference": "Sun Belt",
+      "espnId": 256
+    },
+    {
+      "id": "kansas",
+      "conference": "Big 12",
+      "espnId": 2305
+    },
+    {
+      "id": "kansas-state",
+      "conference": "Big 12",
+      "espnId": 2306
+    },
+    {
+      "id": "kent-state",
+      "conference": "MAC",
+      "espnId": 2309
+    },
+    {
+      "id": "kentucky",
+      "conference": "SEC",
+      "espnId": 96
+    },
+    {
+      "id": "liberty",
+      "conference": "Independent",
+      "espnId": 2335
+    },
+    {
+      "id": "louisiana",
+      "conference": "Sun Belt",
+      "espnId": 309
+    },
+    {
+      "id": "louisiana-tech",
+      "conference": "CUSA",
+      "espnId": 2348
+    },
+    {
+      "id": "louisville",
+      "conference": "ACC",
+      "espnId": 97
+    },
+    {
+      "id": "lsu",
+      "conference": "SEC",
+      "espnId": 99
+    },
+    {
+      "id": "marshall",
+      "conference": "Sun Belt",
+      "espnId": 276
+    },
+    {
+      "id": "maryland",
+      "conference": "Big Ten",
+      "espnId": 120
+    },
+    {
+      "id": "memphis",
+      "conference": "AAC",
+      "espnId": 235
+    },
+    {
+      "id": "miami",
+      "conference": "ACC",
+      "espnId": 2390
+    },
+    {
+      "id": "miami-oh",
+      "conference": "MAC",
+      "espnId": 193
+    },
+    {
+      "id": "michigan",
+      "conference": "Big Ten",
+      "espnId": 130
+    },
+    {
+      "id": "michigan-state",
+      "conference": "Big Ten",
+      "espnId": 127
+    },
+    {
+      "id": "middle-tennessee",
+      "conference": "CUSA",
+      "espnId": 2393
+    },
+    {
+      "id": "minnesota",
+      "conference": "Big Ten",
+      "espnId": 135
+    },
+    {
+      "id": "mississippi-state",
+      "conference": "SEC",
+      "espnId": 344
+    },
+    {
+      "id": "missouri",
+      "conference": "SEC",
+      "espnId": 142
+    },
+    {
+      "id": "navy",
+      "conference": "AAC",
+      "espnId": 2426
+    },
+    {
+      "id": "nc-state",
+      "conference": "ACC",
+      "espnId": 152
+    },
+    {
+      "id": "nebraska",
+      "conference": "Big Ten",
+      "espnId": 158
+    },
+    {
+      "id": "nevada",
+      "conference": "Mountain West",
+      "espnId": 2440
+    },
+    {
+      "id": "new-mexico",
+      "conference": "Mountain West",
+      "espnId": 167
+    },
+    {
+      "id": "new-mexico-state",
+      "conference": "Independent",
+      "espnId": 166
+    },
+    {
+      "id": "north-carolina",
+      "conference": "ACC",
+      "espnId": 153
+    },
+    {
+      "id": "north-texas",
+      "conference": "CUSA",
+      "espnId": 249
+    },
+    {
+      "id": "northern-illinois",
+      "conference": "MAC",
+      "espnId": 2459
+    },
+    {
+      "id": "northwestern",
+      "conference": "Big Ten",
+      "espnId": 77
+    },
+    {
+      "id": "notre-dame",
+      "conference": "Independent",
+      "espnId": 87
+    },
+    {
+      "id": "ohio",
+      "conference": "MAC",
+      "espnId": 195
+    },
+    {
+      "id": "ohio-state",
+      "conference": "Big Ten",
+      "espnId": 194
+    },
+    {
+      "id": "oklahoma",
+      "conference": "Big 12",
+      "espnId": 201
+    },
+    {
+      "id": "oklahoma-state",
+      "conference": "Big 12",
+      "espnId": 197
+    },
+    {
+      "id": "old-dominion",
+      "conference": "Sun Belt",
+      "espnId": 295
+    },
+    {
+      "id": "ole-miss",
+      "conference": "SEC",
+      "espnId": 145
+    },
+    {
+      "id": "oregon",
+      "conference": "Pac-12",
+      "espnId": 2483
+    },
+    {
+      "id": "oregon-state",
+      "conference": "Pac-12",
+      "espnId": 204
+    },
+    {
+      "id": "penn-state",
+      "conference": "Big Ten",
+      "espnId": 213
+    },
+    {
+      "id": "pittsburgh",
+      "conference": "ACC",
+      "espnId": 221
+    },
+    {
+      "id": "purdue",
+      "conference": "Big Ten",
+      "espnId": 2509
+    },
+    {
+      "id": "rice",
+      "conference": "CUSA",
+      "espnId": 242
+    },
+    {
+      "id": "rutgers",
+      "conference": "Big Ten",
+      "espnId": 164
+    },
+    {
+      "id": "san-diego-state",
+      "conference": "Mountain West",
+      "espnId": 21
+    },
+    {
+      "id": "san-jose-state",
+      "conference": "Mountain West",
+      "espnId": 23
+    },
+    {
+      "id": "smu",
+      "conference": "AAC",
+      "espnId": 2567
+    },
+    {
+      "id": "south-alabama",
+      "conference": "Sun Belt",
+      "espnId": 6
+    },
+    {
+      "id": "south-carolina",
+      "conference": "SEC",
+      "espnId": 2579
+    },
+    {
+      "id": "south-florida",
+      "conference": "AAC",
+      "espnId": 58
+    },
+    {
+      "id": "southern-miss",
+      "conference": "Sun Belt",
+      "espnId": 2572
+    },
+    {
+      "id": "stanford",
+      "conference": "Pac-12",
+      "espnId": 24
+    },
+    {
+      "id": "syracuse",
+      "conference": "ACC",
+      "espnId": 183
+    },
+    {
+      "id": "tcu",
+      "conference": "Big 12",
+      "espnId": 2628
+    },
+    {
+      "id": "temple",
+      "conference": "AAC",
+      "espnId": 218
+    },
+    {
+      "id": "tennessee",
+      "conference": "SEC",
+      "espnId": 2633
+    },
+    {
+      "id": "texas",
+      "conference": "Big 12",
+      "espnId": 251
+    },
+    {
+      "id": "texas-a-m",
+      "conference": "SEC",
+      "espnId": 245
+    },
+    {
+      "id": "texas-state",
+      "conference": "Sun Belt",
+      "espnId": 326
+    },
+    {
+      "id": "texas-tech",
+      "conference": "Big 12",
+      "espnId": 2641
+    },
+    {
+      "id": "toledo",
+      "conference": "MAC",
+      "espnId": 2649
+    },
+    {
+      "id": "troy",
+      "conference": "Sun Belt",
+      "espnId": 2653
+    },
+    {
+      "id": "tulane",
+      "conference": "AAC",
+      "espnId": 2655
+    },
+    {
+      "id": "tulsa",
+      "conference": "AAC",
+      "espnId": 202
+    },
+    {
+      "id": "uab",
+      "conference": "CUSA",
+      "espnId": 5
+    },
+    {
+      "id": "ucf",
+      "conference": "AAC",
+      "espnId": 2116
+    },
+    {
+      "id": "ucla",
+      "conference": "Pac-12",
+      "espnId": 26
+    },
+    {
+      "id": "ulm",
+      "conference": "Sun Belt",
+      "espnId": 2433
+    },
+    {
+      "id": "umass",
+      "conference": "Independent",
+      "espnId": 113
+    },
+    {
+      "id": "unlv",
+      "conference": "Mountain West",
+      "espnId": 2439
+    },
+    {
+      "id": "usc",
+      "conference": "Pac-12",
+      "espnId": 30
+    },
+    {
+      "id": "utah",
+      "conference": "Pac-12",
+      "espnId": 254
+    },
+    {
+      "id": "utah-state",
+      "conference": "Mountain West",
+      "espnId": 328
+    },
+    {
+      "id": "utep",
+      "conference": "CUSA",
+      "espnId": 2638
+    },
+    {
+      "id": "utsa",
+      "conference": "CUSA",
+      "espnId": 2636
+    },
+    {
+      "id": "vanderbilt",
+      "conference": "SEC",
+      "espnId": 238
+    },
+    {
+      "id": "virginia",
+      "conference": "ACC",
+      "espnId": 258
+    },
+    {
+      "id": "virginia-tech",
+      "conference": "ACC",
+      "espnId": 259
+    },
+    {
+      "id": "wake-forest",
+      "conference": "ACC",
+      "espnId": 154
+    },
+    {
+      "id": "washington",
+      "conference": "Pac-12",
+      "espnId": 264
+    },
+    {
+      "id": "washington-state",
+      "conference": "Pac-12",
+      "espnId": 265
+    },
+    {
+      "id": "west-virginia",
+      "conference": "Big 12",
+      "espnId": 277
+    },
+    {
+      "id": "western-kentucky",
+      "conference": "CUSA",
+      "espnId": 98
+    },
+    {
+      "id": "western-michigan",
+      "conference": "MAC",
+      "espnId": 2711
+    },
+    {
+      "id": "wisconsin",
+      "conference": "Big Ten",
+      "espnId": 275
+    },
+    {
+      "id": "wyoming",
+      "conference": "Mountain West",
+      "espnId": 2751
+    }
+  ]
+}

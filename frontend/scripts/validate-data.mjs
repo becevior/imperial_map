@@ -32,15 +32,21 @@ function assertOwnership(ownership, teamIds, label) {
   }
 }
 
-const teams = readJson('teams.json')
-if (!Array.isArray(teams) || teams.length === 0) {
-  fail('teams.json must contain at least one team')
+function readTeamIds(relativePath) {
+  const teams = readJson(relativePath)
+  if (!Array.isArray(teams) || teams.length === 0) {
+    fail(`${relativePath} must contain at least one team`)
+  }
+
+  const teamIds = new Set(teams.map((team) => team?.id).filter(Boolean))
+  if (teamIds.size !== teams.length) {
+    fail(`${relativePath} contains missing or duplicate team IDs`)
+  }
+
+  return { teams, teamIds }
 }
 
-const teamIds = new Set(teams.map((team) => team?.id).filter(Boolean))
-if (teamIds.size !== teams.length) {
-  fail('teams.json contains missing or duplicate team IDs')
-}
+const { teams, teamIds } = readTeamIds('teams.json')
 
 assertOwnership(readJson('ownership.json'), teamIds, 'ownership.json')
 
@@ -55,6 +61,8 @@ for (const season of ownershipIndex.seasons) {
     fail('each ownership season must have a numeric season and at least one week')
   }
 
+  const { teamIds: seasonTeamIds } = readTeamIds(`teams/${season.season}.json`)
+
   for (const week of season.weeks) {
     if (!Number.isInteger(week?.weekIndex) || typeof week.path !== 'string') {
       fail(`season ${season.season} contains an invalid week entry`)
@@ -67,7 +75,7 @@ for (const season of ownershipIndex.seasons) {
 
     assertOwnership(
       readJson(week.path.slice(prefix.length)),
-      teamIds,
+      seasonTeamIds,
       `season ${season.season} week ${week.weekIndex}`
     )
     snapshotCount += 1

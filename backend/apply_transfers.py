@@ -170,7 +170,7 @@ def save_weekly_logos(season: int, week_index: int, logos: List[Dict]) -> None:
     db.save_json(f'ownership/{season}/week-{week_index:02d}-logos.json', logos)
 
 
-def update_ownership_index(season: int, weeks: List[Dict]) -> None:
+def update_ownership_index(season: int, weeks: List[Dict], team_count: int) -> None:
     data_dir = db.get_data_dir()
     index_path = data_dir / 'ownership' / 'index.json'
 
@@ -185,7 +185,7 @@ def update_ownership_index(season: int, weeks: List[Dict]) -> None:
         season_entry for season_entry in seasons if season_entry.get('season') != season
     ]
 
-    seasons.append({'season': season, 'weeks': weeks})
+    seasons.append({'season': season, 'teamCount': team_count, 'weeks': weeks})
     seasons.sort(key=lambda entry: entry.get('season'))
     index_payload['seasons'] = seasons
 
@@ -195,13 +195,24 @@ def update_ownership_index(season: int, weeks: List[Dict]) -> None:
 def main(argv: Optional[Iterable[str]] = None) -> int:
     args = parse_args(argv)
 
-    ownership = db.load_ownership()
+    try:
+        ownership = db.load_json(f'ownership/{args.season}/week-00.json')
+    except FileNotFoundError as error:
+        raise ValueError(
+            f'No {args.season} baseline found. Run setup.py --season {args.season} first.'
+        ) from error
     baseline_ownership = dict(ownership)  # Keep baseline for territory calculations
     team_to_fips = build_team_reverse_index(ownership)
 
     # Load teams and baseline centroids for territory logo calculation
-    teams = db.load_teams()
-    baseline_centroids = db.load_json('territory-centroids.json')
+    try:
+        teams = db.load_json(f'teams/{args.season}.json')
+    except FileNotFoundError:
+        teams = db.load_teams()
+    try:
+        baseline_centroids = db.load_json(f'territory-centroids/{args.season}.json')
+    except FileNotFoundError:
+        baseline_centroids = db.load_json('territory-centroids.json')
     county_stats = load_county_stats()
 
     timeline = load_games_timeline(args.season)
@@ -294,7 +305,7 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
         new_transfers.extend(transfers)
 
     if not args.dry_run:
-        update_ownership_index(args.season, season_weeks)
+        update_ownership_index(args.season, season_weeks, len(teams))
         if new_transfers:
             # Deduplicate transfers to prevent duplicate entries from multiple runs
             all_transfers = deduplicate_transfers(existing_transfers + new_transfers)

@@ -76,7 +76,10 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
 
     week_entry = load_week_metadata(args.season, args.week_index)
     ownership = resolve_ownership_snapshot(week_entry)
-    teams = db.load_teams()
+    try:
+        teams = db.load_json(f'teams/{args.season}.json')
+    except FileNotFoundError:
+        teams = db.load_teams()
     county_stats = load_county_stats()
     transfers = load_transfers_for_week(args.season, int(week_entry.get('weekIndex', 0)))
 

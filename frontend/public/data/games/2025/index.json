@@ -108,17 +108,38 @@
     },
     {
       "weekIndex": 16,
-      "seasonType": "regular",
-      "week": 16,
-      "label": "Regular Week 16",
+      "seasonType": "postseason",
+      "week": 1,
+      "label": "Postseason \u00b7 Dec 13\u201319",
       "path": "/data/games/2025/week-16.json"
     },
     {
       "weekIndex": 17,
       "seasonType": "postseason",
-      "week": 1,
-      "label": "Postseason Week 1",
+      "week": 2,
+      "label": "Postseason \u00b7 Dec 20\u201326",
       "path": "/data/games/2025/week-17.json"
+    },
+    {
+      "weekIndex": 18,
+      "seasonType": "postseason",
+      "week": 3,
+      "label": "Postseason \u00b7 Dec 27\u2013Jan 2",
+      "path": "/data/games/2025/week-18.json"
+    },
+    {
+      "weekIndex": 19,
+      "seasonType": "postseason",
+      "week": 4,
+      "label": "Postseason \u00b7 Jan 8\u20139",
+      "path": "/data/games/2025/week-19.json"
+    },
+    {
+      "weekIndex": 20,
+      "seasonType": "postseason",
+      "week": 6,
+      "label": "Postseason \u00b7 Jan 19",
+      "path": "/data/games/2025/week-20.json"
     }
   ]
 }

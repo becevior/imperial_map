@@ -260,7 +260,7 @@ export default function DashboardContent({
           </p>
         </div>
 
-        {loading ? (
+        {loading && !leaderboards?.leaderboards ? (
           <div className="bg-white rounded-lg shadow-lg p-6 text-center text-sm text-gray-500">
             Loading leaderboard data…
           </div>
@@ -269,7 +269,12 @@ export default function DashboardContent({
             {error}
           </div>
         ) : leaderboards?.leaderboards ? (
-          <div className="grid gap-6 md:grid-cols-2">
+          <div
+            className={`grid gap-6 transition-opacity duration-300 md:grid-cols-2 ${
+              loading ? 'opacity-60' : 'opacity-100'
+            }`}
+            aria-busy={loading}
+          >
             {cards.map((card) => (
               <Fragment key={card.title}>
                 {renderLeaderboard(

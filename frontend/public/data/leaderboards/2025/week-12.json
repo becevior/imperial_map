@@ -4,7 +4,7 @@
   "week": 12,
   "seasonType": "regular",
   "weekLabel": "Regular Week 12",
-  "generatedAt": "2026-01-29T06:59:43.100875+00:00",
+  "generatedAt": "2026-08-14T22:23:11.904486+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -140,6 +140,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
+        }
+      },
+      {
         "teamId": "fresno-state",
         "teamName": "Fresno State",
         "shortName": "Fresno State",
@@ -161,18 +173,6 @@
           "counties": 134,
           "population": 4242471,
           "areaSqMi": 88974.48
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
         }
       },
       {
@@ -200,6 +200,18 @@
         }
       },
       {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 64,
+          "population": 3282066,
+          "areaSqMi": 31304.1
+        }
+      },
+      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -221,18 +233,6 @@
           "counties": 52,
           "population": 12110296,
           "areaSqMi": 24041.86
-        }
-      },
-      {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -260,18 +260,6 @@
         }
       },
       {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 20,
-          "population": 1667912,
-          "areaSqMi": 11171.88
-        }
-      },
-      {
         "teamId": "james-madison",
         "teamName": "James Madison",
         "shortName": "James Madison",
@@ -281,18 +269,6 @@
           "counties": 15,
           "population": 451462,
           "areaSqMi": 5808.53
-        }
-      },
-      {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
         }
       }
     ],
@@ -346,6 +322,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
+        }
+      },
+      {
         "teamId": "arizona-state",
         "teamName": "Arizona State",
         "shortName": "Arizona State",
@@ -379,18 +367,6 @@
           "counties": 91,
           "population": 16834547,
           "areaSqMi": 161352.3
-        }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
         }
       },
       {
@@ -490,18 +466,6 @@
         }
       },
       {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
-        }
-      },
-      {
         "teamId": "notre-dame",
         "teamName": "Notre Dame",
         "shortName": "Notre Dame",
@@ -538,6 +502,18 @@
         }
       },
       {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 64,
+          "population": 3282066,
+          "areaSqMi": 31304.1
+        }
+      },
+      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -547,30 +523,6 @@
           "counties": 59,
           "population": 2377378,
           "areaSqMi": 29792.86
-        }
-      },
-      {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 20,
-          "population": 1667912,
-          "areaSqMi": 11171.88
-        }
-      },
-      {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -678,9 +630,9 @@
         "fullName": "Miami Hurricanes",
         "conference": "ACC",
         "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
         }
       },
       {
@@ -768,6 +720,18 @@
         }
       },
       {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 64,
+          "population": 3282066,
+          "areaSqMi": 31304.1
+        }
+      },
+      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -789,18 +753,6 @@
           "counties": 52,
           "population": 12110296,
           "areaSqMi": 24041.86
-        }
-      },
-      {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -828,18 +780,6 @@
         }
       },
       {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 20,
-          "population": 1667912,
-          "areaSqMi": 11171.88
-        }
-      },
-      {
         "teamId": "james-madison",
         "teamName": "James Madison",
         "shortName": "James Madison",
@@ -849,18 +789,6 @@
           "counties": 15,
           "population": 451462,
           "areaSqMi": 5808.53
-        }
-      },
-      {
-        "teamId": "connecticut",
-        "teamName": "Connecticut",
-        "shortName": "Connecticut",
-        "fullName": "Connecticut Huskies",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 10,
-          "population": 4341080,
-          "areaSqMi": 4809.11
         }
       },
       {
@@ -908,9 +836,9 @@
         "fullName": "Miami Hurricanes",
         "conference": "ACC",
         "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
         }
       },
       {
@@ -948,6 +876,18 @@
           "population": 2377378,
           "areaSqMi": 29792.86
         }
+      },
+      {
+        "teamId": "connecticut",
+        "teamName": "Connecticut",
+        "shortName": "Connecticut",
+        "fullName": "Connecticut Huskies",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 44,
+          "population": 1614154,
+          "areaSqMi": 20132.23
+        }
       }
     ],
     "territoryLost": [
@@ -982,9 +922,9 @@
         "fullName": "NC State Wolfpack",
         "conference": "ACC",
         "metrics": {
-          "counties": 140,
-          "population": 16578913,
-          "areaSqMi": 88113.63
+          "counties": 150,
+          "population": 20919993,
+          "areaSqMi": 92922.74
         }
       },
       {
@@ -1022,11 +962,23 @@
           "population": 2377378,
           "areaSqMi": 29792.86
         }
+      },
+      {
+        "teamId": "air-force",
+        "teamName": "Air Force",
+        "shortName": "Air Force",
+        "fullName": "Air Force Falcons",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 44,
+          "population": 1614154,
+          "areaSqMi": 20132.23
+        }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 24,
+    "trackedTeams": 22,
     "countyCount": 3114
   }
 }

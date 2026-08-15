@@ -45,14 +45,13 @@
 **File:** `.github/workflows/update-territories.yml`
 
 **Schedule:**
-- **Off-season:** Intentionally disabled. Use `workflow_dispatch` for an audited
-  manual run.
-- **In season:** Re-enable the commented schedule after validating a manual run
-  with the new season. The workflow serializes runs so overlapping game-day jobs
-  cannot write competing snapshots.
+- **Saturdays:** Runs every hour (handles game day activity)
+- **Sunday-Friday:** Runs daily, with hourly updates through Sunday morning UTC
+- The workflow serializes runs so overlapping game-day jobs cannot write
+  competing snapshots.
 
 **What it does:**
-1. Fetches latest game results from CollegeFootballData API
+1. Fetches latest game results from ESPN's public scoreboard
 2. Applies territory transfers based on game outcomes
 3. Computes weekly leaderboards
 4. Commits and pushes changes to `frontend/public/data/`
@@ -66,12 +65,7 @@ Go to: Actions → Update Territories → Run workflow
 
 ### Required Secrets
 
-Set these in GitHub repository settings (`Settings` → `Secrets and variables` → `Actions`):
-
-- **`CFBD_API_KEY`** - Your CollegeFootballData.com API key
-  - Get one at: https://collegefootballdata.com
-  - Required for fetching game results
-  - Free tier available
+No score-provider secret is required for the default ESPN ingestion path.
 
 ## Manual Updates (Development)
 
@@ -79,7 +73,7 @@ Set these in GitHub repository settings (`Settings` → `Secrets and variables` 
 
 ```bash
 cd backend
-./update_weekly.sh 2025
+./update_weekly.sh 2026
 ```
 
 This script:
@@ -96,13 +90,13 @@ cd backend
 source venv/bin/activate
 
 # 2. Fetch game results
-python ingest_games.py --season 2025 --season-type both
+python ingest_games.py --season 2026 --season-type both --provider espn
 
 # 3. Apply territory transfers
-python apply_transfers.py --season 2025
+python apply_transfers.py --season 2026
 
 # 4. Compute leaderboards
-python compute_leaderboards.py --season 2025
+python compute_leaderboards.py --season 2026
 
 # 5. Review changes
 cd ..
@@ -120,9 +114,9 @@ git push
 
 | Script | Purpose | Frequency |
 |--------|---------|-----------|
-| `ingest_games.py` | Fetch game results from CFBD API | Manual off-season; scheduled in season |
-| `apply_transfers.py` | Apply territory transfers based on games | Manual off-season; scheduled in season |
-| `compute_leaderboards.py` | Generate weekly rankings | Manual off-season; scheduled in season |
+| `ingest_games.py` | Fetch game results from ESPN | Automated (hourly Sat, daily weekdays) |
+| `apply_transfers.py` | Apply territory transfers based on games | Automated (hourly Sat, daily weekdays) |
+| `compute_leaderboards.py` | Generate weekly rankings | Automated (hourly Sat, daily weekdays) |
 
 ### Maintenance Scripts
 
@@ -139,9 +133,7 @@ git push
 
 - [ ] Fork/clone repository
 - [ ] Set up Python environment: `cd backend && python3 -m venv venv && pip install -r requirements.txt`
-- [ ] Get CFBD API key from https://collegefootballdata.com
-- [ ] Add `CFBD_API_KEY` to GitHub Secrets
-- [ ] Run initial setup: `python setup.py`
+- [ ] Run season setup: `python setup.py --season 2026`
 - [ ] Compute logo colors: `python compute_logo_colors.py`
 - [ ] Deploy to Vercel:
   - Connect GitHub repository
@@ -197,14 +189,13 @@ git push
 - Normal if no games have been played
 - Check if games were actually played that week
 
-**API rate limit:**
-- Add `CFBD_API_KEY` to GitHub Secrets
-- Free tier: 200 requests/hour
+**ESPN request failed:**
+- Confirm `curl` is installed; the ingester uses it as a transport fallback when ESPN rejects Python TLS clients
 
 **Workflow failed:**
 1. Check workflow logs in GitHub Actions
 2. Look for Python errors
-3. Run manually to debug: `./update_weekly.sh 2025`
+3. Run manually to debug: `./update_weekly.sh 2026`
 
 ## Cost Breakdown
 
@@ -212,22 +203,13 @@ git push
 |---------|------|-------|
 | Vercel | $0 | Free tier (static site) |
 | GitHub Actions | $0 | 2,000 minutes/month free |
-| CFBD API | $0 | Free tier sufficient |
+| ESPN scoreboard | $0 | Public, no key required |
 | **Total** | **$0/month** | 🎉 |
 
 ## Environment Variables
 
-### Local Development (`.env`)
-
-Create `backend/.env`:
-```bash
-CFBD_API_KEY=your_api_key_here
-```
-
-### Production (GitHub Secrets)
-
-Set in GitHub repository settings:
-- `CFBD_API_KEY` - CollegeFootballData API key
+No environment variable is required for ESPN. `CFBD_API_KEY` is only used with
+the optional `--provider cfbd` compatibility path.
 
 ## Vercel Configuration
 
@@ -278,20 +260,20 @@ cd backend
 source venv/bin/activate
 
 # Dry run to preview changes
-python apply_transfers.py --season 2025 --dry-run
+python apply_transfers.py --season 2026 --dry-run
 
 # Check specific week
-python ingest_games.py --season 2025 --season-type regular
+python ingest_games.py --season 2026 --season-type regular --provider espn
 ```
 
 ### Verify data files
 
 ```bash
 # Check latest ownership
-cat frontend/public/data/ownership/2025/index.json | jq
+cat frontend/public/data/ownership/index.json | jq
 
 # Check leaderboards
-ls -la frontend/public/data/leaderboards/2025/
+ls -la frontend/public/data/leaderboards/2026/
 
 # Validate JSON
 jq empty frontend/public/data/teams.json
@@ -301,4 +283,4 @@ jq empty frontend/public/data/teams.json
 
 - **Documentation:** See `backend/README.md` for script details
 - **Issues:** https://github.com/becevior/imperial_map/issues
-- **CFBD API:** https://api.collegefootballdata.com/api/docs
+- **ESPN ingestion details:** See `backend/README.md`

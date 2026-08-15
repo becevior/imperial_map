@@ -1,14 +1,13 @@
 name: Update Territories
 
 on:
-  # Off-season: schedules are intentionally disabled. Re-enable and test these before Week 0.
+  # In-season cadence: hourly on game day and daily for late finals/corrections.
   schedule:
-    # Hourly on Saturdays 10am-11pm PST (6pm-11pm UTC Saturday)
-    # - cron: '0 18-23 * * 6'  # Saturday 6pm-11pm UTC (10am-3pm PST)
-    # Continue hourly through 2am PST (12am-10am UTC Sunday)
-    # - cron: '0 0-10 * * 0'  # Sunday 12am-10am UTC (4pm Sat - 2am Sun PST)
-    # Daily at 6 AM UTC (10 PM PST) on other weekdays
-    # - cron: '0 6 * * 1-5'  # Monday-Friday at 6 AM UTC
+    # Hourly through the main Saturday game window (UTC).
+    - cron: '0 16-23 * * 6'
+    - cron: '0 0-10 * * 0'
+    # Daily refresh on weekdays for late finals and schedule corrections.
+    - cron: '0 10 * * 1-5'
 
   # Allow manual trigger with season parameter
   workflow_dispatch:
@@ -98,7 +97,7 @@ jobs:
 
           # Saturday game day: Saturday 6pm UTC onwards OR Sunday before 10am UTC
           # This covers 10am PST Saturday through 2am PST Sunday
-          if [ "$DAY" -eq 6 ] && [ "$HOUR" -ge 18 ]; then
+          if [ "$DAY" -eq 6 ] && [ "$HOUR" -ge 16 ]; then
             echo "is_saturday=true" >> $GITHUB_OUTPUT
             echo "📅 Saturday game day window (late Saturday UTC) - running hourly update"
           elif [ "$DAY" -eq 7 ] && [ "$HOUR" -le 10 ]; then
@@ -110,16 +109,10 @@ jobs:
           fi
 
       - name: Ingest game results
-        env:
-          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: |
-          if [ -z "$CFBD_API_KEY" ]; then
-            echo "::error::CFBD_API_KEY is required for production updates."
-            exit 1
-          fi
           cd backend
           echo "🏈 Fetching game results for season $EFFECTIVE_SEASON..."
-          python ingest_games.py --season $EFFECTIVE_SEASON --season-type both
+          python ingest_games.py --season $EFFECTIVE_SEASON --season-type both --provider espn
           echo "✓ Game results ingested"
 
       - name: Apply territory transfers
