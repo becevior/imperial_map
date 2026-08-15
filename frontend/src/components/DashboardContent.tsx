@@ -3,7 +3,7 @@
 import { Fragment, useCallback, useMemo, useRef, useState } from 'react'
 
 import Map from '@/components/Map'
-import RetroTickerMarquee from '@/components/RetroTickerMarquee'
+import ScoreTicker from '@/components/ScoreTicker'
 import { trackEvent } from '@/lib/analytics'
 import type { PreviousWeekScores } from '@/lib/scoreTicker'
 import type {
@@ -20,7 +20,7 @@ const shortNumberFormatter = new Intl.NumberFormat('en-US', {
 
 function formatMetric(metric: keyof LeaderboardMetrics, value: number): string {
   if (metric === 'areaSqMi') {
-    return `${shortNumberFormatter.format(value)} sq mi`
+    return shortNumberFormatter.format(value)
   }
 
   return numberFormatter.format(value)
@@ -57,35 +57,34 @@ function renderLeaderboard(
   const safeEntries = Array.isArray(entries) ? entries : []
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-4">
-      <h3 className="text-lg font-semibold text-gray-900 mb-3">{title}</h3>
-      {safeEntries.length === 0 ? (
-        <p className="text-sm text-gray-500">No data recorded for this selection.</p>
-      ) : (
-        <div className="max-h-80 overflow-y-auto pr-1">
-          <ol className="divide-y divide-gray-100">
-            {safeEntries.map((entry, index) => (
-              <li key={entry.teamId} className="py-3 first:pt-0 last:pb-0">
-                <div className="flex items-baseline justify-between gap-4 text-sm sm:text-base">
-                  <span className="font-medium text-gray-900">
-                    {index + 1}. {entry.teamName}
+    <div className="im-panel">
+      <div className="im-panel__label">{title}</div>
+      <div className="im-panel__body im-panel__body--scroll">
+        {safeEntries.length === 0 ? (
+          <p className="im-status">No data recorded for this selection.</p>
+        ) : (
+          <table className="im-table">
+            <tbody>
+              {safeEntries.map((entry, index) => (
+                <tr key={entry.teamId} className={index === 0 ? 'is-leader' : undefined}>
+                  <td className="rank">{index + 1}</td>
+                  <td>
+                    <span className="team">{entry.teamName}</span>
                     {entry.conference ? (
-                      <span className="ml-2 text-xs text-gray-400">{entry.conference}</span>
+                      <span className="conf">{entry.conference}</span>
                     ) : null}
-                  </span>
-                  <span className="font-semibold text-gray-800">
+                    <span className="meta">{describeMetrics(entry.metrics, omit)}</span>
+                  </td>
+                  <td className="num">
                     {formatMetric(primaryMetric, entry.metrics[primaryMetric])}{' '}
-                    <span className="text-xs text-gray-500">{primaryLabel}</span>
-                  </span>
-                </div>
-                <p className="text-xs text-gray-500 mt-1">
-                  {describeMetrics(entry.metrics, omit)}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      )}
+                    <span className="unit">{primaryLabel}</span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </div>
     </div>
   )
 }
@@ -196,21 +195,21 @@ export default function DashboardContent({
   const cards = useMemo(
     () => [
       {
-        title: 'Most Territory Gained (Counties)',
+        title: 'Most Territory Gained',
         data: leaderboards?.leaderboards?.territoryGained,
         metric: 'counties' as const,
         label: 'counties',
         omit: 'counties' as const
       },
       {
-        title: 'Most Territory Lost (Counties)',
+        title: 'Most Territory Lost',
         data: leaderboards?.leaderboards?.territoryLost,
         metric: 'counties' as const,
         label: 'counties',
         omit: 'counties' as const
       },
       {
-        title: 'Most Territory Owned (Area)',
+        title: 'Most Territory Owned',
         data: leaderboards?.leaderboards?.territoryOwned,
         metric: 'areaSqMi' as const,
         label: 'sq mi',
@@ -234,43 +233,66 @@ export default function DashboardContent({
     [leaderboards]
   )
 
+  const hudLeader = leaderboards?.leaderboards?.countiesOwned?.[0]
+  const hudPopulation = leaderboards?.leaderboards?.populationControlled?.[0]
+  const topGain = leaderboards?.leaderboards?.territoryGained?.[0]
+
   return (
     <>
-      <div className="bg-white rounded-lg shadow-lg p-6">
-        <Map className="min-h-[600px]" onWeekChange={handleWeekChange} />
+      {hudLeader || hudPopulation ? (
+        <div className="im-hud">
+          {hudLeader ? (
+            <span className="im-hud__leader">
+              Leader: {hudLeader.teamName}{' '}
+              {numberFormatter.format(hudLeader.metrics.counties)}
+            </span>
+          ) : null}
+          {hudPopulation ? (
+            <span className="im-hud__hi">
+              Hi score: {numberFormatter.format(hudPopulation.metrics.population)} pop
+            </span>
+          ) : null}
+          <span className="im-hud__wk">{activeWeekLabel}</span>
+        </div>
+      ) : null}
+
+      <div className="im-panel im-panel--map">
+        <div className="im-panel__label">Field view — continental situation</div>
+        <div className="im-panel__body">
+          <Map className="min-h-[600px]" onWeekChange={handleWeekChange} />
+        </div>
       </div>
 
       {ticker ? (
-        <section className="mt-8 space-y-3">
-          <RetroTickerMarquee
-            games={ticker.games}
-            label={`${ticker.label} - Season ${ticker.season}`}
-          />
-        </section>
+        <ScoreTicker
+          games={ticker.games}
+          label={`${ticker.label} - Season ${ticker.season}`}
+        />
       ) : null}
 
-      <section className="mt-10">
-        <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-4">
-          <h2 className="text-2xl font-semibold text-gray-900">
-            Weekly Leaderboards
-          </h2>
-          <p className="text-sm text-gray-500">
+      {topGain && topGain.metrics.counties > 0 ? (
+        <p className="im-dispatch">
+          {topGain.teamName.toUpperCase()} SEIZES{' '}
+          {numberFormatter.format(topGain.metrics.counties)} COUNTIES
+        </p>
+      ) : null}
+
+      <section>
+        <div className="im-section-head">
+          <h2 className="im-section-title">Weekly Leaderboards</h2>
+          <p className="im-section-sub">
             {activeWeekLabel}
             {leaderboards?.season ? ` · Season ${leaderboards.season}` : ''}
           </p>
         </div>
 
         {loading && !leaderboards?.leaderboards ? (
-          <div className="bg-white rounded-lg shadow-lg p-6 text-center text-sm text-gray-500">
-            Loading leaderboard data…
-          </div>
+          <div className="im-status">Loading leaderboard data…</div>
         ) : error ? (
-          <div className="bg-white rounded-lg shadow-lg p-6 text-center text-sm text-gray-500">
-            {error}
-          </div>
+          <div className="im-status">{error}</div>
         ) : leaderboards?.leaderboards ? (
           <div
-            className={`grid gap-6 transition-opacity duration-300 md:grid-cols-2 ${
+            className={`im-grid-cards transition-opacity duration-300 ${
               loading ? 'opacity-60' : 'opacity-100'
             }`}
             aria-busy={loading}
@@ -288,7 +310,7 @@ export default function DashboardContent({
             ))}
           </div>
         ) : (
-          <div className="bg-white rounded-lg shadow-lg p-6 text-center text-sm text-gray-500">
+          <div className="im-status">
             Leaderboard data is not available for this selection yet.
           </div>
         )}

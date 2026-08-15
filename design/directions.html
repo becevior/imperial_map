@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imperial Map — Design Directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&family=Big+Shoulders+Stencil+Text:wght@600;800&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  /* ================= neutral shell (not a direction, just the gallery) ================= */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #202124;
+    color: #e8eaed;
+    font: 14px/1.5 -apple-system, "Segoe UI", sans-serif;
+    padding-bottom: 6rem;
+  }
+  .shell-intro {
+    max-width: 900px;
+    margin: 3rem auto 1rem;
+    padding: 0 1.5rem;
+  }
+  .shell-intro h1 { font-size: 1.4rem; font-weight: 600; }
+  .shell-intro p { color: #9aa0a6; margin-top: .5rem; max-width: 65ch; }
+  .spec {
+    max-width: 900px;
+    margin: 4rem auto 1rem;
+    padding: 0 1.5rem;
+  }
+  .spec .dir-num { color: #9aa0a6; font-size: .8rem; letter-spacing: .15em; }
+  .spec h2 { font-size: 1.2rem; font-weight: 600; margin-top: .25rem; }
+  .spec p { color: #9aa0a6; margin: .5rem 0 .75rem; max-width: 70ch; }
+  .spec .sig { color: #e8eaed; }
+  .spec .sig strong { font-weight: 600; }
+  .swatches { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .75rem; }
+  .swatch {
+    display: flex; align-items: center; gap: .4rem;
+    font-size: .72rem; color: #9aa0a6;
+  }
+  .swatch i { width: 18px; height: 18px; border-radius: 3px; display: inline-block; border: 1px solid rgba(255,255,255,.2); }
+  .tile { max-width: 960px; margin: 1.25rem auto 0; border: 1px solid #3c4043; }
+
+  /* =====================================================================
+     01 — TECMO SATURDAY
+     ===================================================================== */
+  .t1 {
+    background: #0b1020;
+    color: #f8f8f8;
+    font-family: "Silkscreen", monospace;
+    position: relative;
+    padding: 0 0 28px;
+    image-rendering: pixelated;
+  }
+  .t1::after { /* scanlines over everything */
+    content: "";
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(transparent 0 2px, rgba(4, 12, 40, .35) 2px 3px);
+    pointer-events: none;
+    z-index: 5;
+  }
+  .t1-field {
+    background:
+      repeating-linear-gradient(to right, rgba(255,255,255,.7) 0 2px, transparent 2px 64px),
+      repeating-linear-gradient(to bottom, rgba(255,255,255,.04) 0 8px, rgba(0,0,0,.08) 8px 16px),
+      linear-gradient(180deg, #0e6b2e, #0a4d22);
+    border-bottom: 4px solid #f8f8f8;
+    padding: 26px 16px 20px;
+    text-align: center;
+  }
+  .t1-title {
+    font-family: "Press Start 2P", monospace;
+    font-size: 26px;
+    letter-spacing: .1em;
+    color: #f8f8f8;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  }
+  .t1-title .gold { color: #fcc400; }
+  .t1-kick {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #fcc400;
+    letter-spacing: .2em;
+  }
+  .t1-kick .blink { animation: t1blink 1s steps(2, end) infinite; }
+  @keyframes t1blink { 50% { opacity: 0; } }
+  .t1-hud {
+    display: flex; justify-content: space-between; align-items: center;
+    background: #000;
+    border-bottom: 4px solid #2b66ff;
+    padding: 8px 14px;
+    font-size: 12px;
+    letter-spacing: .12em;
+  }
+  .t1-hud .p1 { color: #ff5d5d; }
+  .t1-hud .hi { color: #fcc400; }
+  .t1-hud .wk { color: #7ec8ff; }
+  .t1-cols {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 22px;
+    padding: 22px 18px 0;
+  }
+  @media (max-width: 720px) { .t1-cols { grid-template-columns: 1fr; } }
+  .t1-panel {
+    border: 4px solid #f8f8f8;
+    box-shadow: 0 0 0 4px #2b66ff, 8px 8px 0 rgba(0,0,0,.6);
+    background: #060a18;
+  }
+  .t1-panel-label {
+    background: #f8f8f8; color: #0b1020;
+    font-family: "Press Start 2P", monospace;
+    font-size: 9px;
+    padding: 6px 8px 5px;
+    letter-spacing: .15em;
+  }
+  .t1-map { padding: 12px; }
+  .t1-map-grid { display: grid; gap: 1px; width: 100%; }
+  .t1-map-grid i { display: block; width: 100%; aspect-ratio: 1; }
+  .t1-stats { font-size: 13px; }
+  .t1-stats table { width: 100%; border-collapse: collapse; }
+  .t1-stats td { padding: 7px 10px 5px; border-bottom: 2px solid #14203f; letter-spacing: .06em; }
+  .t1-stats tr:first-child td { color: #fcc400; }
+  .t1-stats .rank { color: #7ec8ff; width: 2.5em; }
+  .t1-stats .num { text-align: right; color: #fcc400; font-family: "VT323", monospace; font-size: 19px; }
+  .t1-stats tr:first-child .cursor::before {
+    content: "►"; color: #ff5d5d; margin-right: 6px;
+    animation: t1blink 0.9s steps(2, end) infinite;
+  }
+  .t1-ctrl {
+    display: flex; gap: 14px; align-items: center; justify-content: center;
+    margin: 26px 0 4px;
+    position: relative; z-index: 6;
+  }
+  .t1-btn {
+    font-family: "Press Start 2P", monospace;
+    font-size: 10px;
+    color: #f8f8f8;
+    background: #2b66ff;
+    border: 3px solid #f8f8f8;
+    box-shadow: 4px 4px 0 #000;
+    padding: 9px 12px 8px;
+    cursor: pointer;
+  }
+  .t1-btn:active { transform: translate(4px, 4px); box-shadow: none; }
+  .t1-week {
+    font-family: "Press Start 2P", monospace;
+    font-size: 11px; color: #fcc400; letter-spacing: .1em;
+  }
+  .t1-ticker {
+    margin-top: 22px;
+    background: #000;
+    border-top: 4px solid #fcc400;
+    border-bottom: 4px solid #fcc400;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t1-ticker span {
+    display: inline-block;
+    padding: 8px 0 6px;
+    font-family: "VT323", monospace;
+    font-size: 22px;
+    color: #fcc400;
+    letter-spacing: .08em;
+    animation: t1scroll 28s linear infinite;
+  }
+  @keyframes t1scroll { from { transform: translateX(20%); } to { transform: translateX(-100%); } }
+  .t1-dispatch {
+    text-align: center;
+    margin-top: 18px;
+    font-family: "Press Start 2P", monospace;
+    font-size: 10px;
+    color: #ff5d5d;
+    letter-spacing: .12em;
+  }
+
+  /* =====================================================================
+     02 — SATURDAY TELETEXT
+     ===================================================================== */
+  .t2 {
+    background: #000;
+    font-family: "VT323", monospace;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.25;
+    padding: 18px 0 30px;
+  }
+  .t2 .inner { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+  .t2-head {
+    display: flex; justify-content: space-between;
+    color: #fff;
+  }
+  .t2-head .pageno { color: #33ff33; }
+  .t2-title {
+    margin-top: 10px;
+    color: #ffb000;
+    font-size: 30px;
+    transform: scaleY(1.7);
+    transform-origin: top left;
+    letter-spacing: .02em;
+  }
+  .t2-subtitle { margin-top: 30px; color: #00ffff; }
+  .t2-rule { color: #2222ff; letter-spacing: -1px; overflow: hidden; white-space: nowrap; }
+  .t2-mosaic { margin: 14px 0 4px; }
+  .t2-mosaic-grid { display: grid; gap: 0; width: 100%; max-width: 560px; }
+  .t2-mosaic-grid i { display: block; width: 100%; aspect-ratio: 1 / 0.85; }
+  .t2-caption { color: #ffb000; }
+  .t2 table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+  .t2 th { text-align: left; color: #33ff33; font-weight: 400; padding: 0 8px 2px 0; }
+  .t2 td { padding: 1px 8px 1px 0; }
+  .t2 td.num { color: #00ffff; text-align: right; }
+  .t2 tr.leader td { color: #ffb000; }
+  .t2-ticker { background: #2222ff; color: #fff; padding: 2px 8px; margin-top: 16px; white-space: nowrap; overflow: hidden; }
+  .t2-fastext {
+    display: flex; justify-content: space-between; gap: 8px;
+    margin-top: 22px; text-align: center;
+  }
+  .t2-fastext a { flex: 1; text-decoration: none; padding: 2px 4px 0; font-size: 20px; }
+  .t2-fastext .red { background: #ff0000; color: #fff; }
+  .t2-fastext .green { background: #33ff33; color: #000; }
+  .t2-fastext .yellow { background: #ffb000; color: #000; }
+  .t2-fastext .cyan { background: #00ffff; color: #000; }
+  .t2 .flicker { animation: t2flicker 4s steps(1) infinite; }
+  @keyframes t2flicker { 0%, 96% { opacity: 1; } 97% { opacity: .4; } 98% { opacity: 1; } 99% { opacity: .6; } }
+
+  /* =====================================================================
+     03 — THE CONQUEST LEDGER
+     ===================================================================== */
+  .t3 {
+    background:
+      repeating-linear-gradient(0deg, transparent 0 34px, rgba(74, 74, 47, .08) 34px 35px),
+      repeating-linear-gradient(90deg, transparent 0 34px, rgba(74, 74, 47, .08) 34px 35px),
+      radial-gradient(ellipse at 70% 20%, rgba(158, 43, 37, .05), transparent 50%),
+      #d8cdaa;
+    color: #241f17;
+    font-family: "Special Elite", "Courier New", monospace;
+    padding: 34px 26px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .t3-masthead { text-align: center; position: relative; }
+  .t3-masthead .over {
+    font-size: 13px; letter-spacing: .35em; color: #4a4a2f;
+  }
+  .t3-masthead h1 {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-weight: 800;
+    font-size: 54px;
+    letter-spacing: .04em;
+    color: #241f17;
+    line-height: 1;
+    margin-top: 6px;
+  }
+  .t3-masthead .under {
+    font-size: 12px; letter-spacing: .18em; color: #4a4a2f; margin-top: 8px;
+  }
+  .t3-stamp {
+    position: absolute; top: -6px; right: 8px;
+    transform: rotate(8deg);
+    border: 3px double #9e2b25;
+    color: #9e2b25;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: .18em;
+    padding: 6px 10px 4px;
+    opacity: .85;
+  }
+  .t3-cols { display: grid; grid-template-columns: 1.3fr 1fr; gap: 26px; margin-top: 30px; }
+  @media (max-width: 720px) { .t3-cols { grid-template-columns: 1fr; } }
+  .t3-map {
+    border: 2px solid #241f17;
+    background: #e4dabb;
+    box-shadow: 3px 3px 0 rgba(36, 31, 23, .25);
+    position: relative;
+  }
+  .t3-map-label {
+    position: absolute; top: 10px; left: 10px;
+    font-size: 11px; letter-spacing: .25em; color: #4a4a2f;
+  }
+  .t3-map svg { display: block; width: 100%; height: auto; }
+  .t3-dispatch {
+    background: #eee5c9;
+    border: 1px solid #b3a67f;
+    border-left: 6px solid #9e2b25;
+    padding: 16px 18px;
+    font-size: 14.5px;
+    box-shadow: 3px 3px 0 rgba(36, 31, 23, .18);
+  }
+  .t3-dispatch .head {
+    font-size: 11px; letter-spacing: .3em; color: #9e2b25; margin-bottom: 10px;
+  }
+  .t3-table { margin-top: 22px; }
+  .t3-table h3 {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-weight: 800; font-size: 22px; letter-spacing: .1em;
+    border-bottom: 3px double #241f17;
+    padding-bottom: 4px;
+  }
+  .t3-table table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .t3-table td { padding: 8px 6px 2px; border-bottom: 1px dashed #b3a67f; vertical-align: baseline; }
+  .t3-table .rank { color: #9e2b25; width: 2em; }
+  .t3-table .num { text-align: right; font-size: 15px; }
+  .t3-table tr.captured { position: relative; }
+  .t3-table .cap-stamp {
+    color: #9e2b25; border: 2px solid #9e2b25;
+    font-family: "Big Shoulders Stencil Text", sans-serif; font-weight: 800;
+    font-size: 10px; letter-spacing: .2em; padding: 1px 5px 0;
+    transform: rotate(-4deg); display: inline-block; margin-left: 8px;
+  }
+  .t3-tabs { display: flex; gap: 4px; margin-top: 30px; align-items: flex-end; }
+  .t3-tab {
+    background: #cfc19a; border: 1px solid #b3a67f; border-bottom: none;
+    font-size: 12px; letter-spacing: .12em;
+    padding: 6px 14px 4px;
+    color: #4a4a2f;
+    cursor: pointer;
+  }
+  .t3-tab.active {
+    background: #eee5c9; color: #241f17;
+    padding-bottom: 8px;
+    border-top: 3px solid #9e2b25;
+  }
+  .t3-tabline { border-bottom: 1px solid #b3a67f; margin-top: -1px; }
+
+  /* =====================================================================
+     04 — GRIDIRON GEOCITIES
+     ===================================================================== */
+  .t4 {
+    background: #000066 url("data:image/gif;base64,") repeat;
+    background-image:
+      radial-gradient(circle at 10px 10px, rgba(255,255,255,.25) 1px, transparent 1.5px),
+      radial-gradient(circle at 40px 34px, rgba(255,255,255,.18) 1px, transparent 1.5px);
+    background-size: 60px 48px;
+    padding: 26px 12px 34px;
+    font-family: "Times New Roman", Times, serif;
+    color: #000;
+  }
+  .t4-page {
+    max-width: 760px; margin: 0 auto;
+    background: #c0c0c0;
+    border: 4px outset #eee;
+    padding: 14px;
+  }
+  .t4-mast {
+    text-align: center;
+    background: #000;
+    border: 3px ridge #ffff00;
+    padding: 14px 8px;
+  }
+  .t4-mast h1 {
+    font-size: 34px; font-weight: bold; font-style: italic;
+    background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33ff33, #00ccff, #cc66ff);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    letter-spacing: .01em;
+  }
+  .t4-mast .balls { font-size: 22px; display: inline-block; animation: t4spin 2.2s linear infinite; }
+  @keyframes t4spin { to { transform: rotate(360deg); } }
+  .t4-mast .tag { color: #ffff00; font-size: 14px; margin-top: 6px; }
+  .t4-mast .tag .new {
+    background: #ff0000; color: #fff; font-weight: bold; font-size: 11px;
+    padding: 1px 5px; margin-right: 6px;
+    animation: t4blink .8s steps(2, end) infinite;
+  }
+  @keyframes t4blink { 50% { opacity: 0; } }
+  .t4-marquee {
+    margin-top: 10px;
+    border: 3px inset #888;
+    background: #000;
+    color: #33ff33;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 0;
+    overflow: hidden; white-space: nowrap;
+  }
+  .t4-marquee span { display: inline-block; animation: t1scroll 24s linear infinite; }
+  .t4-body { margin-top: 12px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 12px; }
+  @media (max-width: 720px) { .t4-body { grid-template-columns: 1fr; } }
+  .t4-mapbox {
+    background: #fff; border: 2px inset #888; padding: 8px; text-align: center;
+  }
+  .t4-mapbox img, .t4-mapbox .fake-map { width: 100%; }
+  .t4-mapbox .cap { font-size: 12px; color: #333; margin-top: 4px; }
+  .t4-standings { background: #fff; border: 2px inset #888; padding: 8px; }
+  .t4-standings table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .t4-standings th { background: #000080; color: #ffff00; padding: 4px 6px; text-align: left; font-size: 12px; }
+  .t4-standings td { border: 1px solid #999; padding: 4px 6px; }
+  .t4-standings tr:nth-child(even) td { background: #e6e6fa; }
+  .t4-btnrow { text-align: center; margin-top: 12px; }
+  .t4-btn {
+    font-family: Verdana, sans-serif; font-size: 12px; font-weight: bold;
+    background: #c0c0c0; border: 3px outset #eee;
+    padding: 5px 14px; cursor: pointer; margin: 0 4px;
+  }
+  .t4-btn:active { border-style: inset; }
+  .t4-counter {
+    text-align: center; margin-top: 14px; color: #fff; font-family: Verdana, sans-serif; font-size: 11px;
+  }
+  .t4-counter .digits {
+    font-family: "Courier New", monospace; font-weight: bold;
+    background: #000; color: #33ff33; border: 2px inset #666;
+    padding: 2px 6px; letter-spacing: 3px; font-size: 15px;
+  }
+  .t4-footer {
+    text-align: center; font-family: Verdana, sans-serif; font-size: 11px;
+    color: #ffff00; margin-top: 12px;
+  }
+  .t4-footer a { color: #00ffff; }
+  .t4-construction {
+    margin-top: 10px;
+    background: repeating-linear-gradient(45deg, #ffcc00 0 12px, #000 12px 24px);
+    color: #fff; text-align: center;
+    font-family: Verdana, sans-serif; font-weight: bold; font-size: 12px;
+    padding: 3px 0; text-shadow: 1px 1px 2px #000;
+  }
+
+  /* quality floor */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+  button:focus-visible, a:focus-visible { outline: 3px solid #ffb000; outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<div class="shell-intro">
+  <h1>Imperial Map — four design directions</h1>
+  <p>Each tile below is a mini-mock of the real page (masthead, map, standings, week control, ticker,
+  and how a territory change gets announced) using actual Postseason Week 1 data. The gray chrome
+  around the tiles is just this gallery — everything inside a tile is the direction.</p>
+</div>
+
+<!-- ============================ 01 ============================ -->
+<div class="spec">
+  <div class="dir-num">DIRECTION 01</div>
+  <h2>Tecmo Saturday</h2>
+  <p>Full commitment to what the banner already started: the whole site is an NES sports cartridge.
+  The map is the playfield, leaderboards are the post-game stats screen, the week selector is a
+  START-menu control. Hard-step shadows, 4px chrome borders, scanlines, sprite-step motion only.</p>
+  <p class="sig"><strong>Signature:</strong> every panel is a "screen" — white+blue double bezel, Press Start 2P labels, blinking ► cursor on the leader.</p>
+  <div class="swatches">
+    <span class="swatch"><i style="background:#0b1020"></i>#0B1020 night</span>
+    <span class="swatch"><i style="background:#0e6b2e"></i>#0E6B2E turf</span>
+    <span class="swatch"><i style="background:#f8f8f8"></i>#F8F8F8 chalk</span>
+    <span class="swatch"><i style="background:#fcc400"></i>#FCC400 score gold</span>
+    <span class="swatch"><i style="background:#2b66ff"></i>#2B66FF P1 blue</span>
+    <span class="swatch"><i style="background:#f83800"></i>#F83800 P2 red</span>
+    <span class="swatch">Press Start 2P / Silkscreen / VT323</span>
+  </div>
+</div>
+<div class="tile t1">
+  <div class="t1-field">
+    <div class="t1-title">IMPERIAL <span class="gold">MAP</span></div>
+    <div class="t1-kick">SEASON 2025 · POSTSEASON WK 1 <span class="blink">▮</span></div>
+  </div>
+  <div class="t1-hud">
+    <span class="p1">LEADER: INDIANA 1813</span>
+    <span class="hi">HI SCORE: 205,189,094 POP</span>
+    <span class="wk">WK 17/17</span>
+  </div>
+  <div class="t1-cols">
+    <div class="t1-panel">
+      <div class="t1-panel-label">FIELD VIEW — 3143 COUNTIES</div>
+      <div class="t1-map"><div class="t1-map-grid" id="t1map"></div></div>
+    </div>
+    <div class="t1-panel t1-stats">
+      <div class="t1-panel-label">POST GAME STATS</div>
+      <table>
+        <tr><td class="rank">1</td><td class="cursor">INDIANA</td><td class="num">1,813</td></tr>
+        <tr><td class="rank">2</td><td>UTAH</td><td class="num">245</td></tr>
+        <tr><td class="rank">3</td><td>WASHINGTON</td><td class="num">228</td></tr>
+        <tr><td class="rank">4</td><td>SMU</td><td class="num">220</td></tr>
+        <tr><td class="rank">5</td><td>NOTRE DAME</td><td class="num">208</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="t1-ctrl">
+    <button class="t1-btn">◀</button>
+    <span class="t1-week">SELECT WEEK: POSTSEASON 1</span>
+    <button class="t1-btn">▶</button>
+  </div>
+  <div class="t1-ticker"><span>INDIANA 34 OHIO STATE 27 ··· TEXAS 21 SMU 17 ··· WASHINGTON 31 UTAH 28 ··· NOTRE DAME 24 GEORGIA 20 ··· INDIANA 34 OHIO STATE 27 ··· TEXAS 21 SMU 17</span></div>
+  <div class="t1-dispatch">!! CONQUEST !! INDIANA SEIZES 214 COUNTIES</div>
+</div>
+
+<!-- ============================ 02 ============================ -->
+<div class="spec">
+  <div class="dir-num">DIRECTION 02</div>
+  <h2>Saturday Teletext</h2>
+  <p>The site as a broadcast text service — Ceefax crossed with the ESPN BottomLine. Pure black,
+  phosphor amber/green/cyan, one mono font at two sizes, standings as agate score tables, the map
+  drawn in block mosaics. Data-dense and fast, like checking scores on channel 888 in 1983.</p>
+  <p class="sig"><strong>Signature:</strong> fastext color-key navigation (red/green/yellow/cyan) and numbered pages — MAP P100, STANDINGS P200, SCORES P300.</p>
+  <div class="swatches">
+    <span class="swatch"><i style="background:#000"></i>#000000 broadcast black</span>
+    <span class="swatch"><i style="background:#ffb000"></i>#FFB000 amber</span>
+    <span class="swatch"><i style="background:#33ff33"></i>#33FF33 green</span>
+    <span class="swatch"><i style="background:#00ffff"></i>#00FFFF cyan</span>
+    <span class="swatch"><i style="background:#2222ff"></i>#2222FF service blue</span>
+    <span class="swatch">VT323 only</span>
+  </div>
+</div>
+<div class="tile t2">
+  <div class="inner flicker">
+    <div class="t2-head"><span><span class="pageno">P100</span> CFB IMPERIAL</span><span>SAT 14 AUG 19:42/03</span></div>
+    <div class="t2-title">IMPERIAL MAP</div>
+    <div class="t2-subtitle">TERRITORIAL CONTROL — POSTSEASON WK 1</div>
+    <div class="t2-rule">▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔</div>
+    <div class="t2-mosaic"><div class="t2-mosaic-grid" id="t2map"></div></div>
+    <div class="t2-caption">CONTINENTAL SITUATION. 136 PROGRAMS. WINNER TAKES ALL.</div>
+    <table>
+      <tr><th>&nbsp;</th><th>PROGRAM</th><th style="text-align:right">CTY</th><th style="text-align:right">POP</th><th style="text-align:right">SQ MI</th></tr>
+      <tr class="leader"><td>1</td><td>INDIANA</td><td class="num">1813</td><td class="num">205.2M</td><td class="num">1559589</td></tr>
+      <tr><td>2</td><td>UTAH</td><td class="num">245</td><td class="num">16.5M</td><td class="num">181542</td></tr>
+      <tr><td>3</td><td>WASHINGTON</td><td class="num">228</td><td class="num">24.1M</td><td class="num">311778</td></tr>
+      <tr><td>4</td><td>SMU</td><td class="num">220</td><td class="num">20.8M</td><td class="num">334607</td></tr>
+      <tr><td>5</td><td>NOTRE DAME</td><td class="num">208</td><td class="num">16.2M</td><td class="num">215627</td></tr>
+    </table>
+    <div class="t2-ticker">INDIANA 34 OHIO STATE 27 · TEXAS 21 SMU 17 · WASHINGTON 31 UTAH 28 · NOTRE DAME 24 GEORGIA 20</div>
+    <div class="t2-fastext">
+      <a class="red" href="#">MAP 100</a>
+      <a class="green" href="#">STANDINGS 200</a>
+      <a class="yellow" href="#">SCORES 300</a>
+      <a class="cyan" href="#">HISTORY 400</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ 03 ============================ -->
+<div class="spec">
+  <div class="dir-num">DIRECTION 03</div>
+  <h2>The Conquest Ledger</h2>
+  <p>Leans into the imperialism instead of the arcade: a war-room campaign map. Khaki field paper,
+  stencil headlines, typewriter dispatches, grease-pencil red for every territorial change. The
+  weekly update reads like a wire telegram from the front. Zero glow, zero pixels — all ink.</p>
+  <p class="sig"><strong>Signature:</strong> conquests announced as typewritten FLASH dispatches with rotated CAPTURED stamps; the week selector is a manila file-tab row.</p>
+  <div class="swatches">
+    <span class="swatch"><i style="background:#d8cdaa"></i>#D8CDAA field paper</span>
+    <span class="swatch"><i style="background:#241f17"></i>#241F17 ink</span>
+    <span class="swatch"><i style="background:#4a4a2f"></i>#4A4A2F olive drab</span>
+    <span class="swatch"><i style="background:#9e2b25"></i>#9E2B25 grease pencil</span>
+    <span class="swatch"><i style="background:#2d4a66"></i>#2D4A66 map blue</span>
+    <span class="swatch">Big Shoulders Stencil / Special Elite</span>
+  </div>
+</div>
+<div class="tile t3">
+  <div class="t3-masthead">
+    <div class="over">COLLEGE FOOTBALL TERRITORIAL COMMAND</div>
+    <h1>THE CONQUEST LEDGER</h1>
+    <div class="under">136 PROGRAMS · 3,143 COUNTIES · WINNER TAKES ALL</div>
+    <div class="t3-stamp">POSTSEASON — WK 1</div>
+  </div>
+  <div class="t3-cols">
+    <div>
+      <div class="t3-map">
+        <span class="t3-map-label">SITUATION MAP № 17</span>
+        <svg viewBox="0 0 420 260" role="img" aria-label="Stylized campaign map with front lines and advance arrows">
+          <rect width="420" height="260" fill="#e4dabb"/>
+          <path d="M30 80 Q 60 40 130 46 Q 210 30 300 44 Q 370 40 395 78 L 388 150 Q 400 190 360 218 L 300 236 Q 240 250 170 232 Q 90 240 55 200 Q 20 160 30 80 Z" fill="#cfc19a" stroke="#4a4a2f" stroke-width="2"/>
+          <path d="M150 50 Q 180 120 165 225" fill="none" stroke="#241f17" stroke-width="2" stroke-dasharray="7 5"/>
+          <text x="230" y="130" font-family="'Big Shoulders Stencil Text',sans-serif" font-weight="800" font-size="26" fill="#9e2b25" opacity="0.85">INDIANA</text>
+          <text x="60" y="120" font-family="'Big Shoulders Stencil Text',sans-serif" font-weight="800" font-size="14" fill="#2d4a66" opacity="0.9">UTAH</text>
+          <text x="52" y="76" font-family="'Big Shoulders Stencil Text',sans-serif" font-weight="800" font-size="12" fill="#2d4a66" opacity="0.9">WASH.</text>
+          <text x="98" y="205" font-family="'Big Shoulders Stencil Text',sans-serif" font-weight="800" font-size="13" fill="#4a4a2f">TEXAS</text>
+          <path d="M215 145 q -35 18 -60 45" fill="none" stroke="#9e2b25" stroke-width="4" stroke-linecap="round"/>
+          <path d="M162 182 l -12 12 l 18 2 z" fill="#9e2b25"/>
+          <path d="M250 110 q 40 -25 85 -18" fill="none" stroke="#9e2b25" stroke-width="4" stroke-linecap="round"/>
+          <path d="M328 88 l 16 4 l -10 14 z" fill="#9e2b25"/>
+          <circle cx="238" cy="122" r="5" fill="#9e2b25" stroke="#241f17" stroke-width="1.5"/>
+          <circle cx="82" cy="106" r="5" fill="#2d4a66" stroke="#241f17" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="t3-tabs">
+        <span class="t3-tab">WK 14</span>
+        <span class="t3-tab">WK 15</span>
+        <span class="t3-tab">WK 16</span>
+        <span class="t3-tab active">POSTSEASON 1</span>
+      </div>
+      <div class="t3-tabline"></div>
+    </div>
+    <div>
+      <div class="t3-dispatch">
+        <div class="head">★ FLASH — WIRE DISPATCH · 14 AUG 2026 ★</div>
+        BLOOMINGTON COMMAND REPORTS: 214 COUNTIES SEIZED ALONG THE
+        OHIO VALLEY FRONT. COLUMBUS HAS FALLEN. RESISTANCE COLLAPSING
+        EASTWARD TO THE ATLANTIC. — END —
+      </div>
+      <div class="t3-table">
+        <h3>ORDER OF BATTLE</h3>
+        <table>
+          <tr class="captured"><td class="rank">I</td><td>Indiana <span class="cap-stamp">ADVANCING</span></td><td class="num">1,813 cty</td></tr>
+          <tr><td class="rank">II</td><td>Utah</td><td class="num">245 cty</td></tr>
+          <tr><td class="rank">III</td><td>Washington</td><td class="num">228 cty</td></tr>
+          <tr><td class="rank">IV</td><td>SMU</td><td class="num">220 cty</td></tr>
+          <tr><td class="rank">V</td><td>Notre Dame</td><td class="num">208 cty</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ 04 ============================ -->
+<div class="spec">
+  <div class="dir-num">DIRECTION 04</div>
+  <h2>Gridiron GeoCities</h2>
+  <p>The 1996 fan-shrine your score marquee already wants to live on. Silver page on a starfield,
+  outset bevel buttons, rainbow gradient headline, a real hit counter, a web ring in the footer.
+  Deliberately kitsch — the joke is the point, and the data tables underneath it stay honest.</p>
+  <p class="sig"><strong>Signature:</strong> live hit counter + web ring footer + "best viewed in 800×600" — artifacts nobody ships anymore.</p>
+  <div class="swatches">
+    <span class="swatch"><i style="background:#000066"></i>#000066 starfield navy</span>
+    <span class="swatch"><i style="background:#c0c0c0"></i>#C0C0C0 silver</span>
+    <span class="swatch"><i style="background:#ffff00"></i>#FFFF00 yellow</span>
+    <span class="swatch"><i style="background:#ff0000"></i>#FF0000 red</span>
+    <span class="swatch"><i style="background:#33ff33"></i>#33FF33 LED green</span>
+    <span class="swatch">Times New Roman / Verdana / Courier</span>
+  </div>
+</div>
+<div class="tile t4">
+  <div class="t4-page">
+    <div class="t4-mast">
+      <h1><span class="balls">🏈</span> College Football IMPERIAL MAP <span class="balls">🏈</span></h1>
+      <div class="tag"><span class="new">NEW!</span>Updated every Saturday nite — Winner Takes ALL the counties!!</div>
+    </div>
+    <div class="t4-marquee"><span>*** WELCOME FOOTBALL FANS *** INDIANA 34 OHIO STATE 27 *** TEXAS 21 SMU 17 *** WASHINGTON 31 UTAH 28 *** NOTRE DAME 24 GEORGIA 20 *** SIGN THE GUESTBOOK ***</span></div>
+    <div class="t4-body">
+      <div class="t4-mapbox">
+        <div class="fake-map"><div class="t1-map-grid" id="t4map" style="gap:0"></div></div>
+        <div class="cap">~ click a county to see who owns it!! ~</div>
+      </div>
+      <div class="t4-standings">
+        <table>
+          <tr><th>#</th><th>Team</th><th>Counties</th><th>Population</th></tr>
+          <tr><td>1</td><td><b>Indiana</b> 👑</td><td>1,813</td><td>205,189,094</td></tr>
+          <tr><td>2</td><td>Utah</td><td>245</td><td>16,543,394</td></tr>
+          <tr><td>3</td><td>Washington</td><td>228</td><td>24,061,427</td></tr>
+          <tr><td>4</td><td>SMU</td><td>220</td><td>20,822,306</td></tr>
+          <tr><td>5</td><td>Notre Dame</td><td>208</td><td>16,203,843</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="t4-btnrow">
+      <button class="t4-btn">« Prev Week</button>
+      <button class="t4-btn">Postseason Wk 1</button>
+      <button class="t4-btn">Next Week »</button>
+    </div>
+    <div class="t4-construction">🚧 HISTORY PAGE UNDER CONSTRUCTION 🚧</div>
+  </div>
+  <div class="t4-counter">You are visitor number <span class="digits">00137420</span> since Aug 2025</div>
+  <div class="t4-footer">
+    [ <a href="#">⟨ Prev</a> | <a href="#">CFB Web Ring</a> | <a href="#">Next ⟩</a> ] · <a href="#">Sign my Guestbook!</a><br>
+    Best viewed in Netscape Navigator at 800×600
+  </div>
+</div>
+
+<script>
+  // One coarse US-shaped grid template shared by the pixel-map placeholders.
+  // Letters = owning team, "." = water/empty.
+  const MAP_ROWS = [
+    "wwww.....................nn.",
+    "wwwwwwuu......iiiiiiiiiinnnn",
+    "wwwwwuuu..iiiiiiiiiiiiiinnn.",
+    ".uuuuuuuiiiiiiiiiiiiiiiii...",
+    ".uuuuuuuiiiiiiiiiiiiiiii....",
+    "..uuuuutttssiiiiiiiiiiii....",
+    "..uuuttttssssiiiiiiiiii.....",
+    "...ttttttsss.iiiiiiiii......",
+    "...tttttss...iiiiiii........",
+    "....ttttt.......iiiii.......",
+    ".....ttt.........iiii.......",
+    "......tt..........iii.......",
+    "...................ii......."
+  ];
+
+  // team colors per direction (i=Indiana, u=Utah, w=Washington, s=SMU, t=Texas, n=Notre Dame)
+  const PALETTES = {
+    t1map: { i: "#c81c34", u: "#d13138", w: "#6a4c9c", s: "#2b66ff", t: "#f88030", n: "#f2c94c", ".": "#060a18" },
+    t2map: { i: "#ff0000", u: "#ffb000", w: "#cc66ff", s: "#2222ff", t: "#ff8800", n: "#ffff00", ".": "#000000" },
+    t4map: { i: "#cc0000", u: "#dd4444", w: "#663399", s: "#0000cc", t: "#ff6600", n: "#ffcc00", ".": "#ffffff" }
+  };
+
+  for (const [id, palette] of Object.entries(PALETTES)) {
+    const el = document.getElementById(id);
+    if (!el) continue;
+    el.style.gridTemplateColumns = `repeat(${MAP_ROWS[0].length}, 1fr)`;
+    el.innerHTML = MAP_ROWS.join("").split("")
+      .map(ch => `<i style="background:${palette[ch] || palette["."]}"></i>`)
+      .join("");
+  }
+</script>
+</body>
+</html>
