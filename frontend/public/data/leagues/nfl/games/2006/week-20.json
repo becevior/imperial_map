@@ -1,0 +1,40 @@
+[
+  {
+    "id": "270121003",
+    "season": 2006,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2007-01-21T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Soldier Field",
+    "homeTeamId": "chicago-bears",
+    "awayTeamId": "new-orleans-saints",
+    "homeScore": 39,
+    "awayScore": 14,
+    "outcome": "home-win",
+    "winnerId": "chicago-bears",
+    "loserId": "new-orleans-saints"
+  },
+  {
+    "id": "270121011",
+    "season": 2006,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2007-01-21T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": null,
+    "homeTeamId": "indianapolis-colts",
+    "awayTeamId": "new-england-patriots",
+    "homeScore": 38,
+    "awayScore": 34,
+    "outcome": "home-win",
+    "winnerId": "indianapolis-colts",
+    "loserId": "new-england-patriots"
+  }
+]

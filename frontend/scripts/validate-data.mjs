@@ -112,3 +112,74 @@ for (const key of ['ownershipPath', 'logosPath', 'leaderboardPath']) {
 }
 
 console.log(`Validated ${teams.length} teams and ${snapshotCount} ownership snapshots.`)
+
+function validateNamespacedLeague(leagueId) {
+  const base = `leagues/${leagueId}`
+  const { teams: leagueTeams, teamIds: leagueTeamIds } = readTeamIds(
+    `${base}/teams-all.json`
+  )
+  assertOwnership(
+    readJson(`${base}/ownership.json`),
+    leagueTeamIds,
+    `${leagueId} baseline ownership`
+  )
+
+  const index = readJson(`${base}/ownership/index.json`)
+  if (!Array.isArray(index?.seasons) || index.seasons.length === 0) {
+    fail(`${leagueId} ownership index must contain a season`)
+  }
+
+  let leagueSnapshotCount = 0
+  for (const season of index.seasons) {
+    const { teamIds: seasonTeamIds } = readTeamIds(
+      `${base}/teams/${season.season}.json`
+    )
+    if (!Array.isArray(season.weeks) || season.weeks.length === 0) {
+      fail(`${leagueId} ${season.season} must contain at least one period`)
+    }
+
+    for (const week of season.weeks) {
+      if (!Number.isInteger(week?.weekIndex) || typeof week.path !== 'string') {
+        fail(`${leagueId} ${season.season} contains an invalid period`)
+      }
+      if (!week.path.startsWith(`/data/${base}/ownership/`)) {
+        fail(`${leagueId} period ${week.weekIndex} escapes its ownership namespace`)
+      }
+      assertOwnership(
+        readJson(week.path.slice('/data/'.length)),
+        seasonTeamIds,
+        `${leagueId} ${season.season} period ${week.weekIndex}`
+      )
+      readJson(
+        week.path.slice('/data/'.length).replace('.json', '-logos.json')
+      )
+      readJson(
+        `${base}/leaderboards/${season.season}/week-${String(week.weekIndex).padStart(2, '0')}.json`
+      )
+      leagueSnapshotCount += 1
+    }
+  }
+
+  const manifest = readJson(`${base}/live.json`)
+  for (const key of ['ownershipPath', 'logosPath', 'leaderboardPath']) {
+    const dataPath = manifest[key]
+    if (typeof dataPath !== 'string' || !dataPath.startsWith(`/data/${base}/`)) {
+      fail(`${leagueId} live manifest has an invalid ${key}`)
+    }
+    readJson(dataPath.slice('/data/'.length))
+  }
+
+  console.log(
+    `Validated ${leagueId}: ${leagueTeams.length} teams and ${leagueSnapshotCount} ownership snapshots.`
+  )
+}
+
+const catalogPath = path.join(dataDirectory, 'catalog.json')
+if (fs.existsSync(catalogPath)) {
+  const catalog = readJson('catalog.json')
+  for (const league of catalog.leagues || []) {
+    if (league?.id && league.id !== 'cfb' && league.status !== 'hidden') {
+      validateNamespacedLeague(league.id)
+    }
+  }
+}

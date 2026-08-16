@@ -1,0 +1,40 @@
+[
+  {
+    "id": "340119007",
+    "season": 2013,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2014-01-19T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Empower Field at Mile High",
+    "homeTeamId": "denver-broncos",
+    "awayTeamId": "new-england-patriots",
+    "homeScore": 26,
+    "awayScore": 16,
+    "outcome": "home-win",
+    "winnerId": "denver-broncos",
+    "loserId": "new-england-patriots"
+  },
+  {
+    "id": "340119026",
+    "season": 2013,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2014-01-19T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Lumen Field",
+    "homeTeamId": "seattle-seahawks",
+    "awayTeamId": "san-francisco-49ers",
+    "homeScore": 23,
+    "awayScore": 17,
+    "outcome": "home-win",
+    "winnerId": "seattle-seahawks",
+    "loserId": "san-francisco-49ers"
+  }
+]

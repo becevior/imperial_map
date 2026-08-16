@@ -1,0 +1,40 @@
+[
+  {
+    "id": "240118017",
+    "season": 2003,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2004-01-18T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": null,
+    "homeTeamId": "new-england-patriots",
+    "awayTeamId": "indianapolis-colts",
+    "homeScore": 24,
+    "awayScore": 14,
+    "outcome": "home-win",
+    "winnerId": "new-england-patriots",
+    "loserId": "indianapolis-colts"
+  },
+  {
+    "id": "240118021",
+    "season": 2003,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2004-01-18T23:45Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": null,
+    "homeTeamId": "philadelphia-eagles",
+    "awayTeamId": "carolina-panthers",
+    "homeScore": 3,
+    "awayScore": 14,
+    "outcome": "away-win",
+    "winnerId": "carolina-panthers",
+    "loserId": "philadelphia-eagles"
+  }
+]

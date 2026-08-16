@@ -52,6 +52,35 @@ them from ESPN's season-specific FBS conference groups, run:
 python sync_season_memberships.py --start-season 2014 --end-season 2026
 ```
 
+### `build_nfl.py` - Build NFL History
+
+Build NFL history from 2000 through the latest completed season into its own static
+data namespace:
+
+```bash
+python build_nfl.py --start-season 2000 --end-season 2025
+
+# A single season also works
+python build_nfl.py --season 2025
+```
+
+The builder:
+
+1. Merges ESPN branding with checked-in, season-aware franchise identities and
+   home-base coordinates (31 teams in 2000–01; 32 from 2002 onward).
+2. Assigns the existing U.S. county geography to the nearest franchise.
+3. Reads ESPN's historical calendar and fetches every regular-season week and the
+   four competitive playoff rounds.
+4. Excludes the Pro Bowl because its AFC/NFC all-star teams do not own territory.
+5. Replays final games, treating a tie as no transfer.
+6. Writes games, ownership snapshots, logo markers, leaderboards, and a live manifest
+   under `frontend/public/data/leagues/nfl/`.
+
+The configuration preserves the Oakland/Las Vegas, St. Louis/Los Angeles, San
+Diego/Los Angeles, and Washington naming eras. The Giants/Jets and modern
+Rams/Chargers use distinct franchise home-base coordinates rather than shared stadium
+coordinates so every team begins with territory.
+
 ### `ingest_games.py` - Fetch Game Results
 
 Download completed FBS games from ESPN's public scoreboard and normalize them for later processing:

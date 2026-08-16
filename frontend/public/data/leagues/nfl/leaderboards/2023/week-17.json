@@ -1,0 +1,156 @@
+{
+  "season": 2023,
+  "weekIndex": 17,
+  "week": 17,
+  "seasonType": "regular",
+  "weekLabel": "Week 17",
+  "generatedAt": "2026-08-15T04:13:01.714397+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 2090,
+          "population": 219600546,
+          "areaSqMi": 2223870.32
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 656,
+          "population": 72105143,
+          "areaSqMi": 506001.15
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 368,
+          "population": 21476902,
+          "areaSqMi": 231393.0
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 2090,
+          "population": 219600546,
+          "areaSqMi": 2223870.32
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 656,
+          "population": 72105143,
+          "areaSqMi": 506001.15
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 368,
+          "population": 21476902,
+          "areaSqMi": 231393.0
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 2090,
+          "population": 219600546,
+          "areaSqMi": 2223870.32
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 656,
+          "population": 72105143,
+          "areaSqMi": 506001.15
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 368,
+          "population": 21476902,
+          "areaSqMi": 231393.0
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1638,
+          "population": 159301640,
+          "areaSqMi": 1326933.61
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1638,
+          "population": 159301640,
+          "areaSqMi": 1326933.61
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 3,
+    "countyCount": 3114
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "season": 2000,
+  "weekIndex": 20,
+  "week": 3,
+  "seasonType": "postseason",
+  "weekLabel": "Conference Championship",
+  "generatedAt": "2026-08-15T04:08:45.940833+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "new-york-giants",
+        "teamName": "NYG",
+        "shortName": "NYG",
+        "fullName": "New York Giants",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1549,
+          "population": 163181434,
+          "areaSqMi": 1760143.06
+        }
+      },
+      {
+        "teamId": "buffalo-bills",
+        "teamName": "BUF",
+        "shortName": "BUF",
+        "fullName": "Buffalo Bills",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 671,
+          "population": 64578469,
+          "areaSqMi": 684088.09
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "new-york-giants",
+        "teamName": "NYG",
+        "shortName": "NYG",
+        "fullName": "New York Giants",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1549,
+          "population": 163181434,
+          "areaSqMi": 1760143.06
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      },
+      {
+        "teamId": "buffalo-bills",
+        "teamName": "BUF",
+        "shortName": "BUF",
+        "fullName": "Buffalo Bills",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 671,
+          "population": 64578469,
+          "areaSqMi": 684088.09
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "new-york-giants",
+        "teamName": "NYG",
+        "shortName": "NYG",
+        "fullName": "New York Giants",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1549,
+          "population": 163181434,
+          "areaSqMi": 1760143.06
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      },
+      {
+        "teamId": "buffalo-bills",
+        "teamName": "BUF",
+        "shortName": "BUF",
+        "fullName": "Buffalo Bills",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 671,
+          "population": 64578469,
+          "areaSqMi": 684088.09
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "new-york-giants",
+        "teamName": "NYG",
+        "shortName": "NYG",
+        "fullName": "New York Giants",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 3,
+    "countyCount": 3114
+  }
+}

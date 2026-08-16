@@ -1,15 +1,17 @@
 import TecmoThrowBanner from '@/components/TecmoThrowBanner'
+import type { LeagueDefinition } from '@/lib/leagues'
 
 interface MastheadProps {
   weekLabel: string
   season: number | null
+  league: LeagueDefinition
 }
 
 /**
  * Renders every skin's masthead; CSS shows only the active one via
  * [data-theme] rules so theme switching never causes a hydration mismatch.
  */
-export default function Masthead({ weekLabel, season }: MastheadProps) {
+export default function Masthead({ weekLabel, season, league }: MastheadProps) {
   const seasonText = season ? `Season ${season}` : ''
 
   return (
@@ -25,7 +27,7 @@ export default function Masthead({ weekLabel, season }: MastheadProps) {
       <div className="im-mast im-mast--teletext">
         <div className="im-mast-ttx__head">
           <span>
-            <b className="im-mast-ttx__pageno">P100</b> CFB IMPERIAL
+            <b className="im-mast-ttx__pageno">P100</b> {league.shortName} IMPERIAL
           </span>
           <span>
             {seasonText} {weekLabel}
@@ -39,10 +41,11 @@ export default function Masthead({ weekLabel, season }: MastheadProps) {
       </div>
 
       <div className="im-mast im-mast--ledger">
-        <p className="im-mast-ldg__over">College Football Territorial Command</p>
+        <p className="im-mast-ldg__over">{league.fullName} Territorial Command</p>
         <h1 className="im-mast-ldg__title">The Conquest Ledger</h1>
         <p className="im-mast-ldg__under">
-          136 programs · 3,143 counties · winner takes all
+          {league.teamCount} {league.teamLabel} · {league.territoryCount.toLocaleString()}{' '}
+          {league.territoryUnitLabel} · winner takes all
         </p>
         <span className="im-mast-ldg__stamp">{weekLabel}</span>
       </div>
@@ -53,14 +56,14 @@ export default function Masthead({ weekLabel, season }: MastheadProps) {
             <span className="im-mast-geo__ball" aria-hidden="true">
               🏈
             </span>{' '}
-            College Football IMPERIAL MAP{' '}
+            {league.name} IMPERIAL MAP{' '}
             <span className="im-mast-geo__ball" aria-hidden="true">
               🏈
             </span>
           </h1>
           <p className="im-mast-geo__tag">
             <span className="im-mast-geo__new">NEW!</span>
-            Updated every Saturday nite — winner takes ALL the counties!!
+            {league.updateMessage} — winner takes ALL the {league.territoryUnitLabel}!!
           </p>
         </div>
       </div>

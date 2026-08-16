@@ -1,0 +1,40 @@
+[
+  {
+    "id": "210114019",
+    "season": 2000,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2001-01-14T18:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": null,
+    "homeTeamId": "new-york-giants",
+    "awayTeamId": "minnesota-vikings",
+    "homeScore": 41,
+    "awayScore": 0,
+    "outcome": "home-win",
+    "winnerId": "new-york-giants",
+    "loserId": "minnesota-vikings"
+  },
+  {
+    "id": "210114013",
+    "season": 2000,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2001-01-14T21:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": null,
+    "homeTeamId": "oakland-raiders",
+    "awayTeamId": "baltimore-ravens",
+    "homeScore": 3,
+    "awayScore": 16,
+    "outcome": "away-win",
+    "winnerId": "baltimore-ravens",
+    "loserId": "oakland-raiders"
+  }
+]

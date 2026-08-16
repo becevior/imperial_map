@@ -1,0 +1,276 @@
+{
+  "season": 2000,
+  "weekIndex": 10,
+  "week": 10,
+  "seasonType": "regular",
+  "weekLabel": "Week 10",
+  "generatedAt": "2026-08-15T04:08:45.890990+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1124,
+          "population": 95621532,
+          "areaSqMi": 1178280.46
+        }
+      },
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 473,
+          "population": 44293752,
+          "areaSqMi": 579509.92
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 20284717,
+          "areaSqMi": 104578.17
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1124,
+          "population": 95621532,
+          "areaSqMi": 1178280.46
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      },
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 473,
+          "population": 44293752,
+          "areaSqMi": 579509.92
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 20284717,
+          "areaSqMi": 104578.17
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1124,
+          "population": 95621532,
+          "areaSqMi": 1178280.46
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 473,
+          "population": 44293752,
+          "areaSqMi": 579509.92
+        }
+      },
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 20284717,
+          "areaSqMi": 104578.17
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      },
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      },
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 142,
+          "population": 6607029,
+          "areaSqMi": 80831.3
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      },
+      {
+        "teamId": "washington-redskins",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Redskins",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 142,
+          "population": 6607029,
+          "areaSqMi": 80831.3
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 5,
+    "countyCount": 3114
+  }
+}

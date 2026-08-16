@@ -41,15 +41,21 @@ export type PreviousWeekScores = {
   games: ScoreTickerItem[]
 }
 
-async function loadTeams(): Promise<Map<string, RawTeam>> {
-  const teamsPath = path.join(process.cwd(), 'public', 'data', 'teams-all.json')
+function resolveDataDirectory(dataBasePath: string): string {
+  return path.join(process.cwd(), 'public', dataBasePath.replace(/^\/+/, ''))
+}
+
+async function loadTeams(dataBasePath: string): Promise<Map<string, RawTeam>> {
+  const teamsPath = path.join(resolveDataDirectory(dataBasePath), 'teams-all.json')
   const contents = await fs.readFile(teamsPath, 'utf-8')
   const teams = JSON.parse(contents) as RawTeam[]
   return new Map(teams.map((team) => [team.id, team]))
 }
 
-async function findLatestWeek(): Promise<{ season: number; entry: WeekIndexEntry } | null> {
-  const baseDir = path.join(process.cwd(), 'public', 'data', 'games')
+async function findLatestWeek(
+  dataBasePath: string
+): Promise<{ season: number; entry: WeekIndexEntry } | null> {
+  const baseDir = path.join(resolveDataDirectory(dataBasePath), 'games')
   const seasonDirs = await fs.readdir(baseDir, { withFileTypes: true })
   const seasons = seasonDirs
     .filter((dirEnt) => dirEnt.isDirectory() && /^\d{4}$/.test(dirEnt.name))
@@ -90,9 +96,11 @@ async function findLatestWeek(): Promise<{ season: number; entry: WeekIndexEntry
   return null
 }
 
-export async function loadPreviousWeekScores(): Promise<PreviousWeekScores | null> {
+export async function loadPreviousWeekScores(
+  dataBasePath = '/data'
+): Promise<PreviousWeekScores | null> {
   try {
-    const latest = await findLatestWeek()
+    const latest = await findLatestWeek(dataBasePath)
     if (!latest) {
       return null
     }
@@ -101,7 +109,7 @@ export async function loadPreviousWeekScores(): Promise<PreviousWeekScores | nul
     const filePath = path.join(process.cwd(), 'public', entry.path.replace(/^\//, ''))
     const rawGames = JSON.parse(await fs.readFile(filePath, 'utf-8')) as RawGame[]
 
-    const teamMap = await loadTeams()
+    const teamMap = await loadTeams(dataBasePath)
 
     const formatted: ScoreTickerItem[] = rawGames
       .filter((game) => game && game.completed !== false)

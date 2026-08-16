@@ -1,0 +1,40 @@
+[
+  {
+    "id": "400999172",
+    "season": 2017,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2018-01-21T20:05Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Gillette Stadium",
+    "homeTeamId": "new-england-patriots",
+    "awayTeamId": "jacksonville-jaguars",
+    "homeScore": 24,
+    "awayScore": 20,
+    "outcome": "home-win",
+    "winnerId": "new-england-patriots",
+    "loserId": "jacksonville-jaguars"
+  },
+  {
+    "id": "400999174",
+    "season": 2017,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2018-01-21T23:40Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Lincoln Financial Field",
+    "homeTeamId": "philadelphia-eagles",
+    "awayTeamId": "minnesota-vikings",
+    "homeScore": 38,
+    "awayScore": 7,
+    "outcome": "home-win",
+    "winnerId": "philadelphia-eagles",
+    "loserId": "minnesota-vikings"
+  }
+]

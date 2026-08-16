@@ -43,6 +43,12 @@ export interface OwnershipIndexSeason {
 
 interface MapProps {
   className?: string
+  leagueId?: string
+  dataBasePath?: string
+  teamLabel?: string
+  periodLabel?: string
+  territoryUnitLabel?: string
+  liveUpdates?: boolean
   onWeekChange?: (info: LeaderboardWeekInfo) => void
 }
 
@@ -186,8 +192,11 @@ type CountyStats = Record<string, CountyStatsEntry>
 
 type OwnershipMap = Record<string, string>
 
-const ownershipSnapshotKey = (season: number, weekIndex: number) =>
-  `${season}-${weekIndex}`
+const ownershipSnapshotKey = (
+  leagueId: string,
+  season: number,
+  weekIndex: number
+) => `${leagueId}-${season}-${weekIndex}`
 
 interface TerritoryCentroid {
   teamId?: string // Old format
@@ -304,7 +313,17 @@ interface TerritoryMarkerRecord {
   logoTransitioning: boolean
 }
 
-export default function Map({ className = '', onWeekChange }: MapProps) {
+export default function Map({
+  className = '',
+  leagueId = 'cfb',
+  dataBasePath = '/data',
+  teamLabel = 'teams',
+  periodLabel = 'week',
+  territoryUnitLabel = 'counties',
+  liveUpdates = true,
+  onWeekChange
+}: MapProps) {
+  const dataRoot = dataBasePath.replace(/\/$/, '')
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const markerRecordsRef = useRef<globalThis.Map<string, TerritoryMarkerRecord>>(
@@ -407,7 +426,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     }
   }, [fadeOwnershipOnMap])
 
-  const ensureOwnershipSnapshots = async (
+  const ensureOwnershipSnapshots = useCallback(async (
     seasonValue: number,
     targetWeekIndex: number
   ) => {
@@ -422,7 +441,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
     for (const week of relevantWeeks) {
       const weekIdx = week.weekIndex ?? 0
-      const cacheKey = ownershipSnapshotKey(seasonValue, weekIdx)
+      const cacheKey = ownershipSnapshotKey(leagueId, seasonValue, weekIdx)
       if (ownershipSnapshotsRef.current[cacheKey]) {
         continue
       }
@@ -445,7 +464,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
         console.warn(`Error fetching ownership snapshot for week ${weekIdx}`, err)
       }
     }
-  }
+  }, [leagueId])
 
   const updateMarkersWithCentroids = useCallback((centroids: TerritoryCentroid[]) => {
     const mapInstance = mapRef.current
@@ -677,7 +696,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     seasonOptionsRef.current = nextOptions
     setSeasonOptions(nextOptions)
     ownershipSnapshotsRef.current[
-      ownershipSnapshotKey(manifest.season, manifest.weekIndex)
+      ownershipSnapshotKey(leagueId, manifest.season, manifest.weekIndex)
     ] = ownership
     applyOwnershipToMap(ownership, manifest.label ?? `Week ${manifest.weekIndex}`)
     lastOwnershipPathRef.current = manifest.ownershipPath
@@ -698,7 +717,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     setSelectedWeekIndex(manifest.weekIndex)
     setTeamCount(manifest.teamCount ?? null)
     setOwnershipError(null)
-  }, [applyOwnershipToMap, updateMarkersWithCentroids])
+  }, [applyOwnershipToMap, leagueId, updateMarkersWithCentroids])
 
   useEffect(() => {
     if (!mapContainer.current || mapRef.current) return
@@ -716,14 +735,14 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
           logoColorsRes,
           liveManifestRes
         ] = await Promise.all([
-          fetch('/data/teams-all.json'),
-          fetch('/data/ownership.json'),
+          fetch(`${dataRoot}/teams-all.json`),
+          fetch(`${dataRoot}/ownership.json`),
           fetch('/data/us-counties.geojson'),
           fetch('/data/county-stats.json'),
-          fetch('/data/territory-centroids.json'),
-          fetch('/data/ownership/index.json'),
-          fetch('/data/logo-colors.json'),
-          fetch('/data/live.json', { cache: 'no-store' })
+          fetch(`${dataRoot}/territory-centroids.json`),
+          fetch(`${dataRoot}/ownership/index.json`),
+          fetch(`${dataRoot}/logo-colors.json`),
+          fetch(`${dataRoot}/live.json`, { cache: 'no-store' })
         ])
 
         if (!teamsRes.ok || !ownershipRes.ok || !geoJsonRes.ok) {
@@ -907,7 +926,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                   ...week,
                   path:
                     week.path ||
-                    `/data/ownership/${season.season}/week-${String(
+                    `${dataRoot}/ownership/${season.season}/week-${String(
                       week.weekIndex ?? ''
                     ).padStart(2, '0')}.json`
                 }))
@@ -939,7 +958,11 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                 initialWeekIndex = latestWeek.weekIndex ?? null
                 if (typeof latestWeek.weekIndex === 'number') {
                   ownershipSnapshotsRef.current[
-                    ownershipSnapshotKey(latestSeason.season, latestWeek.weekIndex)
+                    ownershipSnapshotKey(
+                      leagueId,
+                      latestSeason.season,
+                      latestWeek.weekIndex
+                    )
                   ] = initialOwnershipMap
                 }
 
@@ -1120,6 +1143,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
           setLoading(false)
 
           trackEvent('map_loaded', {
+            league_id: leagueId,
             team_count: teams.length,
             county_count: Object.keys(initialOwnershipMap).length,
             season: initialSeason,
@@ -1169,6 +1193,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
           const fips = String(props.fips || props.FIPS || '')
 
           trackEvent('county_popup_opened', {
+            league_id: leagueId,
             fips,
             county_name: props.countyName || null,
             county_state: props.countyState || null,
@@ -1276,7 +1301,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
               const weekIdx = week.weekIndex ?? 0
               const snapshot =
                 ownershipSnapshotsRef.current[
-                  ownershipSnapshotKey(seasonValue, weekIdx)
+                  ownershipSnapshotKey(leagueId, seasonValue, weekIdx)
                 ]
               const ownerId = snapshot ? snapshot[fips] : undefined
               const ownerTeam = ownerId ? teamsByIdRef.current[ownerId] : undefined
@@ -1343,7 +1368,13 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       }
       mapRef.current = null
     }
-  }, [applyOwnershipToMap, updateMarkersWithCentroids])
+  }, [
+    applyOwnershipToMap,
+    dataRoot,
+    ensureOwnershipSnapshots,
+    leagueId,
+    updateMarkersWithCentroids
+  ])
 
   useEffect(() => {
     selectedSeasonRef.current = selectedSeason
@@ -1358,6 +1389,9 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   }, [currentWeekLabel])
 
   useEffect(() => {
+    if (!liveUpdates) {
+      return
+    }
     let cancelled = false
     let inFlight = false
 
@@ -1368,7 +1402,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
       inFlight = true
       try {
-        const response = await fetch(`/data/live.json?poll=${Date.now()}`, {
+        const response = await fetch(`${dataRoot}/live.json?poll=${Date.now()}`, {
           cache: 'no-store'
         })
         if (!response.ok) {
@@ -1401,7 +1435,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       window.clearInterval(interval)
       document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
-  }, [applyLiveManifest])
+  }, [applyLiveManifest, dataRoot, liveUpdates])
 
   useEffect(() => {
     if (!onWeekChange) {
@@ -1503,7 +1537,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
         const ownershipData: OwnershipMap = await ownershipResponse.json()
         if (typeof week.weekIndex === 'number') {
           ownershipSnapshotsRef.current[
-            ownershipSnapshotKey(selectedSeason, week.weekIndex)
+            ownershipSnapshotKey(leagueId, selectedSeason, week.weekIndex)
           ] = ownershipData
         }
 
@@ -1534,6 +1568,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
         setOwnershipError(null)
 
         trackEvent('ownership_week_loaded', {
+          league_id: leagueId,
           season: selectedSeason,
           week_index: week.weekIndex,
           week_label: week.label ?? `Week ${week.weekIndex}`,
@@ -1562,6 +1597,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     }
   }, [
     applyOwnershipToMap,
+    leagueId,
     seasonOptions,
     selectedSeason,
     selectedWeekIndex,
@@ -1584,7 +1620,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
   const showSeasonSelect = seasonOptions.length > 1
   const showWeekSelect = weekOptions.length > 0
   const liveStatusLabel = useMemo(() => {
-    if (!liveUpdatedAt) {
+    if (!liveUpdates || !liveUpdatedAt) {
       return null
     }
     const updated = new Date(liveUpdatedAt)
@@ -1596,7 +1632,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
       ? ''
       : ` · ${liveCompletedGameCount} ${liveCompletedGameCount === 1 ? 'final' : 'finals'}`
     return `Live data ${time}${finals}`
-  }, [liveCompletedGameCount, liveUpdatedAt])
+  }, [liveCompletedGameCount, liveUpdatedAt, liveUpdates])
 
   useEffect(() => {
     if (!isTimelapsePlaying || ownershipLoading || weekOptions.length < 2) {
@@ -1680,6 +1716,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
     if (!rawValue || Number.isNaN(value)) {
       trackEvent('baseline_selected', {
+        league_id: leagueId,
         previous_season: selectedSeason,
         previous_week_index: selectedWeekIndex,
         source: 'season_control'
@@ -1693,6 +1730,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
     }
 
     trackEvent('season_selected', {
+      league_id: leagueId,
       season: value,
       previous_season: selectedSeason,
       previous_week_index: selectedWeekIndex,
@@ -1726,6 +1764,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
     const week = weekOptions.find((entry) => entry.weekIndex === value)
     trackEvent('week_selected', {
+      league_id: leagueId,
       season: selectedSeason,
       week_index: value,
       week_label: week?.label ?? `Week ${value}`,
@@ -1748,7 +1787,8 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
               {currentWeekLabel}
             </p>
             <p className="im-mapbar__meta">
-              {teamCount ?? '–'} teams · {countyCount ?? '–'} counties
+              {teamCount ?? '–'} {teamLabel} · {countyCount ?? '–'}{' '}
+              {territoryUnitLabel}
             </p>
             {liveStatusLabel &&
               liveSelection?.season === selectedSeason &&
@@ -1807,15 +1847,17 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
 
               {showWeekSelect && (
                 <div className="flex items-center gap-2">
-                  <span className="im-mapbar__meta">Week</span>
+                  <span className="im-mapbar__meta">
+                    {periodLabel.charAt(0).toUpperCase() + periodLabel.slice(1)}
+                  </span>
                   <span className="flex items-center gap-1">
                     <button
                       type="button"
                       className="im-btn im-btn--step"
                       onClick={() => moveWeek(-1)}
                       disabled={ownershipLoading || selectedWeekPosition <= 0}
-                      aria-label="Previous week"
-                      title="Previous week"
+                      aria-label={`Previous ${periodLabel}`}
+                      title={`Previous ${periodLabel}`}
                     >
                       ‹
                     </button>
@@ -1824,7 +1866,7 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                       value={selectedWeekIndex !== null ? String(selectedWeekIndex) : ''}
                       onChange={handleWeekChange}
                       disabled={ownershipLoading}
-                      aria-label="Week"
+                      aria-label={periodLabel}
                     >
                       {weekOptions.map((week) => (
                         <option
@@ -1844,8 +1886,8 @@ export default function Map({ className = '', onWeekChange }: MapProps) {
                         selectedWeekPosition < 0 ||
                         selectedWeekPosition >= weekOptions.length - 1
                       }
-                      aria-label="Next week"
-                      title="Next week"
+                      aria-label={`Next ${periodLabel}`}
+                      title={`Next ${periodLabel}`}
                     >
                       ›
                     </button>

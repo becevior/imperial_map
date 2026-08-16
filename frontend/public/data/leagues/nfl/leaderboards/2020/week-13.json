@@ -1,0 +1,120 @@
+{
+  "season": 2020,
+  "weekIndex": 13,
+  "week": 13,
+  "seasonType": "regular",
+  "weekLabel": "Week 13",
+  "generatedAt": "2026-08-15T04:12:36.522058+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "washington-football-team",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Football Team",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "washington-football-team",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Football Team",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "washington-football-team",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Football Team",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "washington-football-team",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Football Team",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 2,
+    "countyCount": 3114
+  }
+}
