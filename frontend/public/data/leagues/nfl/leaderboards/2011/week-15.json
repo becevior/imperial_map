@@ -1,0 +1,264 @@
+{
+  "season": 2011,
+  "weekIndex": 15,
+  "week": 15,
+  "seasonType": "regular",
+  "weekLabel": "Week 15",
+  "generatedAt": "2026-08-15T04:11:14.188687+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 962,
+          "population": 88134938,
+          "areaSqMi": 1222177.95
+        }
+      },
+      {
+        "teamId": "san-diego-chargers",
+        "teamName": "SD",
+        "shortName": "SD",
+        "fullName": "San Diego Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 757,
+          "population": 107977883,
+          "areaSqMi": 858665.68
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1198,
+          "population": 106428355,
+          "areaSqMi": 743751.12
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 197,
+          "population": 10641415,
+          "areaSqMi": 136669.72
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "san-diego-chargers",
+        "teamName": "SD",
+        "shortName": "SD",
+        "fullName": "San Diego Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 757,
+          "population": 107977883,
+          "areaSqMi": 858665.68
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1198,
+          "population": 106428355,
+          "areaSqMi": 743751.12
+        }
+      },
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 962,
+          "population": 88134938,
+          "areaSqMi": 1222177.95
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 197,
+          "population": 10641415,
+          "areaSqMi": 136669.72
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1198,
+          "population": 106428355,
+          "areaSqMi": 743751.12
+        }
+      },
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 962,
+          "population": 88134938,
+          "areaSqMi": 1222177.95
+        }
+      },
+      {
+        "teamId": "san-diego-chargers",
+        "teamName": "SD",
+        "shortName": "SD",
+        "fullName": "San Diego Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 757,
+          "population": 107977883,
+          "areaSqMi": 858665.68
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 197,
+          "population": 10641415,
+          "areaSqMi": 136669.72
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 962,
+          "population": 88134938,
+          "areaSqMi": 1222177.95
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 772,
+          "population": 57006729,
+          "areaSqMi": 497284.28
+        }
+      },
+      {
+        "teamId": "san-diego-chargers",
+        "teamName": "SD",
+        "shortName": "SD",
+        "fullName": "San Diego Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 757,
+          "population": 107977883,
+          "areaSqMi": 858665.68
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 197,
+          "population": 10641415,
+          "areaSqMi": 136669.72
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 962,
+          "population": 88134938,
+          "areaSqMi": 1222177.95
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 772,
+          "population": 57006729,
+          "areaSqMi": 497284.28
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 757,
+          "population": 107977883,
+          "areaSqMi": 858665.68
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 197,
+          "population": 10641415,
+          "areaSqMi": 136669.72
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 4,
+    "countyCount": 3114
+  }
+}

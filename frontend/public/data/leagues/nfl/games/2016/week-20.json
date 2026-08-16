@@ -1,0 +1,40 @@
+[
+  {
+    "id": "400927751",
+    "season": 2016,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2017-01-22T20:05Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Georgia Dome",
+    "homeTeamId": "atlanta-falcons",
+    "awayTeamId": "green-bay-packers",
+    "homeScore": 44,
+    "awayScore": 21,
+    "outcome": "home-win",
+    "winnerId": "atlanta-falcons",
+    "loserId": "green-bay-packers"
+  },
+  {
+    "id": "400927750",
+    "season": 2016,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2017-01-22T23:40Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Gillette Stadium",
+    "homeTeamId": "new-england-patriots",
+    "awayTeamId": "pittsburgh-steelers",
+    "homeScore": 36,
+    "awayScore": 17,
+    "outcome": "home-win",
+    "winnerId": "new-england-patriots",
+    "loserId": "pittsburgh-steelers"
+  }
+]

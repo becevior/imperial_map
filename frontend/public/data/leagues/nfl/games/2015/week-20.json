@@ -1,0 +1,40 @@
+[
+  {
+    "id": "400820436",
+    "season": 2015,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2016-01-24T20:05Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Empower Field at Mile High",
+    "homeTeamId": "denver-broncos",
+    "awayTeamId": "new-england-patriots",
+    "homeScore": 20,
+    "awayScore": 18,
+    "outcome": "home-win",
+    "winnerId": "denver-broncos",
+    "loserId": "new-england-patriots"
+  },
+  {
+    "id": "400820437",
+    "season": 2015,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2016-01-24T23:40Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Bank of America Stadium",
+    "homeTeamId": "carolina-panthers",
+    "awayTeamId": "arizona-cardinals",
+    "homeScore": 49,
+    "awayScore": 15,
+    "outcome": "home-win",
+    "winnerId": "carolina-panthers",
+    "loserId": "arizona-cardinals"
+  }
+]

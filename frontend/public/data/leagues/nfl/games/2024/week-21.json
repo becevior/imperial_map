@@ -1,0 +1,40 @@
+[
+  {
+    "id": "401671888",
+    "season": 2024,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2025-01-26T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Lincoln Financial Field",
+    "homeTeamId": "philadelphia-eagles",
+    "awayTeamId": "washington-commanders",
+    "homeScore": 55,
+    "awayScore": 23,
+    "outcome": "home-win",
+    "winnerId": "philadelphia-eagles",
+    "loserId": "washington-commanders"
+  },
+  {
+    "id": "401671887",
+    "season": 2024,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2025-01-26T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "GEHA Field at Arrowhead Stadium",
+    "homeTeamId": "kansas-city-chiefs",
+    "awayTeamId": "buffalo-bills",
+    "homeScore": 32,
+    "awayScore": 29,
+    "outcome": "home-win",
+    "winnerId": "kansas-city-chiefs",
+    "loserId": "buffalo-bills"
+  }
+]

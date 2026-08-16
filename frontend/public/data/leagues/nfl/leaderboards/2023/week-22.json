@@ -1,0 +1,84 @@
+{
+  "season": 2023,
+  "weekIndex": 22,
+  "week": 5,
+  "seasonType": "postseason",
+  "weekLabel": "Super Bowl",
+  "generatedAt": "2026-08-15T04:13:01.741767+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 656,
+          "population": 72105143,
+          "areaSqMi": 506001.15
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 656,
+          "population": 72105143,
+          "areaSqMi": 506001.15
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 1,
+    "countyCount": 3114
+  }
+}

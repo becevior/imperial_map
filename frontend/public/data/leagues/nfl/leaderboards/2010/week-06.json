@@ -1,0 +1,336 @@
+{
+  "season": 2010,
+  "weekIndex": 6,
+  "week": 6,
+  "seasonType": "regular",
+  "weekLabel": "Week 6",
+  "generatedAt": "2026-08-15T04:11:04.130795+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 892,
+          "population": 100066817,
+          "areaSqMi": 864582.7
+        }
+      },
+      {
+        "teamId": "new-york-giants",
+        "teamName": "NYG",
+        "shortName": "NYG",
+        "fullName": "New York Giants",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 556,
+          "population": 53486011,
+          "areaSqMi": 688456.17
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 618,
+          "population": 42318865,
+          "areaSqMi": 663559.0
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 537,
+          "population": 51559889,
+          "areaSqMi": 368258.1
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 268,
+          "population": 32270327,
+          "areaSqMi": 221472.35
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 243,
+          "population": 33480682,
+          "areaSqMi": 154936.17
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 892,
+          "population": 100066817,
+          "areaSqMi": 864582.7
+        }
+      },
+      {
+        "teamId": "new-york-giants",
+        "teamName": "NYG",
+        "shortName": "NYG",
+        "fullName": "New York Giants",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 556,
+          "population": 53486011,
+          "areaSqMi": 688456.17
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 537,
+          "population": 51559889,
+          "areaSqMi": 368258.1
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 618,
+          "population": 42318865,
+          "areaSqMi": 663559.0
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 243,
+          "population": 33480682,
+          "areaSqMi": 154936.17
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 268,
+          "population": 32270327,
+          "areaSqMi": 221472.35
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 892,
+          "population": 100066817,
+          "areaSqMi": 864582.7
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 618,
+          "population": 42318865,
+          "areaSqMi": 663559.0
+        }
+      },
+      {
+        "teamId": "new-york-giants",
+        "teamName": "NYG",
+        "shortName": "NYG",
+        "fullName": "New York Giants",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 556,
+          "population": 53486011,
+          "areaSqMi": 688456.17
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 537,
+          "population": 51559889,
+          "areaSqMi": 368258.1
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 268,
+          "population": 32270327,
+          "areaSqMi": 221472.35
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 243,
+          "population": 33480682,
+          "areaSqMi": 154936.17
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 618,
+          "population": 42318865,
+          "areaSqMi": 663559.0
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 537,
+          "population": 51559889,
+          "areaSqMi": 368258.1
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 350,
+          "population": 54607002,
+          "areaSqMi": 454945.45
+        }
+      },
+      {
+        "teamId": "new-york-giants",
+        "teamName": "NYG",
+        "shortName": "NYG",
+        "fullName": "New York Giants",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 331,
+          "population": 16258043,
+          "areaSqMi": 547640.84
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "atlanta-falcons",
+        "teamName": "ATL",
+        "shortName": "ATL",
+        "fullName": "Atlanta Falcons",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 618,
+          "population": 42318865,
+          "areaSqMi": 663559.0
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 537,
+          "population": 51559889,
+          "areaSqMi": 368258.1
+        }
+      },
+      {
+        "teamId": "jacksonville-jaguars",
+        "teamName": "JAX",
+        "shortName": "JAX",
+        "fullName": "Jacksonville Jaguars",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 350,
+          "population": 54607002,
+          "areaSqMi": 454945.45
+        }
+      },
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 331,
+          "population": 16258043,
+          "areaSqMi": 547640.84
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 6,
+    "countyCount": 3114
+  }
+}

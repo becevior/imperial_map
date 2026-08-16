@@ -1,0 +1,240 @@
+{
+  "season": 2014,
+  "weekIndex": 16,
+  "week": 16,
+  "seasonType": "regular",
+  "weekLabel": "Week 16",
+  "generatedAt": "2026-08-15T04:11:41.077041+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1160,
+          "population": 156439680,
+          "areaSqMi": 1091532.68
+        }
+      },
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1084,
+          "population": 111994407,
+          "areaSqMi": 1027922.55
+        }
+      },
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 768,
+          "population": 34444999,
+          "areaSqMi": 788158.81
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 102,
+          "population": 10303505,
+          "areaSqMi": 53650.43
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1160,
+          "population": 156439680,
+          "areaSqMi": 1091532.68
+        }
+      },
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1084,
+          "population": 111994407,
+          "areaSqMi": 1027922.55
+        }
+      },
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 768,
+          "population": 34444999,
+          "areaSqMi": 788158.81
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 102,
+          "population": 10303505,
+          "areaSqMi": 53650.43
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1160,
+          "population": 156439680,
+          "areaSqMi": 1091532.68
+        }
+      },
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1084,
+          "population": 111994407,
+          "areaSqMi": 1027922.55
+        }
+      },
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 768,
+          "population": 34444999,
+          "areaSqMi": 788158.81
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 102,
+          "population": 10303505,
+          "areaSqMi": 53650.43
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1084,
+          "population": 111994407,
+          "areaSqMi": 1027922.55
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 390,
+          "population": 56751414,
+          "areaSqMi": 487276.73
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 102,
+          "population": 10303505,
+          "areaSqMi": 53650.43
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "buffalo-bills",
+        "teamName": "BUF",
+        "shortName": "BUF",
+        "fullName": "Buffalo Bills",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1084,
+          "population": 111994407,
+          "areaSqMi": 1027922.55
+        }
+      },
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 390,
+          "population": 56751414,
+          "areaSqMi": 487276.73
+        }
+      },
+      {
+        "teamId": "denver-broncos",
+        "teamName": "DEN",
+        "shortName": "DEN",
+        "fullName": "Denver Broncos",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 102,
+          "population": 10303505,
+          "areaSqMi": 53650.43
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 4,
+    "countyCount": 3114
+  }
+}

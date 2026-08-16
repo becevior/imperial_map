@@ -1,0 +1,40 @@
+[
+  {
+    "id": "401131044",
+    "season": 2019,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2020-01-19T20:05Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "GEHA Field at Arrowhead Stadium",
+    "homeTeamId": "kansas-city-chiefs",
+    "awayTeamId": "tennessee-titans",
+    "homeScore": 35,
+    "awayScore": 24,
+    "outcome": "home-win",
+    "winnerId": "kansas-city-chiefs",
+    "loserId": "tennessee-titans"
+  },
+  {
+    "id": "401131045",
+    "season": 2019,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2020-01-19T23:40Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Levi's Stadium",
+    "homeTeamId": "san-francisco-49ers",
+    "awayTeamId": "green-bay-packers",
+    "homeScore": 37,
+    "awayScore": 20,
+    "outcome": "home-win",
+    "winnerId": "san-francisco-49ers",
+    "loserId": "green-bay-packers"
+  }
+]

@@ -1,0 +1,252 @@
+{
+  "season": 2025,
+  "weekIndex": 11,
+  "week": 11,
+  "seasonType": "regular",
+  "weekLabel": "Week 11",
+  "generatedAt": "2026-08-15T03:11:52.457894+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1241,
+          "population": 121455216,
+          "areaSqMi": 990018.81
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 675,
+          "population": 41952202,
+          "areaSqMi": 699083.18
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 339,
+          "population": 44255313,
+          "areaSqMi": 664732.25
+        }
+      },
+      {
+        "teamId": "denver-broncos",
+        "teamName": "DEN",
+        "shortName": "DEN",
+        "fullName": "Denver Broncos",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 578,
+          "population": 63263990,
+          "areaSqMi": 472777.69
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 281,
+          "population": 42255870,
+          "areaSqMi": 134652.54
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1241,
+          "population": 121455216,
+          "areaSqMi": 990018.81
+        }
+      },
+      {
+        "teamId": "denver-broncos",
+        "teamName": "DEN",
+        "shortName": "DEN",
+        "fullName": "Denver Broncos",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 578,
+          "population": 63263990,
+          "areaSqMi": 472777.69
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 339,
+          "population": 44255313,
+          "areaSqMi": 664732.25
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 281,
+          "population": 42255870,
+          "areaSqMi": 134652.54
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 675,
+          "population": 41952202,
+          "areaSqMi": 699083.18
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1241,
+          "population": 121455216,
+          "areaSqMi": 990018.81
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 675,
+          "population": 41952202,
+          "areaSqMi": 699083.18
+        }
+      },
+      {
+        "teamId": "denver-broncos",
+        "teamName": "DEN",
+        "shortName": "DEN",
+        "fullName": "Denver Broncos",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 578,
+          "population": 63263990,
+          "areaSqMi": 472777.69
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 339,
+          "population": 44255313,
+          "areaSqMi": 664732.25
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 281,
+          "population": 42255870,
+          "areaSqMi": 134652.54
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 403,
+          "population": 34522526,
+          "areaSqMi": 185141.51
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 339,
+          "population": 44255313,
+          "areaSqMi": 664732.25
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 403,
+          "population": 34522526,
+          "areaSqMi": 185141.51
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 339,
+          "population": 44255313,
+          "areaSqMi": 664732.25
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 5,
+    "countyCount": 3114
+  }
+}

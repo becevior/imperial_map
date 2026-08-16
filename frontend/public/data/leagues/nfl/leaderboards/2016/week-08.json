@@ -1,0 +1,276 @@
+{
+  "season": 2016,
+  "weekIndex": 8,
+  "week": 8,
+  "seasonType": "regular",
+  "weekLabel": "Week 8",
+  "generatedAt": "2026-08-15T04:11:58.288577+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 959,
+          "population": 116783186,
+          "areaSqMi": 1064477.19
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 612,
+          "population": 45782334,
+          "areaSqMi": 812008.73
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 656,
+          "population": 47867604,
+          "areaSqMi": 545022.63
+        }
+      },
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 678,
+          "population": 78775195,
+          "areaSqMi": 425375.51
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 209,
+          "population": 23974272,
+          "areaSqMi": 114380.41
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 959,
+          "population": 116783186,
+          "areaSqMi": 1064477.19
+        }
+      },
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 678,
+          "population": 78775195,
+          "areaSqMi": 425375.51
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 656,
+          "population": 47867604,
+          "areaSqMi": 545022.63
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 612,
+          "population": 45782334,
+          "areaSqMi": 812008.73
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 209,
+          "population": 23974272,
+          "areaSqMi": 114380.41
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 959,
+          "population": 116783186,
+          "areaSqMi": 1064477.19
+        }
+      },
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 678,
+          "population": 78775195,
+          "areaSqMi": 425375.51
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 656,
+          "population": 47867604,
+          "areaSqMi": 545022.63
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 612,
+          "population": 45782334,
+          "areaSqMi": 812008.73
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 209,
+          "population": 23974272,
+          "areaSqMi": 114380.41
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 678,
+          "population": 78775195,
+          "areaSqMi": 425375.51
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 656,
+          "population": 47867604,
+          "areaSqMi": 545022.63
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 612,
+          "population": 45782334,
+          "areaSqMi": 812008.73
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 678,
+          "population": 78775195,
+          "areaSqMi": 425375.51
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 656,
+          "population": 47867604,
+          "areaSqMi": 545022.63
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 612,
+          "population": 45782334,
+          "areaSqMi": 812008.73
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 5,
+    "countyCount": 3114
+  }
+}

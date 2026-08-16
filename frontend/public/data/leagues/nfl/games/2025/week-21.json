@@ -1,0 +1,40 @@
+[
+  {
+    "id": "401772986",
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2026-01-25T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Empower Field at Mile High",
+    "homeTeamId": "denver-broncos",
+    "awayTeamId": "new-england-patriots",
+    "homeScore": 7,
+    "awayScore": 10,
+    "outcome": "away-win",
+    "winnerId": "new-england-patriots",
+    "loserId": "denver-broncos"
+  },
+  {
+    "id": "401772987",
+    "season": 2025,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2026-01-25T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Lumen Field",
+    "homeTeamId": "seattle-seahawks",
+    "awayTeamId": "los-angeles-rams",
+    "homeScore": 31,
+    "awayScore": 27,
+    "outcome": "home-win",
+    "winnerId": "seattle-seahawks",
+    "loserId": "los-angeles-rams"
+  }
+]

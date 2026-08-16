@@ -1,0 +1,192 @@
+{
+  "season": 2006,
+  "weekIndex": 11,
+  "week": 11,
+  "seasonType": "regular",
+  "weekLabel": "Week 11",
+  "generatedAt": "2026-08-15T04:10:18.886512+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 896,
+          "population": 100918755,
+          "areaSqMi": 1097361.93
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1305,
+          "population": 153181051,
+          "areaSqMi": 1009813.4
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 401,
+          "population": 17775757,
+          "areaSqMi": 589373.24
+        }
+      },
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 512,
+          "population": 41307028,
+          "areaSqMi": 264715.9
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1305,
+          "population": 153181051,
+          "areaSqMi": 1009813.4
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 896,
+          "population": 100918755,
+          "areaSqMi": 1097361.93
+        }
+      },
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 512,
+          "population": 41307028,
+          "areaSqMi": 264715.9
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 401,
+          "population": 17775757,
+          "areaSqMi": 589373.24
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1305,
+          "population": 153181051,
+          "areaSqMi": 1009813.4
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 896,
+          "population": 100918755,
+          "areaSqMi": 1097361.93
+        }
+      },
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 512,
+          "population": 41307028,
+          "areaSqMi": 264715.9
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 401,
+          "population": 17775757,
+          "areaSqMi": 589373.24
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1305,
+          "population": 153181051,
+          "areaSqMi": 1009813.4
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 1305,
+          "population": 153181051,
+          "areaSqMi": 1009813.4
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 4,
+    "countyCount": 3114
+  }
+}

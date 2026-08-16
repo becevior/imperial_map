@@ -1,0 +1,4199 @@
+{
+  "seasons": [
+    {
+      "season": 2000,
+      "teamCount": 31,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2000 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2000/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2000/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2000/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2000/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2000/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2000/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2000/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2000/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2000/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2000/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2000/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2000/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2000/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2000/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2000/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2000/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2000/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2000/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2000/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2000/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2000/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 4,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2000/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2001,
+      "teamCount": 31,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2001 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2001/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2001/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2001/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2001/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2001/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2001/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2001/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2001/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2001/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2001/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2001/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2001/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2001/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2001/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2001/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2001/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2001/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2001/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2001/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2001/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2001/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 4,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2001/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2002,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2002 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2002/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2002/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2002/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2002/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2002/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2002/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2002/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2002/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2002/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2002/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2002/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2002/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2002/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2002/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2002/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2002/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2002/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2002/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2002/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2002/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2002/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 4,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2002/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2003,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2003 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2003/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2003/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2003/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2003/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2003/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2003/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2003/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2003/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2003/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2003/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2003/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2003/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2003/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2003/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2003/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2003/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2003/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2003/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2003/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2003/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2003/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 4,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2003/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2004,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2004 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2004/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2004/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2004/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2004/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2004/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2004/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2004/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2004/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2004/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2004/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2004/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2004/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2004/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2004/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2004/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2004/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2004/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2004/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2004/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2004/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2004/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 4,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2004/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2005,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2005 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2005/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2005/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2005/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2005/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2005/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2005/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2005/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2005/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2005/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2005/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2005/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2005/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2005/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2005/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2005/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2005/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2005/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2005/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2005/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2005/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2005/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 4,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2005/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2006,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2006 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2006/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2006/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2006/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2006/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2006/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2006/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2006/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2006/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2006/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2006/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2006/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2006/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2006/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2006/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2006/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2006/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2006/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2006/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2006/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2006/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2006/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 4,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2006/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2007,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2007 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2007/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2007/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2007/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2007/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2007/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2007/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2007/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2007/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2007/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2007/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2007/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2007/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2007/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2007/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2007/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2007/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2007/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2007/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2007/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2007/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2007/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 4,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2007/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2008,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2008 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2008/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2008/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2008/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2008/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2008/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2008/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2008/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2008/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2008/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2008/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2008/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2008/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2008/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2008/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2008/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2008/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2008/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2008/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2008/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2008/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2008/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 4,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2008/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2009,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2009 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2009/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2009/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2009/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2009/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2009/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2009/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2009/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2009/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2009/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2009/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2009/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2009/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2009/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2009/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2009/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2009/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2009/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2009/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2009/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2009/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2009/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2009/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2010,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2010 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2010/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2010/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2010/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2010/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2010/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2010/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2010/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2010/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2010/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2010/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2010/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2010/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2010/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2010/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2010/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2010/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2010/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2010/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2010/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2010/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2010/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2010/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2011,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2011 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2011/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2011/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2011/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2011/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2011/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2011/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2011/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2011/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2011/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2011/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2011/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2011/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2011/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2011/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2011/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2011/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2011/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2011/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2011/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2011/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2011/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2011/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2012 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2012/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2012/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2012/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2012/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2012/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2012/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2012/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2012/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2012/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2012/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2012/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2012/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2012/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2012/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2012/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2012/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2012/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2012/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2012/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2012/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2012/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2012/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2013,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2013 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2013/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2013/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2013/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2013/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2013/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2013/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2013/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2013/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2013/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2013/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2013/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2013/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2013/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2013/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2013/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2013/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2013/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2013/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2013/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2013/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2013/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2013/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2014,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2014 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2014/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2014/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2014/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2014/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2014/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2014/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2014/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2014/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2014/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2014/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2014/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2014/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2014/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2014/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2014/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2014/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2014/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2014/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2014/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2014/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2014/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2014/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2015,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2015 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2015/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2015/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2015/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2015/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2015/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2015/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2015/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2015/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2015/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2015/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2015/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2015/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2015/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2015/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2015/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2015/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2015/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2015/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2015/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2015/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2015/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2015/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2016,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2016 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2016/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2016/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2016/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2016/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2016/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2016/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2016/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2016/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2016/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2016/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2016/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2016/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2016/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2016/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2016/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2016/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2016/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2016/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2016/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2016/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2016/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2016/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2017,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2017 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2017/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2017/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2017/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2017/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2017/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2017/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2017/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2017/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2017/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2017/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2017/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2017/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2017/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2017/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2017/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2017/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2017/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2017/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2017/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2017/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2017/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2017/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2018,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2018 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2018/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2018/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2018/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2018/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2018/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2018/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2018/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2018/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2018/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2018/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2018/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2018/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2018/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2018/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2018/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2018/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2018/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2018/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2018/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2018/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2018/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2018/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2019,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2019 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2019/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2019/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2019/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2019/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2019/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2019/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2019/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2019/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2019/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2019/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2019/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2019/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2019/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2019/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2019/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2019/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2019/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2019/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2019/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2019/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2019/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2019/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2020,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2020 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2020/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2020/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2020/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2020/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2020/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2020/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2020/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2020/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2020/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2020/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2020/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2020/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2020/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2020/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2020/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2020/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2020/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2020/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2020/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2020/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2020/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2020/week-21.json"
+        }
+      ]
+    },
+    {
+      "season": 2021,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2021 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2021/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2021/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2021/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2021/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2021/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2021/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2021/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2021/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2021/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2021/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2021/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2021/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2021/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2021/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2021/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2021/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2021/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2021/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 18,
+          "seasonType": "regular",
+          "label": "Week 18",
+          "path": "/data/leagues/nfl/ownership/2021/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2021/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2021/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2021/week-21.json"
+        },
+        {
+          "weekIndex": 22,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2021/week-22.json"
+        }
+      ]
+    },
+    {
+      "season": 2022,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2022 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2022/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2022/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2022/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2022/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2022/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2022/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2022/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2022/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2022/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2022/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2022/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2022/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2022/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2022/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2022/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2022/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2022/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2022/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 18,
+          "seasonType": "regular",
+          "label": "Week 18",
+          "path": "/data/leagues/nfl/ownership/2022/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2022/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2022/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2022/week-21.json"
+        },
+        {
+          "weekIndex": 22,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2022/week-22.json"
+        }
+      ]
+    },
+    {
+      "season": 2023,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2023 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2023/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2023/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2023/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2023/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2023/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2023/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2023/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2023/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2023/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2023/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2023/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2023/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2023/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2023/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2023/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2023/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2023/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2023/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 18,
+          "seasonType": "regular",
+          "label": "Week 18",
+          "path": "/data/leagues/nfl/ownership/2023/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2023/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2023/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2023/week-21.json"
+        },
+        {
+          "weekIndex": 22,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2023/week-22.json"
+        }
+      ]
+    },
+    {
+      "season": 2024,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2024 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2024/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2024/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2024/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2024/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2024/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2024/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2024/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2024/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2024/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2024/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2024/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2024/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2024/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2024/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2024/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2024/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2024/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2024/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 18,
+          "seasonType": "regular",
+          "label": "Week 18",
+          "path": "/data/leagues/nfl/ownership/2024/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2024/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2024/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2024/week-21.json"
+        },
+        {
+          "weekIndex": 22,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2024/week-22.json"
+        }
+      ]
+    },
+    {
+      "season": 2025,
+      "teamCount": 32,
+      "weeks": [
+        {
+          "weekIndex": 0,
+          "week": 0,
+          "seasonType": "baseline",
+          "label": "2025 Baseline (Preseason)",
+          "path": "/data/leagues/nfl/ownership/2025/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Week 1",
+          "path": "/data/leagues/nfl/ownership/2025/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Week 2",
+          "path": "/data/leagues/nfl/ownership/2025/week-02.json"
+        },
+        {
+          "weekIndex": 3,
+          "week": 3,
+          "seasonType": "regular",
+          "label": "Week 3",
+          "path": "/data/leagues/nfl/ownership/2025/week-03.json"
+        },
+        {
+          "weekIndex": 4,
+          "week": 4,
+          "seasonType": "regular",
+          "label": "Week 4",
+          "path": "/data/leagues/nfl/ownership/2025/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Week 5",
+          "path": "/data/leagues/nfl/ownership/2025/week-05.json"
+        },
+        {
+          "weekIndex": 6,
+          "week": 6,
+          "seasonType": "regular",
+          "label": "Week 6",
+          "path": "/data/leagues/nfl/ownership/2025/week-06.json"
+        },
+        {
+          "weekIndex": 7,
+          "week": 7,
+          "seasonType": "regular",
+          "label": "Week 7",
+          "path": "/data/leagues/nfl/ownership/2025/week-07.json"
+        },
+        {
+          "weekIndex": 8,
+          "week": 8,
+          "seasonType": "regular",
+          "label": "Week 8",
+          "path": "/data/leagues/nfl/ownership/2025/week-08.json"
+        },
+        {
+          "weekIndex": 9,
+          "week": 9,
+          "seasonType": "regular",
+          "label": "Week 9",
+          "path": "/data/leagues/nfl/ownership/2025/week-09.json"
+        },
+        {
+          "weekIndex": 10,
+          "week": 10,
+          "seasonType": "regular",
+          "label": "Week 10",
+          "path": "/data/leagues/nfl/ownership/2025/week-10.json"
+        },
+        {
+          "weekIndex": 11,
+          "week": 11,
+          "seasonType": "regular",
+          "label": "Week 11",
+          "path": "/data/leagues/nfl/ownership/2025/week-11.json"
+        },
+        {
+          "weekIndex": 12,
+          "week": 12,
+          "seasonType": "regular",
+          "label": "Week 12",
+          "path": "/data/leagues/nfl/ownership/2025/week-12.json"
+        },
+        {
+          "weekIndex": 13,
+          "week": 13,
+          "seasonType": "regular",
+          "label": "Week 13",
+          "path": "/data/leagues/nfl/ownership/2025/week-13.json"
+        },
+        {
+          "weekIndex": 14,
+          "week": 14,
+          "seasonType": "regular",
+          "label": "Week 14",
+          "path": "/data/leagues/nfl/ownership/2025/week-14.json"
+        },
+        {
+          "weekIndex": 15,
+          "week": 15,
+          "seasonType": "regular",
+          "label": "Week 15",
+          "path": "/data/leagues/nfl/ownership/2025/week-15.json"
+        },
+        {
+          "weekIndex": 16,
+          "week": 16,
+          "seasonType": "regular",
+          "label": "Week 16",
+          "path": "/data/leagues/nfl/ownership/2025/week-16.json"
+        },
+        {
+          "weekIndex": 17,
+          "week": 17,
+          "seasonType": "regular",
+          "label": "Week 17",
+          "path": "/data/leagues/nfl/ownership/2025/week-17.json"
+        },
+        {
+          "weekIndex": 18,
+          "week": 18,
+          "seasonType": "regular",
+          "label": "Week 18",
+          "path": "/data/leagues/nfl/ownership/2025/week-18.json"
+        },
+        {
+          "weekIndex": 19,
+          "week": 1,
+          "seasonType": "postseason",
+          "label": "Wild Card",
+          "path": "/data/leagues/nfl/ownership/2025/week-19.json"
+        },
+        {
+          "weekIndex": 20,
+          "week": 2,
+          "seasonType": "postseason",
+          "label": "Divisional Round",
+          "path": "/data/leagues/nfl/ownership/2025/week-20.json"
+        },
+        {
+          "weekIndex": 21,
+          "week": 3,
+          "seasonType": "postseason",
+          "label": "Conference Championship",
+          "path": "/data/leagues/nfl/ownership/2025/week-21.json"
+        },
+        {
+          "weekIndex": 22,
+          "week": 5,
+          "seasonType": "postseason",
+          "label": "Super Bowl",
+          "path": "/data/leagues/nfl/ownership/2025/week-22.json"
+        }
+      ]
+    }
+  ]
+}

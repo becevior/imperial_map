@@ -1,0 +1,40 @@
+[
+  {
+    "id": "300124011",
+    "season": 2009,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2010-01-24T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Lucas Oil Stadium",
+    "homeTeamId": "indianapolis-colts",
+    "awayTeamId": "new-york-jets",
+    "homeScore": 30,
+    "awayScore": 17,
+    "outcome": "home-win",
+    "winnerId": "indianapolis-colts",
+    "loserId": "new-york-jets"
+  },
+  {
+    "id": "300124018",
+    "season": 2009,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2010-01-24T23:40Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Caesars Superdome",
+    "homeTeamId": "new-orleans-saints",
+    "awayTeamId": "minnesota-vikings",
+    "homeScore": 31,
+    "awayScore": 28,
+    "outcome": "home-win",
+    "winnerId": "new-orleans-saints",
+    "loserId": "minnesota-vikings"
+  }
+]

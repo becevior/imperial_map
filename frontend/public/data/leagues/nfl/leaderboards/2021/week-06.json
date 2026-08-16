@@ -1,0 +1,288 @@
+{
+  "season": 2021,
+  "weekIndex": 6,
+  "week": 6,
+  "seasonType": "regular",
+  "weekLabel": "Week 6",
+  "generatedAt": "2026-08-15T04:12:44.924875+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1342,
+          "population": 105495139,
+          "areaSqMi": 1386729.47
+        }
+      },
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 617,
+          "population": 61292649,
+          "areaSqMi": 620245.21
+        }
+      },
+      {
+        "teamId": "atlanta-falcons",
+        "teamName": "ATL",
+        "shortName": "ATL",
+        "fullName": "Atlanta Falcons",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 219,
+          "population": 18321552,
+          "areaSqMi": 318078.97
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 529,
+          "population": 60596387,
+          "areaSqMi": 294827.88
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 324,
+          "population": 47377486,
+          "areaSqMi": 259100.52
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 83,
+          "population": 20099378,
+          "areaSqMi": 82282.42
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1342,
+          "population": 105495139,
+          "areaSqMi": 1386729.47
+        }
+      },
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 617,
+          "population": 61292649,
+          "areaSqMi": 620245.21
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 529,
+          "population": 60596387,
+          "areaSqMi": 294827.88
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 324,
+          "population": 47377486,
+          "areaSqMi": 259100.52
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 83,
+          "population": 20099378,
+          "areaSqMi": 82282.42
+        }
+      },
+      {
+        "teamId": "atlanta-falcons",
+        "teamName": "ATL",
+        "shortName": "ATL",
+        "fullName": "Atlanta Falcons",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 219,
+          "population": 18321552,
+          "areaSqMi": 318078.97
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1342,
+          "population": 105495139,
+          "areaSqMi": 1386729.47
+        }
+      },
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 617,
+          "population": 61292649,
+          "areaSqMi": 620245.21
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 529,
+          "population": 60596387,
+          "areaSqMi": 294827.88
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 324,
+          "population": 47377486,
+          "areaSqMi": 259100.52
+        }
+      },
+      {
+        "teamId": "atlanta-falcons",
+        "teamName": "ATL",
+        "shortName": "ATL",
+        "fullName": "Atlanta Falcons",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 219,
+          "population": 18321552,
+          "areaSqMi": 318078.97
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 83,
+          "population": 20099378,
+          "areaSqMi": 82282.42
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 721,
+          "population": 58551751,
+          "areaSqMi": 677578.99
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 83,
+          "population": 20099378,
+          "areaSqMi": 82282.42
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "los-angeles-chargers",
+        "teamName": "LAC",
+        "shortName": "LAC",
+        "fullName": "Los Angeles Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 721,
+          "population": 58551751,
+          "areaSqMi": 677578.99
+        }
+      },
+      {
+        "teamId": "buffalo-bills",
+        "teamName": "BUF",
+        "shortName": "BUF",
+        "fullName": "Buffalo Bills",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 83,
+          "population": 20099378,
+          "areaSqMi": 82282.42
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 6,
+    "countyCount": 3114
+  }
+}

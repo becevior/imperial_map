@@ -1,0 +1,192 @@
+{
+  "season": 2009,
+  "weekIndex": 12,
+  "week": 12,
+  "seasonType": "regular",
+  "weekLabel": "Week 12",
+  "generatedAt": "2026-08-15T04:10:56.257084+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1543,
+          "population": 138302004,
+          "areaSqMi": 1935991.95
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1028,
+          "population": 131273070,
+          "areaSqMi": 734279.18
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 293,
+          "population": 29897082,
+          "areaSqMi": 169118.78
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1543,
+          "population": 138302004,
+          "areaSqMi": 1935991.95
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1028,
+          "population": 131273070,
+          "areaSqMi": 734279.18
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 293,
+          "population": 29897082,
+          "areaSqMi": 169118.78
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1543,
+          "population": 138302004,
+          "areaSqMi": 1935991.95
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1028,
+          "population": 131273070,
+          "areaSqMi": 734279.18
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 293,
+          "population": 29897082,
+          "areaSqMi": 169118.78
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1543,
+          "population": 138302004,
+          "areaSqMi": 1935991.95
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1543,
+          "population": 138302004,
+          "areaSqMi": 1935991.95
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 4,
+    "countyCount": 3114
+  }
+}

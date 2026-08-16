@@ -1,0 +1,40 @@
+[
+  {
+    "id": "290118022",
+    "season": 2008,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2009-01-18T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "State Farm Stadium",
+    "homeTeamId": "arizona-cardinals",
+    "awayTeamId": "philadelphia-eagles",
+    "homeScore": 32,
+    "awayScore": 25,
+    "outcome": "home-win",
+    "winnerId": "arizona-cardinals",
+    "loserId": "philadelphia-eagles"
+  },
+  {
+    "id": "290118023",
+    "season": 2008,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2009-01-18T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Acrisure Stadium",
+    "homeTeamId": "pittsburgh-steelers",
+    "awayTeamId": "baltimore-ravens",
+    "homeScore": 23,
+    "awayScore": 14,
+    "outcome": "home-win",
+    "winnerId": "pittsburgh-steelers",
+    "loserId": "baltimore-ravens"
+  }
+]

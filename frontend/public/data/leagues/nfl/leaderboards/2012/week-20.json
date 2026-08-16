@@ -1,0 +1,120 @@
+{
+  "season": 2012,
+  "weekIndex": 20,
+  "week": 3,
+  "seasonType": "postseason",
+  "weekLabel": "Conference Championship",
+  "generatedAt": "2026-08-15T04:11:22.505582+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 2824,
+          "population": 287875334,
+          "areaSqMi": 2716756.89
+        }
+      },
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 290,
+          "population": 25307257,
+          "areaSqMi": 244507.59
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 2824,
+          "population": 287875334,
+          "areaSqMi": 2716756.89
+        }
+      },
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 290,
+          "population": 25307257,
+          "areaSqMi": 244507.59
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 2824,
+          "population": 287875334,
+          "areaSqMi": 2716756.89
+        }
+      },
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 290,
+          "population": 25307257,
+          "areaSqMi": 244507.59
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1928,
+          "population": 205028399,
+          "areaSqMi": 1687007.06
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "atlanta-falcons",
+        "teamName": "ATL",
+        "shortName": "ATL",
+        "fullName": "Atlanta Falcons",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1928,
+          "population": 205028399,
+          "areaSqMi": 1687007.06
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 2,
+    "countyCount": 3114
+  }
+}

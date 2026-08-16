@@ -1,0 +1,40 @@
+[
+  {
+    "id": "401438009",
+    "season": 2022,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2023-01-29T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Lincoln Financial Field",
+    "homeTeamId": "philadelphia-eagles",
+    "awayTeamId": "san-francisco-49ers",
+    "homeScore": 31,
+    "awayScore": 7,
+    "outcome": "home-win",
+    "winnerId": "philadelphia-eagles",
+    "loserId": "san-francisco-49ers"
+  },
+  {
+    "id": "401438008",
+    "season": 2022,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2023-01-29T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "GEHA Field at Arrowhead Stadium",
+    "homeTeamId": "kansas-city-chiefs",
+    "awayTeamId": "cincinnati-bengals",
+    "homeScore": 23,
+    "awayScore": 20,
+    "outcome": "home-win",
+    "winnerId": "kansas-city-chiefs",
+    "loserId": "cincinnati-bengals"
+  }
+]

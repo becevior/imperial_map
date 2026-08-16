@@ -1,0 +1,564 @@
+{
+  "season": 2005,
+  "weekIndex": 3,
+  "week": 3,
+  "seasonType": "regular",
+  "weekLabel": "Week 3",
+  "generatedAt": "2026-08-15T04:10:05.980228+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "jacksonville-jaguars",
+        "teamName": "JAX",
+        "shortName": "JAX",
+        "fullName": "Jacksonville Jaguars",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 270,
+          "population": 18001952,
+          "areaSqMi": 520946.73
+        }
+      },
+      {
+        "teamId": "san-diego-chargers",
+        "teamName": "SD",
+        "shortName": "SD",
+        "fullName": "San Diego Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 368,
+          "population": 52971358,
+          "areaSqMi": 407967.92
+        }
+      },
+      {
+        "teamId": "washington-redskins",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Redskins",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 456,
+          "population": 64909002,
+          "areaSqMi": 386690.15
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 417,
+          "population": 35896101,
+          "areaSqMi": 384087.66
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 293,
+          "population": 26903382,
+          "areaSqMi": 358527.46
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 125,
+          "population": 24730888,
+          "areaSqMi": 203841.81
+        }
+      },
+      {
+        "teamId": "denver-broncos",
+        "teamName": "DEN",
+        "shortName": "DEN",
+        "fullName": "Denver Broncos",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 284,
+          "population": 14839466,
+          "areaSqMi": 182499.84
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 163,
+          "population": 13742149,
+          "areaSqMi": 158984.25
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 25242809,
+          "areaSqMi": 143276.65
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 207,
+          "population": 22235049,
+          "areaSqMi": 92567.44
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "washington-redskins",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Redskins",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 456,
+          "population": 64909002,
+          "areaSqMi": 386690.15
+        }
+      },
+      {
+        "teamId": "san-diego-chargers",
+        "teamName": "SD",
+        "shortName": "SD",
+        "fullName": "San Diego Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 368,
+          "population": 52971358,
+          "areaSqMi": 407967.92
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 417,
+          "population": 35896101,
+          "areaSqMi": 384087.66
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 293,
+          "population": 26903382,
+          "areaSqMi": 358527.46
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 25242809,
+          "areaSqMi": 143276.65
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 125,
+          "population": 24730888,
+          "areaSqMi": 203841.81
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 207,
+          "population": 22235049,
+          "areaSqMi": 92567.44
+        }
+      },
+      {
+        "teamId": "jacksonville-jaguars",
+        "teamName": "JAX",
+        "shortName": "JAX",
+        "fullName": "Jacksonville Jaguars",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 270,
+          "population": 18001952,
+          "areaSqMi": 520946.73
+        }
+      },
+      {
+        "teamId": "denver-broncos",
+        "teamName": "DEN",
+        "shortName": "DEN",
+        "fullName": "Denver Broncos",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 284,
+          "population": 14839466,
+          "areaSqMi": 182499.84
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 163,
+          "population": 13742149,
+          "areaSqMi": 158984.25
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "washington-redskins",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Redskins",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 456,
+          "population": 64909002,
+          "areaSqMi": 386690.15
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 417,
+          "population": 35896101,
+          "areaSqMi": 384087.66
+        }
+      },
+      {
+        "teamId": "san-diego-chargers",
+        "teamName": "SD",
+        "shortName": "SD",
+        "fullName": "San Diego Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 368,
+          "population": 52971358,
+          "areaSqMi": 407967.92
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 293,
+          "population": 26903382,
+          "areaSqMi": 358527.46
+        }
+      },
+      {
+        "teamId": "denver-broncos",
+        "teamName": "DEN",
+        "shortName": "DEN",
+        "fullName": "Denver Broncos",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 284,
+          "population": 14839466,
+          "areaSqMi": 182499.84
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 25242809,
+          "areaSqMi": 143276.65
+        }
+      },
+      {
+        "teamId": "jacksonville-jaguars",
+        "teamName": "JAX",
+        "shortName": "JAX",
+        "fullName": "Jacksonville Jaguars",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 270,
+          "population": 18001952,
+          "areaSqMi": 520946.73
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 207,
+          "population": 22235049,
+          "areaSqMi": 92567.44
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 163,
+          "population": 13742149,
+          "areaSqMi": 158984.25
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 125,
+          "population": 24730888,
+          "areaSqMi": 203841.81
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "san-diego-chargers",
+        "teamName": "SD",
+        "shortName": "SD",
+        "fullName": "San Diego Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 368,
+          "population": 52971358,
+          "areaSqMi": 407967.92
+        }
+      },
+      {
+        "teamId": "denver-broncos",
+        "teamName": "DEN",
+        "shortName": "DEN",
+        "fullName": "Denver Broncos",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 284,
+          "population": 14839466,
+          "areaSqMi": 182499.84
+        }
+      },
+      {
+        "teamId": "jacksonville-jaguars",
+        "teamName": "JAX",
+        "shortName": "JAX",
+        "fullName": "Jacksonville Jaguars",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 270,
+          "population": 18001952,
+          "areaSqMi": 520946.73
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 127,
+          "population": 11565108,
+          "areaSqMi": 85523.34
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 125,
+          "population": 24730888,
+          "areaSqMi": 203841.81
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "new-york-giants",
+        "teamName": "NYG",
+        "shortName": "NYG",
+        "fullName": "New York Giants",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 368,
+          "population": 52971358,
+          "areaSqMi": 407967.92
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 284,
+          "population": 14839466,
+          "areaSqMi": 182499.84
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 270,
+          "population": 18001952,
+          "areaSqMi": 520946.73
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      },
+      {
+        "teamId": "chicago-bears",
+        "teamName": "CHI",
+        "shortName": "CHI",
+        "fullName": "Chicago Bears",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 127,
+          "population": 11565108,
+          "areaSqMi": 85523.34
+        }
+      },
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 125,
+          "population": 24730888,
+          "areaSqMi": 203841.81
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 11,
+    "countyCount": 3114
+  }
+}

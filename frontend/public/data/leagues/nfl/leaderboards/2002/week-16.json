@@ -1,0 +1,156 @@
+{
+  "season": 2002,
+  "weekIndex": 16,
+  "week": 16,
+  "seasonType": "regular",
+  "weekLabel": "Week 16",
+  "generatedAt": "2026-08-15T04:09:24.056514+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 2736,
+          "population": 268956037,
+          "areaSqMi": 2450482.54
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 177,
+          "population": 23579147,
+          "areaSqMi": 410663.81
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 201,
+          "population": 20647407,
+          "areaSqMi": 100118.13
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 2736,
+          "population": 268956037,
+          "areaSqMi": 2450482.54
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 177,
+          "population": 23579147,
+          "areaSqMi": 410663.81
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 201,
+          "population": 20647407,
+          "areaSqMi": 100118.13
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 2736,
+          "population": 268956037,
+          "areaSqMi": 2450482.54
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 201,
+          "population": 20647407,
+          "areaSqMi": 100118.13
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 177,
+          "population": 23579147,
+          "areaSqMi": 410663.81
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 891,
+          "population": 113382204,
+          "areaSqMi": 707325.47
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 891,
+          "population": 113382204,
+          "areaSqMi": 707325.47
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 3,
+    "countyCount": 3114
+  }
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "401547379",
+    "season": 2023,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2024-01-28T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "M&T Bank Stadium",
+    "homeTeamId": "baltimore-ravens",
+    "awayTeamId": "kansas-city-chiefs",
+    "homeScore": 10,
+    "awayScore": 17,
+    "outcome": "away-win",
+    "winnerId": "kansas-city-chiefs",
+    "loserId": "baltimore-ravens"
+  },
+  {
+    "id": "401547380",
+    "season": 2023,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2024-01-28T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Levi's Stadium",
+    "homeTeamId": "san-francisco-49ers",
+    "awayTeamId": "detroit-lions",
+    "homeScore": 34,
+    "awayScore": 31,
+    "outcome": "home-win",
+    "winnerId": "san-francisco-49ers",
+    "loserId": "detroit-lions"
+  }
+]

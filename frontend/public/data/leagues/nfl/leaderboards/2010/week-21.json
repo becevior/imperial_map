@@ -1,0 +1,120 @@
+{
+  "season": 2010,
+  "weekIndex": 21,
+  "week": 5,
+  "seasonType": "postseason",
+  "weekLabel": "Super Bowl",
+  "generatedAt": "2026-08-15T04:11:04.210159+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 2871,
+          "population": 279701909,
+          "areaSqMi": 2806328.31
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 243,
+          "population": 33480682,
+          "areaSqMi": 154936.17
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 2871,
+          "population": 279701909,
+          "areaSqMi": 2806328.31
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 243,
+          "population": 33480682,
+          "areaSqMi": 154936.17
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 2871,
+          "population": 279701909,
+          "areaSqMi": 2806328.31
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 243,
+          "population": 33480682,
+          "areaSqMi": 154936.17
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 2871,
+          "population": 279701909,
+          "areaSqMi": 2806328.31
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 2871,
+          "population": 279701909,
+          "areaSqMi": 2806328.31
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 2,
+    "countyCount": 3114
+  }
+}

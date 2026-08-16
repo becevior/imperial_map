@@ -1,0 +1,192 @@
+{
+  "season": 2006,
+  "weekIndex": 20,
+  "week": 3,
+  "seasonType": "postseason",
+  "weekLabel": "Conference Championship",
+  "generatedAt": "2026-08-15T04:10:18.937230+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 896,
+          "population": 100918755,
+          "areaSqMi": 1097361.93
+        }
+      },
+      {
+        "teamId": "st-louis-rams",
+        "teamName": "STL",
+        "shortName": "STL",
+        "fullName": "St. Louis Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1305,
+          "population": 153181051,
+          "areaSqMi": 1009813.4
+        }
+      },
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 401,
+          "population": 17775757,
+          "areaSqMi": 589373.24
+        }
+      },
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 512,
+          "population": 41307028,
+          "areaSqMi": 264715.9
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "st-louis-rams",
+        "teamName": "STL",
+        "shortName": "STL",
+        "fullName": "St. Louis Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1305,
+          "population": 153181051,
+          "areaSqMi": 1009813.4
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 896,
+          "population": 100918755,
+          "areaSqMi": 1097361.93
+        }
+      },
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 512,
+          "population": 41307028,
+          "areaSqMi": 264715.9
+        }
+      },
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 401,
+          "population": 17775757,
+          "areaSqMi": 589373.24
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "st-louis-rams",
+        "teamName": "STL",
+        "shortName": "STL",
+        "fullName": "St. Louis Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1305,
+          "population": 153181051,
+          "areaSqMi": 1009813.4
+        }
+      },
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 896,
+          "population": 100918755,
+          "areaSqMi": 1097361.93
+        }
+      },
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 512,
+          "population": 41307028,
+          "areaSqMi": 264715.9
+        }
+      },
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 401,
+          "population": 17775757,
+          "areaSqMi": 589373.24
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "indianapolis-colts",
+        "teamName": "IND",
+        "shortName": "IND",
+        "fullName": "Indianapolis Colts",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 896,
+          "population": 100918755,
+          "areaSqMi": 1097361.93
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 896,
+          "population": 100918755,
+          "areaSqMi": 1097361.93
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 4,
+    "countyCount": 3114
+  }
+}

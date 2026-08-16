@@ -1,0 +1,84 @@
+{
+  "season": 2020,
+  "weekIndex": 17,
+  "week": 17,
+  "seasonType": "regular",
+  "weekLabel": "Week 17",
+  "generatedAt": "2026-08-15T04:12:36.551613+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 1,
+    "countyCount": 3114
+  }
+}

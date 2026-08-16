@@ -1,0 +1,252 @@
+{
+  "season": 2022,
+  "weekIndex": 11,
+  "week": 11,
+  "seasonType": "regular",
+  "weekLabel": "Week 11",
+  "generatedAt": "2026-08-15T04:12:52.795199+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1110,
+          "population": 136160803,
+          "areaSqMi": 882746.9
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 381,
+          "population": 46189154,
+          "areaSqMi": 566786.04
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 760,
+          "population": 64362147,
+          "areaSqMi": 504972.11
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 16178118,
+          "areaSqMi": 76424.52
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1110,
+          "population": 136160803,
+          "areaSqMi": 882746.9
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 760,
+          "population": 64362147,
+          "areaSqMi": 504972.11
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 381,
+          "population": 46189154,
+          "areaSqMi": 566786.04
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 16178118,
+          "areaSqMi": 76424.52
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1110,
+          "population": 136160803,
+          "areaSqMi": 882746.9
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 760,
+          "population": 64362147,
+          "areaSqMi": 504972.11
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 381,
+          "population": 46189154,
+          "areaSqMi": 566786.04
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 16178118,
+          "areaSqMi": 76424.52
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 16178118,
+          "areaSqMi": 76424.52
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      },
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 198,
+          "population": 16178118,
+          "areaSqMi": 76424.52
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 5,
+    "countyCount": 3114
+  }
+}

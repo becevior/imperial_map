@@ -1,0 +1,152 @@
+{
+  "season": 2017,
+  "weeks": [
+    {
+      "weekIndex": 1,
+      "week": 1,
+      "seasonType": "regular",
+      "label": "Week 1",
+      "path": "/data/leagues/nfl/games/2017/week-01.json"
+    },
+    {
+      "weekIndex": 2,
+      "week": 2,
+      "seasonType": "regular",
+      "label": "Week 2",
+      "path": "/data/leagues/nfl/games/2017/week-02.json"
+    },
+    {
+      "weekIndex": 3,
+      "week": 3,
+      "seasonType": "regular",
+      "label": "Week 3",
+      "path": "/data/leagues/nfl/games/2017/week-03.json"
+    },
+    {
+      "weekIndex": 4,
+      "week": 4,
+      "seasonType": "regular",
+      "label": "Week 4",
+      "path": "/data/leagues/nfl/games/2017/week-04.json"
+    },
+    {
+      "weekIndex": 5,
+      "week": 5,
+      "seasonType": "regular",
+      "label": "Week 5",
+      "path": "/data/leagues/nfl/games/2017/week-05.json"
+    },
+    {
+      "weekIndex": 6,
+      "week": 6,
+      "seasonType": "regular",
+      "label": "Week 6",
+      "path": "/data/leagues/nfl/games/2017/week-06.json"
+    },
+    {
+      "weekIndex": 7,
+      "week": 7,
+      "seasonType": "regular",
+      "label": "Week 7",
+      "path": "/data/leagues/nfl/games/2017/week-07.json"
+    },
+    {
+      "weekIndex": 8,
+      "week": 8,
+      "seasonType": "regular",
+      "label": "Week 8",
+      "path": "/data/leagues/nfl/games/2017/week-08.json"
+    },
+    {
+      "weekIndex": 9,
+      "week": 9,
+      "seasonType": "regular",
+      "label": "Week 9",
+      "path": "/data/leagues/nfl/games/2017/week-09.json"
+    },
+    {
+      "weekIndex": 10,
+      "week": 10,
+      "seasonType": "regular",
+      "label": "Week 10",
+      "path": "/data/leagues/nfl/games/2017/week-10.json"
+    },
+    {
+      "weekIndex": 11,
+      "week": 11,
+      "seasonType": "regular",
+      "label": "Week 11",
+      "path": "/data/leagues/nfl/games/2017/week-11.json"
+    },
+    {
+      "weekIndex": 12,
+      "week": 12,
+      "seasonType": "regular",
+      "label": "Week 12",
+      "path": "/data/leagues/nfl/games/2017/week-12.json"
+    },
+    {
+      "weekIndex": 13,
+      "week": 13,
+      "seasonType": "regular",
+      "label": "Week 13",
+      "path": "/data/leagues/nfl/games/2017/week-13.json"
+    },
+    {
+      "weekIndex": 14,
+      "week": 14,
+      "seasonType": "regular",
+      "label": "Week 14",
+      "path": "/data/leagues/nfl/games/2017/week-14.json"
+    },
+    {
+      "weekIndex": 15,
+      "week": 15,
+      "seasonType": "regular",
+      "label": "Week 15",
+      "path": "/data/leagues/nfl/games/2017/week-15.json"
+    },
+    {
+      "weekIndex": 16,
+      "week": 16,
+      "seasonType": "regular",
+      "label": "Week 16",
+      "path": "/data/leagues/nfl/games/2017/week-16.json"
+    },
+    {
+      "weekIndex": 17,
+      "week": 17,
+      "seasonType": "regular",
+      "label": "Week 17",
+      "path": "/data/leagues/nfl/games/2017/week-17.json"
+    },
+    {
+      "weekIndex": 18,
+      "week": 1,
+      "seasonType": "postseason",
+      "label": "Wild Card",
+      "path": "/data/leagues/nfl/games/2017/week-18.json"
+    },
+    {
+      "weekIndex": 19,
+      "week": 2,
+      "seasonType": "postseason",
+      "label": "Divisional Round",
+      "path": "/data/leagues/nfl/games/2017/week-19.json"
+    },
+    {
+      "weekIndex": 20,
+      "week": 3,
+      "seasonType": "postseason",
+      "label": "Conference Championship",
+      "path": "/data/leagues/nfl/games/2017/week-20.json"
+    },
+    {
+      "weekIndex": 21,
+      "week": 5,
+      "seasonType": "postseason",
+      "label": "Super Bowl",
+      "path": "/data/leagues/nfl/games/2017/week-21.json"
+    }
+  ]
+}

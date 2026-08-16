@@ -1,0 +1,444 @@
+{
+  "season": 2018,
+  "weekIndex": 4,
+  "week": 4,
+  "seasonType": "regular",
+  "weekLabel": "Week 4",
+  "generatedAt": "2026-08-15T04:12:16.571766+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 735,
+          "population": 61138116,
+          "areaSqMi": 976228.35
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 435,
+          "population": 73981472,
+          "areaSqMi": 479908.62
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 454,
+          "population": 36003962,
+          "areaSqMi": 353770.51
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 14103376,
+          "areaSqMi": 290458.46
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 393,
+          "population": 39209422,
+          "areaSqMi": 277020.51
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 60,
+          "population": 14376361,
+          "areaSqMi": 183159.91
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 309,
+          "population": 29224483,
+          "areaSqMi": 164718.11
+        }
+      },
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 281,
+          "population": 24500908,
+          "areaSqMi": 127792.3
+        }
+      },
+      {
+        "teamId": "washington-redskins",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Redskins",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 166,
+          "population": 20644491,
+          "areaSqMi": 108207.7
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 435,
+          "population": 73981472,
+          "areaSqMi": 479908.62
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 735,
+          "population": 61138116,
+          "areaSqMi": 976228.35
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 393,
+          "population": 39209422,
+          "areaSqMi": 277020.51
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 454,
+          "population": 36003962,
+          "areaSqMi": 353770.51
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 309,
+          "population": 29224483,
+          "areaSqMi": 164718.11
+        }
+      },
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 281,
+          "population": 24500908,
+          "areaSqMi": 127792.3
+        }
+      },
+      {
+        "teamId": "washington-redskins",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Redskins",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 166,
+          "population": 20644491,
+          "areaSqMi": 108207.7
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 60,
+          "population": 14376361,
+          "areaSqMi": 183159.91
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 14103376,
+          "areaSqMi": 290458.46
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 735,
+          "population": 61138116,
+          "areaSqMi": 976228.35
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 454,
+          "population": 36003962,
+          "areaSqMi": 353770.51
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 435,
+          "population": 73981472,
+          "areaSqMi": 479908.62
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 393,
+          "population": 39209422,
+          "areaSqMi": 277020.51
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 309,
+          "population": 29224483,
+          "areaSqMi": 164718.11
+        }
+      },
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 281,
+          "population": 24500908,
+          "areaSqMi": 127792.3
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 14103376,
+          "areaSqMi": 290458.46
+        }
+      },
+      {
+        "teamId": "washington-redskins",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Redskins",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 166,
+          "population": 20644491,
+          "areaSqMi": 108207.7
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 60,
+          "population": 14376361,
+          "areaSqMi": 183159.91
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 352,
+          "population": 37854975,
+          "areaSqMi": 190986.79
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 309,
+          "population": 29224483,
+          "areaSqMi": 164718.11
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 14103376,
+          "areaSqMi": 290458.46
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 167,
+          "population": 21486278,
+          "areaSqMi": 268163.94
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 352,
+          "population": 37854975,
+          "areaSqMi": 190986.79
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 309,
+          "population": 29224483,
+          "areaSqMi": 164718.11
+        }
+      },
+      {
+        "teamId": "buffalo-bills",
+        "teamName": "BUF",
+        "shortName": "BUF",
+        "fullName": "Buffalo Bills",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 281,
+          "population": 14103376,
+          "areaSqMi": 290458.46
+        }
+      },
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 167,
+          "population": 21486278,
+          "areaSqMi": 268163.94
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 9,
+    "countyCount": 3114
+  }
+}

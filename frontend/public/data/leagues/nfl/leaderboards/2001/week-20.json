@@ -1,0 +1,130 @@
+{
+  "season": 2001,
+  "weekIndex": 20,
+  "week": 3,
+  "seasonType": "postseason",
+  "weekLabel": "Conference Championship",
+  "generatedAt": "2026-08-15T04:09:12.066773+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "st-louis-rams",
+        "teamName": "STL",
+        "shortName": "STL",
+        "fullName": "St. Louis Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1823,
+          "population": 187184488,
+          "areaSqMi": 2050087.21
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1164,
+          "population": 114432995,
+          "areaSqMi": 825653.92
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 127,
+          "population": 11565108,
+          "areaSqMi": 85523.34
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "st-louis-rams",
+        "teamName": "STL",
+        "shortName": "STL",
+        "fullName": "St. Louis Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1823,
+          "population": 187184488,
+          "areaSqMi": 2050087.21
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1164,
+          "population": 114432995,
+          "areaSqMi": 825653.92
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 127,
+          "population": 11565108,
+          "areaSqMi": 85523.34
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "st-louis-rams",
+        "teamName": "STL",
+        "shortName": "STL",
+        "fullName": "St. Louis Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1823,
+          "population": 187184488,
+          "areaSqMi": 2050087.21
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1164,
+          "population": 114432995,
+          "areaSqMi": 825653.92
+        }
+      },
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 127,
+          "population": 11565108,
+          "areaSqMi": 85523.34
+        }
+      }
+    ],
+    "territoryGained": [],
+    "territoryLost": []
+  },
+  "totals": {
+    "trackedTeams": 3,
+    "countyCount": 3114
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "season": 2020,
+  "weekIndex": 15,
+  "week": 15,
+  "seasonType": "regular",
+  "weekLabel": "Week 15",
+  "generatedAt": "2026-08-15T04:12:36.538970+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "washington-football-team",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Football Team",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 2,
+    "countyCount": 3114
+  }
+}

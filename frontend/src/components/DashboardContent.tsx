@@ -5,6 +5,7 @@ import { Fragment, useCallback, useMemo, useRef, useState } from 'react'
 import Map from '@/components/Map'
 import ScoreTicker from '@/components/ScoreTicker'
 import { trackEvent } from '@/lib/analytics'
+import type { LeagueDefinition } from '@/lib/leagues'
 import type { PreviousWeekScores } from '@/lib/scoreTicker'
 import type {
   LeaderboardEntry,
@@ -28,12 +29,15 @@ function formatMetric(metric: keyof LeaderboardMetrics, value: number): string {
 
 function describeMetrics(
   metrics: LeaderboardMetrics,
-  omit: keyof LeaderboardMetrics
+  omit: keyof LeaderboardMetrics,
+  territoryUnitLabel: string
 ): string {
   const pieces: string[] = []
 
   if (omit !== 'counties') {
-    pieces.push(`Counties: ${numberFormatter.format(metrics.counties)}`)
+    pieces.push(
+      `${territoryUnitLabel}: ${numberFormatter.format(metrics.counties)}`
+    )
   }
 
   if (omit !== 'population') {
@@ -52,7 +56,8 @@ function renderLeaderboard(
   entries: LeaderboardEntry[] | undefined,
   primaryMetric: keyof LeaderboardMetrics,
   primaryLabel: string,
-  omit: keyof LeaderboardMetrics
+  omit: keyof LeaderboardMetrics,
+  territoryUnitLabel: string
 ) {
   const safeEntries = Array.isArray(entries) ? entries : []
 
@@ -73,7 +78,9 @@ function renderLeaderboard(
                     {entry.conference ? (
                       <span className="conf">{entry.conference}</span>
                     ) : null}
-                    <span className="meta">{describeMetrics(entry.metrics, omit)}</span>
+                    <span className="meta">
+                      {describeMetrics(entry.metrics, omit, territoryUnitLabel)}
+                    </span>
                   </td>
                   <td className="num">
                     {formatMetric(primaryMetric, entry.metrics[primaryMetric])}{' '}
@@ -89,17 +96,23 @@ function renderLeaderboard(
   )
 }
 
-function buildLeaderboardPath(season: number, weekIndex: number): string {
+function buildLeaderboardPath(
+  dataBasePath: string,
+  season: number,
+  weekIndex: number
+): string {
   const paddedWeek = String(weekIndex).padStart(2, '0')
-  return `/data/leaderboards/${season}/week-${paddedWeek}.json`
+  return `${dataBasePath}/leaderboards/${season}/week-${paddedWeek}.json`
 }
 
 interface DashboardContentProps {
+  league: LeagueDefinition
   initialLeaderboards: LeaderboardsPayload | null
   ticker?: PreviousWeekScores | null
 }
 
 export default function DashboardContent({
+  league,
   initialLeaderboards,
   ticker
 }: DashboardContentProps) {
@@ -117,7 +130,7 @@ export default function DashboardContent({
 
   const lastLoadedKeyRef = useRef<string | null>(
     initialLeaderboards && typeof initialLeaderboards.weekIndex === 'number'
-      ? `${initialLeaderboards.season}-${initialLeaderboards.weekIndex}-snapshot`
+      ? `${league.id}-${initialLeaderboards.season}-${initialLeaderboards.weekIndex}-snapshot`
       : null
   )
 
@@ -133,7 +146,7 @@ export default function DashboardContent({
         return
       }
 
-      const key = `${season}-${weekIndex}-${refreshVersion ?? 'snapshot'}`
+      const key = `${league.id}-${season}-${weekIndex}-${refreshVersion ?? 'snapshot'}`
       if (lastLoadedKeyRef.current === key && leaderboards) {
         setError(null)
         return
@@ -143,7 +156,7 @@ export default function DashboardContent({
       setError(null)
 
       try {
-        const path = buildLeaderboardPath(season, weekIndex)
+        const path = buildLeaderboardPath(league.dataBasePath, season, weekIndex)
         const response = await fetch(path, { cache: 'no-store' })
 
         if (!response.ok) {
@@ -152,6 +165,7 @@ export default function DashboardContent({
             setError('Leaderboard data has not been generated for this week yet.')
             trackEvent('leaderboard_load_failed', {
               season,
+              league_id: league.id,
               week_index: weekIndex,
               week_label: resolvedLabel,
               status: response.status,
@@ -168,6 +182,7 @@ export default function DashboardContent({
         lastLoadedKeyRef.current = key
         trackEvent('leaderboard_loaded', {
           season,
+          league_id: league.id,
           week_index: weekIndex,
           week_label: payload.weekLabel ?? resolvedLabel,
           territory_gained_count:
@@ -181,6 +196,7 @@ export default function DashboardContent({
         setError('Could not load leaderboard data for this week.')
         trackEvent('leaderboard_load_failed', {
           season,
+          league_id: league.id,
           week_index: weekIndex,
           week_label: resolvedLabel,
           reason: 'fetch_error'
@@ -189,7 +205,7 @@ export default function DashboardContent({
         setLoading(false)
       }
     },
-    [leaderboards]
+    [leaderboards, league]
   )
 
   const cards = useMemo(
@@ -198,14 +214,14 @@ export default function DashboardContent({
         title: 'Most Territory Gained',
         data: leaderboards?.leaderboards?.territoryGained,
         metric: 'counties' as const,
-        label: 'counties',
+        label: league.territoryUnitLabel,
         omit: 'counties' as const
       },
       {
         title: 'Most Territory Lost',
         data: leaderboards?.leaderboards?.territoryLost,
         metric: 'counties' as const,
-        label: 'counties',
+        label: league.territoryUnitLabel,
         omit: 'counties' as const
       },
       {
@@ -226,11 +242,11 @@ export default function DashboardContent({
         title: 'Most Counties Owned',
         data: leaderboards?.leaderboards?.countiesOwned,
         metric: 'counties' as const,
-        label: 'counties',
+        label: league.territoryUnitLabel,
         omit: 'counties' as const
       }
     ],
-    [leaderboards]
+    [leaderboards, league.territoryUnitLabel]
   )
 
   const hudLeader = leaderboards?.leaderboards?.countiesOwned?.[0]
@@ -257,9 +273,21 @@ export default function DashboardContent({
       ) : null}
 
       <div className="im-panel im-panel--map">
-        <div className="im-panel__label">Field view — continental situation</div>
+        <div className="im-panel__label">
+          {league.name} territory map — continental situation
+        </div>
         <div className="im-panel__body">
-          <Map className="min-h-[600px]" onWeekChange={handleWeekChange} />
+          <Map
+            key={league.id}
+            className="min-h-[600px]"
+            leagueId={league.id}
+            dataBasePath={league.dataBasePath}
+            teamLabel={league.teamLabel}
+            periodLabel={league.periodLabel}
+            territoryUnitLabel={league.territoryUnitLabel}
+            liveUpdates={league.liveUpdates}
+            onWeekChange={handleWeekChange}
+          />
         </div>
       </div>
 
@@ -273,13 +301,17 @@ export default function DashboardContent({
       {topGain && topGain.metrics.counties > 0 ? (
         <p className="im-dispatch">
           {topGain.teamName.toUpperCase()} SEIZES{' '}
-          {numberFormatter.format(topGain.metrics.counties)} COUNTIES
+          {numberFormatter.format(topGain.metrics.counties)}{' '}
+          {league.territoryUnitLabel.toUpperCase()}
         </p>
       ) : null}
 
       <section>
         <div className="im-section-head">
-          <h2 className="im-section-title">Weekly Leaderboards</h2>
+          <h2 className="im-section-title">
+            {league.periodLabel.charAt(0).toUpperCase() + league.periodLabel.slice(1)}ly{' '}
+            Leaderboards
+          </h2>
           <p className="im-section-sub">
             {activeWeekLabel}
             {leaderboards?.season ? ` · Season ${leaderboards.season}` : ''}
@@ -304,7 +336,8 @@ export default function DashboardContent({
                   card.data,
                   card.metric,
                   card.label,
-                  card.omit
+                  card.omit,
+                  league.territoryUnitLabel
                 )}
               </Fragment>
             ))}

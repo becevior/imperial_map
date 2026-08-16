@@ -1,0 +1,166 @@
+{
+  "season": 2005,
+  "weekIndex": 18,
+  "week": 1,
+  "seasonType": "postseason",
+  "weekLabel": "Wild Card",
+  "generatedAt": "2026-08-15T04:10:06.056408+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1217,
+          "population": 119985469,
+          "areaSqMi": 1182704.15
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 1062,
+          "population": 105666751,
+          "areaSqMi": 832103.39
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 542,
+          "population": 60626989,
+          "areaSqMi": 587929.47
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 293,
+          "population": 26903382,
+          "areaSqMi": 358527.46
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1217,
+          "population": 119985469,
+          "areaSqMi": 1182704.15
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 1062,
+          "population": 105666751,
+          "areaSqMi": 832103.39
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 542,
+          "population": 60626989,
+          "areaSqMi": 587929.47
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 293,
+          "population": 26903382,
+          "areaSqMi": 358527.46
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1217,
+          "population": 119985469,
+          "areaSqMi": 1182704.15
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 1062,
+          "population": 105666751,
+          "areaSqMi": 832103.39
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 542,
+          "population": 60626989,
+          "areaSqMi": 587929.47
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 293,
+          "population": 26903382,
+          "areaSqMi": 358527.46
+        }
+      }
+    ],
+    "territoryGained": [],
+    "territoryLost": []
+  },
+  "totals": {
+    "trackedTeams": 4,
+    "countyCount": 3114
+  }
+}

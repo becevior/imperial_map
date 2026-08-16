@@ -1,0 +1,252 @@
+{
+  "season": 2018,
+  "weekIndex": 10,
+  "week": 10,
+  "seasonType": "regular",
+  "weekLabel": "Week 10",
+  "generatedAt": "2026-08-15T04:12:16.606165+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "los-angeles-chargers",
+        "teamName": "LAC",
+        "shortName": "LAC",
+        "fullName": "Los Angeles Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1016,
+          "population": 75241492,
+          "areaSqMi": 1266686.81
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 680,
+          "population": 71024814,
+          "areaSqMi": 645138.12
+        }
+      },
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 435,
+          "population": 73981472,
+          "areaSqMi": 479908.62
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 702,
+          "population": 68433905,
+          "areaSqMi": 441738.62
+        }
+      },
+      {
+        "teamId": "cleveland-browns",
+        "teamName": "CLE",
+        "shortName": "CLE",
+        "fullName": "Cleveland Browns",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 24500908,
+          "areaSqMi": 127792.3
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "los-angeles-chargers",
+        "teamName": "LAC",
+        "shortName": "LAC",
+        "fullName": "Los Angeles Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1016,
+          "population": 75241492,
+          "areaSqMi": 1266686.81
+        }
+      },
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 435,
+          "population": 73981472,
+          "areaSqMi": 479908.62
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 680,
+          "population": 71024814,
+          "areaSqMi": 645138.12
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 702,
+          "population": 68433905,
+          "areaSqMi": 441738.62
+        }
+      },
+      {
+        "teamId": "cleveland-browns",
+        "teamName": "CLE",
+        "shortName": "CLE",
+        "fullName": "Cleveland Browns",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 24500908,
+          "areaSqMi": 127792.3
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "los-angeles-chargers",
+        "teamName": "LAC",
+        "shortName": "LAC",
+        "fullName": "Los Angeles Chargers",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1016,
+          "population": 75241492,
+          "areaSqMi": 1266686.81
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 702,
+          "population": 68433905,
+          "areaSqMi": 441738.62
+        }
+      },
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 680,
+          "population": 71024814,
+          "areaSqMi": 645138.12
+        }
+      },
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 435,
+          "population": 73981472,
+          "areaSqMi": 479908.62
+        }
+      },
+      {
+        "teamId": "cleveland-browns",
+        "teamName": "CLE",
+        "shortName": "CLE",
+        "fullName": "Cleveland Browns",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 24500908,
+          "areaSqMi": 127792.3
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 702,
+          "population": 68433905,
+          "areaSqMi": 441738.62
+        }
+      },
+      {
+        "teamId": "cleveland-browns",
+        "teamName": "CLE",
+        "shortName": "CLE",
+        "fullName": "Cleveland Browns",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 281,
+          "population": 24500908,
+          "areaSqMi": 127792.3
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 702,
+          "population": 68433905,
+          "areaSqMi": 441738.62
+        }
+      },
+      {
+        "teamId": "atlanta-falcons",
+        "teamName": "ATL",
+        "shortName": "ATL",
+        "fullName": "Atlanta Falcons",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 281,
+          "population": 24500908,
+          "areaSqMi": 127792.3
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 5,
+    "countyCount": 3114
+  }
+}

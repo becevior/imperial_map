@@ -1,0 +1,40 @@
+[
+  {
+    "id": "400749519",
+    "season": 2014,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2015-01-18T20:05Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Lumen Field",
+    "homeTeamId": "seattle-seahawks",
+    "awayTeamId": "green-bay-packers",
+    "homeScore": 28,
+    "awayScore": 22,
+    "outcome": "home-win",
+    "winnerId": "seattle-seahawks",
+    "loserId": "green-bay-packers"
+  },
+  {
+    "id": "400749520",
+    "season": 2014,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2015-01-18T23:50Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Gillette Stadium",
+    "homeTeamId": "new-england-patriots",
+    "awayTeamId": "indianapolis-colts",
+    "homeScore": 45,
+    "awayScore": 7,
+    "outcome": "home-win",
+    "winnerId": "new-england-patriots",
+    "loserId": "indianapolis-colts"
+  }
+]

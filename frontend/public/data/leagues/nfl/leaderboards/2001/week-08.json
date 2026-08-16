@@ -1,0 +1,276 @@
+{
+  "season": 2001,
+  "weekIndex": 8,
+  "week": 8,
+  "seasonType": "regular",
+  "weekLabel": "Week 8",
+  "generatedAt": "2026-08-15T04:09:12.014156+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "chicago-bears",
+        "teamName": "CHI",
+        "shortName": "CHI",
+        "fullName": "Chicago Bears",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 1169,
+          "population": 128742156,
+          "areaSqMi": 965908.85
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1164,
+          "population": 114432995,
+          "areaSqMi": 825653.92
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 299,
+          "population": 21389255,
+          "areaSqMi": 735203.65
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 355,
+          "population": 37053077,
+          "areaSqMi": 348974.71
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 127,
+          "population": 11565108,
+          "areaSqMi": 85523.34
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "chicago-bears",
+        "teamName": "CHI",
+        "shortName": "CHI",
+        "fullName": "Chicago Bears",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 1169,
+          "population": 128742156,
+          "areaSqMi": 965908.85
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1164,
+          "population": 114432995,
+          "areaSqMi": 825653.92
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 355,
+          "population": 37053077,
+          "areaSqMi": 348974.71
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 299,
+          "population": 21389255,
+          "areaSqMi": 735203.65
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 127,
+          "population": 11565108,
+          "areaSqMi": 85523.34
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "chicago-bears",
+        "teamName": "CHI",
+        "shortName": "CHI",
+        "fullName": "Chicago Bears",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 1169,
+          "population": 128742156,
+          "areaSqMi": 965908.85
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1164,
+          "population": 114432995,
+          "areaSqMi": 825653.92
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 355,
+          "population": 37053077,
+          "areaSqMi": 348974.71
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 299,
+          "population": 21389255,
+          "areaSqMi": 735203.65
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 127,
+          "population": 11565108,
+          "areaSqMi": 85523.34
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1164,
+          "population": 114432995,
+          "areaSqMi": 825653.92
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 355,
+          "population": 37053077,
+          "areaSqMi": 348974.71
+        }
+      },
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 299,
+          "population": 21389255,
+          "areaSqMi": 735203.65
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1164,
+          "population": 114432995,
+          "areaSqMi": 825653.92
+        }
+      },
+      {
+        "teamId": "atlanta-falcons",
+        "teamName": "ATL",
+        "shortName": "ATL",
+        "fullName": "Atlanta Falcons",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 355,
+          "population": 37053077,
+          "areaSqMi": 348974.71
+        }
+      },
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 299,
+          "population": 21389255,
+          "areaSqMi": 735203.65
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 5,
+    "countyCount": 3114
+  }
+}

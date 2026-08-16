@@ -1,0 +1,40 @@
+[
+  {
+    "id": "220127023",
+    "season": 2001,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2002-01-27T17:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": null,
+    "homeTeamId": "pittsburgh-steelers",
+    "awayTeamId": "new-england-patriots",
+    "homeScore": 17,
+    "awayScore": 24,
+    "outcome": "away-win",
+    "winnerId": "new-england-patriots",
+    "loserId": "pittsburgh-steelers"
+  },
+  {
+    "id": "220127014",
+    "season": 2001,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2002-01-27T21:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": null,
+    "homeTeamId": "st-louis-rams",
+    "awayTeamId": "philadelphia-eagles",
+    "homeScore": 29,
+    "awayScore": 24,
+    "outcome": "home-win",
+    "winnerId": "st-louis-rams",
+    "loserId": "philadelphia-eagles"
+  }
+]

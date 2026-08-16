@@ -1,0 +1,180 @@
+{
+  "season": 2020,
+  "weekIndex": 9,
+  "week": 9,
+  "seasonType": "regular",
+  "weekLabel": "Week 9",
+  "generatedAt": "2026-08-15T04:12:36.501118+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1529,
+          "population": 159339253,
+          "areaSqMi": 1401660.34
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 388,
+          "population": 45517369,
+          "areaSqMi": 437990.47
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1529,
+          "population": 159339253,
+          "areaSqMi": 1401660.34
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 388,
+          "population": 45517369,
+          "areaSqMi": 437990.47
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1529,
+          "population": 159339253,
+          "areaSqMi": 1401660.34
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 388,
+          "population": 45517369,
+          "areaSqMi": 437990.47
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "new-orleans-saints",
+        "teamName": "NO",
+        "shortName": "NO",
+        "fullName": "New Orleans Saints",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1285,
+          "population": 114571441,
+          "areaSqMi": 1043956.4
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 388,
+          "population": 45517369,
+          "areaSqMi": 437990.47
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "tampa-bay-buccaneers",
+        "teamName": "TB",
+        "shortName": "TB",
+        "fullName": "Tampa Bay Buccaneers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1285,
+          "population": 114571441,
+          "areaSqMi": 1043956.4
+        }
+      },
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 388,
+          "population": 45517369,
+          "areaSqMi": 437990.47
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 3,
+    "countyCount": 3114
+  }
+}

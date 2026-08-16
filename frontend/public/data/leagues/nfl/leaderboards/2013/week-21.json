@@ -1,0 +1,84 @@
+{
+  "season": 2013,
+  "weekIndex": 21,
+  "week": 5,
+  "seasonType": "postseason",
+  "weekLabel": "Super Bowl",
+  "generatedAt": "2026-08-15T04:11:30.780962+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 955,
+          "population": 95539691,
+          "areaSqMi": 603664.05
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "denver-broncos",
+        "teamName": "DEN",
+        "shortName": "DEN",
+        "fullName": "Denver Broncos",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 955,
+          "population": 95539691,
+          "areaSqMi": 603664.05
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 1,
+    "countyCount": 3114
+  }
+}

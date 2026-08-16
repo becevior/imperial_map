@@ -1,0 +1,216 @@
+{
+  "season": 2022,
+  "weekIndex": 14,
+  "week": 14,
+  "seasonType": "regular",
+  "weekLabel": "Week 14",
+  "generatedAt": "2026-08-15T04:12:52.811370+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1491,
+          "population": 182349957,
+          "areaSqMi": 1449532.94
+        }
+      },
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 760,
+          "population": 64362147,
+          "areaSqMi": 504972.11
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 16178118,
+          "areaSqMi": 76424.52
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1491,
+          "population": 182349957,
+          "areaSqMi": 1449532.94
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 760,
+          "population": 64362147,
+          "areaSqMi": 504972.11
+        }
+      },
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 16178118,
+          "areaSqMi": 76424.52
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1491,
+          "population": 182349957,
+          "areaSqMi": 1449532.94
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 760,
+          "population": 64362147,
+          "areaSqMi": 504972.11
+        }
+      },
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      },
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 198,
+          "population": 16178118,
+          "areaSqMi": 76424.52
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "cincinnati-bengals",
+        "teamName": "CIN",
+        "shortName": "CIN",
+        "fullName": "Cincinnati Bengals",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1110,
+          "population": 136160803,
+          "areaSqMi": 882746.9
+        }
+      },
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "cleveland-browns",
+        "teamName": "CLE",
+        "shortName": "CLE",
+        "fullName": "Cleveland Browns",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 1110,
+          "population": 136160803,
+          "areaSqMi": 882746.9
+        }
+      },
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 665,
+          "population": 50292369,
+          "areaSqMi": 930334.91
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 4,
+    "countyCount": 3114
+  }
+}

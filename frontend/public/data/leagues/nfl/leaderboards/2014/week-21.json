@@ -1,0 +1,84 @@
+{
+  "season": 2014,
+  "weekIndex": 21,
+  "week": 5,
+  "seasonType": "postseason",
+  "weekLabel": "Super Bowl",
+  "generatedAt": "2026-08-15T04:11:41.104014+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 3114,
+          "population": 313182591,
+          "areaSqMi": 2961264.47
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1928,
+          "population": 190884679,
+          "areaSqMi": 1879691.49
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1928,
+          "population": 190884679,
+          "areaSqMi": 1879691.49
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 1,
+    "countyCount": 3114
+  }
+}

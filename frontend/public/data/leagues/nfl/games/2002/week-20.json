@@ -1,0 +1,40 @@
+[
+  {
+    "id": "230119021",
+    "season": 2002,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2003-01-19T20:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": null,
+    "homeTeamId": "philadelphia-eagles",
+    "awayTeamId": "tampa-bay-buccaneers",
+    "homeScore": 10,
+    "awayScore": 27,
+    "outcome": "away-win",
+    "winnerId": "tampa-bay-buccaneers",
+    "loserId": "philadelphia-eagles"
+  },
+  {
+    "id": "230119013",
+    "season": 2002,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2003-01-19T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": null,
+    "homeTeamId": "oakland-raiders",
+    "awayTeamId": "tennessee-titans",
+    "homeScore": 41,
+    "awayScore": 24,
+    "outcome": "home-win",
+    "winnerId": "oakland-raiders",
+    "loserId": "tennessee-titans"
+  }
+]

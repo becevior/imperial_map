@@ -1,0 +1,156 @@
+{
+  "season": 2019,
+  "weekIndex": 21,
+  "week": 5,
+  "seasonType": "postseason",
+  "weekLabel": "Super Bowl",
+  "generatedAt": "2026-08-15T04:12:28.147879+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1785,
+          "population": 180756501,
+          "areaSqMi": 1544372.84
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 930,
+          "population": 98130062,
+          "areaSqMi": 1247698.22
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 399,
+          "population": 34296028,
+          "areaSqMi": 169193.42
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1785,
+          "population": 180756501,
+          "areaSqMi": 1544372.84
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 930,
+          "population": 98130062,
+          "areaSqMi": 1247698.22
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 399,
+          "population": 34296028,
+          "areaSqMi": 169193.42
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1785,
+          "population": 180756501,
+          "areaSqMi": 1544372.84
+        }
+      },
+      {
+        "teamId": "miami-dolphins",
+        "teamName": "MIA",
+        "shortName": "MIA",
+        "fullName": "Miami Dolphins",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 930,
+          "population": 98130062,
+          "areaSqMi": 1247698.22
+        }
+      },
+      {
+        "teamId": "los-angeles-rams",
+        "teamName": "LAR",
+        "shortName": "LAR",
+        "fullName": "Los Angeles Rams",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 399,
+          "population": 34296028,
+          "areaSqMi": 169193.42
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 39,
+          "population": 13735782,
+          "areaSqMi": 60922.37
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 39,
+          "population": 13735782,
+          "areaSqMi": 60922.37
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 3,
+    "countyCount": 3114
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "defaultLeagueId": "cfb",
+  "leagues": [
+    {
+      "id": "cfb",
+      "name": "College Football",
+      "shortName": "CFB",
+      "route": "/cfb",
+      "status": "available"
+    },
+    {
+      "id": "nfl",
+      "name": "NFL",
+      "shortName": "NFL",
+      "route": "/nfl",
+      "status": "available"
+    }
+  ]
+}

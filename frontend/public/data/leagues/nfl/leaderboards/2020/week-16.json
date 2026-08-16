@@ -1,0 +1,120 @@
+{
+  "season": 2020,
+  "weekIndex": 16,
+  "week": 16,
+  "seasonType": "regular",
+  "weekLabel": "Week 16",
+  "generatedAt": "2026-08-15T04:12:36.545208+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1197,
+          "population": 108325969,
+          "areaSqMi": 1121613.66
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "san-francisco-49ers",
+        "teamName": "SF",
+        "shortName": "SF",
+        "fullName": "San Francisco 49ers",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "arizona-cardinals",
+        "teamName": "ARI",
+        "shortName": "ARI",
+        "fullName": "Arizona Cardinals",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1917,
+          "population": 204856622,
+          "areaSqMi": 1839650.81
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 2,
+    "countyCount": 3114
+  }
+}

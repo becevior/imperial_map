@@ -2,6 +2,9 @@
 
 A live "imperial territory" map where college football teams compete for US counties. Territory transfers follow a simple rule: **winner takes all**.
 
+The app also includes NFL history from 2000 through 2025, available from the league
+navigation or directly at `/nfl`. College football remains available at `/` and `/cfb`.
+
 ## Quick Start
 
 ### 1. Generate Initial Data
@@ -107,6 +110,8 @@ imperial-map/
 
 - **Complete CFP-era history (2014–present)** – season-specific FBS membership,
   conference alignment, preseason territory, game results, and weekly snapshots.
+- **NFL history (2000–2025)** – season-specific membership, divisions, relocations,
+  franchise names, weekly results, and playoff snapshots.
 - **Week-by-week county ownership history** – click any county to see who owned it each week up to the current selection.
 - **Campus logo takeovers** – weekly ownership snapshots include campus logos that swap to the conquering team.
 - **Automatic color-contrast selection** – optional `compute_logo_colors.py` run balances primary and secondary colors so logos stay legible atop their territories.
@@ -122,6 +127,12 @@ python compute_logo_colors.py  # Optional: refresh logo fill colors
 # Rebuild all completed CFP-era seasons from ESPN
 python build_history.py --start-season 2014 --end-season 2025
 
+# Rebuild NFL history from ESPN
+python build_nfl.py --start-season 2000 --end-season 2025
+
+# Or rebuild a single season
+python build_nfl.py --season 2025
+
 # Frontend
 cd frontend
 npm run dev          # Start dev server
@@ -129,6 +140,13 @@ npm run validate-data # Validate generated snapshots against the team roster
 npm run build        # Build for production
 npm run type-check   # Check TypeScript
 ```
+
+The NFL builder reads checked-in, season-aware franchise metadata and home-base
+coordinates from `backend/data/nfl_teams.csv`, then fetches completed results and each
+season's calendar from ESPN. It writes league-scoped artifacts under
+`frontend/public/data/leagues/nfl/`, skips the Pro Bowl, and treats a tied final as a
+no-transfer result. Historical identities cover Oakland/Las Vegas, St. Louis/Los
+Angeles, San Diego/Los Angeles, and Washington's name changes; Houston enters in 2002.
 
 ## Deployment
 

@@ -1,0 +1,216 @@
+{
+  "season": 2024,
+  "weekIndex": 20,
+  "week": 2,
+  "seasonType": "postseason",
+  "weekLabel": "Divisional Round",
+  "generatedAt": "2026-08-15T04:13:10.970216+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1454,
+          "population": 140808876,
+          "areaSqMi": 1574155.86
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1014,
+          "population": 73608024,
+          "areaSqMi": 715223.77
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 354,
+          "population": 54885467,
+          "areaSqMi": 358393.67
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 292,
+          "population": 43880224,
+          "areaSqMi": 313491.17
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1454,
+          "population": 140808876,
+          "areaSqMi": 1574155.86
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1014,
+          "population": 73608024,
+          "areaSqMi": 715223.77
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 354,
+          "population": 54885467,
+          "areaSqMi": 358393.67
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 292,
+          "population": 43880224,
+          "areaSqMi": 313491.17
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1454,
+          "population": 140808876,
+          "areaSqMi": 1574155.86
+        }
+      },
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 1014,
+          "population": 73608024,
+          "areaSqMi": 715223.77
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 354,
+          "population": 54885467,
+          "areaSqMi": 358393.67
+        }
+      },
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 292,
+          "population": 43880224,
+          "areaSqMi": 313491.17
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "kansas-city-chiefs",
+        "teamName": "KC",
+        "shortName": "KC",
+        "fullName": "Kansas City Chiefs",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 292,
+          "population": 43880224,
+          "areaSqMi": 313491.17
+        }
+      },
+      {
+        "teamId": "washington-commanders",
+        "teamName": "WSH",
+        "shortName": "WSH",
+        "fullName": "Washington Commanders",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 206,
+          "population": 30482591,
+          "areaSqMi": 105431.51
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "houston-texans",
+        "teamName": "HOU",
+        "shortName": "HOU",
+        "fullName": "Houston Texans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 292,
+          "population": 43880224,
+          "areaSqMi": 313491.17
+        }
+      },
+      {
+        "teamId": "detroit-lions",
+        "teamName": "DET",
+        "shortName": "DET",
+        "fullName": "Detroit Lions",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 206,
+          "population": 30482591,
+          "areaSqMi": 105431.51
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 4,
+    "countyCount": 3114
+  }
+}

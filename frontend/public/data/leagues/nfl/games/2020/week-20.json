@@ -1,0 +1,40 @@
+[
+  {
+    "id": "401220402",
+    "season": 2020,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2021-01-24T20:05Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Lambeau Field",
+    "homeTeamId": "green-bay-packers",
+    "awayTeamId": "tampa-bay-buccaneers",
+    "homeScore": 26,
+    "awayScore": 31,
+    "outcome": "away-win",
+    "winnerId": "tampa-bay-buccaneers",
+    "loserId": "green-bay-packers"
+  },
+  {
+    "id": "401220401",
+    "season": 2020,
+    "seasonType": "postseason",
+    "week": 3,
+    "completed": true,
+    "status": "final",
+    "startDate": "2021-01-24T23:40Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "GEHA Field at Arrowhead Stadium",
+    "homeTeamId": "kansas-city-chiefs",
+    "awayTeamId": "buffalo-bills",
+    "homeScore": 38,
+    "awayScore": 24,
+    "outcome": "home-win",
+    "winnerId": "kansas-city-chiefs",
+    "loserId": "buffalo-bills"
+  }
+]

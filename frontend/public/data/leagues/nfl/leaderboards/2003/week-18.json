@@ -1,0 +1,156 @@
+{
+  "season": 2003,
+  "weekIndex": 18,
+  "week": 1,
+  "seasonType": "postseason",
+  "weekLabel": "Wild Card",
+  "generatedAt": "2026-08-15T04:09:38.176430+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 1692,
+          "population": 162627771,
+          "areaSqMi": 1955989.21
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 795,
+          "population": 83225087,
+          "areaSqMi": 587414.99
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 627,
+          "population": 67329733,
+          "areaSqMi": 417860.28
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 1692,
+          "population": 162627771,
+          "areaSqMi": 1955989.21
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 795,
+          "population": 83225087,
+          "areaSqMi": 587414.99
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 627,
+          "population": 67329733,
+          "areaSqMi": 417860.28
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 1692,
+          "population": 162627771,
+          "areaSqMi": 1955989.21
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 795,
+          "population": 83225087,
+          "areaSqMi": 587414.99
+        }
+      },
+      {
+        "teamId": "tennessee-titans",
+        "teamName": "TEN",
+        "shortName": "TEN",
+        "fullName": "Tennessee Titans",
+        "conference": "AFC South",
+        "metrics": {
+          "counties": 627,
+          "population": 67329733,
+          "areaSqMi": 417860.28
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "green-bay-packers",
+        "teamName": "GB",
+        "shortName": "GB",
+        "fullName": "Green Bay Packers",
+        "conference": "NFC North",
+        "metrics": {
+          "counties": 508,
+          "population": 38051199,
+          "areaSqMi": 394833.44
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "seattle-seahawks",
+        "teamName": "SEA",
+        "shortName": "SEA",
+        "fullName": "Seattle Seahawks",
+        "conference": "NFC West",
+        "metrics": {
+          "counties": 508,
+          "population": 38051199,
+          "areaSqMi": 394833.44
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 3,
+    "countyCount": 3114
+  }
+}

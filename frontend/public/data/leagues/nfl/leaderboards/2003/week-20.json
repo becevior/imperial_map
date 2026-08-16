@@ -1,0 +1,120 @@
+{
+  "season": 2003,
+  "weekIndex": 20,
+  "week": 3,
+  "seasonType": "postseason",
+  "weekLabel": "Conference Championship",
+  "generatedAt": "2026-08-15T04:09:38.187529+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1692,
+          "population": 162627771,
+          "areaSqMi": 1955989.21
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1422,
+          "population": 150554820,
+          "areaSqMi": 1005275.26
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1692,
+          "population": 162627771,
+          "areaSqMi": 1955989.21
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1422,
+          "population": 150554820,
+          "areaSqMi": 1005275.26
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1692,
+          "population": 162627771,
+          "areaSqMi": 1955989.21
+        }
+      },
+      {
+        "teamId": "new-england-patriots",
+        "teamName": "NE",
+        "shortName": "NE",
+        "fullName": "New England Patriots",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 1422,
+          "population": 150554820,
+          "areaSqMi": 1005275.26
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "carolina-panthers",
+        "teamName": "CAR",
+        "shortName": "CAR",
+        "fullName": "Carolina Panthers",
+        "conference": "NFC South",
+        "metrics": {
+          "counties": 1692,
+          "population": 162627771,
+          "areaSqMi": 1955989.21
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1692,
+          "population": 162627771,
+          "areaSqMi": 1955989.21
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 2,
+    "countyCount": 3114
+  }
+}

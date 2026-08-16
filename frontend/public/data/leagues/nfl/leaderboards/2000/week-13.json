@@ -1,0 +1,192 @@
+{
+  "season": 2000,
+  "weekIndex": 13,
+  "week": 13,
+  "seasonType": "regular",
+  "weekLabel": "Week 13",
+  "generatedAt": "2026-08-15T04:08:45.905559+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1124,
+          "population": 95621532,
+          "areaSqMi": 1178280.46
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 671,
+          "population": 64578469,
+          "areaSqMi": 684088.09
+        }
+      },
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1124,
+          "population": 95621532,
+          "areaSqMi": 1178280.46
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      },
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 671,
+          "population": 64578469,
+          "areaSqMi": 684088.09
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "oakland-raiders",
+        "teamName": "OAK",
+        "shortName": "OAK",
+        "fullName": "Oakland Raiders",
+        "conference": "AFC West",
+        "metrics": {
+          "counties": 1124,
+          "population": 95621532,
+          "areaSqMi": 1178280.46
+        }
+      },
+      {
+        "teamId": "baltimore-ravens",
+        "teamName": "BAL",
+        "shortName": "BAL",
+        "fullName": "Baltimore Ravens",
+        "conference": "AFC Central",
+        "metrics": {
+          "counties": 894,
+          "population": 85422688,
+          "areaSqMi": 517033.32
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 671,
+          "population": 64578469,
+          "areaSqMi": 684088.09
+        }
+      },
+      {
+        "teamId": "minnesota-vikings",
+        "teamName": "MIN",
+        "shortName": "MIN",
+        "fullName": "Minnesota Vikings",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 425,
+          "population": 67559902,
+          "areaSqMi": 581862.61
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 473,
+          "population": 44293752,
+          "areaSqMi": 579509.92
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "chicago-bears",
+        "teamName": "CHI",
+        "shortName": "CHI",
+        "fullName": "Chicago Bears",
+        "conference": "NFC Central",
+        "metrics": {
+          "counties": 473,
+          "population": 44293752,
+          "areaSqMi": 579509.92
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 4,
+    "countyCount": 3114
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "season": 2009,
+  "weekIndex": 17,
+  "week": 17,
+  "seasonType": "regular",
+  "weekLabel": "Week 17",
+  "generatedAt": "2026-08-15T04:10:56.282359+00:00",
+  "leaderboards": {
+    "territoryOwned": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 2571,
+          "population": 269575074,
+          "areaSqMi": 2670271.13
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 293,
+          "population": 29897082,
+          "areaSqMi": 169118.78
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      }
+    ],
+    "populationControlled": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 2571,
+          "population": 269575074,
+          "areaSqMi": 2670271.13
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 293,
+          "population": 29897082,
+          "areaSqMi": 169118.78
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      }
+    ],
+    "countiesOwned": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 2571,
+          "population": 269575074,
+          "areaSqMi": 2670271.13
+        }
+      },
+      {
+        "teamId": "new-york-jets",
+        "teamName": "NYJ",
+        "shortName": "NYJ",
+        "fullName": "New York Jets",
+        "conference": "AFC East",
+        "metrics": {
+          "counties": 293,
+          "population": 29897082,
+          "areaSqMi": 169118.78
+        }
+      },
+      {
+        "teamId": "pittsburgh-steelers",
+        "teamName": "PIT",
+        "shortName": "PIT",
+        "fullName": "Pittsburgh Steelers",
+        "conference": "AFC North",
+        "metrics": {
+          "counties": 250,
+          "population": 13710435,
+          "areaSqMi": 121874.57
+        }
+      }
+    ],
+    "territoryGained": [
+      {
+        "teamId": "dallas-cowboys",
+        "teamName": "DAL",
+        "shortName": "DAL",
+        "fullName": "Dallas Cowboys",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1543,
+          "population": 138302004,
+          "areaSqMi": 1935991.95
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "philadelphia-eagles",
+        "teamName": "PHI",
+        "shortName": "PHI",
+        "fullName": "Philadelphia Eagles",
+        "conference": "NFC East",
+        "metrics": {
+          "counties": 1543,
+          "population": 138302004,
+          "areaSqMi": 1935991.95
+        }
+      }
+    ]
+  },
+  "totals": {
+    "trackedTeams": 3,
+    "countyCount": 3114
+  }
+}
