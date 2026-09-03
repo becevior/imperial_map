@@ -1756,16 +1756,23 @@
           "seasonType": "baseline",
           "label": "2026 Baseline (Preseason)",
           "path": "/data/leaderboards/2026/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Regular Week 1",
+          "path": "/data/leaderboards/2026/week-01.json"
         }
       ]
     }
   ],
   "latest": {
     "season": 2026,
-    "weekIndex": 0,
-    "path": "/data/leaderboards/2026/week-00.json",
-    "label": "2026 Baseline (Preseason)",
-    "week": 0,
-    "seasonType": "baseline"
+    "weekIndex": 1,
+    "path": "/data/leaderboards/2026/week-01.json",
+    "label": "Regular Week 1",
+    "week": 1,
+    "seasonType": "regular"
   }
 }

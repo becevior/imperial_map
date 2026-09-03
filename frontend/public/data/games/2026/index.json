@@ -1,4 +1,12 @@
 {
   "season": 2026,
-  "weeks": []
+  "weeks": [
+    {
+      "weekIndex": 1,
+      "seasonType": "regular",
+      "week": 1,
+      "label": "Regular Week 1",
+      "path": "/data/games/2026/week-01.json"
+    }
+  ]
 }

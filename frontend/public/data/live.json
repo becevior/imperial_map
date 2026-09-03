@@ -1,15 +1,24 @@
 {
-  "version": "589a9cbbeeb55f975d78",
-  "generatedAt": "2026-08-15T00:31:18.843134+00:00",
+  "version": "134d1a8c1674fd4accb8",
+  "generatedAt": "2026-09-03T03:33:51.999351+00:00",
   "season": 2026,
   "teamCount": 138,
-  "weekIndex": 0,
-  "week": 0,
-  "seasonType": "baseline",
-  "label": "2026 Baseline (Preseason)",
-  "completedGameCount": 0,
-  "finalGameIds": [],
-  "ownershipPath": "/data/ownership/2026/week-00.json",
-  "logosPath": "/data/ownership/2026/week-00-logos.json",
-  "leaderboardPath": "/data/leaderboards/2026/week-00.json"
+  "weekIndex": 1,
+  "week": 1,
+  "seasonType": "regular",
+  "label": "Regular Week 1",
+  "completedGameCount": 8,
+  "finalGameIds": [
+    "401856766",
+    "401858201",
+    "401858202",
+    "401862693",
+    "401864494",
+    "401864570",
+    "401864577",
+    "401866408"
+  ],
+  "ownershipPath": "/data/ownership/2026/week-01.json",
+  "logosPath": "/data/ownership/2026/week-01-logos.json",
+  "leaderboardPath": "/data/leaderboards/2026/week-01.json"
 }

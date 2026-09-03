@@ -1769,6 +1769,13 @@
           "seasonType": "baseline",
           "label": "2026 Baseline (Preseason)",
           "path": "/data/ownership/2026/week-00.json"
+        },
+        {
+          "weekIndex": 1,
+          "week": 1,
+          "seasonType": "regular",
+          "label": "Regular Week 1",
+          "path": "/data/ownership/2026/week-01.json"
         }
       ]
     }
