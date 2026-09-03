@@ -1,16 +1,14 @@
 name: Update Territories
 
 on:
-  # Off-season: scheduled triggers are intentionally disabled until Week 0.
-  # Re-enable the cadence below when live game-day refreshes should begin.
-  # schedule:
-  #   - cron: '3-58/5 9-23 * * 6'
-  #     timezone: 'America/Los_Angeles'
-  #   - cron: '3-58/5 0-2 * * 0'
-  #     timezone: 'America/Los_Angeles'
-  #   # Daily refresh for late finals and corrections.
-  #   - cron: '17 3 * * 1-5'
-  #     timezone: 'America/Los_Angeles'
+  schedule:
+    - cron: '3-58/5 9-23 * * 6'
+      timezone: 'America/Los_Angeles'
+    - cron: '3-58/5 0-2 * * 0'
+      timezone: 'America/Los_Angeles'
+    # Daily refresh for late finals and corrections.
+    - cron: '17 3 * * 1-5'
+      timezone: 'America/Los_Angeles'
 
   # Allow manual trigger with season parameter
   workflow_dispatch:
@@ -138,7 +136,8 @@ jobs:
         if: >
           steps.game-changes.outputs.has_game_changes == 'true' ||
           steps.resolve-params.outputs.force_update == 'true'
-        run: node frontend/scripts/validate-data.mjs
+        working-directory: frontend
+        run: npm run validate-data
 
       - name: Check for changes
         id: check-changes
