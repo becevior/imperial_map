@@ -45,10 +45,10 @@
 **File:** `.github/workflows/update-territories.yml`
 
 **Schedule:**
-- **Current state:** Scheduled triggers are disabled until Week 0; manual dispatch remains available
-- **Once enabled, Saturdays:** Runs every five minutes from 9am through 11:58pm Pacific
-- **Once enabled, early Sundays:** Runs every five minutes through 2:58am Pacific
-- **Once enabled, Monday-Friday:** Runs once daily for late finals and corrections
+- **Current state:** Scheduled triggers are enabled for the 2026 season
+- **Saturdays:** Runs every five minutes from 9am through 11:58pm Pacific
+- **Early Sundays:** Runs every five minutes through 2:58am Pacific
+- **Monday-Friday:** Runs once daily for late finals and corrections
 - The workflow serializes runs so overlapping game-day jobs cannot write
   competing snapshots.
 
