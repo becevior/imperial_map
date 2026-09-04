@@ -217341,5 +217341,102 @@
       "49053"
     ],
     "completedAt": "2026-09-03T03:33:51.842408"
+  },
+  {
+    "season": 2026,
+    "weekIndex": 1,
+    "week": 1,
+    "seasonType": "regular",
+    "gameId": "401858423",
+    "winnerId": "umass",
+    "loserId": "rutgers",
+    "transferCount": 19,
+    "fips": [
+      "34013",
+      "34017",
+      "34019",
+      "34021",
+      "34023",
+      "34025",
+      "34027",
+      "34029",
+      "34035",
+      "34039",
+      "34041",
+      "36047",
+      "36061",
+      "36081",
+      "36085",
+      "42069",
+      "42079",
+      "42089",
+      "42095"
+    ],
+    "completedAt": "2026-09-04T05:20:30.765485"
+  },
+  {
+    "season": 2026,
+    "weekIndex": 1,
+    "week": 1,
+    "seasonType": "regular",
+    "gameId": "401858204",
+    "winnerId": "wake-forest",
+    "loserId": "akron",
+    "transferCount": 12,
+    "fips": [
+      "39005",
+      "39019",
+      "39031",
+      "39067",
+      "39075",
+      "39093",
+      "39103",
+      "39139",
+      "39151",
+      "39153",
+      "39157",
+      "39169"
+    ],
+    "completedAt": "2026-09-04T05:20:30.765506"
+  },
+  {
+    "season": 2026,
+    "weekIndex": 1,
+    "week": 1,
+    "seasonType": "regular",
+    "gameId": "401856776",
+    "winnerId": "colorado",
+    "loserId": "georgia-tech",
+    "transferCount": 4,
+    "fips": [
+      "13089",
+      "13097",
+      "13121",
+      "13135"
+    ],
+    "completedAt": "2026-09-04T05:20:30.765521"
+  },
+  {
+    "season": 2026,
+    "weekIndex": 1,
+    "week": 1,
+    "seasonType": "regular",
+    "gameId": "401858424",
+    "winnerId": "illinois",
+    "loserId": "uab",
+    "transferCount": 10,
+    "fips": [
+      "01009",
+      "01021",
+      "01037",
+      "01043",
+      "01073",
+      "01079",
+      "01103",
+      "01117",
+      "01127",
+      "01133"
+    ],
+    "completedAt": "2026-09-04T05:20:30.765529"
   }
 ]

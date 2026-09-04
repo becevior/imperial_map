@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "regular",
   "weekLabel": "Regular Week 1",
-  "generatedAt": "2026-09-03T03:33:51.850669+00:00",
+  "generatedAt": "2026-09-04T05:20:30.774952+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -320,6 +320,18 @@
         }
       },
       {
+        "teamId": "illinois",
+        "teamName": "Illinois",
+        "shortName": "Illinois",
+        "fullName": "Illinois Fighting Illini",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 49,
+          "population": 3248138,
+          "areaSqMi": 30393.32
+        }
+      },
+      {
         "teamId": "central-michigan",
         "teamName": "Central Michigan",
         "shortName": "Central Michigan",
@@ -380,6 +392,18 @@
         }
       },
       {
+        "teamId": "umass",
+        "teamName": "UMass",
+        "shortName": "UMass",
+        "fullName": "UMass Minutemen",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 48,
+          "population": 16131447,
+          "areaSqMi": 27700.81
+        }
+      },
+      {
         "teamId": "syracuse",
         "teamName": "Syracuse",
         "shortName": "Syracuse",
@@ -410,9 +434,9 @@
         "fullName": "Colorado Buffaloes",
         "conference": "Big 12",
         "metrics": {
-          "counties": 18,
-          "population": 3237395,
-          "areaSqMi": 24300.99
+          "counties": 22,
+          "population": 5898274,
+          "areaSqMi": 25725.66
         }
       },
       {
@@ -425,18 +449,6 @@
           "counties": 43,
           "population": 1686395,
           "areaSqMi": 24174.05
-        }
-      },
-      {
-        "teamId": "illinois",
-        "teamName": "Illinois",
-        "shortName": "Illinois",
-        "fullName": "Illinois Fighting Illini",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 39,
-          "population": 1949575,
-          "areaSqMi": 23099.53
         }
       },
       {
@@ -461,18 +473,6 @@
           "counties": 30,
           "population": 1467079,
           "areaSqMi": 21903.06
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -848,6 +848,18 @@
         }
       },
       {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 24,
+          "population": 3440297,
+          "areaSqMi": 11135.59
+        }
+      },
+      {
         "teamId": "middle-tennessee",
         "teamName": "Middle Tennessee",
         "shortName": "Middle Tennessee",
@@ -1196,18 +1208,6 @@
         }
       },
       {
-        "teamId": "uab",
-        "teamName": "UAB",
-        "shortName": "UAB",
-        "fullName": "UAB Blazers",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 10,
-          "population": 1298563,
-          "areaSqMi": 7293.79
-        }
-      },
-      {
         "teamId": "ohio-state",
         "teamName": "Ohio State",
         "shortName": "Ohio State",
@@ -1280,18 +1280,6 @@
         }
       },
       {
-        "teamId": "rutgers",
-        "teamName": "Rutgers",
-        "shortName": "Rutgers",
-        "fullName": "Rutgers Scarlet Knights",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 19,
-          "population": 13377422,
-          "areaSqMi": 6040.95
-        }
-      },
-      {
         "teamId": "houston",
         "teamName": "Houston",
         "shortName": "Houston",
@@ -1340,18 +1328,6 @@
         }
       },
       {
-        "teamId": "akron",
-        "teamName": "Akron",
-        "shortName": "Akron",
-        "fullName": "Akron Zips",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 12,
-          "population": 1897821,
-          "areaSqMi": 5724.66
-        }
-      },
-      {
         "teamId": "cincinnati",
         "teamName": "Cincinnati",
         "shortName": "Cincinnati",
@@ -1361,18 +1337,6 @@
           "counties": 18,
           "population": 1891822,
           "areaSqMi": 5546.8
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 12,
-          "population": 1542476,
-          "areaSqMi": 5410.94
         }
       },
       {
@@ -1554,18 +1518,6 @@
           "population": 2591035,
           "areaSqMi": 1897.72
         }
-      },
-      {
-        "teamId": "georgia-tech",
-        "teamName": "Georgia Tech",
-        "shortName": "Georgia Tech",
-        "fullName": "Georgia Tech Yellow Jackets",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 4,
-          "population": 2660879,
-          "areaSqMi": 1424.67
-        }
       }
     ],
     "populationControlled": [
@@ -1582,15 +1534,15 @@
         }
       },
       {
-        "teamId": "rutgers",
-        "teamName": "Rutgers",
-        "shortName": "Rutgers",
-        "fullName": "Rutgers Scarlet Knights",
-        "conference": "Big Ten",
+        "teamId": "umass",
+        "teamName": "UMass",
+        "shortName": "UMass",
+        "fullName": "UMass Minutemen",
+        "conference": "MAC",
         "metrics": {
-          "counties": 19,
-          "population": 13377422,
-          "areaSqMi": 6040.95
+          "counties": 48,
+          "population": 16131447,
+          "areaSqMi": 27700.81
         }
       },
       {
@@ -1675,6 +1627,18 @@
           "counties": 12,
           "population": 6004147,
           "areaSqMi": 5137.4
+        }
+      },
+      {
+        "teamId": "colorado",
+        "teamName": "Colorado",
+        "shortName": "Colorado",
+        "fullName": "Colorado Buffaloes",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 22,
+          "population": 5898274,
+          "areaSqMi": 25725.66
         }
       },
       {
@@ -1846,15 +1810,27 @@
         }
       },
       {
-        "teamId": "colorado",
-        "teamName": "Colorado",
-        "shortName": "Colorado",
-        "fullName": "Colorado Buffaloes",
-        "conference": "Big 12",
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
         "metrics": {
-          "counties": 18,
-          "population": 3237395,
-          "areaSqMi": 24300.99
+          "counties": 24,
+          "population": 3440297,
+          "areaSqMi": 11135.59
+        }
+      },
+      {
+        "teamId": "illinois",
+        "teamName": "Illinois",
+        "shortName": "Illinois",
+        "fullName": "Illinois Fighting Illini",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 49,
+          "population": 3248138,
+          "areaSqMi": 30393.32
         }
       },
       {
@@ -1930,18 +1906,6 @@
         }
       },
       {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
-        }
-      },
-      {
         "teamId": "navy",
         "teamName": "Navy",
         "shortName": "Navy",
@@ -1975,18 +1939,6 @@
           "counties": 12,
           "population": 2674684,
           "areaSqMi": 9412.13
-        }
-      },
-      {
-        "teamId": "georgia-tech",
-        "teamName": "Georgia Tech",
-        "shortName": "Georgia Tech",
-        "fullName": "Georgia Tech Yellow Jackets",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 4,
-          "population": 2660879,
-          "areaSqMi": 1424.67
         }
       },
       {
@@ -2194,30 +2146,6 @@
         }
       },
       {
-        "teamId": "illinois",
-        "teamName": "Illinois",
-        "shortName": "Illinois",
-        "fullName": "Illinois Fighting Illini",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 39,
-          "population": 1949575,
-          "areaSqMi": 23099.53
-        }
-      },
-      {
-        "teamId": "akron",
-        "teamName": "Akron",
-        "shortName": "Akron",
-        "fullName": "Akron Zips",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 12,
-          "population": 1897821,
-          "areaSqMi": 5724.66
-        }
-      },
-      {
         "teamId": "cincinnati",
         "teamName": "Cincinnati",
         "shortName": "Cincinnati",
@@ -2410,18 +2338,6 @@
         }
       },
       {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 12,
-          "population": 1542476,
-          "areaSqMi": 5410.94
-        }
-      },
-      {
         "teamId": "south-alabama",
         "teamName": "South Alabama",
         "shortName": "South Alabama",
@@ -2575,18 +2491,6 @@
           "counties": 43,
           "population": 1299939,
           "areaSqMi": 15699.02
-        }
-      },
-      {
-        "teamId": "uab",
-        "teamName": "UAB",
-        "shortName": "UAB",
-        "fullName": "UAB Blazers",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 10,
-          "population": 1298563,
-          "areaSqMi": 7293.79
         }
       },
       {
@@ -3240,6 +3144,30 @@
         }
       },
       {
+        "teamId": "illinois",
+        "teamName": "Illinois",
+        "shortName": "Illinois",
+        "fullName": "Illinois Fighting Illini",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 49,
+          "population": 3248138,
+          "areaSqMi": 30393.32
+        }
+      },
+      {
+        "teamId": "umass",
+        "teamName": "UMass",
+        "shortName": "UMass",
+        "fullName": "UMass Minutemen",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 48,
+          "population": 16131447,
+          "areaSqMi": 27700.81
+        }
+      },
+      {
         "teamId": "air-force",
         "teamName": "Air Force",
         "shortName": "Air Force",
@@ -3345,18 +3273,6 @@
           "counties": 42,
           "population": 691593,
           "areaSqMi": 35007.51
-        }
-      },
-      {
-        "teamId": "illinois",
-        "teamName": "Illinois",
-        "shortName": "Illinois",
-        "fullName": "Illinois Fighting Illini",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 39,
-          "population": 1949575,
-          "areaSqMi": 23099.53
         }
       },
       {
@@ -3501,18 +3417,6 @@
           "counties": 29,
           "population": 6218961,
           "areaSqMi": 101140.6
-        }
-      },
-      {
-        "teamId": "umass",
-        "teamName": "UMass",
-        "shortName": "UMass",
-        "fullName": "UMass Minutemen",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 29,
-          "population": 2754025,
-          "areaSqMi": 21659.87
         }
       },
       {
@@ -3696,6 +3600,18 @@
         }
       },
       {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 24,
+          "population": 3440297,
+          "areaSqMi": 11135.59
+        }
+      },
+      {
         "teamId": "southern-miss",
         "teamName": "Southern Miss",
         "shortName": "Southern Miss",
@@ -3792,6 +3708,18 @@
         }
       },
       {
+        "teamId": "colorado",
+        "teamName": "Colorado",
+        "shortName": "Colorado",
+        "fullName": "Colorado Buffaloes",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 22,
+          "population": 5898274,
+          "areaSqMi": 25725.66
+        }
+      },
+      {
         "teamId": "washington",
         "teamName": "Washington",
         "shortName": "Washington",
@@ -3876,18 +3804,6 @@
         }
       },
       {
-        "teamId": "rutgers",
-        "teamName": "Rutgers",
-        "shortName": "Rutgers",
-        "fullName": "Rutgers Scarlet Knights",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 19,
-          "population": 13377422,
-          "areaSqMi": 6040.95
-        }
-      },
-      {
         "teamId": "army",
         "teamName": "Army",
         "shortName": "Army",
@@ -3933,18 +3849,6 @@
           "counties": 19,
           "population": 1682842,
           "areaSqMi": 11605.19
-        }
-      },
-      {
-        "teamId": "colorado",
-        "teamName": "Colorado",
-        "shortName": "Colorado",
-        "fullName": "Colorado Buffaloes",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 18,
-          "population": 3237395,
-          "areaSqMi": 24300.99
         }
       },
       {
@@ -4260,18 +4164,6 @@
         }
       },
       {
-        "teamId": "akron",
-        "teamName": "Akron",
-        "shortName": "Akron",
-        "fullName": "Akron Zips",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 12,
-          "population": 1897821,
-          "areaSqMi": 5724.66
-        }
-      },
-      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -4281,18 +4173,6 @@
           "counties": 12,
           "population": 1866214,
           "areaSqMi": 6858.87
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 12,
-          "population": 1542476,
-          "areaSqMi": 5410.94
         }
       },
       {
@@ -4389,18 +4269,6 @@
           "counties": 10,
           "population": 1459551,
           "areaSqMi": 5733.96
-        }
-      },
-      {
-        "teamId": "uab",
-        "teamName": "UAB",
-        "shortName": "UAB",
-        "fullName": "UAB Blazers",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 10,
-          "population": 1298563,
-          "areaSqMi": 7293.79
         }
       },
       {
@@ -4620,18 +4488,6 @@
         }
       },
       {
-        "teamId": "georgia-tech",
-        "teamName": "Georgia Tech",
-        "shortName": "Georgia Tech",
-        "fullName": "Georgia Tech Yellow Jackets",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 4,
-          "population": 2660879,
-          "areaSqMi": 1424.67
-        }
-      },
-      {
         "teamId": "san-diego-state",
         "teamName": "San Diego State",
         "shortName": "San Diego State",
@@ -4694,6 +4550,18 @@
     ],
     "territoryGained": [
       {
+        "teamId": "umass",
+        "teamName": "UMass",
+        "shortName": "UMass",
+        "fullName": "UMass Minutemen",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 19,
+          "population": 13377422,
+          "areaSqMi": 6040.95
+        }
+      },
+      {
         "teamId": "eastern-michigan",
         "teamName": "Eastern Michigan",
         "shortName": "Eastern Michigan",
@@ -4727,6 +4595,30 @@
           "counties": 14,
           "population": 2479296,
           "areaSqMi": 11513.18
+        }
+      },
+      {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 12,
+          "population": 1897821,
+          "areaSqMi": 5724.66
+        }
+      },
+      {
+        "teamId": "illinois",
+        "teamName": "Illinois",
+        "shortName": "Illinois",
+        "fullName": "Illinois Fighting Illini",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 10,
+          "population": 1298563,
+          "areaSqMi": 7293.79
         }
       },
       {
@@ -4778,6 +4670,18 @@
         }
       },
       {
+        "teamId": "colorado",
+        "teamName": "Colorado",
+        "shortName": "Colorado",
+        "fullName": "Colorado Buffaloes",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 4,
+          "population": 2660879,
+          "areaSqMi": 1424.67
+        }
+      },
+      {
         "teamId": "florida-state",
         "teamName": "Florida State",
         "shortName": "Florida State",
@@ -4791,6 +4695,18 @@
       }
     ],
     "territoryLost": [
+      {
+        "teamId": "rutgers",
+        "teamName": "Rutgers",
+        "shortName": "Rutgers",
+        "fullName": "Rutgers Scarlet Knights",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 19,
+          "population": 13377422,
+          "areaSqMi": 6040.95
+        }
+      },
       {
         "teamId": "sacramento-state",
         "teamName": "Sacramento State",
@@ -4825,6 +4741,30 @@
           "counties": 14,
           "population": 2479296,
           "areaSqMi": 11513.18
+        }
+      },
+      {
+        "teamId": "akron",
+        "teamName": "Akron",
+        "shortName": "Akron",
+        "fullName": "Akron Zips",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 12,
+          "population": 1897821,
+          "areaSqMi": 5724.66
+        }
+      },
+      {
+        "teamId": "uab",
+        "teamName": "UAB",
+        "shortName": "UAB",
+        "fullName": "UAB Blazers",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 10,
+          "population": 1298563,
+          "areaSqMi": 7293.79
         }
       },
       {
@@ -4876,6 +4816,18 @@
         }
       },
       {
+        "teamId": "georgia-tech",
+        "teamName": "Georgia Tech",
+        "shortName": "Georgia Tech",
+        "fullName": "Georgia Tech Yellow Jackets",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 4,
+          "population": 2660879,
+          "areaSqMi": 1424.67
+        }
+      },
+      {
         "teamId": "new-mexico-state",
         "teamName": "New Mexico State",
         "shortName": "New Mexico State",
@@ -4890,7 +4842,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 130,
+    "trackedTeams": 126,
     "countyCount": 3114
   }
 }
