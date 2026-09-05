@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "regular",
   "weekLabel": "Regular Week 1",
-  "generatedAt": "2026-09-04T05:20:30.774952+00:00",
+  "generatedAt": "2026-09-05T18:09:38.292150+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -116,6 +116,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 46,
+          "population": 3198477,
+          "areaSqMi": 69511.1
+        }
+      },
+      {
         "teamId": "minnesota",
         "teamName": "Minnesota",
         "shortName": "Minnesota",
@@ -200,6 +212,18 @@
         }
       },
       {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 17,
+          "population": 18490172,
+          "areaSqMi": 42590.65
+        }
+      },
+      {
         "teamId": "boston-college",
         "teamName": "Boston College",
         "shortName": "Boston College",
@@ -233,18 +257,6 @@
           "counties": 22,
           "population": 5363352,
           "areaSqMi": 38952.54
-        }
-      },
-      {
-        "teamId": "utep",
-        "teamName": "UTEP",
-        "shortName": "UTEP",
-        "fullName": "UTEP Miners",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 10,
-          "population": 1200876,
-          "areaSqMi": 38931.82
         }
       },
       {
@@ -284,11 +296,11 @@
         }
       },
       {
-        "teamId": "eastern-michigan",
-        "teamName": "Eastern Michigan",
-        "shortName": "Eastern Michigan",
-        "fullName": "Eastern Michigan Eagles",
-        "conference": "MAC",
+        "teamId": "san-jose-state",
+        "teamName": "San Jose State",
+        "shortName": "San Jose State",
+        "fullName": "San Jose State Spartans",
+        "conference": "Mountain West",
         "metrics": {
           "counties": 23,
           "population": 8025579,
@@ -305,18 +317,6 @@
           "counties": 37,
           "population": 1355141,
           "areaSqMi": 30919.73
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 36,
-          "population": 1997601,
-          "areaSqMi": 30579.28
         }
       },
       {
@@ -353,18 +353,6 @@
           "counties": 51,
           "population": 1708177,
           "areaSqMi": 29986.64
-        }
-      },
-      {
-        "teamId": "fresno-state",
-        "teamName": "Fresno State",
-        "shortName": "Fresno State",
-        "fullName": "Fresno State Bulldogs",
-        "conference": "Pac-12",
-        "metrics": {
-          "counties": 10,
-          "population": 2327599,
-          "areaSqMi": 29842.79
         }
       },
       {
@@ -716,18 +704,6 @@
         }
       },
       {
-        "teamId": "usc",
-        "teamName": "USC",
-        "shortName": "USC",
-        "fullName": "USC Trojans",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 7,
-          "population": 16162573,
-          "areaSqMi": 12747.85
-        }
-      },
-      {
         "teamId": "ucla",
         "teamName": "UCLA",
         "shortName": "UCLA",
@@ -1040,6 +1016,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 7,
+          "population": 4722659,
+          "areaSqMi": 8768.75
+        }
+      },
+      {
         "teamId": "auburn",
         "teamName": "Auburn",
         "shortName": "Auburn",
@@ -1244,18 +1232,6 @@
         }
       },
       {
-        "teamId": "stanford",
-        "teamName": "Stanford",
-        "shortName": "Stanford",
-        "fullName": "Stanford Cardinal",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 6,
-          "population": 2131624,
-          "areaSqMi": 6871.04
-        }
-      },
-      {
         "teamId": "western-michigan",
         "teamName": "Western Michigan",
         "shortName": "Western Michigan",
@@ -1277,6 +1253,18 @@
           "counties": 19,
           "population": 2411830,
           "areaSqMi": 6586.8
+        }
+      },
+      {
+        "teamId": "michigan-state",
+        "teamName": "Michigan State",
+        "shortName": "Michigan State",
+        "fullName": "Michigan State Spartans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 13,
+          "population": 1911825,
+          "areaSqMi": 6586.51
         }
       },
       {
@@ -1460,30 +1448,6 @@
         }
       },
       {
-        "teamId": "michigan-state",
-        "teamName": "Michigan State",
-        "shortName": "Michigan State",
-        "fullName": "Michigan State Spartans",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 6,
-          "population": 1017313,
-          "areaSqMi": 3436.65
-        }
-      },
-      {
-        "teamId": "toledo",
-        "teamName": "Toledo",
-        "shortName": "Toledo",
-        "fullName": "Toledo Rockets",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 7,
-          "population": 894512,
-          "areaSqMi": 3149.86
-        }
-      },
-      {
         "teamId": "fiu",
         "teamName": "FIU",
         "shortName": "FIU",
@@ -1506,18 +1470,6 @@
           "population": 694093,
           "areaSqMi": 1972.89
         }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 1,
-          "population": 2591035,
-          "areaSqMi": 1897.72
-        }
       }
     ],
     "populationControlled": [
@@ -1528,9 +1480,9 @@
         "fullName": "USC Trojans",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 7,
-          "population": 16162573,
-          "areaSqMi": 12747.85
+          "counties": 17,
+          "population": 18490172,
+          "areaSqMi": 42590.65
         }
       },
       {
@@ -1570,11 +1522,11 @@
         }
       },
       {
-        "teamId": "eastern-michigan",
-        "teamName": "Eastern Michigan",
-        "shortName": "Eastern Michigan",
-        "fullName": "Eastern Michigan Eagles",
-        "conference": "MAC",
+        "teamId": "san-jose-state",
+        "teamName": "San Jose State",
+        "shortName": "San Jose State",
+        "fullName": "San Jose State Spartans",
+        "conference": "Mountain West",
         "metrics": {
           "counties": 23,
           "population": 8025579,
@@ -1726,6 +1678,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 7,
+          "population": 4722659,
+          "areaSqMi": 8768.75
+        }
+      },
+      {
         "teamId": "utsa",
         "teamName": "UTSA",
         "shortName": "UTSA",
@@ -1831,6 +1795,18 @@
           "counties": 49,
           "population": 3248138,
           "areaSqMi": 30393.32
+        }
+      },
+      {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 46,
+          "population": 3198477,
+          "areaSqMi": 69511.1
         }
       },
       {
@@ -1966,18 +1942,6 @@
         }
       },
       {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 1,
-          "population": 2591035,
-          "areaSqMi": 1897.72
-        }
-      },
-      {
         "teamId": "kent-state",
         "teamName": "Kent State",
         "shortName": "Kent State",
@@ -2038,18 +2002,6 @@
         }
       },
       {
-        "teamId": "fresno-state",
-        "teamName": "Fresno State",
-        "shortName": "Fresno State",
-        "fullName": "Fresno State Bulldogs",
-        "conference": "Pac-12",
-        "metrics": {
-          "counties": 10,
-          "population": 2327599,
-          "areaSqMi": 29842.79
-        }
-      },
-      {
         "teamId": "nebraska",
         "teamName": "Nebraska",
         "shortName": "Nebraska",
@@ -2086,18 +2038,6 @@
         }
       },
       {
-        "teamId": "stanford",
-        "teamName": "Stanford",
-        "shortName": "Stanford",
-        "fullName": "Stanford Cardinal",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 6,
-          "population": 2131624,
-          "areaSqMi": 6871.04
-        }
-      },
-      {
         "teamId": "ucla",
         "teamName": "UCLA",
         "shortName": "UCLA",
@@ -2122,18 +2062,6 @@
         }
       },
       {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 36,
-          "population": 1997601,
-          "areaSqMi": 30579.28
-        }
-      },
-      {
         "teamId": "northern-illinois",
         "teamName": "Northern Illinois",
         "shortName": "Northern Illinois",
@@ -2143,6 +2071,18 @@
           "counties": 17,
           "population": 1969182,
           "areaSqMi": 9357.91
+        }
+      },
+      {
+        "teamId": "michigan-state",
+        "teamName": "Michigan State",
+        "shortName": "Michigan State",
+        "fullName": "Michigan State Spartans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 13,
+          "population": 1911825,
+          "areaSqMi": 6586.51
         }
       },
       {
@@ -2542,18 +2482,6 @@
         }
       },
       {
-        "teamId": "utep",
-        "teamName": "UTEP",
-        "shortName": "UTEP",
-        "fullName": "UTEP Miners",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 10,
-          "population": 1200876,
-          "areaSqMi": 38931.82
-        }
-      },
-      {
         "teamId": "notre-dame",
         "teamName": "Notre Dame",
         "shortName": "Notre Dame",
@@ -2710,18 +2638,6 @@
         }
       },
       {
-        "teamId": "michigan-state",
-        "teamName": "Michigan State",
-        "shortName": "Michigan State",
-        "fullName": "Michigan State Spartans",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 6,
-          "population": 1017313,
-          "areaSqMi": 3436.65
-        }
-      },
-      {
         "teamId": "boise-state",
         "teamName": "Boise State",
         "shortName": "Boise State",
@@ -2743,18 +2659,6 @@
           "counties": 26,
           "population": 916175,
           "areaSqMi": 10271.08
-        }
-      },
-      {
-        "teamId": "toledo",
-        "teamName": "Toledo",
-        "shortName": "Toledo",
-        "fullName": "Toledo Rockets",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 7,
-          "population": 894512,
-          "areaSqMi": 3149.86
         }
       },
       {
@@ -3180,6 +3084,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 46,
+          "population": 3198477,
+          "areaSqMi": 69511.1
+        }
+      },
+      {
         "teamId": "central-michigan",
         "teamName": "Central Michigan",
         "shortName": "Central Michigan",
@@ -3333,18 +3249,6 @@
           "counties": 37,
           "population": 1250860,
           "areaSqMi": 26696.75
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 36,
-          "population": 1997601,
-          "areaSqMi": 30579.28
         }
       },
       {
@@ -3672,11 +3576,11 @@
         }
       },
       {
-        "teamId": "eastern-michigan",
-        "teamName": "Eastern Michigan",
-        "shortName": "Eastern Michigan",
-        "fullName": "Eastern Michigan Eagles",
-        "conference": "MAC",
+        "teamId": "san-jose-state",
+        "teamName": "San Jose State",
+        "shortName": "San Jose State",
+        "fullName": "San Jose State Spartans",
+        "conference": "Mountain West",
         "metrics": {
           "counties": 23,
           "population": 8025579,
@@ -3936,6 +3840,18 @@
         }
       },
       {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 17,
+          "population": 18490172,
+          "areaSqMi": 42590.65
+        }
+      },
+      {
         "teamId": "pittsburgh",
         "teamName": "Pittsburgh",
         "shortName": "Pittsburgh",
@@ -4128,6 +4044,18 @@
         }
       },
       {
+        "teamId": "michigan-state",
+        "teamName": "Michigan State",
+        "shortName": "Michigan State",
+        "fullName": "Michigan State Spartans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 13,
+          "population": 1911825,
+          "areaSqMi": 6586.51
+        }
+      },
+      {
         "teamId": "miami-oh",
         "teamName": "Miami (OH)",
         "shortName": "Miami (OH)",
@@ -4236,18 +4164,6 @@
         }
       },
       {
-        "teamId": "fresno-state",
-        "teamName": "Fresno State",
-        "shortName": "Fresno State",
-        "fullName": "Fresno State Bulldogs",
-        "conference": "Pac-12",
-        "metrics": {
-          "counties": 10,
-          "population": 2327599,
-          "areaSqMi": 29842.79
-        }
-      },
-      {
         "teamId": "texas",
         "teamName": "Texas",
         "shortName": "Texas",
@@ -4269,18 +4185,6 @@
           "counties": 10,
           "population": 1459551,
           "areaSqMi": 5733.96
-        }
-      },
-      {
-        "teamId": "utep",
-        "teamName": "UTEP",
-        "shortName": "UTEP",
-        "fullName": "UTEP Miners",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 10,
-          "population": 1200876,
-          "areaSqMi": 38931.82
         }
       },
       {
@@ -4380,18 +4284,6 @@
         }
       },
       {
-        "teamId": "usc",
-        "teamName": "USC",
-        "shortName": "USC",
-        "fullName": "USC Trojans",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 7,
-          "population": 16162573,
-          "areaSqMi": 12747.85
-        }
-      },
-      {
         "teamId": "houston",
         "teamName": "Houston",
         "shortName": "Houston",
@@ -4401,6 +4293,18 @@
           "counties": 7,
           "population": 5056931,
           "areaSqMi": 5937.92
+        }
+      },
+      {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 7,
+          "population": 4722659,
+          "areaSqMi": 8768.75
         }
       },
       {
@@ -4416,18 +4320,6 @@
         }
       },
       {
-        "teamId": "toledo",
-        "teamName": "Toledo",
-        "shortName": "Toledo",
-        "fullName": "Toledo Rockets",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 7,
-          "population": 894512,
-          "areaSqMi": 3149.86
-        }
-      },
-      {
         "teamId": "texas-a-m",
         "teamName": "Texas A&M",
         "shortName": "Texas A&M",
@@ -4437,30 +4329,6 @@
           "counties": 7,
           "population": 336135,
           "areaSqMi": 5137.51
-        }
-      },
-      {
-        "teamId": "stanford",
-        "teamName": "Stanford",
-        "shortName": "Stanford",
-        "fullName": "Stanford Cardinal",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 6,
-          "population": 2131624,
-          "areaSqMi": 6871.04
-        }
-      },
-      {
-        "teamId": "michigan-state",
-        "teamName": "Michigan State",
-        "shortName": "Michigan State",
-        "fullName": "Michigan State Spartans",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 6,
-          "population": 1017313,
-          "areaSqMi": 3436.65
         }
       },
       {
@@ -4534,21 +4402,21 @@
           "population": 407236,
           "areaSqMi": 2981.61
         }
-      },
-      {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 1,
-          "population": 2591035,
-          "areaSqMi": 1897.72
-        }
       }
     ],
     "territoryGained": [
+      {
+        "teamId": "san-jose-state",
+        "teamName": "San Jose State",
+        "shortName": "San Jose State",
+        "fullName": "San Jose State Spartans",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 23,
+          "population": 8025579,
+          "areaSqMi": 32450.06
+        }
+      },
       {
         "teamId": "umass",
         "teamName": "UMass",
@@ -4583,6 +4451,18 @@
           "counties": 16,
           "population": 878353,
           "areaSqMi": 8793.24
+        }
+      },
+      {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 15,
+          "population": 5437251,
+          "areaSqMi": 37742.19
         }
       },
       {
@@ -4622,6 +4502,18 @@
         }
       },
       {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 10,
+          "population": 1200876,
+          "areaSqMi": 38931.82
+        }
+      },
+      {
         "teamId": "memphis",
         "teamName": "Memphis",
         "shortName": "Memphis",
@@ -4646,15 +4538,27 @@
         }
       },
       {
-        "teamId": "usc",
-        "teamName": "USC",
-        "shortName": "USC",
-        "fullName": "USC Trojans",
+        "teamId": "michigan-state",
+        "teamName": "Michigan State",
+        "shortName": "Michigan State",
+        "fullName": "Michigan State Spartans",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 5,
-          "population": 3109652,
-          "areaSqMi": 7899.4
+          "counties": 7,
+          "population": 894512,
+          "areaSqMi": 3149.86
+        }
+      },
+      {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 6,
+          "population": 2131624,
+          "areaSqMi": 6871.04
         }
       },
       {
@@ -4695,6 +4599,18 @@
       }
     ],
     "territoryLost": [
+      {
+        "teamId": "eastern-michigan",
+        "teamName": "Eastern Michigan",
+        "shortName": "Eastern Michigan",
+        "fullName": "Eastern Michigan Eagles",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 23,
+          "population": 8025579,
+          "areaSqMi": 32450.06
+        }
+      },
       {
         "teamId": "rutgers",
         "teamName": "Rutgers",
@@ -4756,6 +4672,18 @@
         }
       },
       {
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Pac-12",
+        "metrics": {
+          "counties": 10,
+          "population": 2327599,
+          "areaSqMi": 29842.79
+        }
+      },
+      {
         "teamId": "uab",
         "teamName": "UAB",
         "shortName": "UAB",
@@ -4765,6 +4693,18 @@
           "counties": 10,
           "population": 1298563,
           "areaSqMi": 7293.79
+        }
+      },
+      {
+        "teamId": "utep",
+        "teamName": "UTEP",
+        "shortName": "UTEP",
+        "fullName": "UTEP Miners",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 10,
+          "population": 1200876,
+          "areaSqMi": 38931.82
         }
       },
       {
@@ -4789,6 +4729,30 @@
           "counties": 7,
           "population": 1749233,
           "areaSqMi": 4700.99
+        }
+      },
+      {
+        "teamId": "toledo",
+        "teamName": "Toledo",
+        "shortName": "Toledo",
+        "fullName": "Toledo Rockets",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 7,
+          "population": 894512,
+          "areaSqMi": 3149.86
+        }
+      },
+      {
+        "teamId": "stanford",
+        "teamName": "Stanford",
+        "shortName": "Stanford",
+        "fullName": "Stanford Cardinal",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 6,
+          "population": 2131624,
+          "areaSqMi": 6871.04
         }
       },
       {
@@ -4842,7 +4806,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 126,
+    "trackedTeams": 122,
     "countyCount": 3114
   }
 }
