@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "regular",
   "weekLabel": "Regular Week 1",
-  "generatedAt": "2026-09-06T03:40:17.198105+00:00",
+  "generatedAt": "2026-09-06T08:08:18.967652+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -68,6 +68,18 @@
         }
       },
       {
+        "teamId": "new-mexico",
+        "teamName": "New Mexico",
+        "shortName": "New Mexico",
+        "fullName": "New Mexico Lobos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 72,
+          "population": 3254804,
+          "areaSqMi": 120144.54
+        }
+      },
+      {
         "teamId": "texas-tech",
         "teamName": "Texas Tech",
         "shortName": "Texas Tech",
@@ -92,18 +104,6 @@
         }
       },
       {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 26,
-          "population": 1637202,
-          "areaSqMi": 89776.29
-        }
-      },
-      {
         "teamId": "nebraska",
         "teamName": "Nebraska",
         "shortName": "Nebraska",
@@ -113,6 +113,18 @@
           "counties": 125,
           "population": 2894187,
           "areaSqMi": 82832.72
+        }
+      },
+      {
+        "teamId": "nevada",
+        "teamName": "Nevada",
+        "shortName": "Nevada",
+        "fullName": "Nevada Wolf Pack",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 60,
+          "population": 2112601,
+          "areaSqMi": 72807.6
         }
       },
       {
@@ -173,18 +185,6 @@
           "counties": 18,
           "population": 774606,
           "areaSqMi": 62353.46
-        }
-      },
-      {
-        "teamId": "nevada",
-        "teamName": "Nevada",
-        "shortName": "Nevada",
-        "fullName": "Nevada Wolf Pack",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 17,
-          "population": 812662,
-          "areaSqMi": 57108.58
         }
       },
       {
@@ -356,18 +356,6 @@
         }
       },
       {
-        "teamId": "central-michigan",
-        "teamName": "Central Michigan",
-        "shortName": "Central Michigan",
-        "fullName": "Central Michigan Chippewas",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 46,
-          "population": 1617602,
-          "areaSqMi": 30368.25
-        }
-      },
-      {
         "teamId": "troy",
         "teamName": "Troy",
         "shortName": "Troy",
@@ -524,6 +512,18 @@
         }
       },
       {
+        "teamId": "ucla",
+        "teamName": "UCLA",
+        "shortName": "UCLA",
+        "fullName": "UCLA Bruins",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 11,
+          "population": 6978696,
+          "areaSqMi": 21384.59
+        }
+      },
+      {
         "teamId": "texas-a-m",
         "teamName": "Texas A&M",
         "shortName": "Texas A&M",
@@ -572,6 +572,18 @@
         }
       },
       {
+        "teamId": "lsu",
+        "teamName": "LSU",
+        "shortName": "LSU",
+        "fullName": "LSU Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 40,
+          "population": 2832221,
+          "areaSqMi": 18123.82
+        }
+      },
+      {
         "teamId": "texas",
         "teamName": "Texas",
         "shortName": "Texas",
@@ -605,18 +617,6 @@
           "counties": 38,
           "population": 1788942,
           "areaSqMi": 15707.56
-        }
-      },
-      {
-        "teamId": "western-kentucky",
-        "teamName": "Western Kentucky",
-        "shortName": "Western Kentucky",
-        "fullName": "Western Kentucky Hilltoppers",
-        "conference": "CUSA",
-        "metrics": {
-          "counties": 43,
-          "population": 1299939,
-          "areaSqMi": 15699.02
         }
       },
       {
@@ -725,18 +725,6 @@
           "counties": 18,
           "population": 2849209,
           "areaSqMi": 13572.11
-        }
-      },
-      {
-        "teamId": "ucla",
-        "teamName": "UCLA",
-        "shortName": "UCLA",
-        "fullName": "UCLA Bruins",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 3,
-          "population": 2123388,
-          "areaSqMi": 12710.13
         }
       },
       {
@@ -920,30 +908,6 @@
         }
       },
       {
-        "teamId": "clemson",
-        "teamName": "Clemson",
-        "shortName": "Clemson",
-        "fullName": "Clemson Tigers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 22,
-          "population": 1725840,
-          "areaSqMi": 9185.1
-        }
-      },
-      {
-        "teamId": "lsu",
-        "teamName": "LSU",
-        "shortName": "LSU",
-        "fullName": "LSU Tigers",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 18,
-          "population": 1106381,
-          "areaSqMi": 8938.72
-        }
-      },
-      {
         "teamId": "michigan",
         "teamName": "Michigan",
         "shortName": "Michigan",
@@ -965,18 +929,6 @@
           "counties": 7,
           "population": 4722659,
           "areaSqMi": 8768.75
-        }
-      },
-      {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 8,
-          "population": 4855308,
-          "areaSqMi": 8674.45
         }
       },
       {
@@ -1270,6 +1222,18 @@
         }
       },
       {
+        "teamId": "ucla",
+        "teamName": "UCLA",
+        "shortName": "UCLA",
+        "fullName": "UCLA Bruins",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 11,
+          "population": 6978696,
+          "areaSqMi": 21384.59
+        }
+      },
+      {
         "teamId": "maryland",
         "teamName": "Maryland",
         "shortName": "Maryland",
@@ -1375,18 +1339,6 @@
           "counties": 8,
           "population": 5058723,
           "areaSqMi": 66030.11
-        }
-      },
-      {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 8,
-          "population": 4855308,
-          "areaSqMi": 8674.45
         }
       },
       {
@@ -1546,6 +1498,18 @@
         }
       },
       {
+        "teamId": "new-mexico",
+        "teamName": "New Mexico",
+        "shortName": "New Mexico",
+        "fullName": "New Mexico Lobos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 72,
+          "population": 3254804,
+          "areaSqMi": 120144.54
+        }
+      },
+      {
         "teamId": "illinois",
         "teamName": "Illinois",
         "shortName": "Illinois",
@@ -1615,6 +1579,18 @@
           "counties": 18,
           "population": 2849209,
           "areaSqMi": 13572.11
+        }
+      },
+      {
+        "teamId": "lsu",
+        "teamName": "LSU",
+        "shortName": "LSU",
+        "fullName": "LSU Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 40,
+          "population": 2832221,
+          "areaSqMi": 18123.82
         }
       },
       {
@@ -1798,18 +1774,6 @@
         }
       },
       {
-        "teamId": "ucla",
-        "teamName": "UCLA",
-        "shortName": "UCLA",
-        "fullName": "UCLA Bruins",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 3,
-          "population": 2123388,
-          "areaSqMi": 12710.13
-        }
-      },
-      {
         "teamId": "washington-state",
         "teamName": "Washington State",
         "shortName": "Washington State",
@@ -1819,6 +1783,18 @@
           "counties": 55,
           "population": 2112968,
           "areaSqMi": 123514.91
+        }
+      },
+      {
+        "teamId": "nevada",
+        "teamName": "Nevada",
+        "shortName": "Nevada",
+        "fullName": "Nevada Wolf Pack",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 60,
+          "population": 2112601,
+          "areaSqMi": 72807.6
         }
       },
       {
@@ -1882,18 +1858,6 @@
         }
       },
       {
-        "teamId": "clemson",
-        "teamName": "Clemson",
-        "shortName": "Clemson",
-        "fullName": "Clemson Tigers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 22,
-          "population": 1725840,
-          "areaSqMi": 9185.1
-        }
-      },
-      {
         "teamId": "texas-tech",
         "teamName": "Texas Tech",
         "shortName": "Texas Tech",
@@ -1930,18 +1894,6 @@
         }
       },
       {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 26,
-          "population": 1637202,
-          "areaSqMi": 89776.29
-        }
-      },
-      {
         "teamId": "alabama",
         "teamName": "Alabama",
         "shortName": "Alabama",
@@ -1951,18 +1903,6 @@
           "counties": 32,
           "population": 1624010,
           "areaSqMi": 19981.2
-        }
-      },
-      {
-        "teamId": "central-michigan",
-        "teamName": "Central Michigan",
-        "shortName": "Central Michigan",
-        "fullName": "Central Michigan Chippewas",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 46,
-          "population": 1617602,
-          "areaSqMi": 30368.25
         }
       },
       {
@@ -2086,18 +2026,6 @@
         }
       },
       {
-        "teamId": "western-kentucky",
-        "teamName": "Western Kentucky",
-        "shortName": "Western Kentucky",
-        "fullName": "Western Kentucky Hilltoppers",
-        "conference": "CUSA",
-        "metrics": {
-          "counties": 43,
-          "population": 1299939,
-          "areaSqMi": 15699.02
-        }
-      },
-      {
         "teamId": "utah-state",
         "teamName": "Utah State",
         "shortName": "Utah State",
@@ -2206,18 +2134,6 @@
         }
       },
       {
-        "teamId": "lsu",
-        "teamName": "LSU",
-        "shortName": "LSU",
-        "fullName": "LSU Tigers",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 18,
-          "population": 1106381,
-          "areaSqMi": 8938.72
-        }
-      },
-      {
         "teamId": "southern-miss",
         "teamName": "Southern Miss",
         "shortName": "Southern Miss",
@@ -2275,18 +2191,6 @@
           "counties": 16,
           "population": 827783,
           "areaSqMi": 7192.68
-        }
-      },
-      {
-        "teamId": "nevada",
-        "teamName": "Nevada",
-        "shortName": "Nevada",
-        "fullName": "Nevada Wolf Pack",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 17,
-          "population": 812662,
-          "areaSqMi": 57108.58
         }
       },
       {
@@ -2400,6 +2304,18 @@
         }
       },
       {
+        "teamId": "new-mexico",
+        "teamName": "New Mexico",
+        "shortName": "New Mexico",
+        "fullName": "New Mexico Lobos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 72,
+          "population": 3254804,
+          "areaSqMi": 120144.54
+        }
+      },
+      {
         "teamId": "colorado-state",
         "teamName": "Colorado State",
         "shortName": "Colorado State",
@@ -2433,6 +2349,18 @@
           "counties": 60,
           "population": 3655577,
           "areaSqMi": 33531.96
+        }
+      },
+      {
+        "teamId": "nevada",
+        "teamName": "Nevada",
+        "shortName": "Nevada",
+        "fullName": "Nevada Wolf Pack",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 60,
+          "population": 2112601,
+          "areaSqMi": 72807.6
         }
       },
       {
@@ -2568,18 +2496,6 @@
         }
       },
       {
-        "teamId": "central-michigan",
-        "teamName": "Central Michigan",
-        "shortName": "Central Michigan",
-        "fullName": "Central Michigan Chippewas",
-        "conference": "MAC",
-        "metrics": {
-          "counties": 46,
-          "population": 1617602,
-          "areaSqMi": 30368.25
-        }
-      },
-      {
         "teamId": "utsa",
         "teamName": "UTSA",
         "shortName": "UTSA",
@@ -2616,18 +2532,6 @@
         }
       },
       {
-        "teamId": "western-kentucky",
-        "teamName": "Western Kentucky",
-        "shortName": "Western Kentucky",
-        "fullName": "Western Kentucky Hilltoppers",
-        "conference": "CUSA",
-        "metrics": {
-          "counties": 43,
-          "population": 1299939,
-          "areaSqMi": 15699.02
-        }
-      },
-      {
         "teamId": "indiana",
         "teamName": "Indiana",
         "shortName": "Indiana",
@@ -2649,6 +2553,18 @@
           "counties": 42,
           "population": 691593,
           "areaSqMi": 35007.51
+        }
+      },
+      {
+        "teamId": "lsu",
+        "teamName": "LSU",
+        "shortName": "LSU",
+        "fullName": "LSU Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 40,
+          "population": 2832221,
+          "areaSqMi": 18123.82
         }
       },
       {
@@ -2940,18 +2856,6 @@
         }
       },
       {
-        "teamId": "new-mexico",
-        "teamName": "New Mexico",
-        "shortName": "New Mexico",
-        "fullName": "New Mexico Lobos",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 26,
-          "population": 1637202,
-          "areaSqMi": 89776.29
-        }
-      },
-      {
         "teamId": "middle-tennessee",
         "teamName": "Middle Tennessee",
         "shortName": "Middle Tennessee",
@@ -3084,18 +2988,6 @@
         }
       },
       {
-        "teamId": "clemson",
-        "teamName": "Clemson",
-        "shortName": "Clemson",
-        "fullName": "Clemson Tigers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 22,
-          "population": 1725840,
-          "areaSqMi": 9185.1
-        }
-      },
-      {
         "teamId": "duke",
         "teamName": "Duke",
         "shortName": "Duke",
@@ -3168,18 +3060,6 @@
         }
       },
       {
-        "teamId": "lsu",
-        "teamName": "LSU",
-        "shortName": "LSU",
-        "fullName": "LSU Tigers",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 18,
-          "population": 1106381,
-          "areaSqMi": 8938.72
-        }
-      },
-      {
         "teamId": "byu",
         "teamName": "BYU",
         "shortName": "BYU",
@@ -3225,18 +3105,6 @@
           "counties": 17,
           "population": 1182005,
           "areaSqMi": 14881.48
-        }
-      },
-      {
-        "teamId": "nevada",
-        "teamName": "Nevada",
-        "shortName": "Nevada",
-        "fullName": "Nevada Wolf Pack",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 17,
-          "population": 812662,
-          "areaSqMi": 57108.58
         }
       },
       {
@@ -3360,6 +3228,18 @@
         }
       },
       {
+        "teamId": "ucla",
+        "teamName": "UCLA",
+        "shortName": "UCLA",
+        "fullName": "UCLA Bruins",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 11,
+          "population": 6978696,
+          "areaSqMi": 21384.59
+        }
+      },
+      {
         "teamId": "delaware",
         "teamName": "Delaware",
         "shortName": "Delaware",
@@ -3432,18 +3312,6 @@
         }
       },
       {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 8,
-          "population": 4855308,
-          "areaSqMi": 8674.45
-        }
-      },
-      {
         "teamId": "miami",
         "teamName": "Miami",
         "shortName": "Miami",
@@ -3490,18 +3358,6 @@
           "population": 5622794,
           "areaSqMi": 15589.71
         }
-      },
-      {
-        "teamId": "ucla",
-        "teamName": "UCLA",
-        "shortName": "UCLA",
-        "fullName": "UCLA Bruins",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 3,
-          "population": 2123388,
-          "areaSqMi": 12710.13
-        }
       }
     ],
     "territoryGained": [
@@ -3515,6 +3371,30 @@
           "counties": 60,
           "population": 6259226,
           "areaSqMi": 119955.36
+        }
+      },
+      {
+        "teamId": "new-mexico",
+        "teamName": "New Mexico",
+        "shortName": "New Mexico",
+        "fullName": "New Mexico Lobos",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 46,
+          "population": 1617602,
+          "areaSqMi": 30368.25
+        }
+      },
+      {
+        "teamId": "nevada",
+        "teamName": "Nevada",
+        "shortName": "Nevada",
+        "fullName": "Nevada Wolf Pack",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 43,
+          "population": 1299939,
+          "areaSqMi": 15699.02
         }
       },
       {
@@ -3611,6 +3491,18 @@
           "counties": 23,
           "population": 8025579,
           "areaSqMi": 32450.06
+        }
+      },
+      {
+        "teamId": "lsu",
+        "teamName": "LSU",
+        "shortName": "LSU",
+        "fullName": "LSU Tigers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 22,
+          "population": 1725840,
+          "areaSqMi": 9185.1
         }
       },
       {
@@ -3890,6 +3782,18 @@
         }
       },
       {
+        "teamId": "ucla",
+        "teamName": "UCLA",
+        "shortName": "UCLA",
+        "fullName": "UCLA Bruins",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 8,
+          "population": 4855308,
+          "areaSqMi": 8674.45
+        }
+      },
+      {
         "teamId": "florida",
         "teamName": "Florida",
         "shortName": "Florida",
@@ -4000,6 +3904,30 @@
         }
       },
       {
+        "teamId": "central-michigan",
+        "teamName": "Central Michigan",
+        "shortName": "Central Michigan",
+        "fullName": "Central Michigan Chippewas",
+        "conference": "MAC",
+        "metrics": {
+          "counties": 46,
+          "population": 1617602,
+          "areaSqMi": 30368.25
+        }
+      },
+      {
+        "teamId": "western-kentucky",
+        "teamName": "Western Kentucky",
+        "shortName": "Western Kentucky",
+        "fullName": "Western Kentucky Hilltoppers",
+        "conference": "CUSA",
+        "metrics": {
+          "counties": 43,
+          "population": 1299939,
+          "areaSqMi": 15699.02
+        }
+      },
+      {
         "teamId": "wyoming",
         "teamName": "Wyoming",
         "shortName": "Wyoming",
@@ -4093,6 +4021,18 @@
           "counties": 23,
           "population": 8025579,
           "areaSqMi": 32450.06
+        }
+      },
+      {
+        "teamId": "clemson",
+        "teamName": "Clemson",
+        "shortName": "Clemson",
+        "fullName": "Clemson Tigers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 22,
+          "population": 1725840,
+          "areaSqMi": 9185.1
         }
       },
       {
@@ -4384,6 +4324,18 @@
         }
       },
       {
+        "teamId": "california",
+        "teamName": "California",
+        "shortName": "California",
+        "fullName": "California Golden Bears",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 8,
+          "population": 4855308,
+          "areaSqMi": 8674.45
+        }
+      },
+      {
         "teamId": "florida-atlantic",
         "teamName": "Florida Atlantic",
         "shortName": "Florida Atlantic",
@@ -4494,7 +4446,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 97,
+    "trackedTeams": 93,
     "countyCount": 3114
   }
 }
