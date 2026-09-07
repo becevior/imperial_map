@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "regular",
   "weekLabel": "Regular Week 1",
-  "generatedAt": "2026-09-06T08:08:18.967652+00:00",
+  "generatedAt": "2026-09-07T15:53:54.216958+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -17,6 +17,18 @@
           "counties": 140,
           "population": 2363699,
           "areaSqMi": 168798.6
+        }
+      },
+      {
+        "teamId": "washington",
+        "teamName": "Washington",
+        "shortName": "Washington",
+        "fullName": "Washington Huskies",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 77,
+          "population": 7476320,
+          "areaSqMi": 162467.45
         }
       },
       {
@@ -53,18 +65,6 @@
           "counties": 80,
           "population": 7927138,
           "areaSqMi": 131127.24
-        }
-      },
-      {
-        "teamId": "washington-state",
-        "teamName": "Washington State",
-        "shortName": "Washington State",
-        "fullName": "Washington State Cougars",
-        "conference": "Pac-12",
-        "metrics": {
-          "counties": 55,
-          "population": 2112968,
-          "areaSqMi": 123514.91
         }
       },
       {
@@ -224,6 +224,18 @@
         }
       },
       {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 67,
+          "population": 5069165,
+          "areaSqMi": 45264.14
+        }
+      },
+      {
         "teamId": "usc",
         "teamName": "USC",
         "shortName": "USC",
@@ -233,30 +245,6 @@
           "counties": 17,
           "population": 18490172,
           "areaSqMi": 42590.65
-        }
-      },
-      {
-        "teamId": "wisconsin",
-        "teamName": "Wisconsin",
-        "shortName": "Wisconsin",
-        "fullName": "Wisconsin Badgers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 55,
-          "population": 3868458,
-          "areaSqMi": 39869.91
-        }
-      },
-      {
-        "teamId": "washington",
-        "teamName": "Washington",
-        "shortName": "Washington",
-        "fullName": "Washington Huskies",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 22,
-          "population": 5363352,
-          "areaSqMi": 38952.54
         }
       },
       {
@@ -437,6 +425,18 @@
           "counties": 22,
           "population": 5898274,
           "areaSqMi": 25725.66
+        }
+      },
+      {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 53,
+          "population": 2426525,
+          "areaSqMi": 23121.65
         }
       },
       {
@@ -704,18 +704,6 @@
         }
       },
       {
-        "teamId": "ole-miss",
-        "teamName": "Ole Miss",
-        "shortName": "Ole Miss",
-        "fullName": "Ole Miss Rebels",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 25,
-          "population": 690271,
-          "areaSqMi": 13787.65
-        }
-      },
-      {
         "teamId": "north-carolina",
         "teamName": "North Carolina",
         "shortName": "North Carolina",
@@ -896,18 +884,6 @@
         }
       },
       {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 28,
-          "population": 1736254,
-          "areaSqMi": 9334.0
-        }
-      },
-      {
         "teamId": "michigan",
         "teamName": "Michigan",
         "shortName": "Michigan",
@@ -1049,18 +1025,6 @@
           "counties": 11,
           "population": 2914265,
           "areaSqMi": 5848.79
-        }
-      },
-      {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 12,
-          "population": 1200707,
-          "areaSqMi": 5394.22
         }
       },
       {
@@ -1222,6 +1186,18 @@
         }
       },
       {
+        "teamId": "washington",
+        "teamName": "Washington",
+        "shortName": "Washington",
+        "fullName": "Washington Huskies",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 77,
+          "population": 7476320,
+          "areaSqMi": 162467.45
+        }
+      },
+      {
         "teamId": "ucla",
         "teamName": "UCLA",
         "shortName": "UCLA",
@@ -1306,18 +1282,6 @@
         }
       },
       {
-        "teamId": "washington",
-        "teamName": "Washington",
-        "shortName": "Washington",
-        "fullName": "Washington Huskies",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 22,
-          "population": 5363352,
-          "areaSqMi": 38952.54
-        }
-      },
-      {
         "teamId": "south-florida",
         "teamName": "South Florida",
         "shortName": "South Florida",
@@ -1327,6 +1291,18 @@
           "counties": 15,
           "population": 5179232,
           "areaSqMi": 11678.72
+        }
+      },
+      {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 67,
+          "population": 5069165,
+          "areaSqMi": 45264.14
         }
       },
       {
@@ -1435,18 +1411,6 @@
           "counties": 35,
           "population": 3869642,
           "areaSqMi": 15184.86
-        }
-      },
-      {
-        "teamId": "wisconsin",
-        "teamName": "Wisconsin",
-        "shortName": "Wisconsin",
-        "fullName": "Wisconsin Badgers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 55,
-          "population": 3868458,
-          "areaSqMi": 39869.91
         }
       },
       {
@@ -1702,6 +1666,18 @@
         }
       },
       {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 53,
+          "population": 2426525,
+          "areaSqMi": 23121.65
+        }
+      },
+      {
         "teamId": "kennesaw-state",
         "teamName": "Kennesaw State",
         "shortName": "Kennesaw State",
@@ -1774,18 +1750,6 @@
         }
       },
       {
-        "teamId": "washington-state",
-        "teamName": "Washington State",
-        "shortName": "Washington State",
-        "fullName": "Washington State Cougars",
-        "conference": "Pac-12",
-        "metrics": {
-          "counties": 55,
-          "population": 2112968,
-          "areaSqMi": 123514.91
-        }
-      },
-      {
         "teamId": "nevada",
         "teamName": "Nevada",
         "shortName": "Nevada",
@@ -1843,18 +1807,6 @@
           "counties": 38,
           "population": 1788942,
           "areaSqMi": 15707.56
-        }
-      },
-      {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 28,
-          "population": 1736254,
-          "areaSqMi": 9334.0
         }
       },
       {
@@ -2074,18 +2026,6 @@
         }
       },
       {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 12,
-          "population": 1200707,
-          "areaSqMi": 5394.22
-        }
-      },
-      {
         "teamId": "louisiana",
         "teamName": "Louisiana",
         "shortName": "Louisiana",
@@ -2218,18 +2158,6 @@
         }
       },
       {
-        "teamId": "ole-miss",
-        "teamName": "Ole Miss",
-        "shortName": "Ole Miss",
-        "fullName": "Ole Miss Rebels",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 25,
-          "population": 690271,
-          "areaSqMi": 13787.65
-        }
-      },
-      {
         "teamId": "purdue",
         "teamName": "Purdue",
         "shortName": "Purdue",
@@ -2304,6 +2232,18 @@
         }
       },
       {
+        "teamId": "washington",
+        "teamName": "Washington",
+        "shortName": "Washington",
+        "fullName": "Washington Huskies",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 77,
+          "population": 7476320,
+          "areaSqMi": 162467.45
+        }
+      },
+      {
         "teamId": "new-mexico",
         "teamName": "New Mexico",
         "shortName": "New Mexico",
@@ -2313,6 +2253,18 @@
           "counties": 72,
           "population": 3254804,
           "areaSqMi": 120144.54
+        }
+      },
+      {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 67,
+          "population": 5069165,
+          "areaSqMi": 45264.14
         }
       },
       {
@@ -2388,30 +2340,6 @@
         }
       },
       {
-        "teamId": "wisconsin",
-        "teamName": "Wisconsin",
-        "shortName": "Wisconsin",
-        "fullName": "Wisconsin Badgers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 55,
-          "population": 3868458,
-          "areaSqMi": 39869.91
-        }
-      },
-      {
-        "teamId": "washington-state",
-        "teamName": "Washington State",
-        "shortName": "Washington State",
-        "fullName": "Washington State Cougars",
-        "conference": "Pac-12",
-        "metrics": {
-          "counties": 55,
-          "population": 2112968,
-          "areaSqMi": 123514.91
-        }
-      },
-      {
         "teamId": "cincinnati",
         "teamName": "Cincinnati",
         "shortName": "Cincinnati",
@@ -2421,6 +2349,18 @@
           "counties": 53,
           "population": 10828963,
           "areaSqMi": 47852.83
+        }
+      },
+      {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 53,
+          "population": 2426525,
+          "areaSqMi": 23121.65
         }
       },
       {
@@ -2820,18 +2760,6 @@
         }
       },
       {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 28,
-          "population": 1736254,
-          "areaSqMi": 9334.0
-        }
-      },
-      {
         "teamId": "houston",
         "teamName": "Houston",
         "shortName": "Houston",
@@ -2889,18 +2817,6 @@
           "counties": 25,
           "population": 2640927,
           "areaSqMi": 10972.19
-        }
-      },
-      {
-        "teamId": "ole-miss",
-        "teamName": "Ole Miss",
-        "shortName": "Ole Miss",
-        "fullName": "Ole Miss Rebels",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 25,
-          "population": 690271,
-          "areaSqMi": 13787.65
         }
       },
       {
@@ -2973,18 +2889,6 @@
           "counties": 22,
           "population": 5898274,
           "areaSqMi": 25725.66
-        }
-      },
-      {
-        "teamId": "washington",
-        "teamName": "Washington",
-        "shortName": "Washington",
-        "fullName": "Washington Huskies",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 22,
-          "population": 5363352,
-          "areaSqMi": 38952.54
         }
       },
       {
@@ -3216,18 +3120,6 @@
         }
       },
       {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 12,
-          "population": 1200707,
-          "areaSqMi": 5394.22
-        }
-      },
-      {
         "teamId": "ucla",
         "teamName": "UCLA",
         "shortName": "UCLA",
@@ -3374,6 +3266,30 @@
         }
       },
       {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 55,
+          "population": 3868458,
+          "areaSqMi": 39869.91
+        }
+      },
+      {
+        "teamId": "washington",
+        "teamName": "Washington",
+        "shortName": "Washington",
+        "fullName": "Washington Huskies",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 55,
+          "population": 2112968,
+          "areaSqMi": 123514.91
+        }
+      },
+      {
         "teamId": "new-mexico",
         "teamName": "New Mexico",
         "shortName": "New Mexico",
@@ -3431,6 +3347,18 @@
           "counties": 30,
           "population": 1034572,
           "areaSqMi": 28248.68
+        }
+      },
+      {
+        "teamId": "ole-miss",
+        "teamName": "Ole Miss",
+        "shortName": "Ole Miss",
+        "fullName": "Ole Miss Rebels",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 28,
+          "population": 1736254,
+          "areaSqMi": 9334.0
         }
       },
       {
@@ -3892,6 +3820,30 @@
     ],
     "territoryLost": [
       {
+        "teamId": "wisconsin",
+        "teamName": "Wisconsin",
+        "shortName": "Wisconsin",
+        "fullName": "Wisconsin Badgers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 55,
+          "population": 3868458,
+          "areaSqMi": 39869.91
+        }
+      },
+      {
+        "teamId": "washington-state",
+        "teamName": "Washington State",
+        "shortName": "Washington State",
+        "fullName": "Washington State Cougars",
+        "conference": "Pac-12",
+        "metrics": {
+          "counties": 55,
+          "population": 2112968,
+          "areaSqMi": 123514.91
+        }
+      },
+      {
         "teamId": "arkansas-state",
         "teamName": "Arkansas State",
         "shortName": "Arkansas State",
@@ -3961,6 +3913,18 @@
           "counties": 30,
           "population": 1034572,
           "areaSqMi": 28248.68
+        }
+      },
+      {
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 28,
+          "population": 1736254,
+          "areaSqMi": 9334.0
         }
       },
       {
@@ -4446,7 +4410,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 93,
+    "trackedTeams": 90,
     "countyCount": 3114
   }
 }
