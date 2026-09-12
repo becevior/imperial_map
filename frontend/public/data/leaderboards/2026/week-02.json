@@ -4,7 +4,7 @@
   "week": 2,
   "seasonType": "regular",
   "weekLabel": "Regular Week 2",
-  "generatedAt": "2026-09-12T20:41:44.816894+00:00",
+  "generatedAt": "2026-09-12T22:36:59.096712+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -44,11 +44,11 @@
         }
       },
       {
-        "teamId": "oregon",
-        "teamName": "Oregon",
-        "shortName": "Oregon",
-        "fullName": "Oregon Ducks",
-        "conference": "Big Ten",
+        "teamId": "oklahoma-state",
+        "teamName": "Oklahoma State",
+        "shortName": "Oklahoma State",
+        "fullName": "Oklahoma State Cowboys",
+        "conference": "Big 12",
         "metrics": {
           "counties": 40,
           "population": 2186530,
@@ -212,6 +212,18 @@
         }
       },
       {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 76,
+          "population": 6228594,
+          "areaSqMi": 53126.23
+        }
+      },
+      {
         "teamId": "cincinnati",
         "teamName": "Cincinnati",
         "shortName": "Cincinnati",
@@ -233,18 +245,6 @@
           "counties": 53,
           "population": 2391175,
           "areaSqMi": 46287.14
-        }
-      },
-      {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 67,
-          "population": 5069165,
-          "areaSqMi": 45264.14
         }
       },
       {
@@ -869,18 +869,6 @@
           "counties": 9,
           "population": 4123015,
           "areaSqMi": 8381.35
-        }
-      },
-      {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 9,
-          "population": 1159429,
-          "areaSqMi": 7862.09
         }
       },
       {
@@ -1174,6 +1162,18 @@
         }
       },
       {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 76,
+          "population": 6228594,
+          "areaSqMi": 53126.23
+        }
+      },
+      {
         "teamId": "florida",
         "teamName": "Florida",
         "shortName": "Florida",
@@ -1231,18 +1231,6 @@
           "counties": 84,
           "population": 5609858,
           "areaSqMi": 69418.91
-        }
-      },
-      {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 67,
-          "population": 5069165,
-          "areaSqMi": 45264.14
         }
       },
       {
@@ -1606,11 +1594,11 @@
         }
       },
       {
-        "teamId": "oregon",
-        "teamName": "Oregon",
-        "shortName": "Oregon",
-        "fullName": "Oregon Ducks",
-        "conference": "Big Ten",
+        "teamId": "oklahoma-state",
+        "teamName": "Oklahoma State",
+        "shortName": "Oklahoma State",
+        "fullName": "Oklahoma State Cowboys",
+        "conference": "Big 12",
         "metrics": {
           "counties": 40,
           "population": 2186530,
@@ -1906,18 +1894,6 @@
         }
       },
       {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 9,
-          "population": 1159429,
-          "areaSqMi": 7862.09
-        }
-      },
-      {
         "teamId": "kentucky",
         "teamName": "Kentucky",
         "shortName": "Kentucky",
@@ -2088,6 +2064,18 @@
         }
       },
       {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 76,
+          "population": 6228594,
+          "areaSqMi": 53126.23
+        }
+      },
+      {
         "teamId": "new-mexico",
         "teamName": "New Mexico",
         "shortName": "New Mexico",
@@ -2121,18 +2109,6 @@
           "counties": 69,
           "population": 9271419,
           "areaSqMi": 36288.29
-        }
-      },
-      {
-        "teamId": "notre-dame",
-        "teamName": "Notre Dame",
-        "shortName": "Notre Dame",
-        "fullName": "Notre Dame Fighting Irish",
-        "conference": "Independent",
-        "metrics": {
-          "counties": 67,
-          "population": 5069165,
-          "areaSqMi": 45264.14
         }
       },
       {
@@ -2376,11 +2352,11 @@
         }
       },
       {
-        "teamId": "oregon",
-        "teamName": "Oregon",
-        "shortName": "Oregon",
-        "fullName": "Oregon Ducks",
-        "conference": "Big Ten",
+        "teamId": "oklahoma-state",
+        "teamName": "Oklahoma State",
+        "shortName": "Oklahoma State",
+        "fullName": "Oklahoma State Cowboys",
+        "conference": "Big 12",
         "metrics": {
           "counties": 40,
           "population": 2186530,
@@ -2928,18 +2904,6 @@
         }
       },
       {
-        "teamId": "rice",
-        "teamName": "Rice",
-        "shortName": "Rice",
-        "fullName": "Rice Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 9,
-          "population": 1159429,
-          "areaSqMi": 7862.09
-        }
-      },
-      {
         "teamId": "northwestern",
         "teamName": "Northwestern",
         "shortName": "Northwestern",
@@ -3026,6 +2990,18 @@
         }
       },
       {
+        "teamId": "oklahoma-state",
+        "teamName": "Oklahoma State",
+        "shortName": "Oklahoma State",
+        "fullName": "Oklahoma State Cowboys",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 40,
+          "population": 2186530,
+          "areaSqMi": 143620.29
+        }
+      },
+      {
         "teamId": "missouri",
         "teamName": "Missouri",
         "shortName": "Missouri",
@@ -3074,6 +3050,18 @@
         }
       },
       {
+        "teamId": "notre-dame",
+        "teamName": "Notre Dame",
+        "shortName": "Notre Dame",
+        "fullName": "Notre Dame Fighting Irish",
+        "conference": "Independent",
+        "metrics": {
+          "counties": 9,
+          "population": 1159429,
+          "areaSqMi": 7862.09
+        }
+      },
+      {
         "teamId": "texas-a-m",
         "teamName": "Texas A&M",
         "shortName": "Texas A&M",
@@ -3109,6 +3097,18 @@
           "counties": 44,
           "population": 2800430,
           "areaSqMi": 9576.4
+        }
+      },
+      {
+        "teamId": "oregon",
+        "teamName": "Oregon",
+        "shortName": "Oregon",
+        "fullName": "Oregon Ducks",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 40,
+          "population": 2186530,
+          "areaSqMi": 143620.29
         }
       },
       {
@@ -3160,6 +3160,18 @@
         }
       },
       {
+        "teamId": "rice",
+        "teamName": "Rice",
+        "shortName": "Rice",
+        "fullName": "Rice Owls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 9,
+          "population": 1159429,
+          "areaSqMi": 7862.09
+        }
+      },
+      {
         "teamId": "arizona-state",
         "teamName": "Arizona State",
         "shortName": "Arizona State",
@@ -3174,7 +3186,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 83,
+    "trackedTeams": 82,
     "countyCount": 3114
   }
 }
