@@ -1,0 +1,36 @@
+[
+  {
+    "id": "401858214",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 2,
+    "completed": true,
+    "startDate": "2026-09-11T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Alumni Stadium (Chestnut Hill, MA)",
+    "homeTeamId": "boston-college",
+    "awayTeamId": "rutgers",
+    "homeScore": 28,
+    "awayScore": 21,
+    "winnerId": "boston-college",
+    "loserId": "rutgers"
+  },
+  {
+    "id": "401856678",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 2,
+    "completed": true,
+    "startDate": "2026-09-12T00:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "David Booth Kansas Memorial Stadium",
+    "homeTeamId": "kansas",
+    "awayTeamId": "missouri",
+    "homeScore": 21,
+    "awayScore": 38,
+    "winnerId": "missouri",
+    "loserId": "kansas"
+  }
+]

@@ -1763,16 +1763,23 @@
           "seasonType": "regular",
           "label": "Regular Week 1",
           "path": "/data/leaderboards/2026/week-01.json"
+        },
+        {
+          "weekIndex": 2,
+          "week": 2,
+          "seasonType": "regular",
+          "label": "Regular Week 2",
+          "path": "/data/leaderboards/2026/week-02.json"
         }
       ]
     }
   ],
   "latest": {
     "season": 2026,
-    "weekIndex": 1,
-    "path": "/data/leaderboards/2026/week-01.json",
-    "label": "Regular Week 1",
-    "week": 1,
+    "weekIndex": 2,
+    "path": "/data/leaderboards/2026/week-02.json",
+    "label": "Regular Week 2",
+    "week": 2,
     "seasonType": "regular"
   }
 }
