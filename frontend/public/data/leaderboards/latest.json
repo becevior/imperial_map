@@ -4,7 +4,7 @@
   "week": 2,
   "seasonType": "regular",
   "weekLabel": "Regular Week 2",
-  "generatedAt": "2026-09-12T18:18:17.607820+00:00",
+  "generatedAt": "2026-09-12T20:41:44.816894+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -104,6 +104,18 @@
         }
       },
       {
+        "teamId": "texas-a-m",
+        "teamName": "Texas A&M",
+        "shortName": "Texas A&M",
+        "fullName": "Texas A&M Aggies",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 40,
+          "population": 6441646,
+          "areaSqMi": 87033.75
+        }
+      },
+      {
         "teamId": "nebraska",
         "teamName": "Nebraska",
         "shortName": "Nebraska",
@@ -116,6 +128,18 @@
         }
       },
       {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 61,
+          "population": 5758784,
+          "areaSqMi": 78342.85
+        }
+      },
+      {
         "teamId": "nevada",
         "teamName": "Nevada",
         "shortName": "Nevada",
@@ -125,18 +149,6 @@
           "counties": 60,
           "population": 2112601,
           "areaSqMi": 72807.6
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 46,
-          "population": 3198477,
-          "areaSqMi": 69511.1
         }
       },
       {
@@ -161,18 +173,6 @@
           "counties": 47,
           "population": 1490879,
           "areaSqMi": 68951.8
-        }
-      },
-      {
-        "teamId": "arizona-state",
-        "teamName": "Arizona State",
-        "shortName": "Arizona State",
-        "fullName": "Arizona State Sun Devils",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 8,
-          "population": 5058723,
-          "areaSqMi": 66030.11
         }
       },
       {
@@ -260,6 +260,18 @@
         }
       },
       {
+        "teamId": "penn-state",
+        "teamName": "Penn State",
+        "shortName": "Penn State",
+        "fullName": "Penn State Nittany Lions",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 69,
+          "population": 9271419,
+          "areaSqMi": 36288.29
+        }
+      },
+      {
         "teamId": "kansas-state",
         "teamName": "Kansas State",
         "shortName": "Kansas State",
@@ -305,18 +317,6 @@
           "counties": 23,
           "population": 8025579,
           "areaSqMi": 32450.06
-        }
-      },
-      {
-        "teamId": "penn-state",
-        "teamName": "Penn State",
-        "shortName": "Penn State",
-        "fullName": "Penn State Nittany Lions",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 57,
-          "population": 3267272,
-          "areaSqMi": 31150.9
         }
       },
       {
@@ -476,6 +476,18 @@
         }
       },
       {
+        "teamId": "south-florida",
+        "teamName": "South Florida",
+        "shortName": "South Florida",
+        "fullName": "South Florida Bulls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 34,
+          "population": 13189095,
+          "areaSqMi": 22195.89
+        }
+      },
+      {
         "teamId": "florida",
         "teamName": "Florida",
         "shortName": "Florida",
@@ -524,18 +536,6 @@
         }
       },
       {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 32,
-          "population": 1382923,
-          "areaSqMi": 21003.63
-        }
-      },
-      {
         "teamId": "georgia-southern",
         "teamName": "Georgia Southern",
         "shortName": "Georgia Southern",
@@ -557,6 +557,30 @@
           "counties": 32,
           "population": 1624010,
           "areaSqMi": 19981.2
+        }
+      },
+      {
+        "teamId": "virginia-tech",
+        "teamName": "Virginia Tech",
+        "shortName": "Virginia Tech",
+        "fullName": "Virginia Tech Hokies",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 70,
+          "population": 3716605,
+          "areaSqMi": 19847.48
+        }
+      },
+      {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 40,
+          "population": 4085370,
+          "areaSqMi": 19057.82
         }
       },
       {
@@ -728,18 +752,6 @@
         }
       },
       {
-        "teamId": "south-florida",
-        "teamName": "South Florida",
-        "shortName": "South Florida",
-        "fullName": "South Florida Bulls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 15,
-          "population": 5179232,
-          "areaSqMi": 11678.72
-        }
-      },
-      {
         "teamId": "south-alabama",
         "teamName": "South Alabama",
         "shortName": "South Alabama",
@@ -749,18 +761,6 @@
           "counties": 12,
           "population": 1540387,
           "areaSqMi": 11264.92
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 24,
-          "population": 3440297,
-          "areaSqMi": 11135.59
         }
       },
       {
@@ -788,18 +788,6 @@
         }
       },
       {
-        "teamId": "army",
-        "teamName": "Army",
-        "shortName": "Army",
-        "fullName": "Army Black Knights",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 19,
-          "population": 8009863,
-          "areaSqMi": 10517.17
-        }
-      },
-      {
         "teamId": "duke",
         "teamName": "Duke",
         "shortName": "Duke",
@@ -824,18 +812,6 @@
         }
       },
       {
-        "teamId": "virginia-tech",
-        "teamName": "Virginia Tech",
-        "shortName": "Virginia Tech",
-        "fullName": "Virginia Tech Hokies",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 26,
-          "population": 916175,
-          "areaSqMi": 10271.08
-        }
-      },
-      {
         "teamId": "kentucky",
         "teamName": "Kentucky",
         "shortName": "Kentucky",
@@ -848,18 +824,6 @@
         }
       },
       {
-        "teamId": "old-dominion",
-        "teamName": "Old Dominion",
-        "shortName": "Old Dominion",
-        "fullName": "Old Dominion Monarchs",
-        "conference": "Sun Belt",
-        "metrics": {
-          "counties": 44,
-          "population": 2800430,
-          "areaSqMi": 9576.4
-        }
-      },
-      {
         "teamId": "buffalo",
         "teamName": "Buffalo",
         "shortName": "Buffalo",
@@ -869,18 +833,6 @@
           "counties": 12,
           "population": 2674684,
           "areaSqMi": 9412.13
-        }
-      },
-      {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 15,
-          "population": 2560307,
-          "areaSqMi": 8831.76
         }
       },
       {
@@ -917,18 +869,6 @@
           "counties": 9,
           "population": 4123015,
           "areaSqMi": 8381.35
-        }
-      },
-      {
-        "teamId": "purdue",
-        "teamName": "Purdue",
-        "shortName": "Purdue",
-        "fullName": "Purdue Boilermakers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 16,
-          "population": 645073,
-          "areaSqMi": 7922.23
         }
       },
       {
@@ -1028,18 +968,6 @@
         }
       },
       {
-        "teamId": "temple",
-        "teamName": "Temple",
-        "shortName": "Temple",
-        "fullName": "Temple Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 6004147,
-          "areaSqMi": 5137.4
-        }
-      },
-      {
         "teamId": "georgia-state",
         "teamName": "Georgia State",
         "shortName": "Georgia State",
@@ -1102,6 +1030,18 @@
         }
       },
       {
+        "teamId": "south-florida",
+        "teamName": "South Florida",
+        "shortName": "South Florida",
+        "fullName": "South Florida Bulls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 34,
+          "population": 13189095,
+          "areaSqMi": 22195.89
+        }
+      },
+      {
         "teamId": "cincinnati",
         "teamName": "Cincinnati",
         "shortName": "Cincinnati",
@@ -1126,6 +1066,18 @@
         }
       },
       {
+        "teamId": "penn-state",
+        "teamName": "Penn State",
+        "shortName": "Penn State",
+        "fullName": "Penn State Nittany Lions",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 69,
+          "population": 9271419,
+          "areaSqMi": 36288.29
+        }
+      },
+      {
         "teamId": "houston",
         "teamName": "Houston",
         "shortName": "Houston",
@@ -1147,18 +1099,6 @@
           "counties": 23,
           "population": 8025579,
           "areaSqMi": 32450.06
-        }
-      },
-      {
-        "teamId": "army",
-        "teamName": "Army",
-        "shortName": "Army",
-        "fullName": "Army Black Knights",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 19,
-          "population": 8009863,
-          "areaSqMi": 10517.17
         }
       },
       {
@@ -1210,6 +1150,18 @@
         }
       },
       {
+        "teamId": "texas-a-m",
+        "teamName": "Texas A&M",
+        "shortName": "Texas A&M",
+        "fullName": "Texas A&M Aggies",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 40,
+          "population": 6441646,
+          "areaSqMi": 87033.75
+        }
+      },
+      {
         "teamId": "missouri",
         "teamName": "Missouri",
         "shortName": "Missouri",
@@ -1234,18 +1186,6 @@
         }
       },
       {
-        "teamId": "temple",
-        "teamName": "Temple",
-        "shortName": "Temple",
-        "fullName": "Temple Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 6004147,
-          "areaSqMi": 5137.4
-        }
-      },
-      {
         "teamId": "colorado",
         "teamName": "Colorado",
         "shortName": "Colorado",
@@ -1255,6 +1195,18 @@
           "counties": 22,
           "population": 5898274,
           "areaSqMi": 25725.66
+        }
+      },
+      {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 61,
+          "population": 5758784,
+          "areaSqMi": 78342.85
         }
       },
       {
@@ -1282,18 +1234,6 @@
         }
       },
       {
-        "teamId": "south-florida",
-        "teamName": "South Florida",
-        "shortName": "South Florida",
-        "fullName": "South Florida Bulls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 15,
-          "population": 5179232,
-          "areaSqMi": 11678.72
-        }
-      },
-      {
         "teamId": "notre-dame",
         "teamName": "Notre Dame",
         "shortName": "Notre Dame",
@@ -1303,18 +1243,6 @@
           "counties": 67,
           "population": 5069165,
           "areaSqMi": 45264.14
-        }
-      },
-      {
-        "teamId": "arizona-state",
-        "teamName": "Arizona State",
-        "shortName": "Arizona State",
-        "fullName": "Arizona State Sun Devils",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 8,
-          "population": 5058723,
-          "areaSqMi": 66030.11
         }
       },
       {
@@ -1402,6 +1330,18 @@
         }
       },
       {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 40,
+          "population": 4085370,
+          "areaSqMi": 19057.82
+        }
+      },
+      {
         "teamId": "ohio-state",
         "teamName": "Ohio State",
         "shortName": "Ohio State",
@@ -1414,6 +1354,18 @@
         }
       },
       {
+        "teamId": "virginia-tech",
+        "teamName": "Virginia Tech",
+        "shortName": "Virginia Tech",
+        "fullName": "Virginia Tech Hokies",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 70,
+          "population": 3716605,
+          "areaSqMi": 19847.48
+        }
+      },
+      {
         "teamId": "iowa",
         "teamName": "Iowa",
         "shortName": "Iowa",
@@ -1423,30 +1375,6 @@
           "counties": 60,
           "population": 3655577,
           "areaSqMi": 33531.96
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 24,
-          "population": 3440297,
-          "areaSqMi": 11135.59
-        }
-      },
-      {
-        "teamId": "penn-state",
-        "teamName": "Penn State",
-        "shortName": "Penn State",
-        "fullName": "Penn State Nittany Lions",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 57,
-          "population": 3267272,
-          "areaSqMi": 31150.9
         }
       },
       {
@@ -1483,18 +1411,6 @@
           "counties": 42,
           "population": 3228456,
           "areaSqMi": 22953.24
-        }
-      },
-      {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 46,
-          "population": 3198477,
-          "areaSqMi": 69511.1
         }
       },
       {
@@ -1543,18 +1459,6 @@
           "counties": 40,
           "population": 2832221,
           "areaSqMi": 18123.82
-        }
-      },
-      {
-        "teamId": "old-dominion",
-        "teamName": "Old Dominion",
-        "shortName": "Old Dominion",
-        "fullName": "Old Dominion Monarchs",
-        "conference": "Sun Belt",
-        "metrics": {
-          "counties": 44,
-          "population": 2800430,
-          "areaSqMi": 9576.4
         }
       },
       {
@@ -1627,18 +1531,6 @@
           "counties": 29,
           "population": 2593297,
           "areaSqMi": 26711.3
-        }
-      },
-      {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 15,
-          "population": 2560307,
-          "areaSqMi": 8831.76
         }
       },
       {
@@ -1930,18 +1822,6 @@
         }
       },
       {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 32,
-          "population": 1382923,
-          "areaSqMi": 21003.63
-        }
-      },
-      {
         "teamId": "florida-state",
         "teamName": "Florida State",
         "shortName": "Florida State",
@@ -2074,18 +1954,6 @@
         }
       },
       {
-        "teamId": "virginia-tech",
-        "teamName": "Virginia Tech",
-        "shortName": "Virginia Tech",
-        "fullName": "Virginia Tech Hokies",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 26,
-          "population": 916175,
-          "areaSqMi": 10271.08
-        }
-      },
-      {
         "teamId": "georgia",
         "teamName": "Georgia",
         "shortName": "Georgia",
@@ -2131,18 +1999,6 @@
           "counties": 42,
           "population": 691593,
           "areaSqMi": 35007.51
-        }
-      },
-      {
-        "teamId": "purdue",
-        "teamName": "Purdue",
-        "shortName": "Purdue",
-        "fullName": "Purdue Boilermakers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 16,
-          "population": 645073,
-          "areaSqMi": 7922.23
         }
       }
     ],
@@ -2244,6 +2100,30 @@
         }
       },
       {
+        "teamId": "virginia-tech",
+        "teamName": "Virginia Tech",
+        "shortName": "Virginia Tech",
+        "fullName": "Virginia Tech Hokies",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 70,
+          "population": 3716605,
+          "areaSqMi": 19847.48
+        }
+      },
+      {
+        "teamId": "penn-state",
+        "teamName": "Penn State",
+        "shortName": "Penn State",
+        "fullName": "Penn State Nittany Lions",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 69,
+          "population": 9271419,
+          "areaSqMi": 36288.29
+        }
+      },
+      {
         "teamId": "notre-dame",
         "teamName": "Notre Dame",
         "shortName": "Notre Dame",
@@ -2280,6 +2160,18 @@
         }
       },
       {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 61,
+          "population": 5758784,
+          "areaSqMi": 78342.85
+        }
+      },
+      {
         "teamId": "iowa",
         "teamName": "Iowa",
         "shortName": "Iowa",
@@ -2301,18 +2193,6 @@
           "counties": 60,
           "population": 2112601,
           "areaSqMi": 72807.6
-        }
-      },
-      {
-        "teamId": "penn-state",
-        "teamName": "Penn State",
-        "shortName": "Penn State",
-        "fullName": "Penn State Nittany Lions",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 57,
-          "population": 3267272,
-          "areaSqMi": 31150.9
         }
       },
       {
@@ -2400,18 +2280,6 @@
         }
       },
       {
-        "teamId": "oklahoma",
-        "teamName": "Oklahoma",
-        "shortName": "Oklahoma",
-        "fullName": "Oklahoma Sooners",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 46,
-          "population": 3198477,
-          "areaSqMi": 69511.1
-        }
-      },
-      {
         "teamId": "utsa",
         "teamName": "UTSA",
         "shortName": "UTSA",
@@ -2421,18 +2289,6 @@
           "counties": 44,
           "population": 4530062,
           "areaSqMi": 54402.47
-        }
-      },
-      {
-        "teamId": "old-dominion",
-        "teamName": "Old Dominion",
-        "shortName": "Old Dominion",
-        "fullName": "Old Dominion Monarchs",
-        "conference": "Sun Belt",
-        "metrics": {
-          "counties": 44,
-          "population": 2800430,
-          "areaSqMi": 9576.4
         }
       },
       {
@@ -2469,6 +2325,30 @@
           "counties": 42,
           "population": 691593,
           "areaSqMi": 35007.51
+        }
+      },
+      {
+        "teamId": "texas-a-m",
+        "teamName": "Texas A&M",
+        "shortName": "Texas A&M",
+        "fullName": "Texas A&M Aggies",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 40,
+          "population": 6441646,
+          "areaSqMi": 87033.75
+        }
+      },
+      {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 40,
+          "population": 4085370,
+          "areaSqMi": 19057.82
         }
       },
       {
@@ -2592,6 +2472,18 @@
         }
       },
       {
+        "teamId": "south-florida",
+        "teamName": "South Florida",
+        "shortName": "South Florida",
+        "fullName": "South Florida Bulls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 34,
+          "population": 13189095,
+          "areaSqMi": 22195.89
+        }
+      },
+      {
         "teamId": "auburn",
         "teamName": "Auburn",
         "shortName": "Auburn",
@@ -2625,18 +2517,6 @@
           "counties": 32,
           "population": 1624010,
           "areaSqMi": 19981.2
-        }
-      },
-      {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 32,
-          "population": 1382923,
-          "areaSqMi": 21003.63
         }
       },
       {
@@ -2760,18 +2640,6 @@
         }
       },
       {
-        "teamId": "virginia-tech",
-        "teamName": "Virginia Tech",
-        "shortName": "Virginia Tech",
-        "fullName": "Virginia Tech Hokies",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 26,
-          "population": 916175,
-          "areaSqMi": 10271.08
-        }
-      },
-      {
         "teamId": "virginia",
         "teamName": "Virginia",
         "shortName": "Virginia",
@@ -2781,18 +2649,6 @@
           "counties": 25,
           "population": 2640927,
           "areaSqMi": 10972.19
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 24,
-          "population": 3440297,
-          "areaSqMi": 11135.59
         }
       },
       {
@@ -2877,18 +2733,6 @@
           "counties": 20,
           "population": 2294124,
           "areaSqMi": 17134.52
-        }
-      },
-      {
-        "teamId": "army",
-        "teamName": "Army",
-        "shortName": "Army",
-        "fullName": "Army Black Knights",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 19,
-          "population": 8009863,
-          "areaSqMi": 10517.17
         }
       },
       {
@@ -2988,42 +2832,6 @@
         }
       },
       {
-        "teamId": "purdue",
-        "teamName": "Purdue",
-        "shortName": "Purdue",
-        "fullName": "Purdue Boilermakers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 16,
-          "population": 645073,
-          "areaSqMi": 7922.23
-        }
-      },
-      {
-        "teamId": "south-florida",
-        "teamName": "South Florida",
-        "shortName": "South Florida",
-        "fullName": "South Florida Bulls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 15,
-          "population": 5179232,
-          "areaSqMi": 11678.72
-        }
-      },
-      {
-        "teamId": "michigan",
-        "teamName": "Michigan",
-        "shortName": "Michigan",
-        "fullName": "Michigan Wolverines",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 15,
-          "population": 2560307,
-          "areaSqMi": 8831.76
-        }
-      },
-      {
         "teamId": "navy",
         "teamName": "Navy",
         "shortName": "Navy",
@@ -3045,18 +2853,6 @@
           "counties": 13,
           "population": 1911825,
           "areaSqMi": 6586.51
-        }
-      },
-      {
-        "teamId": "temple",
-        "teamName": "Temple",
-        "shortName": "Temple",
-        "fullName": "Temple Owls",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 6004147,
-          "areaSqMi": 5137.4
         }
       },
       {
@@ -3156,18 +2952,6 @@
         }
       },
       {
-        "teamId": "arizona-state",
-        "teamName": "Arizona State",
-        "shortName": "Arizona State",
-        "fullName": "Arizona State Sun Devils",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 8,
-          "population": 5058723,
-          "areaSqMi": 66030.11
-        }
-      },
-      {
         "teamId": "miami",
         "teamName": "Miami",
         "shortName": "Miami",
@@ -3218,6 +3002,30 @@
     ],
     "territoryGained": [
       {
+        "teamId": "michigan",
+        "teamName": "Michigan",
+        "shortName": "Michigan",
+        "fullName": "Michigan Wolverines",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 46,
+          "population": 3198477,
+          "areaSqMi": 69511.1
+        }
+      },
+      {
+        "teamId": "virginia-tech",
+        "teamName": "Virginia Tech",
+        "shortName": "Virginia Tech",
+        "fullName": "Virginia Tech Hokies",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 44,
+          "population": 2800430,
+          "areaSqMi": 9576.4
+        }
+      },
+      {
         "teamId": "missouri",
         "teamName": "Missouri",
         "shortName": "Missouri",
@@ -3228,9 +3036,81 @@
           "population": 2704483,
           "areaSqMi": 20280.67
         }
+      },
+      {
+        "teamId": "south-florida",
+        "teamName": "South Florida",
+        "shortName": "South Florida",
+        "fullName": "South Florida Bulls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 19,
+          "population": 8009863,
+          "areaSqMi": 10517.17
+        }
+      },
+      {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 16,
+          "population": 645073,
+          "areaSqMi": 7922.23
+        }
+      },
+      {
+        "teamId": "penn-state",
+        "teamName": "Penn State",
+        "shortName": "Penn State",
+        "fullName": "Penn State Nittany Lions",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 12,
+          "population": 6004147,
+          "areaSqMi": 5137.4
+        }
+      },
+      {
+        "teamId": "texas-a-m",
+        "teamName": "Texas A&M",
+        "shortName": "Texas A&M",
+        "fullName": "Texas A&M Aggies",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 8,
+          "population": 5058723,
+          "areaSqMi": 66030.11
+        }
       }
     ],
     "territoryLost": [
+      {
+        "teamId": "oklahoma",
+        "teamName": "Oklahoma",
+        "shortName": "Oklahoma",
+        "fullName": "Oklahoma Sooners",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 46,
+          "population": 3198477,
+          "areaSqMi": 69511.1
+        }
+      },
+      {
+        "teamId": "old-dominion",
+        "teamName": "Old Dominion",
+        "shortName": "Old Dominion",
+        "fullName": "Old Dominion Monarchs",
+        "conference": "Sun Belt",
+        "metrics": {
+          "counties": 44,
+          "population": 2800430,
+          "areaSqMi": 9576.4
+        }
+      },
       {
         "teamId": "kansas",
         "teamName": "Kansas",
@@ -3242,11 +3122,59 @@
           "population": 2704483,
           "areaSqMi": 20280.67
         }
+      },
+      {
+        "teamId": "army",
+        "teamName": "Army",
+        "shortName": "Army",
+        "fullName": "Army Black Knights",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 19,
+          "population": 8009863,
+          "areaSqMi": 10517.17
+        }
+      },
+      {
+        "teamId": "purdue",
+        "teamName": "Purdue",
+        "shortName": "Purdue",
+        "fullName": "Purdue Boilermakers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 16,
+          "population": 645073,
+          "areaSqMi": 7922.23
+        }
+      },
+      {
+        "teamId": "temple",
+        "teamName": "Temple",
+        "shortName": "Temple",
+        "fullName": "Temple Owls",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 12,
+          "population": 6004147,
+          "areaSqMi": 5137.4
+        }
+      },
+      {
+        "teamId": "arizona-state",
+        "teamName": "Arizona State",
+        "shortName": "Arizona State",
+        "fullName": "Arizona State Sun Devils",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 8,
+          "population": 5058723,
+          "areaSqMi": 66030.11
+        }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 89,
+    "trackedTeams": 83,
     "countyCount": 3114
   }
 }
