@@ -4,7 +4,7 @@
   "week": 2,
   "seasonType": "regular",
   "weekLabel": "Regular Week 2",
-  "generatedAt": "2026-09-13T05:10:08.385777+00:00",
+  "generatedAt": "2026-09-13T10:19:11.170497+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -26,9 +26,9 @@
         "fullName": "North Dakota State Bison",
         "conference": "Mountain West",
         "metrics": {
-          "counties": 140,
-          "population": 2363699,
-          "areaSqMi": 168798.6
+          "counties": 187,
+          "population": 3854578,
+          "areaSqMi": 237750.4
         }
       },
       {
@@ -164,18 +164,6 @@
         }
       },
       {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 47,
-          "population": 1490879,
-          "areaSqMi": 68951.8
-        }
-      },
-      {
         "teamId": "iowa",
         "teamName": "Iowa",
         "shortName": "Iowa",
@@ -185,6 +173,18 @@
           "counties": 123,
           "population": 5314132,
           "areaSqMi": 68423.39
+        }
+      },
+      {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 34,
+          "population": 19672177,
+          "areaSqMi": 57472.13
         }
       },
       {
@@ -260,18 +260,6 @@
         }
       },
       {
-        "teamId": "usc",
-        "teamName": "USC",
-        "shortName": "USC",
-        "fullName": "USC Trojans",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 17,
-          "population": 18490172,
-          "areaSqMi": 42590.65
-        }
-      },
-      {
         "teamId": "duke",
         "teamName": "Duke",
         "shortName": "Duke",
@@ -341,6 +329,18 @@
           "counties": 23,
           "population": 8025579,
           "areaSqMi": 32450.06
+        }
+      },
+      {
+        "teamId": "utah",
+        "teamName": "Utah",
+        "shortName": "Utah",
+        "fullName": "Utah Utes",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 35,
+          "population": 2954424,
+          "areaSqMi": 32366.38
         }
       },
       {
@@ -512,18 +512,6 @@
         }
       },
       {
-        "teamId": "arkansas",
-        "teamName": "Arkansas",
-        "shortName": "Arkansas",
-        "fullName": "Arkansas Razorbacks",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 30,
-          "population": 1467079,
-          "areaSqMi": 21903.06
-        }
-      },
-      {
         "teamId": "clemson",
         "teamName": "Clemson",
         "shortName": "Clemson",
@@ -605,18 +593,6 @@
           "counties": 23,
           "population": 4501494,
           "areaSqMi": 15491.12
-        }
-      },
-      {
-        "teamId": "louisiana",
-        "teamName": "Louisiana",
-        "shortName": "Louisiana",
-        "fullName": "Louisiana Ragin' Cajuns",
-        "conference": "Sun Belt",
-        "metrics": {
-          "counties": 17,
-          "population": 1182005,
-          "areaSqMi": 14881.48
         }
       },
       {
@@ -713,18 +689,6 @@
           "counties": 25,
           "population": 2640927,
           "areaSqMi": 10972.19
-        }
-      },
-      {
-        "teamId": "utah",
-        "teamName": "Utah",
-        "shortName": "Utah",
-        "fullName": "Utah Utes",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 5,
-          "population": 1487345,
-          "areaSqMi": 10463.32
         }
       },
       {
@@ -808,9 +772,9 @@
         "fullName": "USC Trojans",
         "conference": "Big Ten",
         "metrics": {
-          "counties": 17,
-          "population": 18490172,
-          "areaSqMi": 42590.65
+          "counties": 34,
+          "population": 19672177,
+          "areaSqMi": 57472.13
         }
       },
       {
@@ -1186,6 +1150,18 @@
         }
       },
       {
+        "teamId": "north-dakota-state",
+        "teamName": "North Dakota State",
+        "shortName": "North Dakota State",
+        "fullName": "North Dakota State Bison",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 187,
+          "population": 3854578,
+          "areaSqMi": 237750.4
+        }
+      },
+      {
         "teamId": "nebraska",
         "teamName": "Nebraska",
         "shortName": "Nebraska",
@@ -1231,6 +1207,18 @@
           "counties": 42,
           "population": 3228456,
           "areaSqMi": 22953.24
+        }
+      },
+      {
+        "teamId": "utah",
+        "teamName": "Utah",
+        "shortName": "Utah",
+        "fullName": "Utah Utes",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 35,
+          "population": 2954424,
+          "areaSqMi": 32366.38
         }
       },
       {
@@ -1339,18 +1327,6 @@
           "counties": 53,
           "population": 2391175,
           "areaSqMi": 46287.14
-        }
-      },
-      {
-        "teamId": "north-dakota-state",
-        "teamName": "North Dakota State",
-        "shortName": "North Dakota State",
-        "fullName": "North Dakota State Bison",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 140,
-          "population": 2363699,
-          "areaSqMi": 168798.6
         }
       },
       {
@@ -1474,42 +1450,6 @@
         }
       },
       {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 47,
-          "population": 1490879,
-          "areaSqMi": 68951.8
-        }
-      },
-      {
-        "teamId": "utah",
-        "teamName": "Utah",
-        "shortName": "Utah",
-        "fullName": "Utah Utes",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 5,
-          "population": 1487345,
-          "areaSqMi": 10463.32
-        }
-      },
-      {
-        "teamId": "arkansas",
-        "teamName": "Arkansas",
-        "shortName": "Arkansas",
-        "fullName": "Arkansas Razorbacks",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 30,
-          "population": 1467079,
-          "areaSqMi": 21903.06
-        }
-      },
-      {
         "teamId": "marshall",
         "teamName": "Marshall",
         "shortName": "Marshall",
@@ -1531,18 +1471,6 @@
           "counties": 37,
           "population": 1355141,
           "areaSqMi": 30919.73
-        }
-      },
-      {
-        "teamId": "louisiana",
-        "teamName": "Louisiana",
-        "shortName": "Louisiana",
-        "fullName": "Louisiana Ragin' Cajuns",
-        "conference": "Sun Belt",
-        "metrics": {
-          "counties": 17,
-          "population": 1182005,
-          "areaSqMi": 14881.48
         }
       },
       {
@@ -1596,6 +1524,18 @@
     ],
     "countiesOwned": [
       {
+        "teamId": "north-dakota-state",
+        "teamName": "North Dakota State",
+        "shortName": "North Dakota State",
+        "fullName": "North Dakota State Bison",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 187,
+          "population": 3854578,
+          "areaSqMi": 237750.4
+        }
+      },
+      {
         "teamId": "nebraska",
         "teamName": "Nebraska",
         "shortName": "Nebraska",
@@ -1605,18 +1545,6 @@
           "counties": 141,
           "population": 3721970,
           "areaSqMi": 90025.41
-        }
-      },
-      {
-        "teamId": "north-dakota-state",
-        "teamName": "North Dakota State",
-        "shortName": "North Dakota State",
-        "fullName": "North Dakota State Bison",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 140,
-          "population": 2363699,
-          "areaSqMi": 168798.6
         }
       },
       {
@@ -1884,18 +1812,6 @@
         }
       },
       {
-        "teamId": "air-force",
-        "teamName": "Air Force",
-        "shortName": "Air Force",
-        "fullName": "Air Force Falcons",
-        "conference": "Mountain West",
-        "metrics": {
-          "counties": 47,
-          "population": 1490879,
-          "areaSqMi": 68951.8
-        }
-      },
-      {
         "teamId": "utsa",
         "teamName": "UTSA",
         "shortName": "UTSA",
@@ -2076,6 +1992,30 @@
         }
       },
       {
+        "teamId": "utah",
+        "teamName": "Utah",
+        "shortName": "Utah",
+        "fullName": "Utah Utes",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 35,
+          "population": 2954424,
+          "areaSqMi": 32366.38
+        }
+      },
+      {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 34,
+          "population": 19672177,
+          "areaSqMi": 57472.13
+        }
+      },
+      {
         "teamId": "south-florida",
         "teamName": "South Florida",
         "shortName": "South Florida",
@@ -2109,18 +2049,6 @@
           "counties": 31,
           "population": 1520525,
           "areaSqMi": 12104.95
-        }
-      },
-      {
-        "teamId": "arkansas",
-        "teamName": "Arkansas",
-        "shortName": "Arkansas",
-        "fullName": "Arkansas Razorbacks",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 30,
-          "population": 1467079,
-          "areaSqMi": 21903.06
         }
       },
       {
@@ -2268,30 +2196,6 @@
         }
       },
       {
-        "teamId": "usc",
-        "teamName": "USC",
-        "shortName": "USC",
-        "fullName": "USC Trojans",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 17,
-          "population": 18490172,
-          "areaSqMi": 42590.65
-        }
-      },
-      {
-        "teamId": "louisiana",
-        "teamName": "Louisiana",
-        "shortName": "Louisiana",
-        "fullName": "Louisiana Ragin' Cajuns",
-        "conference": "Sun Belt",
-        "metrics": {
-          "counties": 17,
-          "population": 1182005,
-          "areaSqMi": 14881.48
-        }
-      },
-      {
         "teamId": "ucla",
         "teamName": "UCLA",
         "shortName": "UCLA",
@@ -2374,18 +2278,6 @@
           "population": 4722659,
           "areaSqMi": 8768.75
         }
-      },
-      {
-        "teamId": "utah",
-        "teamName": "Utah",
-        "shortName": "Utah",
-        "fullName": "Utah Utes",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 5,
-          "population": 1487345,
-          "areaSqMi": 10463.32
-        }
       }
     ],
     "territoryGained": [
@@ -2435,6 +2327,18 @@
           "counties": 49,
           "population": 3248138,
           "areaSqMi": 30393.32
+        }
+      },
+      {
+        "teamId": "north-dakota-state",
+        "teamName": "North Dakota State",
+        "shortName": "North Dakota State",
+        "fullName": "North Dakota State Bison",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 47,
+          "population": 1490879,
+          "areaSqMi": 68951.8
         }
       },
       {
@@ -2546,6 +2450,18 @@
         }
       },
       {
+        "teamId": "utah",
+        "teamName": "Utah",
+        "shortName": "Utah",
+        "fullName": "Utah Utes",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 30,
+          "population": 1467079,
+          "areaSqMi": 21903.06
+        }
+      },
+      {
         "teamId": "california",
         "teamName": "California",
         "shortName": "California",
@@ -2615,6 +2531,18 @@
           "counties": 17,
           "population": 2778823,
           "areaSqMi": 8432.86
+        }
+      },
+      {
+        "teamId": "usc",
+        "teamName": "USC",
+        "shortName": "USC",
+        "fullName": "USC Trojans",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 17,
+          "population": 1182005,
+          "areaSqMi": 14881.48
         }
       },
       {
@@ -2824,6 +2752,18 @@
         }
       },
       {
+        "teamId": "air-force",
+        "teamName": "Air Force",
+        "shortName": "Air Force",
+        "fullName": "Air Force Falcons",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 47,
+          "population": 1490879,
+          "areaSqMi": 68951.8
+        }
+      },
+      {
         "teamId": "oklahoma",
         "teamName": "Oklahoma",
         "shortName": "Oklahoma",
@@ -2932,6 +2872,18 @@
         }
       },
       {
+        "teamId": "arkansas",
+        "teamName": "Arkansas",
+        "shortName": "Arkansas",
+        "fullName": "Arkansas Razorbacks",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 30,
+          "population": 1467079,
+          "areaSqMi": 21903.06
+        }
+      },
+      {
         "teamId": "syracuse",
         "teamName": "Syracuse",
         "shortName": "Syracuse",
@@ -3001,6 +2953,18 @@
           "counties": 17,
           "population": 2778823,
           "areaSqMi": 8432.86
+        }
+      },
+      {
+        "teamId": "louisiana",
+        "teamName": "Louisiana",
+        "shortName": "Louisiana",
+        "fullName": "Louisiana Ragin' Cajuns",
+        "conference": "Sun Belt",
+        "metrics": {
+          "counties": 17,
+          "population": 1182005,
+          "areaSqMi": 14881.48
         }
       },
       {
@@ -3162,7 +3126,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 66,
+    "trackedTeams": 63,
     "countyCount": 3114
   }
 }
