@@ -4,7 +4,7 @@
   "week": 3,
   "seasonType": "regular",
   "weekLabel": "Regular Week 3",
-  "generatedAt": "2026-09-19T18:33:43.707263+00:00",
+  "generatedAt": "2026-09-19T20:59:19.913736+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -248,6 +248,18 @@
         }
       },
       {
+        "teamId": "kansas-state",
+        "teamName": "Kansas State",
+        "shortName": "Kansas State",
+        "fullName": "Kansas State Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 54,
+          "population": 2231980,
+          "areaSqMi": 46272.43
+        }
+      },
+      {
         "teamId": "lsu",
         "teamName": "LSU",
         "shortName": "LSU",
@@ -305,18 +317,6 @@
           "counties": 69,
           "population": 9271419,
           "areaSqMi": 36288.29
-        }
-      },
-      {
-        "teamId": "kansas-state",
-        "teamName": "Kansas State",
-        "shortName": "Kansas State",
-        "fullName": "Kansas State Wildcats",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 42,
-          "population": 691593,
-          "areaSqMi": 35007.51
         }
       },
       {
@@ -641,18 +641,6 @@
           "counties": 37,
           "population": 3866795,
           "areaSqMi": 11557.08
-        }
-      },
-      {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 1540387,
-          "areaSqMi": 11264.92
         }
       },
       {
@@ -1294,6 +1282,18 @@
         }
       },
       {
+        "teamId": "kansas-state",
+        "teamName": "Kansas State",
+        "shortName": "Kansas State",
+        "fullName": "Kansas State Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 54,
+          "population": 2231980,
+          "areaSqMi": 46272.43
+        }
+      },
+      {
         "teamId": "oklahoma-state",
         "teamName": "Oklahoma State",
         "shortName": "Oklahoma State",
@@ -1378,18 +1378,6 @@
         }
       },
       {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 1540387,
-          "areaSqMi": 11264.92
-        }
-      },
-      {
         "teamId": "appalachian-state",
         "teamName": "Appalachian State",
         "shortName": "Appalachian State",
@@ -1459,18 +1447,6 @@
           "counties": 24,
           "population": 832426,
           "areaSqMi": 7403.19
-        }
-      },
-      {
-        "teamId": "kansas-state",
-        "teamName": "Kansas State",
-        "shortName": "Kansas State",
-        "fullName": "Kansas State Wildcats",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 42,
-          "population": 691593,
-          "areaSqMi": 35007.51
         }
       }
     ],
@@ -1728,6 +1704,18 @@
         }
       },
       {
+        "teamId": "kansas-state",
+        "teamName": "Kansas State",
+        "shortName": "Kansas State",
+        "fullName": "Kansas State Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 54,
+          "population": 2231980,
+          "areaSqMi": 46272.43
+        }
+      },
+      {
         "teamId": "cincinnati",
         "teamName": "Cincinnati",
         "shortName": "Cincinnati",
@@ -1809,18 +1797,6 @@
           "counties": 42,
           "population": 3228456,
           "areaSqMi": 22953.24
-        }
-      },
-      {
-        "teamId": "kansas-state",
-        "teamName": "Kansas State",
-        "shortName": "Kansas State",
-        "fullName": "Kansas State Wildcats",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 42,
-          "population": 691593,
-          "areaSqMi": 35007.51
         }
       },
       {
@@ -2184,18 +2160,6 @@
         }
       },
       {
-        "teamId": "tulane",
-        "teamName": "Tulane",
-        "shortName": "Tulane",
-        "fullName": "Tulane Green Wave",
-        "conference": "AAC",
-        "metrics": {
-          "counties": 12,
-          "population": 1540387,
-          "areaSqMi": 11264.92
-        }
-      },
-      {
         "teamId": "northwestern",
         "teamName": "Northwestern",
         "shortName": "Northwestern",
@@ -2232,6 +2196,18 @@
           "population": 8129053,
           "areaSqMi": 27225.53
         }
+      },
+      {
+        "teamId": "kansas-state",
+        "teamName": "Kansas State",
+        "shortName": "Kansas State",
+        "fullName": "Kansas State Wildcats",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 12,
+          "population": 1540387,
+          "areaSqMi": 11264.92
+        }
       }
     ],
     "territoryLost": [
@@ -2258,11 +2234,23 @@
           "population": 8129053,
           "areaSqMi": 27225.53
         }
+      },
+      {
+        "teamId": "tulane",
+        "teamName": "Tulane",
+        "shortName": "Tulane",
+        "fullName": "Tulane Green Wave",
+        "conference": "AAC",
+        "metrics": {
+          "counties": 12,
+          "population": 1540387,
+          "areaSqMi": 11264.92
+        }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 61,
+    "trackedTeams": 60,
     "countyCount": 3114
   }
 }
