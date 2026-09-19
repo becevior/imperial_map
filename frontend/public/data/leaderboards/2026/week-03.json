@@ -4,7 +4,7 @@
   "week": 3,
   "seasonType": "regular",
   "weekLabel": "Regular Week 3",
-  "generatedAt": "2026-09-18T14:32:28.057374+00:00",
+  "generatedAt": "2026-09-19T18:33:43.707263+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -68,6 +68,18 @@
         }
       },
       {
+        "teamId": "texas-tech",
+        "teamName": "Texas Tech",
+        "shortName": "Texas Tech",
+        "fullName": "Texas Tech Red Raiders",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 104,
+          "population": 9838986,
+          "areaSqMi": 120985.76
+        }
+      },
+      {
         "teamId": "new-mexico",
         "teamName": "New Mexico",
         "shortName": "New Mexico",
@@ -89,18 +101,6 @@
           "counties": 131,
           "population": 6846920,
           "areaSqMi": 98203.44
-        }
-      },
-      {
-        "teamId": "texas-tech",
-        "teamName": "Texas Tech",
-        "shortName": "Texas Tech",
-        "fullName": "Texas Tech Red Raiders",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 78,
-          "population": 1709933,
-          "areaSqMi": 93760.24
         }
       },
       {
@@ -404,6 +404,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 47,
+          "population": 8808029,
+          "areaSqMi": 27826.58
+        }
+      },
+      {
         "teamId": "umass",
         "teamName": "UMass",
         "shortName": "UMass",
@@ -413,18 +425,6 @@
           "counties": 48,
           "population": 16131447,
           "areaSqMi": 27700.81
-        }
-      },
-      {
-        "teamId": "houston",
-        "teamName": "Houston",
-        "shortName": "Houston",
-        "fullName": "Houston Cougars",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 26,
-          "population": 8129053,
-          "areaSqMi": 27225.53
         }
       },
       {
@@ -533,18 +533,6 @@
           "counties": 70,
           "population": 3716605,
           "areaSqMi": 19847.48
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 40,
-          "population": 4085370,
-          "areaSqMi": 19057.82
         }
       },
       {
@@ -704,18 +692,6 @@
         }
       },
       {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 7,
-          "population": 4722659,
-          "areaSqMi": 8768.75
-        }
-      },
-      {
         "teamId": "georgia",
         "teamName": "Georgia",
         "shortName": "Georgia",
@@ -838,6 +814,18 @@
         }
       },
       {
+        "teamId": "texas-tech",
+        "teamName": "Texas Tech",
+        "shortName": "Texas Tech",
+        "fullName": "Texas Tech Red Raiders",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 104,
+          "population": 9838986,
+          "areaSqMi": 120985.76
+        }
+      },
+      {
         "teamId": "northwestern",
         "teamName": "Northwestern",
         "shortName": "Northwestern",
@@ -862,6 +850,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 47,
+          "population": 8808029,
+          "areaSqMi": 27826.58
+        }
+      },
+      {
         "teamId": "washington",
         "teamName": "Washington",
         "shortName": "Washington",
@@ -883,18 +883,6 @@
           "counties": 39,
           "population": 8434888,
           "areaSqMi": 23022.46
-        }
-      },
-      {
-        "teamId": "houston",
-        "teamName": "Houston",
-        "shortName": "Houston",
-        "fullName": "Houston Cougars",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 26,
-          "population": 8129053,
-          "areaSqMi": 27225.53
         }
       },
       {
@@ -1066,18 +1054,6 @@
         }
       },
       {
-        "teamId": "miami",
-        "teamName": "Miami",
-        "shortName": "Miami",
-        "fullName": "Miami Hurricanes",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 7,
-          "population": 4722659,
-          "areaSqMi": 8768.75
-        }
-      },
-      {
         "teamId": "utsa",
         "teamName": "UTSA",
         "shortName": "UTSA",
@@ -1111,18 +1087,6 @@
           "counties": 28,
           "population": 4178859,
           "areaSqMi": 16594.14
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 40,
-          "population": 4085370,
-          "areaSqMi": 19057.82
         }
       },
       {
@@ -1399,18 +1363,6 @@
           "counties": 38,
           "population": 1788942,
           "areaSqMi": 15707.56
-        }
-      },
-      {
-        "teamId": "texas-tech",
-        "teamName": "Texas Tech",
-        "shortName": "Texas Tech",
-        "fullName": "Texas Tech Red Raiders",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 78,
-          "population": 1709933,
-          "areaSqMi": 93760.24
         }
       },
       {
@@ -1584,6 +1536,18 @@
         }
       },
       {
+        "teamId": "texas-tech",
+        "teamName": "Texas Tech",
+        "shortName": "Texas Tech",
+        "fullName": "Texas Tech Red Raiders",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 104,
+          "population": 9838986,
+          "areaSqMi": 120985.76
+        }
+      },
+      {
         "teamId": "missouri",
         "teamName": "Missouri",
         "shortName": "Missouri",
@@ -1605,18 +1569,6 @@
           "counties": 80,
           "population": 7927138,
           "areaSqMi": 131127.24
-        }
-      },
-      {
-        "teamId": "texas-tech",
-        "teamName": "Texas Tech",
-        "shortName": "Texas Tech",
-        "fullName": "Texas Tech Red Raiders",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 78,
-          "population": 1709933,
-          "areaSqMi": 93760.24
         }
       },
       {
@@ -1812,6 +1764,18 @@
         }
       },
       {
+        "teamId": "miami",
+        "teamName": "Miami",
+        "shortName": "Miami",
+        "fullName": "Miami Hurricanes",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 47,
+          "population": 8808029,
+          "areaSqMi": 27826.58
+        }
+      },
+      {
         "teamId": "utsa",
         "teamName": "UTSA",
         "shortName": "UTSA",
@@ -1869,18 +1833,6 @@
           "counties": 40,
           "population": 6441646,
           "areaSqMi": 87033.75
-        }
-      },
-      {
-        "teamId": "wake-forest",
-        "teamName": "Wake Forest",
-        "shortName": "Wake Forest",
-        "fullName": "Wake Forest Demon Deacons",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 40,
-          "population": 4085370,
-          "areaSqMi": 19057.82
         }
       },
       {
@@ -2088,18 +2040,6 @@
         }
       },
       {
-        "teamId": "houston",
-        "teamName": "Houston",
-        "shortName": "Houston",
-        "fullName": "Houston Cougars",
-        "conference": "Big 12",
-        "metrics": {
-          "counties": 26,
-          "population": 8129053,
-          "areaSqMi": 27225.53
-        }
-      },
-      {
         "teamId": "marshall",
         "teamName": "Marshall",
         "shortName": "Marshall",
@@ -2266,7 +2206,9 @@
           "population": 9355532,
           "areaSqMi": 3898.26
         }
-      },
+      }
+    ],
+    "territoryGained": [
       {
         "teamId": "miami",
         "teamName": "Miami",
@@ -2274,17 +2216,53 @@
         "fullName": "Miami Hurricanes",
         "conference": "ACC",
         "metrics": {
-          "counties": 7,
-          "population": 4722659,
-          "areaSqMi": 8768.75
+          "counties": 40,
+          "population": 4085370,
+          "areaSqMi": 19057.82
+        }
+      },
+      {
+        "teamId": "texas-tech",
+        "teamName": "Texas Tech",
+        "shortName": "Texas Tech",
+        "fullName": "Texas Tech Red Raiders",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 26,
+          "population": 8129053,
+          "areaSqMi": 27225.53
         }
       }
     ],
-    "territoryGained": [],
-    "territoryLost": []
+    "territoryLost": [
+      {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 40,
+          "population": 4085370,
+          "areaSqMi": 19057.82
+        }
+      },
+      {
+        "teamId": "houston",
+        "teamName": "Houston",
+        "shortName": "Houston",
+        "fullName": "Houston Cougars",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 26,
+          "population": 8129053,
+          "areaSqMi": 27225.53
+        }
+      }
+    ]
   },
   "totals": {
-    "trackedTeams": 63,
+    "trackedTeams": 61,
     "countyCount": 3114
   }
 }

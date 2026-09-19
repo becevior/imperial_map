@@ -15,5 +15,39 @@
     "awayScore": 13,
     "winnerId": "pittsburgh",
     "loserId": "syracuse"
+  },
+  {
+    "id": "401858226",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 3,
+    "completed": true,
+    "startDate": "2026-09-18T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Allegacy Federal Credit Union Stadium",
+    "homeTeamId": "wake-forest",
+    "awayTeamId": "miami",
+    "homeScore": 20,
+    "awayScore": 33,
+    "winnerId": "miami",
+    "loserId": "wake-forest"
+  },
+  {
+    "id": "401856811",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 3,
+    "completed": true,
+    "startDate": "2026-09-19T00:00Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Galaxy Stadium",
+    "homeTeamId": "texas-tech",
+    "awayTeamId": "houston",
+    "homeScore": 28,
+    "awayScore": 26,
+    "winnerId": "texas-tech",
+    "loserId": "houston"
   }
 ]
