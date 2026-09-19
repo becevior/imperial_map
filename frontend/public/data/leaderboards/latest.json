@@ -4,7 +4,7 @@
   "week": 3,
   "seasonType": "regular",
   "weekLabel": "Regular Week 3",
-  "generatedAt": "2026-09-19T20:59:19.913736+00:00",
+  "generatedAt": "2026-09-19T22:54:45.557181+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -320,6 +320,18 @@
         }
       },
       {
+        "teamId": "clemson",
+        "teamName": "Clemson",
+        "shortName": "Clemson",
+        "fullName": "Clemson Tigers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 62,
+          "population": 4463363,
+          "areaSqMi": 33704.34
+        }
+      },
+      {
         "teamId": "san-jose-state",
         "teamName": "San Jose State",
         "shortName": "San Jose State",
@@ -512,18 +524,6 @@
         }
       },
       {
-        "teamId": "clemson",
-        "teamName": "Clemson",
-        "shortName": "Clemson",
-        "fullName": "Clemson Tigers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
-        }
-      },
-      {
         "teamId": "virginia-tech",
         "teamName": "Virginia Tech",
         "shortName": "Virginia Tech",
@@ -593,18 +593,6 @@
           "counties": 33,
           "population": 1005500,
           "areaSqMi": 14383.2
-        }
-      },
-      {
-        "teamId": "north-carolina",
-        "teamName": "North Carolina",
-        "shortName": "North Carolina",
-        "fullName": "North Carolina Tar Heels",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 18,
-          "population": 2849209,
-          "areaSqMi": 13572.11
         }
       },
       {
@@ -1066,6 +1054,18 @@
         }
       },
       {
+        "teamId": "clemson",
+        "teamName": "Clemson",
+        "shortName": "Clemson",
+        "fullName": "Clemson Tigers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 62,
+          "population": 4463363,
+          "areaSqMi": 33704.34
+        }
+      },
+      {
         "teamId": "south-carolina",
         "teamName": "South Carolina",
         "shortName": "South Carolina",
@@ -1171,18 +1171,6 @@
           "counties": 35,
           "population": 2954424,
           "areaSqMi": 32366.38
-        }
-      },
-      {
-        "teamId": "north-carolina",
-        "teamName": "North Carolina",
-        "shortName": "North Carolina",
-        "fullName": "North Carolina Tar Heels",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 18,
-          "population": 2849209,
-          "areaSqMi": 13572.11
         }
       },
       {
@@ -1363,18 +1351,6 @@
           "counties": 38,
           "population": 1788942,
           "areaSqMi": 15707.56
-        }
-      },
-      {
-        "teamId": "clemson",
-        "teamName": "Clemson",
-        "shortName": "Clemson",
-        "fullName": "Clemson Tigers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -1656,6 +1632,18 @@
         }
       },
       {
+        "teamId": "clemson",
+        "teamName": "Clemson",
+        "shortName": "Clemson",
+        "fullName": "Clemson Tigers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 62,
+          "population": 4463363,
+          "areaSqMi": 33704.34
+        }
+      },
+      {
         "teamId": "michigan",
         "teamName": "Michigan",
         "shortName": "Michigan",
@@ -1773,18 +1761,6 @@
           "counties": 44,
           "population": 4530062,
           "areaSqMi": 54402.47
-        }
-      },
-      {
-        "teamId": "clemson",
-        "teamName": "Clemson",
-        "shortName": "Clemson",
-        "fullName": "Clemson Tigers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 44,
-          "population": 1614154,
-          "areaSqMi": 20132.22
         }
       },
       {
@@ -2100,18 +2076,6 @@
         }
       },
       {
-        "teamId": "north-carolina",
-        "teamName": "North Carolina",
-        "shortName": "North Carolina",
-        "fullName": "North Carolina Tar Heels",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 18,
-          "population": 2849209,
-          "areaSqMi": 13572.11
-        }
-      },
-      {
         "teamId": "ucla",
         "teamName": "UCLA",
         "shortName": "UCLA",
@@ -2198,6 +2162,18 @@
         }
       },
       {
+        "teamId": "clemson",
+        "teamName": "Clemson",
+        "shortName": "Clemson",
+        "fullName": "Clemson Tigers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 18,
+          "population": 2849209,
+          "areaSqMi": 13572.11
+        }
+      },
+      {
         "teamId": "kansas-state",
         "teamName": "Kansas State",
         "shortName": "Kansas State",
@@ -2236,6 +2212,18 @@
         }
       },
       {
+        "teamId": "north-carolina",
+        "teamName": "North Carolina",
+        "shortName": "North Carolina",
+        "fullName": "North Carolina Tar Heels",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 18,
+          "population": 2849209,
+          "areaSqMi": 13572.11
+        }
+      },
+      {
         "teamId": "tulane",
         "teamName": "Tulane",
         "shortName": "Tulane",
@@ -2250,7 +2238,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 60,
+    "trackedTeams": 59,
     "countyCount": 3114
   }
 }

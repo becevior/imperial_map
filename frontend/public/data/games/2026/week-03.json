@@ -136,6 +136,23 @@
     "loserId": "kansas"
   },
   {
+    "id": "401858229",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 3,
+    "completed": true,
+    "startDate": "2026-09-19T16:00Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Memorial Stadium (Clemson, SC)",
+    "homeTeamId": "clemson",
+    "awayTeamId": "north-carolina",
+    "homeScore": 28,
+    "awayScore": 20,
+    "winnerId": "clemson",
+    "loserId": "north-carolina"
+  },
+  {
     "id": "401858451",
     "season": 2026,
     "seasonType": "regular",
@@ -253,5 +270,39 @@
     "awayScore": 10,
     "winnerId": "central-michigan",
     "loserId": "wyoming"
+  },
+  {
+    "id": "401862774",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 3,
+    "completed": true,
+    "startDate": "2026-09-19T19:00Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Glass Bowl",
+    "homeTeamId": "toledo",
+    "awayTeamId": "temple",
+    "homeScore": 49,
+    "awayScore": 48,
+    "winnerId": "toledo",
+    "loserId": "temple"
+  },
+  {
+    "id": "401858450",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 3,
+    "completed": true,
+    "startDate": "2026-09-19T19:30Z",
+    "neutralSite": false,
+    "conferenceGame": false,
+    "venue": "Michigan Stadium",
+    "homeTeamId": "michigan",
+    "awayTeamId": "utep",
+    "homeScore": 52,
+    "awayScore": 17,
+    "winnerId": "michigan",
+    "loserId": "utep"
   }
 ]
