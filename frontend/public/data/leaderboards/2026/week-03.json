@@ -4,7 +4,7 @@
   "week": 3,
   "seasonType": "regular",
   "weekLabel": "Regular Week 3",
-  "generatedAt": "2026-09-20T05:33:16.225237+00:00",
+  "generatedAt": "2026-09-20T10:05:01.884492+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -344,11 +344,11 @@
         }
       },
       {
-        "teamId": "san-jose-state",
-        "teamName": "San Jose State",
-        "shortName": "San Jose State",
-        "fullName": "San Jose State Spartans",
-        "conference": "Mountain West",
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Pac-12",
         "metrics": {
           "counties": 23,
           "population": 8025579,
@@ -790,11 +790,11 @@
         }
       },
       {
-        "teamId": "san-jose-state",
-        "teamName": "San Jose State",
-        "shortName": "San Jose State",
-        "fullName": "San Jose State Spartans",
-        "conference": "Mountain West",
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Pac-12",
         "metrics": {
           "counties": 23,
           "population": 8025579,
@@ -1668,11 +1668,11 @@
         }
       },
       {
-        "teamId": "san-jose-state",
-        "teamName": "San Jose State",
-        "shortName": "San Jose State",
-        "fullName": "San Jose State Spartans",
-        "conference": "Mountain West",
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Pac-12",
         "metrics": {
           "counties": 23,
           "population": 8025579,
@@ -1883,6 +1883,18 @@
           "counties": 25,
           "population": 2640927,
           "areaSqMi": 10972.19
+        }
+      },
+      {
+        "teamId": "fresno-state",
+        "teamName": "Fresno State",
+        "shortName": "Fresno State",
+        "fullName": "Fresno State Bulldogs",
+        "conference": "Pac-12",
+        "metrics": {
+          "counties": 23,
+          "population": 8025579,
+          "areaSqMi": 32450.06
         }
       },
       {
@@ -2137,6 +2149,18 @@
           "counties": 25,
           "population": 2640927,
           "areaSqMi": 10972.19
+        }
+      },
+      {
+        "teamId": "san-jose-state",
+        "teamName": "San Jose State",
+        "shortName": "San Jose State",
+        "fullName": "San Jose State Spartans",
+        "conference": "Mountain West",
+        "metrics": {
+          "counties": 23,
+          "population": 8025579,
+          "areaSqMi": 32450.06
         }
       },
       {
