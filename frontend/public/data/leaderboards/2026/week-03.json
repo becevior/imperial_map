@@ -4,7 +4,7 @@
   "week": 3,
   "seasonType": "regular",
   "weekLabel": "Regular Week 3",
-  "generatedAt": "2026-09-19T22:54:45.557181+00:00",
+  "generatedAt": "2026-09-20T00:49:57.386483+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -116,10 +116,10 @@
         }
       },
       {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
+        "teamId": "kentucky",
+        "teamName": "Kentucky",
+        "shortName": "Kentucky",
+        "fullName": "Kentucky Wildcats",
         "conference": "SEC",
         "metrics": {
           "counties": 40,
@@ -572,10 +572,10 @@
         }
       },
       {
-        "teamId": "smu",
-        "teamName": "SMU",
-        "shortName": "SMU",
-        "fullName": "SMU Mustangs",
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
         "conference": "ACC",
         "metrics": {
           "counties": 23,
@@ -898,10 +898,10 @@
         }
       },
       {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
+        "teamId": "kentucky",
+        "teamName": "Kentucky",
+        "shortName": "Kentucky",
+        "fullName": "Kentucky Wildcats",
         "conference": "SEC",
         "metrics": {
           "counties": 40,
@@ -1042,10 +1042,10 @@
         }
       },
       {
-        "teamId": "smu",
-        "teamName": "SMU",
-        "shortName": "SMU",
-        "fullName": "SMU Mustangs",
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
         "conference": "ACC",
         "metrics": {
           "counties": 23,
@@ -1776,10 +1776,10 @@
         }
       },
       {
-        "teamId": "texas-a-m",
-        "teamName": "Texas A&M",
-        "shortName": "Texas A&M",
-        "fullName": "Texas A&M Aggies",
+        "teamId": "kentucky",
+        "teamName": "Kentucky",
+        "shortName": "Kentucky",
+        "fullName": "Kentucky Wildcats",
         "conference": "SEC",
         "metrics": {
           "counties": 40,
@@ -2040,10 +2040,10 @@
         }
       },
       {
-        "teamId": "smu",
-        "teamName": "SMU",
-        "shortName": "SMU",
-        "fullName": "SMU Mustangs",
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
         "conference": "ACC",
         "metrics": {
           "counties": 23,
@@ -2138,6 +2138,18 @@
     ],
     "territoryGained": [
       {
+        "teamId": "kentucky",
+        "teamName": "Kentucky",
+        "shortName": "Kentucky",
+        "fullName": "Kentucky Wildcats",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 40,
+          "population": 6441646,
+          "areaSqMi": 87033.75
+        }
+      },
+      {
         "teamId": "miami",
         "teamName": "Miami",
         "shortName": "Miami",
@@ -2159,6 +2171,18 @@
           "counties": 26,
           "population": 8129053,
           "areaSqMi": 27225.53
+        }
+      },
+      {
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 23,
+          "population": 4501494,
+          "areaSqMi": 15491.12
         }
       },
       {
@@ -2188,6 +2212,18 @@
     ],
     "territoryLost": [
       {
+        "teamId": "texas-a-m",
+        "teamName": "Texas A&M",
+        "shortName": "Texas A&M",
+        "fullName": "Texas A&M Aggies",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 40,
+          "population": 6441646,
+          "areaSqMi": 87033.75
+        }
+      },
+      {
         "teamId": "wake-forest",
         "teamName": "Wake Forest",
         "shortName": "Wake Forest",
@@ -2209,6 +2245,18 @@
           "counties": 26,
           "population": 8129053,
           "areaSqMi": 27225.53
+        }
+      },
+      {
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 23,
+          "population": 4501494,
+          "areaSqMi": 15491.12
         }
       },
       {
