@@ -46,14 +46,14 @@
 
 **Schedule:**
 - **Current state:** Scheduled triggers are enabled for the 2026 season
-- **Saturdays:** Runs every five minutes from 9am through 11:58pm Pacific
-- **Early Sundays:** Runs every five minutes through 2:58am Pacific
-- **Monday-Friday:** Runs once daily for late finals and corrections
+- **Saturdays:** Runs hourly from 9:03am through 11:03pm Pacific
+- **Early Sundays:** Runs hourly from 12:03am through 2:03am Pacific
+- **Monday-Friday:** Runs a full-season scan once daily for late finals and corrections
 - The workflow serializes runs so overlapping game-day jobs cannot write
   competing snapshots.
 
 **What it does:**
-1. Fetches only ESPN's active week during scheduled runs
+1. Fetches ESPN's active week during live Saturday runs and the full season during daily correction runs
 2. Exits without a commit or deploy when completed games are unchanged
 3. Applies territory transfers and computes weekly leaderboards after a new final
 4. Publishes `frontend/public/data/live.json` for visible tabs to poll
@@ -118,7 +118,7 @@ git push
 
 | Script | Purpose | Frequency |
 |--------|---------|-----------|
-| `ingest_games.py` | Fetch game results from ESPN | Automated (five-minute active-week checks) |
+| `ingest_games.py` | Fetch game results from ESPN | Automated (hourly active-week checks and daily full-season corrections) |
 | `apply_transfers.py` | Apply territory transfers and generate weekly rankings | Only after completed games change |
 | `publish_live_manifest.py` | Version the current browser-facing snapshots | Only after completed games change |
 
