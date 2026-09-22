@@ -848,5 +848,22 @@
     "awayScore": 13,
     "winnerId": "notre-dame",
     "loserId": "wisconsin"
+  },
+  {
+    "id": "401858212",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 1,
+    "completed": true,
+    "startDate": "2026-09-07T23:30Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Doak Campbell Stadium",
+    "homeTeamId": "florida-state",
+    "awayTeamId": "smu",
+    "homeScore": 24,
+    "awayScore": 27,
+    "winnerId": "smu",
+    "loserId": "florida-state"
   }
 ]

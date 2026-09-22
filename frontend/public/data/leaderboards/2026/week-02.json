@@ -4,7 +4,7 @@
   "week": 2,
   "seasonType": "regular",
   "weekLabel": "Regular Week 2",
-  "generatedAt": "2026-09-13T10:19:11.170497+00:00",
+  "generatedAt": "2026-09-22T05:52:38.447421+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -236,6 +236,18 @@
         }
       },
       {
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 60,
+          "population": 5856635,
+          "areaSqMi": 46410.86
+        }
+      },
+      {
         "teamId": "tulsa",
         "teamName": "Tulsa",
         "shortName": "Tulsa",
@@ -365,18 +377,6 @@
           "counties": 70,
           "population": 5205348,
           "areaSqMi": 31554.51
-        }
-      },
-      {
-        "teamId": "florida-state",
-        "teamName": "Florida State",
-        "shortName": "Florida State",
-        "fullName": "Florida State Seminoles",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 37,
-          "population": 1355141,
-          "areaSqMi": 30919.73
         }
       },
       {
@@ -581,18 +581,6 @@
           "counties": 38,
           "population": 1788942,
           "areaSqMi": 15707.56
-        }
-      },
-      {
-        "teamId": "smu",
-        "teamName": "SMU",
-        "shortName": "SMU",
-        "fullName": "SMU Mustangs",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 23,
-          "population": 4501494,
-          "areaSqMi": 15491.12
         }
       },
       {
@@ -1006,6 +994,18 @@
         }
       },
       {
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 60,
+          "population": 5856635,
+          "areaSqMi": 46410.86
+        }
+      },
+      {
         "teamId": "michigan",
         "teamName": "Michigan",
         "shortName": "Michigan",
@@ -1087,18 +1087,6 @@
           "counties": 44,
           "population": 4530062,
           "areaSqMi": 54402.47
-        }
-      },
-      {
-        "teamId": "smu",
-        "teamName": "SMU",
-        "shortName": "SMU",
-        "fullName": "SMU Mustangs",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 23,
-          "population": 4501494,
-          "areaSqMi": 15491.12
         }
       },
       {
@@ -1462,18 +1450,6 @@
         }
       },
       {
-        "teamId": "florida-state",
-        "teamName": "Florida State",
-        "shortName": "Florida State",
-        "fullName": "Florida State Seminoles",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 37,
-          "population": 1355141,
-          "areaSqMi": 30919.73
-        }
-      },
-      {
         "teamId": "colorado-state",
         "teamName": "Colorado State",
         "shortName": "Colorado State",
@@ -1740,6 +1716,18 @@
         }
       },
       {
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 60,
+          "population": 5856635,
+          "areaSqMi": 46410.86
+        }
+      },
+      {
         "teamId": "nevada",
         "teamName": "Nevada",
         "shortName": "Nevada",
@@ -1980,18 +1968,6 @@
         }
       },
       {
-        "teamId": "florida-state",
-        "teamName": "Florida State",
-        "shortName": "Florida State",
-        "fullName": "Florida State Seminoles",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 37,
-          "population": 1355141,
-          "areaSqMi": 30919.73
-        }
-      },
-      {
         "teamId": "utah",
         "teamName": "Utah",
         "shortName": "Utah",
@@ -2145,18 +2121,6 @@
           "counties": 23,
           "population": 8025579,
           "areaSqMi": 32450.06
-        }
-      },
-      {
-        "teamId": "smu",
-        "teamName": "SMU",
-        "shortName": "SMU",
-        "fullName": "SMU Mustangs",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 23,
-          "population": 4501494,
-          "areaSqMi": 15491.12
         }
       },
       {
@@ -3126,7 +3090,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 63,
+    "trackedTeams": 62,
     "countyCount": 3114
   }
 }

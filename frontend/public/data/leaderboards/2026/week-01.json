@@ -4,7 +4,7 @@
   "week": 1,
   "seasonType": "regular",
   "weekLabel": "Regular Week 1",
-  "generatedAt": "2026-09-07T15:53:54.216958+00:00",
+  "generatedAt": "2026-09-22T05:52:38.432291+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -212,6 +212,18 @@
         }
       },
       {
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 60,
+          "population": 5856635,
+          "areaSqMi": 46410.86
+        }
+      },
+      {
         "teamId": "tulsa",
         "teamName": "Tulsa",
         "shortName": "Tulsa",
@@ -317,18 +329,6 @@
           "counties": 57,
           "population": 3267272,
           "areaSqMi": 31150.9
-        }
-      },
-      {
-        "teamId": "florida-state",
-        "teamName": "Florida State",
-        "shortName": "Florida State",
-        "fullName": "Florida State Seminoles",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 37,
-          "population": 1355141,
-          "areaSqMi": 30919.73
         }
       },
       {
@@ -629,18 +629,6 @@
           "counties": 3,
           "population": 5622794,
           "areaSqMi": 15589.71
-        }
-      },
-      {
-        "teamId": "smu",
-        "teamName": "SMU",
-        "shortName": "SMU",
-        "fullName": "SMU Mustangs",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 23,
-          "population": 4501494,
-          "areaSqMi": 15491.12
         }
       },
       {
@@ -1258,6 +1246,18 @@
         }
       },
       {
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 60,
+          "population": 5856635,
+          "areaSqMi": 46410.86
+        }
+      },
+      {
         "teamId": "san-diego-state",
         "teamName": "San Diego State",
         "shortName": "San Diego State",
@@ -1339,18 +1339,6 @@
           "counties": 44,
           "population": 4530062,
           "areaSqMi": 54402.47
-        }
-      },
-      {
-        "teamId": "smu",
-        "teamName": "SMU",
-        "shortName": "SMU",
-        "fullName": "SMU Mustangs",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 23,
-          "population": 4501494,
-          "areaSqMi": 15491.12
         }
       },
       {
@@ -1966,18 +1954,6 @@
         }
       },
       {
-        "teamId": "florida-state",
-        "teamName": "Florida State",
-        "shortName": "Florida State",
-        "fullName": "Florida State Seminoles",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 37,
-          "population": 1355141,
-          "areaSqMi": 30919.73
-        }
-      },
-      {
         "teamId": "utah-state",
         "teamName": "Utah State",
         "shortName": "Utah State",
@@ -2292,6 +2268,18 @@
         }
       },
       {
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 60,
+          "population": 5856635,
+          "areaSqMi": 46410.86
+        }
+      },
+      {
         "teamId": "iowa",
         "teamName": "Iowa",
         "shortName": "Iowa",
@@ -2565,18 +2553,6 @@
           "counties": 37,
           "population": 2704483,
           "areaSqMi": 20280.67
-        }
-      },
-      {
-        "teamId": "florida-state",
-        "teamName": "Florida State",
-        "shortName": "Florida State",
-        "fullName": "Florida State Seminoles",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 37,
-          "population": 1355141,
-          "areaSqMi": 30919.73
         }
       },
       {
@@ -2865,18 +2841,6 @@
           "counties": 23,
           "population": 8025579,
           "areaSqMi": 32450.06
-        }
-      },
-      {
-        "teamId": "smu",
-        "teamName": "SMU",
-        "shortName": "SMU",
-        "fullName": "SMU Mustangs",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 23,
-          "population": 4501494,
-          "areaSqMi": 15491.12
         }
       },
       {
@@ -3323,6 +3287,18 @@
           "counties": 43,
           "population": 645234,
           "areaSqMi": 123801.44
+        }
+      },
+      {
+        "teamId": "smu",
+        "teamName": "SMU",
+        "shortName": "SMU",
+        "fullName": "SMU Mustangs",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 37,
+          "population": 1355141,
+          "areaSqMi": 30919.73
         }
       },
       {
@@ -3892,6 +3868,18 @@
         }
       },
       {
+        "teamId": "florida-state",
+        "teamName": "Florida State",
+        "shortName": "Florida State",
+        "fullName": "Florida State Seminoles",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 37,
+          "population": 1355141,
+          "areaSqMi": 30919.73
+        }
+      },
+      {
         "teamId": "boston-college",
         "teamName": "Boston College",
         "shortName": "Boston College",
@@ -4410,7 +4398,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 90,
+    "trackedTeams": 89,
     "countyCount": 3114
   }
 }
