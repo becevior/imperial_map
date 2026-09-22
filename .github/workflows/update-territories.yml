@@ -2,9 +2,9 @@ name: Update Territories
 
 on:
   schedule:
-    - cron: '3-58/5 9-23 * * 6'
+    - cron: '3 9-23 * * 6'
       timezone: 'America/Los_Angeles'
-    - cron: '3-58/5 0-2 * * 0'
+    - cron: '3 0-2 * * 0'
       timezone: 'America/Los_Angeles'
     # Daily refresh for late finals and corrections.
     - cron: '17 3 * * 1-5'
@@ -37,6 +37,7 @@ jobs:
     env:
       INPUT_SEASON: ${{ github.event.inputs.season || '' }}
       INPUT_FORCE_UPDATE: ${{ github.event.inputs.force_update || '' }}
+      SCHEDULE_CRON: ${{ github.event.schedule || '' }}
     permissions:
       contents: write  # Allow pushing commits
 
@@ -90,7 +91,7 @@ jobs:
           echo "FORCE_UPDATE=$force" >> "$GITHUB_ENV"
           echo "force_update=$force" >> "$GITHUB_OUTPUT"
 
-          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ] && [ "$SCHEDULE_CRON" != "17 3 * * 1-5" ]; then
             echo "INGEST_SCOPE=--active-only" >> "$GITHUB_ENV"
           else
             echo "INGEST_SCOPE=" >> "$GITHUB_ENV"
