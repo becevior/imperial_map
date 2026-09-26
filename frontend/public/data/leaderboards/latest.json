@@ -4,7 +4,7 @@
   "week": 4,
   "seasonType": "regular",
   "weekLabel": "Regular Week 4",
-  "generatedAt": "2026-09-25T15:18:12.246805+00:00",
+  "generatedAt": "2026-09-26T18:58:53.303573+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -200,6 +200,18 @@
         }
       },
       {
+        "teamId": "clemson",
+        "teamName": "Clemson",
+        "shortName": "Clemson",
+        "fullName": "Clemson Tigers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 91,
+          "population": 7056660,
+          "areaSqMi": 60415.63
+        }
+      },
+      {
         "teamId": "notre-dame",
         "teamName": "Notre Dame",
         "shortName": "Notre Dame",
@@ -233,6 +245,18 @@
           "counties": 34,
           "population": 19672177,
           "areaSqMi": 57472.13
+        }
+      },
+      {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 72,
+          "population": 18482262,
+          "areaSqMi": 52577.16
         }
       },
       {
@@ -320,18 +344,6 @@
         }
       },
       {
-        "teamId": "clemson",
-        "teamName": "Clemson",
-        "shortName": "Clemson",
-        "fullName": "Clemson Tigers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 62,
-          "population": 4463363,
-          "areaSqMi": 33704.34
-        }
-      },
-      {
         "teamId": "west-virginia",
         "teamName": "West Virginia",
         "shortName": "West Virginia",
@@ -392,18 +404,6 @@
         }
       },
       {
-        "teamId": "northwestern",
-        "teamName": "Northwestern",
-        "shortName": "Northwestern",
-        "fullName": "Northwestern Wildcats",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 30,
-          "population": 15253806,
-          "areaSqMi": 29623.92
-        }
-      },
-      {
         "teamId": "miami",
         "teamName": "Miami",
         "shortName": "Miami",
@@ -428,18 +428,6 @@
         }
       },
       {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 29,
-          "population": 2593297,
-          "areaSqMi": 26711.3
-        }
-      },
-      {
         "teamId": "pittsburgh",
         "teamName": "Pittsburgh",
         "shortName": "Pittsburgh",
@@ -449,18 +437,6 @@
           "counties": 39,
           "population": 8434888,
           "areaSqMi": 23022.46
-        }
-      },
-      {
-        "teamId": "indiana",
-        "teamName": "Indiana",
-        "shortName": "Indiana",
-        "fullName": "Indiana Hoosiers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 42,
-          "population": 3228456,
-          "areaSqMi": 22953.24
         }
       },
       {
@@ -586,6 +562,18 @@
         }
       },
       {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 72,
+          "population": 18482262,
+          "areaSqMi": 52577.16
+        }
+      },
+      {
         "teamId": "umass",
         "teamName": "UMass",
         "shortName": "UMass",
@@ -595,18 +583,6 @@
           "counties": 48,
           "population": 16131447,
           "areaSqMi": 27700.81
-        }
-      },
-      {
-        "teamId": "northwestern",
-        "teamName": "Northwestern",
-        "shortName": "Northwestern",
-        "fullName": "Northwestern Wildcats",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 30,
-          "population": 15253806,
-          "areaSqMi": 29623.92
         }
       },
       {
@@ -814,6 +790,18 @@
         }
       },
       {
+        "teamId": "clemson",
+        "teamName": "Clemson",
+        "shortName": "Clemson",
+        "fullName": "Clemson Tigers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 91,
+          "population": 7056660,
+          "areaSqMi": 60415.63
+        }
+      },
+      {
         "teamId": "kentucky",
         "teamName": "Kentucky",
         "shortName": "Kentucky",
@@ -910,18 +898,6 @@
         }
       },
       {
-        "teamId": "clemson",
-        "teamName": "Clemson",
-        "shortName": "Clemson",
-        "fullName": "Clemson Tigers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 62,
-          "population": 4463363,
-          "areaSqMi": 33704.34
-        }
-      },
-      {
         "teamId": "ucf",
         "teamName": "UCF",
         "shortName": "UCF",
@@ -970,18 +946,6 @@
         }
       },
       {
-        "teamId": "indiana",
-        "teamName": "Indiana",
-        "shortName": "Indiana",
-        "fullName": "Indiana Hoosiers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 42,
-          "population": 3228456,
-          "areaSqMi": 22953.24
-        }
-      },
-      {
         "teamId": "byu",
         "teamName": "BYU",
         "shortName": "BYU",
@@ -1015,18 +979,6 @@
           "counties": 67,
           "population": 2746012,
           "areaSqMi": 30127.96
-        }
-      },
-      {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 29,
-          "population": 2593297,
-          "areaSqMi": 26711.3
         }
       },
       {
@@ -1260,6 +1212,18 @@
         }
       },
       {
+        "teamId": "clemson",
+        "teamName": "Clemson",
+        "shortName": "Clemson",
+        "fullName": "Clemson Tigers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 91,
+          "population": 7056660,
+          "areaSqMi": 60415.63
+        }
+      },
+      {
         "teamId": "byu",
         "teamName": "BYU",
         "shortName": "BYU",
@@ -1305,6 +1269,18 @@
           "counties": 80,
           "population": 7927138,
           "areaSqMi": 131127.24
+        }
+      },
+      {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 72,
+          "population": 18482262,
+          "areaSqMi": 52577.16
         }
       },
       {
@@ -1365,18 +1341,6 @@
           "counties": 65,
           "population": 5283256,
           "areaSqMi": 33309.26
-        }
-      },
-      {
-        "teamId": "clemson",
-        "teamName": "Clemson",
-        "shortName": "Clemson",
-        "fullName": "Clemson Tigers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 62,
-          "population": 4463363,
-          "areaSqMi": 33704.34
         }
       },
       {
@@ -1473,18 +1437,6 @@
           "counties": 47,
           "population": 8808029,
           "areaSqMi": 27826.58
-        }
-      },
-      {
-        "teamId": "indiana",
-        "teamName": "Indiana",
-        "shortName": "Indiana",
-        "fullName": "Indiana Hoosiers",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 42,
-          "population": 3228456,
-          "areaSqMi": 22953.24
         }
       },
       {
@@ -1620,30 +1572,6 @@
         }
       },
       {
-        "teamId": "northwestern",
-        "teamName": "Northwestern",
-        "shortName": "Northwestern",
-        "fullName": "Northwestern Wildcats",
-        "conference": "Big Ten",
-        "metrics": {
-          "counties": 30,
-          "population": 15253806,
-          "areaSqMi": 29623.92
-        }
-      },
-      {
-        "teamId": "california",
-        "teamName": "California",
-        "shortName": "California",
-        "fullName": "California Golden Bears",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 29,
-          "population": 2593297,
-          "areaSqMi": 26711.3
-        }
-      },
-      {
         "teamId": "marshall",
         "teamName": "Marshall",
         "shortName": "Marshall",
@@ -1704,11 +1632,61 @@
         }
       }
     ],
-    "territoryGained": [],
-    "territoryLost": []
+    "territoryGained": [
+      {
+        "teamId": "indiana",
+        "teamName": "Indiana",
+        "shortName": "Indiana",
+        "fullName": "Indiana Hoosiers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 30,
+          "population": 15253806,
+          "areaSqMi": 29623.92
+        }
+      },
+      {
+        "teamId": "clemson",
+        "teamName": "Clemson",
+        "shortName": "Clemson",
+        "fullName": "Clemson Tigers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 29,
+          "population": 2593297,
+          "areaSqMi": 26711.3
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "northwestern",
+        "teamName": "Northwestern",
+        "shortName": "Northwestern",
+        "fullName": "Northwestern Wildcats",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 30,
+          "population": 15253806,
+          "areaSqMi": 29623.92
+        }
+      },
+      {
+        "teamId": "california",
+        "teamName": "California",
+        "shortName": "California",
+        "fullName": "California Golden Bears",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 29,
+          "population": 2593297,
+          "areaSqMi": 26711.3
+        }
+      }
+    ]
   },
   "totals": {
-    "trackedTeams": 47,
+    "trackedTeams": 45,
     "countyCount": 3114
   }
 }
