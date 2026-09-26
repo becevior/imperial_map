@@ -4,7 +4,7 @@
   "week": 4,
   "seasonType": "regular",
   "weekLabel": "Regular Week 4",
-  "generatedAt": "2026-09-26T18:58:53.303573+00:00",
+  "generatedAt": "2026-09-26T21:50:39.560215+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -104,6 +104,18 @@
         }
       },
       {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 137,
+          "population": 12482770,
+          "areaSqMi": 102429.41
+        }
+      },
+      {
         "teamId": "nebraska",
         "teamName": "Nebraska",
         "shortName": "Nebraska",
@@ -125,18 +137,6 @@
           "counties": 40,
           "population": 6441646,
           "areaSqMi": 87033.75
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 99,
-          "population": 10693828,
-          "areaSqMi": 86721.85
         }
       },
       {
@@ -272,10 +272,10 @@
         }
       },
       {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
           "counties": 60,
@@ -461,18 +461,6 @@
           "counties": 37,
           "population": 4757485,
           "areaSqMi": 18373.47
-        }
-      },
-      {
-        "teamId": "tennessee",
-        "teamName": "Tennessee",
-        "shortName": "Tennessee",
-        "fullName": "Tennessee Volunteers",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 38,
-          "population": 1788942,
-          "areaSqMi": 15707.56
         }
       },
       {
@@ -622,6 +610,18 @@
         }
       },
       {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 137,
+          "population": 12482770,
+          "areaSqMi": 102429.41
+        }
+      },
+      {
         "teamId": "mississippi-state",
         "teamName": "Mississippi State",
         "shortName": "Mississippi State",
@@ -643,18 +643,6 @@
           "counties": 53,
           "population": 10828963,
           "areaSqMi": 47852.83
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 99,
-          "population": 10693828,
-          "areaSqMi": 86721.85
         }
       },
       {
@@ -814,10 +802,10 @@
         }
       },
       {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
           "counties": 60,
@@ -1030,18 +1018,6 @@
         }
       },
       {
-        "teamId": "tennessee",
-        "teamName": "Tennessee",
-        "shortName": "Tennessee",
-        "fullName": "Tennessee Volunteers",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 38,
-          "population": 1788942,
-          "areaSqMi": 15707.56
-        }
-      },
-      {
         "teamId": "appalachian-state",
         "teamName": "Appalachian State",
         "shortName": "Appalachian State",
@@ -1140,6 +1116,18 @@
         }
       },
       {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 137,
+          "population": 12482770,
+          "areaSqMi": 102429.41
+        }
+      },
+      {
         "teamId": "missouri",
         "teamName": "Missouri",
         "shortName": "Missouri",
@@ -1197,18 +1185,6 @@
           "counties": 104,
           "population": 9838986,
           "areaSqMi": 120985.76
-        }
-      },
-      {
-        "teamId": "texas",
-        "teamName": "Texas",
-        "shortName": "Texas",
-        "fullName": "Texas Longhorns",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 99,
-          "population": 10693828,
-          "areaSqMi": 86721.85
         }
       },
       {
@@ -1356,10 +1332,10 @@
         }
       },
       {
-        "teamId": "louisville",
-        "teamName": "Louisville",
-        "shortName": "Louisville",
-        "fullName": "Louisville Cardinals",
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
         "conference": "ACC",
         "metrics": {
           "counties": 60,
@@ -1473,18 +1449,6 @@
           "counties": 39,
           "population": 8434888,
           "areaSqMi": 23022.46
-        }
-      },
-      {
-        "teamId": "tennessee",
-        "teamName": "Tennessee",
-        "shortName": "Tennessee",
-        "fullName": "Tennessee Volunteers",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 38,
-          "population": 1788942,
-          "areaSqMi": 15707.56
         }
       },
       {
@@ -1634,6 +1598,30 @@
     ],
     "territoryGained": [
       {
+        "teamId": "wake-forest",
+        "teamName": "Wake Forest",
+        "shortName": "Wake Forest",
+        "fullName": "Wake Forest Demon Deacons",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 60,
+          "population": 5856635,
+          "areaSqMi": 46410.86
+        }
+      },
+      {
+        "teamId": "texas",
+        "teamName": "Texas",
+        "shortName": "Texas",
+        "fullName": "Texas Longhorns",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 38,
+          "population": 1788942,
+          "areaSqMi": 15707.56
+        }
+      },
+      {
         "teamId": "indiana",
         "teamName": "Indiana",
         "shortName": "Indiana",
@@ -1659,6 +1647,30 @@
       }
     ],
     "territoryLost": [
+      {
+        "teamId": "louisville",
+        "teamName": "Louisville",
+        "shortName": "Louisville",
+        "fullName": "Louisville Cardinals",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 60,
+          "population": 5856635,
+          "areaSqMi": 46410.86
+        }
+      },
+      {
+        "teamId": "tennessee",
+        "teamName": "Tennessee",
+        "shortName": "Tennessee",
+        "fullName": "Tennessee Volunteers",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 38,
+          "population": 1788942,
+          "areaSqMi": 15707.56
+        }
+      },
       {
         "teamId": "northwestern",
         "teamName": "Northwestern",
@@ -1686,7 +1698,7 @@
     ]
   },
   "totals": {
-    "trackedTeams": 45,
+    "trackedTeams": 44,
     "countyCount": 3114
   }
 }
