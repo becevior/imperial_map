@@ -4,14 +4,14 @@
   "week": 4,
   "seasonType": "regular",
   "weekLabel": "Regular Week 4",
-  "generatedAt": "2026-09-27T06:10:56.421652+00:00",
+  "generatedAt": "2026-09-27T12:54:27.608124+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
-        "teamId": "washington",
-        "teamName": "Washington",
-        "shortName": "Washington",
-        "fullName": "Washington Huskies",
+        "teamId": "minnesota",
+        "teamName": "Minnesota",
+        "shortName": "Minnesota",
+        "fullName": "Minnesota Golden Gophers",
         "conference": "Big Ten",
         "metrics": {
           "counties": 114,
@@ -634,10 +634,10 @@
         }
       },
       {
-        "teamId": "washington",
-        "teamName": "Washington",
-        "shortName": "Washington",
-        "fullName": "Washington Huskies",
+        "teamId": "minnesota",
+        "teamName": "Minnesota",
+        "shortName": "Minnesota",
+        "fullName": "Minnesota Golden Gophers",
         "conference": "Big Ten",
         "metrics": {
           "counties": 114,
@@ -996,10 +996,10 @@
         }
       },
       {
-        "teamId": "washington",
-        "teamName": "Washington",
-        "shortName": "Washington",
-        "fullName": "Washington Huskies",
+        "teamId": "minnesota",
+        "teamName": "Minnesota",
+        "shortName": "Minnesota",
+        "fullName": "Minnesota Golden Gophers",
         "conference": "Big Ten",
         "metrics": {
           "counties": 114,
@@ -1406,6 +1406,18 @@
         }
       },
       {
+        "teamId": "minnesota",
+        "teamName": "Minnesota",
+        "shortName": "Minnesota",
+        "fullName": "Minnesota Golden Gophers",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 114,
+          "population": 8767692,
+          "areaSqMi": 254480.03
+        }
+      },
+      {
         "teamId": "georgia",
         "teamName": "Georgia",
         "shortName": "Georgia",
@@ -1597,6 +1609,18 @@
           "counties": 134,
           "population": 8390542,
           "areaSqMi": 82929.57
+        }
+      },
+      {
+        "teamId": "washington",
+        "teamName": "Washington",
+        "shortName": "Washington",
+        "fullName": "Washington Huskies",
+        "conference": "Big Ten",
+        "metrics": {
+          "counties": 114,
+          "population": 8767692,
+          "areaSqMi": 254480.03
         }
       },
       {
