@@ -1,0 +1,36 @@
+[
+  {
+    "id": "401871049",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 5,
+    "completed": true,
+    "startDate": "2026-10-02T00:00Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "Aggie Memorial Stadium",
+    "homeTeamId": "new-mexico-state",
+    "awayTeamId": "western-kentucky",
+    "homeScore": 34,
+    "awayScore": 13,
+    "winnerId": "new-mexico-state",
+    "loserId": "western-kentucky"
+  },
+  {
+    "id": "401862786",
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 5,
+    "completed": true,
+    "startDate": "2026-10-02T01:00Z",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "venue": "H. A. Chapman Stadium",
+    "homeTeamId": "tulsa",
+    "awayTeamId": "north-texas",
+    "homeScore": 44,
+    "awayScore": 45,
+    "winnerId": "north-texas",
+    "loserId": "tulsa"
+  }
+]

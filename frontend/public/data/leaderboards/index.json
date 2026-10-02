@@ -1784,16 +1784,23 @@
           "seasonType": "regular",
           "label": "Regular Week 4",
           "path": "/data/leaderboards/2026/week-04.json"
+        },
+        {
+          "weekIndex": 5,
+          "week": 5,
+          "seasonType": "regular",
+          "label": "Regular Week 5",
+          "path": "/data/leaderboards/2026/week-05.json"
         }
       ]
     }
   ],
   "latest": {
     "season": 2026,
-    "weekIndex": 4,
-    "path": "/data/leaderboards/2026/week-04.json",
-    "label": "Regular Week 4",
-    "week": 4,
+    "weekIndex": 5,
+    "path": "/data/leaderboards/2026/week-05.json",
+    "label": "Regular Week 5",
+    "week": 5,
     "seasonType": "regular"
   }
 }
