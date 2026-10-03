@@ -4,7 +4,7 @@
   "week": 5,
   "seasonType": "regular",
   "weekLabel": "Regular Week 5",
-  "generatedAt": "2026-10-03T18:59:31.503610+00:00",
+  "generatedAt": "2026-10-03T22:00:05.768818+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -44,15 +44,15 @@
         }
       },
       {
-        "teamId": "mississippi-state",
-        "teamName": "Mississippi State",
-        "shortName": "Mississippi State",
-        "fullName": "Mississippi State Bulldogs",
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
         "conference": "SEC",
         "metrics": {
-          "counties": 293,
-          "population": 19416321,
-          "areaSqMi": 197727.15
+          "counties": 360,
+          "population": 22162333,
+          "areaSqMi": 227855.11
         }
       },
       {
@@ -332,18 +332,6 @@
         }
       },
       {
-        "teamId": "alabama",
-        "teamName": "Alabama",
-        "shortName": "Alabama",
-        "fullName": "Alabama Crimson Tide",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 67,
-          "population": 2746012,
-          "areaSqMi": 30127.96
-        }
-      },
-      {
         "teamId": "miami",
         "teamName": "Miami",
         "shortName": "Miami",
@@ -428,10 +416,10 @@
         }
       },
       {
-        "teamId": "ucf",
-        "teamName": "UCF",
-        "shortName": "UCF",
-        "fullName": "UCF Knights",
+        "teamId": "houston",
+        "teamName": "Houston",
+        "shortName": "Houston",
+        "fullName": "Houston Cougars",
         "conference": "Big 12",
         "metrics": {
           "counties": 37,
@@ -466,6 +454,18 @@
         }
       },
       {
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 360,
+          "population": 22162333,
+          "areaSqMi": 227855.11
+        }
+      },
+      {
         "teamId": "oregon",
         "teamName": "Oregon",
         "shortName": "Oregon",
@@ -475,18 +475,6 @@
           "counties": 34,
           "population": 19672177,
           "areaSqMi": 57472.13
-        }
-      },
-      {
-        "teamId": "mississippi-state",
-        "teamName": "Mississippi State",
-        "shortName": "Mississippi State",
-        "fullName": "Mississippi State Bulldogs",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 293,
-          "population": 19416321,
-          "areaSqMi": 197727.15
         }
       },
       {
@@ -766,10 +754,10 @@
         }
       },
       {
-        "teamId": "ucf",
-        "teamName": "UCF",
-        "shortName": "UCF",
-        "fullName": "UCF Knights",
+        "teamId": "houston",
+        "teamName": "Houston",
+        "shortName": "Houston",
+        "fullName": "Houston Cougars",
         "conference": "Big 12",
         "metrics": {
           "counties": 37,
@@ -823,18 +811,6 @@
           "counties": 35,
           "population": 2954424,
           "areaSqMi": 32366.38
-        }
-      },
-      {
-        "teamId": "alabama",
-        "teamName": "Alabama",
-        "shortName": "Alabama",
-        "fullName": "Alabama Crimson Tide",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 67,
-          "population": 2746012,
-          "areaSqMi": 30127.96
         }
       },
       {
@@ -900,15 +876,15 @@
     ],
     "countiesOwned": [
       {
-        "teamId": "mississippi-state",
-        "teamName": "Mississippi State",
-        "shortName": "Mississippi State",
-        "fullName": "Mississippi State Bulldogs",
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
         "conference": "SEC",
         "metrics": {
-          "counties": 293,
-          "population": 19416321,
-          "areaSqMi": 197727.15
+          "counties": 360,
+          "population": 22162333,
+          "areaSqMi": 227855.11
         }
       },
       {
@@ -1128,18 +1104,6 @@
         }
       },
       {
-        "teamId": "alabama",
-        "teamName": "Alabama",
-        "shortName": "Alabama",
-        "fullName": "Alabama Crimson Tide",
-        "conference": "SEC",
-        "metrics": {
-          "counties": 67,
-          "population": 2746012,
-          "areaSqMi": 30127.96
-        }
-      },
-      {
         "teamId": "wake-forest",
         "teamName": "Wake Forest",
         "shortName": "Wake Forest",
@@ -1224,10 +1188,10 @@
         }
       },
       {
-        "teamId": "ucf",
-        "teamName": "UCF",
-        "shortName": "UCF",
-        "fullName": "UCF Knights",
+        "teamId": "houston",
+        "teamName": "Houston",
+        "shortName": "Houston",
+        "fullName": "Houston Cougars",
         "conference": "Big 12",
         "metrics": {
           "counties": 37,
@@ -1346,6 +1310,18 @@
     ],
     "territoryGained": [
       {
+        "teamId": "alabama",
+        "teamName": "Alabama",
+        "shortName": "Alabama",
+        "fullName": "Alabama Crimson Tide",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 293,
+          "population": 19416321,
+          "areaSqMi": 197727.15
+        }
+      },
+      {
         "teamId": "pittsburgh",
         "teamName": "Pittsburgh",
         "shortName": "Pittsburgh",
@@ -1356,9 +1332,33 @@
           "population": 14504413,
           "areaSqMi": 32317.93
         }
+      },
+      {
+        "teamId": "houston",
+        "teamName": "Houston",
+        "shortName": "Houston",
+        "fullName": "Houston Cougars",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 37,
+          "population": 3866795,
+          "areaSqMi": 11557.08
+        }
       }
     ],
     "territoryLost": [
+      {
+        "teamId": "mississippi-state",
+        "teamName": "Mississippi State",
+        "shortName": "Mississippi State",
+        "fullName": "Mississippi State Bulldogs",
+        "conference": "SEC",
+        "metrics": {
+          "counties": 293,
+          "population": 19416321,
+          "areaSqMi": 197727.15
+        }
+      },
       {
         "teamId": "virginia-tech",
         "teamName": "Virginia Tech",
@@ -1370,11 +1370,23 @@
           "population": 14504413,
           "areaSqMi": 32317.93
         }
+      },
+      {
+        "teamId": "ucf",
+        "teamName": "UCF",
+        "shortName": "UCF",
+        "fullName": "UCF Knights",
+        "conference": "Big 12",
+        "metrics": {
+          "counties": 37,
+          "population": 3866795,
+          "areaSqMi": 11557.08
+        }
       }
     ]
   },
   "totals": {
-    "trackedTeams": 37,
+    "trackedTeams": 36,
     "countyCount": 3114
   }
 }
