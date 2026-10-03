@@ -4,7 +4,7 @@
   "week": 5,
   "seasonType": "regular",
   "weekLabel": "Regular Week 5",
-  "generatedAt": "2026-10-02T16:17:16.130528+00:00",
+  "generatedAt": "2026-10-03T18:59:31.503610+00:00",
   "leaderboards": {
     "territoryOwned": [
       {
@@ -224,6 +224,18 @@
         }
       },
       {
+        "teamId": "pittsburgh",
+        "teamName": "Pittsburgh",
+        "shortName": "Pittsburgh",
+        "fullName": "Pittsburgh Panthers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 147,
+          "population": 22939301,
+          "areaSqMi": 55340.39
+        }
+      },
+      {
         "teamId": "indiana",
         "teamName": "Indiana",
         "shortName": "Indiana",
@@ -320,18 +332,6 @@
         }
       },
       {
-        "teamId": "virginia-tech",
-        "teamName": "Virginia Tech",
-        "shortName": "Virginia Tech",
-        "fullName": "Virginia Tech Hokies",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 108,
-          "population": 14504413,
-          "areaSqMi": 32317.93
-        }
-      },
-      {
         "teamId": "alabama",
         "teamName": "Alabama",
         "shortName": "Alabama",
@@ -365,18 +365,6 @@
           "counties": 48,
           "population": 16131447,
           "areaSqMi": 27700.81
-        }
-      },
-      {
-        "teamId": "pittsburgh",
-        "teamName": "Pittsburgh",
-        "shortName": "Pittsburgh",
-        "fullName": "Pittsburgh Panthers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 39,
-          "population": 8434888,
-          "areaSqMi": 23022.46
         }
       },
       {
@@ -466,6 +454,18 @@
     ],
     "populationControlled": [
       {
+        "teamId": "pittsburgh",
+        "teamName": "Pittsburgh",
+        "shortName": "Pittsburgh",
+        "fullName": "Pittsburgh Panthers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 147,
+          "population": 22939301,
+          "areaSqMi": 55340.39
+        }
+      },
+      {
         "teamId": "oregon",
         "teamName": "Oregon",
         "shortName": "Oregon",
@@ -523,18 +523,6 @@
           "counties": 48,
           "population": 16131447,
           "areaSqMi": 27700.81
-        }
-      },
-      {
-        "teamId": "virginia-tech",
-        "teamName": "Virginia Tech",
-        "shortName": "Virginia Tech",
-        "fullName": "Virginia Tech Hokies",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 108,
-          "population": 14504413,
-          "areaSqMi": 32317.93
         }
       },
       {
@@ -643,18 +631,6 @@
           "counties": 114,
           "population": 8767692,
           "areaSqMi": 254480.03
-        }
-      },
-      {
-        "teamId": "pittsburgh",
-        "teamName": "Pittsburgh",
-        "shortName": "Pittsburgh",
-        "fullName": "Pittsburgh Panthers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 39,
-          "population": 8434888,
-          "areaSqMi": 23022.46
         }
       },
       {
@@ -972,6 +948,18 @@
         }
       },
       {
+        "teamId": "pittsburgh",
+        "teamName": "Pittsburgh",
+        "shortName": "Pittsburgh",
+        "fullName": "Pittsburgh Panthers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 147,
+          "population": 22939301,
+          "areaSqMi": 55340.39
+        }
+      },
+      {
         "teamId": "nebraska",
         "teamName": "Nebraska",
         "shortName": "Nebraska",
@@ -1005,18 +993,6 @@
           "counties": 114,
           "population": 8767692,
           "areaSqMi": 254480.03
-        }
-      },
-      {
-        "teamId": "virginia-tech",
-        "teamName": "Virginia Tech",
-        "shortName": "Virginia Tech",
-        "fullName": "Virginia Tech Hokies",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 108,
-          "population": 14504413,
-          "areaSqMi": 32317.93
         }
       },
       {
@@ -1236,18 +1212,6 @@
         }
       },
       {
-        "teamId": "pittsburgh",
-        "teamName": "Pittsburgh",
-        "shortName": "Pittsburgh",
-        "fullName": "Pittsburgh Panthers",
-        "conference": "ACC",
-        "metrics": {
-          "counties": 39,
-          "population": 8434888,
-          "areaSqMi": 23022.46
-        }
-      },
-      {
         "teamId": "auburn",
         "teamName": "Auburn",
         "shortName": "Auburn",
@@ -1380,11 +1344,37 @@
         }
       }
     ],
-    "territoryGained": [],
-    "territoryLost": []
+    "territoryGained": [
+      {
+        "teamId": "pittsburgh",
+        "teamName": "Pittsburgh",
+        "shortName": "Pittsburgh",
+        "fullName": "Pittsburgh Panthers",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 108,
+          "population": 14504413,
+          "areaSqMi": 32317.93
+        }
+      }
+    ],
+    "territoryLost": [
+      {
+        "teamId": "virginia-tech",
+        "teamName": "Virginia Tech",
+        "shortName": "Virginia Tech",
+        "fullName": "Virginia Tech Hokies",
+        "conference": "ACC",
+        "metrics": {
+          "counties": 108,
+          "population": 14504413,
+          "areaSqMi": 32317.93
+        }
+      }
+    ]
   },
   "totals": {
-    "trackedTeams": 38,
+    "trackedTeams": 37,
     "countyCount": 3114
   }
 }
